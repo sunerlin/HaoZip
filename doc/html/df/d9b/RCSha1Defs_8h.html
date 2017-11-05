@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCSha1Defs.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_d3ad43f7f4209fed68c37a759e8e675c.html">crypto</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_7634fad44bba84d471a8bebe46d60dd2.html">hash</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCSha1Defs.h文件参考</h1><code>#include &quot;<a class="el" href="../../d0/d20/RCDefs_8h_source.html">base/RCDefs.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCSha1Defs.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d0/d57/RCSha1Defs_8h__incl.png" border="0" usemap="#RCSha1Defs_8h_map" alt=""/></div>
+<map name="RCSha1Defs_8h_map" id="RCSha1Defs_8h">
+<area shape="rect" id="node3" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="292,80,409,107"/><area shape="rect" id="node5" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="288,155,413,181"/><area shape="rect" id="node9" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="96,229,261,256"/><area shape="rect" id="node11" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="285,229,416,256"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d5/dc7/RCSha1Defs_8h__dep__incl.png" border="0" usemap="#RCSha1Defs_8hdep_map" alt=""/></div>
+<map name="RCSha1Defs_8hdep_map" id="RCSha1Defs_8hdep">
+<area shape="rect" id="node3" href="../../d7/d44/RCRandomGenerator_8h.html" title="RCRandomGenerator.h" alt="" coords="5,80,179,107"/><area shape="rect" id="node5" href="../../d3/d37/RCSha1ContextBase2_8h.html" title="RCSha1ContextBase2.h" alt="" coords="203,80,379,107"/><area shape="rect" id="node9" href="../../d3/d05/RCSha1Hmac_8h.html" title="RCSha1Hmac.h" alt="" coords="301,229,424,256"/><area shape="rect" id="node7" href="../../d8/d4b/RCSha1Context_8h.html" title="RCSha1Context.h" alt="" coords="243,155,379,181"/><area shape="rect" id="node19" href="../../d5/da8/RCSha1Context32_8h.html" title="RCSha1Context32.h" alt="" coords="64,155,219,181"/><area shape="rect" id="node11" href="../../db/ddb/RCWzAESBaseCoder_8h.html" title="RCWzAESBaseCoder.h" alt="" coords="279,304,447,331"/><area shape="rect" id="node13" href="../../de/d44/RCWzAESDecoder_8h.html" title="RCWzAESDecoder.h" alt="" coords="199,379,351,405"/><area shape="rect" id="node15" href="../../dd/d45/RCWzAESEncoder_8h.html" title="RCWzAESEncoder.h" alt="" coords="375,379,527,405"/><area shape="rect" id="node17" href="../../da/d2d/RCZipAddCommon_8h.html" title="RCZipAddCommon.h" alt="" coords="371,453,531,480"/><area shape="rect" id="node21" href="../../d5/dd3/RCSha1Hmac32_8h.html" title="RCSha1Hmac32.h" alt="" coords="71,229,212,256"/></map>
+</div>
+
+<p><a href="../../df/d9b/RCSha1Defs_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de7/classRCZip_1_1RCSha1Defs.html">RCZip::RCSha1Defs</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#a953f2bd1443d961dc1b2b12d19f2acfe">__RCSha1Defs_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#ae216d7a612e7f7d3a22bda62c8f0a8de">w0</a>(i)&nbsp;&nbsp;&nbsp;(W[(i)] = data[(i)])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#ac55921daeb2e81d6214d028a80e61a05">w1</a>(i)&nbsp;&nbsp;&nbsp;(W[(i)] = rotlFixed(W[(i)-3] ^ W[(i)-8] ^ W[(i)-14] ^ W[(i)-16], 1))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#a895cf264b1bd506426ebc9e51336241e">f1</a>(x, y, z)&nbsp;&nbsp;&nbsp;(z^(x&amp;(y^z)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#a5a8cd147d49dfc130047aad8b83ddadf">f2</a>(x, y, z)&nbsp;&nbsp;&nbsp;(x^y^z)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#ae4a6b9a0d304177d9ce0e7488a890bb4">f3</a>(x, y, z)&nbsp;&nbsp;&nbsp;((x&amp;y)|(z&amp;(x|y)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#ad91225588c8fe60771183f5a9d653cea">f4</a>(x, y, z)&nbsp;&nbsp;&nbsp;(x^y^z)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#ab2dc7fb5a719c7ac1d236d32867f3149">RK1</a>(a, b, c, d, e, i, f, w, k)&nbsp;&nbsp;&nbsp;e += f(b,c,d) + w(i) + k + rotlFixed(a,5); b = rotlFixed(b,30);</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#afacf7547038a69338bec88bbf0b0dc9e">R0</a>(a, b, c, d, e, i)&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f1, w0, 0x5A827999)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#a3aeb03acb89d3bc810ef05f990859495">R1</a>(a, b, c, d, e, i)&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f1, w1, 0x5A827999)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#a4c6fcf782639b34600e15754757e5ebf">R2</a>(a, b, c, d, e, i)&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f2, w1, 0x6ED9EBA1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#a04c34826fb219c49d61d4a55b791485c">R3</a>(a, b, c, d, e, i)&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f3, w1, 0x8F1BBCDC)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#a49eca87c6675d47e01502af27ca7c4ea">R4</a>(a, b, c, d, e, i)&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f4, w1, 0xCA62C1D6)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#ac51d7558921d7ca5050be28ceece80cc">RX_1_4</a>(rx1, rx4, i)&nbsp;&nbsp;&nbsp;rx1(a,b,c,d,e,i); rx4(e,a,b,c,d,i+1); rx4(d,e,a,b,c,i+2); rx4(c,d,e,a,b,i+3); rx4(b,c,d,e,a,i+4);</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/RCSha1Defs_8h.html#ae80ade247bba9871f9d4afba45e70057">RX_5</a>(rx, i)&nbsp;&nbsp;&nbsp;RX_1_4(rx, rx, i);</td></tr>
+<tr><td colspan="2"><h2>变量</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a79f92984a79f992312ea5abb54b7c4f9">RCZip::s_kNumW</a></td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a953f2bd1443d961dc1b2b12d19f2acfe"></a><!-- doxytag: member="RCSha1Defs.h::__RCSha1Defs_h_" ref="a953f2bd1443d961dc1b2b12d19f2acfe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCSha1Defs_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a895cf264b1bd506426ebc9e51336241e"></a><!-- doxytag: member="RCSha1Defs.h::f1" ref="a895cf264b1bd506426ebc9e51336241e" args="(x, y, z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f1</td>
+          <td>(</td>
+          <td class="paramtype">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">z&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(z^(x&amp;(y^z)))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00050">50</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a8cd147d49dfc130047aad8b83ddadf"></a><!-- doxytag: member="RCSha1Defs.h::f2" ref="a5a8cd147d49dfc130047aad8b83ddadf" args="(x, y, z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f2</td>
+          <td>(</td>
+          <td class="paramtype">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">z&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(x^y^z)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00051">51</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4a6b9a0d304177d9ce0e7488a890bb4"></a><!-- doxytag: member="RCSha1Defs.h::f3" ref="ae4a6b9a0d304177d9ce0e7488a890bb4" args="(x, y, z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f3</td>
+          <td>(</td>
+          <td class="paramtype">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">z&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;((x&amp;y)|(z&amp;(x|y)))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00052">52</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad91225588c8fe60771183f5a9d653cea"></a><!-- doxytag: member="RCSha1Defs.h::f4" ref="ad91225588c8fe60771183f5a9d653cea" args="(x, y, z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define f4</td>
+          <td>(</td>
+          <td class="paramtype">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">z&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(x^y^z)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00053">53</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afacf7547038a69338bec88bbf0b0dc9e"></a><!-- doxytag: member="RCSha1Defs.h::R0" ref="afacf7547038a69338bec88bbf0b0dc9e" args="(a, b, c, d, e, i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R0</td>
+          <td>(</td>
+          <td class="paramtype">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">e, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f1, w0, 0x5A827999)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00057">57</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3aeb03acb89d3bc810ef05f990859495"></a><!-- doxytag: member="RCSha1Defs.h::R1" ref="a3aeb03acb89d3bc810ef05f990859495" args="(a, b, c, d, e, i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R1</td>
+          <td>(</td>
+          <td class="paramtype">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">e, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f1, w1, 0x5A827999)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00058">58</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c6fcf782639b34600e15754757e5ebf"></a><!-- doxytag: member="RCSha1Defs.h::R2" ref="a4c6fcf782639b34600e15754757e5ebf" args="(a, b, c, d, e, i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R2</td>
+          <td>(</td>
+          <td class="paramtype">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">e, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f2, w1, 0x6ED9EBA1)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00059">59</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a04c34826fb219c49d61d4a55b791485c"></a><!-- doxytag: member="RCSha1Defs.h::R3" ref="a04c34826fb219c49d61d4a55b791485c" args="(a, b, c, d, e, i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R3</td>
+          <td>(</td>
+          <td class="paramtype">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">e, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f3, w1, 0x8F1BBCDC)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00060">60</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a49eca87c6675d47e01502af27ca7c4ea"></a><!-- doxytag: member="RCSha1Defs.h::R4" ref="a49eca87c6675d47e01502af27ca7c4ea" args="(a, b, c, d, e, i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R4</td>
+          <td>(</td>
+          <td class="paramtype">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">e, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;RK1(a,b,c,d,e,i, f4, w1, 0xCA62C1D6)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00061">61</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2dc7fb5a719c7ac1d236d32867f3149"></a><!-- doxytag: member="RCSha1Defs.h::RK1" ref="ab2dc7fb5a719c7ac1d236d32867f3149" args="(a, b, c, d, e, i, f, w, k)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RK1</td>
+          <td>(</td>
+          <td class="paramtype">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">e, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">w, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">k&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;e += f(b,c,d) + w(i) + k + rotlFixed(a,5); b = rotlFixed(b,30);</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00055">55</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac51d7558921d7ca5050be28ceece80cc"></a><!-- doxytag: member="RCSha1Defs.h::RX_1_4" ref="ac51d7558921d7ca5050be28ceece80cc" args="(rx1, rx4, i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RX_1_4</td>
+          <td>(</td>
+          <td class="paramtype">rx1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rx4, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;rx1(a,b,c,d,e,i); rx4(e,a,b,c,d,i+1); rx4(d,e,a,b,c,i+2); rx4(c,d,e,a,b,i+3); rx4(b,c,d,e,a,i+4);</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00063">63</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae80ade247bba9871f9d4afba45e70057"></a><!-- doxytag: member="RCSha1Defs.h::RX_5" ref="ae80ade247bba9871f9d4afba45e70057" args="(rx, i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RX_5</td>
+          <td>(</td>
+          <td class="paramtype">rx, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;RX_1_4(rx, rx, i);</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00064">64</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae216d7a612e7f7d3a22bda62c8f0a8de"></a><!-- doxytag: member="RCSha1Defs.h::w0" ref="ae216d7a612e7f7d3a22bda62c8f0a8de" args="(i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w0</td>
+          <td>(</td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(W[(i)] = data[(i)])</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00042">42</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac55921daeb2e81d6214d028a80e61a05"></a><!-- doxytag: member="RCSha1Defs.h::w1" ref="ac55921daeb2e81d6214d028a80e61a05" args="(i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w1</td>
+          <td>(</td>
+          <td class="paramtype">i&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(W[(i)] = rotlFixed(W[(i)-3] ^ W[(i)-8] ^ W[(i)-14] ^ W[(i)-16], 1))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html">RCSha1Defs.h</a>第<a class="el" href="../../df/d9b/RCSha1Defs_8h_source.html#l00047">47</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

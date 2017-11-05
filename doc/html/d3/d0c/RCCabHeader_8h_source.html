@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCCabHeader.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_29d62602763667bebda326aeb64727d2.html">cab</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCCabHeader.h</h1><a href="../../d3/d0c/RCCabHeader_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCCabHeader_h_</span>
+<a name="l00011"></a><a class="code" href="../../d3/d0c/RCCabHeader_8h.html#a069ed1887503e0abba3f59cf5715d9fc">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCCabHeader_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html">00015</a> <span class="keyword">class </span><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html">RCCabHeaderDefs</a>
+<a name="l00016"></a>00016 {
+<a name="l00017"></a>00017 <span class="keyword">public</span>:
+<a name="l00018"></a>00018     <span class="keyword">enum</span>
+<a name="l00019"></a>00019     {
+<a name="l00020"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#aef67c1b81445d66f7496f1cb55815a04ad3c14b6fb563e597b5230853583b354c">00020</a>         kMarkerSize = 8
+<a name="l00021"></a>00021     };
+<a name="l00022"></a>00022 <span class="comment"></span>
+<a name="l00023"></a>00023 <span class="comment">    /** 标志</span>
+<a name="l00024"></a>00024 <span class="comment">    */</span>
+<a name="l00025"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#a1c4ef8b26a44515549631ff32ac6a662">00025</a>     <span class="keyword">enum</span> <a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#a1c4ef8b26a44515549631ff32ac6a662">nFlags</a>
+<a name="l00026"></a>00026     {
+<a name="l00027"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#a1c4ef8b26a44515549631ff32ac6a662a21b331d61a6e7b3e68ad72eb2702df85">00027</a>         kPrevCabinet = 0x0001,
+<a name="l00028"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#a1c4ef8b26a44515549631ff32ac6a662a17e57ab6426fac6f7cfef1439cfe4482">00028</a>         kNextCabinet = 0x0002,
+<a name="l00029"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#a1c4ef8b26a44515549631ff32ac6a662a87fbda2311c97d264fa745de97797017">00029</a>         kReservePresent = 0x0004
+<a name="l00030"></a>00030     };
+<a name="l00031"></a>00031 <span class="comment"></span>
+<a name="l00032"></a>00032 <span class="comment">    /** 压缩模式</span>
+<a name="l00033"></a>00033 <span class="comment">    */</span>
+<a name="l00034"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#ac393900f93326330d9377871bc7acbfc">00034</a>     <span class="keyword">enum</span> <a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#ac393900f93326330d9377871bc7acbfc">nCompressionMethodMajor</a>
+<a name="l00035"></a>00035     {
+<a name="l00036"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#ac393900f93326330d9377871bc7acbfca1ec578c6880814e0794d46c1adffac98">00036</a>         kNone = 0,
+<a name="l00037"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#ac393900f93326330d9377871bc7acbfcac1d900d6412baeb28bdd65551ad59b8d">00037</a>         kMSZip = 1,
+<a name="l00038"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#ac393900f93326330d9377871bc7acbfcaf9ab9cc7a35640ad08bbe42b722e6eb7">00038</a>         kQuantum = 2,
+<a name="l00039"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#ac393900f93326330d9377871bc7acbfca4fbe1064b7904cc83b4ddb058ae466e4">00039</a>         kLZX = 3
+<a name="l00040"></a>00040     };
+<a name="l00041"></a>00041 <span class="comment"></span>
+<a name="l00042"></a>00042 <span class="comment">    /** 文件名UTF属性掩码</span>
+<a name="l00043"></a>00043 <span class="comment">    */</span>
+<a name="l00044"></a>00044     <span class="keyword">enum</span> 
+<a name="l00045"></a>00045     {
+<a name="l00046"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#a6b747bde0a5359e795f45bd4c3f30f29abefe856fbadaf80e19a0de00fcca1089">00046</a>         kFileNameIsUTFAttributeMask = 0x80
+<a name="l00047"></a>00047     };
+<a name="l00048"></a>00048 <span class="comment"></span>
+<a name="l00049"></a>00049 <span class="comment">    /** 文件夹索引</span>
+<a name="l00050"></a>00050 <span class="comment">    */</span>
+<a name="l00051"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#acaeaffbd5692e3a41b988b11ba95a668">00051</a>     <span class="keyword">enum</span> <a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#acaeaffbd5692e3a41b988b11ba95a668">nFolderIndex</a>
+<a name="l00052"></a>00052     {
+<a name="l00053"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#acaeaffbd5692e3a41b988b11ba95a668a6e3c55062a503ccf7a39b72107d65465">00053</a>         kContinuedFromPrev    = 0xFFFD,
+<a name="l00054"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#acaeaffbd5692e3a41b988b11ba95a668af494dacabb174be493a3c924f2b17797">00054</a>         kContinuedToNext      = 0xFFFE,
+<a name="l00055"></a><a class="code" href="../../dd/d80/classRCZip_1_1RCCabHeaderDefs.html#acaeaffbd5692e3a41b988b11ba95a668ac642cbfcb9b266d5905ce0f334be9bf2">00055</a>         kContinuedPrevAndNext = 0xFFFF
+<a name="l00056"></a>00056     };
+<a name="l00057"></a>00057 };
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061 <span class="preprocessor">#endif //__RCCabHeader_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

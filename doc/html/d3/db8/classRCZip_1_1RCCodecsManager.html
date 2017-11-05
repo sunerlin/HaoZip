@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCCodecsManager类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html">RCCodecsManager</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCCodecsManager类参考</h1><!-- doxytag: class="RCZip::RCCodecsManager" --><!-- doxytag: inherits="IUnknownImpl&lt; ICompressCodecsInfo &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html">RCCodecsManager.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCCodecsManager</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/dab/classRCZip_1_1RCCodecsManager__inherit__graph.png" border="0" usemap="#RCZip_1_1RCCodecsManager_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCCodecsManager_inherit__map" id="RCZip_1_1RCCodecsManager_inherit__map">
+<area shape="rect" id="node13" href="../../db/d0a/classRCZip_1_1RC7zCodecsRegister.html" title="{RCZip::RC7zCodecsRegister\n||+ RC7zCodecsRegister()\l+ ~RC7zCodecsRegister()\l+ LoadCodecs()\l}" alt="" coords="5,773,211,880"/><area shape="rect" id="node15" href="../../dc/d78/classRCZip_1_1RCCodecsRegister.html" title="{RCZip::RCCodecsRegister\n||+ RCCodecsRegister()\l+ ~RCCodecsRegister()\l+ LoadCodecs()\l}" alt="" coords="235,773,424,880"/><area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="49,361,388,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="29,176,195,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="24,28,200,105"/><area shape="rect" id="node8" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html" title="{RCZip::ICompressCodecsInfo\n||+ GetNumberOfMethods()\l+ GetMethod()\l+ CreateDecoder()\l+ CreateEncoder()\l# ~ICompressCodecsInfo()\l}" alt="" coords="219,176,432,312"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="252,6,399,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCCodecsManager合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/d49/classRCZip_1_1RCCodecsManager__coll__graph.png" border="0" usemap="#RCZip_1_1RCCodecsManager_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCCodecsManager_coll__map" id="RCZip_1_1RCCodecsManager_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="31,361,369,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html" title="{RCZip::ICompressCodecsInfo\n||+ GetNumberOfMethods()\l+ GetMethod()\l+ CreateDecoder()\l+ CreateEncoder()\l# ~ICompressCodecsInfo()\l}" alt="" coords="200,176,413,312"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="233,6,380,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../dd/da1/classRCZip_1_1RCCodecsManager-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#ac7f1c7d5a1a9d511961856789678726d">container_type</a></td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a9eedf6b566aae568ea46d83baffededa">RCCodecsManager</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#aca2d17810b03af3ebb86cb82b726319c">~RCCodecsManager</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a7e161b2b3d59f40c11b66b841ab6b9da">GetNumberOfMethods</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numMethods) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a9a28c1e924187c234f4be15d3c303192">GetMethod</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;spCodecInfo) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#ae2dcf2fcd27ed18bbb5a3c464d090878">CreateDecoder</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a> iid, void **coder) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a3aa3bff1ddbf8a10dbcda0088f1c1e89">CreateEncoder</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a> iid, void **coder) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#ac7f1c7d5a1a9d511961856789678726d">container_type</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#af4d865b77f5dcc1fe24049fc5e022d6e">GetCodecArray</a> (void) const </td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a1cf7e94544d85d248bd274d55394de72">RegisterCodec</a> (const <a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;spCodecInfo)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a0e7dda3cb5a0a49477aed84a88a37ec2">DoCreateCoder</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a> iid, bool isEncoder, void **coder) const </td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#ac7f1c7d5a1a9d511961856789678726d">container_type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a2821106ef90c509a824b568ebc83abbf">m_codecArray</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>编解码管理类 </p>
+
+<p>在文件<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html">RCCodecsManager.h</a>第<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html#l00021">21</a>行定义。</p>
+<hr/><h2>成员类型定义文档</h2>
+<a class="anchor" id="ac7f1c7d5a1a9d511961856789678726d"></a><!-- doxytag: member="RCZip::RCCodecsManager::container_type" ref="ac7f1c7d5a1a9d511961856789678726d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a>&gt; <a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#ac7f1c7d5a1a9d511961856789678726d">RCZip::RCCodecsManager::container_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编解码容器类型 </p>
+
+<p>在文件<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html">RCCodecsManager.h</a>第<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a9eedf6b566aae568ea46d83baffededa"></a><!-- doxytag: member="RCZip::RCCodecsManager::RCCodecsManager" ref="a9eedf6b566aae568ea46d83baffededa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCCodecsManager::RCCodecsManager </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="aca2d17810b03af3ebb86cb82b726319c"></a><!-- doxytag: member="RCZip::RCCodecsManager::~RCCodecsManager" ref="aca2d17810b03af3ebb86cb82b726319c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual RCZip::RCCodecsManager::~RCCodecsManager </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ae2dcf2fcd27ed18bbb5a3c464d090878"></a><!-- doxytag: member="RCZip::RCCodecsManager::CreateDecoder" ref="ae2dcf2fcd27ed18bbb5a3c464d090878" args="(uint32_t index, RC_IID iid, void **coder) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCodecsManager::CreateDecoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a>&nbsp;</td>
+          <td class="paramname"> <em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&nbsp;</td>
+          <td class="paramname"> <em>coder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建解码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>编码器下标，从0开始 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>iid</em>&nbsp;</td><td>解码器的接口ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>解码器的接口指针，引用计数加1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html#a587a82cb907a8a2b79f918b67517e353">RCZip::ICompressCodecsInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3aa3bff1ddbf8a10dbcda0088f1c1e89"></a><!-- doxytag: member="RCZip::RCCodecsManager::CreateEncoder" ref="a3aa3bff1ddbf8a10dbcda0088f1c1e89" args="(uint32_t index, RC_IID iid, void **coder) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCodecsManager::CreateEncoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a>&nbsp;</td>
+          <td class="paramname"> <em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&nbsp;</td>
+          <td class="paramname"> <em>coder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建编码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>编码器下标，从0开始 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>iid</em>&nbsp;</td><td>编码器的接口ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>编码器的接口指针，引用计数加1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html#ad906809ac87b3cc659dff564e955cb64">RCZip::ICompressCodecsInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e7dda3cb5a0a49477aed84a88a37ec2"></a><!-- doxytag: member="RCZip::RCCodecsManager::DoCreateCoder" ref="a0e7dda3cb5a0a49477aed84a88a37ec2" args="(uint32_t index, RC_IID iid, bool isEncoder, void **coder) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCodecsManager::DoCreateCoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a>&nbsp;</td>
+          <td class="paramname"> <em>iid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isEncoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&nbsp;</td>
+          <td class="paramname"> <em>coder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建编码器/解码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>编码器下标，从0开始 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>iid</em>&nbsp;</td><td>编码器的接口ID </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isEncoder</em>&nbsp;</td><td>如果是true,创建编码器，否则创建解码器 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>编码器的接口指针，引用计数加1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af4d865b77f5dcc1fe24049fc5e022d6e"></a><!-- doxytag: member="RCZip::RCCodecsManager::GetCodecArray" ref="af4d865b77f5dcc1fe24049fc5e022d6e" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#ac7f1c7d5a1a9d511961856789678726d">container_type</a>&amp; RCZip::RCCodecsManager::GetCodecArray </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得容器内容 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回编解码容器的引用 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a28c1e924187c234f4be15d3c303192"></a><!-- doxytag: member="RCZip::RCCodecsManager::GetMethod" ref="a9a28c1e924187c234f4be15d3c303192" args="(uint32_t index, ICodecInfoPtr &amp;spCodecInfo) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCodecsManager::GetMethod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spCodecInfo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取编码解码信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>编码解码器下标，从0开始 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>spCodecInfo</em>&nbsp;</td><td>编码解码器信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html#a4c2223e3123ff24c3fd6cb0d9b721bac">RCZip::ICompressCodecsInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e161b2b3d59f40c11b66b841ab6b9da"></a><!-- doxytag: member="RCZip::RCCodecsManager::GetNumberOfMethods" ref="a7e161b2b3d59f40c11b66b841ab6b9da" args="(uint32_t &amp;numMethods) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCodecsManager::GetNumberOfMethods </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numMethods</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取压缩编码解码器个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numMethods</em>&nbsp;</td><td>返回编码解码器个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果成功则返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html#a24b2c2a9a124f3a7fd638c8361819985">RCZip::ICompressCodecsInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cf7e94544d85d248bd274d55394de72"></a><!-- doxytag: member="RCZip::RCCodecsManager::RegisterCodec" ref="a1cf7e94544d85d248bd274d55394de72" args="(const ICodecInfoPtr &amp;spCodecInfo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCCodecsManager::RegisterCodec </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spCodecInfo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>注册编码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spCodecInfo</em>&nbsp;</td><td>需要注册的编解码信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a2821106ef90c509a824b568ebc83abbf"></a><!-- doxytag: member="RCZip::RCCodecsManager::m_codecArray" ref="a2821106ef90c509a824b568ebc83abbf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#ac7f1c7d5a1a9d511961856789678726d">container_type</a> <a class="el" href="../../d3/db8/classRCZip_1_1RCCodecsManager.html#a2821106ef90c509a824b568ebc83abbf">RCZip::RCCodecsManager::m_codecArray</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码解码容器 </p>
+
+<p>在文件<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html">RCCodecsManager.h</a>第<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html#l00098">98</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html">RCCodecsManager.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

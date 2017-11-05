@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: Lzma2Dec.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Lzma2Dec.h</h1><a href="../../d6/d31/Lzma2Dec_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Lzma2Dec.h -- LZMA2 Decoder</span>
+<a name="l00002"></a>00002 <span class="comment">2009-05-03 : Igor Pavlov : Public domain */</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef __LZMA2_DEC_H</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define __LZMA2_DEC_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/dba/LzmaDec_8h.html">LzmaDec.h</a>&quot;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#ad231250facf0b9a4fb1e932c933209ac">00009</a> <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00010"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#ab4b29146fb62a36942a0ad2f23ba5609">00010</a> <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00011"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#a15ff35d5132be63d925bf3c58d24dd22">00011</a> <span class="preprocessor">#endif</span>
+<a name="l00012"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#a2165579faf49bd552802ff96037d6703">00012</a> <span class="preprocessor"></span>
+<a name="l00013"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#a16afd01f7c214c3f703abfe2c32c71ba">00013</a> <span class="comment">/* ---------- State Interface ---------- */</span>
+<a name="l00014"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#a971b453f48d86a4b74a5f39fb3e99688">00014</a> 
+<a name="l00015"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#abf56be4e81b029c43d63aec7014a0210">00015</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00016"></a><a class="code" href="../../d7/d64/structCLzma2Dec.html#a11558d9cbc9820cdbec8e6cb3596f9c2">00016</a> {
+<a name="l00017"></a>00017   <a class="code" href="../../de/d3a/structCLzmaDec.html">CLzmaDec</a> decoder;
+<a name="l00018"></a>00018   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> packSize;
+<a name="l00019"></a>00019   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> unpackSize;
+<a name="l00020"></a>00020   <span class="keywordtype">int</span> state;
+<a name="l00021"></a>00021   <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> control;
+<a name="l00022"></a>00022   <a class="code" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a> needInitDic;
+<a name="l00023"></a>00023   <a class="code" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a> needInitState;
+<a name="l00024"></a>00024   <a class="code" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a> needInitProp;
+<a name="l00025"></a>00025 } <a class="code" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a>;
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="../../d6/d31/Lzma2Dec_8h.html#ad4e3d81977decb7c5d2802097274c620">00027</a> <span class="preprocessor">#define Lzma2Dec_Construct(p) LzmaDec_Construct(&amp;(p)-&gt;decoder)</span>
+<a name="l00028"></a><a class="code" href="../../d6/d31/Lzma2Dec_8h.html#ad9487a630167e44dbb3c23380997a11f">00028</a> <span class="preprocessor"></span><span class="preprocessor">#define Lzma2Dec_FreeProbs(p, alloc) LzmaDec_FreeProbs(&amp;(p)-&gt;decoder, alloc);</span>
+<a name="l00029"></a><a class="code" href="../../d6/d31/Lzma2Dec_8h.html#ad88c174d2169655dd5ca2bedd9ef0fb0">00029</a> <span class="preprocessor"></span><span class="preprocessor">#define Lzma2Dec_Free(p, alloc) LzmaDec_Free(&amp;(p)-&gt;decoder, alloc);</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span>
+<a name="l00031"></a>00031 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d6/d31/Lzma2Dec_8h.html#af8862bcaefa7a288cab123063abf7e15">Lzma2Dec_AllocateProbs</a>(<a class="code" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> prop, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc);
+<a name="l00032"></a>00032 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d6/d31/Lzma2Dec_8h.html#a53e067b06d5c0bca41a7e2fa50e5ba02">Lzma2Dec_Allocate</a>(<a class="code" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> prop, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc);
+<a name="l00033"></a>00033 <span class="keywordtype">void</span> <a class="code" href="../../d6/d31/Lzma2Dec_8h.html#a3aca6449979b2d9b77824fe941046378">Lzma2Dec_Init</a>(<a class="code" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p);
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="comment">/*</span>
+<a name="l00037"></a>00037 <span class="comment">finishMode:</span>
+<a name="l00038"></a>00038 <span class="comment">  It has meaning only if the decoding reaches output limit (*destLen or dicLimit).</span>
+<a name="l00039"></a>00039 <span class="comment">  LZMA_FINISH_ANY - use smallest number of input bytes</span>
+<a name="l00040"></a>00040 <span class="comment">  LZMA_FINISH_END - read EndOfStream marker after decoding</span>
+<a name="l00041"></a>00041 <span class="comment"></span>
+<a name="l00042"></a>00042 <span class="comment">Returns:</span>
+<a name="l00043"></a>00043 <span class="comment">  SZ_OK</span>
+<a name="l00044"></a>00044 <span class="comment">    status:</span>
+<a name="l00045"></a>00045 <span class="comment">      LZMA_STATUS_FINISHED_WITH_MARK</span>
+<a name="l00046"></a>00046 <span class="comment">      LZMA_STATUS_NOT_FINISHED</span>
+<a name="l00047"></a>00047 <span class="comment">      LZMA_STATUS_NEEDS_MORE_INPUT</span>
+<a name="l00048"></a>00048 <span class="comment">  SZ_ERROR_DATA - Data error</span>
+<a name="l00049"></a>00049 <span class="comment">*/</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d6/d31/Lzma2Dec_8h.html#a0d07d375f91c48c4daea6f2673f18970">Lzma2Dec_DecodeToDic</a>(<a class="code" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, <span class="keywordtype">size_t</span> dicLimit,
+<a name="l00052"></a>00052     <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, <span class="keywordtype">size_t</span> *srcLen, <a class="code" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a> finishMode, <a class="code" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *status);
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d6/d31/Lzma2Dec_8h.html#a15b49f0c361a8a92a863099478243a77">Lzma2Dec_DecodeToBuf</a>(<a class="code" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, <span class="keywordtype">size_t</span> *destLen,
+<a name="l00055"></a>00055     <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, <span class="keywordtype">size_t</span> *srcLen, <a class="code" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a> finishMode, <a class="code" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *status);
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 <span class="comment">/* ---------- One Call Interface ---------- */</span>
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="comment">/*</span>
+<a name="l00061"></a>00061 <span class="comment">finishMode:</span>
+<a name="l00062"></a>00062 <span class="comment">  It has meaning only if the decoding reaches output limit (*destLen).</span>
+<a name="l00063"></a>00063 <span class="comment">  LZMA_FINISH_ANY - use smallest number of input bytes</span>
+<a name="l00064"></a>00064 <span class="comment">  LZMA_FINISH_END - read EndOfStream marker after decoding</span>
+<a name="l00065"></a>00065 <span class="comment"></span>
+<a name="l00066"></a>00066 <span class="comment">Returns:</span>
+<a name="l00067"></a>00067 <span class="comment">  SZ_OK</span>
+<a name="l00068"></a>00068 <span class="comment">    status:</span>
+<a name="l00069"></a>00069 <span class="comment">      LZMA_STATUS_FINISHED_WITH_MARK</span>
+<a name="l00070"></a>00070 <span class="comment">      LZMA_STATUS_NOT_FINISHED</span>
+<a name="l00071"></a>00071 <span class="comment">  SZ_ERROR_DATA - Data error</span>
+<a name="l00072"></a>00072 <span class="comment">  SZ_ERROR_MEM  - Memory allocation error</span>
+<a name="l00073"></a>00073 <span class="comment">  SZ_ERROR_UNSUPPORTED - Unsupported properties</span>
+<a name="l00074"></a>00074 <span class="comment">  SZ_ERROR_INPUT_EOF - It needs more bytes in input buffer (src).</span>
+<a name="l00075"></a>00075 <span class="comment">*/</span>
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d6/d31/Lzma2Dec_8h.html#a2d8514bc9893c6bf0f7475ae37b91fc4">Lzma2Decode</a>(<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, <span class="keywordtype">size_t</span> *destLen, <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, <span class="keywordtype">size_t</span> *srcLen,
+<a name="l00078"></a>00078     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> prop, <a class="code" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a> finishMode, <a class="code" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *status, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc);
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00081"></a>00081 <span class="preprocessor"></span>}
+<a name="l00082"></a>00082 <span class="preprocessor">#endif</span>
+<a name="l00083"></a>00083 <span class="preprocessor"></span>
+<a name="l00084"></a>00084 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

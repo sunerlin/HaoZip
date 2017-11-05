@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCBZip2DecoderState类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html">RCBZip2DecoderState</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCBZip2DecoderState类参考</h1><!-- doxytag: class="RCZip::RCBZip2DecoderState" -->
+<p><code>#include &lt;<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCBZip2DecoderState合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../df/dea/classRCZip_1_1RCBZip2DecoderState__coll__graph.png" border="0" usemap="#RCZip_1_1RCBZip2DecoderState_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCBZip2DecoderState_coll__map" id="RCZip_1_1RCBZip2DecoderState_coll__map">
+<area shape="rect" id="node6" href="../../df/df9/classRCZip_1_1RCBZip2Decoder.html" title="{RCZip::RCBZip2Decoder\n|+ m_outStream\l+ m_mtPad\l+ m_inStream\l+ m_selectors\l+ m_huffmanDecoders\l+ m_inStart\l+ m_combinedCRC\l+ m_progress\l+ m_states\l+ m_numThreadsPrev\l+ m_canProcessEvent\l+ m_critSection\l+ m_numThreads\l+ m_isMtMode\l+ m_nextBlockIndex\l+ m_isCloseThreads\l+ m_streamWasFinished1\l+ m_streamWasFinished2\l+ m_canStartWaitingEvent\l+ m_result1\l+ m_result2\l+ m_blockSizeMax\l&#45; m_needInStreamInit\l&#45; m_isIszBZip2\l|+ RCBZip2Decoder()\l+ ~RCBZip2Decoder()\l+ SetRatioProgress()\l+ ReadSignatures()\l+ Flush()\l+ ReleaseStreams()\l+ SetInStream()\l+ ReleaseInStream()\l+ CodeResume()\l+ GetInputProcessedSize()\l+ Code()\l+ GetInStreamProcessedSize()\l+ SetCoderProperties()\l+ Create()\l+ Free()\l+ SetNumberOfThreads()\l+ ReadBits()\l+ ReadBit()\l+ ReadBlock()\l+ DecodeBlock1()\l+ DecodeBlock2()\l+ DecodeBlock2Rand()\l&#45; ReadBits()\l&#45; ReadByte()\l&#45; ReadBit()\l&#45; ReadCRC()\l&#45; DecodeFile()\l&#45; CodeReal()\l}" alt="" coords="1604,1875,1828,2685"/><area shape="rect" id="node2" href="../../d8/d42/classRCZip_1_1RCAutoResetEvent.html" title="{RCZip::RCAutoResetEvent\n||+ Create()\l+ CreateIfNotCreated()\l}" alt="" coords="212,1043,404,1135"/><area shape="rect" id="node4" href="../../da/d5b/classRCZip_1_1RCBaseEvent.html" title="{RCZip::RCBaseEvent\n|# m_object\l|+ RCBaseEvent()\l+ ~RCBaseEvent()\l+ IsCreated()\l+ operator HANDLE()\l+ Close()\l+ Set()\l+ Reset()\l+ Lock()\l}" alt="" coords="104,473,267,653"/><area shape="rect" id="node41" href="../../d6/d17/classRCZip_1_1RCManualResetEvent.html" title="{RCZip::RCManualResetEvent\n||+ Create()\l+ CreateIfNotCreated()\l}" alt="" coords="5,1337,216,1429"/><area shape="rect" id="node8" href="../../dc/daa/classRCZip_1_1IUnknownImpl5.html" title="{RCZip::IUnknownImpl5\&lt; ICompressCoder, ICompressGetInStreamProcessedSize, ICompressSetCoderMt, IBZip2ResumeDecoder, ICompressSetCoderProperties \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl5()\l}" alt="" coords="507,1586,1597,1707"/><area shape="rect" id="node10" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="1364,1021,1529,1157"/><area shape="rect" id="node12" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="1704,524,1880,601"/><area shape="rect" id="node30" href="../../d6/d3c/classRCZip_1_1RCMutex.html" title="{RCZip::RCMutex\n|&#45; m_impl\l|+ RCMutex()\l+ ~RCMutex()\l+ Lock()\l+ TryLock()\l+ UnLock()\l}" alt="" coords="1315,1315,1443,1451"/><area shape="rect" id="node33" href="../../d0/dfc/classRCZip_1_1RCOutBuffer.html" title="{RCZip::RCOutBuffer\n|# m_buffer\l# m_pos\l# m_limitPos\l# m_streamPos\l# m_bufferSize\l# m_spStream\l# m_processedSize\l# m_buffer2\l# m_overDict\l|+ RCOutBuffer()\l+ ~RCOutBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetMemStream()\l+ SetStream()\l+ Flush()\l+ FlushWithCheck()\l+ ReleaseStream()\l+ WriteByte()\l+ WriteBytes()\l+ GetProcessedSize()\l# FlushPart()\l}" alt="" coords="2293,897,2456,1282"/><area shape="rect" id="node49" href="../../d2/df2/classRCZip_1_1RCBitmDecoder.html" title="{RCZip::RCBitmDecoder\&lt; RCInBuffer \&gt;\n|&#45; m_bitPos\l&#45; m_value\l&#45; m_stream\l&#45; s_kNumBigValueBits\l&#45; s_kNumValueBytes\l&#45; s_kNumValueBits\l&#45; s_kMask\l|+ RCBitmDecoder()\l+ ~RCBitmDecoder()\l+ Create()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ GetProcessedSize()\l+ Normalize()\l+ GetValue()\l+ MovePos()\l+ ReadBits()\l+ AlignToByte()\l}" alt="" coords="1952,1483,2227,1810"/><area shape="rect" id="node52" href="../../d8/de1/classRCZip_1_1RCInBuffer.html" title="{RCZip::RCInBuffer\n|&#45; m_buffer\l&#45; m_bufferLimit\l&#45; m_bufferBase\l&#45; m_spStream\l&#45; m_processedSize\l&#45; m_bufferSize\l&#45; m_wasFinished\l|+ RCInBuffer()\l+ ~RCInBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetStream()\l+ ReleaseStream()\l+ ReadByte()\l+ ReadByte()\l+ ReadBytes()\l+ GetProcessedSize()\l+ WasFinished()\l&#45; ReadBlock()\l&#45; ReadBlock2()\l}" alt="" coords="2107,911,2269,1267"/><area shape="rect" id="node60" href="../../dd/df6/classRCZip_1_1RCHuffmanDecoder.html" title="{RCZip::RCHuffmanDecoder\&lt; RCBZip2Defs::s_kMaxHuffmanLen, RCBZip2Defs::s_kMaxAlphaSize \&gt;\n|+ s_kNumTableBits\l&#45; m_limits\l&#45; m_positions\l&#45; m_symbols\l&#45; m_lengths\l|+ SetCodeLengths()\l+ DecodeSymbol()\l}" alt="" coords="1449,1307,2124,1458"/><area shape="rect" id="node14" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html" title="{RCZip::ICompressCoder\n||+ Code()\l# ~ICompressCoder()\l}" alt="" coords="1151,297,1329,389"/><area shape="rect" id="node16" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="1320,6,1467,127"/><area shape="rect" id="node18" href="../../d7/db9/classRCZip_1_1ICompressGetInStreamProcessedSize.html" title="{RCZip::ICompressGetInStreamProcessedSize\n||+ GetInStreamProcessedSize()\l# ~ICompressGetInStreamProcessedSize()\l}" alt="" coords="1072,758,1389,850"/><area shape="rect" id="node21" href="../../d0/d39/classRCZip_1_1ICompressSetCoderMt.html" title="{RCZip::ICompressSetCoderMt\n||+ SetNumberOfThreads()\l# ~ICompressSetCoderMt()\l}" alt="" coords="1369,297,1585,389"/><area shape="rect" id="node24" href="../../da/dc5/classRCZip_1_1IBZip2ResumeDecoder.html" title="{RCZip::IBZip2ResumeDecoder\n||+ SetInStream()\l+ ReleaseInStream()\l+ CodeResume()\l+ GetInputProcessedSize()\l# ~IBZip2ResumeDecoder()\l}" alt="" coords="748,736,969,872"/><area shape="rect" id="node27" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html" title="{RCZip::ICompressSetCoderProperties\n||+ SetCoderProperties()\l# ~ICompressSetCoderProperties()\l}" alt="" coords="877,297,1144,389"/><area shape="rect" id="node38" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="2015,179,2231,271"/><area shape="rect" id="node44" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html" title="{RCZip::ICompressProgressInfo\n||+ SetRatioInfo()\l# ~ICompressProgressInfo()\l}" alt="" coords="2544,1337,2765,1429"/><area shape="rect" id="node57" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="1595,179,1800,271"/><area shape="rect" id="node36" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="2209,414,2476,711"/><area shape="rect" id="node47" href="../../db/d1c/classRCZip_1_1RCBZip2CombinedCRC.html" title="{RCZip::RCBZip2CombinedCRC\n|&#45; m_value\l|+ RCBZip2CombinedCRC()\l+ ~RCBZip2CombinedCRC()\l+ Init()\l+ Update()\l+ GetDigest()\l}" alt="" coords="2251,1579,2472,1715"/><area shape="rect" id="node55" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="1923,414,2176,711"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d1/d59/classRCZip_1_1RCBZip2DecoderState-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a48512e6878ff28c086a297e2ee75e9c9">RCBZip2DecoderState</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a56c5e914daa838a2aa7b2ef16e95791f">~RCBZip2DecoderState</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a511e98baf70a0049904701fddd06c0f9">Alloc</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#aace45b0f10504dd43be0d557e1cb6b7b">Free</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a9151bb510b2e044f676af59d0b69b444">Create</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#abf9613ae2fb344926e6392c1fab43f9d">FinishStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#ad0abb0df8975a023fd7d4eb346fb3c0a">ThreadFunc</a> ()</td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a58abdd322e5872ef93b0f0ff49e8e1f9">m_counters</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/df9/classRCZip_1_1RCBZip2Decoder.html">RCBZip2Decoder</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a76e1447dacc93a10f143d48ad2ebf45b">m_decoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a6761cb3bae3a2925a639734023556020">RCThreadPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a0c42e9dac8acedd7708e31f64b9d496c">m_spThread</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a8cab4450939840419a2c850681c9a53a">m_optimizeNumTables</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d42/classRCZip_1_1RCAutoResetEvent.html">RCAutoResetEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#afbfd934ef1ba7d346c418921b53108e9">m_streamWasFinishedEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d42/classRCZip_1_1RCAutoResetEvent.html">RCAutoResetEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#aa28a3f4a31589cca50137e0f9b2d9dea">m_waitingWasStartedEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d42/classRCZip_1_1RCAutoResetEvent.html">RCAutoResetEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a59a0f1b2499caae1d20f1e31b3ae9bd1">m_canWriteEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#af417f1ed877e7e05c65af2efc5aaa345">m_mtPad</a> [1&lt;&lt; 8]</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>BZip2解码状态 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00024">24</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a48512e6878ff28c086a297e2ee75e9c9"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::RCBZip2DecoderState" ref="a48512e6878ff28c086a297e2ee75e9c9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCBZip2DecoderState::RCBZip2DecoderState </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a56c5e914daa838a2aa7b2ef16e95791f"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::~RCBZip2DecoderState" ref="a56c5e914daa838a2aa7b2ef16e95791f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCBZip2DecoderState::~RCBZip2DecoderState </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a511e98baf70a0049904701fddd06c0f9"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::Alloc" ref="a511e98baf70a0049904701fddd06c0f9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCBZip2DecoderState::Alloc </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>内存申请 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9151bb510b2e044f676af59d0b69b444"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::Create" ref="a9151bb510b2e044f676af59d0b69b444" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCBZip2DecoderState::Create </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abf9613ae2fb344926e6392c1fab43f9d"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::FinishStream" ref="abf9613ae2fb344926e6392c1fab43f9d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCBZip2DecoderState::FinishStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>完成 </p>
+
+</div>
+</div>
+<a class="anchor" id="aace45b0f10504dd43be0d557e1cb6b7b"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::Free" ref="aace45b0f10504dd43be0d557e1cb6b7b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCBZip2DecoderState::Free </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>内存是否 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0abb0df8975a023fd7d4eb346fb3c0a"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::ThreadFunc" ref="ad0abb0df8975a023fd7d4eb346fb3c0a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCBZip2DecoderState::ThreadFunc </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>线程函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a59a0f1b2499caae1d20f1e31b3ae9bd1"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_canWriteEvent" ref="a59a0f1b2499caae1d20f1e31b3ae9bd1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d42/classRCZip_1_1RCAutoResetEvent.html">RCAutoResetEvent</a> <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a59a0f1b2499caae1d20f1e31b3ae9bd1">RCZip::RCBZip2DecoderState::m_canWriteEvent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>同步事件 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a58abdd322e5872ef93b0f0ff49e8e1f9"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_counters" ref="a58abdd322e5872ef93b0f0ff49e8e1f9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>* <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a58abdd322e5872ef93b0f0ff49e8e1f9">RCZip::RCBZip2DecoderState::m_counters</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>计数 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00051">51</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a76e1447dacc93a10f143d48ad2ebf45b"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_decoder" ref="a76e1447dacc93a10f143d48ad2ebf45b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/df9/classRCZip_1_1RCBZip2Decoder.html">RCBZip2Decoder</a>* <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a76e1447dacc93a10f143d48ad2ebf45b">RCZip::RCBZip2DecoderState::m_decoder</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码器指针 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00059">59</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af417f1ed877e7e05c65af2efc5aaa345"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_mtPad" ref="af417f1ed877e7e05c65af2efc5aaa345" args="[1&lt;&lt; 8]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#af417f1ed877e7e05c65af2efc5aaa345">RCZip::RCBZip2DecoderState::m_mtPad</a>[1&lt;&lt; 8]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>mt Pad </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00083">83</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cab4450939840419a2c850681c9a53a"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_optimizeNumTables" ref="a8cab4450939840419a2c850681c9a53a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a8cab4450939840419a2c850681c9a53a">RCZip::RCBZip2DecoderState::m_optimizeNumTables</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否表优化 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00067">67</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c42e9dac8acedd7708e31f64b9d496c"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_spThread" ref="a0c42e9dac8acedd7708e31f64b9d496c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a6761cb3bae3a2925a639734023556020">RCThreadPtr</a> <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#a0c42e9dac8acedd7708e31f64b9d496c">RCZip::RCBZip2DecoderState::m_spThread</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>线程指针 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00063">63</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afbfd934ef1ba7d346c418921b53108e9"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_streamWasFinishedEvent" ref="afbfd934ef1ba7d346c418921b53108e9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d42/classRCZip_1_1RCAutoResetEvent.html">RCAutoResetEvent</a> <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#afbfd934ef1ba7d346c418921b53108e9">RCZip::RCBZip2DecoderState::m_streamWasFinishedEvent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>同步事件 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00071">71</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa28a3f4a31589cca50137e0f9b2d9dea"></a><!-- doxytag: member="RCZip::RCBZip2DecoderState::m_waitingWasStartedEvent" ref="aa28a3f4a31589cca50137e0f9b2d9dea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d42/classRCZip_1_1RCAutoResetEvent.html">RCAutoResetEvent</a> <a class="el" href="../../de/dbb/classRCZip_1_1RCBZip2DecoderState.html#aa28a3f4a31589cca50137e0f9b2d9dea">RCZip::RCBZip2DecoderState::m_waitingWasStartedEvent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>同步事件 </p>
+
+<p>在文件<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a>第<a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html#l00075">75</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d4/dc5/RCBZip2DecoderState_8h_source.html">RCBZip2DecoderState.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

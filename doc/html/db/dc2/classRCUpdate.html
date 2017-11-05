@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdate类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdate类参考</h1><!-- doxytag: class="RCUpdate" -->
+<p><code>#include &lt;<a class="el" href="../../db/d50/RCUpdate_8h_source.html">RCUpdate.h</a>&gt;</code></p>
+
+<p><a href="../../df/d4f/classRCUpdate-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#acac96d834e62104e772f9027a78627bc">UpdateArchive</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;codecs, const <a class="el" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a> &amp;censor, <a class="el" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a> &amp;options, <a class="el" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a> &amp;errorInfo, <a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *openCallback, <a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html">RCUpdateCallbackUI2</a> *callback)</td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#a05f6255f5bd029cd5b5c140b8b59fdcb">UpdateWithItemLists</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;codecs, <a class="el" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a> &amp;options, IInArchive *archive, const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;arcItems, <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems, <a class="el" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a> &amp;tempFiles, <a class="el" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a> &amp;errorInfo, <a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html">RCUpdateCallbackUI2</a> *callback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#ad65634c23374e032bb6cf9b9e3770549">EnumerateInArchiveItems</a> (const <a class="el" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a> &amp;censor, IInArchive *archive, const RCString &amp;defaultItemName, RCFileInfo &amp;archiveFileInfo, RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;arcItems)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#a2004090ae326040e060b839dbfed0146">Compress</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;codecs, const <a class="el" href="../../d1/dad/classRCActionSet.html">RCActionSet</a> &amp;actionSet, IInArchive *archive, const <a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a> &amp;compressionMethod, <a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a> &amp;archivePath, const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;arcItems, bool shareForWrite, bool stdInMode, bool stdOutMode, bool isTestMode, const <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems, bool sfxMode, const RCString &amp;sfxModule, const RCVector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt; &amp;volumesSizes, <a class="el" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a> &amp;tempFiles, <a class="el" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a> &amp;errorInfo, <a class="el" href="../../da/d10/classRCUpdateCallbackUI.html">RCUpdateCallbackUI</a> *callback, <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> pathMode, IOutStreamEvent *outStreamEvent, const <a class="el" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a> &amp;options)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#adda0a7a5443870c2ccae9e5a83ecba34">CopyBlock</a> (ISequentialInStream *inStream, ISequentialOutStream *outStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#a8b87207785202f397f9d5b168234f6a9">CompareArchiveItemFileTime</a> (const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;arcItems, size_t arcItemIndex, const RC_FILE_TIME &amp;mTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#a016d385fee2cb01afc384bcb104d57c4">FilterDirItems</a> (const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;arcItems, <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems, bool deleteNoneExists)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classRCUpdate.html#af946d34aeb8f957314da6a496b16b670">FilterArcItems</a> (RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;arcItems, const <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>更新流程封装 </p>
+
+<p>在文件<a class="el" href="../../db/d50/RCUpdate_8h_source.html">RCUpdate.h</a>第<a class="el" href="../../db/d50/RCUpdate_8h_source.html#l00037">37</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a8b87207785202f397f9d5b168234f6a9"></a><!-- doxytag: member="RCUpdate::CompareArchiveItemFileTime" ref="a8b87207785202f397f9d5b168234f6a9" args="(const RCVector&lt; RCArcItem &gt; &amp;arcItems, size_t arcItemIndex, const RC_FILE_TIME &amp;mTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCUpdate::CompareArchiveItemFileTime </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>arcItemIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC_FILE_TIME &amp;&nbsp;</td>
+          <td class="paramname"> <em>mTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcItems</em>&nbsp;</td><td>包内项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcItemIndex</em>&nbsp;</td><td>项目编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>mTime</em>&nbsp;</td><td>修改时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>= 0, 相等 &lt; 0, 包内 &lt; mTime &gt; 0, 包内 &gt; mTime </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2004090ae326040e060b839dbfed0146"></a><!-- doxytag: member="RCUpdate::Compress" ref="a2004090ae326040e060b839dbfed0146" args="(const RCArchiveCodecsPtr &amp;codecs, const RCActionSet &amp;actionSet, IInArchive *archive, const RCCompressMethodMode &amp;compressionMethod, RCArchivePath &amp;archivePath, const RCVector&lt; RCArcItem &gt; &amp;arcItems, bool shareForWrite, bool stdInMode, bool stdOutMode, bool isTestMode, const RCDirItems &amp;dirItems, bool sfxMode, const RCString &amp;sfxModule, const RCVector&lt; uint64_t &gt; &amp;volumesSizes, RCTempFiles &amp;tempFiles, RCUpdateErrorInfo &amp;errorInfo, RCUpdateCallbackUI *callback, RCUpdateOptions::path_mode pathMode, IOutStreamEvent *outStreamEvent, const RCUpdateOptions &amp;options)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdate::Compress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>codecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d1/dad/classRCActionSet.html">RCActionSet</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>actionSet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>compressionMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archivePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>shareForWrite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>stdInMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>stdOutMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isTestMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>sfxMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>sfxModule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>volumesSizes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tempFiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d10/classRCUpdateCallbackUI.html">RCUpdateCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a>&nbsp;</td>
+          <td class="paramname"> <em>pathMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IOutStreamEvent *&nbsp;</td>
+          <td class="paramname"> <em>outStreamEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>options</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecs</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>actionSet</em>&nbsp;</td><td>更新方式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>compressionMethod</em>&nbsp;</td><td>压缩模式 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archivePath</em>&nbsp;</td><td>文档路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcItems</em>&nbsp;</td><td>包内项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shareForWrite</em>&nbsp;</td><td>共享写 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stdInMode</em>&nbsp;</td><td>标准输入模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stdOutMode</em>&nbsp;</td><td>标准输出模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isTestMode</em>&nbsp;</td><td>测试模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>更新项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sfxMode</em>&nbsp;</td><td>自解压模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sfxModule</em>&nbsp;</td><td>自解压模块文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>volumesSizes</em>&nbsp;</td><td>分卷大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>tempFiles</em>&nbsp;</td><td>临时文件 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorInfo</em>&nbsp;</td><td>错误信息 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>callback</em>&nbsp;</td><td>界面回调接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>pathMode</em>&nbsp;</td><td>路径保存模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStreamEvent</em>&nbsp;</td><td>输出流事件接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>options</em>&nbsp;</td><td>更新参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adda0a7a5443870c2ccae9e5a83ecba34"></a><!-- doxytag: member="RCUpdate::CopyBlock" ref="adda0a7a5443870c2ccae9e5a83ecba34" args="(ISequentialInStream *inStream, ISequentialOutStream *outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdate::CopyBlock </td>
+          <td>(</td>
+          <td class="paramtype">ISequentialInStream *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ISequentialOutStream *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>复制数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad65634c23374e032bb6cf9b9e3770549"></a><!-- doxytag: member="RCUpdate::EnumerateInArchiveItems" ref="ad65634c23374e032bb6cf9b9e3770549" args="(const RCWildcardCensor &amp;censor, IInArchive *archive, const RCString &amp;defaultItemName, RCFileInfo &amp;archiveFileInfo, RCVector&lt; RCArcItem &gt; &amp;arcItems)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdate::EnumerateInArchiveItems </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>censor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultItemName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCFileInfo &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveFileInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcItems</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取输入文档中的内容 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>censor</em>&nbsp;</td><td>通配符匹配 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>defaultItemName</em>&nbsp;</td><td>缺省文件名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archiveFileInfo</em>&nbsp;</td><td>文档信息 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>arcItems</em>&nbsp;</td><td>包内项列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af946d34aeb8f957314da6a496b16b670"></a><!-- doxytag: member="RCUpdate::FilterArcItems" ref="af946d34aeb8f957314da6a496b16b670" args="(RCVector&lt; RCArcItem &gt; &amp;arcItems, const RCDirItems &amp;dirItems)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCUpdate::FilterArcItems </td>
+          <td>(</td>
+          <td class="paramtype">RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查已经存在文档中的文件，进行过滤 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcItems</em>&nbsp;</td><td>包内项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>更新项列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a016d385fee2cb01afc384bcb104d57c4"></a><!-- doxytag: member="RCUpdate::FilterDirItems" ref="a016d385fee2cb01afc384bcb104d57c4" args="(const RCVector&lt; RCArcItem &gt; &amp;arcItems, RCDirItems &amp;dirItems, bool deleteNoneExists)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCUpdate::FilterDirItems </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>deleteNoneExists</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查需要更新的新文件，进行过滤 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcItems</em>&nbsp;</td><td>包内项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>更新项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>deleteNoneExists</em>&nbsp;</td><td>删除不存在 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acac96d834e62104e772f9027a78627bc"></a><!-- doxytag: member="RCUpdate::UpdateArchive" ref="acac96d834e62104e772f9027a78627bc" args="(const RCArchiveCodecsPtr &amp;codecs, const RCWildcardCensor &amp;censor, RCUpdateOptions &amp;options, RCUpdateErrorInfo &amp;errorInfo, IOpenCallbackUI *openCallback, RCUpdateCallbackUI2 *callback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdate::UpdateArchive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>codecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>censor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>openCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html">RCUpdateCallbackUI2</a> *&nbsp;</td>
+          <td class="paramname"> <em>callback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecs</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>censor</em>&nbsp;</td><td>通配符匹配 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>options</em>&nbsp;</td><td>更新参数 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorInfo</em>&nbsp;</td><td>错误信息 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openCallback</em>&nbsp;</td><td>打开回调接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>callback</em>&nbsp;</td><td>界面回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a05f6255f5bd029cd5b5c140b8b59fdcb"></a><!-- doxytag: member="RCUpdate::UpdateWithItemLists" ref="a05f6255f5bd029cd5b5c140b8b59fdcb" args="(const RCArchiveCodecsPtr &amp;codecs, RCUpdateOptions &amp;options, IInArchive *archive, const RCVector&lt; RCArcItem &gt; &amp;arcItems, RCDirItems &amp;dirItems, RCTempFiles &amp;tempFiles, RCUpdateErrorInfo &amp;errorInfo, RCUpdateCallbackUI2 *callback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdate::UpdateWithItemLists </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>codecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>tempFiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html">RCUpdateCallbackUI2</a> *&nbsp;</td>
+          <td class="paramname"> <em>callback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新压缩文件数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecs</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>options</em>&nbsp;</td><td>更新参数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcItems</em>&nbsp;</td><td>包内文件列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>更新项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>tempFiles</em>&nbsp;</td><td>临时文件 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorInfo</em>&nbsp;</td><td>错误信息 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>callback</em>&nbsp;</td><td>更新回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../db/d50/RCUpdate_8h_source.html">RCUpdate.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCExtractOptions.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_183b565066f413a8a0c98662678658d2.html">extract</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCExtractOptions.h</h1><a href="../../d0/d3c/RCExtractOptions_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCExtractOptions_h_</span>
+<a name="l00011"></a><a class="code" href="../../d0/d3c/RCExtractOptions_8h.html#af1cddf7f4bb8770b4d7ae22a6a31a6bd">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCExtractOptions_h_  1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/d51/RCTypes_8h.html">base/RCTypes.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/RCExtractDefs_8h.html">archive/extract/RCExtractDefs.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/df2/RCArchiveProperty_8h.html">archive/common/RCArchiveProperty.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/d53/RCVector_8h.html">common/RCVector.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d90/RCFileInfo_8h.html">filesystem/RCFileInfo.h</a>&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00020"></a>00020 <span class="comment"></span>
+<a name="l00021"></a>00021 <span class="comment">/** 解压选线参数</span>
+<a name="l00022"></a>00022 <span class="comment">*/</span>
+<a name="l00023"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html">00023</a> <span class="keyword">class </span><a class="code" href="../../d7/d4b/classRCExtractOptions.html">RCExtractOptions</a>
+<a name="l00024"></a>00024 {
+<a name="l00025"></a>00025 <span class="keyword">public</span>:
+<a name="l00026"></a>00026     <span class="comment"></span>
+<a name="l00027"></a>00027 <span class="comment">    /** 构造函数</span>
+<a name="l00028"></a>00028 <span class="comment">    */</span>
+<a name="l00029"></a>00029     <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a79002861f9f16ed5264ce05ee7638e29">RCExtractOptions</a>() ;
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="keyword">public</span>:
+<a name="l00032"></a>00032     <span class="comment"></span>
+<a name="l00033"></a>00033 <span class="comment">    /** 是否为标准控制台输出模式</span>
+<a name="l00034"></a>00034 <span class="comment">    */</span>
+<a name="l00035"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a082b1a1c0b4b84f16f890ad6a4b19440">00035</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a082b1a1c0b4b84f16f890ad6a4b19440">m_isStdOutMode</a>;
+<a name="l00036"></a>00036     <span class="comment"></span>
+<a name="l00037"></a>00037 <span class="comment">    /** 测试模式</span>
+<a name="l00038"></a>00038 <span class="comment">    */</span>
+<a name="l00039"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a471e7c7e4a3c7b7e365ae6577ab44e0a">00039</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a471e7c7e4a3c7b7e365ae6577ab44e0a">m_isTestMode</a> ;
+<a name="l00040"></a>00040     <span class="comment"></span>
+<a name="l00041"></a>00041 <span class="comment">    /** 对所有提示已确认回答</span>
+<a name="l00042"></a>00042 <span class="comment">    */</span>
+<a name="l00043"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#aebccd6e7390e159ff747189a09d5f97c">00043</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#aebccd6e7390e159ff747189a09d5f97c">m_isYesToAll</a> ;
+<a name="l00044"></a>00044     <span class="comment"></span>
+<a name="l00045"></a>00045 <span class="comment">    /** 更新方式</span>
+<a name="l00046"></a>00046 <span class="comment">    */</span>
+<a name="l00047"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a212c6c308afc9055b6a7235a8136f85d">00047</a>     <a class="code" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a212c6c308afc9055b6a7235a8136f85d">m_updateMode</a> ;
+<a name="l00048"></a>00048     <span class="comment"></span>
+<a name="l00049"></a>00049 <span class="comment">    /** 路径处理模式</span>
+<a name="l00050"></a>00050 <span class="comment">    */</span>
+<a name="l00051"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a7e6d45a1c23c0551794d08e27d3695e9">00051</a>     <a class="code" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a7e6d45a1c23c0551794d08e27d3695e9">m_pathMode</a> ;
+<a name="l00052"></a>00052     <span class="comment"></span>
+<a name="l00053"></a>00053 <span class="comment">    /** 覆盖文件处理模式</span>
+<a name="l00054"></a>00054 <span class="comment">    */</span>
+<a name="l00055"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a6e241b65ed24e89e4a7baa26edc38e56">00055</a>     <a class="code" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a6e241b65ed24e89e4a7baa26edc38e56">m_overwriteMode</a> ;
+<a name="l00056"></a>00056     <span class="comment"></span>
+<a name="l00057"></a>00057 <span class="comment">    /** 是否保留损坏文件</span>
+<a name="l00058"></a>00058 <span class="comment">    */</span>
+<a name="l00059"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a3e1f66a246703b4597ac94c726a37082">00059</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a3e1f66a246703b4597ac94c726a37082">m_keepDamageFiles</a> ;
+<a name="l00060"></a>00060 <span class="comment"></span>
+<a name="l00061"></a>00061 <span class="comment">    /** 文档文件信息</span>
+<a name="l00062"></a>00062 <span class="comment">    */</span>
+<a name="l00063"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a30db91868b3bce6e1cb4451b7b98d18e">00063</a>     RCFileInfo <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a30db91868b3bce6e1cb4451b7b98d18e">m_archiveFileInfo</a> ;
+<a name="l00064"></a>00064 <span class="comment"></span>
+<a name="l00065"></a>00065 <span class="comment">    /** 输出路径</span>
+<a name="l00066"></a>00066 <span class="comment">    */</span>
+<a name="l00067"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a35ab200b0522f2d22d38a4bca362e752">00067</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a35ab200b0522f2d22d38a4bca362e752">m_outputDir</a> ;
+<a name="l00068"></a>00068     <span class="comment"></span>
+<a name="l00069"></a>00069 <span class="comment">    /** 默认压缩文件名</span>
+<a name="l00070"></a>00070 <span class="comment">    */</span>
+<a name="l00071"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#aeba8b436da3156f15ca275fef907875b">00071</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#aeba8b436da3156f15ca275fef907875b">m_defaultItemName</a> ;
+<a name="l00072"></a>00072     <span class="comment"></span>
+<a name="l00073"></a>00073 <span class="comment">    /** 解压属性</span>
+<a name="l00074"></a>00074 <span class="comment">    */</span>
+<a name="l00075"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a9670303fcbf2aa12c4b08c3550a16a16">00075</a>     RCVector&lt;RCArchiveProperty&gt; <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a9670303fcbf2aa12c4b08c3550a16a16">m_properties</a> ;
+<a name="l00076"></a>00076     <span class="comment"></span>
+<a name="l00077"></a>00077 <span class="comment">    /** 解压到子目录</span>
+<a name="l00078"></a>00078 <span class="comment">    */</span>
+<a name="l00079"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#acd9b9fb45aa3564e0dd4f57121448905">00079</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#acd9b9fb45aa3564e0dd4f57121448905">m_extractToSubDir</a>;
+<a name="l00080"></a>00080 <span class="comment"></span>
+<a name="l00081"></a>00081 <span class="comment">    /** 重复多余目录移除功能</span>
+<a name="l00082"></a>00082 <span class="comment">    */</span>
+<a name="l00083"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a1220b77563aa954d45b13b0225b2fd2d">00083</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a1220b77563aa954d45b13b0225b2fd2d">m_removeSameRoot</a>;
+<a name="l00084"></a>00084     <span class="comment"></span>
+<a name="l00085"></a>00085 <span class="comment">    /** 解压文件时间属性标记</span>
+<a name="l00086"></a>00086 <span class="comment">    */</span>
+<a name="l00087"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a9f4b13a516dcaa2de4e9dea31c16cb9b">00087</a>     <a class="code" href="../../d3/d8b/RCExtractDefs_8h.html#a748f3f3f98670fd9b27b7e744365bae9">RCExractFileTimeFlag</a> <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a9f4b13a516dcaa2de4e9dea31c16cb9b">m_fileTimeFlag</a> ;
+<a name="l00088"></a>00088 <span class="comment"></span>
+<a name="l00089"></a>00089 <span class="comment">    /** 需要移除的目录</span>
+<a name="l00090"></a>00090 <span class="comment">    */</span>
+<a name="l00091"></a><a class="code" href="../../d7/d4b/classRCExtractOptions.html#a122106a35f824cfd9c89b5e551d583ef">00091</a>     RCVector&lt;RCString&gt; <a class="code" href="../../d7/d4b/classRCExtractOptions.html#a122106a35f824cfd9c89b5e551d583ef">m_setRemovePathList</a>;
+<a name="l00092"></a>00092 };
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 <span class="preprocessor">#endif //__RCExtractOptions_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

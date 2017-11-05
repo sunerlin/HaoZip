@@ -1,0 +1,819 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCZipOut类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html">RCZipOut</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCZipOut类参考</h1><!-- doxytag: class="RCZip::RCZipOut" -->
+<p><code>#include &lt;<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCZipOut合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../de/d8d/classRCZip_1_1RCZipOut__coll__graph.png" border="0" usemap="#RCZip_1_1RCZipOut_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCZipOut_coll__map" id="RCZip_1_1RCZipOut_coll__map">
+<area shape="rect" id="node2" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IMultiVolStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="5,809,229,1106"/><area shape="rect" id="node4" href="../../d7/d25/classRCZip_1_1IMultiVolStream.html" title="{RCZip::IMultiVolStream\n||+ GetCurVolIndex()\l+ GetCurVolFreeByte()\l+ GetCurVolPosition()\l+ CheckDataAcrossVol()\l+ ForceStartNextVol()\l+ GetVolumeCount()\l# ~IMultiVolStream()\l}" alt="" coords="39,296,223,461"/><area shape="rect" id="node6" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="104,6,251,127"/><area shape="rect" id="node14" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="172,179,388,271"/><area shape="rect" id="node8" href="../../d0/dfc/classRCZip_1_1RCOutBuffer.html" title="{RCZip::RCOutBuffer\n|# m_buffer\l# m_pos\l# m_limitPos\l# m_streamPos\l# m_bufferSize\l# m_spStream\l# m_processedSize\l# m_buffer2\l# m_overDict\l|+ RCOutBuffer()\l+ ~RCOutBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetMemStream()\l+ SetStream()\l+ Flush()\l+ FlushWithCheck()\l+ ReleaseStream()\l+ WriteByte()\l+ WriteBytes()\l+ GetProcessedSize()\l# FlushPart()\l}" alt="" coords="449,1131,612,1517"/><area shape="rect" id="node10" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="668,596,844,673"/><area shape="rect" id="node12" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="377,486,644,783"/><area shape="rect" id="node19" href="../../d4/dad/classRCZip_1_1IOutStream.html" title="{RCZip::IOutStream\n||+ Seek()\l+ SetSize()\l# ~IOutStream()\l}" alt="" coords="207,581,353,688"/><area shape="rect" id="node17" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="231,1175,425,1473"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../db/d60/classRCZip_1_1RCZipOut-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a971276244e300318da3960ebaf0b3956">~RCZipOut</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#ad1ef576054f348ac2d5a1d41a7978958">Create</a> (<a class="el" href="../../d4/dad/classRCZip_1_1IOutStream.html">IOutStream</a> *outStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a176af5572c2a8882f6d35a01c1f7c86c">MoveBasePosition</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> distanceToMove)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a7c03b70c542200fabe5e912ea6d371fa">GetCurrentPosition</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a7e0104a0303d2e40bb90901340f90730">PrepareWriteCompressedDataZip64</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> fileNameLength, bool isZip64, bool aesEncryption)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a94e7a19f8f6b7d881199fedabc24a3b8">PrepareWriteCompressedData</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> fileNameLength, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> unPackSize, bool aesEncryption)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a2b4a24a8dd9e882257bedf658c9318f3">PrepareWriteCompressedData2</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> fileNameLength, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> unPackSize, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> packSize, bool aesEncryption)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#aa20b94ae6fce34f48d615480375622bb">WriteLocalHeader</a> (RCZipItem &amp;item)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a6b943ce7c3b34d15621b2b5b5587e454">WriteCentralDir</a> (const std::vector&lt; RCZipItemPtr &gt; &amp;items, const <a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;comment)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a95bdd7d53430f86dbda1f565fdc69fd4">CreateStreamForCompressing</a> (<a class="el" href="../../d4/dad/classRCZip_1_1IOutStream.html">IOutStream</a> **outStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#ac5bd5b92cd499a9c44d2a7fce4b29c23">CreateStreamForCopying</a> (<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> **outStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a8b8f5d583fd7c33ef5e5d10cfcf6567d">SeekToPackedDataPosition</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#aa49ac54fc2a5297f5296f9499d8be798">WriteSignleVolumeSignature</a> ()</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#ac7cdc9e14b9dd03be9b333c316bcf1db">WriteBytes</a> (const void *buffer, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a134e09db22a27aba28c456c27e8e64ec">WriteByte</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#ac2380a1ab0dff09e80cbe76c1dc1b7d0">WriteUInt16</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#af537a59f6b99ba2f16a8eb8aa650d777">WriteUInt32</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#afaedecd82739f52daddd2da36e371f53">WriteUInt64</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#ab95672abec70a3375bd5271b1bb84b45">WriteCentralHeader</a> (const RCZipItemPtr &amp;item)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#accadc5ffdd770477ff5a6bee05fea0a6">WriteExtra</a> (const RCZipExtraBlock &amp;extra)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a59c81044802103fb060a549ecf650af2">SeekTo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> offset)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a27857cb2bcb1f4524a9d0b9a69776943">GetCentralHeaderSize</a> (const RCZipItemPtr &amp;item)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IOutStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a486ffcee04125252369b4061cff142c9">m_stream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dfc/classRCZip_1_1RCOutBuffer.html">RCOutBuffer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a5b09ece9b7eaa69a1d4d019e1fe4f31a">m_outBuffer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a3b09b57416db2cbc6149e085faa71579">m_basePosition</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a2f4b0965df63c06066b22e82ae48457e">m_localFileHeaderSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a3420fa9e3e40083204f82b90488a967e">m_extraSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a488892cba4e75232b2fc7847d5b6838c">m_isZip64</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a968ec0541d9c1af17b9790798b97b402">m_isSplit</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IMultiVolStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a3bb7802f19ffebfe317f1681e05b8ed4">m_multiVolStream</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a971276244e300318da3960ebaf0b3956"></a><!-- doxytag: member="RCZip::RCZipOut::~RCZipOut" ref="a971276244e300318da3960ebaf0b3956" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCZipOut::~RCZipOut </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ad1ef576054f348ac2d5a1d41a7978958"></a><!-- doxytag: member="RCZip::RCZipOut::Create" ref="ad1ef576054f348ac2d5a1d41a7978958" args="(IOutStream *outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/dad/classRCZip_1_1IOutStream.html">IOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a95bdd7d53430f86dbda1f565fdc69fd4"></a><!-- doxytag: member="RCZip::RCZipOut::CreateStreamForCompressing" ref="a95bdd7d53430f86dbda1f565fdc69fd4" args="(IOutStream **outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::CreateStreamForCompressing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/dad/classRCZip_1_1IOutStream.html">IOutStream</a> **&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>为压缩创建流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5bd5b92cd499a9c44d2a7fce4b29c23"></a><!-- doxytag: member="RCZip::RCZipOut::CreateStreamForCopying" ref="ac5bd5b92cd499a9c44d2a7fce4b29c23" args="(ISequentialOutStream **outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::CreateStreamForCopying </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> **&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>为拷贝创建流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a27857cb2bcb1f4524a9d0b9a69776943"></a><!-- doxytag: member="RCZip::RCZipOut::GetCentralHeaderSize" ref="a27857cb2bcb1f4524a9d0b9a69776943" args="(const RCZipItemPtr &amp;item)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCZipOut::GetCentralHeaderSize </td>
+          <td>(</td>
+          <td class="paramtype">const RCZipItemPtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>item</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取主头写入磁盘的大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>item</em>&nbsp;</td><td>item信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c03b70c542200fabe5e912ea6d371fa"></a><!-- doxytag: member="RCZip::RCZipOut::GetCurrentPosition" ref="a7c03b70c542200fabe5e912ea6d371fa" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCZipOut::GetCurrentPosition </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取当前位置 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回当前位置 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a176af5572c2a8882f6d35a01c1f7c86c"></a><!-- doxytag: member="RCZip::RCZipOut::MoveBasePosition" ref="a176af5572c2a8882f6d35a01c1f7c86c" args="(uint64_t distanceToMove)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::MoveBasePosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>distanceToMove</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>移动起始位置 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>distanceToMove</em>&nbsp;</td><td>移动大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a94e7a19f8f6b7d881199fedabc24a3b8"></a><!-- doxytag: member="RCZip::RCZipOut::PrepareWriteCompressedData" ref="a94e7a19f8f6b7d881199fedabc24a3b8" args="(uint16_t fileNameLength, uint64_t unPackSize, bool aesEncryption)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::PrepareWriteCompressedData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td>
+          <td class="paramname"> <em>fileNameLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>unPackSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>aesEncryption</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>准备写压缩数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileNameLength</em>&nbsp;</td><td>文件名长度 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>unPackSize</em>&nbsp;</td><td>解压大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>aesEncryption</em>&nbsp;</td><td>是否是aes加密 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b4a24a8dd9e882257bedf658c9318f3"></a><!-- doxytag: member="RCZip::RCZipOut::PrepareWriteCompressedData2" ref="a2b4a24a8dd9e882257bedf658c9318f3" args="(uint16_t fileNameLength, uint64_t unPackSize, uint64_t packSize, bool aesEncryption)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::PrepareWriteCompressedData2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td>
+          <td class="paramname"> <em>fileNameLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>unPackSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>packSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>aesEncryption</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>准备写压缩数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileNameLength</em>&nbsp;</td><td>文件名长度 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>unPackSize</em>&nbsp;</td><td>解压大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>packSize</em>&nbsp;</td><td>压缩大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>aesEncryption</em>&nbsp;</td><td>是否是aes加密 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7e0104a0303d2e40bb90901340f90730"></a><!-- doxytag: member="RCZip::RCZipOut::PrepareWriteCompressedDataZip64" ref="a7e0104a0303d2e40bb90901340f90730" args="(uint16_t fileNameLength, bool isZip64, bool aesEncryption)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::PrepareWriteCompressedDataZip64 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td>
+          <td class="paramname"> <em>fileNameLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isZip64</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>aesEncryption</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>准备写zip64的压缩数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileNameLength</em>&nbsp;</td><td>文件名长度 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isZip64</em>&nbsp;</td><td>是否是zip64 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>aesEncryption</em>&nbsp;</td><td>是否是aes加密 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a59c81044802103fb060a549ecf650af2"></a><!-- doxytag: member="RCZip::RCZipOut::SeekTo" ref="a59c81044802103fb060a549ecf650af2" args="(uint64_t offset)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::SeekTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>offset</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>定位 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>offset</em>&nbsp;</td><td>偏移 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8b8f5d583fd7c33ef5e5d10cfcf6567d"></a><!-- doxytag: member="RCZip::RCZipOut::SeekToPackedDataPosition" ref="a8b8f5d583fd7c33ef5e5d10cfcf6567d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::SeekToPackedDataPosition </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>定位到包的起始位置 </p>
+
+</div>
+</div>
+<a class="anchor" id="a134e09db22a27aba28c456c27e8e64ec"></a><!-- doxytag: member="RCZip::RCZipOut::WriteByte" ref="a134e09db22a27aba28c456c27e8e64ec" args="(byte_t b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteByte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td>
+          <td class="paramname"> <em>b</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写一个字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>b</em>&nbsp;</td><td>字节 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac7cdc9e14b9dd03be9b333c316bcf1db"></a><!-- doxytag: member="RCZip::RCZipOut::WriteBytes" ref="ac7cdc9e14b9dd03be9b333c316bcf1db" args="(const void *buffer, uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteBytes </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>buffer</em>&nbsp;</td><td>内存 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6b943ce7c3b34d15621b2b5b5587e454"></a><!-- doxytag: member="RCZip::RCZipOut::WriteCentralDir" ref="a6b943ce7c3b34d15621b2b5b5587e454" args="(const std::vector&lt; RCZipItemPtr &gt; &amp;items, const RCByteBuffer &amp;comment)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteCentralDir </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; RCZipItemPtr &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>comment</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写主目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>items</em>&nbsp;</td><td>item 信息 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>comment</em>&nbsp;</td><td>注释信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab95672abec70a3375bd5271b1bb84b45"></a><!-- doxytag: member="RCZip::RCZipOut::WriteCentralHeader" ref="ab95672abec70a3375bd5271b1bb84b45" args="(const RCZipItemPtr &amp;item)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteCentralHeader </td>
+          <td>(</td>
+          <td class="paramtype">const RCZipItemPtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>item</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写主头 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>item</em>&nbsp;</td><td>item信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="accadc5ffdd770477ff5a6bee05fea0a6"></a><!-- doxytag: member="RCZip::RCZipOut::WriteExtra" ref="accadc5ffdd770477ff5a6bee05fea0a6" args="(const RCZipExtraBlock &amp;extra)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteExtra </td>
+          <td>(</td>
+          <td class="paramtype">const RCZipExtraBlock &amp;&nbsp;</td>
+          <td class="paramname"> <em>extra</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写扩展信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extra</em>&nbsp;</td><td>扩展信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa20b94ae6fce34f48d615480375622bb"></a><!-- doxytag: member="RCZip::RCZipOut::WriteLocalHeader" ref="aa20b94ae6fce34f48d615480375622bb" args="(RCZipItem &amp;item)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteLocalHeader </td>
+          <td>(</td>
+          <td class="paramtype">RCZipItem &amp;&nbsp;</td>
+          <td class="paramname"> <em>item</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写本地头 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>item</em>&nbsp;</td><td>item信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa49ac54fc2a5297f5296f9499d8be798"></a><!-- doxytag: member="RCZip::RCZipOut::WriteSignleVolumeSignature" ref="aa49ac54fc2a5297f5296f9499d8be798" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteSignleVolumeSignature </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>修改分卷标记(如果是zip分卷但是为单卷) </p>
+
+</div>
+</div>
+<a class="anchor" id="ac2380a1ab0dff09e80cbe76c1dc1b7d0"></a><!-- doxytag: member="RCZip::RCZipOut::WriteUInt16" ref="ac2380a1ab0dff09e80cbe76c1dc1b7d0" args="(uint16_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteUInt16 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写两个字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>32位数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af537a59f6b99ba2f16a8eb8aa650d777"></a><!-- doxytag: member="RCZip::RCZipOut::WriteUInt32" ref="af537a59f6b99ba2f16a8eb8aa650d777" args="(uint32_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteUInt32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写四个字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>32位数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afaedecd82739f52daddd2da36e371f53"></a><!-- doxytag: member="RCZip::RCZipOut::WriteUInt64" ref="afaedecd82739f52daddd2da36e371f53" args="(uint64_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCZipOut::WriteUInt64 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写八个字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>64位数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a3b09b57416db2cbc6149e085faa71579"></a><!-- doxytag: member="RCZip::RCZipOut::m_basePosition" ref="a3b09b57416db2cbc6149e085faa71579" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a3b09b57416db2cbc6149e085faa71579">RCZip::RCZipOut::m_basePosition</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>起始位置 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00164">164</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3420fa9e3e40083204f82b90488a967e"></a><!-- doxytag: member="RCZip::RCZipOut::m_extraSize" ref="a3420fa9e3e40083204f82b90488a967e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a3420fa9e3e40083204f82b90488a967e">RCZip::RCZipOut::m_extraSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>扩展大小 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00172">172</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a968ec0541d9c1af17b9790798b97b402"></a><!-- doxytag: member="RCZip::RCZipOut::m_isSplit" ref="a968ec0541d9c1af17b9790798b97b402" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a968ec0541d9c1af17b9790798b97b402">RCZip::RCZipOut::m_isSplit</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否生成zip分卷 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00180">180</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a488892cba4e75232b2fc7847d5b6838c"></a><!-- doxytag: member="RCZip::RCZipOut::m_isZip64" ref="a488892cba4e75232b2fc7847d5b6838c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a488892cba4e75232b2fc7847d5b6838c">RCZip::RCZipOut::m_isZip64</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是zip64 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00176">176</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f4b0965df63c06066b22e82ae48457e"></a><!-- doxytag: member="RCZip::RCZipOut::m_localFileHeaderSize" ref="a2f4b0965df63c06066b22e82ae48457e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a2f4b0965df63c06066b22e82ae48457e">RCZip::RCZipOut::m_localFileHeaderSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>本地文件头大小 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00168">168</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3bb7802f19ffebfe317f1681e05b8ed4"></a><!-- doxytag: member="RCZip::RCZipOut::m_multiVolStream" ref="a3bb7802f19ffebfe317f1681e05b8ed4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IMultiVolStreamPtr</a> <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a3bb7802f19ffebfe317f1681e05b8ed4">RCZip::RCZipOut::m_multiVolStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分卷输出流操作接口 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00184">184</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b09ece9b7eaa69a1d4d019e1fe4f31a"></a><!-- doxytag: member="RCZip::RCZipOut::m_outBuffer" ref="a5b09ece9b7eaa69a1d4d019e1fe4f31a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dfc/classRCZip_1_1RCOutBuffer.html">RCOutBuffer</a> <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a5b09ece9b7eaa69a1d4d019e1fe4f31a">RCZip::RCZipOut::m_outBuffer</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出大小 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00160">160</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a486ffcee04125252369b4061cff142c9"></a><!-- doxytag: member="RCZip::RCZipOut::m_stream" ref="a486ffcee04125252369b4061cff142c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IOutStreamPtr</a> <a class="el" href="../../d2/d48/classRCZip_1_1RCZipOut.html#a486ffcee04125252369b4061cff142c9">RCZip::RCZipOut::m_stream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出流 </p>
+
+<p>在文件<a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a>第<a class="el" href="../../df/d21/RCZipOut_8h_source.html#l00156">156</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d21/RCZipOut_8h_source.html">RCZipOut.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

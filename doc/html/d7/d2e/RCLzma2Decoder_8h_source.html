@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCLzma2Decoder.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_db0e81a014ccd1cb37132b9aa3fd90e2.html">lzma2</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCLzma2Decoder.h</h1><a href="../../d7/d2e/RCLzma2Decoder_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCLzma2Decoder_h_</span>
+<a name="l00011"></a><a class="code" href="../../d7/d2e/RCLzma2Decoder_8h.html#a2781d019c789aa13a423e708a02e757f">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCLzma2Decoder_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../de/d71/ICoder_8h.html">interface/ICoder.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/dc9/IStream_8h.html">interface/IStream.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d06/IUnknownImpl_8h.html">interface/IUnknownImpl.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d31/Lzma2Dec_8h.html">algorithm/Lzma2Dec.h</a>&quot;</span>
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00019"></a>00019 <span class="comment"></span>
+<a name="l00020"></a>00020 <span class="comment">/** Lzma2 解码器</span>
+<a name="l00021"></a>00021 <span class="comment">*/</span>
+<a name="l00022"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html">00022</a> <span class="keyword">class </span><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html">RCLzma2Decoder</a>:
+<a name="l00023"></a>00023     <span class="keyword">public</span> <a class="code" href="../../da/d75/classRCZip_1_1IUnknownImpl6.html">IUnknownImpl6</a>&lt;ICompressCoder,
+<a name="l00024"></a>00024                          ICompressSetDecoderProperties2,
+<a name="l00025"></a>00025                          ICompressGetInStreamProcessedSize,
+<a name="l00026"></a>00026                          ICompressSetInStream,
+<a name="l00027"></a>00027                          ICompressSetOutStreamSize,
+<a name="l00028"></a>00028                          ISequentialInStream&gt;
+<a name="l00029"></a>00029 {
+<a name="l00030"></a>00030 <span class="keyword">public</span>:
+<a name="l00031"></a>00031     <span class="comment"></span>
+<a name="l00032"></a>00032 <span class="comment">    /** 默认构造函数</span>
+<a name="l00033"></a>00033 <span class="comment">    */</span>
+<a name="l00034"></a>00034     <a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html">RCLzma2Decoder</a>();
+<a name="l00035"></a>00035 <span class="comment"></span>
+<a name="l00036"></a>00036 <span class="comment">    /** 默认析构函数</span>
+<a name="l00037"></a>00037 <span class="comment">    */</span>
+<a name="l00038"></a>00038     <span class="keyword">virtual</span> ~<a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html">RCLzma2Decoder</a>();
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="keyword">public</span>:
+<a name="l00041"></a>00041     <span class="comment"></span>
+<a name="l00042"></a>00042 <span class="comment">    /** 压缩/解压数据</span>
+<a name="l00043"></a>00043 <span class="comment">    @param [in] inStream 数据输入流</span>
+<a name="l00044"></a>00044 <span class="comment">    @param [in] outStream 数据输出流</span>
+<a name="l00045"></a>00045 <span class="comment">    @param [in] inSize 输入数据大小</span>
+<a name="l00046"></a>00046 <span class="comment">    @param [in] outSize 输出数据大小 </span>
+<a name="l00047"></a>00047 <span class="comment">    @param [in] progress 进度回调接口</span>
+<a name="l00048"></a>00048 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00049"></a>00049 <span class="comment">    */</span>
+<a name="l00050"></a>00050     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Code(<a class="code" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a>* inStream,
+<a name="l00051"></a>00051                          <a class="code" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a>* outStream, 
+<a name="l00052"></a>00052                          <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>* inSize, 
+<a name="l00053"></a>00053                          <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>* outSize,
+<a name="l00054"></a>00054                          <a class="code" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a>* progress) ;
+<a name="l00055"></a>00055 <span class="comment"></span>
+<a name="l00056"></a>00056 <span class="comment">    /** 设置解压属性</span>
+<a name="l00057"></a>00057 <span class="comment">    @param [in] data 属性数据</span>
+<a name="l00058"></a>00058 <span class="comment">    @param [in] size 数据长度</span>
+<a name="l00059"></a>00059 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00060"></a>00060 <span class="comment">    */</span>
+<a name="l00061"></a>00061     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> SetDecoderProperties2(<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* data, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size) ;
+<a name="l00062"></a>00062 <span class="comment"></span>
+<a name="l00063"></a>00063 <span class="comment">    /** 获取输入流读取的数据长度</span>
+<a name="l00064"></a>00064 <span class="comment">    @param [out] size 返回数据长度</span>
+<a name="l00065"></a>00065 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00066"></a>00066 <span class="comment">    */</span>
+<a name="l00067"></a>00067     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> GetInStreamProcessedSize(<a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&amp; size) ;
+<a name="l00068"></a>00068 <span class="comment"></span>
+<a name="l00069"></a>00069 <span class="comment">    /** 设置输入流</span>
+<a name="l00070"></a>00070 <span class="comment">    @param [in] inStream 输入流接口指针</span>
+<a name="l00071"></a>00071 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00072"></a>00072 <span class="comment">    */</span>
+<a name="l00073"></a>00073     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> SetInStream(<a class="code" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a>* inStream) ;
+<a name="l00074"></a>00074 <span class="comment"></span>
+<a name="l00075"></a>00075 <span class="comment">    /** 释放输入流</span>
+<a name="l00076"></a>00076 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00077"></a>00077 <span class="comment">    */</span>
+<a name="l00078"></a>00078     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> ReleaseInStream() ;
+<a name="l00079"></a>00079 <span class="comment"></span>
+<a name="l00080"></a>00080 <span class="comment">    /** 设置输出流大小</span>
+<a name="l00081"></a>00081 <span class="comment">    @param [in] outSize 输出流大小</span>
+<a name="l00082"></a>00082 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00083"></a>00083 <span class="comment">    */</span>
+<a name="l00084"></a>00084     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> SetOutStreamSize(<span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>* outSize) ;
+<a name="l00085"></a>00085 <span class="comment"></span>
+<a name="l00086"></a>00086 <span class="comment">    /** 读取数据 </span>
+<a name="l00087"></a>00087 <span class="comment">    @param [out] data 存放数据的缓冲区</span>
+<a name="l00088"></a>00088 <span class="comment">    @param [in] size 缓冲区大小</span>
+<a name="l00089"></a>00089 <span class="comment">    @param [out] processedSize 实际读取的大小</span>
+<a name="l00090"></a>00090 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00091"></a>00091 <span class="comment">    */</span>
+<a name="l00092"></a>00092     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Read(<span class="keywordtype">void</span>* data, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>* processedSize) ;
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <span class="keyword">private</span>:
+<a name="l00095"></a>00095     <span class="comment"></span>
+<a name="l00096"></a>00096 <span class="comment">    /** 申请内存</span>
+<a name="l00097"></a>00097 <span class="comment">    @param [in] p 指针</span>
+<a name="l00098"></a>00098 <span class="comment">    @param [in] size 大小</span>
+<a name="l00099"></a>00099 <span class="comment">    @return 返回申请内存指针</span>
+<a name="l00100"></a>00100 <span class="comment">    */</span>
+<a name="l00101"></a>00101     <span class="keyword">static</span> <span class="keywordtype">void</span>* SzAlloc(<span class="keywordtype">void</span>* p, <span class="keywordtype">size_t</span> size) ;
+<a name="l00102"></a>00102     <span class="comment"></span>
+<a name="l00103"></a>00103 <span class="comment">    /** 释放内存</span>
+<a name="l00104"></a>00104 <span class="comment">    @param [in] p 指针</span>
+<a name="l00105"></a>00105 <span class="comment">    @param [in] address 内存地址</span>
+<a name="l00106"></a>00106 <span class="comment">    */</span>
+<a name="l00107"></a>00107     <span class="keyword">static</span> <span class="keywordtype">void</span> SzFree(<span class="keywordtype">void</span>* p, <span class="keywordtype">void</span>* address) ;
+<a name="l00108"></a>00108     <span class="comment"></span>
+<a name="l00109"></a>00109 <span class="comment">    /** Res 转 HResult</span>
+<a name="l00110"></a>00110 <span class="comment">    @param [in] res Res值</span>
+<a name="l00111"></a>00111 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00112"></a>00112 <span class="comment">    */</span>
+<a name="l00113"></a>00113     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> SResToHRESULT(<a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> res) ;
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115 <span class="keyword">private</span>:
+<a name="l00116"></a>00116     <span class="comment"></span>
+<a name="l00117"></a>00117 <span class="comment">    /** 内存申请</span>
+<a name="l00118"></a>00118 <span class="comment">    */</span>
+<a name="l00119"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#a04e8af73b5bd97252ae0a0ecd7ef0199">00119</a>     <span class="keyword">static</span> <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> s_alloc ;
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 <span class="keyword">private</span>:
+<a name="l00122"></a>00122     <span class="comment"></span>
+<a name="l00123"></a>00123 <span class="comment">    /** 输入流</span>
+<a name="l00124"></a>00124 <span class="comment">    */</span>
+<a name="l00125"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#a8c697533952f97b41049db47905613ac">00125</a>     <a class="code" href="../../d9/d13/classRCComPtr.html">ISequentialInStreamPtr</a> m_inStream;
+<a name="l00126"></a>00126     <span class="comment"></span>
+<a name="l00127"></a>00127 <span class="comment">    /** 输入缓存</span>
+<a name="l00128"></a>00128 <span class="comment">    */</span>
+<a name="l00129"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#a9a24c165f3c684614567e3427c2dd67c">00129</a>     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* m_inBuf;
+<a name="l00130"></a>00130     <span class="comment"></span>
+<a name="l00131"></a>00131 <span class="comment">    /** 输入位置</span>
+<a name="l00132"></a>00132 <span class="comment">    */</span>
+<a name="l00133"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#aea46918617a1934ee41c94a2d5f64ce9">00133</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_inPos;
+<a name="l00134"></a>00134     <span class="comment"></span>
+<a name="l00135"></a>00135 <span class="comment">    /** 输入大小</span>
+<a name="l00136"></a>00136 <span class="comment">    */</span>
+<a name="l00137"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#aea93cfb9c6bc7147f1663440885427a1">00137</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_inSize;
+<a name="l00138"></a>00138     <span class="comment"></span>
+<a name="l00139"></a>00139 <span class="comment">    /** 状态</span>
+<a name="l00140"></a>00140 <span class="comment">    */</span>
+<a name="l00141"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#abfa5a6951890d87f9ef8324dec74c8a6">00141</a>     <a class="code" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> m_state;
+<a name="l00142"></a>00142     <span class="comment"></span>
+<a name="l00143"></a>00143 <span class="comment">    /** 是否定义输出大小</span>
+<a name="l00144"></a>00144 <span class="comment">    */</span>
+<a name="l00145"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#a24d18bb8c5ffb2090b1c6c693362bfb7">00145</a>     <span class="keywordtype">bool</span> m_outSizeDefined;
+<a name="l00146"></a>00146     <span class="comment"></span>
+<a name="l00147"></a>00147 <span class="comment">    /** 输出大小</span>
+<a name="l00148"></a>00148 <span class="comment">    */</span>
+<a name="l00149"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#ac874bae64f56f6b46e1d902a7fb495d4">00149</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_outSize;
+<a name="l00150"></a>00150     <span class="comment"></span>
+<a name="l00151"></a>00151 <span class="comment">    /** 已处理输入大小</span>
+<a name="l00152"></a>00152 <span class="comment">    */</span>
+<a name="l00153"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#a457b780af945aa8581ad484dcd0dac5f">00153</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_inSizeProcessed;
+<a name="l00154"></a>00154     <span class="comment"></span>
+<a name="l00155"></a>00155 <span class="comment">    /** 已处理输出大小</span>
+<a name="l00156"></a>00156 <span class="comment">    */</span>
+<a name="l00157"></a><a class="code" href="../../dc/d42/classRCZip_1_1RCLzma2Decoder.html#a33b5a2e9d92e0696a080965b283c7af8">00157</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_outSizeProcessed;
+<a name="l00158"></a>00158 
+<a name="l00159"></a>00159 };
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00162"></a>00162 
+<a name="l00163"></a>00163 <span class="preprocessor">#endif //__RCLzma2Decoder_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

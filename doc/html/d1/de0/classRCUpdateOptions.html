@@ -1,0 +1,1509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdateOptions类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdateOptions类参考</h1><!-- doxytag: class="RCUpdateOptions" -->
+<p><code>#include &lt;<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>&gt;</code></p>
+<div class="dynheader">
+RCUpdateOptions合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dc/d31/classRCUpdateOptions__coll__graph.png" border="0" usemap="#RCUpdateOptions_coll__map" alt="Collaboration graph"/></div>
+<map name="RCUpdateOptions_coll__map" id="RCUpdateOptions_coll__map">
+<area shape="rect" id="node2" href="../../d0/d87/classRCArchivePath.html" title="{RCArchivePath\n|&#45; m_prefix\l&#45; m_name\l&#45; m_baseExtension\l&#45; m_volExtension\l&#45; m_temp\l&#45; m_tempPrefix\l&#45; m_tempPostfix\l|+ RCArchivePath()\l+ ~RCArchivePath()\l+ RCArchivePath()\l+ operator=()\l+ ParseFromPath()\l+ GetPathWithoutExt()\l+ GetTempPath_()\l+ GetFinalPath()\l+ SetPrefix()\l+ SetName()\l+ SetBaseExtension()\l+ SetVolExtension()\l+ SetTemp()\l+ SetTempPrefix()\l+ SetTempPostfix()\l+ GetPrefix()\l+ GetName()\l+ GetBaseExtension()\l+ GetVolExtension()\l+ GetTemp()\l+ GetTempPrefix()\l+ GetTempPostfix()\l}" alt="" coords="5,6,179,479"/><area shape="rect" id="node4" href="../../d8/d53/classRCCompressMethodMode.html" title="{RCCompressMethodMode\n|&#45; m_formatIndex\l&#45; m_properties\l|+ RCCompressMethodMode()\l+ SetFormatIndex()\l+ GetFormatIndex()\l+ GetProperties()\l+ GetProperties()\l}" alt="" coords="203,167,419,318"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../dc/d88/classRCUpdateOptions-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">path_mode</a> { <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eba08580ee512473ac291a670a8eb090dec">RC_UPDATE_RELATIVE_PATH</a> =  0, 
+<a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90ebaa7a5596d008a421bb95a2a87999ef2f6">RC_UPDATE_ABSOLUTE_PATH</a> =  1, 
+<a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eba0f792c787b87365a6ca57fc4d882e538">RC_UPDATE_NO_PATH</a> =  2, 
+<a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90ebac9a89b900bce76aa42601d31afb5c7b4">RC_UPDATE_ABSOLUTE_FULL_PATH</a> =  3
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">update_mode</a> { <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baaa3828fe9a010be78b88071d0d8bf7846">RC_COMPRESS_FILES_ADD_REPLACE</a> =  0, 
+<a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baa2566cdfe6f98b32d31d3771df7d4d0a2">RC_COMPRESS_FILES_ADD_UPDATE</a> =  1, 
+<a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baa2e322b7b27688efc0b2e80be5ee0db76">RC_COMPRESS_FILES_UPDATE_EXIST_ONLY</a> =  2, 
+<a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baabf45c891e31f03089d440b546a9328b6">RC_COMPRESS_FILES_SYNC_CONTENT</a> =  3
+ }</td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a73c8abbbcdcf710104243e3f84717d8e">RCUpdateOptions</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a3318a257f5965298963157eb49821271">Init</a> (const <a class="el" href="../../dd/dd1/classRCArchiveCodecs.html">RCArchiveCodecs</a> *codecs, const RCUIntVector &amp;formatIndices, const RCString &amp;arcPath, <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> pathMode=RC_UPDATE_RELATIVE_PATH, <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a> updateMode=RC_COMPRESS_FILES_ADD_REPLACE)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a97825abd4209f89b6895a5e7ab852d97">GetMethodMode</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a25bcef95f651b0e4c0011ecc7c795607">GetMethodMode</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::vector<br class="typebreak"/>
+&lt; <a class="el" href="../../d6/d05/classRCUpdateArchiveCommand.html">RCUpdateArchiveCommand</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a281c221f1d4d2aa37870d32b44e711d4">GetCommands</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="../../d6/d05/classRCUpdateArchiveCommand.html">RCUpdateArchiveCommand</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a3a63587b794d50282ae57104de6cb761">GetCommands</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#acc2cccc2f14a169bb6d3aa824ec025c8">GetUpdateArchiveItSelf</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a984907f3d6c69c978157912867cfe070">SetUpdateArchiveItSelf</a> (bool updateArchiveItSelf)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ae63c506ecf89c3de8eb9d146ac3984b1">GetArchivePath</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ab226b4cac2e221ce1779ee74226c98bc">GetArchivePath</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#aaa519c55e69a522b521e3a1718187b3b">GetSfxMode</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad6334fbc36a4fe7a6c23ce9a46d9584a">SetSfxMode</a> (bool sfxMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RCString &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0010707e5b85d7b5c2a7662e23a3ad7c">GetSfxModule</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a4ad4185691695670c81622afbbaca8e9">SetSfxModule</a> (const RCString &amp;sfxModule)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a17f6f55d2b75c8d70e2601a4d73d37c7">GetOpenShareForWrite</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a2d8480b92b61274f81a807eed9de0827">SetOpenShareForWrite</a> (bool openShareForWrite)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a258655ad360103d3f067e687f4449c52">GetStdInMode</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a436b4da549742e71b711c9bab6b75900">SetStdInMode</a> (bool stdInMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RCString &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a5f0aec9bbbfaf18a7e9cee0e7b4ca60a">GetStdInFileName</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad6974d39ff72119f47b206c523927f58">SetStdInFileName</a> (const RCString &amp;stdInFileName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#aed529020096a4444f814c09c8f329203">GetStdOutMode</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0fea7ce2348763e5674d6a99f7def7ee">SetStdOutMode</a> (bool stdOutMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a5f3513b4695c3c3ddf1eafa769f748ce">IsTestMode</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a6543b73ce2f2e7bd0284dabf0d84d9c8">SetIsTestMode</a> (bool isTestMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a9edd9e5e68367bfcbbdb632c6580d7f4">GetEmailMode</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ac04dc805137e6009dd5dc9151139bae2">SetEmailMode</a> (bool emailMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a27c56d9607ec9d15c58d20fe6da56566">GetEmailRemoveAfter</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a3b12a1556a9c3043c4d76a4d618877dd">SetEmailRemoveAfter</a> (bool emailRemoveAfter)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RCString &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a89f16c02f4f768c7dec8a92fb28541cf">GetEmailAddress</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a7478a6db0421c4a63e87e298496de6f4">SetEmailAddress</a> (const RCString &amp;emailAddress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RCString &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a684e3f98d6424d0a07c787ec7a057cf5">GetWorkDir</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ab46be84ae2b62f979c9cb12d1a8c8b01">SetWorkDir</a> (const RCString &amp;workDir)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ae26d9fd8b8c960bbe05fc54e94667ad3">GetVolumnSizes</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a32ac88c0002222a1a41c714af369b3bc">GetVolumnSizes</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a16c6687026780e2d7a241832e9f5d2b7">GetPathMode</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a4b1d1777fc87e11d91a0462abec021f6">GetUpdateMode</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#acccfcc6fe02238df72784ad59a360d78">SetOutStreamEvent</a> (IOutStreamEvent *outStreamEvent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">IOutStreamEvent *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a88d1fed9e4226c27acf0e985bda7318b">GetOutStreamEvent</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#aa3d606331cf79e7b78e970fe069e194b">SetUpdateFileter</a> (const <a class="el" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a> &amp;spUpdateFilter)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a9d20430478c68abefd0684277c3dc821">GetUpdateFileter</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a636d1e31f572cce600a6fdae18bec191">SetEnumDirItemFilter</a> (const <a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> &amp;spEnumDirItemFilter)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a75fa7bc233eb26ad9fd9473ab730a4ad">GetEnumDirItemFilter</a> (void) const </td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a59ff159021dd503f833b2e1678bd2eb0">m_methodMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="../../d6/d05/classRCUpdateArchiveCommand.html">RCUpdateArchiveCommand</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a626a06f846a95545e55f748a551a4d99">m_commands</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a4421b36bec02f082d69b4003fb6e69a5">m_updateArchiveItSelf</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a05fa58eb6a84c1d9febf5b8c671fb61c">m_archivePath</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ab5572b7bfc5d333ae32557fe77e20e07">m_sfxMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ac4e7d47bdc7e3b30505af94aebda3636">m_sfxModule</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a92396ccd4e2df2125962b944adb3cc62">m_openShareForWrite</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a5150ce65bfc4d9116c1b1cbfc8f9696e">m_stdInMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a69e76806a6fe2287021af2334b4c1057">m_stdInFileName</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#acf53a8ec5b652a319e089dc5dc31d0da">m_stdOutMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0c8dd1a65215af95fba1cab4d265a5f7">m_isTestMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#acccd3824456e7c70a663c69812bce744">m_emailMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a2d6ef172adcf1bc268407a14a4f0e684">m_emailRemoveAfter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#aefbfb8c8e9f90efc4564a785606b1c88">m_emailAddress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad525d265d01d9dbcffd3ed5619f7021f">m_workingDir</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#aac4db616ae4e7cb9aa98889055488f82">m_volumnsSizes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad2b56f046bf57d7b90f25da4d304f357">m_pathMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#af014833b873dd9550ec97512090166a0">m_updateMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">IOutStreamEvent *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a5268b156974b99f648a88c9c4499624b">m_outStreamEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad7c290e3baf37e60ddf1b7188e830c26">m_spUpdateFilter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#ab0d779ab5c99075e6b0b939e8570ebfc">m_spEnumDirItemFilter</a></td></tr>
+<tr><td colspan="2"><h2>静态私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a52e33a9217b56f77cf9bc497d1400afa">s_kDefaultArchiveType</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#acfc0ccb8e8fc3c7e1057d84d91e4d0cf">s_kSFXExtension</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>压缩update选项参数 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00027">27</a>行定义。</p>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a0bf96c9b0d86cd3d421a153fefbe90eb"></a><!-- doxytag: member="RCUpdateOptions::path_mode" ref="a0bf96c9b0d86cd3d421a153fefbe90eb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>保存路径模式 </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a0bf96c9b0d86cd3d421a153fefbe90eba08580ee512473ac291a670a8eb090dec"></a><!-- doxytag: member="RC_UPDATE_RELATIVE_PATH" ref="a0bf96c9b0d86cd3d421a153fefbe90eba08580ee512473ac291a670a8eb090dec" args="" -->RC_UPDATE_RELATIVE_PATH</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a0bf96c9b0d86cd3d421a153fefbe90ebaa7a5596d008a421bb95a2a87999ef2f6"></a><!-- doxytag: member="RC_UPDATE_ABSOLUTE_PATH" ref="a0bf96c9b0d86cd3d421a153fefbe90ebaa7a5596d008a421bb95a2a87999ef2f6" args="" -->RC_UPDATE_ABSOLUTE_PATH</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a0bf96c9b0d86cd3d421a153fefbe90eba0f792c787b87365a6ca57fc4d882e538"></a><!-- doxytag: member="RC_UPDATE_NO_PATH" ref="a0bf96c9b0d86cd3d421a153fefbe90eba0f792c787b87365a6ca57fc4d882e538" args="" -->RC_UPDATE_NO_PATH</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a0bf96c9b0d86cd3d421a153fefbe90ebac9a89b900bce76aa42601d31afb5c7b4"></a><!-- doxytag: member="RC_UPDATE_ABSOLUTE_FULL_PATH" ref="a0bf96c9b0d86cd3d421a153fefbe90ebac9a89b900bce76aa42601d31afb5c7b4" args="" -->RC_UPDATE_ABSOLUTE_FULL_PATH</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00038">38</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0362445e7a32934798a17ece7b2287ba"></a><!-- doxytag: member="RCUpdateOptions::update_mode" ref="a0362445e7a32934798a17ece7b2287ba" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩更新模式 </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a0362445e7a32934798a17ece7b2287baaa3828fe9a010be78b88071d0d8bf7846"></a><!-- doxytag: member="RC_COMPRESS_FILES_ADD_REPLACE" ref="a0362445e7a32934798a17ece7b2287baaa3828fe9a010be78b88071d0d8bf7846" args="" -->RC_COMPRESS_FILES_ADD_REPLACE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a0362445e7a32934798a17ece7b2287baa2566cdfe6f98b32d31d3771df7d4d0a2"></a><!-- doxytag: member="RC_COMPRESS_FILES_ADD_UPDATE" ref="a0362445e7a32934798a17ece7b2287baa2566cdfe6f98b32d31d3771df7d4d0a2" args="" -->RC_COMPRESS_FILES_ADD_UPDATE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a0362445e7a32934798a17ece7b2287baa2e322b7b27688efc0b2e80be5ee0db76"></a><!-- doxytag: member="RC_COMPRESS_FILES_UPDATE_EXIST_ONLY" ref="a0362445e7a32934798a17ece7b2287baa2e322b7b27688efc0b2e80be5ee0db76" args="" -->RC_COMPRESS_FILES_UPDATE_EXIST_ONLY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a0362445e7a32934798a17ece7b2287baabf45c891e31f03089d440b546a9328b6"></a><!-- doxytag: member="RC_COMPRESS_FILES_SYNC_CONTENT" ref="a0362445e7a32934798a17ece7b2287baabf45c891e31f03089d440b546a9328b6" args="" -->RC_COMPRESS_FILES_SYNC_CONTENT</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00048">48</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a73c8abbbcdcf710104243e3f84717d8e"></a><!-- doxytag: member="RCUpdateOptions::RCUpdateOptions" ref="a73c8abbbcdcf710104243e3f84717d8e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCUpdateOptions::RCUpdateOptions </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>构造函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ab226b4cac2e221ce1779ee74226c98bc"></a><!-- doxytag: member="RCUpdateOptions::GetArchivePath" ref="ab226b4cac2e221ce1779ee74226c98bc" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a>&amp; RCUpdateOptions::GetArchivePath </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回文档路径 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文档路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae63c506ecf89c3de8eb9d146ac3984b1"></a><!-- doxytag: member="RCUpdateOptions::GetArchivePath" ref="ae63c506ecf89c3de8eb9d146ac3984b1" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a>&amp; RCUpdateOptions::GetArchivePath </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回文档路径 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文档路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3a63587b794d50282ae57104de6cb761"></a><!-- doxytag: member="RCUpdateOptions::GetCommands" ref="a3a63587b794d50282ae57104de6cb761" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d6/d05/classRCUpdateArchiveCommand.html">RCUpdateArchiveCommand</a>&gt;&amp; RCUpdateOptions::GetCommands </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得压缩命令列表 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回压缩命令列表 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a281c221f1d4d2aa37870d32b44e711d4"></a><!-- doxytag: member="RCUpdateOptions::GetCommands" ref="a281c221f1d4d2aa37870d32b44e711d4" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="../../d6/d05/classRCUpdateArchiveCommand.html">RCUpdateArchiveCommand</a>&gt;&amp; RCUpdateOptions::GetCommands </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得压缩命令列表 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回压缩命令列表 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89f16c02f4f768c7dec8a92fb28541cf"></a><!-- doxytag: member="RCUpdateOptions::GetEmailAddress" ref="a89f16c02f4f768c7dec8a92fb28541cf" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RCString&amp; RCUpdateOptions::GetEmailAddress </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回邮件地址 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回邮件发生地址 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9edd9e5e68367bfcbbdb632c6580d7f4"></a><!-- doxytag: member="RCUpdateOptions::GetEmailMode" ref="a9edd9e5e68367bfcbbdb632c6580d7f4" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::GetEmailMode </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否Email 模式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>Email模式返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a27c56d9607ec9d15c58d20fe6da56566"></a><!-- doxytag: member="RCUpdateOptions::GetEmailRemoveAfter" ref="a27c56d9607ec9d15c58d20fe6da56566" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::GetEmailRemoveAfter </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否发生后删除 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>email后删除返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a75fa7bc233eb26ad9fd9473ab730a4ad"></a><!-- doxytag: member="RCUpdateOptions::GetEnumDirItemFilter" ref="a75fa7bc233eb26ad9fd9473ab730a4ad" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> RCUpdateOptions::GetEnumDirItemFilter </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取被压缩的文件过滤器 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回被压缩的文件过滤器 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a25bcef95f651b0e4c0011ecc7c795607"></a><!-- doxytag: member="RCUpdateOptions::GetMethodMode" ref="a25bcef95f651b0e4c0011ecc7c795607" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a>&amp; RCUpdateOptions::GetMethodMode </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得压缩方式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回压缩方式 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a97825abd4209f89b6895a5e7ab852d97"></a><!-- doxytag: member="RCUpdateOptions::GetMethodMode" ref="a97825abd4209f89b6895a5e7ab852d97" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a>&amp; RCUpdateOptions::GetMethodMode </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得压缩方式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回压缩方式 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a17f6f55d2b75c8d70e2601a4d73d37c7"></a><!-- doxytag: member="RCUpdateOptions::GetOpenShareForWrite" ref="a17f6f55d2b75c8d70e2601a4d73d37c7" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::GetOpenShareForWrite </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回共享写 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>共享写返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a88d1fed9e4226c27acf0e985bda7318b"></a><!-- doxytag: member="RCUpdateOptions::GetOutStreamEvent" ref="a88d1fed9e4226c27acf0e985bda7318b" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOutStreamEvent* RCUpdateOptions::GetOutStreamEvent </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取IO写入事件处理 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回输出流事件接口 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a16c6687026780e2d7a241832e9f5d2b7"></a><!-- doxytag: member="RCUpdateOptions::GetPathMode" ref="a16c6687026780e2d7a241832e9f5d2b7" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> RCUpdateOptions::GetPathMode </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取保存路径模式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回路径保存模式 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa519c55e69a522b521e3a1718187b3b"></a><!-- doxytag: member="RCUpdateOptions::GetSfxMode" ref="aaa519c55e69a522b521e3a1718187b3b" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::GetSfxMode </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>自解压模式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>自解压模式返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0010707e5b85d7b5c2a7662e23a3ad7c"></a><!-- doxytag: member="RCUpdateOptions::GetSfxModule" ref="a0010707e5b85d7b5c2a7662e23a3ad7c" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RCString&amp; RCUpdateOptions::GetSfxModule </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回自解压模块文件名 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回自解压模块文件名 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f0aec9bbbfaf18a7e9cee0e7b4ca60a"></a><!-- doxytag: member="RCUpdateOptions::GetStdInFileName" ref="a5f0aec9bbbfaf18a7e9cee0e7b4ca60a" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RCString&amp; RCUpdateOptions::GetStdInFileName </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回标准输入文件名 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回标准输入文件名 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a258655ad360103d3f067e687f4449c52"></a><!-- doxytag: member="RCUpdateOptions::GetStdInMode" ref="a258655ad360103d3f067e687f4449c52" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::GetStdInMode </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>标准输入模式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>标准输入模式返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aed529020096a4444f814c09c8f329203"></a><!-- doxytag: member="RCUpdateOptions::GetStdOutMode" ref="aed529020096a4444f814c09c8f329203" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::GetStdOutMode </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否标准输出 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>标准输出返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acc2cccc2f14a169bb6d3aa824ec025c8"></a><!-- doxytag: member="RCUpdateOptions::GetUpdateArchiveItSelf" ref="acc2cccc2f14a169bb6d3aa824ec025c8" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::GetUpdateArchiveItSelf </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否更新文档 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>更新文档自身返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d20430478c68abefd0684277c3dc821"></a><!-- doxytag: member="RCUpdateOptions::GetUpdateFileter" ref="a9d20430478c68abefd0684277c3dc821" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a> RCUpdateOptions::GetUpdateFileter </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取压缩文件过滤器 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回压缩文件过滤器 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b1d1777fc87e11d91a0462abec021f6"></a><!-- doxytag: member="RCUpdateOptions::GetUpdateMode" ref="a4b1d1777fc87e11d91a0462abec021f6" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a> RCUpdateOptions::GetUpdateMode </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取更新方式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回更新方式 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a32ac88c0002222a1a41c714af369b3bc"></a><!-- doxytag: member="RCUpdateOptions::GetVolumnSizes" ref="a32ac88c0002222a1a41c714af369b3bc" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&gt;&amp; RCUpdateOptions::GetVolumnSizes </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得分卷大小列表 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回分卷大小列表 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae26d9fd8b8c960bbe05fc54e94667ad3"></a><!-- doxytag: member="RCUpdateOptions::GetVolumnSizes" ref="ae26d9fd8b8c960bbe05fc54e94667ad3" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&gt;&amp; RCUpdateOptions::GetVolumnSizes </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得分卷大小列表 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回分卷大小列表 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a684e3f98d6424d0a07c787ec7a057cf5"></a><!-- doxytag: member="RCUpdateOptions::GetWorkDir" ref="a684e3f98d6424d0a07c787ec7a057cf5" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RCString&amp; RCUpdateOptions::GetWorkDir </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回工作目录 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回工作目录 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3318a257f5965298963157eb49821271"></a><!-- doxytag: member="RCUpdateOptions::Init" ref="a3318a257f5965298963157eb49821271" args="(const RCArchiveCodecs *codecs, const RCUIntVector &amp;formatIndices, const RCString &amp;arcPath, RCUpdateOptions::path_mode pathMode=RC_UPDATE_RELATIVE_PATH, RCUpdateOptions::update_mode updateMode=RC_COMPRESS_FILES_ADD_REPLACE)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/dd1/classRCArchiveCodecs.html">RCArchiveCodecs</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCUIntVector &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a>&nbsp;</td>
+          <td class="paramname"> <em>pathMode</em> = <code>RC_UPDATE_RELATIVE_PATH</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a>&nbsp;</td>
+          <td class="paramname"> <em>updateMode</em> = <code>RC_COMPRESS_FILES_ADD_REPLACE</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecs</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>formatIndices</em>&nbsp;</td><td>文档格式列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcPath</em>&nbsp;</td><td>文档路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>pathMode</em>&nbsp;</td><td>保存路径模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>updateMode</em>&nbsp;</td><td>压缩更新模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f3513b4695c3c3ddf1eafa769f748ce"></a><!-- doxytag: member="RCUpdateOptions::IsTestMode" ref="a5f3513b4695c3c3ddf1eafa769f748ce" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCUpdateOptions::IsTestMode </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否测试模式 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>测试模式返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7478a6db0421c4a63e87e298496de6f4"></a><!-- doxytag: member="RCUpdateOptions::SetEmailAddress" ref="a7478a6db0421c4a63e87e298496de6f4" args="(const RCString &amp;emailAddress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetEmailAddress </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>emailAddress</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置邮件地址 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>emailAddress</em>&nbsp;</td><td>邮件发送地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac04dc805137e6009dd5dc9151139bae2"></a><!-- doxytag: member="RCUpdateOptions::SetEmailMode" ref="ac04dc805137e6009dd5dc9151139bae2" args="(bool emailMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetEmailMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>emailMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置Email模式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>emailMode</em>&nbsp;</td><td>Email模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3b12a1556a9c3043c4d76a4d618877dd"></a><!-- doxytag: member="RCUpdateOptions::SetEmailRemoveAfter" ref="a3b12a1556a9c3043c4d76a4d618877dd" args="(bool emailRemoveAfter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetEmailRemoveAfter </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>emailRemoveAfter</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置Email后删除 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>emailRemoveAfter</em>&nbsp;</td><td>发生后删除 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a636d1e31f572cce600a6fdae18bec191"></a><!-- doxytag: member="RCUpdateOptions::SetEnumDirItemFilter" ref="a636d1e31f572cce600a6fdae18bec191" args="(const IEnumDirItemFilterPtr &amp;spEnumDirItemFilter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetEnumDirItemFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spEnumDirItemFilter</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置被压缩的文件过滤器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spEnumDirItemFilter</em>&nbsp;</td><td>文件枚举过滤器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6543b73ce2f2e7bd0284dabf0d84d9c8"></a><!-- doxytag: member="RCUpdateOptions::SetIsTestMode" ref="a6543b73ce2f2e7bd0284dabf0d84d9c8" args="(bool isTestMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetIsTestMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isTestMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置测试模式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isTestMode</em>&nbsp;</td><td>测试模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2d8480b92b61274f81a807eed9de0827"></a><!-- doxytag: member="RCUpdateOptions::SetOpenShareForWrite" ref="a2d8480b92b61274f81a807eed9de0827" args="(bool openShareForWrite)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetOpenShareForWrite </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>openShareForWrite</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置共享写 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openShareForWrite</em>&nbsp;</td><td>共享写 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acccfcc6fe02238df72784ad59a360d78"></a><!-- doxytag: member="RCUpdateOptions::SetOutStreamEvent" ref="acccfcc6fe02238df72784ad59a360d78" args="(IOutStreamEvent *outStreamEvent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetOutStreamEvent </td>
+          <td>(</td>
+          <td class="paramtype">IOutStreamEvent *&nbsp;</td>
+          <td class="paramname"> <em>outStreamEvent</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置IO写入事件处理 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStreamEvent</em>&nbsp;</td><td>输出流事件接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad6334fbc36a4fe7a6c23ce9a46d9584a"></a><!-- doxytag: member="RCUpdateOptions::SetSfxMode" ref="ad6334fbc36a4fe7a6c23ce9a46d9584a" args="(bool sfxMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetSfxMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>sfxMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置自解压模式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sfxMode</em>&nbsp;</td><td>自解压模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ad4185691695670c81622afbbaca8e9"></a><!-- doxytag: member="RCUpdateOptions::SetSfxModule" ref="a4ad4185691695670c81622afbbaca8e9" args="(const RCString &amp;sfxModule)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetSfxModule </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>sfxModule</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置自解压模块文件名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sfxModule</em>&nbsp;</td><td>自解压模块 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad6974d39ff72119f47b206c523927f58"></a><!-- doxytag: member="RCUpdateOptions::SetStdInFileName" ref="ad6974d39ff72119f47b206c523927f58" args="(const RCString &amp;stdInFileName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetStdInFileName </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>stdInFileName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置标准输入文件名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stdInFileName</em>&nbsp;</td><td>标准输入文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a436b4da549742e71b711c9bab6b75900"></a><!-- doxytag: member="RCUpdateOptions::SetStdInMode" ref="a436b4da549742e71b711c9bab6b75900" args="(bool stdInMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetStdInMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>stdInMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置标准输入模式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stdInMode</em>&nbsp;</td><td>标准输入模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0fea7ce2348763e5674d6a99f7def7ee"></a><!-- doxytag: member="RCUpdateOptions::SetStdOutMode" ref="a0fea7ce2348763e5674d6a99f7def7ee" args="(bool stdOutMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetStdOutMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>stdOutMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置标准输出 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stdOutMode</em>&nbsp;</td><td>标准输出模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a984907f3d6c69c978157912867cfe070"></a><!-- doxytag: member="RCUpdateOptions::SetUpdateArchiveItSelf" ref="a984907f3d6c69c978157912867cfe070" args="(bool updateArchiveItSelf)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetUpdateArchiveItSelf </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>updateArchiveItSelf</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置更新文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>updateArchiveItSelf</em>&nbsp;</td><td>更新文档 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa3d606331cf79e7b78e970fe069e194b"></a><!-- doxytag: member="RCUpdateOptions::SetUpdateFileter" ref="aa3d606331cf79e7b78e970fe069e194b" args="(const RCArchiveUpdateFilterPtr &amp;spUpdateFilter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetUpdateFileter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spUpdateFilter</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置压缩文件过滤器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spUpdateFilter</em>&nbsp;</td><td>压缩文件过滤器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab46be84ae2b62f979c9cb12d1a8c8b01"></a><!-- doxytag: member="RCUpdateOptions::SetWorkDir" ref="ab46be84ae2b62f979c9cb12d1a8c8b01" args="(const RCString &amp;workDir)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCUpdateOptions::SetWorkDir </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>workDir</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置工作目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>workDir</em>&nbsp;</td><td>工作目录 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a05fa58eb6a84c1d9febf5b8c671fb61c"></a><!-- doxytag: member="RCUpdateOptions::m_archivePath" ref="a05fa58eb6a84c1d9febf5b8c671fb61c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a> <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a05fa58eb6a84c1d9febf5b8c671fb61c">RCUpdateOptions::m_archivePath</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文档路径信息 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00289">289</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a626a06f846a95545e55f748a551a4d99"></a><!-- doxytag: member="RCUpdateOptions::m_commands" ref="a626a06f846a95545e55f748a551a4d99" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d6/d05/classRCUpdateArchiveCommand.html">RCUpdateArchiveCommand</a>&gt; <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a626a06f846a95545e55f748a551a4d99">RCUpdateOptions::m_commands</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>命令 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00281">281</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aefbfb8c8e9f90efc4564a785606b1c88"></a><!-- doxytag: member="RCUpdateOptions::m_emailAddress" ref="aefbfb8c8e9f90efc4564a785606b1c88" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../d1/de0/classRCUpdateOptions.html#aefbfb8c8e9f90efc4564a785606b1c88">RCUpdateOptions::m_emailAddress</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>电子邮件地址 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00329">329</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="acccd3824456e7c70a663c69812bce744"></a><!-- doxytag: member="RCUpdateOptions::m_emailMode" ref="acccd3824456e7c70a663c69812bce744" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#acccd3824456e7c70a663c69812bce744">RCUpdateOptions::m_emailMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>电子邮件模式 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00321">321</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d6ef172adcf1bc268407a14a4f0e684"></a><!-- doxytag: member="RCUpdateOptions::m_emailRemoveAfter" ref="a2d6ef172adcf1bc268407a14a4f0e684" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a2d6ef172adcf1bc268407a14a4f0e684">RCUpdateOptions::m_emailRemoveAfter</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>发送后删除文档 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00325">325</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c8dd1a65215af95fba1cab4d265a5f7"></a><!-- doxytag: member="RCUpdateOptions::m_isTestMode" ref="a0c8dd1a65215af95fba1cab4d265a5f7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0c8dd1a65215af95fba1cab4d265a5f7">RCUpdateOptions::m_isTestMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否为测试模式, 测试模式不生成压缩包，只做压缩测试 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00317">317</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a59ff159021dd503f833b2e1678bd2eb0"></a><!-- doxytag: member="RCUpdateOptions::m_methodMode" ref="a59ff159021dd503f833b2e1678bd2eb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a> <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a59ff159021dd503f833b2e1678bd2eb0">RCUpdateOptions::m_methodMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩方法模式 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00277">277</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a92396ccd4e2df2125962b944adb3cc62"></a><!-- doxytag: member="RCUpdateOptions::m_openShareForWrite" ref="a92396ccd4e2df2125962b944adb3cc62" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a92396ccd4e2df2125962b944adb3cc62">RCUpdateOptions::m_openShareForWrite</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>共享写入 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00301">301</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5268b156974b99f648a88c9c4499624b"></a><!-- doxytag: member="RCUpdateOptions::m_outStreamEvent" ref="a5268b156974b99f648a88c9c4499624b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOutStreamEvent* <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a5268b156974b99f648a88c9c4499624b">RCUpdateOptions::m_outStreamEvent</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>IO 事件处理 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00349">349</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2b56f046bf57d7b90f25da4d304f357"></a><!-- doxytag: member="RCUpdateOptions::m_pathMode" ref="ad2b56f046bf57d7b90f25da4d304f357" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> <a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad2b56f046bf57d7b90f25da4d304f357">RCUpdateOptions::m_pathMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>保存路径模式 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00341">341</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5572b7bfc5d333ae32557fe77e20e07"></a><!-- doxytag: member="RCUpdateOptions::m_sfxMode" ref="ab5572b7bfc5d333ae32557fe77e20e07" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#ab5572b7bfc5d333ae32557fe77e20e07">RCUpdateOptions::m_sfxMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>自解压模式 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00293">293</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4e7d47bdc7e3b30505af94aebda3636"></a><!-- doxytag: member="RCUpdateOptions::m_sfxModule" ref="ac4e7d47bdc7e3b30505af94aebda3636" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../d1/de0/classRCUpdateOptions.html#ac4e7d47bdc7e3b30505af94aebda3636">RCUpdateOptions::m_sfxModule</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>自解压模块名称 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00297">297</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0d779ab5c99075e6b0b939e8570ebfc"></a><!-- doxytag: member="RCUpdateOptions::m_spEnumDirItemFilter" ref="ab0d779ab5c99075e6b0b939e8570ebfc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> <a class="el" href="../../d1/de0/classRCUpdateOptions.html#ab0d779ab5c99075e6b0b939e8570ebfc">RCUpdateOptions::m_spEnumDirItemFilter</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>被压缩的文件过滤器 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00365">365</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7c290e3baf37e60ddf1b7188e830c26"></a><!-- doxytag: member="RCUpdateOptions::m_spUpdateFilter" ref="ad7c290e3baf37e60ddf1b7188e830c26" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a> <a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad7c290e3baf37e60ddf1b7188e830c26">RCUpdateOptions::m_spUpdateFilter</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩文件过滤器 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00353">353</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a69e76806a6fe2287021af2334b4c1057"></a><!-- doxytag: member="RCUpdateOptions::m_stdInFileName" ref="a69e76806a6fe2287021af2334b4c1057" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a69e76806a6fe2287021af2334b4c1057">RCUpdateOptions::m_stdInFileName</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>标准输入文件名称 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00309">309</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5150ce65bfc4d9116c1b1cbfc8f9696e"></a><!-- doxytag: member="RCUpdateOptions::m_stdInMode" ref="a5150ce65bfc4d9116c1b1cbfc8f9696e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a5150ce65bfc4d9116c1b1cbfc8f9696e">RCUpdateOptions::m_stdInMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>标准输入模式 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00305">305</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="acf53a8ec5b652a319e089dc5dc31d0da"></a><!-- doxytag: member="RCUpdateOptions::m_stdOutMode" ref="acf53a8ec5b652a319e089dc5dc31d0da" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#acf53a8ec5b652a319e089dc5dc31d0da">RCUpdateOptions::m_stdOutMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>标准输出模式 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00313">313</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4421b36bec02f082d69b4003fb6e69a5"></a><!-- doxytag: member="RCUpdateOptions::m_updateArchiveItSelf" ref="a4421b36bec02f082d69b4003fb6e69a5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a4421b36bec02f082d69b4003fb6e69a5">RCUpdateOptions::m_updateArchiveItSelf</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00285">285</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af014833b873dd9550ec97512090166a0"></a><!-- doxytag: member="RCUpdateOptions::m_updateMode" ref="af014833b873dd9550ec97512090166a0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a> <a class="el" href="../../d1/de0/classRCUpdateOptions.html#af014833b873dd9550ec97512090166a0">RCUpdateOptions::m_updateMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新方式 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00345">345</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aac4db616ae4e7cb9aa98889055488f82"></a><!-- doxytag: member="RCUpdateOptions::m_volumnsSizes" ref="aac4db616ae4e7cb9aa98889055488f82" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&gt; <a class="el" href="../../d1/de0/classRCUpdateOptions.html#aac4db616ae4e7cb9aa98889055488f82">RCUpdateOptions::m_volumnsSizes</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分卷大小 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00337">337</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad525d265d01d9dbcffd3ed5619f7021f"></a><!-- doxytag: member="RCUpdateOptions::m_workingDir" ref="ad525d265d01d9dbcffd3ed5619f7021f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../d1/de0/classRCUpdateOptions.html#ad525d265d01d9dbcffd3ed5619f7021f">RCUpdateOptions::m_workingDir</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>工作目录 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00333">333</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a52e33a9217b56f77cf9bc497d1400afa"></a><!-- doxytag: member="RCUpdateOptions::s_kDefaultArchiveType" ref="a52e33a9217b56f77cf9bc497d1400afa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../d1/de0/classRCUpdateOptions.html#a52e33a9217b56f77cf9bc497d1400afa">RCUpdateOptions::s_kDefaultArchiveType</a><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>缺省文档类型 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00357">357</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="acfc0ccb8e8fc3c7e1057d84d91e4d0cf"></a><!-- doxytag: member="RCUpdateOptions::s_kSFXExtension" ref="acfc0ccb8e8fc3c7e1057d84d91e4d0cf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../d1/de0/classRCUpdateOptions.html#acfc0ccb8e8fc3c7e1057d84d91e4d0cf">RCUpdateOptions::s_kSFXExtension</a><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>自解压扩展名 </p>
+
+<p>在文件<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a>第<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html#l00361">361</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">RCUpdateOptions.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RC7zInArchive.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_74ed847265da93e9cefef0816abf9a58.html">7z</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RC7zInArchive.h文件参考</h1><code>#include &quot;<a class="el" href="../../d2/df2/RCNonCopyable_8h_source.html">base/RCNonCopyable.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dc/d53/RCVector_8h_source.html">common/RCVector.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d1/d4f/RC7zDefs_8h_source.html">format/7z/RC7zDefs.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d3/d46/RC7zInByte_8h_source.html">format/7z/RC7zInByte.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/dc9/IStream_8h_source.html">interface/IStream.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d71/ICoder_8h_source.html">interface/ICoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/dcb/IPassword_8h_source.html">interface/IPassword.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dd/d84/RC7zInArchiveInfo_8h_source.html">format/7z/RC7zInArchiveInfo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/d2a/RC7zItem_8h_source.html">format/7z/RC7zItem.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/dd6/RC7zArchiveDatabaseEx_8h_source.html">format/7z/RC7zArchiveDatabaseEx.h</a>&quot;</code><br/>
+<div class="dynheader">
+RC7zInArchive.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/d9d/RC7zInArchive_8h__incl.png" border="0" usemap="#RC7zInArchive_8h_map" alt=""/></div>
+<map name="RC7zInArchive_8h_map" id="RC7zInArchive_8h">
+<area shape="rect" id="node3" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="5,304,181,331"/><area shape="rect" id="node19" href="../../dc/d53/RCVector_8h.html" title="common/RCVector.h" alt="" coords="741,304,899,331"/><area shape="rect" id="node23" href="../../d1/d4f/RC7zDefs_8h.html" title="format/7z/RC7zDefs.h" alt="" coords="373,304,539,331"/><area shape="rect" id="node26" href="../../d3/d46/RC7zInByte_8h.html" title="format/7z/RC7zInByte.h" alt="" coords="240,229,419,256"/><area shape="rect" id="node39" href="../../d8/dc9/IStream_8h.html" title="interface/IStream.h" alt="" coords="1908,229,2057,256"/><area shape="rect" id="node52" href="../../de/d71/ICoder_8h.html" title="interface/ICoder.h" alt="" coords="1488,80,1629,107"/><area shape="rect" id="node76" href="../../df/dcb/IPassword_8h.html" title="interface/IPassword.h" alt="" coords="1519,229,1681,256"/><area shape="rect" id="node80" href="../../dd/d84/RC7zInArchiveInfo_8h.html" title="format/7z/RC7zInArchiveInfo.h" alt="" coords="799,229,1023,256"/><area shape="rect" id="node86" href="../../d6/d2a/RC7zItem_8h.html" title="format/7z/RC7zItem.h" alt="" coords="556,229,724,256"/><area shape="rect" id="node101" href="../../d8/dd6/RC7zArchiveDatabaseEx_8h.html" title="format/7z/RC7zArchiveDatabaseEx.h" alt="" coords="544,155,811,181"/><area shape="rect" id="node5" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="888,453,1005,480"/><area shape="rect" id="node7" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="683,528,808,555"/><area shape="rect" id="node11" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="429,603,595,629"/><area shape="rect" id="node13" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="619,603,749,629"/><area shape="rect" id="node29" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="1235,304,1363,331"/><area shape="rect" id="node35" href="../../d7/d72/RCSmartPtr_8h.html" title="base/RCSmartPtr.h" alt="" coords="205,304,349,331"/><area shape="rect" id="node41" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="1661,304,1827,331"/><area shape="rect" id="node43" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="1451,379,1613,405"/><area shape="rect" id="node46" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="1651,379,1787,405"/><area shape="rect" id="node55" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="1507,155,1675,181"/><area shape="rect" id="node61" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="1213,155,1381,181"/><area shape="rect" id="node57" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="1705,229,1884,256"/><area shape="rect" id="node64" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="923,304,1109,331"/><area shape="rect" id="node67" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="1097,229,1260,256"/><area shape="rect" id="node82" href="../../d4/db5/RC7zHeader_8h.html" title="format/7z/RC7zHeader.h" alt="" coords="984,379,1168,405"/><area shape="rect" id="node92" href="../../d9/d2d/RCBuffer_8h.html" title="common/RCBuffer.h" alt="" coords="563,304,717,331"/></map>
+</div>
+
+<p><a href="../../de/d9d/RC7zInArchive_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da1/classRCZip_1_1RC7zInArchive.html">RCZip::RC7zInArchive</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d9d/RC7zInArchive_8h.html#a38be4310d4904efe52044fb530837b8a">__RC7zInArchive_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a38be4310d4904efe52044fb530837b8a"></a><!-- doxytag: member="RC7zInArchive.h::__RC7zInArchive_h_" ref="a38be4310d4904efe52044fb530837b8a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RC7zInArchive_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/d9d/RC7zInArchive_8h_source.html">RC7zInArchive.h</a>第<a class="el" href="../../de/d9d/RC7zInArchive_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

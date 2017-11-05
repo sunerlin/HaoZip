@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RC7zArchiveInfo类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html">RC7zArchiveInfo</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RC7zArchiveInfo类参考</h1><!-- doxytag: class="RCZip::RC7zArchiveInfo" --><!-- doxytag: inherits="RCZip::RCArchiveInfoBase" -->
+<p><code>#include &lt;<a class="el" href="../../d8/d0e/RC7zArchiveInfo_8h_source.html">RC7zArchiveInfo.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RC7zArchiveInfo</div>
+<div class="dynsection">
+<div class="center"><img src="../../d3/d7f/classRCZip_1_1RC7zArchiveInfo__inherit__graph.png" border="0" usemap="#RCZip_1_1RC7zArchiveInfo_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RC7zArchiveInfo_inherit__map" id="RCZip_1_1RC7zArchiveInfo_inherit__map">
+<area shape="rect" id="node2" href="../../df/dd6/classRCZip_1_1RCArchiveInfoBase.html" title="{RCZip::RCArchiveInfoBase\n||+ RCArchiveInfoBase()\l+ ~RCArchiveInfoBase()\l+ AddRef()\l+ Release()\l}" alt="" coords="127,590,321,711"/><area shape="rect" id="node4" href="../../d1/def/classRCZip_1_1IArchiveInfo.html" title="{RCZip::IArchiveInfo\n||+ GetArchiveID()\l+ GetName()\l+ GetExt()\l+ GetAddExt()\l+ GetSignature()\l+ IsKeepName()\l+ GetCreateInArchiveFunc()\l+ GetCreateOutArchiveFunc()\l# ~IArchiveInfo()\l}" alt="" coords="5,347,227,541"/><area shape="rect" id="node6" href="../../db/dce/classRCZip_1_1IRefCounted.html" title="{RCZip::IRefCounted\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IRefCounted()\l}" alt="" coords="40,177,192,298"/><area shape="rect" id="node8" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="43,6,189,127"/><area shape="rect" id="node10" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="251,376,416,512"/><area shape="rect" id="node12" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="245,199,421,276"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RC7zArchiveInfo合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d1/d6e/classRCZip_1_1RC7zArchiveInfo__coll__graph.png" border="0" usemap="#RCZip_1_1RC7zArchiveInfo_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RC7zArchiveInfo_coll__map" id="RCZip_1_1RC7zArchiveInfo_coll__map">
+<area shape="rect" id="node2" href="../../df/dd6/classRCZip_1_1RCArchiveInfoBase.html" title="{RCZip::RCArchiveInfoBase\n||+ RCArchiveInfoBase()\l+ ~RCArchiveInfoBase()\l+ AddRef()\l+ Release()\l}" alt="" coords="127,590,321,711"/><area shape="rect" id="node4" href="../../d1/def/classRCZip_1_1IArchiveInfo.html" title="{RCZip::IArchiveInfo\n||+ GetArchiveID()\l+ GetName()\l+ GetExt()\l+ GetAddExt()\l+ GetSignature()\l+ IsKeepName()\l+ GetCreateInArchiveFunc()\l+ GetCreateOutArchiveFunc()\l# ~IArchiveInfo()\l}" alt="" coords="5,347,227,541"/><area shape="rect" id="node6" href="../../db/dce/classRCZip_1_1IRefCounted.html" title="{RCZip::IRefCounted\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IRefCounted()\l}" alt="" coords="40,177,192,298"/><area shape="rect" id="node8" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="43,6,189,127"/><area shape="rect" id="node10" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="251,376,416,512"/><area shape="rect" id="node12" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="245,199,421,276"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d7/dc8/classRCZip_1_1RC7zArchiveInfo-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#ac3b9c86de6503097c2059b4731c4c2cd">RC7zArchiveInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#a9cd9c3eae7bdd28ef09b49248e0dde95">~RC7zArchiveInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a6d7155d8406e293df197089a12eb8f03">RCArchiveID</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#a481ce6ecc3f7f0ef59ce5fedcbdc25d7">GetArchiveID</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#ab86802b6c8acaf9390fc863ea2c3f46f">GetName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#a2a3d39cd7489458d0a059e53ba297ac8">GetExt</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#aa4faa33b9249cba794040cfb2095aee0">GetAddExt</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#a099c4b4b3c6ea7a937cc7abfee9dbbc0">GetSignature</a> (std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> &gt; &amp;signature) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#a0c879948c0f9e7dbbdbc92f3d659c38a">IsKeepName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a3d8f011885c54a97b381984a20b1d8b2">PFNCreateInArchive</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#a8a6a6b727c9e0e79bbf47c9838c0a870">GetCreateInArchiveFunc</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2ded591bd0c30875963ec4298ccc5bf1">PFNCreateOutArchive</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d46/classRCZip_1_1RC7zArchiveInfo.html#a6f16b97e6c5fd8c664a80e351734a50f">GetCreateOutArchiveFunc</a> (void) const </td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d8/d0e/RC7zArchiveInfo_8h_source.html">RC7zArchiveInfo.h</a>第<a class="el" href="../../d8/d0e/RC7zArchiveInfo_8h_source.html#l00017">17</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="ac3b9c86de6503097c2059b4731c4c2cd"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::RC7zArchiveInfo" ref="ac3b9c86de6503097c2059b4731c4c2cd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RC7zArchiveInfo::RC7zArchiveInfo </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9cd9c3eae7bdd28ef09b49248e0dde95"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::~RC7zArchiveInfo" ref="a9cd9c3eae7bdd28ef09b49248e0dde95" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RC7zArchiveInfo::~RC7zArchiveInfo </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="aa4faa33b9249cba794040cfb2095aee0"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::GetAddExt" ref="aa4faa33b9249cba794040cfb2095aee0" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RC7zArchiveInfo::GetAddExt </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取Archive扩展名 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Archive扩展名 </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#af3c3f599e9d0fbaa52138d266c44e252">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a481ce6ecc3f7f0ef59ce5fedcbdc25d7"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::GetArchiveID" ref="a481ce6ecc3f7f0ef59ce5fedcbdc25d7" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a6d7155d8406e293df197089a12eb8f03">RCArchiveID</a> RCZip::RC7zArchiveInfo::GetArchiveID </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文档类型唯一ID </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>文档ID </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#af712d6610f6140e16f99b7afad5911ff">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a6a6b727c9e0e79bbf47c9838c0a870"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::GetCreateInArchiveFunc" ref="a8a6a6b727c9e0e79bbf47c9838c0a870" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a3d8f011885c54a97b381984a20b1d8b2">PFNCreateInArchive</a> RCZip::RC7zArchiveInfo::GetCreateInArchiveFunc </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取创建InArchive函数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回InArchive函数指针 </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#a2bfbd5582f6e59a957346a0887bb4337">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f16b97e6c5fd8c664a80e351734a50f"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::GetCreateOutArchiveFunc" ref="a6f16b97e6c5fd8c664a80e351734a50f" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2ded591bd0c30875963ec4298ccc5bf1">PFNCreateOutArchive</a> RCZip::RC7zArchiveInfo::GetCreateOutArchiveFunc </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取创建OutArchive函数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回OutArchive函数指针 </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#a835fec062d1606e9be46fa82b76cf88c">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a3d39cd7489458d0a059e53ba297ac8"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::GetExt" ref="a2a3d39cd7489458d0a059e53ba297ac8" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RC7zArchiveInfo::GetExt </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取Archive扩展名 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Archive扩展名 </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#a4e82be152e99ab18a562fae9105c9c65">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab86802b6c8acaf9390fc863ea2c3f46f"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::GetName" ref="ab86802b6c8acaf9390fc863ea2c3f46f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RC7zArchiveInfo::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取Archive名称 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Archive名称 </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#ad29bf2910f813bc31b9d1624c8b464dc">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a099c4b4b3c6ea7a937cc7abfee9dbbc0"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::GetSignature" ref="a099c4b4b3c6ea7a937cc7abfee9dbbc0" args="(std::vector&lt; byte_t &gt; &amp;signature) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RCZip::RC7zArchiveInfo::GetSignature </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>signature</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取Archive签名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>signature</em>&nbsp;</td><td>返回Archive签名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#a069ef550f7874724c7545da06782c06f">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c879948c0f9e7dbbdbc92f3d659c38a"></a><!-- doxytag: member="RCZip::RC7zArchiveInfo::IsKeepName" ref="a0c879948c0f9e7dbbdbc92f3d659c38a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RCZip::RC7zArchiveInfo::IsKeepName </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取KeepName属性 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回KeepName属性 </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/def/classRCZip_1_1IArchiveInfo.html#abaf53dd602d9a0e79d822cb07c4b17c9">RCZip::IArchiveInfo</a>。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d8/d0e/RC7zArchiveInfo_8h_source.html">RC7zArchiveInfo.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

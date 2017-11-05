@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCFormatDefs.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_ab70c5bc1a4800a2e6aa9d8e0a077b43.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCFormatDefs.h</h1><a href="../../d4/d78/RCFormatDefs_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCFormatDefs_h_</span>
+<a name="l00011"></a><a class="code" href="../../d4/d78/RCFormatDefs_8h.html#acc846ac29a9269be2cda71787721aa4d">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCFormatDefs_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 
+<a name="l00017"></a><a class="code" href="../../d4/d78/RCFormatDefs_8h.html#a36b0c069fa27e11f46f8a294243e19ec">00017</a> <span class="preprocessor">#define RC_CREATE_ARCHIVE_FUN_NAME      &quot;CreateArchiveInfoObjects&quot;</span>
+<a name="l00018"></a><a class="code" href="../../d4/d78/RCFormatDefs_8h.html#a4b31b51769fc1ce25e032d94ccbb8ed3">00018</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_CREATE_ARCHIVE_FUN_TNAME  _T(&quot;CreateArchiveInfoObjects&quot;)</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span>
+<a name="l00020"></a>00020 <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{<span class="comment"></span>
+<a name="l00021"></a>00021 <span class="comment">    /** 创建文档信息对象函数, 返回对象类型为IArchiveInfo接口指针数组的起始地址，最后一个元素后面为NULL</span>
+<a name="l00022"></a>00022 <span class="comment">    @param [out] outObject 返回IArchiveInfo接口指针，引用计数不加1</span>
+<a name="l00023"></a>00023 <span class="comment">    */</span>
+<a name="l00024"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#afd5dd9b62a6d207a0b42f175e97b0893">00024</a>     <span class="keyword">typedef</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> (*<a class="code" href="../../d7/d5a/namespaceRCZip.html#afd5dd9b62a6d207a0b42f175e97b0893">RCCreateArchiveFunction</a>)(<span class="keywordtype">void</span>** outObject) ;
+<a name="l00025"></a>00025 }
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="preprocessor">#endif //__RCFormatDefs_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

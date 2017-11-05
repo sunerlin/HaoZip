@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCPPMDContextDefs.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_80f3ee2f853774b593e8137b7c9fc217.html">ppmd</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCPPMDContextDefs.h</h1><a href="../../da/d96/RCPPMDContextDefs_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 <span class="comment">// This code is based on Dmitry Shkarin&#39;s PPMdH code</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="preprocessor">#ifndef __RCPPMDContextDefs_h_</span>
+<a name="l00012"></a><a class="code" href="../../da/d96/RCPPMDContextDefs_8h.html#ad437415a29e420d5c7ac39afa1136331">00012</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCPPMDContextDefs_h_ 1</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00017"></a>00017 <span class="comment"></span>
+<a name="l00018"></a>00018 <span class="comment">/** PPMD 常量定义</span>
+<a name="l00019"></a>00019 <span class="comment">*/</span>
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#aa462b2e10ad055e1a738b99f898d490b">00021</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#aa462b2e10ad055e1a738b99f898d490b">s_intBits</a> = 7 ;
+<a name="l00022"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a75e865331be29fbd173ea858614dbab1">00022</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a75e865331be29fbd173ea858614dbab1">s_periodBits</a> = 7 ;
+<a name="l00023"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#ac048a49d4a4b785d172ef4dea81784e4">00023</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ac048a49d4a4b785d172ef4dea81784e4">s_totBits</a> = <a class="code" href="../../d7/d5a/namespaceRCZip.html#aa462b2e10ad055e1a738b99f898d490b">s_intBits</a> + <a class="code" href="../../d7/d5a/namespaceRCZip.html#a75e865331be29fbd173ea858614dbab1">s_periodBits</a> ;
+<a name="l00024"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a3c7c2f4ffd37c9c4c06ddb2a8d87457b">00024</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a3c7c2f4ffd37c9c4c06ddb2a8d87457b">s_interval</a> = 1 &lt;&lt; <a class="code" href="../../d7/d5a/namespaceRCZip.html#aa462b2e10ad055e1a738b99f898d490b">s_intBits</a> ;
+<a name="l00025"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a7712f4d31aa5ce46169d477e82c6670d">00025</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a7712f4d31aa5ce46169d477e82c6670d">s_binScale</a> = 1 &lt;&lt; <a class="code" href="../../d7/d5a/namespaceRCZip.html#ac048a49d4a4b785d172ef4dea81784e4">s_totBits</a> ;
+<a name="l00026"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#aba86b3e3943896ed7186588038a069e9">00026</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#aba86b3e3943896ed7186588038a069e9">s_maxFreq</a> = 124 ;
+<a name="l00027"></a>00027 
+<a name="l00028"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#aa97581793872d84bc782ef0c79062668">00028</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#aa97581793872d84bc782ef0c79062668">s_initBinEsc</a>[] = {0x3CDD, 0x1F3F, 0x59BF, 0x48F3, 0x64A1, 0x5ABC, 0x6632, 0x6051} ;
+<a name="l00029"></a>00029 <span class="comment"></span>
+<a name="l00030"></a>00030 <span class="comment">/** Tabulated escapes for exponential symbol distribution</span>
+<a name="l00031"></a>00031 <span class="comment">*/</span>
+<a name="l00032"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a01151833a8d22540819c69d7d8b0b6ba">00032</a> <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a01151833a8d22540819c69d7d8b0b6ba">s_expEscape</a>[16]={ 25,14, 9, 7, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2 };
+<a name="l00033"></a>00033 
+<a name="l00034"></a><a class="code" href="../../da/d96/RCPPMDContextDefs_8h.html#a5f285c9e1c1bbaff02c7871ee5a129cc">00034</a> <span class="preprocessor">#define GET_MEAN(SUMM,SHIFT,ROUND) ((SUMM+(1 &lt;&lt; (SHIFT-ROUND))) &gt;&gt; (SHIFT))</span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>
+<a name="l00036"></a>00036 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="preprocessor">#endif //__RCPPMDContextDefs_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

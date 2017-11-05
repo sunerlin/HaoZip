@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCWimStreamInfo结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html">RCWimStreamInfo</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCWimStreamInfo结构参考</h1><!-- doxytag: class="RCZip::RCWimStreamInfo" -->
+<p><code>#include &lt;<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html">RCWimItem.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCWimStreamInfo合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d3/d0d/structRCZip_1_1RCWimStreamInfo__coll__graph.png" border="0" usemap="#RCZip_1_1RCWimStreamInfo_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCWimStreamInfo_coll__map" id="RCZip_1_1RCWimStreamInfo_coll__map">
+<area shape="rect" id="node2" href="../../df/d03/classRCZip_1_1RCWimResource.html" title="{RCZip::RCWimResource\n|+ m_packSize\l+ m_offset\l+ m_unpackSize\l+ m_flags\l|+ RCWimResource()\l+ ~RCWimResource()\l+ Parse()\l+ IsCompressed()\l+ IsMetadata()\l+ IsEmpty()\l}" alt="" coords="12,5,191,200"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d3/d40/structRCZip_1_1RCWimStreamInfo-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d03/classRCZip_1_1RCWimResource.html">RCWimResource</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#acaec34dfede3d3bcf35d3008e8f8acb0">m_resource</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#adfdbcbf11bb5216e752e9304db592f9a">m_partNumber</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#a81a710df95016d4131f0f4d7e9fad7f1">m_refCount</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#ac9f28131925263926a873a69a7660e9f">m_hash</a> [<a class="el" href="../../d7/d5a/namespaceRCZip.html#a71fa58e03bb70c6c28223df2a48d5fbe">s_kWimHashSize</a>]</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Wim Stream Info </p>
+
+<p>在文件<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html">RCWimItem.h</a>第<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html#l00024">24</a>行定义。</p>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ac9f28131925263926a873a69a7660e9f"></a><!-- doxytag: member="RCZip::RCWimStreamInfo::m_hash" ref="ac9f28131925263926a873a69a7660e9f" args="[s_kWimHashSize]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#ac9f28131925263926a873a69a7660e9f">RCZip::RCWimStreamInfo::m_hash</a>[<a class="el" href="../../d7/d5a/namespaceRCZip.html#a71fa58e03bb70c6c28223df2a48d5fbe">s_kWimHashSize</a>]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Hash </p>
+
+<p>在文件<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html">RCWimItem.h</a>第<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html#l00040">40</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adfdbcbf11bb5216e752e9304db592f9a"></a><!-- doxytag: member="RCZip::RCWimStreamInfo::m_partNumber" ref="adfdbcbf11bb5216e752e9304db592f9a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> <a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#adfdbcbf11bb5216e752e9304db592f9a">RCZip::RCWimStreamInfo::m_partNumber</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Part Number </p>
+
+<p>在文件<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html">RCWimItem.h</a>第<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html#l00032">32</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a81a710df95016d4131f0f4d7e9fad7f1"></a><!-- doxytag: member="RCZip::RCWimStreamInfo::m_refCount" ref="a81a710df95016d4131f0f4d7e9fad7f1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#a81a710df95016d4131f0f4d7e9fad7f1">RCZip::RCWimStreamInfo::m_refCount</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Ref Count </p>
+
+<p>在文件<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html">RCWimItem.h</a>第<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html#l00036">36</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="acaec34dfede3d3bcf35d3008e8f8acb0"></a><!-- doxytag: member="RCZip::RCWimStreamInfo::m_resource" ref="acaec34dfede3d3bcf35d3008e8f8acb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d03/classRCZip_1_1RCWimResource.html">RCWimResource</a> <a class="el" href="../../de/d41/structRCZip_1_1RCWimStreamInfo.html#acaec34dfede3d3bcf35d3008e8f8acb0">RCZip::RCWimStreamInfo::m_resource</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Resource </p>
+
+<p>在文件<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html">RCWimItem.h</a>第<a class="el" href="../../d9/dc3/RCWimItem_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d9/dc3/RCWimItem_8h_source.html">RCWimItem.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

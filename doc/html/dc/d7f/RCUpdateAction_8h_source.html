@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdateAction.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_1fee5ccf71dc3b0de21adbdee5795b7f.html">update</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdateAction.h</h1><a href="../../dc/d7f/RCUpdateAction_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#ifndef __RCUpdateAction_h</span>
+<a name="l00010"></a><a class="code" href="../../dc/d7f/RCUpdateAction_8h.html#ae43dc55dcdacfeb755fe59db986f4177">00010</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCUpdateAction_h 1</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d0f/RCSingleton_8h.html">base/RCSingleton.h</a>&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/d53/RCVector_8h.html">common/RCVector.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 <span class="comment"></span>
+<a name="l00017"></a>00017 <span class="comment">/** 压缩更新常量枚举定义</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html">00019</a> <span class="keyword">class </span><a class="code" href="../../de/d9d/classRCUpdateDefs.html">RCUpdateDefs</a>
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021 <span class="keyword">public</span>:
+<a name="l00022"></a>00022     
+<a name="l00023"></a>00023     <span class="keyword">enum</span> 
+<a name="l00024"></a>00024     {
+<a name="l00025"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a206611dea4d0f0aae3d8c84b764119fba6166fef3f2da7bbd9a451415b0cb82d7">00025</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a206611dea4d0f0aae3d8c84b764119fba6166fef3f2da7bbd9a451415b0cb82d7">KNUMVALUES</a> = 7,
+<a name="l00026"></a>00026     };
+<a name="l00027"></a>00027 <span class="comment"></span>
+<a name="l00028"></a>00028 <span class="comment">    /** 比较结果</span>
+<a name="l00029"></a>00029 <span class="comment">    */</span>
+<a name="l00030"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3">00030</a>     <span class="keyword">enum</span> <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3">enum_pairstate</a>
+<a name="l00031"></a>00031     {
+<a name="l00032"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3a3ae74a04c991ee45d64e4a50251868a9">00032</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3a3ae74a04c991ee45d64e4a50251868a9">KNOTMASKED</a> = 0,
+<a name="l00033"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3a1027c4015de80cceabdc2c817428fea8">00033</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3a1027c4015de80cceabdc2c817428fea8">KONLYINARCHIVE</a>,
+<a name="l00034"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3aedfbf1ab0751a14f697a6b49ad1a03d5">00034</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3aedfbf1ab0751a14f697a6b49ad1a03d5">KONLYONDISK</a>,
+<a name="l00035"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3ae0321502665557dab40fe90eb4bb7d50">00035</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3ae0321502665557dab40fe90eb4bb7d50">KNEWINARCHIVE</a>,
+<a name="l00036"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3af36e32b4f1c322a7e0cb3d212c9220a7">00036</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3af36e32b4f1c322a7e0cb3d212c9220a7">KOLDINARCHIVE</a>,
+<a name="l00037"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3a96d99ee47385602ec3b77c6c24c3f56e">00037</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3a96d99ee47385602ec3b77c6c24c3f56e">KSAMEFILES</a>,
+<a name="l00038"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3ae346dde04834737d1f4dc5e47703f696">00038</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3ae346dde04834737d1f4dc5e47703f696">KUNKNOWNEWERFILES</a>
+<a name="l00039"></a>00039     };
+<a name="l00040"></a>00040 <span class="comment"></span>
+<a name="l00041"></a>00041 <span class="comment">    /** 更新操作</span>
+<a name="l00042"></a>00042 <span class="comment">    */</span>
+<a name="l00043"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4">00043</a>     <span class="keyword">enum</span> <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4">enum_pairaction</a>
+<a name="l00044"></a>00044     {
+<a name="l00045"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4aee15135e1d98465f096a560eca2e9298">00045</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4aee15135e1d98465f096a560eca2e9298">KIGNORE</a> = 0,
+<a name="l00046"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4a88f80f84cbddc22d9e09f65bdca3b015">00046</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4a88f80f84cbddc22d9e09f65bdca3b015">KCOPY</a>,
+<a name="l00047"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4a0910e2b4d8027f6f3f1a5f0181f3e7ba">00047</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4a0910e2b4d8027f6f3f1a5f0181f3e7ba">KCOMPRESS</a>,
+<a name="l00048"></a><a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4acff7892e36e5cccfa8afd8439b66e639">00048</a>         <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4acff7892e36e5cccfa8afd8439b66e639">KCOMPRESSASANTI</a>
+<a name="l00049"></a>00049     };
+<a name="l00050"></a>00050 };
+<a name="l00051"></a>00051 
+<a name="l00052"></a><a class="code" href="../../dc/d7f/RCUpdateAction_8h.html#aeca8284c1b623b7be62d2507121d54fc">00052</a> <span class="keyword">typedef</span> <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3">RCUpdateDefs::enum_pairstate</a>    <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3">RCUpdatePairState</a>;
+<a name="l00053"></a><a class="code" href="../../dc/d7f/RCUpdateAction_8h.html#a4050a3e50e9e05aae39b784d8462904f">00053</a> <span class="keyword">typedef</span> <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4">RCUpdateDefs::enum_pairaction</a>   <a class="code" href="../../de/d9d/classRCUpdateDefs.html#a3b2c5482d2be281777ca7afb530bd1c4">RCUpdatePairAction</a>;
+<a name="l00054"></a>00054 <span class="comment"></span>
+<a name="l00055"></a>00055 <span class="comment">/** 更新操作集合</span>
+<a name="l00056"></a>00056 <span class="comment">*/</span>
+<a name="l00057"></a><a class="code" href="../../d1/dad/classRCActionSet.html">00057</a> <span class="keyword">class </span><a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a>
+<a name="l00058"></a>00058 {
+<a name="l00059"></a>00059 <span class="keyword">public</span>:
+<a name="l00060"></a>00060     <span class="comment"></span>
+<a name="l00061"></a>00061 <span class="comment">    /** 默认构造函数</span>
+<a name="l00062"></a>00062 <span class="comment">    */</span>
+<a name="l00063"></a><a class="code" href="../../d1/dad/classRCActionSet.html#a2e2672fa8570b69c15c75cfb898fd972">00063</a>     <a class="code" href="../../d1/dad/classRCActionSet.html#a2e2672fa8570b69c15c75cfb898fd972">RCActionSet</a>(): 
+<a name="l00064"></a>00064         <a class="code" href="../../d1/dad/classRCActionSet.html#addcaf148425ae03a4a729e2a2ecaa9ae">m_StateActions</a>(<a class="code" href="../../de/d9d/classRCUpdateDefs.html">RCUpdateDefs</a>::KNUMVALUES) 
+<a name="l00065"></a>00065     {}
+<a name="l00066"></a>00066     
+<a name="l00067"></a>00067 <span class="keyword">public</span>:
+<a name="l00068"></a>00068     <span class="comment"></span>
+<a name="l00069"></a>00069 <span class="comment">    /** =操作符重载</span>
+<a name="l00070"></a>00070 <span class="comment">    */</span>
+<a name="l00071"></a>00071     <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a>&amp; <a class="code" href="../../d1/dad/classRCActionSet.html#a178ea81cbe9af8ae6f7bf7f275513990">operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a>&amp; val);
+<a name="l00072"></a>00072     
+<a name="l00073"></a>00073 <span class="keyword">public</span>:
+<a name="l00074"></a>00074     <span class="comment"></span>
+<a name="l00075"></a>00075 <span class="comment">    /** 是否需扫描磁盘</span>
+<a name="l00076"></a>00076 <span class="comment">    @return 是返回true,否则返回false</span>
+<a name="l00077"></a>00077 <span class="comment">    */</span>
+<a name="l00078"></a>00078     <span class="keywordtype">bool</span> <a class="code" href="../../d1/dad/classRCActionSet.html#ac58d171ca54a71a0f2451f1e7f4e846d">NeedScanning</a>() <span class="keyword">const</span>;
+<a name="l00079"></a>00079     <span class="comment"></span>
+<a name="l00080"></a>00080 <span class="comment">    /** 返回更新操作列表</span>
+<a name="l00081"></a>00081 <span class="comment">    @return 返回更新操作列表</span>
+<a name="l00082"></a>00082 <span class="comment">    */</span>
+<a name="l00083"></a>00083     RCVector&lt;RCUpdatePairAction&gt; &amp; <a class="code" href="../../d1/dad/classRCActionSet.html#a5a44044ee43b43d3d6f478d17665e76c">GetStateActions</a>(<span class="keywordtype">void</span>);
+<a name="l00084"></a>00084     <span class="comment"></span>
+<a name="l00085"></a>00085 <span class="comment">    /** 返回更新操作列表</span>
+<a name="l00086"></a>00086 <span class="comment">    @return 返回更新操作列表</span>
+<a name="l00087"></a>00087 <span class="comment">    */</span>
+<a name="l00088"></a>00088     <span class="keyword">const</span> RCVector&lt;RCUpdatePairAction&gt;&amp; <a class="code" href="../../d1/dad/classRCActionSet.html#a5a44044ee43b43d3d6f478d17665e76c">GetStateActions</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00089"></a>00089     
+<a name="l00090"></a>00090 <span class="keyword">private</span>:
+<a name="l00091"></a>00091     <span class="comment"></span>
+<a name="l00092"></a>00092 <span class="comment">    /** 更新操作列表</span>
+<a name="l00093"></a>00093 <span class="comment">    */</span>
+<a name="l00094"></a><a class="code" href="../../d1/dad/classRCActionSet.html#addcaf148425ae03a4a729e2a2ecaa9ae">00094</a>     RCVector&lt;RCUpdatePairAction&gt; <a class="code" href="../../d1/dad/classRCActionSet.html#addcaf148425ae03a4a729e2a2ecaa9ae">m_StateActions</a>;
+<a name="l00095"></a>00095 };
+<a name="l00096"></a>00096 <span class="comment"></span>
+<a name="l00097"></a>00097 <span class="comment">/** 全局更新操作定义</span>
+<a name="l00098"></a>00098 <span class="comment">*/</span>
+<a name="l00099"></a><a class="code" href="../../d5/d63/structRCGlobalActionSet.html">00099</a> <span class="keyword">struct </span><a class="code" href="../../d5/d63/structRCGlobalActionSet.html">RCGlobalActionSet</a>
+<a name="l00100"></a>00100 {<span class="comment"></span>
+<a name="l00101"></a>00101 <span class="comment">    /** 新建操作</span>
+<a name="l00102"></a>00102 <span class="comment">    */</span>
+<a name="l00103"></a><a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a949ca4055c420e27bb28be9b399766c1">00103</a>     <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a> <a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a949ca4055c420e27bb28be9b399766c1">m_AddActionSet</a>;
+<a name="l00104"></a>00104     <span class="comment"></span>
+<a name="l00105"></a>00105 <span class="comment">    /** 更新操作</span>
+<a name="l00106"></a>00106 <span class="comment">    */</span>
+<a name="l00107"></a><a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a024a94ad647f16d012297346137c6ec5">00107</a>     <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a> <a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a024a94ad647f16d012297346137c6ec5">m_UpdateActionSet</a>;
+<a name="l00108"></a>00108     <span class="comment"></span>
+<a name="l00109"></a>00109 <span class="comment">    /** 刷新操作</span>
+<a name="l00110"></a>00110 <span class="comment">    */</span>
+<a name="l00111"></a><a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a43d13954895c6b3437b5d4818b225c6b">00111</a>     <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a> <a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a43d13954895c6b3437b5d4818b225c6b">m_FreshActionSet</a>;
+<a name="l00112"></a>00112     <span class="comment"></span>
+<a name="l00113"></a>00113 <span class="comment">    /** 同步操作</span>
+<a name="l00114"></a>00114 <span class="comment">    */</span>
+<a name="l00115"></a><a class="code" href="../../d5/d63/structRCGlobalActionSet.html#acc248934417b2e6da3ce51e29fb6b7f9">00115</a>     <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a> <a class="code" href="../../d5/d63/structRCGlobalActionSet.html#acc248934417b2e6da3ce51e29fb6b7f9">m_SynchronizeActionSet</a>;
+<a name="l00116"></a>00116     <span class="comment"></span>
+<a name="l00117"></a>00117 <span class="comment">    /** 删除操作</span>
+<a name="l00118"></a>00118 <span class="comment">    */</span>
+<a name="l00119"></a><a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a10c3b508c697d005921175fa76686217">00119</a>     <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a> <a class="code" href="../../d5/d63/structRCGlobalActionSet.html#a10c3b508c697d005921175fa76686217">m_DeleteActionSet</a>;
+<a name="l00120"></a>00120     <span class="comment"></span>
+<a name="l00121"></a>00121 <span class="comment">    /** 默认构造函数</span>
+<a name="l00122"></a>00122 <span class="comment">    */</span>
+<a name="l00123"></a>00123     <a class="code" href="../../d5/d63/structRCGlobalActionSet.html#aeae046f9c33129220165867c8f07037d">RCGlobalActionSet</a>();
+<a name="l00124"></a>00124 };
+<a name="l00125"></a>00125 <span class="comment"></span>
+<a name="l00126"></a>00126 <span class="comment">/** 定义单例作为全局访问点</span>
+<a name="l00127"></a>00127 <span class="comment">*/</span>
+<a name="l00128"></a><a class="code" href="../../dc/d7f/RCUpdateAction_8h.html#a647e64ad44f7b1c1a9b86568d1489e57">00128</a> <span class="keyword">typedef</span> RCSingleton&lt;RCGlobalActionSet&gt; <a class="code" href="../../dc/d7f/RCUpdateAction_8h.html#a647e64ad44f7b1c1a9b86568d1489e57">Singleton_GlobalActionSet</a>;
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 <span class="preprocessor">#endif //__RCUpdateAction_h</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

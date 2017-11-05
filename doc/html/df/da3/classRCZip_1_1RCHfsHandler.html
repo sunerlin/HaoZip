@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCHfsHandler类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html">RCHfsHandler</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCHfsHandler类参考</h1><!-- doxytag: class="RCZip::RCHfsHandler" --><!-- doxytag: inherits="IUnknownImpl2&lt; IInArchive, ISetCompressCodecsInfo &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html">RCHfsHandler.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCHfsHandler</div>
+<div class="dynsection">
+<div class="center"><img src="../../de/d62/classRCZip_1_1RCHfsHandler__inherit__graph.png" border="0" usemap="#RCZip_1_1RCHfsHandler_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCHfsHandler_inherit__map" id="RCZip_1_1RCHfsHandler_inherit__map">
+<area shape="rect" id="node2" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; IInArchive, ISetCompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="107,449,549,570"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,220,176,356"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../d9/d95/classRCZip_1_1IInArchive.html" title="{RCZip::IInArchive\n||+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l# ~IInArchive()\l}" alt="" coords="200,176,456,400"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="389,6,536,127"/><area shape="rect" id="node12" href="../../d0/d6d/classRCZip_1_1ISetCompressCodecsInfo.html" title="{RCZip::ISetCompressCodecsInfo\n||+ SetCompressCodecsInfo()\l# ~ISetCompressCodecsInfo()\l}" alt="" coords="480,242,715,334"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCHfsHandler合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/d80/classRCZip_1_1RCHfsHandler__coll__graph.png" border="0" usemap="#RCZip_1_1RCHfsHandler_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCHfsHandler_coll__map" id="RCZip_1_1RCHfsHandler_coll__map">
+<area shape="rect" id="node2" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; IInArchive, ISetCompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="215,530,657,651"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,236,176,372"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../d9/d95/classRCZip_1_1IInArchive.html" title="{RCZip::IInArchive\n||+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l# ~IInArchive()\l}" alt="" coords="200,192,456,416"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="643,6,789,127"/><area shape="rect" id="node12" href="../../d0/d6d/classRCZip_1_1ISetCompressCodecsInfo.html" title="{RCZip::ISetCompressCodecsInfo\n||+ SetCompressCodecsInfo()\l# ~ISetCompressCodecsInfo()\l}" alt="" coords="480,258,715,350"/><area shape="rect" id="node27" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="739,258,944,350"/><area shape="rect" id="node32" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html" title="{RCZip::ICompressCodecsInfo\n||+ GetNumberOfMethods()\l+ GetMethod()\l+ CreateDecoder()\l+ CreateEncoder()\l# ~ICompressCodecsInfo()\l}" alt="" coords="968,236,1181,372"/><area shape="rect" id="node15" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html" title="{RCZip::RCHfsDatabase\n|+ m_header\l+ m_items\l&#45; m_idToIndexMap\l|+ RCHfsDatabase()\l+ ~RCHfsDatabase()\l+ Clear()\l+ GetItemPath()\l+ Open()\l&#45; LoadExtentFile()\l&#45; LoadCatalog()\l&#45; ReadFile()\l}" alt="" coords="1179,1079,1349,1289"/><area shape="rect" id="node17" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html" title="{RCZip::RCHfsVolHeader\n|+ m_header\l+ m_version\l+ m_cTime\l+ m_mTime\l+ m_blockSizeLog\l+ m_numBlocks\l+ m_numFreeBlocks\l+ m_extentsFile\l+ m_catalogFile\l|+ IsHfsX()\l}" alt="" coords="1179,493,1355,688"/><area shape="rect" id="node19" href="../../d8/dce/structRCZip_1_1RCHfsFork.html" title="{RCZip::RCHfsFork\n|+ m_size\l+ m_numBlocks\l+ m_extents\l|+ Parse()\l}" alt="" coords="1205,251,1344,357"/><area shape="rect" id="node21" href="../../d5/d61/structRCZip_1_1RCHfsExtent.html" title="{RCZip::RCHfsExtent\n|+ m_pos\l+ m_numBlocks\l|}" alt="" coords="1199,21,1351,113"/><area shape="rect" id="node23" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="764,1035,948,1333"/><area shape="rect" id="node25" href="../../db/da6/classRCZip_1_1IInStream.html" title="{RCZip::IInStream\n||+ Seek()\l# ~IInStream()\l}" alt="" coords="789,545,923,637"/><area shape="rect" id="node30" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ICompressCodecsInfo \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="913,713,1175,1010"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d6/d87/classRCZip_1_1RCHfsHandler-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a69801a8822e28958bfa703f93faa6c35">RCHfsHandler</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#ac58959a1485228a0d425eba5ed933aaa">~RCHfsHandler</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#acf8b0ca059f456e1f240ae7d83816c17">Open</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *stream, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> maxCheckStartPosition, <a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a> *openArchiveCallback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#af422411673dabf62e0ca077d28b24545">Close</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a56611acafcaf8a6584024e0d88388d6e">GetNumberOfItems</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numItems)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#ac8964a9c4b1a9dcc3400c431e3a84341">GetProperty</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> propID, <a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a0d8dd3eb939d84dac49ed5eb6a2b8462">Extract</a> (const std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &gt; &amp;indices, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> testMode, <a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *extractCallback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a274c25f27c74afcf226b5f040104a4cb">GetArchiveProperty</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> propID, <a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a3355abafd9dd6625f84bac6fcb440bea">GetNumberOfProperties</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numProperties)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a169954170bd668675ba40df5fb0560b3">GetPropertyInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;name, <a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;propID, <a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;varType)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a5ac182dcd11c3a2f159e22b698ddb2ab">GetNumberOfArchiveProperties</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numProperties)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a313260bf3bd301a3b6a1b5d8e85c4e31">GetArchivePropertyInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;name, <a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;propID, <a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;varType)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#ad46c593bfefa7994df21c5dda592fc7a">SetCompressCodecsInfo</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *compressCodecsInfo)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCodecsInfoPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#aef7dfe1bbb66e6ac241f8867bc85d8c6">m_compressCodecsInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IInStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a5a4bf87533ec9eee0b1164813997a348">m_stream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html">RCHfsDatabase</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a8b1f3582a54767296f397954d8b504f5">m_db</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html">RCHfsHandler.h</a>第<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html#l00022">22</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a69801a8822e28958bfa703f93faa6c35"></a><!-- doxytag: member="RCZip::RCHfsHandler::RCHfsHandler" ref="a69801a8822e28958bfa703f93faa6c35" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCHfsHandler::RCHfsHandler </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac58959a1485228a0d425eba5ed933aaa"></a><!-- doxytag: member="RCZip::RCHfsHandler::~RCHfsHandler" ref="ac58959a1485228a0d425eba5ed933aaa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCHfsHandler::~RCHfsHandler </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="af422411673dabf62e0ca077d28b24545"></a><!-- doxytag: member="RCZip::RCHfsHandler::Close" ref="af422411673dabf62e0ca077d28b24545" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::Close </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>关闭文档 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ae5b83794448dd98ee6281d407682c63e">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d8dd3eb939d84dac49ed5eb6a2b8462"></a><!-- doxytag: member="RCZip::RCHfsHandler::Extract" ref="a0d8dd3eb939d84dac49ed5eb6a2b8462" args="(const std::vector&lt; uint32_t &gt; &amp;indices, int32_t testMode, IArchiveExtractCallback *extractCallback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::Extract </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>testMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>indices</em>&nbsp;</td><td>需要解压的Item 下标数组，如果数组内容为空表示解压全部内容 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>testMode</em>&nbsp;</td><td>1为测试模式，0 为正常解压模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractCallback</em>&nbsp;</td><td>解压回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#aac0b755af958d4cf7552eba0125a8f33">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a274c25f27c74afcf226b5f040104a4cb"></a><!-- doxytag: member="RCZip::RCHfsHandler::GetArchiveProperty" ref="a274c25f27c74afcf226b5f040104a4cb" args="(RCPropertyID propID, RCVariant &amp;value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::GetArchiveProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a>&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文档属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>属性值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a2c8f4a10be142e5c86080fda944b9d40">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a313260bf3bd301a3b6a1b5d8e85c4e31"></a><!-- doxytag: member="RCZip::RCHfsHandler::GetArchivePropertyInfo" ref="a313260bf3bd301a3b6a1b5d8e85c4e31" args="(uint32_t index, RCString &amp;name, RCPropertyID &amp;propID, RCVariantType::RCVariantID &amp;varType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::GetArchivePropertyInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>varType</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文档属性信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>属性下标值 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>返回属性名称 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>返回属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>varType</em>&nbsp;</td><td>返回属性类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a3c0816751af7edd7f344ae1af1807618">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ac182dcd11c3a2f159e22b698ddb2ab"></a><!-- doxytag: member="RCZip::RCHfsHandler::GetNumberOfArchiveProperties" ref="a5ac182dcd11c3a2f159e22b698ddb2ab" args="(uint32_t &amp;numProperties)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::GetNumberOfArchiveProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numProperties</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文档属性个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numProperties</em>&nbsp;</td><td>返回属性个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ae6593b4ff5dd64ee4cdefed4c5c90a0b">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a56611acafcaf8a6584024e0d88388d6e"></a><!-- doxytag: member="RCZip::RCHfsHandler::GetNumberOfItems" ref="a56611acafcaf8a6584024e0d88388d6e" args="(uint32_t &amp;numItems)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::GetNumberOfItems </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numItems</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取内容个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numItems</em>&nbsp;</td><td>返回文档内容个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a76964f4058a9accba200aee184519b62">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3355abafd9dd6625f84bac6fcb440bea"></a><!-- doxytag: member="RCZip::RCHfsHandler::GetNumberOfProperties" ref="a3355abafd9dd6625f84bac6fcb440bea" args="(uint32_t &amp;numProperties)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::GetNumberOfProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numProperties</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取属性个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numProperties</em>&nbsp;</td><td>返回属性个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a96717329d292375a4493ec852c9fbc97">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8964a9c4b1a9dcc3400c431e3a84341"></a><!-- doxytag: member="RCZip::RCHfsHandler::GetProperty" ref="ac8964a9c4b1a9dcc3400c431e3a84341" args="(uint32_t index, RCPropertyID propID, RCVariant &amp;value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::GetProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a>&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>属性的下标 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>属性值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ae4a70e4c5c95549f056bbc8d1d10886f">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a169954170bd668675ba40df5fb0560b3"></a><!-- doxytag: member="RCZip::RCHfsHandler::GetPropertyInfo" ref="a169954170bd668675ba40df5fb0560b3" args="(uint32_t index, RCString &amp;name, RCPropertyID &amp;propID, RCVariantType::RCVariantID &amp;varType)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::GetPropertyInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>varType</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取属性信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>属性下标值 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>返回属性名称 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>返回属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>varType</em>&nbsp;</td><td>返回属性类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ab336b522c8bbb635857f5203421607bb">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="acf8b0ca059f456e1f240ae7d83816c17"></a><!-- doxytag: member="RCZip::RCHfsHandler::Open" ref="acf8b0ca059f456e1f240ae7d83816c17" args="(IInStream *stream, uint64_t maxCheckStartPosition, IArchiveOpenCallback *openArchiveCallback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::Open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>maxCheckStartPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>openArchiveCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stream</em>&nbsp;</td><td>输入流接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>maxCheckStartPosition</em>&nbsp;</td><td>查找文件格式签名的最大偏移位置 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openArchiveCallback</em>&nbsp;</td><td>打开文档回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ac79e06f0e3e23287a3713d52610665b4">RCZip::IInArchive</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad46c593bfefa7994df21c5dda592fc7a"></a><!-- doxytag: member="RCZip::RCHfsHandler::SetCompressCodecsInfo" ref="ad46c593bfefa7994df21c5dda592fc7a" args="(ICompressCodecsInfo *compressCodecsInfo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsHandler::SetCompressCodecsInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>compressCodecsInfo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置编码解码器管理接口指针 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>compressCodecsInfo</em>&nbsp;</td><td>编码解码器指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d0/d6d/classRCZip_1_1ISetCompressCodecsInfo.html#ad514e070e0b48518cb1648e6071fcbed">RCZip::ISetCompressCodecsInfo</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="aef7dfe1bbb66e6ac241f8867bc85d8c6"></a><!-- doxytag: member="RCZip::RCHfsHandler::m_compressCodecsInfo" ref="aef7dfe1bbb66e6ac241f8867bc85d8c6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCodecsInfoPtr</a> <a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#aef7dfe1bbb66e6ac241f8867bc85d8c6">RCZip::RCHfsHandler::m_compressCodecsInfo</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码解码管理器 </p>
+
+<p>在文件<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html">RCHfsHandler.h</a>第<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html#l00122">122</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b1f3582a54767296f397954d8b504f5"></a><!-- doxytag: member="RCZip::RCHfsHandler::m_db" ref="a8b1f3582a54767296f397954d8b504f5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html">RCHfsDatabase</a> <a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a8b1f3582a54767296f397954d8b504f5">RCZip::RCHfsHandler::m_db</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>基本数据 </p>
+
+<p>在文件<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html">RCHfsHandler.h</a>第<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html#l00130">130</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a4bf87533ec9eee0b1164813997a348"></a><!-- doxytag: member="RCZip::RCHfsHandler::m_stream" ref="a5a4bf87533ec9eee0b1164813997a348" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IInStreamPtr</a> <a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a5a4bf87533ec9eee0b1164813997a348">RCZip::RCHfsHandler::m_stream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入流 </p>
+
+<p>在文件<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html">RCHfsHandler.h</a>第<a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html#l00126">126</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d7/d59/RCHfsHandler_8h_source.html">RCHfsHandler.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,1987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCDeflateEncoder类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html">RCDeflateEncoder</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCDeflateEncoder类参考</h1><!-- doxytag: class="RCZip::RCDeflateEncoder" --><!-- doxytag: inherits="RCZip::RCNonCopyable" -->
+<p><code>#include &lt;<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCDeflateEncoder</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/d43/classRCZip_1_1RCDeflateEncoder__inherit__graph.png" border="0" usemap="#RCZip_1_1RCDeflateEncoder_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCDeflateEncoder_inherit__map" id="RCZip_1_1RCDeflateEncoder_inherit__map">
+<area shape="rect" id="node5" href="../../d3/db2/classRCZip_1_1RCDeflateCOMEncoder.html" title="{RCZip::RCDeflateCOMEncoder\n||+ RCDeflateCOMEncoder()\l+ ~RCDeflateCOMEncoder()\l+ Code()\l+ SetCoderProperties()\l}" alt="" coords="5,1401,227,1522"/><area shape="rect" id="node7" href="../../dc/d49/classRCZip_1_1RCDeflateCOMEncoder64.html" title="{RCZip::RCDeflateCOMEncoder64\n||+ RCDeflateCOMEncoder64()\l+ ~RCDeflateCOMEncoder64()\l+ Code()\l+ SetCoderProperties()\l}" alt="" coords="251,1401,488,1522"/><area shape="rect" id="node2" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="155,5,331,83"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCDeflateEncoder合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d0/d69/classRCZip_1_1RCDeflateEncoder__coll__graph.png" border="0" usemap="#RCZip_1_1RCDeflateEncoder_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCDeflateEncoder_coll__map" id="RCZip_1_1RCDeflateEncoder_coll__map">
+<area shape="rect" id="node2" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="15,524,191,601"/><area shape="rect" id="node16" href="../../d2/dce/classRCZip_1_1RCBitlEncoder.html" title="{RCZip::RCBitlEncoder\n|&#45; m_stream\l&#45; m_bitPos\l&#45; m_curByte\l|+ RCBitlEncoder()\l+ ~RCBitlEncoder()\l+ Create()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ Flush()\l+ FlushByte()\l+ WriteBits()\l+ GetBitPosition()\l+ GetProcessedSize()\l+ WriteByte()\l}" alt="" coords="147,1619,309,1887"/><area shape="rect" id="node19" href="../../d0/dfc/classRCZip_1_1RCOutBuffer.html" title="{RCZip::RCOutBuffer\n|# m_buffer\l# m_pos\l# m_limitPos\l# m_streamPos\l# m_bufferSize\l# m_spStream\l# m_processedSize\l# m_buffer2\l# m_overDict\l|+ RCOutBuffer()\l+ ~RCOutBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetMemStream()\l+ SetStream()\l+ Flush()\l+ FlushWithCheck()\l+ ReleaseStream()\l+ WriteByte()\l+ WriteBytes()\l+ GetProcessedSize()\l# FlushPart()\l}" alt="" coords="191,1059,353,1445"/><area shape="rect" id="node4" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html" title="{RCZip::RCDeflateEncoder::_CSeqInStream\n|+ SeqInStream\l+ RealStream\l|}" alt="" coords="333,1707,635,1799"/><area shape="rect" id="node6" href="../../d4/dfe/structISeqInStream.html" title="{ISeqInStream\n|+ Read\l|}" alt="" coords="619,1213,731,1291"/><area shape="rect" id="node33" href="../../d1/d08/struct__CMatchFinder.html" title="{_CMatchFinder\n|+ buffer\l+ pos\l+ posLimit\l+ streamPos\l+ lenLimit\l+ cyclicBufferPos\l+ cyclicBufferSize\l+ matchMaxLen\l+ hash\l+ son\l+ hashMask\l+ cutValue\l+ bufferBase\l+ stream\l+ streamEndWasReached\l+ blockSize\l+ keepSizeBefore\l+ keepSizeAfter\l+ numHashBytes\l+ directInput\l+ directInputRem\l+ btMode\l+ bigHash\l+ historySize\l+ fixedHashSize\l+ hashSizeSum\l+ numSons\l+ result\l+ crc\l|}" alt="" coords="659,1509,851,1997"/><area shape="rect" id="node8" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="384,737,637,1034"/><area shape="rect" id="node10" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="419,297,624,389"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="399,6,545,127"/><area shape="rect" id="node24" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="261,179,477,271"/><area shape="rect" id="node14" href="../../d4/d55/structISzAlloc.html" title="{ISzAlloc\n|+ Alloc\l+ Free\l|}" alt="" coords="875,1707,947,1799"/><area shape="rect" id="node22" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="215,414,481,711"/><area shape="rect" id="node27" href="../../d8/d02/classRCZip_1_1RCDeflateEncoderOptimal.html" title="{RCZip::RCDeflateEncoderOptimal\n|+ m_price\l+ m_posPrev\l+ m_backPrev\l|+ RCDeflateEncoderOptimal()\l+ ~RCDeflateEncoderOptimal()\l}" alt="" coords="971,1693,1213,1814"/><area shape="rect" id="node29" href="../../d8/d43/classRCZip_1_1RCDeflateEncoderTables.html" title="{RCZip::RCDeflateEncoderTables\n|+ m_useSubBlocks\l+ m_storeMode\l+ m_staticMode\l+ m_blockSizeRes\l+ m_pos\l|+ RCDeflateEncoderTables()\l+ ~RCDeflateEncoderTables()\l+ InitStructures()\l}" alt="" coords="1376,1671,1605,1836"/><area shape="rect" id="node31" href="../../d7/d55/classRCZip_1_1RCDeflateLevels.html" title="{RCZip::RCDeflateLevels\n|+ m_litLenLevels\l+ m_distLevels\l|+ RCDeflateLevels()\l+ ~RCDeflateLevels()\l+ SubClear()\l+ SetFixedLevels()\l}" alt="" coords="1189,1184,1365,1320"/><area shape="rect" id="node36" href="../../da/d19/classRCZip_1_1RCDeflateEncoderValue.html" title="{RCZip::RCDeflateEncoderValue\n|+ m_len\l+ m_pos\l|+ RCDeflateEncoderValue()\l+ ~RCDeflateEncoderValue()\l+ SetAsLiteral()\l+ IsLiteral()\l}" alt="" coords="1629,1685,1856,1821"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d8/d7f/classRCZip_1_1RCDeflateEncoder-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html">_CSeqInStream</a></td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#adf0669a9aac1151bc407fe8afae8da6e">RCDeflateEncoder</a> (bool deflate64Mode=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a161fa3a2026c3383bcafc965a09b89e1">~RCDeflateEncoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#abb243f49ce7541572c48ccb7b0dfb7e0">GetMatches</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a8e46a40333c77edffc8383570d9540ea">MovePos</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a11587e33eb1106cae0f5e99be587de2b">Backward</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;backRes, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> cur)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a769512e69025009602a78688ae498df5">GetOptimal</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;backRes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3d520000d54bfc4b060b0b61a844b710">GetOptimalFast</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;backRes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a368632337a8baee868cc25b599f45851">LevelTableDummy</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *levels, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> numLevels, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *freqs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a6f94cd2cd0ab0b1b589957611b4c4a4f">WriteBits</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> value, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> numBits)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#acaf73d5e82a6ad1bcb4d9035d1292700">LevelTableCode</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *levels, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> numLevels, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *lens, const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *codes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aa85b8eed56a096dd4ce8fb5342bfc3f6">MakeTables</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> maxHuffLen)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a54276f480933bb956e2c09f0ace0e37b">GetLzBlockPrice</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a338fc6ed2489a59d8f87fa0d44b9e551">TryBlock</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a635cc4f0006941a9d10ede7569529e8e">TryDynBlock</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> tableIndex, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numPasses)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a2c31277d64b7f32cc01b721852705a55">TryFixedBlock</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> tableIndex)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aeba6b77f240c7ae660b7958d98c40b09">SetPrices</a> (const <a class="el" href="../../d7/d55/classRCZip_1_1RCDeflateLevels.html">RCDeflateLevels</a> &amp;levels)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a6f3ab86fcdf4576bef2fa29814bafedd">WriteBlock</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3f4d36b4effea127ea10b93c1837bdc3">Create</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ae3583a13f7ba44ed1ee271b6c0d1c82f">Free</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a6e12541896adb302b50e575adb35b35b">WriteStoreBlock</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> blockSize, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> additionalOffset, bool finalBlock)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1807c28fcd0a2bbd300668a1e2de6728">ReleaseStreams</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a8e8b0df2f41cd3c331710d97697b6eba">GetBlockPrice</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> tableIndex, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> numDivPasses)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a6379982f8c0e13de6661afa186eda8be">CodeBlock</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> tableIndex, bool finalBlock)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#af4516e286e3dabb624037f8b790ca6b7">CodeReal</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *inStream, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *inSize, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *outSize, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a016e8808960c0293d60d4d7b703c5ca5">BaseCode</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *inStream, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *inSize, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *outSize, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a574047e1a95e8e9ab2852c39517b597d">BaseSetEncoderProperties2</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2bb59fe6bfba19bd670402eadba0b81b">RCPropertyIDPairArray</a> &amp;propertyArray)</td></tr>
+<tr><td colspan="2"><h2>保护类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html">RCZip::RCDeflateEncoder::_CSeqInStream</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a6d135f28a516262c8bdfc9d14b511493">CSeqInStream</a></td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ace5a6c0dd42bc56221be3e78b968855c">Read</a> (void *object, void *data, size_t *size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#adbb6e8d35c4bb8cc8ccd7af17c079051">GetPosSlot</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> pos)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a0eb20ea17212ddf58e66effdd5cc8dcb">SzAlloc</a> (void *p, size_t size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a85b8cf9424e3402b5486e440f364cfae">SzFree</a> (void *p, void *address)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a0646087ccbe1613f54f83e22be685587">HuffmanGetPrice</a> (const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *freqs, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *lens, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#acf4b495d79ab10889eeb437b45a8f912">HuffmanGetPriceSpec</a> (const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *freqs, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *lens, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *extraBits, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> extraBase)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1cb3dab274a2fa3eafc90800bfd3f6e7">HuffmanReverseBits</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *codes, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *lens, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ab94f831ab693449bc0f6f3e3b25d1982">GetStorePrice</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> blockSize, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> bitPosition)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d19/classRCZip_1_1RCDeflateEncoderValue.html">RCDeflateEncoderValue</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a44002fe844622ff11cf4829028071bff">m_values</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#abf958ceb32679668807f0808d0d9e46c">m_matchDistances</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a6ef2447f9eb7f398d1ab44b66df5778c">m_numFastBytes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a079b0259ee2ead64fcc77fcfb2481561">m_fastMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a03912507ab7499a232c0aca448d5243e">m_btMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a522e3630e46257884df23cabdad5556f">m_onePosMatchesMemory</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#adb92119263c1a3addb62e75222fddf90">m_distanceMemory</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a849b5cdba3d669e7ea020aa5886212f8">m_pos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a9982f30caa88c9d6c246c347144a7d6a">m_numPasses</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a963ef34b7394e90badb64c00ce8d08ff">m_numDivPasses</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ae2fd68c48e0f912d79e0a3e82fa40e75">m_checkStatic</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a9c875dec57704de3f090350eaf1c702d">m_isMultiPass</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a02a0cc67793e152523d29af4f87a41c9">m_valueBlockSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a9d23c4d5e15b567900f383cb66ad0dd0">m_numLenCombinations</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ac50e77abc6f4fdce54ce4e3831d6850b">m_matchMaxLen</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3310f0913a9cae24aa74deee98e268d3">m_lenStart</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a4f01f6ac7dc8bc0a64c3d34bd5a4e8c9">m_lenDirectBits</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#abb2ce117cdcec0b111b4731cfea18965">m_created</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1468f6e92432bf5a0b7540c47aa46a07">m_deflate64Mode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1ee0d83bd194a39d86703b396897d6bb">m_levelLevels</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a8596ccc4d3948635edacf1c50db26b57">RCDeflateDefs::s_kLevelTableSize</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a8791ae95e4c058b8e65493b42f4f64ff">m_numLitLenLevels</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a024e8825b5780ab5b904893bad70037e">m_numDistLevels</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a8490febda71a32a02414f50c2b5d474f">m_numLevelCodes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3029386062ebd49410272bcf6a79f7b9">m_valueIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a608af4e7feee950692ba526625bbed65">m_secondPass</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#addc80cbf177a8df2ffa2b4908c6987e2">m_additionalOffset</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aecc583bea929036441e52d32a0faf163">m_optimumEndIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a5c80d4aefccb5e77ffffc899cff7998a">m_optimumCurrentIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#af82a01c3bc6e0fbc30fccf896619c6d8">m_literalPrices</a> [256]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a90bcea2f1098d7ef62ef33c4003b1b9b">m_lenPrices</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a406352e887c0a95585db33dd2a389a93">RCDeflateDefs::s_kNumLenSymbolsMax</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1ce27c8fee2f5edfe07c7c2de926419c">m_posPrices</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a5485ab8d8a1547d8c9e7671d44a5113f">RCDeflateDefs::s_kDistTableSize64</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d55/classRCZip_1_1RCDeflateLevels.html">RCDeflateLevels</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a709f1e42eae659aaf4d7cd615727ba27">m_newLevels</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a095e8376fae45729fcbc4a525b4ca0c7">m_mainFreqs</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a090d2c4f056ca2f537f002db58364208">RCDeflateDefs::s_kFixedMainTableSize</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3a6563a6c88a797df1281ed2f3a06f5d">m_distFreqs</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a5485ab8d8a1547d8c9e7671d44a5113f">RCDeflateDefs::s_kDistTableSize64</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1698d96c80060eae3c51f215441d0f30">m_mainCodes</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a090d2c4f056ca2f537f002db58364208">RCDeflateDefs::s_kFixedMainTableSize</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aacfc51b2b3a56d844133f7b81e056f8e">m_distCodes</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a5485ab8d8a1547d8c9e7671d44a5113f">RCDeflateDefs::s_kDistTableSize64</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a07793a19c55ec462dff7e6f695e68388">m_levelCodes</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a8596ccc4d3948635edacf1c50db26b57">RCDeflateDefs::s_kLevelTableSize</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#adfded271bcd1ae58cdd57825a27f9652">m_levelLens</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a8596ccc4d3948635edacf1c50db26b57">RCDeflateDefs::s_kLevelTableSize</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a24ec2f4eded1006bb65775b03411d428">m_blockSizeRes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d43/classRCZip_1_1RCDeflateEncoderTables.html">RCDeflateEncoderTables</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a29390df1e7aa78a9ada9dd8f4b84b55f">m_tables</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d02/classRCZip_1_1RCDeflateEncoderOptimal.html">RCDeflateEncoderOptimal</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#af808f2c55a3097618fcca8a9ea40ef7a">m_optimum</a> [<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a1afb9d80e666f7d2b94ee5cc2f49767c">RCDeflateDefs::s_kNumOpts</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a55342ec0423838ad44176928122b74f9">m_matchFinderCycles</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a0fc76013056848e2a9533f0f2f85f998">m_lzInWindow</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dce/classRCZip_1_1RCBitlEncoder.html">RCBitlEncoder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a0fb0350675237121f3f43132b3aa591d">m_outStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html">CSeqInStream</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ac5875ee83dfa3e4d7e3e73e9dd4a5def">m_seqInStream</a></td></tr>
+<tr><td colspan="2"><h2>静态私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aa45a8bbd3384b19ad01d8f42c3e0202c">s_alloc</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Deflate 编码器 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00028">28</a>行定义。</p>
+<hr/><h2>成员类型定义文档</h2>
+<a class="anchor" id="a6d135f28a516262c8bdfc9d14b511493"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::CSeqInStream" ref="a6d135f28a516262c8bdfc9d14b511493" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html">RCZip::RCDeflateEncoder::_CSeqInStream</a> <a class="el" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html">RCZip::RCDeflateEncoder::CSeqInStream</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="adf0669a9aac1151bc407fe8afae8da6e"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::RCDeflateEncoder" ref="adf0669a9aac1151bc407fe8afae8da6e" args="(bool deflate64Mode=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCDeflateEncoder::RCDeflateEncoder </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>deflate64Mode</em> = <code>false</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a161fa3a2026c3383bcafc965a09b89e1"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::~RCDeflateEncoder" ref="a161fa3a2026c3383bcafc965a09b89e1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual RCZip::RCDeflateEncoder::~RCDeflateEncoder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a11587e33eb1106cae0f5e99be587de2b"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::Backward" ref="a11587e33eb1106cae0f5e99be587de2b" args="(uint32_t &amp;backRes, uint32_t cur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::Backward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>backRes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>cur</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>后退 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>backRes</em>&nbsp;</td><td>后退位移 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>cur</em>&nbsp;</td><td>起始位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回移动的字节数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a016e8808960c0293d60d4d7b703c5ca5"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::BaseCode" ref="a016e8808960c0293d60d4d7b703c5ca5" args="(ISequentialInStream *inStream, ISequentialOutStream *outStream, const uint64_t *inSize, const uint64_t *outSize, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCDeflateEncoder::BaseCode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>outSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>基础编码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a574047e1a95e8e9ab2852c39517b597d"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::BaseSetEncoderProperties2" ref="a574047e1a95e8e9ab2852c39517b597d" args="(const RCPropertyIDPairArray &amp;propertyArray)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCDeflateEncoder::BaseSetEncoderProperties2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2bb59fe6bfba19bd670402eadba0b81b">RCPropertyIDPairArray</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>propertyArray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置编码属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propertyArray</em>&nbsp;</td><td>属性列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6379982f8c0e13de6661afa186eda8be"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::CodeBlock" ref="a6379982f8c0e13de6661afa186eda8be" args="(int32_t tableIndex, bool finalBlock)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::CodeBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>tableIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>finalBlock</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>块编码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>tableIndex</em>&nbsp;</td><td>表编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>finalBlock</em>&nbsp;</td><td>释放最后块 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af4516e286e3dabb624037f8b790ca6b7"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::CodeReal" ref="af4516e286e3dabb624037f8b790ca6b7" args="(ISequentialInStream *inStream, ISequentialOutStream *outStream, const uint64_t *inSize, const uint64_t *outSize, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCDeflateEncoder::CodeReal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>outSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码函数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3f4d36b4effea127ea10b93c1837bdc3"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::Create" ref="a3f4d36b4effea127ea10b93c1837bdc3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCDeflateEncoder::Create </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae3583a13f7ba44ed1ee271b6c0d1c82f"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::Free" ref="ae3583a13f7ba44ed1ee271b6c0d1c82f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::Free </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e8b0df2f41cd3c331710d97697b6eba"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::GetBlockPrice" ref="a8e8b0df2f41cd3c331710d97697b6eba" args="(int32_t tableIndex, int32_t numDivPasses)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::GetBlockPrice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>tableIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numDivPasses</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回块权重 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>tableIndex</em>&nbsp;</td><td>表编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numDivPasses</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回权重 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54276f480933bb956e2c09f0ace0e37b"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::GetLzBlockPrice" ref="a54276f480933bb956e2c09f0ace0e37b" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::GetLzBlockPrice </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回块权重 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回块权重 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abb243f49ce7541572c48ccb7b0dfb7e0"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::GetMatches" ref="abb243f49ce7541572c48ccb7b0dfb7e0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::GetMatches </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回匹配 </p>
+
+</div>
+</div>
+<a class="anchor" id="a769512e69025009602a78688ae498df5"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::GetOptimal" ref="a769512e69025009602a78688ae498df5" args="(uint32_t &amp;backRes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::GetOptimal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>backRes</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得优化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>backRes</em>&nbsp;</td><td>后退结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回移动字节数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d520000d54bfc4b060b0b61a844b710"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::GetOptimalFast" ref="a3d520000d54bfc4b060b0b61a844b710" args="(uint32_t &amp;backRes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::GetOptimalFast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>backRes</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得快速优化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>backRes</em>&nbsp;</td><td>后退结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回移动字节数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adbb6e8d35c4bb8cc8ccd7af17c079051"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::GetPosSlot" ref="adbb6e8d35c4bb8cc8ccd7af17c079051" args="(uint32_t pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::GetPosSlot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>pos</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得位置Slot </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>pos</em>&nbsp;</td><td>位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Slot </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab94f831ab693449bc0f6f3e3b25d1982"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::GetStorePrice" ref="ab94f831ab693449bc0f6f3e3b25d1982" args="(uint32_t blockSize, int32_t bitPosition)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::GetStorePrice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>bitPosition</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>blockSize</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bitPosition</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0646087ccbe1613f54f83e22be685587"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::HuffmanGetPrice" ref="a0646087ccbe1613f54f83e22be685587" args="(const uint32_t *freqs, const byte_t *lens, uint32_t num)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::HuffmanGetPrice </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>freqs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>lens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>num</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>freqs</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lens</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>num</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回权重 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf4b495d79ab10889eeb437b45a8f912"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::HuffmanGetPriceSpec" ref="acf4b495d79ab10889eeb437b45a8f912" args="(const uint32_t *freqs, const byte_t *lens, uint32_t num, const byte_t *extraBits, uint32_t extraBase)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::HuffmanGetPriceSpec </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>freqs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>lens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>extraBits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>extraBase</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>freqs</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lens</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>num</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extraBits</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extraBase</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回权重 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cb3dab274a2fa3eafc90800bfd3f6e7"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::HuffmanReverseBits" ref="a1cb3dab274a2fa3eafc90800bfd3f6e7" args="(uint32_t *codes, const byte_t *lens, uint32_t num)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCDeflateEncoder::HuffmanReverseBits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>codes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>lens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>num</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codes</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lens</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>num</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acaf73d5e82a6ad1bcb4d9035d1292700"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::LevelTableCode" ref="acaf73d5e82a6ad1bcb4d9035d1292700" args="(const byte_t *levels, int32_t numLevels, const byte_t *lens, const uint32_t *codes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::LevelTableCode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>levels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numLevels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>lens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>codes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>级别编码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>levels</em>&nbsp;</td><td>数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numLevels</em>&nbsp;</td><td>级别 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lens</em>&nbsp;</td><td>长度 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codes</em>&nbsp;</td><td>编码数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a368632337a8baee868cc25b599f45851"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::LevelTableDummy" ref="a368632337a8baee868cc25b599f45851" args="(const byte_t *levels, int32_t numLevels, uint32_t *freqs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::LevelTableDummy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>levels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numLevels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>freqs</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>级别表 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>levels</em>&nbsp;</td><td>数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numLevels</em>&nbsp;</td><td>级别 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>freqs</em>&nbsp;</td><td>频度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa85b8eed56a096dd4ce8fb5342bfc3f6"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::MakeTables" ref="aa85b8eed56a096dd4ce8fb5342bfc3f6" args="(uint32_t maxHuffLen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::MakeTables </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>maxHuffLen</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>生成表 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>maxHuffLen</em>&nbsp;</td><td>最大长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e46a40333c77edffc8383570d9540ea"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::MovePos" ref="a8e46a40333c77edffc8383570d9540ea" args="(uint32_t num)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::MovePos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>num</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>移动位置 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>num</em>&nbsp;</td><td>位移 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ace5a6c0dd42bc56221be3e78b968855c"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::Read" ref="ace5a6c0dd42bc56221be3e78b968855c" args="(void *object, void *data, size_t *size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> RCZip::RCDeflateEncoder::Read </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>object</em>&nbsp;</td><td>数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回读取字节数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1807c28fcd0a2bbd300668a1e2de6728"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::ReleaseStreams" ref="a1807c28fcd0a2bbd300668a1e2de6728" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::ReleaseStreams </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放流 </p>
+
+</div>
+</div>
+<a class="anchor" id="aeba6b77f240c7ae660b7958d98c40b09"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::SetPrices" ref="aeba6b77f240c7ae660b7958d98c40b09" args="(const RCDeflateLevels &amp;levels)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::SetPrices </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d55/classRCZip_1_1RCDeflateLevels.html">RCDeflateLevels</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>levels</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置权重 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>levels</em>&nbsp;</td><td>级别 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0eb20ea17212ddf58e66effdd5cc8dcb"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::SzAlloc" ref="a0eb20ea17212ddf58e66effdd5cc8dcb" args="(void *p, size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* RCZip::RCDeflateEncoder::SzAlloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>内存申请 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>内存大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回申请的内存地址 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a85b8cf9424e3402b5486e440f364cfae"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::SzFree" ref="a85b8cf9424e3402b5486e440f364cfae" args="(void *p, void *address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCDeflateEncoder::SzFree </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>address</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放内存 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>address</em>&nbsp;</td><td>指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a338fc6ed2489a59d8f87fa0d44b9e551"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::TryBlock" ref="a338fc6ed2489a59d8f87fa0d44b9e551" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::TryBlock </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>尝试块 </p>
+
+</div>
+</div>
+<a class="anchor" id="a635cc4f0006941a9d10ede7569529e8e"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::TryDynBlock" ref="a635cc4f0006941a9d10ede7569529e8e" args="(int32_t tableIndex, uint32_t numPasses)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::TryDynBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>tableIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numPasses</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>尝试块 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>tableIndex</em>&nbsp;</td><td>表编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numPasses</em>&nbsp;</td><td>跳过值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回成功字节数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2c31277d64b7f32cc01b721852705a55"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::TryFixedBlock" ref="a2c31277d64b7f32cc01b721852705a55" args="(int32_t tableIndex)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeflateEncoder::TryFixedBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>tableIndex</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>尝试修复块 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>tableIndex</em>&nbsp;</td><td>表编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回成功字节数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6f94cd2cd0ab0b1b589957611b4c4a4f"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::WriteBits" ref="a6f94cd2cd0ab0b1b589957611b4c4a4f" args="(uint32_t value, int32_t numBits)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::WriteBits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numBits</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写入数据位 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numBits</em>&nbsp;</td><td>位长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6f3ab86fcdf4576bef2fa29814bafedd"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::WriteBlock" ref="a6f3ab86fcdf4576bef2fa29814bafedd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::WriteBlock </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写入块 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e12541896adb302b50e575adb35b35b"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::WriteStoreBlock" ref="a6e12541896adb302b50e575adb35b35b" args="(uint32_t blockSize, uint32_t additionalOffset, bool finalBlock)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCDeflateEncoder::WriteStoreBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>blockSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>additionalOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>finalBlock</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写入存储块 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>blockSize</em>&nbsp;</td><td>块大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>additionalOffset</em>&nbsp;</td><td>额外偏移量 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>finalBlock</em>&nbsp;</td><td>是否最后一块 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="addc80cbf177a8df2ffa2b4908c6987e2"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_additionalOffset" ref="addc80cbf177a8df2ffa2b4908c6987e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#addc80cbf177a8df2ffa2b4908c6987e2">RCZip::RCDeflateEncoder::m_additionalOffset</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>附加偏移 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00309">309</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a24ec2f4eded1006bb65775b03411d428"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_blockSizeRes" ref="a24ec2f4eded1006bb65775b03411d428" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a24ec2f4eded1006bb65775b03411d428">RCZip::RCDeflateEncoder::m_blockSizeRes</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>块大小 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00361">361</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a03912507ab7499a232c0aca448d5243e"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_btMode" ref="a03912507ab7499a232c0aca448d5243e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a03912507ab7499a232c0aca448d5243e">RCZip::RCDeflateEncoder::m_btMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>bt模式 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00225">225</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2fd68c48e0f912d79e0a3e82fa40e75"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_checkStatic" ref="ae2fd68c48e0f912d79e0a3e82fa40e75" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ae2fd68c48e0f912d79e0a3e82fa40e75">RCZip::RCDeflateEncoder::m_checkStatic</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查统计 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00249">249</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abb2ce117cdcec0b111b4731cfea18965"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_created" ref="abb2ce117cdcec0b111b4731cfea18965" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#abb2ce117cdcec0b111b4731cfea18965">RCZip::RCDeflateEncoder::m_created</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否创建 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00277">277</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1468f6e92432bf5a0b7540c47aa46a07"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_deflate64Mode" ref="a1468f6e92432bf5a0b7540c47aa46a07" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1468f6e92432bf5a0b7540c47aa46a07">RCZip::RCDeflateEncoder::m_deflate64Mode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Deflate 64模式 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00281">281</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adb92119263c1a3addb62e75222fddf90"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_distanceMemory" ref="adb92119263c1a3addb62e75222fddf90" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>* <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#adb92119263c1a3addb62e75222fddf90">RCZip::RCDeflateEncoder::m_distanceMemory</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>缓存 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00233">233</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aacfc51b2b3a56d844133f7b81e056f8e"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_distCodes" ref="aacfc51b2b3a56d844133f7b81e056f8e" args="[RCDeflateDefs::s_kDistTableSize64]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aacfc51b2b3a56d844133f7b81e056f8e">RCZip::RCDeflateEncoder::m_distCodes</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a5485ab8d8a1547d8c9e7671d44a5113f">RCDeflateDefs::s_kDistTableSize64</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>摘要编码 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00349">349</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a6563a6c88a797df1281ed2f3a06f5d"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_distFreqs" ref="a3a6563a6c88a797df1281ed2f3a06f5d" args="[RCDeflateDefs::s_kDistTableSize64]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3a6563a6c88a797df1281ed2f3a06f5d">RCZip::RCDeflateEncoder::m_distFreqs</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a5485ab8d8a1547d8c9e7671d44a5113f">RCDeflateDefs::s_kDistTableSize64</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>频度 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00341">341</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a079b0259ee2ead64fcc77fcfb2481561"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_fastMode" ref="a079b0259ee2ead64fcc77fcfb2481561" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a079b0259ee2ead64fcc77fcfb2481561">RCZip::RCDeflateEncoder::m_fastMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>快速模式 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00221">221</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c875dec57704de3f090350eaf1c702d"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_isMultiPass" ref="a9c875dec57704de3f090350eaf1c702d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a9c875dec57704de3f090350eaf1c702d">RCZip::RCDeflateEncoder::m_isMultiPass</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Multi Pass </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00253">253</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f01f6ac7dc8bc0a64c3d34bd5a4e8c9"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_lenDirectBits" ref="a4f01f6ac7dc8bc0a64c3d34bd5a4e8c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>* <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a4f01f6ac7dc8bc0a64c3d34bd5a4e8c9">RCZip::RCDeflateEncoder::m_lenDirectBits</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Direct Bit </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00273">273</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a90bcea2f1098d7ef62ef33c4003b1b9b"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_lenPrices" ref="a90bcea2f1098d7ef62ef33c4003b1b9b" args="[RCDeflateDefs::s_kNumLenSymbolsMax]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a90bcea2f1098d7ef62ef33c4003b1b9b">RCZip::RCDeflateEncoder::m_lenPrices</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a406352e887c0a95585db33dd2a389a93">RCDeflateDefs::s_kNumLenSymbolsMax</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>长度权重 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00325">325</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3310f0913a9cae24aa74deee98e268d3"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_lenStart" ref="a3310f0913a9cae24aa74deee98e268d3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>* <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3310f0913a9cae24aa74deee98e268d3">RCZip::RCDeflateEncoder::m_lenStart</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>开始位置 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00269">269</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a07793a19c55ec462dff7e6f695e68388"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_levelCodes" ref="a07793a19c55ec462dff7e6f695e68388" args="[RCDeflateDefs::s_kLevelTableSize]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a07793a19c55ec462dff7e6f695e68388">RCZip::RCDeflateEncoder::m_levelCodes</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a8596ccc4d3948635edacf1c50db26b57">RCDeflateDefs::s_kLevelTableSize</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Level 编码 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00353">353</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adfded271bcd1ae58cdd57825a27f9652"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_levelLens" ref="adfded271bcd1ae58cdd57825a27f9652" args="[RCDeflateDefs::s_kLevelTableSize]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#adfded271bcd1ae58cdd57825a27f9652">RCZip::RCDeflateEncoder::m_levelLens</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a8596ccc4d3948635edacf1c50db26b57">RCDeflateDefs::s_kLevelTableSize</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Level 长度 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00357">357</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ee0d83bd194a39d86703b396897d6bb"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_levelLevels" ref="a1ee0d83bd194a39d86703b396897d6bb" args="[RCDeflateDefs::s_kLevelTableSize]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1ee0d83bd194a39d86703b396897d6bb">RCZip::RCDeflateEncoder::m_levelLevels</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a8596ccc4d3948635edacf1c50db26b57">RCDeflateDefs::s_kLevelTableSize</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>级别 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00285">285</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af82a01c3bc6e0fbc30fccf896619c6d8"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_literalPrices" ref="af82a01c3bc6e0fbc30fccf896619c6d8" args="[256]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#af82a01c3bc6e0fbc30fccf896619c6d8">RCZip::RCDeflateEncoder::m_literalPrices</a>[256]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>字符权重 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00321">321</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fc76013056848e2a9533f0f2f85f998"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_lzInWindow" ref="a0fc76013056848e2a9533f0f2f85f998" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a0fc76013056848e2a9533f0f2f85f998">RCZip::RCDeflateEncoder::m_lzInWindow</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>匹配查找 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00450">450</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1698d96c80060eae3c51f215441d0f30"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_mainCodes" ref="a1698d96c80060eae3c51f215441d0f30" args="[RCDeflateDefs::s_kFixedMainTableSize]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1698d96c80060eae3c51f215441d0f30">RCZip::RCDeflateEncoder::m_mainCodes</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a090d2c4f056ca2f537f002db58364208">RCDeflateDefs::s_kFixedMainTableSize</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>主编码 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00345">345</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a095e8376fae45729fcbc4a525b4ca0c7"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_mainFreqs" ref="a095e8376fae45729fcbc4a525b4ca0c7" args="[RCDeflateDefs::s_kFixedMainTableSize]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a095e8376fae45729fcbc4a525b4ca0c7">RCZip::RCDeflateEncoder::m_mainFreqs</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a090d2c4f056ca2f537f002db58364208">RCDeflateDefs::s_kFixedMainTableSize</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>频度 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00337">337</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abf958ceb32679668807f0808d0d9e46c"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_matchDistances" ref="abf958ceb32679668807f0808d0d9e46c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>* <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#abf958ceb32679668807f0808d0d9e46c">RCZip::RCDeflateEncoder::m_matchDistances</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>匹配 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00213">213</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a55342ec0423838ad44176928122b74f9"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_matchFinderCycles" ref="a55342ec0423838ad44176928122b74f9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a55342ec0423838ad44176928122b74f9">RCZip::RCDeflateEncoder::m_matchFinderCycles</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>匹配循环 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00373">373</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac50e77abc6f4fdce54ce4e3831d6850b"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_matchMaxLen" ref="ac50e77abc6f4fdce54ce4e3831d6850b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ac50e77abc6f4fdce54ce4e3831d6850b">RCZip::RCDeflateEncoder::m_matchMaxLen</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>最大匹配长度 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00265">265</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a709f1e42eae659aaf4d7cd615727ba27"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_newLevels" ref="a709f1e42eae659aaf4d7cd615727ba27" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d55/classRCZip_1_1RCDeflateLevels.html">RCDeflateLevels</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a709f1e42eae659aaf4d7cd615727ba27">RCZip::RCDeflateEncoder::m_newLevels</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>级别 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00333">333</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a024e8825b5780ab5b904893bad70037e"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_numDistLevels" ref="a024e8825b5780ab5b904893bad70037e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a024e8825b5780ab5b904893bad70037e">RCZip::RCDeflateEncoder::m_numDistLevels</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>级别数 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00293">293</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a963ef34b7394e90badb64c00ce8d08ff"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_numDivPasses" ref="a963ef34b7394e90badb64c00ce8d08ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a963ef34b7394e90badb64c00ce8d08ff">RCZip::RCDeflateEncoder::m_numDivPasses</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>忽略字节数 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00245">245</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ef2447f9eb7f398d1ab44b66df5778c"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_numFastBytes" ref="a6ef2447f9eb7f398d1ab44b66df5778c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a6ef2447f9eb7f398d1ab44b66df5778c">RCZip::RCDeflateEncoder::m_numFastBytes</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>快速字节 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00217">217</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d23c4d5e15b567900f383cb66ad0dd0"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_numLenCombinations" ref="a9d23c4d5e15b567900f383cb66ad0dd0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a9d23c4d5e15b567900f383cb66ad0dd0">RCZip::RCDeflateEncoder::m_numLenCombinations</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>组合长度 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00261">261</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8490febda71a32a02414f50c2b5d474f"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_numLevelCodes" ref="a8490febda71a32a02414f50c2b5d474f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a8490febda71a32a02414f50c2b5d474f">RCZip::RCDeflateEncoder::m_numLevelCodes</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码个数 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00297">297</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8791ae95e4c058b8e65493b42f4f64ff"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_numLitLenLevels" ref="a8791ae95e4c058b8e65493b42f4f64ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a8791ae95e4c058b8e65493b42f4f64ff">RCZip::RCDeflateEncoder::m_numLitLenLevels</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>级别数 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00289">289</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9982f30caa88c9d6c246c347144a7d6a"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_numPasses" ref="a9982f30caa88c9d6c246c347144a7d6a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a9982f30caa88c9d6c246c347144a7d6a">RCZip::RCDeflateEncoder::m_numPasses</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>忽略字节数 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00241">241</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a522e3630e46257884df23cabdad5556f"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_onePosMatchesMemory" ref="a522e3630e46257884df23cabdad5556f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>* <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a522e3630e46257884df23cabdad5556f">RCZip::RCDeflateEncoder::m_onePosMatchesMemory</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>缓存 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00229">229</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af808f2c55a3097618fcca8a9ea40ef7a"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_optimum" ref="af808f2c55a3097618fcca8a9ea40ef7a" args="[RCDeflateDefs::s_kNumOpts]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d02/classRCZip_1_1RCDeflateEncoderOptimal.html">RCDeflateEncoderOptimal</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#af808f2c55a3097618fcca8a9ea40ef7a">RCZip::RCDeflateEncoder::m_optimum</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a1afb9d80e666f7d2b94ee5cc2f49767c">RCDeflateDefs::s_kNumOpts</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>优化表 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00369">369</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c80d4aefccb5e77ffffc899cff7998a"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_optimumCurrentIndex" ref="a5c80d4aefccb5e77ffffc899cff7998a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a5c80d4aefccb5e77ffffc899cff7998a">RCZip::RCDeflateEncoder::m_optimumCurrentIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>优化当前编号 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00317">317</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aecc583bea929036441e52d32a0faf163"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_optimumEndIndex" ref="aecc583bea929036441e52d32a0faf163" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aecc583bea929036441e52d32a0faf163">RCZip::RCDeflateEncoder::m_optimumEndIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>优化编号 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00313">313</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fb0350675237121f3f43132b3aa591d"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_outStream" ref="a0fb0350675237121f3f43132b3aa591d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dce/classRCZip_1_1RCBitlEncoder.html">RCBitlEncoder</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a0fb0350675237121f3f43132b3aa591d">RCZip::RCDeflateEncoder::m_outStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>位编码 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00454">454</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a849b5cdba3d669e7ea020aa5886212f8"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_pos" ref="a849b5cdba3d669e7ea020aa5886212f8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a849b5cdba3d669e7ea020aa5886212f8">RCZip::RCDeflateEncoder::m_pos</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>位置 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00237">237</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ce27c8fee2f5edfe07c7c2de926419c"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_posPrices" ref="a1ce27c8fee2f5edfe07c7c2de926419c" args="[RCDeflateDefs::s_kDistTableSize64]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a1ce27c8fee2f5edfe07c7c2de926419c">RCZip::RCDeflateEncoder::m_posPrices</a>[<a class="el" href="../../d2/dcf/classRCZip_1_1RCDeflateDefs.html#a5485ab8d8a1547d8c9e7671d44a5113f">RCDeflateDefs::s_kDistTableSize64</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>位权重 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00329">329</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a608af4e7feee950692ba526625bbed65"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_secondPass" ref="a608af4e7feee950692ba526625bbed65" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a608af4e7feee950692ba526625bbed65">RCZip::RCDeflateEncoder::m_secondPass</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Second Pass </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00305">305</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5875ee83dfa3e4d7e3e73e9dd4a5def"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_seqInStream" ref="ac5875ee83dfa3e4d7e3e73e9dd4a5def" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html">CSeqInStream</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#ac5875ee83dfa3e4d7e3e73e9dd4a5def">RCZip::RCDeflateEncoder::m_seqInStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>序列输入流 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00458">458</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a29390df1e7aa78a9ada9dd8f4b84b55f"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_tables" ref="a29390df1e7aa78a9ada9dd8f4b84b55f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d43/classRCZip_1_1RCDeflateEncoderTables.html">RCDeflateEncoderTables</a>* <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a29390df1e7aa78a9ada9dd8f4b84b55f">RCZip::RCDeflateEncoder::m_tables</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码表 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00365">365</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a02a0cc67793e152523d29af4f87a41c9"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_valueBlockSize" ref="a02a0cc67793e152523d29af4f87a41c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a02a0cc67793e152523d29af4f87a41c9">RCZip::RCDeflateEncoder::m_valueBlockSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>块大小 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00257">257</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3029386062ebd49410272bcf6a79f7b9"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_valueIndex" ref="a3029386062ebd49410272bcf6a79f7b9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a3029386062ebd49410272bcf6a79f7b9">RCZip::RCDeflateEncoder::m_valueIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>值编号 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00301">301</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a44002fe844622ff11cf4829028071bff"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::m_values" ref="a44002fe844622ff11cf4829028071bff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d19/classRCZip_1_1RCDeflateEncoderValue.html">RCDeflateEncoderValue</a>* <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#a44002fe844622ff11cf4829028071bff">RCZip::RCDeflateEncoder::m_values</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码值 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00209">209</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa45a8bbd3384b19ad01d8f42c3e0202c"></a><!-- doxytag: member="RCZip::RCDeflateEncoder::s_alloc" ref="aa45a8bbd3384b19ad01d8f42c3e0202c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> <a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html#aa45a8bbd3384b19ad01d8f42c3e0202c">RCZip::RCDeflateEncoder::s_alloc</a><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>内存管理 </p>
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00444">444</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

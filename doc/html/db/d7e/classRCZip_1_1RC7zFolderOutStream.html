@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RC7zFolderOutStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html">RC7zFolderOutStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RC7zFolderOutStream类参考</h1><!-- doxytag: class="RCZip::RC7zFolderOutStream" --><!-- doxytag: inherits="IUnknownImpl&lt; ISequentialOutStream &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RC7zFolderOutStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d8/d59/classRCZip_1_1RC7zFolderOutStream__inherit__graph.png" border="0" usemap="#RCZip_1_1RC7zFolderOutStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RC7zFolderOutStream_inherit__map" id="RCZip_1_1RC7zFolderOutStream_inherit__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="28,361,372,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="200,198,416,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="235,6,381,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RC7zFolderOutStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d3/daf/classRCZip_1_1RC7zFolderOutStream__coll__graph.png" border="0" usemap="#RCZip_1_1RC7zFolderOutStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RC7zFolderOutStream_coll__map" id="RCZip_1_1RC7zFolderOutStream_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="549,577,893,698"/><area shape="rect" id="node22" href="../../de/ddb/classRCZip_1_1RCOutStreamWithCRC.html" title="{RCZip::RCOutStreamWithCRC\n|&#45; m_stream\l&#45; m_size\l&#45; m_crc\l&#45; m_calculate\l|+ RCOutStreamWithCRC()\l+ ~RCOutStreamWithCRC()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ InitCRC()\l+ GetSize()\l+ GetCRC()\l+ Write()\l}" alt="" coords="487,938,703,1177"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="639,187,804,323"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="633,28,809,105"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="284,209,500,301"/><area shape="rect" id="node25" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="259,489,525,786"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="176,6,323,127"/><area shape="rect" id="node33" href="../../d6/d33/classRCZip_1_1IProgress.html" title="{RCZip::IProgress\n||+ SetTotal()\l+ SetCompleted()\l# ~IProgress()\l}" alt="" coords="84,201,225,308"/><area shape="rect" id="node12" href="../../df/dde/classRCZip_1_1RC7zArchiveDatabaseEx.html" title="{RCZip::RC7zArchiveDatabaseEx\n|+ m_archiveInfo\l+ m_packStreamStartPositions\l+ m_folderStartPackStreamIndex\l+ m_folderStartFileIndex\l+ m_fileIndexToFolderIndexMap\l+ m_headersSize\l+ m_phySize\l|+ RC7zArchiveDatabaseEx()\l+ ~RC7zArchiveDatabaseEx()\l+ Clear()\l+ FillFolderStartPackStream()\l+ FillStartPos()\l+ FillFolderStartFileIndex()\l+ Fill()\l+ GetFolderStreamPos()\l+ GetFolderFullPackSize()\l+ GetFolderPackStreamSize()\l+ GetFilePackSize()\l}" alt="" coords="913,901,1156,1213"/><area shape="rect" id="node14" href="../../db/d26/structRCZip_1_1RC7zArchiveDatabase.html" title="{RCZip::RC7zArchiveDatabase\n|+ m_packSizes\l+ m_packCRCsDefined\l+ m_packCRCs\l+ m_folders\l+ m_numUnpackStreamsVector\l+ m_files\l+ m_cTime\l+ m_aTime\l+ m_mTime\l+ m_startPos\l+ m_isAnti\l+ m_commentStartPos\l+ m_isCommented\l+ m_comment\l|+ RC7zArchiveDatabase()\l+ Clear()\l+ ReserveDown()\l+ IsEmpty()\l+ CheckNumFiles()\l+ IsSolid()\l+ IsItemAnti()\l+ SetItemAnti()\l+ GetFile()\l+ AddFile()\l}" alt="" coords="917,437,1152,837"/><area shape="rect" id="node16" href="../../d3/de1/structRCZip_1_1RC7zUInt64DefVector.html" title="{RCZip::RC7zUInt64DefVector\n|+ m_values\l+ m_defined\l|+ Clear()\l+ ReserveDown()\l+ GetItem()\l+ SetItem()\l+ CheckSize()\l}" alt="" coords="928,179,1141,330"/><area shape="rect" id="node18" href="../../d9/d5d/classRCZip_1_1RC7zInArchiveInfo.html" title="{RCZip::RC7zInArchiveInfo\n|+ m_version\l+ m_startPosition\l+ m_startPositionAfterHeader\l+ m_dataStartPosition\l+ m_dataStartPosition2\l+ m_fileInfoPopIDs\l|+ RC7zInArchiveInfo()\l+ ~RC7zInArchiveInfo()\l+ Clear()\l}" alt="" coords="1176,547,1395,727"/><area shape="rect" id="node20" href="../../d4/d13/structRCZip_1_1RC7zArchiveVersion.html" title="{RCZip::RC7zArchiveVersion\n|+ m_major\l+ m_minor\l|}" alt="" coords="1184,209,1387,301"/><area shape="rect" id="node29" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IArchiveExtractCallback \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="32,909,309,1206"/><area shape="rect" id="node31" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html" title="{RCZip::IArchiveExtractCallback\n||+ GetStream()\l+ PrepareOperation()\l+ SetOperationResult()\l+ SetMultiThreadMode()\l+ GetDestinationDirectory()\l+ GetRemovePathParts()\l+ GetPathMode()\l+ GetOverwriteMode()\l+ GetUpdateMode()\l+ IsKeepDamageFiles()\l# ~IArchiveExtractCallback()\l}" alt="" coords="5,525,235,749"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../dd/d6a/classRCZip_1_1RC7zFolderOutStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ae7332df3ea1e03a838488b8d239346e6">RC7zFolderOutStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a9c5a7385af6c58b155767749c25d3236">~RC7zFolderOutStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a03a2467b79a5e6b5e5c3582ee5278363">Init</a> (const <a class="el" href="../../df/dde/classRCZip_1_1RC7zArchiveDatabaseEx.html">RC7zArchiveDatabaseEx</a> *archiveDatabase, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ref2Offset, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> startIndex, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a0a6aa0b608ed450348bb35489149e403">RCBoolVector</a> *extractStatuses, <a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *extractCallback, bool testMode, bool checkCrc)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a6eb164de58283fbe5d847f9ea30fbe74">FlushCorrupted</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> resultEOperationResult)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a345c15ec1021a3323eb0e0b3232df2bb">WasWritingFinished</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#af8a471764e698408d33388ffea6cc489">Write</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#aced9323b5b9753c261af23eb5331ba46">OpenFile</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a76f52426ab251cf0e21e73fc7e06eb0f">CloseFileAndSetResult</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> res)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a3e016ab416d5aa37e503cb3d1394e2a1">CloseFileAndSetResult</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a01c42e8f359e39521e5955d72f00331f">ProcessEmptyFiles</a> ()</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/ddb/classRCZip_1_1RCOutStreamWithCRC.html">RCOutStreamWithCRC</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ac133901b6daf4783c14e62a2d2eec536">m_crcStreamSpec</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a88293fa5e3836bb9d05f5f4d2c05aca0">m_crcStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../df/dde/classRCZip_1_1RC7zArchiveDatabaseEx.html">RC7zArchiveDatabaseEx</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a562c518a69f3b1f1e806adb62bb6e075">m_db</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a0a6aa0b608ed450348bb35489149e403">RCBoolVector</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ad0cb4a9af864995dd66ecb8054563895">m_extractStatuses</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a82348ba911eea2e343a3010be0183982">m_startIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#afa67f51a3f6d6c4ecc6c443f86f5dbf4">m_ref2Offset</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a810204b386e27d109e6bdaff137e04c3">m_currentIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IArchiveExtractCallbackPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ae96cdfd89539d3e64d9db53514f8092a">m_extractCallback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ad2fd95e8cdabe1a96413ab69edb2ddc8">m_testMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a4b7f9bf15958fdc1f3ad25eb7009e744">m_fileIsOpen</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ae318dfb4c7ec384f3090597513f02c77">m_checkCrc</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#adcde5d6434f3f810c382e05893c7620e">m_rem</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00024">24</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="ae7332df3ea1e03a838488b8d239346e6"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::RC7zFolderOutStream" ref="ae7332df3ea1e03a838488b8d239346e6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RC7zFolderOutStream::RC7zFolderOutStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c5a7385af6c58b155767749c25d3236"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::~RC7zFolderOutStream" ref="a9c5a7385af6c58b155767749c25d3236" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RC7zFolderOutStream::~RC7zFolderOutStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a3e016ab416d5aa37e503cb3d1394e2a1"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::CloseFileAndSetResult" ref="a3e016ab416d5aa37e503cb3d1394e2a1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::CloseFileAndSetResult </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>关闭文件并设置结果 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a76f52426ab251cf0e21e73fc7e06eb0f"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::CloseFileAndSetResult" ref="a76f52426ab251cf0e21e73fc7e06eb0f" args="(uint32_t index, int32_t res)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::CloseFileAndSetResult </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>res</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>关闭文件并设置结果 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6eb164de58283fbe5d847f9ea30fbe74"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::FlushCorrupted" ref="a6eb164de58283fbe5d847f9ea30fbe74" args="(int32_t resultEOperationResult)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::FlushCorrupted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>resultEOperationResult</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>flush损坏的数据 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a03a2467b79a5e6b5e5c3582ee5278363"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::Init" ref="a03a2467b79a5e6b5e5c3582ee5278363" args="(const RC7zArchiveDatabaseEx *archiveDatabase, uint32_t ref2Offset, uint32_t startIndex, const RCBoolVector *extractStatuses, IArchiveExtractCallback *extractCallback, bool testMode, bool checkCrc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dde/classRCZip_1_1RC7zArchiveDatabaseEx.html">RC7zArchiveDatabaseEx</a> *&nbsp;</td>
+          <td class="paramname"> <em>archiveDatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>ref2Offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>startIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a0a6aa0b608ed450348bb35489149e403">RCBoolVector</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractStatuses</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>testMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>checkCrc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveDatabase</em>&nbsp;</td><td>文档基本数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>ref2Offset</em>&nbsp;</td><td>偏移 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>startIndex</em>&nbsp;</td><td>起始索引 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractStatuses</em>&nbsp;</td><td>解压状态 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractCallback</em>&nbsp;</td><td>解压管理器回调接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>testMode</em>&nbsp;</td><td>是否是测试模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>checkCrc</em>&nbsp;</td><td>是否需要检查CRC </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aced9323b5b9753c261af23eb5331ba46"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::OpenFile" ref="aced9323b5b9753c261af23eb5331ba46" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::OpenFile </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文件 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a01c42e8f359e39521e5955d72f00331f"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::ProcessEmptyFiles" ref="a01c42e8f359e39521e5955d72f00331f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::ProcessEmptyFiles </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>处理空文件 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a345c15ec1021a3323eb0e0b3232df2bb"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::WasWritingFinished" ref="a345c15ec1021a3323eb0e0b3232df2bb" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::WasWritingFinished </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否等待完成 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回RC_S_OK，否则返回RC_E_FAIL </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af8a471764e698408d33388ffea6cc489"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::Write" ref="af8a471764e698408d33388ffea6cc489" args="(const void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zFolderOutStream::Write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html#ad269989f026c6c6b69acbe5007fc940a">RCZip::ISequentialOutStream</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ae318dfb4c7ec384f3090597513f02c77"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_checkCrc" ref="ae318dfb4c7ec384f3090597513f02c77" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ae318dfb4c7ec384f3090597513f02c77">RCZip::RC7zFolderOutStream::m_checkCrc</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否检查CRC </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00141">141</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a88293fa5e3836bb9d05f5f4d2c05aca0"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_crcStream" ref="a88293fa5e3836bb9d05f5f4d2c05aca0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a> <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a88293fa5e3836bb9d05f5f4d2c05aca0">RCZip::RC7zFolderOutStream::m_crcStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>CRC输出流 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00105">105</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac133901b6daf4783c14e62a2d2eec536"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_crcStreamSpec" ref="ac133901b6daf4783c14e62a2d2eec536" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/ddb/classRCZip_1_1RCOutStreamWithCRC.html">RCOutStreamWithCRC</a>* <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ac133901b6daf4783c14e62a2d2eec536">RCZip::RC7zFolderOutStream::m_crcStreamSpec</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>带CRC的输出流 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00101">101</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a810204b386e27d109e6bdaff137e04c3"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_currentIndex" ref="a810204b386e27d109e6bdaff137e04c3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a810204b386e27d109e6bdaff137e04c3">RCZip::RC7zFolderOutStream::m_currentIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当前索引 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00125">125</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a562c518a69f3b1f1e806adb62bb6e075"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_db" ref="a562c518a69f3b1f1e806adb62bb6e075" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dde/classRCZip_1_1RC7zArchiveDatabaseEx.html">RC7zArchiveDatabaseEx</a>* <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a562c518a69f3b1f1e806adb62bb6e075">RCZip::RC7zFolderOutStream::m_db</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>基本数据 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00109">109</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae96cdfd89539d3e64d9db53514f8092a"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_extractCallback" ref="ae96cdfd89539d3e64d9db53514f8092a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IArchiveExtractCallbackPtr</a> <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ae96cdfd89539d3e64d9db53514f8092a">RCZip::RC7zFolderOutStream::m_extractCallback</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压管理器回调接口 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00129">129</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0cb4a9af864995dd66ecb8054563895"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_extractStatuses" ref="ad0cb4a9af864995dd66ecb8054563895" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a0a6aa0b608ed450348bb35489149e403">RCBoolVector</a>* <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ad0cb4a9af864995dd66ecb8054563895">RCZip::RC7zFolderOutStream::m_extractStatuses</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压状态 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00113">113</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b7f9bf15958fdc1f3ad25eb7009e744"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_fileIsOpen" ref="a4b7f9bf15958fdc1f3ad25eb7009e744" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a4b7f9bf15958fdc1f3ad25eb7009e744">RCZip::RC7zFolderOutStream::m_fileIsOpen</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件是否打开 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00137">137</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afa67f51a3f6d6c4ecc6c443f86f5dbf4"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_ref2Offset" ref="afa67f51a3f6d6c4ecc6c443f86f5dbf4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#afa67f51a3f6d6c4ecc6c443f86f5dbf4">RCZip::RC7zFolderOutStream::m_ref2Offset</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>偏移 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00121">121</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adcde5d6434f3f810c382e05893c7620e"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_rem" ref="adcde5d6434f3f810c382e05893c7620e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#adcde5d6434f3f810c382e05893c7620e">RCZip::RC7zFolderOutStream::m_rem</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>大小 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00145">145</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a82348ba911eea2e343a3010be0183982"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_startIndex" ref="a82348ba911eea2e343a3010be0183982" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#a82348ba911eea2e343a3010be0183982">RCZip::RC7zFolderOutStream::m_startIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>起始索引 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00117">117</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2fd95e8cdabe1a96413ab69edb2ddc8"></a><!-- doxytag: member="RCZip::RC7zFolderOutStream::m_testMode" ref="ad2fd95e8cdabe1a96413ab69edb2ddc8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#ad2fd95e8cdabe1a96413ab69edb2ddc8">RCZip::RC7zFolderOutStream::m_testMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是测试模式 </p>
+
+<p>在文件<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a>第<a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html#l00133">133</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d1/d0f/RC7zFolderOutStream_8h_source.html">RC7zFolderOutStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

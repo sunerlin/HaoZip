@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::ISequentialOutStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::ISequentialOutStream类参考</h1><!-- doxytag: class="RCZip::ISequentialOutStream" --><!-- doxytag: inherits="RCZip::IUnknown" -->
+<p><code>#include &lt;<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::ISequentialOutStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d0/d09/classRCZip_1_1ISequentialOutStream__inherit__graph.png" border="0" usemap="#RCZip_1_1ISequentialOutStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1ISequentialOutStream_inherit__map" id="RCZip_1_1ISequentialOutStream_inherit__map">
+<area shape="rect" id="node5" href="../../d9/d18/classRCZip_1_1IUnknownImpl11.html" title="{RCZip::IUnknownImpl11\&lt; ICompressCoder, ICompressSetInStream, ISequentialInStream, ICompressSetOutStream, ISequentialOutStream, IOutStreamFlush, ICryptoSetPassword, ICompressSetCoderProperties, ICompressWriteCoderProperties, ICryptoResetInitVector, ICompressSetDecoderProperties2 \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl11()\l}" alt="" coords="5,318,2032,439"/><area shape="rect" id="node9" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="2489,318,2833,439"/><area shape="rect" id="node41" href="../../d4/dad/classRCZip_1_1IOutStream.html" title="{RCZip::IOutStream\n||+ Seek()\l+ SetSize()\l# ~IOutStream()\l}" alt="" coords="4909,325,5056,432"/><area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="2588,6,2735,127"/><area shape="rect" id="node7" href="../../d9/dcf/classRCZip_1_1RCFilterCoder.html" title="{RCZip::RCFilterCoder\n|# m_buffer\l# m_spInStream\l# m_spOutStream\l# m_bufferPos\l# m_convertedPosBegin\l# m_convertedPosEnd\l# m_outSizeIsDefined\l# m_outSize\l# m_nowPos64\l# m_spSetPassword\l# m_spSetCoderProperties\l# m_spWriteCoderProperties\l# m_spCryptoResetInitVector\l# m_spSetDecoderProperties\l# m_spFilter\l|+ RCFilterCoder()\l+ ~RCFilterCoder()\l+ Init()\l+ WriteWithLimit()\l+ NeedMore()\l+ SetFilter()\l+ Code()\l+ SetInStream()\l+ ReleaseInStream()\l+ Read()\l+ SetOutStream()\l+ ReleaseOutStream()\l+ Write()\l+ Flush()\l+ CryptoSetPassword()\l+ SetCoderProperties()\l+ WriteCoderProperties()\l+ ResetInitVector()\l+ SetDecoderProperties2()\l+ QueryInterface()\l}" alt="" coords="476,489,692,1050"/><area shape="rect" id="node11" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html" title="{RCZip::RC7zFolderOutStream\n|&#45; m_crcStreamSpec\l&#45; m_crcStream\l&#45; m_db\l&#45; m_extractStatuses\l&#45; m_startIndex\l&#45; m_ref2Offset\l&#45; m_currentIndex\l&#45; m_extractCallback\l&#45; m_testMode\l&#45; m_fileIsOpen\l&#45; m_checkCrc\l&#45; m_rem\l|+ RC7zFolderOutStream()\l+ ~RC7zFolderOutStream()\l+ Init()\l+ FlushCorrupted()\l+ WasWritingFinished()\l+ Write()\l&#45; OpenFile()\l&#45; CloseFileAndSetResult()\l&#45; CloseFileAndSetResult()\l&#45; ProcessEmptyFiles()\l}" alt="" coords="716,584,932,955"/><area shape="rect" id="node13" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html" title="{RCZip::RCCabFolderOutStream\n|&#45; m_database\l&#45; m_extractStatuses\l&#45; m_startIndex\l&#45; m_currentIndex\l&#45; m_extractCallback\l&#45; m_testMode\l&#45; m_realOutStream\l&#45; m_isOk\l&#45; m_fileIsOpen\l&#45; m_remainFileSize\l&#45; m_folderSize\l&#45; m_posInFolder\l&#45; m_tempBuf\l&#45; m_tempBufMode\l&#45; m_isSupported\l&#45; m_bufStartFolderOffset\l|+ Write()\l+ WriteEmptyFiles()\l+ Init()\l+ FlushCorrupted()\l+ Unsupported()\l+ GetRemain()\l+ GetPosInFolder()\l&#45; OpenFile()\l&#45; CloseFile()\l&#45; Write2()\l}" alt="" coords="956,555,1183,984"/><area shape="rect" id="node15" href="../../d9/d96/classRCZip_1_1RCChmFolderOutStream.html" title="{RCZip::RCChmFolderOutStream\n|+ m_folderSize\l+ m_posInFolder\l+ m_posInSection\l+ m_extractStatuses\l+ m_startIndex\l+ m_currentIndex\l+ m_numFiles\l&#45; m_database\l&#45; m_extractCallback\l&#45; m_testMode\l&#45; m_isOk\l&#45; m_fileIsOpen\l&#45; m_remainFileSize\l&#45; m_realOutStream\l|+ Write()\l+ Write2()\l+ Init()\l+ FlushCorrupted()\l&#45; OpenFile()\l&#45; WriteEmptyFiles()\l}" alt="" coords="1207,599,1439,940"/><area shape="rect" id="node17" href="../../dc/d02/classRCZip_1_1RCDummyOutStream.html" title="{RCZip::RCDummyOutStream\n|&#45; m_stream\l&#45; m_size\l|+ RCDummyOutStream()\l+ ~RCDummyOutStream()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ GetSize()\l+ Write()\l}" alt="" coords="1463,679,1676,859"/><area shape="rect" id="node19" href="../../df/dac/classRCZip_1_1RCLimitedSequentialOutStream.html" title="{RCZip::RCLimitedSequentialOutStream\n|&#45; m_spOutStream\l&#45; m_size\l&#45; m_overflow\l&#45; m_overflowIsAllowed\l|+ RCLimitedSequentialOutStream()\l+ ~RCLimitedSequentialOutStream()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ IsFinishedOK()\l+ GetRem()\l+ Write()\l}" alt="" coords="1700,657,1980,881"/><area shape="rect" id="node21" href="../../d2/d80/classRCZip_1_1RCLzhOutStreamWithCRC.html" title="{RCZip::RCLzhOutStreamWithCRC\n|&#45; m_crc\l&#45; m_stream\l|+ Write()\l+ Init()\l+ ReleaseStream()\l+ GetCRC()\l+ InitCRC()\l}" alt="" coords="2004,694,2244,845"/><area shape="rect" id="node23" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html" title="{RCZip::RCLzxX86ConvertOutStream\n|&#45; m_stream\l&#45; m_processedSize\l&#45; m_pos\l&#45; m_translationSize\l&#45; m_translationMode\l&#45; m_buffer\l&#45; s_kUncompressedBlockSize\l|+ RCLzxX86ConvertOutStream()\l+ ~RCLzxX86ConvertOutStream()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ Flush()\l+ Write()\l&#45; MakeTranslation()\l}" alt="" coords="2268,635,2529,903"/><area shape="rect" id="node25" href="../../de/ddb/classRCZip_1_1RCOutStreamWithCRC.html" title="{RCZip::RCOutStreamWithCRC\n|&#45; m_stream\l&#45; m_size\l&#45; m_crc\l&#45; m_calculate\l|+ RCOutStreamWithCRC()\l+ ~RCOutStreamWithCRC()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ InitCRC()\l+ GetSize()\l+ GetCRC()\l+ Write()\l}" alt="" coords="2553,650,2769,889"/><area shape="rect" id="node27" href="../../db/d57/classRCZip_1_1RCOutStreamWithSha1.html" title="{RCZip::RCOutStreamWithSha1\n|&#45; m_spStream\l&#45; m_size\l&#45; m_sha\l&#45; m_calculate\l|+ RCOutStreamWithSha1()\l+ ~RCOutStreamWithSha1()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ InitSha1()\l+ GetSize()\l+ Final()\l+ Write()\l}" alt="" coords="2793,650,3017,889"/><area shape="rect" id="node29" href="../../d8/dd5/classRCZip_1_1RCSequentialOutStreamImp.html" title="{RCZip::RCSequentialOutStreamImp\n|&#45; m_writeBuffer\l|+ RCSequentialOutStreamImp()\l+ ~RCSequentialOutStreamImp()\l+ Init()\l+ GetSize()\l+ GetBuffer()\l+ Write()\l}" alt="" coords="3041,694,3297,845"/><area shape="rect" id="node31" href="../../de/dac/classRCZip_1_1RCSequentialOutStreamImp2.html" title="{RCZip::RCSequentialOutStreamImp2\n|&#45; m_buffer\l&#45; m_size\l&#45; m_pos\l|+ RCSequentialOutStreamImp2()\l+ ~RCSequentialOutStreamImp2()\l+ Init()\l+ GetPos()\l+ Write()\l}" alt="" coords="3321,687,3585,852"/><area shape="rect" id="node33" href="../../dd/d32/classRCZip_1_1RCSequentialOutStreamSizeCount.html" title="{RCZip::RCSequentialOutStreamSizeCount\n|&#45; m_spOutStream\l&#45; m_size\l|+ RCSequentialOutStreamSizeCount()\l+ ~RCSequentialOutStreamSizeCount()\l+ SetStream()\l+ Init()\l+ GetSize()\l+ Write()\l}" alt="" coords="3609,687,3908,852"/><area shape="rect" id="node35" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html" title="{RCZip::RCSequentialOutTempBufferImp\n|&#45; m_buffer\l|+ RCSequentialOutTempBufferImp()\l+ ~RCSequentialOutTempBufferImp()\l+ Init()\l+ Write()\l}" alt="" coords="3932,709,4217,830"/><area shape="rect" id="node37" href="../../d9/d52/classRCZip_1_1RCWinStdOutFileStream.html" title="{RCZip::RCWinStdOutFileStream\n||+ RCWinStdOutFileStream()\l+ ~RCWinStdOutFileStream()\l+ Write()\l}" alt="" coords="4241,716,4471,823"/><area shape="rect" id="node39" href="../../db/dd1/classRCZip_1_1RCZlibOutStreamWithAdler.html" title="{RCZip::RCZlibOutStreamWithAdler\n|&#45; m_stream\l&#45; m_adler\l|+ RCZlibOutStreamWithAdler()\l+ ~RCZlibOutStreamWithAdler()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ GetAdler()\l+ Write()\l&#45; Adler32Update()\l}" alt="" coords="4495,672,4745,867"/><area shape="rect" id="node43" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; IOutStream, IStreamGetFileName \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="4769,709,5196,830"/><area shape="rect" id="node47" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; IOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="5276,709,5548,830"/><area shape="rect" id="node45" href="../../db/df1/classRCZip_1_1RCWinOutFileStream.html" title="{RCZip::RCWinOutFileStream\n|&#45; m_file\l&#45; m_processedSize\l|+ RCWinOutFileStream()\l+ ~RCWinOutFileStream()\l+ Create()\l+ Open()\l+ Close()\l+ SetTime()\l+ SetMTime()\l+ Write()\l+ Seek()\l+ SetSize()\l+ GetProcessedSize()\l+ GetFileName()\l}" alt="" coords="4849,1201,5057,1455"/><area shape="rect" id="node49" href="../../d9/d97/classRCZip_1_1RCDummyOutFileStream.html" title="{RCZip::RCDummyOutFileStream\n|&#45; m_processedSize\l&#45; m_currentPos\l|+ RCDummyOutFileStream()\l+ ~RCDummyOutFileStream()\l+ Write()\l+ Seek()\l+ SetSize()\l+ GetProcessedSize()\l+ Close()\l}" alt="" coords="5081,1238,5316,1418"/><area shape="rect" id="node51" href="../../d6/d5c/classRCZip_1_1RCOffsetOutStream.html" title="{RCZip::RCOffsetOutStream\n|&#45; m_offset\l&#45; m_spOutStream\l|+ RCOffsetOutStream()\l+ ~RCOffsetOutStream()\l+ Init()\l+ Write()\l+ Seek()\l+ SetSize()\l}" alt="" coords="5340,1245,5540,1411"/><area shape="rect" id="node53" href="../../db/d47/classRCZip_1_1RCOutMemStream.html" title="{RCZip::RCOutMemStream\n|&#45; m_memManager\l&#45; m_curBlockIndex\l&#45; m_curBlockPos\l&#45; m_realStreamMode\l&#45; m_unlockEventWasSent\l&#45; m_stopWriteResult\l&#45; m_blocks\l&#45; m_spOutSeqStream\l&#45; m_spOutStream\l&#45; m_stopWritingEvent\l&#45; m_writeToRealStreamEvent\l|+ RCOutMemStream()\l+ ~RCOutMemStream()\l+ Init()\l+ Free()\l+ CreateEvents()\l+ SetOutStream()\l+ SetSeqOutStream()\l+ ReleaseOutStream()\l+ WriteToRealStream()\l+ DetachData()\l+ SetRealStreamMode()\l+ StopWriting()\l+ WasUnlockEventSent()\l+ Write()\l+ Seek()\l+ SetSize()\l&#45; GetPos()\l}" alt="" coords="5564,1099,5777,1557"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::ISequentialOutStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/d07/classRCZip_1_1ISequentialOutStream__coll__graph.png" border="0" usemap="#RCZip_1_1ISequentialOutStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1ISequentialOutStream_coll__map" id="RCZip_1_1ISequentialOutStream_coll__map">
+<area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="40,6,187,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../df/da7/classRCZip_1_1ISequentialOutStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html#a2a94db420efe37736f283734f0305c6ca46459904e50ef33e8e5b1c0cd13b53ac">IID</a> =  IID_ISequentialOutStream
+ }</td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html#ad269989f026c6c6b69acbe5007fc940a">Write</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)=0</td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html#a96ea781342da806a552983d6fa18381a">~ISequentialOutStream</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>写出数据接口 </p>
+
+<p>在文件<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>第<a class="el" href="../../d8/dc9/IStream_8h_source.html#l00065">65</a>行定义。</p>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a2a94db420efe37736f283734f0305c6c"></a><!-- doxytag: member="RCZip::ISequentialOutStream::@73" ref="a2a94db420efe37736f283734f0305c6c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>接口ID </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a2a94db420efe37736f283734f0305c6ca46459904e50ef33e8e5b1c0cd13b53ac"></a><!-- doxytag: member="IID" ref="a2a94db420efe37736f283734f0305c6ca46459904e50ef33e8e5b1c0cd13b53ac" args="" -->IID</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>第<a class="el" href="../../d8/dc9/IStream_8h_source.html#l00072">72</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a96ea781342da806a552983d6fa18381a"></a><!-- doxytag: member="RCZip::ISequentialOutStream::~ISequentialOutStream" ref="a96ea781342da806a552983d6fa18381a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::ISequentialOutStream::~ISequentialOutStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+<p>在文件<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>第<a class="el" href="../../d8/dc9/IStream_8h_source.html#l00088">88</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ad269989f026c6c6b69acbe5007fc940a"></a><!-- doxytag: member="RCZip::ISequentialOutStream::Write" ref="ad269989f026c6c6b69acbe5007fc940a" args="(const void *data, uint32_t size, uint32_t *processedSize)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::ISequentialOutStream::Write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 否则返回错误码 </dd></dl>
+
+<p>在<a class="el" href="../../d9/dcf/classRCZip_1_1RCFilterCoder.html#a4b1db6b8a1b4bba4cd6acb13cb6462fe">RCZip::RCFilterCoder</a>、<a class="el" href="../../db/dd1/classRCZip_1_1RCZlibOutStreamWithAdler.html#ae56769955cad3338c9d9683b95370fb5">RCZip::RCZlibOutStreamWithAdler</a>、<a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#aaed4d8595d9f8d2cc7258c3c0befab40">RCZip::RCLzxX86ConvertOutStream</a>、<a class="el" href="../../d9/d97/classRCZip_1_1RCDummyOutFileStream.html#a5acf124e7e984ba2f0726de114cceb24">RCZip::RCDummyOutFileStream</a>、<a class="el" href="../../df/dac/classRCZip_1_1RCLimitedSequentialOutStream.html#a0ef645dc0c5b470899d7334825f11506">RCZip::RCLimitedSequentialOutStream</a>、<a class="el" href="../../d6/d5c/classRCZip_1_1RCOffsetOutStream.html#af1c24e7d5c7df62764e09a47494ae81d">RCZip::RCOffsetOutStream</a>、<a class="el" href="../../d8/dd5/classRCZip_1_1RCSequentialOutStreamImp.html#a4d26d01988f6ccca3d9a63e9aed917cc">RCZip::RCSequentialOutStreamImp</a>、<a class="el" href="../../de/dac/classRCZip_1_1RCSequentialOutStreamImp2.html#a247fc0ae609724b54128ea6c3d316d22">RCZip::RCSequentialOutStreamImp2</a>、<a class="el" href="../../dd/d32/classRCZip_1_1RCSequentialOutStreamSizeCount.html#a86c156e08a1069176ffa84247e869528">RCZip::RCSequentialOutStreamSizeCount</a>、<a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html#add5fe8189e9f2124bca97bbe438bd998">RCZip::RCSequentialOutTempBufferImp</a>、<a class="el" href="../../db/df1/classRCZip_1_1RCWinOutFileStream.html#aecd0844758480ee1f4c03536dd5b25d4">RCZip::RCWinOutFileStream</a>、<a class="el" href="../../d9/d52/classRCZip_1_1RCWinStdOutFileStream.html#a1dd76bae607a45a46060e03cabb1c2d8">RCZip::RCWinStdOutFileStream</a>、<a class="el" href="../../db/d7e/classRCZip_1_1RC7zFolderOutStream.html#af8a471764e698408d33388ffea6cc489">RCZip::RC7zFolderOutStream</a>、<a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#ad02f9b59832e427fc9e10a6b0c17918c">RCZip::RCCabFolderOutStream</a>、<a class="el" href="../../d9/d96/classRCZip_1_1RCChmFolderOutStream.html#a799c88a6399aa9851d149b795209c7b6">RCZip::RCChmFolderOutStream</a>、<a class="el" href="../../dc/d02/classRCZip_1_1RCDummyOutStream.html#aa4809f9bcd75a182bca791144d18f4c5">RCZip::RCDummyOutStream</a>、<a class="el" href="../../de/ddb/classRCZip_1_1RCOutStreamWithCRC.html#a933bedb0c35bdfecbf85d0365e9bc182">RCZip::RCOutStreamWithCRC</a>、<a class="el" href="../../db/d57/classRCZip_1_1RCOutStreamWithSha1.html#aa62a8e863efab7734aee87fe5b85f565">RCZip::RCOutStreamWithSha1</a>、<a class="el" href="../../d2/d80/classRCZip_1_1RCLzhOutStreamWithCRC.html#accc3b153e01b6f5955aee08b00febaf9">RCZip::RCLzhOutStreamWithCRC</a>及<a class="el" href="../../db/d47/classRCZip_1_1RCOutMemStream.html#af85ef4f59aa84ba3befb096196004665">RCZip::RCOutMemStream</a>内被实现。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

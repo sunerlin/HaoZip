@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: Bra.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Bra.h文件参考</h1><code>#include &quot;<a class="el" href="../../d7/df8/Types_8h_source.html">algorithm/Types.h</a>&quot;</code><br/>
+<div class="dynheader">
+Bra.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d1/df0/Bra_8h__incl.png" border="0" usemap="#Bra_8h_map" alt=""/></div>
+<map name="Bra_8h_map" id="Bra_8h">
+<area shape="rect" id="node3" href="../../d7/df8/Types_8h.html" title="algorithm/Types.h" alt="" coords="76,80,217,107"/><area shape="rect" id="node5" href="../../df/dd8/stdint_8h.html" title="base/stdint.h" alt="" coords="36,155,143,181"/></map>
+</div>
+
+<p><a href="../../dc/df0/Bra_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df0/Bra_8h.html#a90142c093ce08018bb94baeb7b92fe25">x86_Convert_Init</a>(state)&nbsp;&nbsp;&nbsp;{ state = 0; }</td></tr>
+<tr><td colspan="2"><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df0/Bra_8h.html#a56e30f23ac0493ae948fb6fb8334c7ea">x86_Convert</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *data, size_t size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ip, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *state, int encoding)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df0/Bra_8h.html#a75a3eeb9de2eb3e2d58092c2400a9078">ARM_Convert</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *data, size_t size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ip, int encoding)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df0/Bra_8h.html#a6a3313a1c647bf10e073bbdb79d238c3">ARMT_Convert</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *data, size_t size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ip, int encoding)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df0/Bra_8h.html#a6f124bc9926d02f61119eef5a31e9ba7">PPC_Convert</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *data, size_t size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ip, int encoding)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df0/Bra_8h.html#a53ca192ee5d96991074d9b163a0ea294">SPARC_Convert</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *data, size_t size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ip, int encoding)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df0/Bra_8h.html#aa0d8ae3160a9ceea61486b4ab97dcfa4">IA64_Convert</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *data, size_t size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ip, int encoding)</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a90142c093ce08018bb94baeb7b92fe25"></a><!-- doxytag: member="Bra.h::x86_Convert_Init" ref="a90142c093ce08018bb94baeb7b92fe25" args="(state)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define x86_Convert_Init</td>
+          <td>(</td>
+          <td class="paramtype">state&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;{ state = 0; }</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/df0/Bra_8h_source.html">Bra.h</a>第<a class="el" href="../../dc/df0/Bra_8h_source.html#l00055">55</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="a75a3eeb9de2eb3e2d58092c2400a9078"></a><!-- doxytag: member="Bra.h::ARM_Convert" ref="a75a3eeb9de2eb3e2d58092c2400a9078" args="(byte_t *data, size_t size, uint32_t ip, int encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ARM_Convert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a3313a1c647bf10e073bbdb79d238c3"></a><!-- doxytag: member="Bra.h::ARMT_Convert" ref="a6a3313a1c647bf10e073bbdb79d238c3" args="(byte_t *data, size_t size, uint32_t ip, int encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ARMT_Convert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa0d8ae3160a9ceea61486b4ab97dcfa4"></a><!-- doxytag: member="Bra.h::IA64_Convert" ref="aa0d8ae3160a9ceea61486b4ab97dcfa4" args="(byte_t *data, size_t size, uint32_t ip, int encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t IA64_Convert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f124bc9926d02f61119eef5a31e9ba7"></a><!-- doxytag: member="Bra.h::PPC_Convert" ref="a6f124bc9926d02f61119eef5a31e9ba7" args="(byte_t *data, size_t size, uint32_t ip, int encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t PPC_Convert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53ca192ee5d96991074d9b163a0ea294"></a><!-- doxytag: member="Bra.h::SPARC_Convert" ref="a53ca192ee5d96991074d9b163a0ea294" args="(byte_t *data, size_t size, uint32_t ip, int encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t SPARC_Convert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56e30f23ac0493ae948fb6fb8334c7ea"></a><!-- doxytag: member="Bra.h::x86_Convert" ref="a56e30f23ac0493ae948fb6fb8334c7ea" args="(byte_t *data, size_t size, uint32_t ip, uint32_t *state, int encoding)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t x86_Convert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>encoding</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,1089 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveOpen类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveOpen类参考</h1><!-- doxytag: class="RCArchiveOpen" -->
+<p><code>#include &lt;<a class="el" href="../../dd/d1f/RCArchiveOpen_8h_source.html">RCArchiveOpen.h</a>&gt;</code></p>
+
+<p><a href="../../d6/d28/classRCArchiveOpen-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#aa997c068f6b3fc1ff877831dce9895b9">RCArchiveOpen</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a6dee107097273e7e43e3984e330bd9be">~RCArchiveOpen</a> ()</td></tr>
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#aea2c8545cfb33e91e58be493869267ca">OpenArchive</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;archiveCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, const RCString &amp;archiveName, <a class="el" href="../../d8/ddc/classRCArchiveLink.html">RCArchiveLink</a> &amp;archiveLink, <a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *openCallbackUI)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a3e221116969f67b1893e90b1e79d07c9">FindFormatsBySignature</a> (const RCString &amp;fileName, <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> archiveCodecs, RCIntVector &amp;matchFormatIndices, const std::set&lt; RCArchiveID &gt; *inputFormatIndices=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#ae66333dc4e39f9ceb61f8122d898279b">IsRarVolumeType</a> (const RCString &amp;fileName, <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> archiveCodecs, bool &amp;result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a9396057d5dc8c2dcd7f0b2572d46aac3">GetArchiveItemPath</a> (IInArchive *archive, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, const RCString &amp;defaultName, RCString &amp;result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a7f1b75c782d01b164fbf884550bb5a79">IsArchiveItemFolder</a> (IInArchive *archive, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, bool &amp;result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#aabae8a79f3299c1814dec8647f926e65">IsArchiveItemAnti</a> (IInArchive *archive, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, bool &amp;result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a3421e10e6c2282f553334bfa10c3879d">GetArchiveItemPathNoDefault</a> (IInArchive *archive, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, RCString &amp;result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#aafea7463a89720416d1430530179075a">GetArchiveItemPathExtension</a> (IInArchive *archive, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, RCString &amp;result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a8a0814634ff45a0e6cf0c234ee08da32">IsArchiveItemProp</a> (IInArchive *archive, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, RCPropertyID propID, bool &amp;result)</td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#abdc423267da2dd103a7df7dee54f6c6f">OpenArchive</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;archiveCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, const RCString &amp;archiveName, IInArchivePtr &amp;archive0, IInArchivePtr &amp;archive1, RCString &amp;defaultItemName0, RCString &amp;defaultItemName1, RCVector&lt; RCString &gt; &amp;volumePaths, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;volumesSize, <a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *openCallbackUI)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a490265f1ad59357eff11c8a426d7c182">OpenArchive</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;archiveCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, const RCString &amp;fileName, IInArchivePtr &amp;archive0, IInArchivePtr &amp;archive1, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;formatIndex0, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;formatIndex1, RCString &amp;defaultItemName0, RCString &amp;defaultItemName1, IArchiveOpenCallbackPtr archiveOpenCallback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a7a7faf9e0056572fa7fb0cf5753ca642">OpenArchive</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;archiveCodecs, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> arcTypeIndex, const RCString &amp;fileName, IInArchivePtr &amp;archiveResult, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;formatIndex, RCString &amp;defaultItemName, IArchiveOpenCallbackPtr archiveOpenCallback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a1603029445182a7200abedff622e7402">OpenArchive</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;archiveCodecs, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> arcTypeIndex, IInStreamPtr inStream, const RCString &amp;fileName, IInArchivePtr &amp;archiveResult, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;formatIndex, RCString &amp;defaultItemName, IArchiveOpenCallbackPtr archiveOpenCallback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a0779f62916e95a9a23176299ceab95b4">SetCallback</a> (const RCString &amp;fileName, <a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *openCallbackUI, IArchiveOpenCallbackPtr reArchiveOpenCallback, IArchiveOpenCallbackPtr &amp;archiveOpenCallback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a5ca9011ac10764f8edd0c24424cab382">TestSignature</a> (const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *p1, const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *p2, size_t size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#ab3364533bf9abb0e787f2d4f2842d128">MakeDefaultName</a> (RCString &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a234dbaea954c314787eac74ae499eeae">FindFormatsBySignature</a> (IInStreamPtr inStream, <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> archiveCodecs, const RCString &amp;fileExt, RCIntVector &amp;formatIndices, RCIntVector *matchFormatIndices=NULL, const std::set&lt; RCArchiveID &gt; *inputFormatIndices=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a8feb122e210a0c569e095d93243ab9c3">GetFileExtension</a> (const RCString &amp;fileName)</td></tr>
+<tr><td colspan="2"><h2>静态私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d73/classRCArchiveOpen.html#a16f48cabc0b0910ee3ea229489ec3cb1">s_maxCheckStartPosition</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>打开压缩包 </p>
+
+<p>在文件<a class="el" href="../../dd/d1f/RCArchiveOpen_8h_source.html">RCArchiveOpen.h</a>第<a class="el" href="../../dd/d1f/RCArchiveOpen_8h_source.html#l00028">28</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aa997c068f6b3fc1ff877831dce9895b9"></a><!-- doxytag: member="RCArchiveOpen::RCArchiveOpen" ref="aa997c068f6b3fc1ff877831dce9895b9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCArchiveOpen::RCArchiveOpen </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6dee107097273e7e43e3984e330bd9be"></a><!-- doxytag: member="RCArchiveOpen::~RCArchiveOpen" ref="a6dee107097273e7e43e3984e330bd9be" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCArchiveOpen::~RCArchiveOpen </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a234dbaea954c314787eac74ae499eeae"></a><!-- doxytag: member="RCArchiveOpen::FindFormatsBySignature" ref="a234dbaea954c314787eac74ae499eeae" args="(IInStreamPtr inStream, RCArchiveCodecsPtr archiveCodecs, const RCString &amp;fileExt, RCIntVector &amp;formatIndices, RCIntVector *matchFormatIndices=NULL, const std::set&lt; RCArchiveID &gt; *inputFormatIndices=NULL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::FindFormatsBySignature </td>
+          <td>(</td>
+          <td class="paramtype">IInStreamPtr&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileExt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCIntVector &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCIntVector *&nbsp;</td>
+          <td class="paramname"> <em>matchFormatIndices</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; RCArchiveID &gt; *&nbsp;</td>
+          <td class="paramname"> <em>inputFormatIndices</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>根据文件前面内容匹配可能的文件格式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>文档格式管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileExt</em>&nbsp;</td><td>文件扩展名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>formatIndices</em>&nbsp;</td><td>包含全部的以扩展名查找到的格式，把有签名的放在前面 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>matchFormatIndices</em>&nbsp;</td><td>匹配签名的文件格式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inputFormatIndices</em>&nbsp;</td><td>文档格式列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e221116969f67b1893e90b1e79d07c9"></a><!-- doxytag: member="RCArchiveOpen::FindFormatsBySignature" ref="a3e221116969f67b1893e90b1e79d07c9" args="(const RCString &amp;fileName, RCArchiveCodecsPtr archiveCodecs, RCIntVector &amp;matchFormatIndices, const std::set&lt; RCArchiveID &gt; *inputFormatIndices=NULL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::FindFormatsBySignature </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCIntVector &amp;&nbsp;</td>
+          <td class="paramname"> <em>matchFormatIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; RCArchiveID &gt; *&nbsp;</td>
+          <td class="paramname"> <em>inputFormatIndices</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>根据文件签名内容匹配可能的文件格式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>文档格式管理器 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>matchFormatIndices</em>&nbsp;</td><td>匹配签名的文件格式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inputFormatIndices</em>&nbsp;</td><td>文档格式编号集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9396057d5dc8c2dcd7f0b2572d46aac3"></a><!-- doxytag: member="RCArchiveOpen::GetArchiveItemPath" ref="a9396057d5dc8c2dcd7f0b2572d46aac3" args="(IInArchive *archive, uint32_t index, const RCString &amp;defaultName, RCString &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::GetArchiveItemPath </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回包内项名称 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>包内项序号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>defaultName</em>&nbsp;</td><td>缺省名称 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>返回包内项名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aafea7463a89720416d1430530179075a"></a><!-- doxytag: member="RCArchiveOpen::GetArchiveItemPathExtension" ref="aafea7463a89720416d1430530179075a" args="(IInArchive *archive, uint32_t index, RCString &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::GetArchiveItemPathExtension </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回包内项目扩展名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>包内项目序号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>返回扩展名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3421e10e6c2282f553334bfa10c3879d"></a><!-- doxytag: member="RCArchiveOpen::GetArchiveItemPathNoDefault" ref="a3421e10e6c2282f553334bfa10c3879d" args="(IInArchive *archive, uint32_t index, RCString &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::GetArchiveItemPathNoDefault </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回包内项路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>包内项序号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>返回包内项路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8feb122e210a0c569e095d93243ab9c3"></a><!-- doxytag: member="RCArchiveOpen::GetFileExtension" ref="a8feb122e210a0c569e095d93243ab9c3" args="(const RCString &amp;fileName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCArchiveOpen::GetFileExtension </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件的扩展名, 不含'.' </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件扩展名,不含'.' </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aabae8a79f3299c1814dec8647f926e65"></a><!-- doxytag: member="RCArchiveOpen::IsArchiveItemAnti" ref="aabae8a79f3299c1814dec8647f926e65" args="(IInArchive *archive, uint32_t index, bool &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::IsArchiveItemAnti </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回包内项是否为反向 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>包内项序号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>是返回true,否则返回false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f1b75c782d01b164fbf884550bb5a79"></a><!-- doxytag: member="RCArchiveOpen::IsArchiveItemFolder" ref="a7f1b75c782d01b164fbf884550bb5a79" args="(IInArchive *archive, uint32_t index, bool &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::IsArchiveItemFolder </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回包内项是否为目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>包内项序号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>是目录返回true,否则返回false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8a0814634ff45a0e6cf0c234ee08da32"></a><!-- doxytag: member="RCArchiveOpen::IsArchiveItemProp" ref="a8a0814634ff45a0e6cf0c234ee08da32" args="(IInArchive *archive, uint32_t index, RCPropertyID propID, bool &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::IsArchiveItemProp </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCPropertyID&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回包内项目是否有某属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>包内项序号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>属性序号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>有某属性返回true,否则返回false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae66333dc4e39f9ceb61f8122d898279b"></a><!-- doxytag: member="RCArchiveOpen::IsRarVolumeType" ref="ae66333dc4e39f9ceb61f8122d898279b" args="(const RCString &amp;fileName, RCArchiveCodecsPtr archiveCodecs, bool &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::IsRarVolumeType </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是RAR格式的分卷压缩 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>是分卷压缩返回ture，否则返回false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>是rar格式返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3364533bf9abb0e787f2d4f2842d128"></a><!-- doxytag: member="RCArchiveOpen::MakeDefaultName" ref="ab3364533bf9abb0e787f2d4f2842d128" args="(RCString &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCArchiveOpen::MakeDefaultName </td>
+          <td>(</td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>生成缺省名称 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>项名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1603029445182a7200abedff622e7402"></a><!-- doxytag: member="RCArchiveOpen::OpenArchive" ref="a1603029445182a7200abedff622e7402" args="(const RCArchiveCodecsPtr &amp;archiveCodecs, int32_t arcTypeIndex, IInStreamPtr inStream, const RCString &amp;fileName, IInArchivePtr &amp;archiveResult, int32_t &amp;formatIndex, RCString &amp;defaultItemName, IArchiveOpenCallbackPtr archiveOpenCallback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::OpenArchive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>arcTypeIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInStreamPtr&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveResult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultItemName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IArchiveOpenCallbackPtr&nbsp;</td>
+          <td class="paramname"> <em>archiveOpenCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>文档格式编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcTypeIndex</em>&nbsp;</td><td>格式序号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入文件流指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archiveResult</em>&nbsp;</td><td>打开的文件 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>formatIndex</em>&nbsp;</td><td>文档格式序号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>defaultItemName</em>&nbsp;</td><td>缺省项目名称 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveOpenCallback</em>&nbsp;</td><td>打开回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a7faf9e0056572fa7fb0cf5753ca642"></a><!-- doxytag: member="RCArchiveOpen::OpenArchive" ref="a7a7faf9e0056572fa7fb0cf5753ca642" args="(const RCArchiveCodecsPtr &amp;archiveCodecs, int32_t arcTypeIndex, const RCString &amp;fileName, IInArchivePtr &amp;archiveResult, int32_t &amp;formatIndex, RCString &amp;defaultItemName, IArchiveOpenCallbackPtr archiveOpenCallback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::OpenArchive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>arcTypeIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveResult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultItemName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IArchiveOpenCallbackPtr&nbsp;</td>
+          <td class="paramname"> <em>archiveOpenCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>文档格式编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcTypeIndex</em>&nbsp;</td><td>文档格式编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archiveResult</em>&nbsp;</td><td>打开的文件 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>formatIndex</em>&nbsp;</td><td>文档格式序号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>defaultItemName</em>&nbsp;</td><td>项缺省名称 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveOpenCallback</em>&nbsp;</td><td>打开回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a490265f1ad59357eff11c8a426d7c182"></a><!-- doxytag: member="RCArchiveOpen::OpenArchive" ref="a490265f1ad59357eff11c8a426d7c182" args="(const RCArchiveCodecsPtr &amp;archiveCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, const RCString &amp;fileName, IInArchivePtr &amp;archive0, IInArchivePtr &amp;archive1, int32_t &amp;formatIndex0, int32_t &amp;formatIndex1, RCString &amp;defaultItemName0, RCString &amp;defaultItemName1, IArchiveOpenCallbackPtr archiveOpenCallback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::OpenArchive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCArchiveID &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>archive0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>archive1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndex0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndex1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultItemName0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultItemName1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IArchiveOpenCallbackPtr&nbsp;</td>
+          <td class="paramname"> <em>archiveOpenCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>文档格式编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>formatIndices</em>&nbsp;</td><td>文档格式列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archive0</em>&nbsp;</td><td>输入文档1 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archive1</em>&nbsp;</td><td>输入文档2 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>formatIndex0</em>&nbsp;</td><td>文档1格式编号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>formatIndex1</em>&nbsp;</td><td>文档2格式编号 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>defaultItemName0</em>&nbsp;</td><td>缺省名称1 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>defaultItemName1</em>&nbsp;</td><td>缺省名称2 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveOpenCallback</em>&nbsp;</td><td>打开回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abdc423267da2dd103a7df7dee54f6c6f"></a><!-- doxytag: member="RCArchiveOpen::OpenArchive" ref="abdc423267da2dd103a7df7dee54f6c6f" args="(const RCArchiveCodecsPtr &amp;archiveCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, const RCString &amp;archiveName, IInArchivePtr &amp;archive0, IInArchivePtr &amp;archive1, RCString &amp;defaultItemName0, RCString &amp;defaultItemName1, RCVector&lt; RCString &gt; &amp;volumePaths, uint64_t &amp;volumesSize, IOpenCallbackUI *openCallbackUI)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::OpenArchive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCArchiveID &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>archive0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>archive1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultItemName0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>defaultItemName1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>volumePaths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>volumesSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>openCallbackUI</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>文档格式编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>formatIndices</em>&nbsp;</td><td>文档格式列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveName</em>&nbsp;</td><td>文档名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archive0</em>&nbsp;</td><td>输入文档1 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archive1</em>&nbsp;</td><td>输入文档2 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>defaultItemName0</em>&nbsp;</td><td>缺省名称1 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>defaultItemName1</em>&nbsp;</td><td>缺省名称2 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>volumePaths</em>&nbsp;</td><td>各分卷路径 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>volumesSize</em>&nbsp;</td><td>分卷大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openCallbackUI</em>&nbsp;</td><td>界面打开回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aea2c8545cfb33e91e58be493869267ca"></a><!-- doxytag: member="RCArchiveOpen::OpenArchive" ref="aea2c8545cfb33e91e58be493869267ca" args="(const RCArchiveCodecsPtr &amp;archiveCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, const RCString &amp;archiveName, RCArchiveLink &amp;archiveLink, IOpenCallbackUI *openCallbackUI)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::OpenArchive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCArchiveID &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/ddc/classRCArchiveLink.html">RCArchiveLink</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveLink</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>openCallbackUI</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开压缩包 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveCodecs</em>&nbsp;</td><td>文档格式管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>formatIndices</em>&nbsp;</td><td>文档格式编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveName</em>&nbsp;</td><td>文档名称 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>archiveLink</em>&nbsp;</td><td>文档链接 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openCallbackUI</em>&nbsp;</td><td>界面打开回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0779f62916e95a9a23176299ceab95b4"></a><!-- doxytag: member="RCArchiveOpen::SetCallback" ref="a0779f62916e95a9a23176299ceab95b4" args="(const RCString &amp;fileName, IOpenCallbackUI *openCallbackUI, IArchiveOpenCallbackPtr reArchiveOpenCallback, IArchiveOpenCallbackPtr &amp;archiveOpenCallback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveOpen::SetCallback </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>openCallbackUI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IArchiveOpenCallbackPtr&nbsp;</td>
+          <td class="paramname"> <em>reArchiveOpenCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IArchiveOpenCallbackPtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>archiveOpenCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置回调 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名称 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openCallbackUI</em>&nbsp;</td><td>界面打开回调接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>reArchiveOpenCallback</em>&nbsp;</td><td>打开回调接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveOpenCallback</em>&nbsp;</td><td>打开回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ca9011ac10764f8edd0c24424cab382"></a><!-- doxytag: member="RCArchiveOpen::TestSignature" ref="a5ca9011ac10764f8edd0c24424cab382" args="(const byte_t *p1, const byte_t *p2, size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCArchiveOpen::TestSignature </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>测试文档格式签名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p1</em>&nbsp;</td><td>待匹配串1 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p2</em>&nbsp;</td><td>待匹配串2 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>需匹配的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>p1 p2匹配成功返回 true,否则返回 false </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a16f48cabc0b0910ee3ea229489ec3cb1"></a><!-- doxytag: member="RCArchiveOpen::s_maxCheckStartPosition" ref="a16f48cabc0b0910ee3ea229489ec3cb1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d3/d73/classRCArchiveOpen.html#a16f48cabc0b0910ee3ea229489ec3cb1">RCArchiveOpen::s_maxCheckStartPosition</a><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>签名检查最大偏移量 </p>
+
+<p>在文件<a class="el" href="../../dd/d1f/RCArchiveOpen_8h_source.html">RCArchiveOpen.h</a>第<a class="el" href="../../dd/d1f/RCArchiveOpen_8h_source.html#l00293">293</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dd/d1f/RCArchiveOpen_8h_source.html">RCArchiveOpen.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RC7zUpdate类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html">RC7zUpdate</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RC7zUpdate类参考</h1><!-- doxytag: class="RCZip::RC7zUpdate" -->
+<p><code>#include &lt;<a class="el" href="../../d0/de1/RC7zUpdate_8h_source.html">RC7zUpdate.h</a>&gt;</code></p>
+
+<p><a href="../../d8/dc2/classRCZip_1_1RC7zUpdate-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a0012bb991a140bd407d2bd73930ce726">Update</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecsInfo, <a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, const <a class="el" href="../../df/dde/classRCZip_1_1RC7zArchiveDatabaseEx.html">RC7zArchiveDatabaseEx</a> *db, const std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a3e16c6d82846b60ce41329ec0cb57f3d">RC7zUpdateItemPtr</a> &gt; &amp;updateItems, <a class="el" href="../../d2/d87/classRCZip_1_1RC7zOutArchive.html">RC7zOutArchive</a> &amp;archive, <a class="el" href="../../db/d26/structRCZip_1_1RC7zArchiveDatabase.html">RC7zArchiveDatabase</a> &amp;newDatabase, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *seqOutStream, <a class="el" href="../../d0/d37/classRCZip_1_1IArchiveUpdateCallback.html">IArchiveUpdateCallback</a> *updateCallback, const <a class="el" href="../../de/d71/structRCZip_1_1RC7zUpdateOptions.html">RC7zUpdateOptions</a> &amp;options)</td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#ab36d7bad7c2b4d41a065afd9a87cea9b">WriteRange</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecsInfo, <a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> position, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a3bd5e227b40072612fa667fa0e69dbdb">CompareBuffers</a> (const <a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;a1, const <a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;a2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#acb5e7bd68959198f2edaf1fd0796dc69">CompareCoders</a> (const <a class="el" href="../../d9/d60/structRCZip_1_1RC7zCoderInfo.html">RC7zCoderInfo</a> &amp;c1, const <a class="el" href="../../d9/d60/structRCZip_1_1RC7zCoderInfo.html">RC7zCoderInfo</a> &amp;c2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a39b588bf362f830c414848cd1802c398">CompareBindPairs</a> (const <a class="el" href="../../dc/d7e/structRCZip_1_1RC7zBindPair.html">RC7zBindPair</a> &amp;b1, const <a class="el" href="../../dc/d7e/structRCZip_1_1RC7zBindPair.html">RC7zBindPair</a> &amp;b2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#afbed7ea7ec0faacf8ff6e04006184dc3">CompareFolders</a> (const <a class="el" href="../../d2/d30/structRCZip_1_1RC7zFolder.html">RC7zFolder</a> &amp;f1, const <a class="el" href="../../d2/d30/structRCZip_1_1RC7zFolder.html">RC7zFolder</a> &amp;f2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a67f5147502b4cc0c9ee0fd5e4c0bae9d">CompareEmptyItems</a> (const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *p1, const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *p2, void *param)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a9a93aa20054a9d3881e405e95a52c321">CompareFolderRepacks</a> (const <a class="el" href="../../d7/da0/structRCZip_1_1RC7zFolderRepack.html">RC7zFolderRepack</a> *p1, const <a class="el" href="../../d7/da0/structRCZip_1_1RC7zFolderRepack.html">RC7zFolderRepack</a> *p2, void *param)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a5300b260406ec57868434a36006a3678">FromUpdateItemToFileItem</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a3e16c6d82846b60ce41329ec0cb57f3d">RC7zUpdateItemPtr</a> &amp;ui, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a94fb06a5769d895813bdfe39edffdd4e">RC7zFileItemPtr</a> &amp;file, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a7db68a6670841a422ffaa38876a0156a">RC7zFileItem2Ptr</a> &amp;file2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a789b19171276b41828d73898f4d8a312">GetExtIndex</a> (const char *ext)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a8e98ee77b3b05a06989cb212f1e555a6">MyStringCompareNoCase</a> (const RCString::value_type *s1, const RCString::value_type *s2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a3935dae687407ee8109dd891abe12c5f">CompareUpdateItems</a> (const RC7zRefItem *p1, const RC7zRefItem *p2, void *param)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#aa38b6b926931f548ade9ab0f57649757">IsExeFile</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;ext)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a831bf1e1c81c4968e605a36139c6e551">GetMethodFull</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> methodID, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numInStreams, <a class="el" href="../../d8/d20/structRCZip_1_1RC7zArchiveMethodFull.html">RC7zArchiveMethodFull</a> &amp;methodResult)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9e/classRCZip_1_1RC7zUpdate.html#a9e9410dfb0156a811697f258be6ffd53">MakeExeMethod</a> (const <a class="el" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html">RC7zCompressionMethodMode</a> &amp;method, bool bcj2Filter, <a class="el" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html">RC7zCompressionMethodMode</a> &amp;exeMethod)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d0/de1/RC7zUpdate_8h_source.html">RC7zUpdate.h</a>第<a class="el" href="../../d0/de1/RC7zUpdate_8h_source.html#l00178">178</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a39b588bf362f830c414848cd1802c398"></a><!-- doxytag: member="RCZip::RC7zUpdate::CompareBindPairs" ref="a39b588bf362f830c414848cd1802c398" args="(const RC7zBindPair &amp;b1, const RC7zBindPair &amp;b2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::CompareBindPairs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/d7e/structRCZip_1_1RC7zBindPair.html">RC7zBindPair</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>b1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/d7e/structRCZip_1_1RC7zBindPair.html">RC7zBindPair</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>b2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较绑定配对信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>b1</em>&nbsp;</td><td>绑定配对信息一 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>b2</em>&nbsp;</td><td>绑定配对信息二 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回0，否则返回其它 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3bd5e227b40072612fa667fa0e69dbdb"></a><!-- doxytag: member="RCZip::RC7zUpdate::CompareBuffers" ref="a3bd5e227b40072612fa667fa0e69dbdb" args="(const RCByteBuffer &amp;a1, const RCByteBuffer &amp;a2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::CompareBuffers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>a2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较内存 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>a1</em>&nbsp;</td><td>内存一 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>a2</em>&nbsp;</td><td>内存二 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回0，否则返回其它 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acb5e7bd68959198f2edaf1fd0796dc69"></a><!-- doxytag: member="RCZip::RC7zUpdate::CompareCoders" ref="acb5e7bd68959198f2edaf1fd0796dc69" args="(const RC7zCoderInfo &amp;c1, const RC7zCoderInfo &amp;c2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::CompareCoders </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d60/structRCZip_1_1RC7zCoderInfo.html">RC7zCoderInfo</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d60/structRCZip_1_1RC7zCoderInfo.html">RC7zCoderInfo</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>c2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较编码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>c1</em>&nbsp;</td><td>编码一 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>c2</em>&nbsp;</td><td>编码二 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回0，否则返回其它 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a67f5147502b4cc0c9ee0fd5e4c0bae9d"></a><!-- doxytag: member="RCZip::RC7zUpdate::CompareEmptyItems" ref="a67f5147502b4cc0c9ee0fd5e4c0bae9d" args="(const int32_t *p1, const int32_t *p2, void *param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::CompareEmptyItems </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>param</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较空项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p1</em>&nbsp;</td><td>数值一 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p2</em>&nbsp;</td><td>数值二 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>param</em>&nbsp;</td><td>参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回0，否则返回其它 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a93aa20054a9d3881e405e95a52c321"></a><!-- doxytag: member="RCZip::RC7zUpdate::CompareFolderRepacks" ref="a9a93aa20054a9d3881e405e95a52c321" args="(const RC7zFolderRepack *p1, const RC7zFolderRepack *p2, void *param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::CompareFolderRepacks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/da0/structRCZip_1_1RC7zFolderRepack.html">RC7zFolderRepack</a> *&nbsp;</td>
+          <td class="paramname"> <em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/da0/structRCZip_1_1RC7zFolderRepack.html">RC7zFolderRepack</a> *&nbsp;</td>
+          <td class="paramname"> <em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>param</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件夹 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p1</em>&nbsp;</td><td>文件夹一 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p2</em>&nbsp;</td><td>文件夹二 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>param</em>&nbsp;</td><td>参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回0，否则返回其它 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afbed7ea7ec0faacf8ff6e04006184dc3"></a><!-- doxytag: member="RCZip::RC7zUpdate::CompareFolders" ref="afbed7ea7ec0faacf8ff6e04006184dc3" args="(const RC7zFolder &amp;f1, const RC7zFolder &amp;f2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::CompareFolders </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d30/structRCZip_1_1RC7zFolder.html">RC7zFolder</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>f1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/d30/structRCZip_1_1RC7zFolder.html">RC7zFolder</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>f2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件夹 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>f1</em>&nbsp;</td><td>文件夹一 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>f2</em>&nbsp;</td><td>文件夹二 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回0，否则返回其它 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3935dae687407ee8109dd891abe12c5f"></a><!-- doxytag: member="RCZip::RC7zUpdate::CompareUpdateItems" ref="a3935dae687407ee8109dd891abe12c5f" args="(const RC7zRefItem *p1, const RC7zRefItem *p2, void *param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::CompareUpdateItems </td>
+          <td>(</td>
+          <td class="paramtype">const RC7zRefItem *&nbsp;</td>
+          <td class="paramname"> <em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC7zRefItem *&nbsp;</td>
+          <td class="paramname"> <em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>param</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较更新项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p1</em>&nbsp;</td><td>引用项二 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p2</em>&nbsp;</td><td>引用项二 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>param</em>&nbsp;</td><td>参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5300b260406ec57868434a36006a3678"></a><!-- doxytag: member="RCZip::RC7zUpdate::FromUpdateItemToFileItem" ref="a5300b260406ec57868434a36006a3678" args="(const RC7zUpdateItemPtr &amp;ui, RC7zFileItemPtr &amp;file, RC7zFileItem2Ptr &amp;file2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RC7zUpdate::FromUpdateItemToFileItem </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a3e16c6d82846b60ce41329ec0cb57f3d">RC7zUpdateItemPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ui</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a94fb06a5769d895813bdfe39edffdd4e">RC7zFileItemPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a7db68a6670841a422ffaa38876a0156a">RC7zFileItem2Ptr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>file2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>从更新项到文件项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>ui</em>&nbsp;</td><td>更新项 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>file</em>&nbsp;</td><td>文件项 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>file2</em>&nbsp;</td><td>文件项 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a789b19171276b41828d73898f4d8a312"></a><!-- doxytag: member="RCZip::RC7zUpdate::GetExtIndex" ref="a789b19171276b41828d73898f4d8a312" args="(const char *ext)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::GetExtIndex </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>ext</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取扩展索引 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>ext</em>&nbsp;</td><td>扩展 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回索引 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a831bf1e1c81c4968e605a36139c6e551"></a><!-- doxytag: member="RCZip::RC7zUpdate::GetMethodFull" ref="a831bf1e1c81c4968e605a36139c6e551" args="(uint64_t methodID, uint32_t numInStreams, RC7zArchiveMethodFull &amp;methodResult)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RC7zUpdate::GetMethodFull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>methodID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numInStreams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d20/structRCZip_1_1RC7zArchiveMethodFull.html">RC7zArchiveMethodFull</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>methodResult</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取模式属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodID</em>&nbsp;</td><td>模式id </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numInStreams</em>&nbsp;</td><td>输入流的个数 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>methodResult</em>&nbsp;</td><td>输出模式属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回true </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa38b6b926931f548ade9ab0f57649757"></a><!-- doxytag: member="RCZip::RC7zUpdate::IsExeFile" ref="aa38b6b926931f548ade9ab0f57649757" args="(const RCString &amp;ext)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RC7zUpdate::IsExeFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ext</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是exe文件 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e9410dfb0156a811697f258be6ffd53"></a><!-- doxytag: member="RCZip::RC7zUpdate::MakeExeMethod" ref="a9e9410dfb0156a811697f258be6ffd53" args="(const RC7zCompressionMethodMode &amp;method, bool bcj2Filter, RC7zCompressionMethodMode &amp;exeMethod)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RC7zUpdate::MakeExeMethod </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html">RC7zCompressionMethodMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bcj2Filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html">RC7zCompressionMethodMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>exeMethod</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置exe的模式属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>method</em>&nbsp;</td><td>模式属性 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bcj2Filter</em>&nbsp;</td><td>是否是bcj filter </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>exeMethod</em>&nbsp;</td><td>输出模式属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e98ee77b3b05a06989cb212f1e555a6"></a><!-- doxytag: member="RCZip::RC7zUpdate::MyStringCompareNoCase" ref="a8e98ee77b3b05a06989cb212f1e555a6" args="(const RCString::value_type *s1, const RCString::value_type *s2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RC7zUpdate::MyStringCompareNoCase </td>
+          <td>(</td>
+          <td class="paramtype">const RCString::value_type *&nbsp;</td>
+          <td class="paramname"> <em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString::value_type *&nbsp;</td>
+          <td class="paramname"> <em>s2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较字符串 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s1</em>&nbsp;</td><td>字符串一 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s2</em>&nbsp;</td><td>字符串二 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回0，否则返回其它 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0012bb991a140bd407d2bd73930ce726"></a><!-- doxytag: member="RCZip::RC7zUpdate::Update" ref="a0012bb991a140bd407d2bd73930ce726" args="(ICompressCodecsInfo *codecsInfo, IInStream *inStream, const RC7zArchiveDatabaseEx *db, const std::vector&lt; RC7zUpdateItemPtr &gt; &amp;updateItems, RC7zOutArchive &amp;archive, RC7zArchiveDatabase &amp;newDatabase, ISequentialOutStream *seqOutStream, IArchiveUpdateCallback *updateCallback, const RC7zUpdateOptions &amp;options)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zUpdate::Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecsInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dde/classRCZip_1_1RC7zArchiveDatabaseEx.html">RC7zArchiveDatabaseEx</a> *&nbsp;</td>
+          <td class="paramname"> <em>db</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a3e16c6d82846b60ce41329ec0cb57f3d">RC7zUpdateItemPtr</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>updateItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d87/classRCZip_1_1RC7zOutArchive.html">RC7zOutArchive</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d26/structRCZip_1_1RC7zArchiveDatabase.html">RC7zArchiveDatabase</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>newDatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>seqOutStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d37/classRCZip_1_1IArchiveUpdateCallback.html">IArchiveUpdateCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>updateCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../de/d71/structRCZip_1_1RC7zUpdateOptions.html">RC7zUpdateOptions</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>options</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecsInfo</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>db</em>&nbsp;</td><td>基本数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>updateItems</em>&nbsp;</td><td>更新项 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输出文档 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>newDatabase</em>&nbsp;</td><td>新基本数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>seqOutStream</em>&nbsp;</td><td>输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>updateCallback</em>&nbsp;</td><td>文档更新管理器回调接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>options</em>&nbsp;</td><td>操作 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab36d7bad7c2b4d41a065afd9a87cea9b"></a><!-- doxytag: member="RCZip::RC7zUpdate::WriteRange" ref="ab36d7bad7c2b4d41a065afd9a87cea9b" args="(ICompressCodecsInfo *codecsInfo, IInStream *inStream, ISequentialOutStream *outStream, uint64_t position, uint64_t size, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zUpdate::WriteRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecsInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写范围 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecsInfo</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>position</em>&nbsp;</td><td>偏移位置 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>压缩进度管理器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d0/de1/RC7zUpdate_8h_source.html">RC7zUpdate.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

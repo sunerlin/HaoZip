@@ -1,0 +1,1782 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCExtractArchiveCallback类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCExtractArchiveCallback类参考</h1><!-- doxytag: class="RCExtractArchiveCallback" -->
+<p><code>#include &lt;<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>&gt;</code></p>
+<div class="dynheader">
+RCExtractArchiveCallback合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/d00/classRCExtractArchiveCallback__coll__graph.png" border="0" usemap="#RCExtractArchiveCallback_coll__map" alt="Collaboration graph"/></div>
+<map name="RCExtractArchiveCallback_coll__map" id="RCExtractArchiveCallback_coll__map">
+<area shape="rect" id="node2" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IExtractFolderArchiveCallback \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="5,206,325,503"/><area shape="rect" id="node4" href="../../d3/d3e/classIExtractFolderArchiveCallback.html" title="{IExtractFolderArchiveCallback\n||+ AskOverwrite()\l+ PrepareOperation()\l+ MessageError()\l+ SetOperationResult()\l# ~IExtractFolderArchiveCallback()\l}" alt="" coords="36,5,295,141"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d3/d8f/classRCExtractArchiveCallback-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html">TPendingDirTime</a></td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a10fbb3ce1fdb77638978900ab6db40d7">RCExtractArchiveCallback</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a611ce414b2e984f5e9e246ada197eee1">~RCExtractArchiveCallback</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ad5383950899619b1095b76994381bf8e">SetTotal</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> total)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6133ea936f5ea638d8557910970ec711">SetCompleted</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> completed)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#acb87449ec5dd5b180f03c3a51c03b522">GetStream</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, ISequentialOutStream **outStream, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> askExtractMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a1e5c047b7fbb25ecf53c10d1c34bd314">PrepareOperation</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> askExtractMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ae72bed5cda32208024ce323c117f1833">SetOperationResult</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> resultEOperationResult)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aa50808fad7b597a611afd41a161de5e5">SetMultiThreadMode</a> (bool isMultiThreads)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#afe85f3223c25e55e613e0dfa8475fcc5">CryptoGetTextPassword</a> (RCString &amp;password)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aaa476d7d22bd35f7f5c6c3e375a216ce">SetRatioInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSize, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6ff0c2fca367025d18e00c522e079e58">GetDestinationDirectory</a> (RCString &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6be2423c1de2a6be3d438905d753f057">GetRemovePathParts</a> (RCVector&lt; RCString &gt; &amp;removePathParts)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aeeb5f44c5275ac39ad91d7e862141a58">GetPathMode</a> (<a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> &amp;pathMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a366b8a20fa73a612177326d2a04248b3">GetOverwriteMode</a> (<a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> &amp;overwriteMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a202536dcbe0ab4d95b61c0dfc7a4e6a5">GetUpdateMode</a> (<a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> &amp;updateMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a5ecd43bbdff56ba2ddb872a808dcaae3">AskOverwrite</a> (const RCString &amp;existName, const RC_FILE_TIME *existTime, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *existSize, const RCString &amp;newName, const RC_FILE_TIME *newTime, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *newSize, bool isEnableRename, <a class="el" href="../../da/de1/classRCExtractDefs.html#a7367bd08f43a664821fb5ef2ade537e6">RCExractOverwriteAnswer</a> &amp;answer, RCString &amp;newFileName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a980a4310c77db2e6ab6a536fb64c7c0f">IsKeepDamageFiles</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aba3f2797ff238bcf9a18eb5254e4afa5">Init</a> (IInArchive *archiveHandler, <a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a> *extractCallback2, bool stdOutMode, const RCString &amp;directoryPath, const RCVector&lt; RCString &gt; &amp;removePathParts, const RCString &amp;itemDefaultName, const RC_FILE_TIME &amp;utcMTimeDefault, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> attributesDefault, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> packSize, <a class="el" href="../../d3/d8b/RCExtractDefs_8h.html#a748f3f3f98670fd9b27b7e744365bae9">RCExractFileTimeFlag</a> fileTimeFlag)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aa097fe824fc0d33fa7ad810a9f034da3">InitForMulti</a> (bool multiArchives, <a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> pathMode, <a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> overwriteMode, <a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> updateMode, bool isKeepDamageFiles, bool extractToSubDir, IOutStreamEvent *outStreamEvent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aa773481a276ef492fa57b9a50a59b3f5">SetRemovePathList</a> (const RCVector&lt; RCString &gt; &amp;removePathList)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCLocalProgress *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a195cb40543631bdbe92c3b1321c7f144">GetLocalProgress</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a660b601a0cbf09e02ccb9c43e5a6688f">GetUnpackSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ae13335b720eb81887234afd8867f5134">GetNumFolders</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a48bb094344fad620edd5c9ec409cbb5a">GetNumFiles</a> () const </td></tr>
+<tr><td colspan="2"><h2>私有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; RCString &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3d468742fe840546924bd5be9d8f7157">TCreatedDirectoryCache</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; RCString &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abc6a8c08474636830737d2c20008ca72">TDeleteFileList</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::list<br class="typebreak"/>
+&lt; <a class="el" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html">TPendingDirTime</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6288ea66489152a0c98a5f4bab1a5730">TPendingDirTimeList</a></td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a436e95ac6f18b2a454ccba8fb46e8661">CreateComplexDirectory</a> (const RCVector&lt; RCString &gt; &amp;dirPathParts, RCString &amp;fullPath)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abebc5f2d7ad3e8e6788bfd297b680f3b">GetTime</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> index, RCPropertyID propID, RC_FILE_TIME &amp;filetime, bool &amp;filetimeIsDefined)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aae9e6b8c778f000e75058028fb1b2927">CreateOneDirectory</a> (const RCString &amp;fullPath)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ab1d50ed76fcd3efa6fe7e043825317f1">ClearExtractingFileInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a06171c2a9cf08f8aa4092c334e587a7a">OnMessageError</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> index, const RCString &amp;errMsg)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ab8b84c680efd800e4ea86dddbe28e53f">CheckRemovePathParts</a> (const RCVector&lt; RCString &gt; &amp;removePathParts, const RCVector&lt; RCString &gt; &amp;pathParts, RCString::size_type &amp;numRemovePathParts) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">TExtractingFileInfo *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aeeb446c8116e64de1746a0a21d1f2fd5">GetDefaultExtractingFileInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">TExtractingFileInfo *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ad29e9beb7259adbe935ad3504908e06e">GetExtractingFileInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a85ef56f10ff3277609ea3bf97c597d2c">ReleaseExtractingFileInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">IInArchivePtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#af0e3dc996b1622f873cf081fd8ebd9e7">m_spInArchive</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IExtractFolderArchiveCallbackPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a80884fc33098afdd881921f5b81bf565">m_extractCallback2</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ICryptoGetTextPasswordPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6ec4ad90570c3129059e23f9ca150315">m_cryptoGetTextPassword</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a1540ffcb7ea85ca97c6f8d81309b0588">m_updateMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3b93a52cf7db3def05be1bedff86916d">m_pathMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a5c6139e9f35012e3cf61dad1a3d2e4fc">m_overwriteMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#acf482d96febd6b64ae26f083b1681db3">m_keepDamageFiles</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abceb630b3987d18f4adc14d365fc6c8d">m_extractToSubDir</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ab93e717d43b986d622af3010b744a918">m_directoryPath</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a13ef6b8b0cedd1882e6ac33a69fea5f9">m_writeCTime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a33bd317d14d60d4de07b34984ae65006">m_writeATime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abd7fb1aa8e9715044d75d701eda9ebdb">m_writeMTime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCVector&lt; RCString &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#adcbe687c9b680e9bfee519cea8b76140">m_removePathParts</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCVector&lt; RCString &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3857cd8a24c821eb0dd48057a517f573">m_removePathList</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ace27124721b213ba3792539645302e1f">m_itemDefaultName</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RC_FILE_TIME&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aa3b09060cd879c166ebda74f127f1697">m_utcMTimeDefault</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a765603eeadc28a89aa300dacce8d0c97">m_attributesDefault</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aefde280aae54eb2847effa41886c86f3">m_stdOutMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCLocalProgress *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#af356d288148878b184e143f4b3ece5b9">m_localProgressSpec</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ICompressProgressInfoPtr&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a9a04fc49d2f31af6ec9715aaeead759c">m_localProgress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ad710134fd30e118c7b3a14f60c9985bc">m_packTotal</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a2a6079d11b766be1d8441c8492a0ff97">m_unpackTotal</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#adfba429895550a051fd4d1c9f01f7f2b">m_multiArchives</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a09dedd2aaec6d2b98ab667c22882b0d1">m_numFolders</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a46fb0950838aa272cfda54302486fe86">m_numFiles</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a0f16a14e0e905e0f2f2986897f9e7804">m_unpackSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aa20496bded551f88ee6df6f42f62693b">m_numErrors</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3d468742fe840546924bd5be9d8f7157">TCreatedDirectoryCache</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aac0af151cd92960c7a28d91b04caa9d1">m_createdDirCache</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">IOutStreamEvent *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aed412d2636883e5528045016aeecefb9">m_outStreamEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCVector&lt; TExtractingFileInfo * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ab44fb6b24c2388d8c58bd1fe595fb5e2">m_extractingFileInfoArray</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a5f23daf9bc956701dc7a74d1b0ea645f">m_isMultiThreads</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCMutex&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a0e376ccf057eacd032671eb1eaba1822">m_extractMutex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abc6a8c08474636830737d2c20008ca72">TDeleteFileList</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a89f63080f9e34be4607681b7cdfeab35">m_deleteFileList</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6288ea66489152a0c98a5f4bab1a5730">TPendingDirTimeList</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a26acfbf3b4cd60ff73bf57dcba23422f">m_pendingDirTimeList</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>文档解压回调接口 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00039">39</a>行定义。</p>
+<hr/><h2>成员类型定义文档</h2>
+<a class="anchor" id="a3d468742fe840546924bd5be9d8f7157"></a><!-- doxytag: member="RCExtractArchiveCallback::TCreatedDirectoryCache" ref="a3d468742fe840546924bd5be9d8f7157" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::set&lt;RCString&gt; <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3d468742fe840546924bd5be9d8f7157">RCExtractArchiveCallback::TCreatedDirectoryCache</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>本次压缩中创建的目录缓存，为优化IO性能 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00399">399</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abc6a8c08474636830737d2c20008ca72"></a><!-- doxytag: member="RCExtractArchiveCallback::TDeleteFileList" ref="abc6a8c08474636830737d2c20008ca72" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;RCString&gt; <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abc6a8c08474636830737d2c20008ca72">RCExtractArchiveCallback::TDeleteFileList</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>待删除文件 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00440">440</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6288ea66489152a0c98a5f4bab1a5730"></a><!-- doxytag: member="RCExtractArchiveCallback::TPendingDirTimeList" ref="a6288ea66489152a0c98a5f4bab1a5730" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;<a class="el" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html">TPendingDirTime</a>&gt; <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6288ea66489152a0c98a5f4bab1a5730">RCExtractArchiveCallback::TPendingDirTimeList</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00452">452</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a10fbb3ce1fdb77638978900ab6db40d7"></a><!-- doxytag: member="RCExtractArchiveCallback::RCExtractArchiveCallback" ref="a10fbb3ce1fdb77638978900ab6db40d7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCExtractArchiveCallback::RCExtractArchiveCallback </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a611ce414b2e984f5e9e246ada197eee1"></a><!-- doxytag: member="RCExtractArchiveCallback::~RCExtractArchiveCallback" ref="a611ce414b2e984f5e9e246ada197eee1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual RCExtractArchiveCallback::~RCExtractArchiveCallback </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a5ecd43bbdff56ba2ddb872a808dcaae3"></a><!-- doxytag: member="RCExtractArchiveCallback::AskOverwrite" ref="a5ecd43bbdff56ba2ddb872a808dcaae3" args="(const RCString &amp;existName, const RC_FILE_TIME *existTime, const uint64_t *existSize, const RCString &amp;newName, const RC_FILE_TIME *newTime, const uint64_t *newSize, bool isEnableRename, RCExractOverwriteAnswer &amp;answer, RCString &amp;newFileName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::AskOverwrite </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>existName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC_FILE_TIME *&nbsp;</td>
+          <td class="paramname"> <em>existTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>existSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>newName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC_FILE_TIME *&nbsp;</td>
+          <td class="paramname"> <em>newTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>newSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isEnableRename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#a7367bd08f43a664821fb5ef2ade537e6">RCExractOverwriteAnswer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>answer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>newFileName</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件覆盖确认接口 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>existName</em>&nbsp;</td><td>已经存在的文件路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>existTime</em>&nbsp;</td><td>已经存在的文件时间 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>existSize</em>&nbsp;</td><td>已经存在的文件大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>newName</em>&nbsp;</td><td>新文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>newTime</em>&nbsp;</td><td>新文件时间 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>newSize</em>&nbsp;</td><td>新文件大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isEnableRename</em>&nbsp;</td><td>是否支持重命名操作 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>answer</em>&nbsp;</td><td>确认结果 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>newFileName</em>&nbsp;</td><td>如果是重命名单个文件时，返回用户指定名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8b84c680efd800e4ea86dddbe28e53f"></a><!-- doxytag: member="RCExtractArchiveCallback::CheckRemovePathParts" ref="ab8b84c680efd800e4ea86dddbe28e53f" args="(const RCVector&lt; RCString &gt; &amp;removePathParts, const RCVector&lt; RCString &gt; &amp;pathParts, RCString::size_type &amp;numRemovePathParts) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::CheckRemovePathParts </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>removePathParts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>pathParts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString::size_type &amp;&nbsp;</td>
+          <td class="paramname"> <em>numRemovePathParts</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查移除目录前缀项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>removePathParts</em>&nbsp;</td><td>需要移除的目录前缀 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>pathParts</em>&nbsp;</td><td>当前的目录或者文件 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numRemovePathParts</em>&nbsp;</td><td>需要移除路径前缀项个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1d50ed76fcd3efa6fe7e043825317f1"></a><!-- doxytag: member="RCExtractArchiveCallback::ClearExtractingFileInfo" ref="ab1d50ed76fcd3efa6fe7e043825317f1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCExtractArchiveCallback::ClearExtractingFileInfo </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>清除解压过程文件数据 </p>
+
+</div>
+</div>
+<a class="anchor" id="a436e95ac6f18b2a454ccba8fb46e8661"></a><!-- doxytag: member="RCExtractArchiveCallback::CreateComplexDirectory" ref="a436e95ac6f18b2a454ccba8fb46e8661" args="(const RCVector&lt; RCString &gt; &amp;dirPathParts, RCString &amp;fullPath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCExtractArchiveCallback::CreateComplexDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirPathParts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fullPath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建多级目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dirPathParts</em>&nbsp;</td><td>各级目录列表 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>fullPath</em>&nbsp;</td><td>返回最末级目录 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aae9e6b8c778f000e75058028fb1b2927"></a><!-- doxytag: member="RCExtractArchiveCallback::CreateOneDirectory" ref="aae9e6b8c778f000e75058028fb1b2927" args="(const RCString &amp;fullPath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCExtractArchiveCallback::CreateOneDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>fullPath</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建单个目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fullPath</em>&nbsp;</td><td>目录全路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afe85f3223c25e55e613e0dfa8475fcc5"></a><!-- doxytag: member="RCExtractArchiveCallback::CryptoGetTextPassword" ref="afe85f3223c25e55e613e0dfa8475fcc5" args="(RCString &amp;password)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::CryptoGetTextPassword </td>
+          <td>(</td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>password</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取密码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>password</em>&nbsp;</td><td>获取的密码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeeb446c8116e64de1746a0a21d1f2fd5"></a><!-- doxytag: member="RCExtractArchiveCallback::GetDefaultExtractingFileInfo" ref="aeeb446c8116e64de1746a0a21d1f2fd5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TExtractingFileInfo* RCExtractArchiveCallback::GetDefaultExtractingFileInfo </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取默认使用的解压文件信息 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ff0c2fca367025d18e00c522e079e58"></a><!-- doxytag: member="RCExtractArchiveCallback::GetDestinationDirectory" ref="a6ff0c2fca367025d18e00c522e079e58" args="(RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::GetDestinationDirectory </td>
+          <td>(</td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>解压路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad29e9beb7259adbe935ad3504908e06e"></a><!-- doxytag: member="RCExtractArchiveCallback::GetExtractingFileInfo" ref="ad29e9beb7259adbe935ad3504908e06e" args="(uint32_t index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TExtractingFileInfo* RCExtractArchiveCallback::GetExtractingFileInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取默认使用的解压文件信息 </p>
+
+</div>
+</div>
+<a class="anchor" id="a195cb40543631bdbe92c3b1321c7f144"></a><!-- doxytag: member="RCExtractArchiveCallback::GetLocalProgress" ref="a195cb40543631bdbe92c3b1321c7f144" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCLocalProgress* RCExtractArchiveCallback::GetLocalProgress </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压进度管理实现接口 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回进度显示接口指针 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48bb094344fad620edd5c9ec409cbb5a"></a><!-- doxytag: member="RCExtractArchiveCallback::GetNumFiles" ref="a48bb094344fad620edd5c9ec409cbb5a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCExtractArchiveCallback::GetNumFiles </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件总数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件总数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae13335b720eb81887234afd8867f5134"></a><!-- doxytag: member="RCExtractArchiveCallback::GetNumFolders" ref="ae13335b720eb81887234afd8867f5134" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCExtractArchiveCallback::GetNumFolders </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件夹总数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件夹总数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a366b8a20fa73a612177326d2a04248b3"></a><!-- doxytag: member="RCExtractArchiveCallback::GetOverwriteMode" ref="a366b8a20fa73a612177326d2a04248b3" args="(RCExractOverwriteMode &amp;overwriteMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::GetOverwriteMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>overwriteMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压覆盖选项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>overwriteMode</em>&nbsp;</td><td>解压覆盖选项 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeeb5f44c5275ac39ad91d7e862141a58"></a><!-- doxytag: member="RCExtractArchiveCallback::GetPathMode" ref="aeeb5f44c5275ac39ad91d7e862141a58" args="(RCExractPathMode &amp;pathMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::GetPathMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pathMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压路径选项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>pathMode</em>&nbsp;</td><td>解压路径选项 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6be2423c1de2a6be3d438905d753f057"></a><!-- doxytag: member="RCExtractArchiveCallback::GetRemovePathParts" ref="a6be2423c1de2a6be3d438905d753f057" args="(RCVector&lt; RCString &gt; &amp;removePathParts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::GetRemovePathParts </td>
+          <td>(</td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>removePathParts</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取需要从解压路径中去除的路径部分 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>removePathParts</em>&nbsp;</td><td>需要从解压路径中去除的路径部分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acb87449ec5dd5b180f03c3a51c03b522"></a><!-- doxytag: member="RCExtractArchiveCallback::GetStream" ref="acb87449ec5dd5b180f03c3a51c03b522" args="(uint32_t index, ISequentialOutStream **outStream, int32_t askExtractMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::GetStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ISequentialOutStream **&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>askExtractMode</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取输出流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>流的下标值 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流的接口指针，引用计数加1 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>askExtractMode</em>&nbsp;</td><td>解压模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abebc5f2d7ad3e8e6788bfd297b680f3b"></a><!-- doxytag: member="RCExtractArchiveCallback::GetTime" ref="abebc5f2d7ad3e8e6788bfd297b680f3b" args="(int32_t index, RCPropertyID propID, RC_FILE_TIME &amp;filetime, bool &amp;filetimeIsDefined)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::GetTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCPropertyID&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RC_FILE_TIME &amp;&nbsp;</td>
+          <td class="paramname"> <em>filetime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>filetimeIsDefined</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件时间属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>文件编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>属性编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>filetime</em>&nbsp;</td><td>文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>filetimeIsDefined</em>&nbsp;</td><td>文件时间是否定义 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a660b601a0cbf09e02ccb9c43e5a6688f"></a><!-- doxytag: member="RCExtractArchiveCallback::GetUnpackSize" ref="a660b601a0cbf09e02ccb9c43e5a6688f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCExtractArchiveCallback::GetUnpackSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取已经解压的文件总大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回已经解压文件总大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a202536dcbe0ab4d95b61c0dfc7a4e6a5"></a><!-- doxytag: member="RCExtractArchiveCallback::GetUpdateMode" ref="a202536dcbe0ab4d95b61c0dfc7a4e6a5" args="(RCExractUpdateMode &amp;updateMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::GetUpdateMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>updateMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压更新方式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>updateMode</em>&nbsp;</td><td>解压更新方式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aba3f2797ff238bcf9a18eb5254e4afa5"></a><!-- doxytag: member="RCExtractArchiveCallback::Init" ref="aba3f2797ff238bcf9a18eb5254e4afa5" args="(IInArchive *archiveHandler, IExtractFolderArchiveCallback *extractCallback2, bool stdOutMode, const RCString &amp;directoryPath, const RCVector&lt; RCString &gt; &amp;removePathParts, const RCString &amp;itemDefaultName, const RC_FILE_TIME &amp;utcMTimeDefault, uint64_t attributesDefault, uint64_t packSize, RCExractFileTimeFlag fileTimeFlag)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCExtractArchiveCallback::Init </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archiveHandler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractCallback2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>stdOutMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>directoryPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>removePathParts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>itemDefaultName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC_FILE_TIME &amp;&nbsp;</td>
+          <td class="paramname"> <em>utcMTimeDefault</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>attributesDefault</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>packSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d8b/RCExtractDefs_8h.html#a748f3f3f98670fd9b27b7e744365bae9">RCExractFileTimeFlag</a>&nbsp;</td>
+          <td class="paramname"> <em>fileTimeFlag</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archiveHandler</em>&nbsp;</td><td>解压文档管理接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractCallback2</em>&nbsp;</td><td>解压回调接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stdOutMode</em>&nbsp;</td><td>是否为控制台输出模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>directoryPath</em>&nbsp;</td><td>解压路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>removePathParts</em>&nbsp;</td><td>解压路径中需要移除的路径部分 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>itemDefaultName</em>&nbsp;</td><td>默认的文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>utcMTimeDefault</em>&nbsp;</td><td>默认的文件修改时间 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>attributesDefault</em>&nbsp;</td><td>默认文件属性 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>packSize</em>&nbsp;</td><td>压缩包大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileTimeFlag</em>&nbsp;</td><td>解压文件时间属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa097fe824fc0d33fa7ad810a9f034da3"></a><!-- doxytag: member="RCExtractArchiveCallback::InitForMulti" ref="aa097fe824fc0d33fa7ad810a9f034da3" args="(bool multiArchives, RCExractPathMode pathMode, RCExractOverwriteMode overwriteMode, RCExractUpdateMode updateMode, bool isKeepDamageFiles, bool extractToSubDir, IOutStreamEvent *outStreamEvent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCExtractArchiveCallback::InitForMulti </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>multiArchives</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a>&nbsp;</td>
+          <td class="paramname"> <em>pathMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a>&nbsp;</td>
+          <td class="paramname"> <em>overwriteMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a>&nbsp;</td>
+          <td class="paramname"> <em>updateMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isKeepDamageFiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>extractToSubDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IOutStreamEvent *&nbsp;</td>
+          <td class="paramname"> <em>outStreamEvent</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化解压选项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>multiArchives</em>&nbsp;</td><td>是否同时解压多个文档 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>pathMode</em>&nbsp;</td><td>解压路径选项 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>overwriteMode</em>&nbsp;</td><td>解压覆盖选项 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>updateMode</em>&nbsp;</td><td>解压更新方式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isKeepDamageFiles</em>&nbsp;</td><td>是否保留损坏文件 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractToSubDir</em>&nbsp;</td><td>解压每个文件到子目录中 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStreamEvent</em>&nbsp;</td><td>解压时，输出IO的事件处理 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a980a4310c77db2e6ab6a536fb64c7c0f"></a><!-- doxytag: member="RCExtractArchiveCallback::IsKeepDamageFiles" ref="a980a4310c77db2e6ab6a536fb64c7c0f" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RCExtractArchiveCallback::IsKeepDamageFiles </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否保留损坏文件 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>保留损坏文件返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a06171c2a9cf08f8aa4092c334e587a7a"></a><!-- doxytag: member="RCExtractArchiveCallback::OnMessageError" ref="a06171c2a9cf08f8aa4092c334e587a7a" args="(int32_t index, const RCString &amp;errMsg)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::OnMessageError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>errMsg</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>诊断错误 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>errMsg</em>&nbsp;</td><td>错误信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e5c047b7fbb25ecf53c10d1c34bd314"></a><!-- doxytag: member="RCExtractArchiveCallback::PrepareOperation" ref="a1e5c047b7fbb25ecf53c10d1c34bd314" args="(uint32_t index, int32_t askExtractMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::PrepareOperation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>askExtractMode</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>准备解压操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>解压文件或者目录的下标值 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>askExtractMode</em>&nbsp;</td><td>解压模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a85ef56f10ff3277609ea3bf97c597d2c"></a><!-- doxytag: member="RCExtractArchiveCallback::ReleaseExtractingFileInfo" ref="a85ef56f10ff3277609ea3bf97c597d2c" args="(uint32_t index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCExtractArchiveCallback::ReleaseExtractingFileInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放解压文件信息 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6133ea936f5ea638d8557910970ec711"></a><!-- doxytag: member="RCExtractArchiveCallback::SetCompleted" ref="a6133ea936f5ea638d8557910970ec711" args="(uint64_t completed)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::SetCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>completed</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当前完成 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>completed</em>&nbsp;</td><td>当前完成的数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa50808fad7b597a611afd41a161de5e5"></a><!-- doxytag: member="RCExtractArchiveCallback::SetMultiThreadMode" ref="aa50808fad7b597a611afd41a161de5e5" args="(bool isMultiThreads)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::SetMultiThreadMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isMultiThreads</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置多线程解压标记 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isMultiThreads</em>&nbsp;</td><td>如果为true，当前为多线程解压模式，否则为单线程解压模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae72bed5cda32208024ce323c117f1833"></a><!-- doxytag: member="RCExtractArchiveCallback::SetOperationResult" ref="ae72bed5cda32208024ce323c117f1833" args="(uint32_t index, int32_t resultEOperationResult)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::SetOperationResult </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>resultEOperationResult</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置结果 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>解压文件或者目录的下标值 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>resultEOperationResult</em>&nbsp;</td><td>操作结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa476d7d22bd35f7f5c6c3e375a216ce"></a><!-- doxytag: member="RCExtractArchiveCallback::SetRatioInfo" ref="aaa476d7d22bd35f7f5c6c3e375a216ce" args="(uint32_t index, uint64_t inSize, uint64_t outSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::SetRatioInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>outSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置压缩进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>当前流的下标 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa773481a276ef492fa57b9a50a59b3f5"></a><!-- doxytag: member="RCExtractArchiveCallback::SetRemovePathList" ref="aa773481a276ef492fa57b9a50a59b3f5" args="(const RCVector&lt; RCString &gt; &amp;removePathList)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCExtractArchiveCallback::SetRemovePathList </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>removePathList</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置需要移除的路径组，平面浏览模式解压使用 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>removePathList</em>&nbsp;</td><td>需要移除的路径列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad5383950899619b1095b76994381bf8e"></a><!-- doxytag: member="RCExtractArchiveCallback::SetTotal" ref="ad5383950899619b1095b76994381bf8e" args="(uint64_t total)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtractArchiveCallback::SetTotal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>total</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>总体数量 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>total</em>&nbsp;</td><td>总体的数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a765603eeadc28a89aa300dacce8d0c97"></a><!-- doxytag: member="RCExtractArchiveCallback::m_attributesDefault" ref="a765603eeadc28a89aa300dacce8d0c97" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a765603eeadc28a89aa300dacce8d0c97">RCExtractArchiveCallback::m_attributesDefault</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认文件属性 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00353">353</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aac0af151cd92960c7a28d91b04caa9d1"></a><!-- doxytag: member="RCExtractArchiveCallback::m_createdDirCache" ref="aac0af151cd92960c7a28d91b04caa9d1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3d468742fe840546924bd5be9d8f7157">TCreatedDirectoryCache</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aac0af151cd92960c7a28d91b04caa9d1">RCExtractArchiveCallback::m_createdDirCache</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00400">400</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ec4ad90570c3129059e23f9ca150315"></a><!-- doxytag: member="RCExtractArchiveCallback::m_cryptoGetTextPassword" ref="a6ec4ad90570c3129059e23f9ca150315" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ICryptoGetTextPasswordPtr <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6ec4ad90570c3129059e23f9ca150315">RCExtractArchiveCallback::m_cryptoGetTextPassword</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压密码接口 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00297">297</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a89f63080f9e34be4607681b7cdfeab35"></a><!-- doxytag: member="RCExtractArchiveCallback::m_deleteFileList" ref="a89f63080f9e34be4607681b7cdfeab35" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abc6a8c08474636830737d2c20008ca72">TDeleteFileList</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a89f63080f9e34be4607681b7cdfeab35">RCExtractArchiveCallback::m_deleteFileList</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00441">441</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab93e717d43b986d622af3010b744a918"></a><!-- doxytag: member="RCExtractArchiveCallback::m_directoryPath" ref="ab93e717d43b986d622af3010b744a918" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ab93e717d43b986d622af3010b744a918">RCExtractArchiveCallback::m_directoryPath</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压目标路径 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00321">321</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a80884fc33098afdd881921f5b81bf565"></a><!-- doxytag: member="RCExtractArchiveCallback::m_extractCallback2" ref="a80884fc33098afdd881921f5b81bf565" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IExtractFolderArchiveCallbackPtr</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a80884fc33098afdd881921f5b81bf565">RCExtractArchiveCallback::m_extractCallback2</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压回调接口 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00293">293</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab44fb6b24c2388d8c58bd1fe595fb5e2"></a><!-- doxytag: member="RCExtractArchiveCallback::m_extractingFileInfoArray" ref="ab44fb6b24c2388d8c58bd1fe595fb5e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCVector&lt;TExtractingFileInfo*&gt; <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ab44fb6b24c2388d8c58bd1fe595fb5e2">RCExtractArchiveCallback::m_extractingFileInfoArray</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当前解压的文件信息数据容器 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00410">410</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e376ccf057eacd032671eb1eaba1822"></a><!-- doxytag: member="RCExtractArchiveCallback::m_extractMutex" ref="a0e376ccf057eacd032671eb1eaba1822" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCMutex <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a0e376ccf057eacd032671eb1eaba1822">RCExtractArchiveCallback::m_extractMutex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>多线程同步锁 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00422">422</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abceb630b3987d18f4adc14d365fc6c8d"></a><!-- doxytag: member="RCExtractArchiveCallback::m_extractToSubDir" ref="abceb630b3987d18f4adc14d365fc6c8d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abceb630b3987d18f4adc14d365fc6c8d">RCExtractArchiveCallback::m_extractToSubDir</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压到子目录 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00317">317</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f23daf9bc956701dc7a74d1b0ea645f"></a><!-- doxytag: member="RCExtractArchiveCallback::m_isMultiThreads" ref="a5f23daf9bc956701dc7a74d1b0ea645f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a5f23daf9bc956701dc7a74d1b0ea645f">RCExtractArchiveCallback::m_isMultiThreads</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否为多线程压缩 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00418">418</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ace27124721b213ba3792539645302e1f"></a><!-- doxytag: member="RCExtractArchiveCallback::m_itemDefaultName" ref="ace27124721b213ba3792539645302e1f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ace27124721b213ba3792539645302e1f">RCExtractArchiveCallback::m_itemDefaultName</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认的包内项名称 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00345">345</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="acf482d96febd6b64ae26f083b1681db3"></a><!-- doxytag: member="RCExtractArchiveCallback::m_keepDamageFiles" ref="acf482d96febd6b64ae26f083b1681db3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#acf482d96febd6b64ae26f083b1681db3">RCExtractArchiveCallback::m_keepDamageFiles</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否保留损坏文件 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00313">313</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a04fc49d2f31af6ec9715aaeead759c"></a><!-- doxytag: member="RCExtractArchiveCallback::m_localProgress" ref="a9a04fc49d2f31af6ec9715aaeead759c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ICompressProgressInfoPtr <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a9a04fc49d2f31af6ec9715aaeead759c">RCExtractArchiveCallback::m_localProgress</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压进度接口 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00367">367</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af356d288148878b184e143f4b3ece5b9"></a><!-- doxytag: member="RCExtractArchiveCallback::m_localProgressSpec" ref="af356d288148878b184e143f4b3ece5b9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCLocalProgress* <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#af356d288148878b184e143f4b3ece5b9">RCExtractArchiveCallback::m_localProgressSpec</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压进度管理实现接口 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00363">363</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adfba429895550a051fd4d1c9f01f7f2b"></a><!-- doxytag: member="RCExtractArchiveCallback::m_multiArchives" ref="adfba429895550a051fd4d1c9f01f7f2b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#adfba429895550a051fd4d1c9f01f7f2b">RCExtractArchiveCallback::m_multiArchives</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否为同时解压多个文件 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00379">379</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa20496bded551f88ee6df6f42f62693b"></a><!-- doxytag: member="RCExtractArchiveCallback::m_numErrors" ref="aa20496bded551f88ee6df6f42f62693b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aa20496bded551f88ee6df6f42f62693b">RCExtractArchiveCallback::m_numErrors</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>错误总数 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00395">395</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a46fb0950838aa272cfda54302486fe86"></a><!-- doxytag: member="RCExtractArchiveCallback::m_numFiles" ref="a46fb0950838aa272cfda54302486fe86" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a46fb0950838aa272cfda54302486fe86">RCExtractArchiveCallback::m_numFiles</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件总数 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00387">387</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a09dedd2aaec6d2b98ab667c22882b0d1"></a><!-- doxytag: member="RCExtractArchiveCallback::m_numFolders" ref="a09dedd2aaec6d2b98ab667c22882b0d1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a09dedd2aaec6d2b98ab667c22882b0d1">RCExtractArchiveCallback::m_numFolders</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件夹总数 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00383">383</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aed412d2636883e5528045016aeecefb9"></a><!-- doxytag: member="RCExtractArchiveCallback::m_outStreamEvent" ref="aed412d2636883e5528045016aeecefb9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOutStreamEvent* <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aed412d2636883e5528045016aeecefb9">RCExtractArchiveCallback::m_outStreamEvent</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>IO输出事件处理 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00404">404</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c6139e9f35012e3cf61dad1a3d2e4fc"></a><!-- doxytag: member="RCExtractArchiveCallback::m_overwriteMode" ref="a5c6139e9f35012e3cf61dad1a3d2e4fc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a5c6139e9f35012e3cf61dad1a3d2e4fc">RCExtractArchiveCallback::m_overwriteMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>覆盖选项 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00309">309</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad710134fd30e118c7b3a14f60c9985bc"></a><!-- doxytag: member="RCExtractArchiveCallback::m_packTotal" ref="ad710134fd30e118c7b3a14f60c9985bc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#ad710134fd30e118c7b3a14f60c9985bc">RCExtractArchiveCallback::m_packTotal</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩后总大小 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00371">371</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b93a52cf7db3def05be1bedff86916d"></a><!-- doxytag: member="RCExtractArchiveCallback::m_pathMode" ref="a3b93a52cf7db3def05be1bedff86916d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3b93a52cf7db3def05be1bedff86916d">RCExtractArchiveCallback::m_pathMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压路径选项 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00305">305</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a26acfbf3b4cd60ff73bf57dcba23422f"></a><!-- doxytag: member="RCExtractArchiveCallback::m_pendingDirTimeList" ref="a26acfbf3b4cd60ff73bf57dcba23422f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a6288ea66489152a0c98a5f4bab1a5730">TPendingDirTimeList</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a26acfbf3b4cd60ff73bf57dcba23422f">RCExtractArchiveCallback::m_pendingDirTimeList</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00453">453</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3857cd8a24c821eb0dd48057a517f573"></a><!-- doxytag: member="RCExtractArchiveCallback::m_removePathList" ref="a3857cd8a24c821eb0dd48057a517f573" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCVector&lt;RCString&gt; <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a3857cd8a24c821eb0dd48057a517f573">RCExtractArchiveCallback::m_removePathList</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压后需要移除的路径组，平面浏览模式解压使用 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00341">341</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adcbe687c9b680e9bfee519cea8b76140"></a><!-- doxytag: member="RCExtractArchiveCallback::m_removePathParts" ref="adcbe687c9b680e9bfee519cea8b76140" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCVector&lt;RCString&gt; <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#adcbe687c9b680e9bfee519cea8b76140">RCExtractArchiveCallback::m_removePathParts</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压后需要从包内路径中移除的路径部分 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00337">337</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af0e3dc996b1622f873cf081fd8ebd9e7"></a><!-- doxytag: member="RCExtractArchiveCallback::m_spInArchive" ref="af0e3dc996b1622f873cf081fd8ebd9e7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IInArchivePtr <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#af0e3dc996b1622f873cf081fd8ebd9e7">RCExtractArchiveCallback::m_spInArchive</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入文档接口 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00289">289</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aefde280aae54eb2847effa41886c86f3"></a><!-- doxytag: member="RCExtractArchiveCallback::m_stdOutMode" ref="aefde280aae54eb2847effa41886c86f3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aefde280aae54eb2847effa41886c86f3">RCExtractArchiveCallback::m_stdOutMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否为控制台输出模式 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00357">357</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f16a14e0e905e0f2f2986897f9e7804"></a><!-- doxytag: member="RCExtractArchiveCallback::m_unpackSize" ref="a0f16a14e0e905e0f2f2986897f9e7804" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a0f16a14e0e905e0f2f2986897f9e7804">RCExtractArchiveCallback::m_unpackSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>已经解压的文件总大小 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00391">391</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a6079d11b766be1d8441c8492a0ff97"></a><!-- doxytag: member="RCExtractArchiveCallback::m_unpackTotal" ref="a2a6079d11b766be1d8441c8492a0ff97" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a2a6079d11b766be1d8441c8492a0ff97">RCExtractArchiveCallback::m_unpackTotal</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压后总大小 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00375">375</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1540ffcb7ea85ca97c6f8d81309b0588"></a><!-- doxytag: member="RCExtractArchiveCallback::m_updateMode" ref="a1540ffcb7ea85ca97c6f8d81309b0588" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a1540ffcb7ea85ca97c6f8d81309b0588">RCExtractArchiveCallback::m_updateMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新方式 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00301">301</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3b09060cd879c166ebda74f127f1697"></a><!-- doxytag: member="RCExtractArchiveCallback::m_utcMTimeDefault" ref="aa3b09060cd879c166ebda74f127f1697" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RC_FILE_TIME <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#aa3b09060cd879c166ebda74f127f1697">RCExtractArchiveCallback::m_utcMTimeDefault</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认的文件修改时间 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00349">349</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a33bd317d14d60d4de07b34984ae65006"></a><!-- doxytag: member="RCExtractArchiveCallback::m_writeATime" ref="a33bd317d14d60d4de07b34984ae65006" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a33bd317d14d60d4de07b34984ae65006">RCExtractArchiveCallback::m_writeATime</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压后是否需要按照包内的访问时间更新解压后的文件 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00329">329</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a13ef6b8b0cedd1882e6ac33a69fea5f9"></a><!-- doxytag: member="RCExtractArchiveCallback::m_writeCTime" ref="a13ef6b8b0cedd1882e6ac33a69fea5f9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#a13ef6b8b0cedd1882e6ac33a69fea5f9">RCExtractArchiveCallback::m_writeCTime</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压后是否需要按照包内的创建时间更新解压后的文件 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00325">325</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abd7fb1aa8e9715044d75d701eda9ebdb"></a><!-- doxytag: member="RCExtractArchiveCallback::m_writeMTime" ref="abd7fb1aa8e9715044d75d701eda9ebdb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html#abd7fb1aa8e9715044d75d701eda9ebdb">RCExtractArchiveCallback::m_writeMTime</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压后是否需要按照包内的修改时间更新解压后的文件 </p>
+
+<p>在文件<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a>第<a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html#l00333">333</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d2/ddc/RCExtractArchiveCallback_8h_source.html">RCExtractArchiveCallback.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

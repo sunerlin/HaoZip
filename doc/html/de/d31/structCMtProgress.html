@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: CMtProgress结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>CMtProgress结构参考</h1><!-- doxytag: class="CMtProgress" -->
+<p><code>#include &lt;<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>&gt;</code></p>
+<div class="dynheader">
+CMtProgress合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../de/d25/structCMtProgress__coll__graph.png" border="0" usemap="#CMtProgress_coll__map" alt="Collaboration graph"/></div>
+<map name="CMtProgress_coll__map" id="CMtProgress_coll__map">
+<area shape="rect" id="node2" href="../../de/dab/structICompressProgress.html" title="{ICompressProgress\n|+ Progress\l|}" alt="" coords="5,5,152,83"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../de/d30/structCMtProgress-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d31/structCMtProgress.html#ae7250d8d4b722086a0705f64fa85310a">totalInSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d31/structCMtProgress.html#a8ae7d7fe55950bf4c667e663c16aeb55">totalOutSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d31/structCMtProgress.html#a05b46f108bba05a8058b1202f4cc36fb">progress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d31/structCMtProgress.html#a17c76cc80d68e8129a8ed1303a1b96e4">res</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d31/structCMtProgress.html#a72714c5863101764f011af2c2b43348e">cs</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d31/structCMtProgress.html#acff18f71014024a2190ee1037964300d">inSizes</a> [1]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d31/structCMtProgress.html#afae56f29d26a5dafa0645af46a1c8131">outSizes</a> [1]</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00038">38</a>行定义。</p>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a72714c5863101764f011af2c2b43348e"></a><!-- doxytag: member="CMtProgress::cs" ref="a72714c5863101764f011af2c2b43348e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a> <a class="el" href="../../de/d31/structCMtProgress.html#a72714c5863101764f011af2c2b43348e">CMtProgress::cs</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00044">44</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="acff18f71014024a2190ee1037964300d"></a><!-- doxytag: member="CMtProgress::inSizes" ref="acff18f71014024a2190ee1037964300d" args="[1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../de/d31/structCMtProgress.html#acff18f71014024a2190ee1037964300d">CMtProgress::inSizes</a>[1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00045">45</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afae56f29d26a5dafa0645af46a1c8131"></a><!-- doxytag: member="CMtProgress::outSizes" ref="afae56f29d26a5dafa0645af46a1c8131" args="[1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../de/d31/structCMtProgress.html#afae56f29d26a5dafa0645af46a1c8131">CMtProgress::outSizes</a>[1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00046">46</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a05b46f108bba05a8058b1202f4cc36fb"></a><!-- doxytag: member="CMtProgress::progress" ref="a05b46f108bba05a8058b1202f4cc36fb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a>* <a class="el" href="../../de/d31/structCMtProgress.html#a05b46f108bba05a8058b1202f4cc36fb">CMtProgress::progress</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00042">42</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a17c76cc80d68e8129a8ed1303a1b96e4"></a><!-- doxytag: member="CMtProgress::res" ref="a17c76cc80d68e8129a8ed1303a1b96e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="el" href="../../de/d31/structCMtProgress.html#a17c76cc80d68e8129a8ed1303a1b96e4">CMtProgress::res</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00043">43</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7250d8d4b722086a0705f64fa85310a"></a><!-- doxytag: member="CMtProgress::totalInSize" ref="ae7250d8d4b722086a0705f64fa85310a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../de/d31/structCMtProgress.html#ae7250d8d4b722086a0705f64fa85310a">CMtProgress::totalInSize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00040">40</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ae7d7fe55950bf4c667e663c16aeb55"></a><!-- doxytag: member="CMtProgress::totalOutSize" ref="a8ae7d7fe55950bf4c667e663c16aeb55" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../de/d31/structCMtProgress.html#a8ae7d7fe55950bf4c667e663c16aeb55">CMtProgress::totalOutSize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00041">41</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

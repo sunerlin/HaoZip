@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: IArchive.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_5df61e8bc95b34ee789cf93552e6d84b.html">interface</a>
+  </div>
+</div>
+<div class="contents">
+<h1>IArchive.h文件参考</h1><code>#include &quot;<a class="el" href="../../d1/d97/IProgress_8h_source.html">interface/IProgress.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../db/df8/IArchiveInfo_8h_source.html">interface/IArchiveInfo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/dba/RCString_8h_source.html">base/RCString.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/ddc/RCProperty_8h_source.html">common/RCProperty.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d3/d8b/RCExtractDefs_8h_source.html">archive/extract/RCExtractDefs.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dc/d53/RCVector_8h_source.html">common/RCVector.h</a>&quot;</code><br/>
+<div class="dynheader">
+IArchive.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/de3/IArchive_8h__incl.png" border="0" usemap="#IArchive_8h_map" alt=""/></div>
+<map name="IArchive_8h_map" id="IArchive_8h">
+<area shape="rect" id="node3" href="../../d1/d97/IProgress_8h.html" title="interface/IProgress.h" alt="" coords="405,80,563,107"/><area shape="rect" id="node28" href="../../db/df8/IArchiveInfo_8h.html" title="interface/IArchiveInfo.h" alt="" coords="685,80,864,107"/><area shape="rect" id="node36" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="1023,304,1151,331"/><area shape="rect" id="node43" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="915,155,1083,181"/><area shape="rect" id="node56" href="../../d3/d8b/RCExtractDefs_8h.html" title="archive/extract/RCExtractDefs.h" alt="" coords="37,80,272,107"/><area shape="rect" id="node59" href="../../dc/d53/RCVector_8h.html" title="common/RCVector.h" alt="" coords="187,304,344,331"/><area shape="rect" id="node5" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="353,229,519,256"/><area shape="rect" id="node7" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="528,304,691,331"/><area shape="rect" id="node23" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="368,304,504,331"/><area shape="rect" id="node9" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="609,379,727,405"/><area shape="rect" id="node11" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="201,453,327,480"/><area shape="rect" id="node15" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="96,528,261,555"/><area shape="rect" id="node17" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="285,528,416,555"/><area shape="rect" id="node30" href="../../d5/d96/RCArchiveType_8h.html" title="interface/RCArchiveType.h" alt="" coords="676,155,873,181"/><area shape="rect" id="node33" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="473,155,652,181"/><area shape="rect" id="node46" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="593,229,780,256"/><area shape="rect" id="node49" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="804,229,967,256"/></map>
+</div>
+
+<p><a href="../../d8/d7b/IArchive_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc8/structRCZip_1_1RCArchiveVolumeItem.html">RCZip::RCArchiveVolumeItem</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">RCZip::IArchiveOpenCallback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">RCZip::IArchiveExtractCallback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3e/classRCZip_1_1IArchiveOpenVolumeCallback.html">RCZip::IArchiveOpenVolumeCallback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3b/classRCZip_1_1IInArchiveGetStream.html">RCZip::IInArchiveGetStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d1d/classRCZip_1_1IArchiveOpenSetSubArchiveName.html">RCZip::IArchiveOpenSetSubArchiveName</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html">RCZip::IInArchive</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d37/classRCZip_1_1IArchiveUpdateCallback.html">RCZip::IArchiveUpdateCallback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dad/classRCZip_1_1IArchiveUpdateCallback2.html">RCZip::IArchiveUpdateCallback2</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db8/classRCZip_1_1IOutArchive.html">RCZip::IOutArchive</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d77/classRCZip_1_1ISetProperties.html">RCZip::ISetProperties</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d14/classRCZip_1_1IArchiveCodecsInfo.html">RCZip::IArchiveCodecsInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0d/classRCZip_1_1IArchiveVolumeType.html">RCZip::IArchiveVolumeType</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d7b/IArchive_8h.html#ab8d41fc85fd5328db72a4eae7e5d3a72">__IArchive_h</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td colspan="2"><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a>&lt; IInArchive &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">RCZip::IInArchivePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a>&lt; IOutArchive &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ab8a04d66435fa68fa77eea8d4cdd27c6">RCZip::IOutArchivePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveOpenCallback &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a496d83ec5b4ee465f0d2f60002d3d4ee">RCZip::IArchiveOpenCallbackPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveExtractCallback &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#aa9d6f2dd4e8e2821226e9ac576dd0f84">RCZip::IArchiveExtractCallbackPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveOpenVolumeCallback &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ac744274ed656350e9b5569061a773b23">RCZip::IArchiveOpenVolumeCallbackPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IInArchiveGetStream &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#aea1a2354f9d5983ba867c7989ef99d5f">RCZip::IInArchiveGetStreamPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveOpenSetSubArchiveName &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a0c0c5080f703b37eebe88863ea1008ba">RCZip::IArchiveOpenSetSubArchiveNamePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveUpdateCallback &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#adcbcf061ccc285bd9a2493cb0cc08549">RCZip::IArchiveUpdateCallbackPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveUpdateCallback2 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ab3b21fe999ad8340f198bada06da4757">RCZip::IArchiveUpdateCallback2Ptr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a>&lt; ISetProperties &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a6060910695200313d095c4638b3766a7">RCZip::ISetPropertiesPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveCodecsInfo &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af0bfce515cfdc4919ccefd15df806f6c">RCZip::IArchiveCodecsInfoPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IArchiveVolumeType &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a69148be24d41c907dd7c2ef797c66721">RCZip::IArchiveVolumeTypePtr</a></td></tr>
+<tr><td colspan="2"><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a607892fc8c6b0edd6fe66aa25b48b2ef">RCZip::RCArchiveFileTimeType</a> { <a class="el" href="../../d7/d5a/namespaceRCZip.html#a607892fc8c6b0edd6fe66aa25b48b2efa73fd13ebe862e2e268b03dfb554f8955">RCZip::RC_ARCHIVE_FILE_TIME_TYPE_WINDOWS</a> =  0, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a607892fc8c6b0edd6fe66aa25b48b2efa2b7d95d5a61f1f07dde6ff08140b2381">RCZip::RC_ARCHIVE_FILE_TIME_TYPE_UNIX</a> =  1, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a607892fc8c6b0edd6fe66aa25b48b2efa751ba034476ed540ed38d68539fae430">RCZip::RC_ARCHIVE_FILE_TIME_TYPE_DOS</a> =  2
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a80422c08412729358b6f4fefffe86ffe">RCZip::RCArchiveExtractResult</a> { <a class="el" href="../../d7/d5a/namespaceRCZip.html#a80422c08412729358b6f4fefffe86ffea55d79499028a285bea23c11cd4eacff5">RCZip::RC_ARCHIVE_EXTRACT_RESULT_OK</a> =  0, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a80422c08412729358b6f4fefffe86ffea24e187a2f6dcc3b28efd61f39af69fba">RCZip::RC_ARCHIVE_EXTRACT_RESULT_UNSUPPORTED_METHOD</a> =  1, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a80422c08412729358b6f4fefffe86ffea562c46843ffc4115217099442c763c9b">RCZip::RC_ARCHIVE_EXTRACT_RESULT_DATA_ERROR</a> =  2, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a80422c08412729358b6f4fefffe86ffeabe113b2556785bd8f0835e71ce3c7898">RCZip::RC_ARCHIVE_EXTRACT_RESULT_CRC_ERROR</a> =  3
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ac8ef5ebfe970d3beadffd0d802581111">RCZip::RCArchiveExtractAskMode</a> { <a class="el" href="../../d7/d5a/namespaceRCZip.html#ac8ef5ebfe970d3beadffd0d802581111af08b83f415f81432108fea1f173e67b5">RCZip::RC_ARCHIVE_EXTRACT_ASK_MODE_EXTRACT</a> =  0, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#ac8ef5ebfe970d3beadffd0d802581111abe0cc60bdf510d42e4ba6d4203c88fb3">RCZip::RC_ARCHIVE_EXTRACT_ASK_MODE_TEST</a> =  1, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#ac8ef5ebfe970d3beadffd0d802581111aae4653e2a9effef1b4d0b97e55c73fed">RCZip::RC_ARCHIVE_EXTRACT_ASK_MODE_SKIP</a> =  2, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#ac8ef5ebfe970d3beadffd0d802581111a63f1007449044497a10459b0e9093bd6">RCZip::RC_ARCHIVE_EXTRACT_ASK_MODE_NO_FILE</a> =  3
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#aa5c853ecab11bea004171a49957f25f0">RCZip::RCArchiveUpdateResult</a> { <a class="el" href="../../d7/d5a/namespaceRCZip.html#aa5c853ecab11bea004171a49957f25f0ace6dccd609cbec1ffe2c3752575a7673">RCZip::RC_ARCHIVE_UPDATE_RESULT_OK</a> =  0, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aa5c853ecab11bea004171a49957f25f0ab559721c296dd1c761f868f85309cd0a">RCZip::RC_ARCHIVE_UPDATE_RESULT_ERROR</a> =  1
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da95ce90d6a5b07182de1aa1b1e8cb1c12">RCZip::IID_IArchiveOpenCallback</a> =  IID_IARCHIVE_BASE, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da4ad4df93a2fe39b45dd17c26a909498b">RCZip::IID_IArchiveExtractCallback</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05dabadb811c32b714b0f697d255f5f25f61">RCZip::IID_IArchiveOpenVolumeCallback</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da8a429365f3bf9bbdfbc5dfabcd7a40e4">RCZip::IID_IInArchiveGetStream</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05daa4b4ac110cdc4082ec852c4d2a6e1cfe">RCZip::IID_IArchiveOpenSetSubArchiveName</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da2b8d7a498770c26acac2d4bd211c8c3d">RCZip::IID_IInArchive</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da09aac16b51700713bf137d85a4113fbe">RCZip::IID_IArchiveUpdateCallback</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da0c3b4d702d14858564087fd50c9a8d5b">RCZip::IID_IArchiveUpdateCallback2</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da4e3a4f8f41ce484fe7b09b9461e8de02">RCZip::IID_IOutArchive</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05dad38b61d4efae4158e0a8b1df97420e73">RCZip::IID_ISetProperties</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05da761f9ef78e39e0000da0cdd8310e7f52">RCZip::IID_IArchiveCodecsInfo</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#a9a1bc1f824f8e6f03aca8a41556eb05dad053c26e25dfab858981e0ba78349f96">RCZip::IID_IArchiveVolumeType</a>
+<br/>
+ }</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="ab8d41fc85fd5328db72a4eae7e5d3a72"></a><!-- doxytag: member="IArchive.h::__IArchive_h" ref="ab8d41fc85fd5328db72a4eae7e5d3a72" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __IArchive_h&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d7b/IArchive_8h_source.html">IArchive.h</a>第<a class="el" href="../../d8/d7b/IArchive_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

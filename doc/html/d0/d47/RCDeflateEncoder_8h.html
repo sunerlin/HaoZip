@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCDeflateEncoder.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a1704c3f120d7c500658b3c257bc9872.html">deflate</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCDeflateEncoder.h文件参考</h1><code>#include &quot;<a class="el" href="../../d2/df2/RCNonCopyable_8h_source.html">base/RCNonCopyable.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../db/d9a/RCBitlEncoder_8h_source.html">common/RCBitlEncoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d28/RCDeflateEncoderValue_8h_source.html">compress/deflate/RCDeflateEncoderValue.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/dff/RCDeflateDefs_8h_source.html">compress/deflate/RCDeflateDefs.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d4/d94/RCDeflateLevels_8h_source.html">compress/deflate/RCDeflateLevels.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/de2/RCDeflateEncoderTables_8h_source.html">compress/deflate/RCDeflateEncoderTables.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d0/d07/RCDeflateEncoderOptimal_8h_source.html">compress/deflate/RCDeflateEncoderOptimal.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d71/ICoder_8h_source.html">interface/ICoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/dd9/LzFind_8h_source.html">algorithm/LzFind.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCDeflateEncoder.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d9/d16/RCDeflateEncoder_8h__incl.png" border="0" usemap="#RCDeflateEncoder_8h_map" alt=""/></div>
+<map name="RCDeflateEncoder_8h_map" id="RCDeflateEncoder_8h">
+<area shape="rect" id="node3" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="327,229,503,256"/><area shape="rect" id="node19" href="../../db/d9a/RCBitlEncoder_8h.html" title="common/RCBitlEncoder.h" alt="" coords="683,80,872,107"/><area shape="rect" id="node42" href="../../d4/d28/RCDeflateEncoderValue_8h.html" title="compress/deflate/RCDeflateEncoderValue.h" alt="" coords="139,304,448,331"/><area shape="rect" id="node45" href="../../df/dff/RCDeflateDefs_8h.html" title="compress/deflate/RCDeflateDefs.h" alt="" coords="1476,229,1724,256"/><area shape="rect" id="node48" href="../../d4/d94/RCDeflateLevels_8h.html" title="compress/deflate/RCDeflateLevels.h" alt="" coords="1572,155,1833,181"/><area shape="rect" id="node52" href="../../df/de2/RCDeflateEncoderTables_8h.html" title="compress/deflate/RCDeflateEncoderTables.h" alt="" coords="1488,80,1803,107"/><area shape="rect" id="node55" href="../../d0/d07/RCDeflateEncoderOptimal_8h.html" title="compress/deflate/RCDeflateEncoderOptimal.h" alt="" coords="5,379,331,405"/><area shape="rect" id="node58" href="../../de/d71/ICoder_8h.html" title="interface/ICoder.h" alt="" coords="1175,80,1316,107"/><area shape="rect" id="node82" href="../../d8/dd9/LzFind_8h.html" title="algorithm/LzFind.h" alt="" coords="1877,80,2024,107"/><area shape="rect" id="node5" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="739,453,856,480"/><area shape="rect" id="node7" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="939,528,1064,555"/><area shape="rect" id="node11" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="685,603,851,629"/><area shape="rect" id="node13" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="875,603,1005,629"/><area shape="rect" id="node22" href="../../d6/d21/RCOutBuffer_8h.html" title="common/RCOutBuffer.h" alt="" coords="688,155,867,181"/><area shape="rect" id="node24" href="../../d8/dc9/IStream_8h.html" title="interface/IStream.h" alt="" coords="764,229,913,256"/><area shape="rect" id="node26" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="1029,304,1195,331"/><area shape="rect" id="node36" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="792,304,920,331"/><area shape="rect" id="node28" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="920,379,1083,405"/><area shape="rect" id="node31" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="1107,379,1243,405"/><area shape="rect" id="node61" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="1161,155,1329,181"/><area shape="rect" id="node67" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="919,155,1087,181"/><area shape="rect" id="node63" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="1172,229,1351,256"/><area shape="rect" id="node70" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="523,379,709,405"/><area shape="rect" id="node73" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="577,229,740,256"/><area shape="rect" id="node84" href="../../d7/df8/Types_8h.html" title="algorithm/Types.h" alt="" coords="1880,155,2021,181"/><area shape="rect" id="node86" href="../../df/dd8/stdint_8h.html" title="base/stdint.h" alt="" coords="1920,229,2027,256"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/d86/RCDeflateEncoder_8h__dep__incl.png" border="0" usemap="#RCDeflateEncoder_8hdep_map" alt=""/></div>
+<map name="RCDeflateEncoder_8hdep_map" id="RCDeflateEncoder_8hdep">
+<area shape="rect" id="node3" href="../../d6/dec/RCDeflateCOMEncoder_8h.html" title="RCDeflateCOMEncoder.h" alt="" coords="5,80,189,107"/><area shape="rect" id="node5" href="../../da/df0/RCDeflateCOMEncoder64_8h.html" title="RCDeflateCOMEncoder64.h" alt="" coords="213,80,416,107"/></map>
+</div>
+
+<p><a href="../../d0/d47/RCDeflateEncoder_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classRCZip_1_1RCDeflateEncoder.html">RCZip::RCDeflateEncoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddb/structRCZip_1_1RCDeflateEncoder_1_1__CSeqInStream.html">RCZip::RCDeflateEncoder::_CSeqInStream</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d47/RCDeflateEncoder_8h.html#a2978703dee9e0eca422351cf066ad065">__RCDeflateEncoder_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a2978703dee9e0eca422351cf066ad065"></a><!-- doxytag: member="RCDeflateEncoder.h::__RCDeflateEncoder_h_" ref="a2978703dee9e0eca422351cf066ad065" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCDeflateEncoder_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html">RCDeflateEncoder.h</a>第<a class="el" href="../../d0/d47/RCDeflateEncoder_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

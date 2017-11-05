@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: IOpenCallbackUI类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>IOpenCallbackUI类参考</h1><!-- doxytag: class="IOpenCallbackUI" -->
+<p><code>#include &lt;<a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html">IOpenCallbackUI.h</a>&gt;</code></p>
+
+<p><a href="../../d5/db0/classIOpenCallbackUI-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a775780ce6c0e5bd4ef089c49b27b84a0">OpenCheckBreak</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a3d037e89061c17668c86aed5e2210506">OpenSetTotal</a> (const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *files, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *bytes)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a52d277c77970e97c0e419b85a77551a0">OpenSetCompleted</a> (const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *files, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *bytes)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a400e51805553e567710b76d1a86e9a01">OpenCryptoGetTextPassword</a> (RCString &amp;password)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a7018fedf9c27451a1411f4a3a6e85409">OpenGetPasswordIfAny</a> (RCString &amp;password)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a5fd06d471ee48c80b3a4d9810c343e05">OpenWasPasswordAsked</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a082a1a1bfd24dd9d59dd72a17162331b">OpenClearPasswordWasAskedFlag</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a079749323c2491b53fd3e0a0591876dc">VolumeRepair</a> (const RCVector&lt; RCArchiveVolumeItem &gt; &amp;items, RCString &amp;volumeFirst, RCVector&lt; RCString &gt; &amp;outputFilenames)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#afd19db877679fddc76678e999231b4ca">OpenSetError</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> errorCode)=0</td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html#a4b7a7ee021bf1094ff46e8ab59213faf">~IOpenCallbackUI</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>界面打开回调接口 </p>
+
+<p>在文件<a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html">IOpenCallbackUI.h</a>第<a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a4b7a7ee021bf1094ff46e8ab59213faf"></a><!-- doxytag: member="IOpenCallbackUI::~IOpenCallbackUI" ref="a4b7a7ee021bf1094ff46e8ab59213faf" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOpenCallbackUI::~IOpenCallbackUI </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+<p>在文件<a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html">IOpenCallbackUI.h</a>第<a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html#l00085">85</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a775780ce6c0e5bd4ef089c49b27b84a0"></a><!-- doxytag: member="IOpenCallbackUI::OpenCheckBreak" ref="a775780ce6c0e5bd4ef089c49b27b84a0" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> IOpenCallbackUI::OpenCheckBreak </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查是否终止 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a082a1a1bfd24dd9d59dd72a17162331b"></a><!-- doxytag: member="IOpenCallbackUI::OpenClearPasswordWasAskedFlag" ref="a082a1a1bfd24dd9d59dd72a17162331b" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IOpenCallbackUI::OpenClearPasswordWasAskedFlag </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>清除询问密码标记 </p>
+
+</div>
+</div>
+<a class="anchor" id="a400e51805553e567710b76d1a86e9a01"></a><!-- doxytag: member="IOpenCallbackUI::OpenCryptoGetTextPassword" ref="a400e51805553e567710b76d1a86e9a01" args="(RCString &amp;password)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> IOpenCallbackUI::OpenCryptoGetTextPassword </td>
+          <td>(</td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>password</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取密码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>password</em>&nbsp;</td><td>密码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7018fedf9c27451a1411f4a3a6e85409"></a><!-- doxytag: member="IOpenCallbackUI::OpenGetPasswordIfAny" ref="a7018fedf9c27451a1411f4a3a6e85409" args="(RCString &amp;password)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> IOpenCallbackUI::OpenGetPasswordIfAny </td>
+          <td>(</td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>password</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取密码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>password</em>&nbsp;</td><td>密码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a52d277c77970e97c0e419b85a77551a0"></a><!-- doxytag: member="IOpenCallbackUI::OpenSetCompleted" ref="a52d277c77970e97c0e419b85a77551a0" args="(const uint64_t *files, const uint64_t *bytes)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> IOpenCallbackUI::OpenSetCompleted </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>files</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>bytes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置完成进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>files</em>&nbsp;</td><td>完成文件数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bytes</em>&nbsp;</td><td>完成字节数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd19db877679fddc76678e999231b4ca"></a><!-- doxytag: member="IOpenCallbackUI::OpenSetError" ref="afd19db877679fddc76678e999231b4ca" args="(int32_t errorCode)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> IOpenCallbackUI::OpenSetError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>errorCode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置错误 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>errorCode</em>&nbsp;</td><td>错误号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d037e89061c17668c86aed5e2210506"></a><!-- doxytag: member="IOpenCallbackUI::OpenSetTotal" ref="a3d037e89061c17668c86aed5e2210506" args="(const uint64_t *files, const uint64_t *bytes)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> IOpenCallbackUI::OpenSetTotal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>files</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>bytes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置总体进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>files</em>&nbsp;</td><td>文件总数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bytes</em>&nbsp;</td><td>字节总数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5fd06d471ee48c80b3a4d9810c343e05"></a><!-- doxytag: member="IOpenCallbackUI::OpenWasPasswordAsked" ref="a5fd06d471ee48c80b3a4d9810c343e05" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool IOpenCallbackUI::OpenWasPasswordAsked </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否已经询问过密码 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>已经询问密码返回 true,否则返回 false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a079749323c2491b53fd3e0a0591876dc"></a><!-- doxytag: member="IOpenCallbackUI::VolumeRepair" ref="a079749323c2491b53fd3e0a0591876dc" args="(const RCVector&lt; RCArchiveVolumeItem &gt; &amp;items, RCString &amp;volumeFirst, RCVector&lt; RCString &gt; &amp;outputFilenames)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> IOpenCallbackUI::VolumeRepair </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; RCArchiveVolumeItem &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>volumeFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>outputFilenames</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>修复分卷 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>items</em>&nbsp;</td><td>修复前的分卷序列 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>volumeFirst</em>&nbsp;</td><td>第一个分卷 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>outputFilenames</em>&nbsp;</td><td>修复后的分卷序列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>基类未实现,返回RC_S_FALSE </dd></dl>
+
+<p>在文件<a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html">IOpenCallbackUI.h</a>第<a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html#l00070">70</a>行定义。</p>
+
+<p>参考 <a class="el" href="../../dd/d51/RCTypes_8h_source.html#l00060">RCZip::RC_S_FALSE</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d3/d07/IOpenCallbackUI_8h_source.html">IOpenCallbackUI.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

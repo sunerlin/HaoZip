@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCWildcardUtils类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCWildcardUtils类参考</h1><!-- doxytag: class="RCWildcardUtils" -->
+<p><code>#include &lt;<a class="el" href="../../d5/d1e/RCWildcardUtils_8h_source.html">RCWildcardUtils.h</a>&gt;</code></p>
+
+<p><a href="../../da/d4f/classRCWildcardUtils-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#a61b55b8de1ce52b83de6858b5df17b9d">CompareFileNames</a> (const RCString &amp;s1, const RCString &amp;s2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#a057b3c13e530eb7b6b4108f010cf2c12">SplitPathToParts</a> (const RCString &amp;path, RCVector&lt; RCString &gt; &amp;pathParts)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#afcfda3bc23ea9502396296cb56b97326">SplitPathToParts</a> (const RCString &amp;path, RCString &amp;dirPrefix, RCString &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#aa17fc5cf01b9610a745ac434e40de8e7">ExtractDirPrefixFromPath</a> (const RCString &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#a11dfe2656ee3c106a6fa8e13743710d5">ExtractFileNameFromPath</a> (const RCString &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#a7fc9fec0e74176210decea31a9718db9">DoesNameContainWildCard</a> (const RCString &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#add5aa4d3474e5dd184fa39be40db2c9d">CompareWildCardWithName</a> (const RCString &amp;mask, const RCString &amp;name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#ab8b0f5ac5f1b4afd6bbaac6995e0b056">IsCharDirLimiter</a> (char_t ch)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static char_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#a576058730b581151795b478a1346d392">GetDirLimiter</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#ad3ae57505363e03752e13653181a08fe">IsCaseSensitive</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#a5ea36fc8fa602324b2dc416e8216ca66">SetCaseSensitive</a> (bool isCaseSensitive)</td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#a39b041e1935a9b77d7e5ff93c3cc1b21">EnhancedMaskTest</a> (const char_t *mask, const char_t *name)</td></tr>
+<tr><td colspan="2"><h2>静态私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCWildcardUtils.html#afb9270cbec61fe50ddc6a3bd579271a5">s_isCaseSensitive</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>通配辅助类 </p>
+
+<p>在文件<a class="el" href="../../d5/d1e/RCWildcardUtils_8h_source.html">RCWildcardUtils.h</a>第<a class="el" href="../../d5/d1e/RCWildcardUtils_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a61b55b8de1ce52b83de6858b5df17b9d"></a><!-- doxytag: member="RCWildcardUtils::CompareFileNames" ref="a61b55b8de1ce52b83de6858b5df17b9d" args="(const RCString &amp;s1, const RCString &amp;s2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCWildcardUtils::CompareFileNames </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件名，大小写是否区分以s_isCaseSensitive进行判断 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s1</em>&nbsp;</td><td>第一个文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s2</em>&nbsp;</td><td>第二个文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回值定义如下： 0 - 相等 1 - lhs &gt; rhs -1 - lhs &lt; rhs </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="add5aa4d3474e5dd184fa39be40db2c9d"></a><!-- doxytag: member="RCWildcardUtils::CompareWildCardWithName" ref="add5aa4d3474e5dd184fa39be40db2c9d" args="(const RCString &amp;mask, const RCString &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCWildcardUtils::CompareWildCardWithName </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>判断文件名是否匹配通配符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>mask</em>&nbsp;</td><td>通配符文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果匹配返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7fc9fec0e74176210decea31a9718db9"></a><!-- doxytag: member="RCWildcardUtils::DoesNameContainWildCard" ref="a7fc9fec0e74176210decea31a9718db9" args="(const RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCWildcardUtils::DoesNameContainWildCard </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件名中是否含有通配符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果含有通配符返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a39b041e1935a9b77d7e5ff93c3cc1b21"></a><!-- doxytag: member="RCWildcardUtils::EnhancedMaskTest" ref="a39b041e1935a9b77d7e5ff93c3cc1b21" args="(const char_t *mask, const char_t *name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCWildcardUtils::EnhancedMaskTest </td>
+          <td>(</td>
+          <td class="paramtype">const char_t *&nbsp;</td>
+          <td class="paramname"> <em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char_t *&nbsp;</td>
+          <td class="paramname"> <em>name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>判断文件名是否匹配通配符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>mask</em>&nbsp;</td><td>通配符文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果匹配返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa17fc5cf01b9610a745ac434e40de8e7"></a><!-- doxytag: member="RCWildcardUtils::ExtractDirPrefixFromPath" ref="aa17fc5cf01b9610a745ac434e40de8e7" args="(const RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCWildcardUtils::ExtractDirPrefixFromPath </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>从文件名中分解出文件路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件名，含路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a11dfe2656ee3c106a6fa8e13743710d5"></a><!-- doxytag: member="RCWildcardUtils::ExtractFileNameFromPath" ref="a11dfe2656ee3c106a6fa8e13743710d5" args="(const RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCWildcardUtils::ExtractFileNameFromPath </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>从文件名中分解出文件名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件名，含路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件名，不含路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a576058730b581151795b478a1346d392"></a><!-- doxytag: member="RCWildcardUtils::GetDirLimiter" ref="a576058730b581151795b478a1346d392" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char_t RCWildcardUtils::GetDirLimiter </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取路径分隔符 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回路径分隔符 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad3ae57505363e03752e13653181a08fe"></a><!-- doxytag: member="RCWildcardUtils::IsCaseSensitive" ref="ad3ae57505363e03752e13653181a08fe" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCWildcardUtils::IsCaseSensitive </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取是否区分大小写 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>区分大小写返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8b0f5ac5f1b4afd6bbaac6995e0b056"></a><!-- doxytag: member="RCWildcardUtils::IsCharDirLimiter" ref="ab8b0f5ac5f1b4afd6bbaac6995e0b056" args="(char_t ch)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCWildcardUtils::IsCharDirLimiter </td>
+          <td>(</td>
+          <td class="paramtype">char_t&nbsp;</td>
+          <td class="paramname"> <em>ch</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>判断字符是否为路径分隔符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>ch</em>&nbsp;</td><td>需要判断的字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果是分隔符返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ea36fc8fa602324b2dc416e8216ca66"></a><!-- doxytag: member="RCWildcardUtils::SetCaseSensitive" ref="a5ea36fc8fa602324b2dc416e8216ca66" args="(bool isCaseSensitive)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCWildcardUtils::SetCaseSensitive </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isCaseSensitive</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置是否区分大小写 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isCaseSensitive</em>&nbsp;</td><td>是否区分大小写 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afcfda3bc23ea9502396296cb56b97326"></a><!-- doxytag: member="RCWildcardUtils::SplitPathToParts" ref="afcfda3bc23ea9502396296cb56b97326" args="(const RCString &amp;path, RCString &amp;dirPrefix, RCString &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCWildcardUtils::SplitPathToParts </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirPrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分解文件名为文件路径和文件名两个部分 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>dirPrefix</em>&nbsp;</td><td>路径名，不含文件名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>文件名，不含路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a057b3c13e530eb7b6b4108f010cf2c12"></a><!-- doxytag: member="RCWildcardUtils::SplitPathToParts" ref="a057b3c13e530eb7b6b4108f010cf2c12" args="(const RCString &amp;path, RCVector&lt; RCString &gt; &amp;pathParts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCWildcardUtils::SplitPathToParts </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>pathParts</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分解路径字符串为字符串数组，分隔符为文件路径分隔符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件路径 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>pathParts</em>&nbsp;</td><td>返回分隔结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="afb9270cbec61fe50ddc6a3bd579271a5"></a><!-- doxytag: member="RCWildcardUtils::s_isCaseSensitive" ref="afb9270cbec61fe50ddc6a3bd579271a5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d9/d94/classRCWildcardUtils.html#afb9270cbec61fe50ddc6a3bd579271a5">RCWildcardUtils::s_isCaseSensitive</a><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件名时，是否区分大小写 </p>
+
+<p>在文件<a class="el" href="../../d5/d1e/RCWildcardUtils_8h_source.html">RCWildcardUtils.h</a>第<a class="el" href="../../d5/d1e/RCWildcardUtils_8h_source.html#l00097">97</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d5/d1e/RCWildcardUtils_8h_source.html">RCWildcardUtils.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

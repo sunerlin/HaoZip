@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: 成员列表</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>IExtractCallbackUI 成员列表</h1>成员的完整列表，这些成员属于<a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a>，包括所有继承而来的成员<table>
+  <tr class="memlist"><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html#a217bc6acd568fc4fdd4c3fb6ee7598d4">AskOverwrite</a>(const RCString &amp;existName, const RC_FILE_TIME *existTime, const uint64_t *existSize, const RCString &amp;newName, const RC_FILE_TIME *newTime, const uint64_t *newSize, bool isEnableRename, RCExractOverwriteAnswer &amp;answer, RCString &amp;newFileName)=0</td><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html#a6d04c0dc0e7087c3652be62a706c6ef2">BeforeOpen</a>(const RCString &amp;name)=0</td><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html#a012aa762ec5197f202dbe91bc017cc32">ExtractResult</a>(HResult result)=0</td><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html#af8b8fbffe2ffe37cbd5913dc24642c5d">GetErrorCount</a>(void)=0</td><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html#a46e8e49cfcbadaa1ae442df3c986ca8b">MessageError</a>(uint32_t index, const RCString &amp;message)=0</td><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html#a27b014c42947ea2eeb4edb24c89ef942">OpenResult</a>(const RCString &amp;name, HResult result, bool encrypted)=0</td><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html#a60f8bbce16c88b4a6f138fa3c9a47a6e">PrepareOperation</a>(uint32_t index, const RCString &amp;name, bool isFolder, RCExractAskMode askExtractMode, uint64_t unPackSize, const uint64_t *position)=0</td><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html#a79757ca64c95591f073a698240b0030b">SetOperationResult</a>(uint32_t index, RCExractOperationResult operationResult, bool encrypted)=0</td><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html#ad09611c337a7ef52c87fe779fdd29add">SetPassword</a>(const RCString &amp;password)=0</td><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html#ad2d97a6f9e1f36fca1f823f305842e48">ThereAreNoFiles</a>()=0</td><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html#a2a6792c4939ca5d71bd3d912b329dcdc">~IExtractCallbackUI</a>()</td><td><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a></td><td><code> [inline, protected, virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html#adcc846e08a76463bc3c300a078d7cf03">~IExtractFolderArchiveCallback</a>()</td><td><a class="el" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a></td><td><code> [inline, protected, virtual]</code></td></tr>
+</table></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCLzmaEncoder类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html">RCLzmaEncoder</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCLzmaEncoder类参考</h1><!-- doxytag: class="RCZip::RCLzmaEncoder" --><!-- doxytag: inherits="IUnknownImpl3&lt; ICompressCoder, ICompressSetCoderProperties, ICompressWriteCoderProperties &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html">RCLzmaEncoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCLzmaEncoder</div>
+<div class="dynsection">
+<div class="center"><img src="../../d4/dd3/classRCZip_1_1RCLzmaEncoder__inherit__graph.png" border="0" usemap="#RCZip_1_1RCLzmaEncoder_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCLzmaEncoder_inherit__map" id="RCZip_1_1RCLzmaEncoder_inherit__map">
+<area shape="rect" id="node2" href="../../d3/dc0/classRCZip_1_1IUnknownImpl3.html" title="{RCZip::IUnknownImpl3\&lt; ICompressCoder, ICompressSetCoderProperties, ICompressWriteCoderProperties \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl3()\l}" alt="" coords="43,361,781,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html" title="{RCZip::ICompressCoder\n||+ Code()\l# ~ICompressCoder()\l}" alt="" coords="200,198,379,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="463,6,609,127"/><area shape="rect" id="node12" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html" title="{RCZip::ICompressSetCoderProperties\n||+ SetCoderProperties()\l# ~ICompressSetCoderProperties()\l}" alt="" coords="403,198,669,290"/><area shape="rect" id="node15" href="../../d2/d2c/classRCZip_1_1ICompressWriteCoderProperties.html" title="{RCZip::ICompressWriteCoderProperties\n||+ WriteCoderProperties()\l# ~ICompressWriteCoderProperties()\l}" alt="" coords="693,198,973,290"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCLzmaEncoder合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../df/dcf/classRCZip_1_1RCLzmaEncoder__coll__graph.png" border="0" usemap="#RCZip_1_1RCLzmaEncoder_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCLzmaEncoder_coll__map" id="RCZip_1_1RCLzmaEncoder_coll__map">
+<area shape="rect" id="node2" href="../../d3/dc0/classRCZip_1_1IUnknownImpl3.html" title="{RCZip::IUnknownImpl3\&lt; ICompressCoder, ICompressSetCoderProperties, ICompressWriteCoderProperties \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl3()\l}" alt="" coords="43,366,781,487"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,179,176,315"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html" title="{RCZip::ICompressCoder\n||+ Code()\l# ~ICompressCoder()\l}" alt="" coords="200,201,379,293"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="463,6,609,127"/><area shape="rect" id="node12" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html" title="{RCZip::ICompressSetCoderProperties\n||+ SetCoderProperties()\l# ~ICompressSetCoderProperties()\l}" alt="" coords="403,201,669,293"/><area shape="rect" id="node15" href="../../d2/d2c/classRCZip_1_1ICompressWriteCoderProperties.html" title="{RCZip::ICompressWriteCoderProperties\n||+ WriteCoderProperties()\l# ~ICompressWriteCoderProperties()\l}" alt="" coords="693,201,973,293"/><area shape="rect" id="node18" href="../../d4/d55/structISzAlloc.html" title="{ISzAlloc\n|+ Alloc\l+ Free\l|}" alt="" coords="805,381,877,473"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d2/d51/classRCZip_1_1RCLzmaEncoder-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a7191902bdfc391d2de3715e5f5c36d8c">RCLzmaEncoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a5d36cd25abe2767cb52974a979a8bf5d">~RCLzmaEncoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#ac4e3bd57854f1fbc3011ac85a738e4bf">Code</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *inStream, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *inSize, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *outSize, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#ac6766e2f1c55042e78a87cfe2c721128">SetCoderProperties</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2bb59fe6bfba19bd670402eadba0b81b">RCPropertyIDPairArray</a> &amp;propertyArray)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a2b25b9851af5dbd86c9ac6c7f095de5e">WriteCoderProperties</a> (<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#ad47a22f419fd4153d42d4e1dad2eb907">SetLzmaProp</a> (<a class="el" href="../../d8/d2d/classRCZip_1_1RCCoderPropID.html#a3380521b1440e29fc3866d295cd2f8aa">RCCoderPropIDEnumType</a> propID, const <a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;prop, <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> &amp;ep)</td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a603e8c59e862cfdbbc57781548baa8df">SzBigAlloc</a> (void *p, size_t size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a6849b3c0f8a0d3a6bb98310472f5a530">SzBigFree</a> (void *p, void *address)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a418dc0ac0dff10acc513f037cce72de3">SzAlloc</a> (void *p, size_t size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a3b89edfcfdd5c25e8a54ebf6dcb721e1">SzFree</a> (void *p, void *address)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString::value_type&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a29652893d762329b1a670b2938e5df60">GetUpperChar</a> (RCString::value_type c)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a531ab1f831c252bba28f97b4971b638e">ParseMatchFinder</a> (const RCString::value_type *s, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *btMode, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *numHashBytes)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#ac193401370745d94a686df62d76b8db1">m_encoder</a></td></tr>
+<tr><td colspan="2"><h2>静态私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#ae01b3a5ad823b8e71443dee56aa813f0">s_bigAlloc</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a3760f585129b05ed62a24d9413524723">s_alloc</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Lzma 编码器 </p>
+
+<p>在文件<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html">RCLzmaEncoder.h</a>第<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html#l00024">24</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a7191902bdfc391d2de3715e5f5c36d8c"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::RCLzmaEncoder" ref="a7191902bdfc391d2de3715e5f5c36d8c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCLzmaEncoder::RCLzmaEncoder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5d36cd25abe2767cb52974a979a8bf5d"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::~RCLzmaEncoder" ref="a5d36cd25abe2767cb52974a979a8bf5d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCLzmaEncoder::~RCLzmaEncoder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ac4e3bd57854f1fbc3011ac85a738e4bf"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::Code" ref="ac4e3bd57854f1fbc3011ac85a738e4bf" args="(ISequentialInStream *inStream, ISequentialOutStream *outStream, const uint64_t *inSize, const uint64_t *outSize, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCLzmaEncoder::Code </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>outSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩/解压数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>数据输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>数据输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html#ae34de8b5d603e70bea726ef99e130184">RCZip::ICompressCoder</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a29652893d762329b1a670b2938e5df60"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::GetUpperChar" ref="a29652893d762329b1a670b2938e5df60" args="(RCString::value_type c)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString::value_type RCZip::RCLzmaEncoder::GetUpperChar </td>
+          <td>(</td>
+          <td class="paramtype">RCString::value_type&nbsp;</td>
+          <td class="paramname"> <em>c</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>转为大写字符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>c</em>&nbsp;</td><td>待转字符 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回大写字符 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a531ab1f831c252bba28f97b4971b638e"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::ParseMatchFinder" ref="a531ab1f831c252bba28f97b4971b638e" args="(const RCString::value_type *s, int32_t *btMode, int32_t *numHashBytes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RCLzmaEncoder::ParseMatchFinder </td>
+          <td>(</td>
+          <td class="paramtype">const RCString::value_type *&nbsp;</td>
+          <td class="paramname"> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>btMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>numHashBytes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>匹配分析 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s</em>&nbsp;</td><td>字符串 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>btMode</em>&nbsp;</td><td>模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numHashBytes</em>&nbsp;</td><td>校验位 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回匹配结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac6766e2f1c55042e78a87cfe2c721128"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::SetCoderProperties" ref="ac6766e2f1c55042e78a87cfe2c721128" args="(const RCPropertyIDPairArray &amp;propertyArray)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCLzmaEncoder::SetCoderProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2bb59fe6bfba19bd670402eadba0b81b">RCPropertyIDPairArray</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>propertyArray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置压缩编码属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propertyArray</em>&nbsp;</td><td>压缩编码属性列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html#a150fa55100c6926a4782f514e43f8fb1">RCZip::ICompressSetCoderProperties</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad47a22f419fd4153d42d4e1dad2eb907"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::SetLzmaProp" ref="ad47a22f419fd4153d42d4e1dad2eb907" args="(RCCoderPropIDEnumType propID, const RCVariant &amp;prop, CLzmaEncProps &amp;ep)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCLzmaEncoder::SetLzmaProp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d2d/classRCZip_1_1RCCoderPropID.html#a3380521b1440e29fc3866d295cd2f8aa">RCCoderPropIDEnumType</a>&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ep</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置Lzma属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>属性编号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>prop</em>&nbsp;</td><td>属性 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>ep</em>&nbsp;</td><td>编码属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a418dc0ac0dff10acc513f037cce72de3"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::SzAlloc" ref="a418dc0ac0dff10acc513f037cce72de3" args="(void *p, size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* RCZip::RCLzmaEncoder::SzAlloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>内存申请 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>申请内存大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回申请的内存地址 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a603e8c59e862cfdbbc57781548baa8df"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::SzBigAlloc" ref="a603e8c59e862cfdbbc57781548baa8df" args="(void *p, size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* RCZip::RCLzmaEncoder::SzBigAlloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>大块内存申请 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>申请大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回申请的内存指针 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6849b3c0f8a0d3a6bb98310472f5a530"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::SzBigFree" ref="a6849b3c0f8a0d3a6bb98310472f5a530" args="(void *p, void *address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCLzmaEncoder::SzBigFree </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>address</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>大块内存释放 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>address</em>&nbsp;</td><td>内存地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3b89edfcfdd5c25e8a54ebf6dcb721e1"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::SzFree" ref="a3b89edfcfdd5c25e8a54ebf6dcb721e1" args="(void *p, void *address)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCLzmaEncoder::SzFree </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>address</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>内存释放 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>address</em>&nbsp;</td><td>内存地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b25b9851af5dbd86c9ac6c7f095de5e"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::WriteCoderProperties" ref="a2b25b9851af5dbd86c9ac6c7f095de5e" args="(ISequentialOutStream *outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCLzmaEncoder::WriteCoderProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>将压缩编码属性写入输出流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d2/d2c/classRCZip_1_1ICompressWriteCoderProperties.html#a33d344e7c5920e9a963c861cb79252b0">RCZip::ICompressWriteCoderProperties</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ac193401370745d94a686df62d76b8db1"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::m_encoder" ref="ac193401370745d94a686df62d76b8db1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a> <a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#ac193401370745d94a686df62d76b8db1">RCZip::RCLzmaEncoder::m_encoder</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Lzma 编码器 </p>
+
+<p>在文件<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html">RCLzmaEncoder.h</a>第<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html#l00121">121</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3760f585129b05ed62a24d9413524723"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::s_alloc" ref="a3760f585129b05ed62a24d9413524723" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> <a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#a3760f585129b05ed62a24d9413524723">RCZip::RCLzmaEncoder::s_alloc</a><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>内存申请 </p>
+
+<p>在文件<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html">RCLzmaEncoder.h</a>第<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html#l00131">131</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae01b3a5ad823b8e71443dee56aa813f0"></a><!-- doxytag: member="RCZip::RCLzmaEncoder::s_bigAlloc" ref="ae01b3a5ad823b8e71443dee56aa813f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> <a class="el" href="../../d7/de9/classRCZip_1_1RCLzmaEncoder.html#ae01b3a5ad823b8e71443dee56aa813f0">RCZip::RCLzmaEncoder::s_bigAlloc</a><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>大内存申请 </p>
+
+<p>在文件<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html">RCLzmaEncoder.h</a>第<a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html#l00127">127</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../de/d7a/RCLzmaEncoder_8h_source.html">RCLzmaEncoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

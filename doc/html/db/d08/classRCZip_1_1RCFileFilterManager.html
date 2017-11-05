@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCFileFilterManager类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html">RCFileFilterManager</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCFileFilterManager类参考</h1><!-- doxytag: class="RCZip::RCFileFilterManager" -->
+<p><code>#include &lt;<a class="el" href="../../da/d68/RCFileFilterManager_8h_source.html">RCFileFilterManager.h</a>&gt;</code></p>
+
+<p><a href="../../df/dd9/classRCZip_1_1RCFileFilterManager-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html#aad48c3f9e09af72d7c419553f3b75e5a">RCFileFilterManager</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;fileList)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html#a77a087ab18d1c7a4cbc4ee6ca80f3535">~RCFileFilterManager</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html#a09b77787943074e66b818fade54502b0">IsFilter</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;absolutePath, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;relativePath)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html#ac86baa12c19bc56a39358c9ed0dc389d">ParseList</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;fileList)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html#aab550e17ca69dbd401ac64ceed501280">CompareStrings</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> *sPattern, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> *sFileName, bool bNoCase)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a88664097ae0f8b475b6a5388c1e9e13e">RCFileNamePartsPtr</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html#ade98733534a7147ec8031102716281d0">m_fileNames</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../da/d68/RCFileFilterManager_8h_source.html">RCFileFilterManager.h</a>第<a class="el" href="../../da/d68/RCFileFilterManager_8h_source.html#l00037">37</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aad48c3f9e09af72d7c419553f3b75e5a"></a><!-- doxytag: member="RCZip::RCFileFilterManager::RCFileFilterManager" ref="aad48c3f9e09af72d7c419553f3b75e5a" args="(const RCString &amp;fileList)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCFileFilterManager::RCFileFilterManager </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileList</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a77a087ab18d1c7a4cbc4ee6ca80f3535"></a><!-- doxytag: member="RCZip::RCFileFilterManager::~RCFileFilterManager" ref="a77a087ab18d1c7a4cbc4ee6ca80f3535" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCFileFilterManager::~RCFileFilterManager </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="aab550e17ca69dbd401ac64ceed501280"></a><!-- doxytag: member="RCZip::RCFileFilterManager::CompareStrings" ref="aab550e17ca69dbd401ac64ceed501280" args="(const char_t *sPattern, const char_t *sFileName, bool bNoCase)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCFileFilterManager::CompareStrings </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>sPattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>sFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>bNoCase</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较字符串，可以处理含通配符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sPattern</em>&nbsp;</td><td>通配符 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sFileName</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bNoCase</em>&nbsp;</td><td>是否区分大小写 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>相等返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09b77787943074e66b818fade54502b0"></a><!-- doxytag: member="RCZip::RCFileFilterManager::IsFilter" ref="a09b77787943074e66b818fade54502b0" args="(const RCString &amp;absolutePath, const RCString &amp;relativePath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCFileFilterManager::IsFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>absolutePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>relativePath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件是否过滤 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>absolutePath</em>&nbsp;</td><td>绝对路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>relativePath</em>&nbsp;</td><td>相对路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回ture，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac86baa12c19bc56a39358c9ed0dc389d"></a><!-- doxytag: member="RCZip::RCFileFilterManager::ParseList" ref="ac86baa12c19bc56a39358c9ed0dc389d" args="(const RCString &amp;fileList)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCFileFilterManager::ParseList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileList</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解析过滤文件列表 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>解析成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ade98733534a7147ec8031102716281d0"></a><!-- doxytag: member="RCZip::RCFileFilterManager::m_fileNames" ref="ade98733534a7147ec8031102716281d0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d7/d5a/namespaceRCZip.html#a88664097ae0f8b475b6a5388c1e9e13e">RCFileNamePartsPtr</a>&gt; <a class="el" href="../../db/d08/classRCZip_1_1RCFileFilterManager.html#ade98733534a7147ec8031102716281d0">RCZip::RCFileFilterManager::m_fileNames</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件名 </p>
+
+<p>在文件<a class="el" href="../../da/d68/RCFileFilterManager_8h_source.html">RCFileFilterManager.h</a>第<a class="el" href="../../da/d68/RCFileFilterManager_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../da/d68/RCFileFilterManager_8h_source.html">RCFileFilterManager.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

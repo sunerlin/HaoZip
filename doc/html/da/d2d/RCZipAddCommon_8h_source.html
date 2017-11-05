@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZipAddCommon.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_844c112daf2a590492fe8d1abb539981.html">zip</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZipAddCommon.h</h1><a href="../../da/d2d/RCZipAddCommon_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCZipAddCommon_h_</span>
+<a name="l00011"></a><a class="code" href="../../da/d2d/RCZipAddCommon_8h.html#a813895d8aa9b622ca77c26866ecfd505">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCZipAddCommon_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d4c/RCZipCompressionMethodMode_8h.html">RCZipCompressionMethodMode.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../de/d71/ICoder_8h.html">interface/ICoder.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/dc9/IStream_8h.html">interface/IStream.h</a>&quot;</span>
+<a name="l00017"></a><a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html">00017</a> <span class="preprocessor">#include &quot;<a class="code" href="../../d7/df8/RCFilterCoder_8h.html">common/RCFilterCoder.h</a>&quot;</span>
+<a name="l00018"></a><a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html#a9af002131a81133dd136b50f71be456f">00018</a> <span class="preprocessor">#include &quot;<a class="code" href="../../d9/d18/RCCopyCoder_8h.html">compress/copy/RCCopyCoder.h</a>&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d54/RCZipEncoder_8h.html">crypto/Zip/RCZipEncoder.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/d45/RCWzAESEncoder_8h.html">crypto/WzAES/RCWzAESEncoder.h</a>&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d77/RCZipExtFilter_8h.html">format/zip/RCZipExtFilter.h</a>&quot;</span>
+<a name="l00022"></a><a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html#a5871815c76301161c7df595bce69438e">00022</a> <span class="preprocessor">#include &quot;<a class="code" href="../../d5/d72/RCZipFileFilter_8h.html">format/zip/RCZipFileFilter.h</a>&quot;</span>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00025"></a>00025 
+<a name="l00026"></a><a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html#a5b165f0eb5bffacd1dace5e50a088b5b">00026</a> <span class="keyword">struct </span><a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html">RCZipCompressingResult</a>
+<a name="l00027"></a>00027 {<span class="comment"></span>
+<a name="l00028"></a>00028 <span class="comment">    /** 解压大小</span>
+<a name="l00029"></a>00029 <span class="comment">    */</span>
+<a name="l00030"></a><a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html#a718faec5776cd3ecf16e682e10061476">00030</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_unpackSize ;
+<a name="l00031"></a>00031 <span class="comment"></span>
+<a name="l00032"></a>00032 <span class="comment">    /** 压缩包大小</span>
+<a name="l00033"></a>00033 <span class="comment">    */</span>
+<a name="l00034"></a><a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html#a2f228fdcfb3f1bd8c4ed1bd28b2f1a40">00034</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_packSize ;
+<a name="l00035"></a>00035     <span class="comment"></span>
+<a name="l00036"></a>00036 <span class="comment">    /** CRC校验码</span>
+<a name="l00037"></a>00037 <span class="comment">    */</span>
+<a name="l00038"></a>00038     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_crc ;
+<a name="l00039"></a>00039 <span class="comment"></span>
+<a name="l00040"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html">00040</a> <span class="comment">    /** 压缩模式</span>
+<a name="l00041"></a>00041 <span class="comment">    */</span>
+<a name="l00042"></a>00042     <a class="code" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> m_method ;
+<a name="l00043"></a>00043 <span class="comment"></span>
+<a name="l00044"></a>00044 <span class="comment">    /** 解压版本</span>
+<a name="l00045"></a>00045 <span class="comment">    */</span>
+<a name="l00046"></a>00046     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> m_extractVersion ;
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="keyword">class </span><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html">RCZipAddCommon</a>
+<a name="l00050"></a>00050 {
+<a name="l00051"></a>00051 <span class="keyword">public</span>:
+<a name="l00052"></a>00052 <span class="comment"></span>
+<a name="l00053"></a>00053 <span class="comment">    /** 默认构造函数</span>
+<a name="l00054"></a>00054 <span class="comment">    @param [in] options 压缩模式信息</span>
+<a name="l00055"></a>00055 <span class="comment">    */</span>
+<a name="l00056"></a>00056     <a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html">RCZipAddCommon</a>(<span class="keyword">const</span> RCZipCompressionMethodMode&amp; options);
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 <span class="keyword">public</span>:
+<a name="l00059"></a>00059 <span class="comment"></span>
+<a name="l00060"></a>00060 <span class="comment">    /** 压缩</span>
+<a name="l00061"></a>00061 <span class="comment">    @param [in] codecsInfo 编码管理器</span>
+<a name="l00062"></a>00062 <span class="comment">    @param [in] inStream 输入流</span>
+<a name="l00063"></a>00063 <span class="comment">    @param [in] outStream 输出流</span>
+<a name="l00064"></a>00064 <span class="comment">    @param [in] progress 进度管理器</span>
+<a name="l00065"></a>00065 <span class="comment">    @param [in] operationResult 压缩结果</span>
+<a name="l00066"></a>00066 <span class="comment">    @param [in] zipExtFilter 扩展名过滤器</span>
+<a name="l00067"></a>00067 <span class="comment">    @param [in] zipFileFilter 文件过滤器</span>
+<a name="l00068"></a>00068 <span class="comment">    @param [in] isFileFilter 是否进行文件过滤</span>
+<a name="l00069"></a>00069 <span class="comment">    @return 成功返回RC_S_OK，否则返回错误号</span>
+<a name="l00070"></a>00070 <span class="comment">    */</span>
+<a name="l00071"></a>00071     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Compress(<a class="code" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a>* codecsInfo,
+<a name="l00072"></a>00072                      <a class="code" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a>* inStream,
+<a name="l00073"></a>00073                      <a class="code" href="../../d4/dad/classRCZip_1_1IOutStream.html">IOutStream</a>* outStream,
+<a name="l00074"></a>00074                      <a class="code" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a>* progress,
+<a name="l00075"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a575e027f6e1f37f6f4250cffb5dbee74">00075</a>                      <a class="code" href="../../dc/d68/structRCZip_1_1RCZipCompressingResult.html">RCZipCompressingResult</a>&amp; operationResult,
+<a name="l00076"></a>00076                      <a class="code" href="../../d7/d5a/namespaceRCZip.html#a8ca38bbfa3ff742e2fb1acc786acd67b">RCZipExtFilterPtr</a>&amp; zipExtFilter,
+<a name="l00077"></a>00077                      <a class="code" href="../../de/dbd/classRCZip_1_1RCZipFileFilter.html">RCZipFileFilter</a>&amp; zipFileFilter,
+<a name="l00078"></a>00078                      <span class="keywordtype">bool</span> isFileFilter);
+<a name="l00079"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#aac184433cc2478f554588426a46aea6f">00079</a> 
+<a name="l00080"></a>00080 <span class="keyword">private</span>:
+<a name="l00081"></a>00081 <span class="comment"></span>
+<a name="l00082"></a>00082 <span class="comment">    /** 压缩模式</span>
+<a name="l00083"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#aa725f3b6bf5fdba02ade4ae874b43c32">00083</a> <span class="comment">    */</span>
+<a name="l00084"></a>00084     RCZipCompressionMethodMode m_options;
+<a name="l00085"></a>00085 <span class="comment"></span>
+<a name="l00086"></a>00086 <span class="comment">    /** COPY编码器</span>
+<a name="l00087"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a08bd525c70dfdecad30b046e48877aa3">00087</a> <span class="comment">    */</span>
+<a name="l00088"></a>00088     <a class="code" href="../../de/dbe/classRCZip_1_1RCCopyCoder.html">RCCopyCoder</a>* m_copyCoderSpec;
+<a name="l00089"></a>00089 <span class="comment"></span>
+<a name="l00090"></a>00090 <span class="comment">    /** COPY编码器</span>
+<a name="l00091"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a1f478d8917532ba83c57401db3d946a4">00091</a> <span class="comment">    */</span>
+<a name="l00092"></a>00092     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> m_copyCoder;
+<a name="l00093"></a>00093 <span class="comment"></span>
+<a name="l00094"></a>00094 <span class="comment">    /** LZMA编码器</span>
+<a name="l00095"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a96723912f6fd64792d7d6fa26c6bb058">00095</a> <span class="comment">    */</span>
+<a name="l00096"></a>00096     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> m_zipLzmaEncoder;
+<a name="l00097"></a>00097 <span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">    /** SHRINK编码器</span>
+<a name="l00099"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#ae2c43224800f9e094d401473d21a060a">00099</a> <span class="comment">    */</span>
+<a name="l00100"></a>00100     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> m_shrinkEncoder;
+<a name="l00101"></a>00101 <span class="comment"></span>
+<a name="l00102"></a>00102 <span class="comment">    /** IMPLODED编码器</span>
+<a name="l00103"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#ab88daf55e94377bdeedd67ac7d17c9d9">00103</a> <span class="comment">    */</span>
+<a name="l00104"></a>00104     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> m_implodedEncoder;
+<a name="l00105"></a>00105 <span class="comment"></span>
+<a name="l00106"></a>00106 <span class="comment">    /** DEFLATED编码器</span>
+<a name="l00107"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a5d85f2be599d5a4975a1a5cc28eb3bc8">00107</a> <span class="comment">    */</span>
+<a name="l00108"></a>00108     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> m_deflatedComEncoder;
+<a name="l00109"></a>00109 <span class="comment"></span>
+<a name="l00110"></a>00110 <span class="comment">    /** DEFLATED64编码器</span>
+<a name="l00111"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a6fc2fda6ba4c99457dae8919d9e9db8c">00111</a> <span class="comment">    */</span>
+<a name="l00112"></a>00112     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> m_deflated64Encoder;
+<a name="l00113"></a>00113 <span class="comment"></span>
+<a name="l00114"></a>00114 <span class="comment">    /** BZIP2编码器</span>
+<a name="l00115"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a631177d2b741df1fe69bff6725848f54">00115</a> <span class="comment">    */</span>
+<a name="l00116"></a>00116     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> m_bzip2Encoder;
+<a name="l00117"></a>00117 <span class="comment"></span>
+<a name="l00118"></a>00118 <span class="comment">    /** 加密过滤器</span>
+<a name="l00119"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a3730e56e059b8d1cc78f87001ef167d6">00119</a> <span class="comment">    */</span>
+<a name="l00120"></a>00120     <a class="code" href="../../d9/dcf/classRCZip_1_1RCFilterCoder.html">RCFilterCoder</a>* m_cryptoStreamSpec;
+<a name="l00121"></a>00121 <span class="comment"></span>
+<a name="l00122"></a>00122 <span class="comment">    /** 加密输出流</span>
+<a name="l00123"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a522b58467e5285fbd997af5678380f6a">00123</a> <span class="comment">    */</span>
+<a name="l00124"></a>00124     <a class="code" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a> m_cryptoStream;
+<a name="l00125"></a>00125 <span class="comment"></span>
+<a name="l00126"></a>00126 <span class="comment">    /** ZIP加密器</span>
+<a name="l00127"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a9bd8b89b5d137f0ce3ab67d040d15691">00127</a> <span class="comment">    */</span>
+<a name="l00128"></a>00128     <a class="code" href="../../de/df4/classRCZip_1_1RCZipEncoder.html">RCZipEncoder</a>* m_filterSpec;
+<a name="l00129"></a>00129 <span class="comment"></span>
+<a name="l00130"></a>00130 <span class="comment">    /** WZAES加密器</span>
+<a name="l00131"></a><a class="code" href="../../d0/dae/classRCZip_1_1RCZipAddCommon.html#a5628f6d20d9566bcc2ffcc7b86fbbad0">00131</a> <span class="comment">    */</span>
+<a name="l00132"></a>00132     <a class="code" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html">RCWzAESEncoder</a>* m_filterAesSpec;
+<a name="l00133"></a>00133 <span class="comment"></span>
+<a name="l00134"></a>00134 <span class="comment">    /** ZIP加密器</span>
+<a name="l00135"></a>00135 <span class="comment">    */</span>
+<a name="l00136"></a>00136     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressFilterPtr</a> m_zipCryptoFilter;
+<a name="l00137"></a>00137 <span class="comment"></span>
+<a name="l00138"></a>00138 <span class="comment">    /** WZAES加密器</span>
+<a name="l00139"></a>00139 <span class="comment">    */</span>
+<a name="l00140"></a>00140     <a class="code" href="../../d9/d13/classRCComPtr.html">ICompressFilterPtr</a> m_aesFilter;
+<a name="l00141"></a>00141 };
+<a name="l00142"></a>00142 
+<a name="l00143"></a>00143 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00144"></a>00144 
+<a name="l00145"></a>00145 <span class="preprocessor">#endif //__RCZipAddCommon_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

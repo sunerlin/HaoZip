@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: ICoder.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_5df61e8bc95b34ee789cf93552e6d84b.html">interface</a>
+  </div>
+</div>
+<div class="contents">
+<h1>ICoder.h文件参考</h1><code>#include &quot;<a class="el" href="../../d9/d35/IUnknown_8h_source.html">interface/IUnknown.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d51/ICodecInfo_8h_source.html">interface/ICodecInfo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/ddc/RCProperty_8h_source.html">common/RCProperty.h</a>&quot;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
+<div class="dynheader">
+ICoder.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/db7/ICoder_8h__incl.png" border="0" usemap="#ICoder_8h_map" alt=""/></div>
+<map name="ICoder_8h_map" id="ICoder_8h">
+<area shape="rect" id="node3" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="161,229,327,256"/><area shape="rect" id="node26" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="409,80,577,107"/><area shape="rect" id="node36" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="643,155,811,181"/><area shape="rect" id="node5" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="165,304,328,331"/><area shape="rect" id="node21" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="5,304,141,331"/><area shape="rect" id="node7" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="393,379,511,405"/><area shape="rect" id="node9" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="417,453,543,480"/><area shape="rect" id="node13" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="545,528,711,555"/><area shape="rect" id="node15" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="209,528,340,555"/><area shape="rect" id="node28" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="277,155,456,181"/><area shape="rect" id="node31" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="613,304,741,331"/><area shape="rect" id="node39" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="352,304,539,331"/><area shape="rect" id="node42" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="531,229,693,256"/></map>
+</div>
+
+<p><a href="../../de/d71/ICoder_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">RCZip::ICompressProgressInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd0/classRCZip_1_1IMtCompressProgressInfo.html">RCZip::IMtCompressProgressInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd1/classRCZip_1_1ISetMultiThreadMode.html">RCZip::ISetMultiThreadMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html">RCZip::ICompressCoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html">RCZip::ICompressCoder2</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html">RCZip::ICompressSetCoderProperties</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de2/classRCZip_1_1ICompressSetDecoderProperties2.html">RCZip::ICompressSetDecoderProperties2</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2c/classRCZip_1_1ICompressWriteCoderProperties.html">RCZip::ICompressWriteCoderProperties</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db9/classRCZip_1_1ICompressGetInStreamProcessedSize.html">RCZip::ICompressGetInStreamProcessedSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/classRCZip_1_1ICompressSetCoderMt.html">RCZip::ICompressSetCoderMt</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7d/classRCZip_1_1ICompressGetSubStreamSize.html">RCZip::ICompressGetSubStreamSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d78/classRCZip_1_1ICompressSetInStream.html">RCZip::ICompressSetInStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classRCZip_1_1ICompressSetOutStream.html">RCZip::ICompressSetOutStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcb/classRCZip_1_1ICompressSetInStreamSize.html">RCZip::ICompressSetInStreamSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/classRCZip_1_1ICompressSetOutStreamSize.html">RCZip::ICompressSetOutStreamSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db9/classRCZip_1_1ICompressFilter.html">RCZip::ICompressFilter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">RCZip::ICompressCodecsInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6d/classRCZip_1_1ISetCompressCodecsInfo.html">RCZip::ISetCompressCodecsInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc9/classRCZip_1_1ICryptoProperties.html">RCZip::ICryptoProperties</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classRCZip_1_1ICryptoResetInitVector.html">RCZip::ICryptoResetInitVector</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d3b/classRCZip_1_1ICryptoSetPassword.html">RCZip::ICryptoSetPassword</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9c/classRCZip_1_1ICryptoSetCRC.html">RCZip::ICryptoSetCRC</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc5/classRCZip_1_1IBZip2ResumeDecoder.html">RCZip::IBZip2ResumeDecoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/classRCZip_1_1ILzmaResumeDecoder.html">RCZip::ILzmaResumeDecoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9e/classRCZip_1_1IGZipResumeDecoder.html">RCZip::IGZipResumeDecoder</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d71/ICoder_8h.html#a3a63384acb58415bea66f4497534041a">__ICoder_h</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td colspan="2"><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressProgressInfo &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a1f2b14443b95d6471488a66de0052bc4">RCZip::ICompressProgressInfoPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a>&lt; ICompressCoder &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a28fe89108a125706e6c179c27e8bda2a">RCZip::ICompressCoderPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a>&lt; ICompressCoder2 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ab9fde0f95a2193b533ff166de59f23b2">RCZip::ICompressCoder2Ptr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressSetCoderProperties &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a42e35f6c19415b98ef0ce2119dbe91fb">RCZip::ICompressSetCoderPropertiesPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressSetDecoderProperties2 &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#aa50ed200cb115695953f7712e9a62649">RCZip::ICompressSetDecoderProperties2Ptr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressWriteCoderProperties &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#aae1354ebd661058f429172bb7c156331">RCZip::ICompressWriteCoderPropertiesPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressGetInStreamProcessedSize &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ad1d36a086459a79e729b3633df3a4333">RCZip::ICompressGetInStreamProcessedSizePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressSetCoderMt &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a64942f09ed62cbfc59722d349ff4fa61">RCZip::ICompressSetCoderMtPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressGetSubStreamSize &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a7f9c2afbd353da506577cc6652aa4106">RCZip::ICompressGetSubStreamSizePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressSetInStream &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ada3d887516a721ab3c38fa338475b74f">RCZip::ICompressSetInStreamPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressSetOutStream &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a1a2df747665d0b1192e0ee286e0d4249">RCZip::ICompressSetOutStreamPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressSetInStreamSize &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a2aab304568b51493d4677e234565f0d5">RCZip::ICompressSetInStreamSizePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressSetOutStreamSize &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af888729ffdb374b93b5aa176d77b2e6d">RCZip::ICompressSetOutStreamSizePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a>&lt; ICompressFilter &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#acf291a64c50f055af3e13d5671c50874">RCZip::ICompressFilterPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICompressCodecsInfo &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a5ecdb6cb378b71c7bef83425d97b9c4f">RCZip::ICompressCodecsInfoPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ISetCompressCodecsInfo &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a8ce108f1e687eefa6b6f00ab84b836ca">RCZip::ISetCompressCodecsInfoPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICryptoProperties &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a35de5afe6f60e204bbacb19ba101c0f0">RCZip::ICryptoPropertiesPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICryptoResetInitVector &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a1b4cf823c9d46a9e62a9e39474bfdd6c">RCZip::ICryptoResetInitVectorPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ICryptoSetPassword &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a401768e395057feb108950db541582d9">RCZip::ICryptoSetPasswordPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a>&lt; ICryptoSetCRC &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ae0086c659dacc689a5d1f38a17816d46">RCZip::ICryptoSetCRCPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IMtCompressProgressInfo &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a31a20688c495019d4a84f4fafecf5795">RCZip::IMtCompressProgressInfoPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ISetMultiThreadMode &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a4a9900551d6184f6caf351a7489e46af">RCZip::ISetMultiThreadModePtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IBZip2ResumeDecoder &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a1be351e71f871b7bea1df19934ff5f61">RCZip::IBZip2ResumeDecoderPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; ILzmaResumeDecoder &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a62c834d556b2d33ef19ff6d2bc67e8a7">RCZip::ILzmaResumeDecoderPtr</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d13/classRCComPtr.html">RCComPtr</a><br class="typebreak"/>
+&lt; IGZipResumeDecoder &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a7bb92334a06dd87d378e0357f7cf0418">RCZip::IGZipResumeDecoderPtr</a></td></tr>
+<tr><td colspan="2"><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a29ea118ad256e34e2a0e8f59d56fbfe7">RCZip::IID_ICompressProgressInfo</a> =  IID_ICODER_BASE, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a348969c62e68c769d787cbf6a97096bd">RCZip::IID_ICompressCoder</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a0501cb9ea50585abd2c03ffb6c18720f">RCZip::IID_ICompressCoder2</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a017d87c4b01e8430f283677607ae458f">RCZip::IID_ICompressSetCoderProperties</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79aa75500ea5ed1eb1f12eaeed137ee3db7">RCZip::IID_ICompressSetDecoderProperties2</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a714712ed9054e565bc31add695def172">RCZip::IID_ICompressWriteCoderProperties</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a537eff351e5c620a50562001c3b914a0">RCZip::IID_ICompressGetInStreamProcessedSize</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79af84055e43cd798e0f1302c368800c550">RCZip::IID_ICompressSetCoderMt</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79afa7f5604e1af4e4ab1617c12fc75eba5">RCZip::IID_ICompressGetSubStreamSize</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a0384d3aa0f4efe1926f4ec52ae70fa2c">RCZip::IID_ICompressSetInStream</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a7967f9d5b66d7ba4e1235af78ba306cd">RCZip::IID_ICompressSetOutStream</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a1a273b9b543776d4b7509e6e0416dfca">RCZip::IID_ICompressSetInStreamSize</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79ac9dc7257b935d75d3605d381c190c2ff">RCZip::IID_ICompressSetOutStreamSize</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79ac7eeb692fd6cca2370b5b42336ff0271">RCZip::IID_ICompressFilter</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a147ac3e81baddb2aefd8db5c99da6476">RCZip::IID_ICompressCodecsInfo</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a3d68a33fce01a98dd975f63dfae92dae">RCZip::IID_ISetCompressCodecsInfo</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a1137b54c28a4c694ab8c8fc3398e0ca5">RCZip::IID_ICryptoProperties</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a22c5707e459af41d2dcb29a052dd3b01">RCZip::IID_ICryptoResetInitVector</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a42a5fd594f908d2733f3bec50ab0c58a">RCZip::IID_ICryptoSetPassword</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a2cd38e8fa17f659260cc13d40547e160">RCZip::IID_ICryptoSetCRC</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79afa9d2a0a65394e5f484019a83e09f63d">RCZip::IID_IMtCompressProgressInfo</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a5caefebf81fdfc7e4be7ebb5c439a060">RCZip::IID_ISetMultiThreadMode</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a8860e89af2b6f94cf8376d785a1c3f85">RCZip::IID_IBZip2ResumeDecoder</a>, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a34158c92b20ab569f108a037071028af">RCZip::IID_ILzmaResumeDecoder</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#aaa070343ade878dc6d2eedb3435d0b79a57c3e3cbba9d8c049a5b7fe23b1620fd">RCZip::IID_IGZipResumeDecoder</a>
+<br/>
+ }</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a3a63384acb58415bea66f4497534041a"></a><!-- doxytag: member="ICoder.h::__ICoder_h" ref="a3a63384acb58415bea66f4497534041a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __ICoder_h&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>第<a class="el" href="../../de/d71/ICoder_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

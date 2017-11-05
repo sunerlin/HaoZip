@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArjHeader.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_8ffc36c16324466e9cfb9f2755a31a6f.html">arj</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArjHeader.h</h1><a href="../../d2/ddc/RCArjHeader_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCArjHeader_h_</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define __RCArjHeader_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/d51/RCTypes_8h.html">base/RCTypes.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/dba/RCString_8h.html">base/RCString.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d38/RCVariant_8h.html">common/RCVariant.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/dc9/IStream_8h.html">interface/IStream.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d9e/RCFileDefs_8h.html">filesystem/RCFileDefs.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#ifdef RCZIP_OS_WIN</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d27/RCWindowsDefs_8h.html">base/RCWindowsDefs.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#endif</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00022"></a>00022 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">class </span>RCArjDefs
+<a name="l00025"></a>00025 {
+<a name="l00026"></a>00026 <span class="keyword">public</span>:
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> kBlockSizeMin = 30;
+<a name="l00029"></a>00029     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> kBlockSizeMax = 2600;
+<a name="l00030"></a>00030    
+<a name="l00031"></a>00031     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> kSig0 = 0x60;
+<a name="l00032"></a>00032     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> kSig1 = 0xEA;
+<a name="l00033"></a>00033 <span class="comment"></span>
+<a name="l00034"></a>00034 <span class="comment">    /** 压缩方法</span>
+<a name="l00035"></a>00035 <span class="comment">    */</span>
+<a name="l00036"></a>00036     <span class="keyword">enum</span> NCompressionMethod
+<a name="l00037"></a>00037     {
+<a name="l00038"></a>00038         kStored = 0,
+<a name="l00039"></a>00039         kCompressed1a = 1,
+<a name="l00040"></a>00040         kCompressed1b = 2,
+<a name="l00041"></a>00041         kCompressed1c = 3,
+<a name="l00042"></a>00042         kCompressed2 = 4,
+<a name="l00043"></a>00043         kNoDataNoCRC = 8,
+<a name="l00044"></a>00044         kNoData = 9
+<a name="l00045"></a>00045     };
+<a name="l00046"></a>00046 <span class="comment"></span>
+<a name="l00047"></a>00047 <span class="comment">    /** 文件类型</span>
+<a name="l00048"></a>00048 <span class="comment">    */</span>
+<a name="l00049"></a>00049     <span class="keyword">enum</span> NFileType
+<a name="l00050"></a>00050     {
+<a name="l00051"></a>00051         kBinary = 0,
+<a name="l00052"></a>00052         k7BitText = 1,
+<a name="l00053"></a>00053         kArchiveHeader = 2,
+<a name="l00054"></a>00054         kDirectory = 3,
+<a name="l00055"></a>00055         kVolumeLablel = 4,
+<a name="l00056"></a>00056         kChapterLabel = 5
+<a name="l00057"></a>00057     };
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> kGarbled = 1;
+<a name="l00060"></a>00060     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> kVolume = 4;
+<a name="l00061"></a>00061     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> kExtFile = 8;
+<a name="l00062"></a>00062     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> kPathSym = 0x10;
+<a name="l00063"></a>00063     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> kBackup = 0x20;
+<a name="l00064"></a>00064 <span class="comment"></span>
+<a name="l00065"></a>00065 <span class="comment">    /** 系统平台类型</span>
+<a name="l00066"></a>00066 <span class="comment">    */</span>
+<a name="l00067"></a>00067     <span class="keyword">enum</span> NHostOS
+<a name="l00068"></a>00068     {
+<a name="l00069"></a>00069         kMSDOS = 0,
+<a name="l00070"></a>00070         kPRIMOS,
+<a name="l00071"></a>00071         <a class="code" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba13f815b68e89b58fba6310a206ee5ae3">kUnix</a>,
+<a name="l00072"></a>00072         <a class="code" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5babda386f30cca4f44f2086838da9fa1d1">kAMIGA</a>,
+<a name="l00073"></a>00073         <a class="code" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba157df367dc5951369f3dc75125e0cf4c">kMac</a>,
+<a name="l00074"></a>00074         kOS_2,
+<a name="l00075"></a>00075         kAPPLE_GS,
+<a name="l00076"></a>00076         kAtari_ST,
+<a name="l00077"></a>00077         kNext,
+<a name="l00078"></a>00078         kVAX_VMS,
+<a name="l00079"></a>00079         kWIN95
+<a name="l00080"></a>00080     };
+<a name="l00081"></a>00081 <span class="comment"></span>
+<a name="l00082"></a>00082 <span class="comment">    /** 读字符串</span>
+<a name="l00083"></a>00083 <span class="comment">    @param [in] p 内存数据</span>
+<a name="l00084"></a>00084 <span class="comment">    @param [in] size 数据大小</span>
+<a name="l00085"></a>00085 <span class="comment">    @param [out] res 返回字符串</span>
+<a name="l00086"></a>00086 <span class="comment">    @return 成功返回RC_S_OK，否则返回RC_S_FALSE</span>
+<a name="l00087"></a>00087 <span class="comment">    */</span>
+<a name="l00088"></a>00088     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> ReadString(<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* p, <span class="keywordtype">unsigned</span>&amp; size, <a class="code" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a>&amp; res);
+<a name="l00089"></a>00089 <span class="comment"></span>
+<a name="l00090"></a>00090 <span class="comment">    /** 检查标记</span>
+<a name="l00091"></a>00091 <span class="comment">    @param [in] p 内存数据</span>
+<a name="l00092"></a>00092 <span class="comment">    @param [in] maxSize 检查标记的最大偏移位置</span>
+<a name="l00093"></a>00093 <span class="comment">    @return 通过检查返回true，否则返回false</span>
+<a name="l00094"></a>00094 <span class="comment">    */</span>
+<a name="l00095"></a>00095     <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> TestMarkerCandidate(<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* p, <span class="keywordtype">unsigned</span> maxSize);
+<a name="l00096"></a>00096 <span class="comment"></span>
+<a name="l00097"></a>00097 <span class="comment">    /** 查找并读取标记</span>
+<a name="l00098"></a>00098 <span class="comment">    @param [in] stream 输入流</span>
+<a name="l00099"></a>00099 <span class="comment">    @param [in] searchHeaderSizeLimit 查找头部的最大偏移位置</span>
+<a name="l00100"></a>00100 <span class="comment">    @param [out] position 输出偏移</span>
+<a name="l00101"></a>00101 <span class="comment">    @return 成功返回RC_S_OK，否则返回错误号 </span>
+<a name="l00102"></a>00102 <span class="comment">    */</span>
+<a name="l00103"></a>00103     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> FindAndReadMarker(ISequentialInStream* stream, 
+<a name="l00104"></a>00104                                      <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>* searchHeaderSizeLimit, 
+<a name="l00105"></a>00105                                      <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&amp; position);<span class="comment"></span>
+<a name="l00106"></a>00106 <span class="comment">    /** 设置时间</span>
+<a name="l00107"></a>00107 <span class="comment">    @param [in] dosTime dos时间</span>
+<a name="l00108"></a>00108 <span class="comment">    @param [out] prop 时间属性</span>
+<a name="l00109"></a>00109 <span class="comment">    */</span>
+<a name="l00110"></a>00110     <span class="keyword">static</span> <span class="keywordtype">void</span> SetTime(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> dosTime, RCVariant&amp; prop);
+<a name="l00111"></a>00111 <span class="comment"></span>
+<a name="l00112"></a>00112 <span class="comment">    /** 设置系统平台</span>
+<a name="l00113"></a>00113 <span class="comment">    @param [in] hostOS 系统平台</span>
+<a name="l00114"></a>00114 <span class="comment">    @param [in] prop 平台属性</span>
+<a name="l00115"></a>00115 <span class="comment">    */</span>
+<a name="l00116"></a>00116     <span class="keyword">static</span> <span class="keywordtype">void</span> SetHostOS(<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> hostOS, RCVariant&amp; prop);
+<a name="l00117"></a>00117 <span class="comment"></span>
+<a name="l00118"></a>00118 <span class="comment">    /** 设置unicode字符串</span>
+<a name="l00119"></a>00119 <span class="comment">    @param [in] s ascii字符串</span>
+<a name="l00120"></a>00120 <span class="comment">    @param [out] prop unicode字符串属性</span>
+<a name="l00121"></a>00121 <span class="comment">    */</span>
+<a name="l00122"></a>00122     <span class="keyword">static</span> <span class="keywordtype">void</span> SetUnicodeString(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a>&amp; s, RCVariant&amp; prop);
+<a name="l00123"></a>00123 };
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 <span class="keyword">struct </span>RCArjArchiveHeader
+<a name="l00126"></a>00126 {<span class="comment"></span>
+<a name="l00127"></a>00127 <span class="comment">    /** 系统类型</span>
+<a name="l00128"></a>00128 <span class="comment">    */</span>
+<a name="l00129"></a>00129     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> m_hostOS;
+<a name="l00130"></a>00130 <span class="comment"></span>
+<a name="l00131"></a>00131 <span class="comment">    /** 创建时间</span>
+<a name="l00132"></a>00132 <span class="comment">    */</span>
+<a name="l00133"></a>00133     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_cTime;
+<a name="l00134"></a>00134 <span class="comment"></span>
+<a name="l00135"></a>00135 <span class="comment">    /** 修改时间</span>
+<a name="l00136"></a>00136 <span class="comment">    */</span>
+<a name="l00137"></a>00137     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_mTime;
+<a name="l00138"></a>00138 <span class="comment"></span>
+<a name="l00139"></a>00139 <span class="comment">    /** 文档大小</span>
+<a name="l00140"></a>00140 <span class="comment">    */</span>
+<a name="l00141"></a>00141     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_archiveSize;
+<a name="l00142"></a>00142 <span class="comment"></span>
+<a name="l00143"></a>00143 <span class="comment">    /** 文件名</span>
+<a name="l00144"></a>00144 <span class="comment">    */</span>
+<a name="l00145"></a>00145     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a> m_name;
+<a name="l00146"></a>00146 <span class="comment"></span>
+<a name="l00147"></a>00147 <span class="comment">    /** 注释</span>
+<a name="l00148"></a>00148 <span class="comment">    */</span>
+<a name="l00149"></a>00149     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a> m_comment;
+<a name="l00150"></a>00150 <span class="comment"></span>
+<a name="l00151"></a>00151 <span class="comment">    /** 解析</span>
+<a name="l00152"></a>00152 <span class="comment">    @param [in] p 内存数据</span>
+<a name="l00153"></a>00153 <span class="comment">    @param [in] size 数据大小</span>
+<a name="l00154"></a>00154 <span class="comment">    */</span>
+<a name="l00155"></a>00155     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Parse(<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* p, <span class="keywordtype">unsigned</span> size);
+<a name="l00156"></a>00156 };
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00159"></a>00159 
+<a name="l00160"></a>00160 <span class="preprocessor">#endif //__RCArjHeader_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

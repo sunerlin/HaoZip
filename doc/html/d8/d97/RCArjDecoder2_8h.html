@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArjDecoder2.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_1bbae21dd677b9c2422b706f858b1d2b.html">arj</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArjDecoder2.h文件参考</h1><code>#include &quot;<a class="el" href="../../de/d71/ICoder_8h_source.html">interface/ICoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/d06/IUnknownImpl_8h_source.html">interface/IUnknownImpl.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d6/d02/RCLZOutWindow_8h_source.html">compress/lz/RCLZOutWindow.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/df6/RCBitmDecoder_8h_source.html">common/RCBitmDecoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">common/RCInBuffer.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCArjDecoder2.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d2/d13/RCArjDecoder2_8h__incl.png" border="0" usemap="#RCArjDecoder2_8h_map" alt=""/></div>
+<map name="RCArjDecoder2_8h_map" id="RCArjDecoder2_8h">
+<area shape="rect" id="node3" href="../../de/d71/ICoder_8h.html" title="interface/ICoder.h" alt="" coords="1048,80,1189,107"/><area shape="rect" id="node53" href="../../d2/d06/IUnknownImpl_8h.html" title="interface/IUnknownImpl.h" alt="" coords="5,80,200,107"/><area shape="rect" id="node62" href="../../d6/d02/RCLZOutWindow_8h.html" title="compress/lz/RCLZOutWindow.h" alt="" coords="639,80,865,107"/><area shape="rect" id="node71" href="../../df/df6/RCBitmDecoder_8h.html" title="common/RCBitmDecoder.h" alt="" coords="269,155,469,181"/><area shape="rect" id="node77" href="../../d8/d25/RCInBuffer_8h.html" title="common/RCInBuffer.h" alt="" coords="493,155,661,181"/><area shape="rect" id="node5" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="527,304,692,331"/><area shape="rect" id="node28" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="939,155,1107,181"/><area shape="rect" id="node38" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="1131,155,1299,181"/><area shape="rect" id="node7" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="528,379,691,405"/><area shape="rect" id="node23" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="60,379,196,405"/><area shape="rect" id="node9" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="785,453,903,480"/><area shape="rect" id="node11" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="799,528,924,555"/><area shape="rect" id="node15" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="903,603,1068,629"/><area shape="rect" id="node17" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="1092,603,1223,629"/><area shape="rect" id="node30" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="741,229,920,256"/><area shape="rect" id="node33" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="961,304,1089,331"/><area shape="rect" id="node41" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="751,304,937,331"/><area shape="rect" id="node44" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="1096,229,1259,256"/><area shape="rect" id="node56" href="../../d6/d44/RCRefCounted_8h.html" title="base/RCRefCounted.h" alt="" coords="80,155,245,181"/><area shape="rect" id="node58" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="292,229,468,256"/><area shape="rect" id="node64" href="../../d6/d21/RCOutBuffer_8h.html" title="common/RCOutBuffer.h" alt="" coords="685,155,864,181"/><area shape="rect" id="node66" href="../../d8/dc9/IStream_8h.html" title="interface/IStream.h" alt="" coords="517,229,667,256"/></map>
+</div>
+
+<p><a href="../../d8/d97/RCArjDecoder2_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d8b/classRCZip_1_1RCArjDecoder2.html">RCZip::RCArjDecoder2</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3b/classRCZip_1_1RCArjDecoder2_1_1CCoderReleaser.html">RCZip::RCArjDecoder2::CCoderReleaser</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d97/RCArjDecoder2_8h.html#a6568d7248d8a13bbd6ed0f5cf3d7ef15">__RCArjDecoder2_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a6568d7248d8a13bbd6ed0f5cf3d7ef15"></a><!-- doxytag: member="RCArjDecoder2.h::__RCArjDecoder2_h_" ref="a6568d7248d8a13bbd6ed0f5cf3d7ef15" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCArjDecoder2_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d97/RCArjDecoder2_8h_source.html">RCArjDecoder2.h</a>第<a class="el" href="../../d8/d97/RCArjDecoder2_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::IInStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::IInStream类参考</h1><!-- doxytag: class="RCZip::IInStream" --><!-- doxytag: inherits="RCZip::ISequentialInStream" -->
+<p><code>#include &lt;<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::IInStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d9/d56/classRCZip_1_1IInStream__inherit__graph.png" border="0" usemap="#RCZip_1_1IInStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1IInStream_inherit__map" id="RCZip_1_1IInStream_inherit__map">
+<area shape="rect" id="node7" href="../../d3/dc0/classRCZip_1_1IUnknownImpl3.html" title="{RCZip::IUnknownImpl3\&lt; IInStream, ICloneStream, IMultiStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl3()\l}" alt="" coords="5,459,467,581"/><area shape="rect" id="node11" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; IInStream, IStreamGetSize, ICloneStream, IStreamGetFileName \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="491,459,1115,581"/><area shape="rect" id="node15" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; IInStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="1224,459,1485,581"/><area shape="rect" id="node2" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="700,177,905,269"/><area shape="rect" id="node4" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="729,6,876,127"/><area shape="rect" id="node9" href="../../d1/d61/classRCZip_1_1RCMultiStream.html" title="{RCZip::RCMultiStream\n|+ m_streams\l&#45; m_streamIndex\l&#45; m_pos\l&#45; m_seekPos\l&#45; m_totalLength\l|+ RCMultiStream()\l+ ~RCMultiStream()\l+ Init()\l+ Read()\l+ Seek()\l+ Clone()\l+ GetVolumeSize()\l+ GetVolumeTotalSize()\l}" alt="" coords="147,645,325,883"/><area shape="rect" id="node13" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html" title="{RCZip::RCWinInFileStream\n|&#45; m_file\l|+ RCWinInFileStream()\l+ ~RCWinInFileStream()\l+ Open()\l+ OpenShared()\l+ Read()\l+ Seek()\l+ GetSize()\l+ Clone()\l+ GetFileName()\l}" alt="" coords="663,667,857,861"/><area shape="rect" id="node17" href="../../d4/d9f/classRCZip_1_1RCBufInStream.html" title="{RCZip::RCBufInStream\n|&#45; _data\l&#45; _size\l&#45; _pos\l&#45; _ref\l|+ RCBufInStream()\l+ ~RCBufInStream()\l+ Init()\l+ Init()\l+ Read()\l+ Seek()\l}" alt="" coords="881,667,1052,861"/><area shape="rect" id="node19" href="../../df/d91/classRCZip_1_1RCClusterInStream.html" title="{RCZip::RCClusterInStream\n|+ m_stream\l+ m_startOffset\l+ m_size\l+ m_blockSizeLog\l+ m_vector\l&#45; m_virtPos\l&#45; m_physPos\l&#45; m_curRem\l|+ RCClusterInStream()\l+ ~RCClusterInStream()\l+ Read()\l+ Seek()\l+ SeekToPhys()\l+ InitAndSeek()\l}" alt="" coords="1076,637,1271,891"/><area shape="rect" id="node21" href="../../d3/d2e/classRCZip_1_1RCInStreamWithCRC.html" title="{RCZip::RCInStreamWithCRC\n|&#45; m_stream\l&#45; m_size\l&#45; m_crc\l&#45; m_wasFinished\l|+ RCInStreamWithCRC()\l+ ~RCInStreamWithCRC()\l+ Init()\l+ SetStream()\l+ ReleaseStream()\l+ GetCRC()\l+ GetSize()\l+ WasFinished()\l+ Read()\l+ Seek()\l+ QueryInterface()\l}" alt="" coords="1295,630,1500,898"/><area shape="rect" id="node23" href="../../df/d56/classRCZip_1_1RCLimitedInStream.html" title="{RCZip::RCLimitedInStream\n|&#45; m_spStream\l&#45; m_virtPos\l&#45; m_physPos\l&#45; m_size\l&#45; m_startOffset\l|+ RCLimitedInStream()\l+ ~RCLimitedInStream()\l+ Read()\l+ Seek()\l+ SetStream()\l+ InitAndSeek()\l+ SeekToStart()\l&#45; SeekToPhys()\l}" alt="" coords="1524,645,1721,883"/><area shape="rect" id="node25" href="../../d2/d31/classRCZip_1_1RCUdfExtentsStream.html" title="{RCZip::RCUdfExtentsStream\n|+ m_stream\l+ m_extents\l&#45; m_phyPos\l&#45; m_virtPos\l&#45; m_needStartSeek\l|+ RCUdfExtentsStream()\l+ Init()\l+ ReleaseStream()\l+ Read()\l+ Seek()\l&#45; SeekToPhys()\l}" alt="" coords="1745,659,1953,869"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::IInStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d7/d75/classRCZip_1_1IInStream__coll__graph.png" border="0" usemap="#RCZip_1_1IInStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1IInStream_coll__map" id="RCZip_1_1IInStream_coll__map">
+<area shape="rect" id="node2" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="5,177,211,269"/><area shape="rect" id="node4" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="35,6,181,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d8/da6/classRCZip_1_1IInStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../db/da6/classRCZip_1_1IInStream.html#a034139b6436a17289d82124ec57f1831ad065b9618b57ca0d1649843469226361">IID</a> =  IID_IInStream
+ }</td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html#a84fdb6c0a6fa196481a4349cc2017476">Seek</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> offset, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a0bb101585da6c62f02ca00f67fb48741">RC_STREAM_SEEK</a> seekOrigin, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *newPosition)=0</td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html#a57ce6a12fd96403be338ff78b0358644">~IInStream</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>输入数据接口 </p>
+
+<p>在文件<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>第<a class="el" href="../../d8/dc9/IStream_8h_source.html#l00111">111</a>行定义。</p>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a034139b6436a17289d82124ec57f1831"></a><!-- doxytag: member="RCZip::IInStream::@74" ref="a034139b6436a17289d82124ec57f1831" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>接口ID </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a034139b6436a17289d82124ec57f1831ad065b9618b57ca0d1649843469226361"></a><!-- doxytag: member="IID" ref="a034139b6436a17289d82124ec57f1831ad065b9618b57ca0d1649843469226361" args="" -->IID</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>第<a class="el" href="../../d8/dc9/IStream_8h_source.html#l00118">118</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a57ce6a12fd96403be338ff78b0358644"></a><!-- doxytag: member="RCZip::IInStream::~IInStream" ref="a57ce6a12fd96403be338ff78b0358644" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::IInStream::~IInStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+<p>在文件<a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a>第<a class="el" href="../../d8/dc9/IStream_8h_source.html#l00134">134</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a84fdb6c0a6fa196481a4349cc2017476"></a><!-- doxytag: member="RCZip::IInStream::Seek" ref="a84fdb6c0a6fa196481a4349cc2017476" args="(int64_t offset, RC_STREAM_SEEK seekOrigin, uint64_t *newPosition)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInStream::Seek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a0bb101585da6c62f02ca00f67fb48741">RC_STREAM_SEEK</a>&nbsp;</td>
+          <td class="paramname"> <em>seekOrigin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>newPosition</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>调整指针位置 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>offset</em>&nbsp;</td><td>需要调整的偏移量 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>seekOrigin</em>&nbsp;</td><td>调整的基准位置 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>newPosition</em>&nbsp;</td><td>调整后的文件偏移 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 否则返回错误码 </dd></dl>
+
+<p>在<a class="el" href="../../d4/d9f/classRCZip_1_1RCBufInStream.html#adfea578f67d7eed02fd73b7f4995ebd4">RCZip::RCBufInStream</a>、<a class="el" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#abdc60c252fbbc7bcd7f3fac55ddd153b">RCZip::RCClusterInStream</a>、<a class="el" href="../../df/d56/classRCZip_1_1RCLimitedInStream.html#a96b21d7323e2e82ba279af788c72999f">RCZip::RCLimitedInStream</a>、<a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a533e2c7b35b9e65dbe58a5fffd77d61d">RCZip::RCWinInFileStream</a>、<a class="el" href="../../d3/d2e/classRCZip_1_1RCInStreamWithCRC.html#a079e815e4057212f7e509e91182acb49">RCZip::RCInStreamWithCRC</a>、<a class="el" href="../../d1/d61/classRCZip_1_1RCMultiStream.html#a05cc2746e70909ab2af199cc68deabb5">RCZip::RCMultiStream</a>及<a class="el" href="../../d2/d31/classRCZip_1_1RCUdfExtentsStream.html#a1b6bb225d3f6735818cff946644e91aa">RCZip::RCUdfExtentsStream</a>内被实现。</p>
+
+<p>参考自 <a class="el" href="../../db/def/RCRarFileInfoParse_8h_source.html#l00054">RCZip::RCRarFileInfoParse::RCRarFileInfoParse()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图。</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/da6/classRCZip_1_1IInStream_a84fdb6c0a6fa196481a4349cc2017476_icgraph.png" border="0" usemap="#db/da6/classRCZip_1_1IInStream_a84fdb6c0a6fa196481a4349cc2017476_icgraph_map" alt=""></div>
+<map name="db/da6/classRCZip_1_1IInStream_a84fdb6c0a6fa196481a4349cc2017476_icgraph_map" id="db/da6/classRCZip_1_1IInStream_a84fdb6c0a6fa196481a4349cc2017476_icgraph">
+<area shape="rect" id="node3" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html#a7fb15983ce9633ce2d86415bbe0d9fc6" title="RCZip::RCRarFileInfoParse::RCRarFileInfoParse" alt="" coords="229,5,555,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d8/dc9/IStream_8h_source.html">IStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

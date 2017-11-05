@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCOutMemStream.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c45503ccb4e1ad5774fb3bb7c12b18bf.html">locked</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCOutMemStream.h文件参考</h1><code>#include &quot;<a class="el" href="../../d8/dc9/IStream_8h_source.html">interface/IStream.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/d06/IUnknownImpl_8h_source.html">interface/IUnknownImpl.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../da/d7c/RCMemLockBlocks_8h_source.html">locked/RCMemLockBlocks.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/db0/RCSynchronization_8h_source.html">thread/RCSynchronization.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCOutMemStream.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/d07/RCOutMemStream_8h__incl.png" border="0" usemap="#RCOutMemStream_8h_map" alt=""/></div>
+<map name="RCOutMemStream_8h_map" id="RCOutMemStream_8h">
+<area shape="rect" id="node3" href="../../d8/dc9/IStream_8h.html" title="interface/IStream.h" alt="" coords="224,155,373,181"/><area shape="rect" id="node33" href="../../d2/d06/IUnknownImpl_8h.html" title="interface/IUnknownImpl.h" alt="" coords="428,229,623,256"/><area shape="rect" id="node42" href="../../da/d7c/RCMemLockBlocks_8h.html" title="locked/RCMemLockBlocks.h" alt="" coords="631,80,836,107"/><area shape="rect" id="node51" href="../../d2/db0/RCSynchronization_8h.html" title="thread/RCSynchronization.h" alt="" coords="883,80,1091,107"/><area shape="rect" id="node5" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="216,229,381,256"/><area shape="rect" id="node28" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="40,229,168,256"/><area shape="rect" id="node7" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="141,304,304,331"/><area shape="rect" id="node23" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="328,304,464,331"/><area shape="rect" id="node9" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="287,453,404,480"/><area shape="rect" id="node11" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="311,528,436,555"/><area shape="rect" id="node15" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="476,603,641,629"/><area shape="rect" id="node17" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="140,603,271,629"/><area shape="rect" id="node36" href="../../d6/d44/RCRefCounted_8h.html" title="base/RCRefCounted.h" alt="" coords="488,304,653,331"/><area shape="rect" id="node38" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="485,379,661,405"/><area shape="rect" id="node44" href="../../d6/d0a/RCMemBlocks_8h.html" title="locked/RCMemBlocks.h" alt="" coords="677,304,853,331"/><area shape="rect" id="node47" href="../../dc/d53/RCVector_8h.html" title="common/RCVector.h" alt="" coords="685,379,843,405"/><area shape="rect" id="node53" href="../../d1/d8f/RCBaseEvent_8h.html" title="thread/RCBaseEvent.h" alt="" coords="1041,229,1212,256"/><area shape="rect" id="node70" href="../../de/ddc/RCManualResetEvent_8h.html" title="thread/RCManualResetEvent.h" alt="" coords="1164,155,1388,181"/><area shape="rect" id="node73" href="../../db/d4a/RCAutoResetEvent_8h.html" title="thread/RCAutoResetEvent.h" alt="" coords="884,155,1089,181"/><area shape="rect" id="node76" href="../../d8/d62/RCSemaphore_8h.html" title="thread/RCSemaphore.h" alt="" coords="841,229,1017,256"/><area shape="rect" id="node55" href="../../de/db0/RCHandle_8h.html" title="thread/RCHandle.h" alt="" coords="877,304,1024,331"/><area shape="rect" id="node58" href="../../dc/db3/Threads_8h.html" title="algorithm/Threads.h" alt="" coords="1048,304,1205,331"/><area shape="rect" id="node60" href="../../d7/df8/Types_8h.html" title="algorithm/Types.h" alt="" coords="1056,379,1197,405"/><area shape="rect" id="node62" href="../../df/dd8/stdint_8h.html" title="base/stdint.h" alt="" coords="1016,453,1123,480"/></map>
+</div>
+
+<p><a href="../../d3/dfe/RCOutMemStream_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d47/classRCZip_1_1RCOutMemStream.html">RCZip::RCOutMemStream</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfe/RCOutMemStream_8h.html#a497a0de0650803ef900ffa8b955722ce">__RCOutMemStream_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a497a0de0650803ef900ffa8b955722ce"></a><!-- doxytag: member="RCOutMemStream.h::__RCOutMemStream_h_" ref="a497a0de0650803ef900ffa8b955722ce" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCOutMemStream_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d3/dfe/RCOutMemStream_8h_source.html">RCOutMemStream.h</a>第<a class="el" href="../../d3/dfe/RCOutMemStream_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

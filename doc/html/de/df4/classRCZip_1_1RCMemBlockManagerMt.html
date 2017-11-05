@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCMemBlockManagerMt类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html">RCMemBlockManagerMt</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCMemBlockManagerMt类参考</h1><!-- doxytag: class="RCZip::RCMemBlockManagerMt" --><!-- doxytag: inherits="RCZip::RCMemBlockManager" -->
+<p><code>#include &lt;<a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html">RCMemBlockManagerMt.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCMemBlockManagerMt</div>
+<div class="dynsection">
+<div class="center"><img src="../../d1/d82/classRCZip_1_1RCMemBlockManagerMt__inherit__graph.png" border="0" usemap="#RCZip_1_1RCMemBlockManagerMt_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCMemBlockManagerMt_inherit__map" id="RCZip_1_1RCMemBlockManagerMt_inherit__map">
+<area shape="rect" id="node2" href="../../dd/d1d/classRCZip_1_1RCMemBlockManager.html" title="{RCZip::RCMemBlockManager\n|&#45; m_data\l&#45; m_blockSize\l&#45; m_headFree\l|+ RCMemBlockManager()\l+ ~RCMemBlockManager()\l+ AllocateSpace()\l+ FreeSpace()\l+ GetBlockSize()\l+ AllocateBlock()\l+ FreeBlock()\l}" alt="" coords="13,131,229,325"/><area shape="rect" id="node4" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="33,5,209,83"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCMemBlockManagerMt合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d7/d08/classRCZip_1_1RCMemBlockManagerMt__coll__graph.png" border="0" usemap="#RCZip_1_1RCMemBlockManagerMt_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCMemBlockManagerMt_coll__map" id="RCZip_1_1RCMemBlockManagerMt_coll__map">
+<area shape="rect" id="node2" href="../../dd/d1d/classRCZip_1_1RCMemBlockManager.html" title="{RCZip::RCMemBlockManager\n|&#45; m_data\l&#45; m_blockSize\l&#45; m_headFree\l|+ RCMemBlockManager()\l+ ~RCMemBlockManager()\l+ AllocateSpace()\l+ FreeSpace()\l+ GetBlockSize()\l+ AllocateBlock()\l+ FreeBlock()\l}" alt="" coords="5,133,221,328"/><area shape="rect" id="node4" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="143,5,319,83"/><area shape="rect" id="node6" href="../../d6/d3c/classRCZip_1_1RCMutex.html" title="{RCZip::RCMutex\n|&#45; m_impl\l|+ RCMutex()\l+ ~RCMutex()\l+ Lock()\l+ TryLock()\l+ UnLock()\l}" alt="" coords="245,163,373,299"/><area shape="rect" id="node9" href="../../da/d9c/classRCZip_1_1RCSemaphore.html" title="{RCZip::RCSemaphore\n|&#45; m_object\l|+ RCSemaphore()\l+ ~RCSemaphore()\l+ Close()\l+ operator HANDLE()\l+ Create()\l+ Release()\l+ Release()\l+ Lock()\l}" alt="" coords="397,141,560,321"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../db/d48/classRCZip_1_1RCMemBlockManagerMt-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#ae8d8f2d417d3d8a0112ac40a42b65cfa">RCMemBlockManagerMt</a> (size_t blockSize=(1&lt;&lt; 20))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a4a25166f77aed81c8eb956d378492db5">~RCMemBlockManagerMt</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a007cd4d4e671ceaf9a760836ed0f6ffb">AllocateSpace</a> (size_t numBlocks, size_t numNoLockBlocks=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a030dd44ef9d2af08bf8f4585444e0b33">AllocateSpaceAlways</a> (size_t desiredNumberOfBlocks, size_t numNoLockBlocks=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a0ab17298944ce045f30f6c431dd9e68a">FreeSpace</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#af3a87ab0b11370059d2eefd0b4192251">AllocateBlock</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#addaac40256bba662c68aa3a2f4ed3dd0">FreeBlock</a> (void *p, bool lockMode=true)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#afc2171f1b4d2894346c989c41cc9ade3">ReleaseLockedBlocks</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> number)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a6babc4e448301b11f27052a3c137e653">GetBlockSize</a> () const </td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d9c/classRCZip_1_1RCSemaphore.html">RCSemaphore</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#aa7a919ac155010683128b0246deac0bb">m_semaphore</a></td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3c/classRCZip_1_1RCMutex.html">RCMutex</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a23b35f219fb42f1e9482409159204ce0">m_lock</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html">RCMemBlockManagerMt.h</a>第<a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="ae8d8f2d417d3d8a0112ac40a42b65cfa"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::RCMemBlockManagerMt" ref="ae8d8f2d417d3d8a0112ac40a42b65cfa" args="(size_t blockSize=(1&lt;&lt; 20))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCMemBlockManagerMt::RCMemBlockManagerMt </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>blockSize</em> = <code>(1&lt;&lt;&nbsp;20)</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>blockSize</em>&nbsp;</td><td>数据块大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a25166f77aed81c8eb956d378492db5"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::~RCMemBlockManagerMt" ref="a4a25166f77aed81c8eb956d378492db5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCMemBlockManagerMt::~RCMemBlockManagerMt </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="af3a87ab0b11370059d2eefd0b4192251"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::AllocateBlock" ref="af3a87ab0b11370059d2eefd0b4192251" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* RCZip::RCMemBlockManagerMt::AllocateBlock </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分配一个数据块 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回数据块地址, 失败返回NULL </dd></dl>
+
+<p>重载<a class="el" href="../../dd/d1d/classRCZip_1_1RCMemBlockManager.html#a211fb8398fe078b52f9d00f2b95295ad">RCZip::RCMemBlockManager</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a007cd4d4e671ceaf9a760836ed0f6ffb"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::AllocateSpace" ref="a007cd4d4e671ceaf9a760836ed0f6ffb" args="(size_t numBlocks, size_t numNoLockBlocks=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCMemBlockManagerMt::AllocateSpace </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>numBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>numNoLockBlocks</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分配内存空间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numBlocks</em>&nbsp;</td><td>分配的数据块个数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numNoLockBlocks</em>&nbsp;</td><td>解锁计数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败则返回错误码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a030dd44ef9d2af08bf8f4585444e0b33"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::AllocateSpaceAlways" ref="a030dd44ef9d2af08bf8f4585444e0b33" args="(size_t desiredNumberOfBlocks, size_t numNoLockBlocks=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCMemBlockManagerMt::AllocateSpaceAlways </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>desiredNumberOfBlocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>numNoLockBlocks</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分配内存空间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>desiredNumberOfBlocks</em>&nbsp;</td><td>分配的数据块个数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numNoLockBlocks</em>&nbsp;</td><td>解锁计数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败则返回错误码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="addaac40256bba662c68aa3a2f4ed3dd0"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::FreeBlock" ref="addaac40256bba662c68aa3a2f4ed3dd0" args="(void *p, bool lockMode=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMemBlockManagerMt::FreeBlock </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>lockMode</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放数据块内存空间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>数据块内存地址 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lockMode</em>&nbsp;</td><td>是否为加锁模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ab17298944ce045f30f6c431dd9e68a"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::FreeSpace" ref="a0ab17298944ce045f30f6c431dd9e68a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMemBlockManagerMt::FreeSpace </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放内存空间 </p>
+
+<p>重载<a class="el" href="../../dd/d1d/classRCZip_1_1RCMemBlockManager.html#aaaa96aade554040978c67d654b64d9c2">RCZip::RCMemBlockManager</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6babc4e448301b11f27052a3c137e653"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::GetBlockSize" ref="a6babc4e448301b11f27052a3c137e653" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t RCZip::RCMemBlockManagerMt::GetBlockSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取当前数据块大小 </p>
+
+<p>重载<a class="el" href="../../dd/d1d/classRCZip_1_1RCMemBlockManager.html#a9db3c3e4d7e5ae4def343f187df2bb35">RCZip::RCMemBlockManager</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="afc2171f1b4d2894346c989c41cc9ade3"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::ReleaseLockedBlocks" ref="afc2171f1b4d2894346c989c41cc9ade3" args="(int32_t number)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCMemBlockManagerMt::ReleaseLockedBlocks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>number</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放加锁块的锁计数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>number</em>&nbsp;</td><td>释放的计数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败则返回错误码 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a23b35f219fb42f1e9482409159204ce0"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::m_lock" ref="a23b35f219fb42f1e9482409159204ce0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3c/classRCZip_1_1RCMutex.html">RCMutex</a> <a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a23b35f219fb42f1e9482409159204ce0">RCZip::RCMemBlockManagerMt::m_lock</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>同步锁 </p>
+
+<p>在文件<a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html">RCMemBlockManagerMt.h</a>第<a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html#l00084">84</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7a919ac155010683128b0246deac0bb"></a><!-- doxytag: member="RCZip::RCMemBlockManagerMt::m_semaphore" ref="aa7a919ac155010683128b0246deac0bb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9c/classRCZip_1_1RCSemaphore.html">RCSemaphore</a> <a class="el" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#aa7a919ac155010683128b0246deac0bb">RCZip::RCMemBlockManagerMt::m_semaphore</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>同步信号量 </p>
+
+<p>在文件<a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html">RCMemBlockManagerMt.h</a>第<a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html#l00078">78</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d1b/RCMemBlockManagerMt_8h_source.html">RCMemBlockManagerMt.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZipDecoder.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_d3ad43f7f4209fed68c37a759e8e675c.html">crypto</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_143a965a4124f0570c46bf769c7ddb76.html">Zip</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZipDecoder.h文件参考</h1><code>#include &quot;<a class="el" href="../../db/d2a/RCZipCipher_8h_source.html">crypto/Zip/RCZipCipher.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d71/ICoder_8h_source.html">interface/ICoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/d06/IUnknownImpl_8h_source.html">interface/IUnknownImpl.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCZipDecoder.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/dce/RCZipDecoder_8h__incl.png" border="0" usemap="#RCZipDecoder_8h_map" alt=""/></div>
+<map name="RCZipDecoder_8h_map" id="RCZipDecoder_8h">
+<area shape="rect" id="node3" href="../../db/d2a/RCZipCipher_8h.html" title="crypto/Zip/RCZipCipher.h" alt="" coords="53,155,243,181"/><area shape="rect" id="node21" href="../../de/d71/ICoder_8h.html" title="interface/ICoder.h" alt="" coords="801,80,943,107"/><area shape="rect" id="node58" href="../../d2/d06/IUnknownImpl_8h.html" title="interface/IUnknownImpl.h" alt="" coords="236,229,431,256"/><area shape="rect" id="node5" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="5,379,181,405"/><area shape="rect" id="node7" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="587,453,704,480"/><area shape="rect" id="node9" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="609,528,735,555"/><area shape="rect" id="node13" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="744,603,909,629"/><area shape="rect" id="node15" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="408,603,539,629"/><area shape="rect" id="node23" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="433,304,599,331"/><area shape="rect" id="node33" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="728,155,896,181"/><area shape="rect" id="node43" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="849,229,1017,256"/><area shape="rect" id="node25" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="365,379,528,405"/><area shape="rect" id="node28" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="205,379,341,405"/><area shape="rect" id="node35" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="580,229,759,256"/><area shape="rect" id="node38" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="813,379,941,405"/><area shape="rect" id="node46" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="552,379,739,405"/><area shape="rect" id="node49" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="677,304,840,331"/><area shape="rect" id="node61" href="../../d6/d44/RCRefCounted_8h.html" title="base/RCRefCounted.h" alt="" coords="131,304,296,331"/></map>
+</div>
+
+<p><a href="../../dc/daa/RCZipDecoder_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d6b/classRCZip_1_1RCZipDecoder.html">RCZip::RCZipDecoder</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/daa/RCZipDecoder_8h.html#abacdc07aaaf037048821f46fdb827b91">__RCZipDecoder_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="abacdc07aaaf037048821f46fdb827b91"></a><!-- doxytag: member="RCZipDecoder.h::__RCZipDecoder_h_" ref="abacdc07aaaf037048821f46fdb827b91" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCZipDecoder_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/daa/RCZipDecoder_8h_source.html">RCZipDecoder.h</a>第<a class="el" href="../../dc/daa/RCZipDecoder_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCLzma2Encoder::CSeqOutStream结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d5/dd5/classRCZip_1_1RCLzma2Encoder.html">RCLzma2Encoder</a>::<a class="el" href="../../d5/d7d/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream.html">CSeqOutStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCLzma2Encoder::CSeqOutStream结构参考</h1><!-- doxytag: class="RCZip::RCLzma2Encoder::CSeqOutStream" --><div class="dynheader">
+RCZip::RCLzma2Encoder::CSeqOutStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d3/da3/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream__coll__graph.png" border="0" usemap="#RCZip_1_1RCLzma2Encoder_1_1CSeqOutStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCLzma2Encoder_1_1CSeqOutStream_coll__map" id="RCZip_1_1RCLzma2Encoder_1_1CSeqOutStream_coll__map">
+<area shape="rect" id="node2" href="../../dd/d89/structISeqOutStream.html" title="{ISeqOutStream\n|+ Write\l|}" alt="" coords="5,447,128,524"/><area shape="rect" id="node4" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="152,337,419,634"/><area shape="rect" id="node6" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="177,179,393,271"/><area shape="rect" id="node8" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="212,6,359,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../dd/de9/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d89/structISeqOutStream.html">ISeqOutStream</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7d/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream.html#aebe79332ddf658774e9ecd3f2eb63a1c">m_seqOutStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7d/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream.html#a1d6e0fac92e02a091f25aeafdfdc7d17">m_realStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7d/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream.html#a60820f24ed0b9cb8a57b03a77678ecd5">m_result</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>序列化输出流 </p>
+
+<p>在文件<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html">RCLzma2Encoder.h</a>第<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html#l00166">166</a>行定义。</p>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a1d6e0fac92e02a091f25aeafdfdc7d17"></a><!-- doxytag: member="RCZip::RCLzma2Encoder::CSeqOutStream::m_realStream" ref="a1d6e0fac92e02a091f25aeafdfdc7d17" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a> <a class="el" href="../../d5/d7d/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream.html#a1d6e0fac92e02a091f25aeafdfdc7d17">RCZip::RCLzma2Encoder::CSeqOutStream::m_realStream</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出流指针 </p>
+
+<p>在文件<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html">RCLzma2Encoder.h</a>第<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html#l00174">174</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a60820f24ed0b9cb8a57b03a77678ecd5"></a><!-- doxytag: member="RCZip::RCLzma2Encoder::CSeqOutStream::m_result" ref="a60820f24ed0b9cb8a57b03a77678ecd5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="el" href="../../d5/d7d/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream.html#a60820f24ed0b9cb8a57b03a77678ecd5">RCZip::RCLzma2Encoder::CSeqOutStream::m_result</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>结果 </p>
+
+<p>在文件<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html">RCLzma2Encoder.h</a>第<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html#l00178">178</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aebe79332ddf658774e9ecd3f2eb63a1c"></a><!-- doxytag: member="RCZip::RCLzma2Encoder::CSeqOutStream::m_seqOutStream" ref="aebe79332ddf658774e9ecd3f2eb63a1c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d89/structISeqOutStream.html">ISeqOutStream</a> <a class="el" href="../../d5/d7d/structRCZip_1_1RCLzma2Encoder_1_1CSeqOutStream.html#aebe79332ddf658774e9ecd3f2eb63a1c">RCZip::RCLzma2Encoder::CSeqOutStream::m_seqOutStream</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出流接口 </p>
+
+<p>在文件<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html">RCLzma2Encoder.h</a>第<a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html#l00170">170</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dd/def/RCLzma2Encoder_8h_source.html">RCLzma2Encoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

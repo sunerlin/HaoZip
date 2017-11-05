@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCWildcardCensor类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCWildcardCensor类参考</h1><!-- doxytag: class="RCWildcardCensor" -->
+<p><code>#include &lt;<a class="el" href="../../df/d73/RCWildcardCensor_8h_source.html">RCWildcardCensor.h</a>&gt;</code></p>
+
+<p><a href="../../d2/d38/classRCWildcardCensor-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCVector&lt; <a class="el" href="../../d3/d1b/classRCWildcardPair.html">RCWildcardPair</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a022555d240ce1f7bcbc3aa481e5f64e1">GetPairs</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RCVector&lt; <a class="el" href="../../d3/d1b/classRCWildcardPair.html">RCWildcardPair</a> &gt; &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#ac797b004948a6c5cab21ba2bcbc98c91">GetPairs</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a7632c4ee6a50df917b42eebe46cbdd0a">AllAreRelative</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a6a14e6173c4ad1bd97c08b21aba75bb9">AddItem</a> (bool include, const RCString &amp;path, bool recursive)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a854a6e0fdb43b4a3bbdda69f769ceb97">CheckPath</a> (const RCString &amp;path, bool isFile) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a4135b5dc3f1e4f30fc5fb87eb113820d">ExtendExclude</a> ()</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a78a23408cbed1f541aa27c42aa5c5e67">FindPrefix</a> (const RCString &amp;prefix) const </td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCVector&lt; <a class="el" href="../../d3/d1b/classRCWildcardPair.html">RCWildcardPair</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a96baf0d86e661f3c11d8c3c475466a66">m_pairs</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>通配符匹配 </p>
+
+<p>在文件<a class="el" href="../../df/d73/RCWildcardCensor_8h_source.html">RCWildcardCensor.h</a>第<a class="el" href="../../df/d73/RCWildcardCensor_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a6a14e6173c4ad1bd97c08b21aba75bb9"></a><!-- doxytag: member="RCWildcardCensor::AddItem" ref="a6a14e6173c4ad1bd97c08b21aba75bb9" args="(bool include, const RCString &amp;path, bool recursive)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCWildcardCensor::AddItem </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>include</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>recursive</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>增加匹配目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>include</em>&nbsp;</td><td>是否包含 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>路径名称 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>recursive</em>&nbsp;</td><td>是否递归 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7632c4ee6a50df917b42eebe46cbdd0a"></a><!-- doxytag: member="RCWildcardCensor::AllAreRelative" ref="a7632c4ee6a50df917b42eebe46cbdd0a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCWildcardCensor::AllAreRelative </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否都为相对路径 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a854a6e0fdb43b4a3bbdda69f769ceb97"></a><!-- doxytag: member="RCWildcardCensor::CheckPath" ref="a854a6e0fdb43b4a3bbdda69f769ceb97" args="(const RCString &amp;path, bool isFile) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCWildcardCensor::CheckPath </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isFile</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查路径是否匹配 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>路径名称 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isFile</em>&nbsp;</td><td>是否为文件 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4135b5dc3f1e4f30fc5fb87eb113820d"></a><!-- doxytag: member="RCWildcardCensor::ExtendExclude" ref="a4135b5dc3f1e4f30fc5fb87eb113820d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCWildcardCensor::ExtendExclude </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>排除 </p>
+
+</div>
+</div>
+<a class="anchor" id="a78a23408cbed1f541aa27c42aa5c5e67"></a><!-- doxytag: member="RCWildcardCensor::FindPrefix" ref="a78a23408cbed1f541aa27c42aa5c5e67" args="(const RCString &amp;prefix) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCWildcardCensor::FindPrefix </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>prefix</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>查找前缀 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>prefix</em>&nbsp;</td><td>前缀 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回对应的序号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac797b004948a6c5cab21ba2bcbc98c91"></a><!-- doxytag: member="RCWildcardCensor::GetPairs" ref="ac797b004948a6c5cab21ba2bcbc98c91" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RCVector&lt;<a class="el" href="../../d3/d1b/classRCWildcardPair.html">RCWildcardPair</a>&gt;&amp; RCWildcardCensor::GetPairs </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取Pair容器 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Pair容器 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a022555d240ce1f7bcbc3aa481e5f64e1"></a><!-- doxytag: member="RCWildcardCensor::GetPairs" ref="a022555d240ce1f7bcbc3aa481e5f64e1" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCVector&lt;<a class="el" href="../../d3/d1b/classRCWildcardPair.html">RCWildcardPair</a>&gt;&amp; RCWildcardCensor::GetPairs </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取Pair容器 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Pair容器引用 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a96baf0d86e661f3c11d8c3c475466a66"></a><!-- doxytag: member="RCWildcardCensor::m_pairs" ref="a96baf0d86e661f3c11d8c3c475466a66" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCVector&lt;<a class="el" href="../../d3/d1b/classRCWildcardPair.html">RCWildcardPair</a>&gt; <a class="el" href="../../d2/dc7/classRCWildcardCensor.html#a96baf0d86e661f3c11d8c3c475466a66">RCWildcardCensor::m_pairs</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>匹配对容器 </p>
+
+<p>在文件<a class="el" href="../../df/d73/RCWildcardCensor_8h_source.html">RCWildcardCensor.h</a>第<a class="el" href="../../df/d73/RCWildcardCensor_8h_source.html#l00068">68</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d73/RCWildcardCensor_8h_source.html">RCWildcardCensor.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

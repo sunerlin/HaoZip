@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: Sha256.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Sha256.h</h1><a href="../../db/d0a/Sha256_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Crypto/Sha256.h -- SHA-256 Hash function</span>
+<a name="l00002"></a>00002 <span class="comment">2008-08-05</span>
+<a name="l00003"></a>00003 <span class="comment">Igor Pavlov</span>
+<a name="l00004"></a>00004 <span class="comment">Public domain */</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 <span class="preprocessor">#ifndef __CRYPTO_SHA256_H</span>
+<a name="l00007"></a>00007 <span class="preprocessor"></span><span class="preprocessor">#define __CRYPTO_SHA256_H</span>
+<a name="l00008"></a>00008 <span class="preprocessor"></span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/df8/Types_8h.html">algorithm/Types.h</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00013"></a>00013 <span class="preprocessor">#endif</span>
+<a name="l00014"></a><a class="code" href="../../db/d0a/Sha256_8h.html#a81efbc0fc101b06a914f7ff9e2fbc0e9">00014</a> <span class="preprocessor"></span><span class="preprocessor">#define SHA256_DIGEST_SIZE 32</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span>
+<a name="l00016"></a><a class="code" href="../../dd/d8f/structCSha256.html">00016</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00017"></a>00017 {
+<a name="l00018"></a><a class="code" href="../../dd/d8f/structCSha256.html#a9ac86da5f4862b4954155d0afdd2701d">00018</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> state[8];
+<a name="l00019"></a><a class="code" href="../../dd/d8f/structCSha256.html#ad0ec5fd988cefab66d9c69990099553d">00019</a>   <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> count;
+<a name="l00020"></a><a class="code" href="../../dd/d8f/structCSha256.html#af9f2d4ee422f4391132a37de5b45166e">00020</a>   <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> buffer[64];
+<a name="l00021"></a>00021 } <a class="code" href="../../dd/d8f/structCSha256.html">CSha256</a>;
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <span class="keywordtype">void</span> <a class="code" href="../../db/d0a/Sha256_8h.html#a1bd92d0f1c846be3b85821d3d7c843e1">Sha256_Init</a>(<a class="code" href="../../dd/d8f/structCSha256.html">CSha256</a> *p);
+<a name="l00024"></a>00024 <span class="keywordtype">void</span> <a class="code" href="../../db/d0a/Sha256_8h.html#a5d5c0347ba65317ace3f9adb7fcb5bde">Sha256_Update</a>(<a class="code" href="../../dd/d8f/structCSha256.html">CSha256</a> *p, <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *data, <span class="keywordtype">size_t</span> size);
+<a name="l00025"></a>00025 <span class="keywordtype">void</span> <a class="code" href="../../db/d0a/Sha256_8h.html#a211b6f295065a6c0ec413142130afc32">Sha256_Final</a>(<a class="code" href="../../dd/d8f/structCSha256.html">CSha256</a> *p, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *digest);
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00028"></a>00028 <span class="preprocessor"></span>}
+<a name="l00029"></a>00029 <span class="preprocessor">#endif</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

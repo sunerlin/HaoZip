@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCClusterInStream.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_8b7f96515591b1fbe1ee4d07ac5a677e.html">filesystem</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCClusterInStream.h</h1><a href="../../d4/d27/RCClusterInStream_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCClusterInStream_h_</span>
+<a name="l00011"></a><a class="code" href="../../d4/d27/RCClusterInStream_8h.html#a51eb4daa684ef01e04d088bcce00af92">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCClusterInStream_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/dc9/IStream_8h.html">interface/IStream.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d06/IUnknownImpl_8h.html">interface/IUnknownImpl.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/d53/RCVector_8h.html">common/RCVector.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00018"></a>00018 
+<a name="l00019"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html">00019</a> <span class="keyword">class </span><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html">RCClusterInStream</a>:
+<a name="l00020"></a>00020     <span class="keyword">public</span> <a class="code" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html">IUnknownImpl</a>&lt;IInStream&gt;
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022 <span class="keyword">public</span>:
+<a name="l00023"></a>00023 <span class="comment"></span>
+<a name="l00024"></a>00024 <span class="comment">    /** 默认构造函数</span>
+<a name="l00025"></a>00025 <span class="comment">    */</span>
+<a name="l00026"></a>00026     <a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html">RCClusterInStream</a>() ;
+<a name="l00027"></a>00027     <span class="comment"></span>
+<a name="l00028"></a>00028 <span class="comment">    /** 默认析构函数</span>
+<a name="l00029"></a>00029 <span class="comment">    */</span>
+<a name="l00030"></a>00030     ~<a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html">RCClusterInStream</a>() ;
+<a name="l00031"></a>00031     
+<a name="l00032"></a>00032 <span class="keyword">public</span>:
+<a name="l00033"></a>00033     <span class="comment"></span>
+<a name="l00034"></a>00034 <span class="comment">    /** 读取数据 </span>
+<a name="l00035"></a>00035 <span class="comment">    @param [out] data 存放数据的缓冲区</span>
+<a name="l00036"></a>00036 <span class="comment">    @param [in] size 缓冲区大小</span>
+<a name="l00037"></a>00037 <span class="comment">    @param [out] processedSize 实际读取的大小</span>
+<a name="l00038"></a>00038 <span class="comment">    @return 如果成功则返回RC_S_OK，否则返回错误号</span>
+<a name="l00039"></a>00039 <span class="comment">    */</span>
+<a name="l00040"></a>00040     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Read(<span class="keywordtype">void</span>* data, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>* processedSize) ;
+<a name="l00041"></a>00041     <span class="comment"></span>
+<a name="l00042"></a>00042 <span class="comment">    /** 调整指针位置</span>
+<a name="l00043"></a>00043 <span class="comment">    @param [in] offset 需要调整的偏移量</span>
+<a name="l00044"></a>00044 <span class="comment">    @param [in] seekOrigin 调整的基准位置</span>
+<a name="l00045"></a>00045 <span class="comment">    @param [out] newPosition 调整后的文件偏移</span>
+<a name="l00046"></a>00046 <span class="comment">    @return 如果成功则返回RC_S_OK，否则返回错误号</span>
+<a name="l00047"></a>00047 <span class="comment">    */</span>
+<a name="l00048"></a>00048     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Seek(<a class="code" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> offset, <a class="code" href="../../d7/d5a/namespaceRCZip.html#a0bb101585da6c62f02ca00f67fb48741">RC_STREAM_SEEK</a> seekOrigin, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>* newPosition) ;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 <span class="keyword">public</span>:
+<a name="l00051"></a>00051     <span class="comment"></span>
+<a name="l00052"></a>00052 <span class="comment">    /** 移动到指定物理位置</span>
+<a name="l00053"></a>00053 <span class="comment">    @return 如果成功则返回RC_S_OK，否则返回错误号</span>
+<a name="l00054"></a>00054 <span class="comment">    */</span>
+<a name="l00055"></a>00055     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> SeekToPhys() ;
+<a name="l00056"></a>00056     <span class="comment"></span>
+<a name="l00057"></a>00057 <span class="comment">    /** 初始化并定位文件偏移</span>
+<a name="l00058"></a>00058 <span class="comment">    @return 如果成功则返回RC_S_OK，否则返回错误号</span>
+<a name="l00059"></a>00059 <span class="comment">    */</span>
+<a name="l00060"></a>00060     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> InitAndSeek() ;
+<a name="l00061"></a>00061     
+<a name="l00062"></a>00062 <span class="keyword">public</span>:
+<a name="l00063"></a>00063     <span class="comment"></span>
+<a name="l00064"></a>00064 <span class="comment">    /** 输入流接口</span>
+<a name="l00065"></a>00065 <span class="comment">    */</span>
+<a name="l00066"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#ad07fe9582737a4c844f7472c2eb375bf">00066</a>     <a class="code" href="../../d9/d13/classRCComPtr.html">IInStreamPtr</a> m_stream ;
+<a name="l00067"></a>00067     <span class="comment"></span>
+<a name="l00068"></a>00068 <span class="comment">    /** 起始偏移位置</span>
+<a name="l00069"></a>00069 <span class="comment">    */</span>
+<a name="l00070"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#a2941a37da699f5501d1338295fe2c51c">00070</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_startOffset ;
+<a name="l00071"></a>00071     <span class="comment"></span>
+<a name="l00072"></a>00072 <span class="comment">    /** 大小</span>
+<a name="l00073"></a>00073 <span class="comment">    */</span>
+<a name="l00074"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#a067a3cffc5d7281dd6146296d9418319">00074</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_size ;
+<a name="l00075"></a>00075     <span class="comment"></span>
+<a name="l00076"></a>00076 <span class="comment">    /** 逻辑块地址</span>
+<a name="l00077"></a>00077 <span class="comment">    */</span>
+<a name="l00078"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#a61240dbed4b89da9c6939fe9215257cb">00078</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> m_blockSizeLog ;
+<a name="l00079"></a>00079     <span class="comment"></span>
+<a name="l00080"></a>00080 <span class="comment">    /** 位置向量</span>
+<a name="l00081"></a>00081 <span class="comment">    */</span>
+<a name="l00082"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#a858e3ff4b3baf8c369c97df041b367c7">00082</a>     RCVector&lt;uint32_t&gt; m_vector ;
+<a name="l00083"></a>00083     
+<a name="l00084"></a>00084 <span class="keyword">private</span>:
+<a name="l00085"></a>00085     <span class="comment"></span>
+<a name="l00086"></a>00086 <span class="comment">    /** 虚拟位置</span>
+<a name="l00087"></a>00087 <span class="comment">    */</span>
+<a name="l00088"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#aae8ec9d4dcaf5df5e60830f1d5ef7151">00088</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_virtPos;
+<a name="l00089"></a>00089     <span class="comment"></span>
+<a name="l00090"></a>00090 <span class="comment">    /** 物理位置</span>
+<a name="l00091"></a>00091 <span class="comment">    */</span>
+<a name="l00092"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#a56b5d9a2e8f101acb526e5311b233cc4">00092</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_physPos;
+<a name="l00093"></a>00093     <span class="comment"></span>
+<a name="l00094"></a>00094 <span class="comment">    /** 当前位置</span>
+<a name="l00095"></a>00095 <span class="comment">    */</span>
+<a name="l00096"></a><a class="code" href="../../df/d91/classRCZip_1_1RCClusterInStream.html#ae8ee5f62bfae78e1a2196253120580dd">00096</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_curRem;
+<a name="l00097"></a>00097 };
+<a name="l00098"></a>00098 <span class="comment"></span>
+<a name="l00099"></a>00099 <span class="comment">/** 智能指针定义</span>
+<a name="l00100"></a>00100 <span class="comment">*/</span>
+<a name="l00101"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a57efffc3c3f97af671c32556a2e82115">00101</a> <span class="keyword">typedef</span> <a class="code" href="../../d9/d13/classRCComPtr.html">RCComPtr&lt;RCClusterInStream&gt;</a>   <a class="code" href="../../d9/d13/classRCComPtr.html">RCClusterInStreamPtr</a> ;
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 <span class="preprocessor">#endif //__RCClusterInStream_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdateOptions.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_1fee5ccf71dc3b0de21adbdee5795b7f.html">update</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdateOptions.h</h1><a href="../../df/df3/RCUpdateOptions_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCUpdateOptions_h_</span>
+<a name="l00011"></a><a class="code" href="../../df/df3/RCUpdateOptions_8h.html#a27854ee74878405886febf5d86cc6a8c">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCUpdateOptions_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/d51/RCTypes_8h.html">base/RCTypes.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/d1f/RCCompressMethodMode_8h.html">archive/update/RCCompressMethodMode.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d63/RCUpdateArchiveCommand_8h.html">archive/update/RCUpdateArchiveCommand.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/db1/RCArchivePath_8h.html">archive/update/RCArchivePath.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../da/db9/RCArchiveUpdateFilter_8h.html">archive/update/RCArchiveUpdateFilter.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="../../d9/d1f/IEnumDirItemFilter_8h.html">archive/common/IEnumDirItemFilter.h</a>&quot;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="keyword">class </span><a class="code" href="../../dd/dd1/classRCArchiveCodecs.html">RCArchiveCodecs</a>;
+<a name="l00023"></a>00023 <span class="keyword">class </span>IOutStreamEvent ;
+<a name="l00024"></a>00024 <span class="comment"></span>
+<a name="l00025"></a>00025 <span class="comment">/** 压缩update选项参数</span>
+<a name="l00026"></a>00026 <span class="comment">*/</span>
+<a name="l00027"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html">00027</a> <span class="keyword">class </span><a class="code" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029 <span class="keyword">public</span>:<span class="comment"></span>
+<a name="l00030"></a>00030 <span class="comment">    /** 构造函数</span>
+<a name="l00031"></a>00031 <span class="comment">    */</span>
+<a name="l00032"></a>00032     <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a73c8abbbcdcf710104243e3f84717d8e">RCUpdateOptions</a>() ;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 <span class="keyword">public</span>:
+<a name="l00035"></a>00035     <span class="comment"></span>
+<a name="l00036"></a>00036 <span class="comment">    /** 保存路径模式</span>
+<a name="l00037"></a>00037 <span class="comment">    */</span>
+<a name="l00038"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">00038</a>     <span class="keyword">enum</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">path_mode</a>
+<a name="l00039"></a>00039     {
+<a name="l00040"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eba08580ee512473ac291a670a8eb090dec">00040</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eba08580ee512473ac291a670a8eb090dec">RC_UPDATE_RELATIVE_PATH</a> = 0 ,
+<a name="l00041"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90ebaa7a5596d008a421bb95a2a87999ef2f6">00041</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90ebaa7a5596d008a421bb95a2a87999ef2f6">RC_UPDATE_ABSOLUTE_PATH</a> = 1 ,
+<a name="l00042"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eba0f792c787b87365a6ca57fc4d882e538">00042</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eba0f792c787b87365a6ca57fc4d882e538">RC_UPDATE_NO_PATH</a>       = 2 ,
+<a name="l00043"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90ebac9a89b900bce76aa42601d31afb5c7b4">00043</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90ebac9a89b900bce76aa42601d31afb5c7b4">RC_UPDATE_ABSOLUTE_FULL_PATH</a> = 3
+<a name="l00044"></a>00044     };
+<a name="l00045"></a>00045     <span class="comment"></span>
+<a name="l00046"></a>00046 <span class="comment">    /** 压缩更新模式</span>
+<a name="l00047"></a>00047 <span class="comment">    */</span>
+<a name="l00048"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">00048</a>     <span class="keyword">enum</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">update_mode</a>
+<a name="l00049"></a>00049     {
+<a name="l00050"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baaa3828fe9a010be78b88071d0d8bf7846">00050</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baaa3828fe9a010be78b88071d0d8bf7846">RC_COMPRESS_FILES_ADD_REPLACE</a>       = 0 ,
+<a name="l00051"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baa2566cdfe6f98b32d31d3771df7d4d0a2">00051</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baa2566cdfe6f98b32d31d3771df7d4d0a2">RC_COMPRESS_FILES_ADD_UPDATE</a>        = 1 ,
+<a name="l00052"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baa2e322b7b27688efc0b2e80be5ee0db76">00052</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baa2e322b7b27688efc0b2e80be5ee0db76">RC_COMPRESS_FILES_UPDATE_EXIST_ONLY</a> = 2 ,
+<a name="l00053"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baabf45c891e31f03089d440b546a9328b6">00053</a>         <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baabf45c891e31f03089d440b546a9328b6">RC_COMPRESS_FILES_SYNC_CONTENT</a>      = 3
+<a name="l00054"></a>00054     };
+<a name="l00055"></a>00055     
+<a name="l00056"></a>00056 <span class="keyword">public</span>:<span class="comment"></span>
+<a name="l00057"></a>00057 <span class="comment">    /** 初始化</span>
+<a name="l00058"></a>00058 <span class="comment">    @param [in] codecs 编码管理器</span>
+<a name="l00059"></a>00059 <span class="comment">    @param [in] formatIndices 文档格式列表</span>
+<a name="l00060"></a>00060 <span class="comment">    @param [in] arcPath 文档路径</span>
+<a name="l00061"></a>00061 <span class="comment">    @param [in] pathMode 保存路径模式</span>
+<a name="l00062"></a>00062 <span class="comment">    @param [in] updateMode 压缩更新模式</span>
+<a name="l00063"></a>00063 <span class="comment">    @return 成功返回true,否则返回false</span>
+<a name="l00064"></a>00064 <span class="comment">    */</span>
+<a name="l00065"></a>00065     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a3318a257f5965298963157eb49821271">Init</a>(<span class="keyword">const</span> <a class="code" href="../../dd/dd1/classRCArchiveCodecs.html">RCArchiveCodecs</a>* codecs,
+<a name="l00066"></a>00066               <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#aafc38f456378f997cf5759ecac539b92">RCUIntVector</a>&amp; formatIndices, 
+<a name="l00067"></a>00067               <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; arcPath,
+<a name="l00068"></a>00068               <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> pathMode = <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eba08580ee512473ac291a670a8eb090dec">RC_UPDATE_RELATIVE_PATH</a>,
+<a name="l00069"></a>00069               <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a> updateMode = <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287baaa3828fe9a010be78b88071d0d8bf7846">RC_COMPRESS_FILES_ADD_REPLACE</a>);
+<a name="l00070"></a>00070                 
+<a name="l00071"></a>00071 <span class="keyword">public</span>:
+<a name="l00072"></a>00072     <span class="comment"></span>
+<a name="l00073"></a>00073 <span class="comment">    /** 取得压缩方式</span>
+<a name="l00074"></a>00074 <span class="comment">    @return 返回压缩方式</span>
+<a name="l00075"></a>00075 <span class="comment">    */</span>
+<a name="l00076"></a>00076     <span class="keyword">const</span> <a class="code" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a97825abd4209f89b6895a5e7ab852d97">GetMethodMode</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00077"></a>00077     <span class="comment"></span>
+<a name="l00078"></a>00078 <span class="comment">    /** 取得压缩方式</span>
+<a name="l00079"></a>00079 <span class="comment">    @return 返回压缩方式</span>
+<a name="l00080"></a>00080 <span class="comment">    */</span>
+<a name="l00081"></a>00081     <a class="code" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a97825abd4209f89b6895a5e7ab852d97">GetMethodMode</a>(<span class="keywordtype">void</span>);
+<a name="l00082"></a>00082 <span class="comment"></span>
+<a name="l00083"></a>00083 <span class="comment">    /** 取得压缩命令列表</span>
+<a name="l00084"></a>00084 <span class="comment">    @return 返回压缩命令列表</span>
+<a name="l00085"></a>00085 <span class="comment">    */</span>
+<a name="l00086"></a>00086     <span class="keyword">const</span> std::vector&lt;RCUpdateArchiveCommand&gt;&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a281c221f1d4d2aa37870d32b44e711d4">GetCommands</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00087"></a>00087         <span class="comment"></span>
+<a name="l00088"></a>00088 <span class="comment">    /** 取得压缩命令列表</span>
+<a name="l00089"></a>00089 <span class="comment">    @return 返回压缩命令列表</span>
+<a name="l00090"></a>00090 <span class="comment">    */</span>
+<a name="l00091"></a>00091     std::vector&lt;RCUpdateArchiveCommand&gt;&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a281c221f1d4d2aa37870d32b44e711d4">GetCommands</a>(<span class="keywordtype">void</span>);
+<a name="l00092"></a>00092 <span class="comment"></span>
+<a name="l00093"></a>00093 <span class="comment">    /** 是否更新文档</span>
+<a name="l00094"></a>00094 <span class="comment">    @return 更新文档自身返回true,否则返回false</span>
+<a name="l00095"></a>00095 <span class="comment">    */</span>
+<a name="l00096"></a>00096     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#acc2cccc2f14a169bb6d3aa824ec025c8">GetUpdateArchiveItSelf</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00097"></a>00097     <span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">    /** 设置更新文档</span>
+<a name="l00099"></a>00099 <span class="comment">    @param [in] updateArchiveItSelf 更新文档</span>
+<a name="l00100"></a>00100 <span class="comment">    */</span>
+<a name="l00101"></a>00101     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a984907f3d6c69c978157912867cfe070">SetUpdateArchiveItSelf</a>(<span class="keywordtype">bool</span> updateArchiveItSelf);
+<a name="l00102"></a>00102 <span class="comment"></span>
+<a name="l00103"></a>00103 <span class="comment">    /** 返回文档路径</span>
+<a name="l00104"></a>00104 <span class="comment">    @return 返回文档路径</span>
+<a name="l00105"></a>00105 <span class="comment">    */</span>
+<a name="l00106"></a>00106     <span class="keyword">const</span> <a class="code" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ae63c506ecf89c3de8eb9d146ac3984b1">GetArchivePath</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00107"></a>00107     <span class="comment"></span>
+<a name="l00108"></a>00108 <span class="comment">    /** 返回文档路径</span>
+<a name="l00109"></a>00109 <span class="comment">    @return 返回文档路径</span>
+<a name="l00110"></a>00110 <span class="comment">    */</span>
+<a name="l00111"></a>00111     <a class="code" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ae63c506ecf89c3de8eb9d146ac3984b1">GetArchivePath</a>(<span class="keywordtype">void</span>);
+<a name="l00112"></a>00112 <span class="comment"></span>
+<a name="l00113"></a>00113 <span class="comment">    /** 自解压模式</span>
+<a name="l00114"></a>00114 <span class="comment">    @return 自解压模式返回true,否则返回false</span>
+<a name="l00115"></a>00115 <span class="comment">    */</span>
+<a name="l00116"></a>00116     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#aaa519c55e69a522b521e3a1718187b3b">GetSfxMode</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00117"></a>00117     <span class="comment"></span>
+<a name="l00118"></a>00118 <span class="comment">    /** 设置自解压模式</span>
+<a name="l00119"></a>00119 <span class="comment">    @param [in] sfxMode 自解压模式</span>
+<a name="l00120"></a>00120 <span class="comment">    */</span>
+<a name="l00121"></a>00121     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad6334fbc36a4fe7a6c23ce9a46d9584a">SetSfxMode</a>(<span class="keywordtype">bool</span> sfxMode);
+<a name="l00122"></a>00122 <span class="comment"></span>
+<a name="l00123"></a>00123 <span class="comment">    /** 返回自解压模块文件名</span>
+<a name="l00124"></a>00124 <span class="comment">    @return 返回自解压模块文件名</span>
+<a name="l00125"></a>00125 <span class="comment">    */</span>
+<a name="l00126"></a>00126     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0010707e5b85d7b5c2a7662e23a3ad7c">GetSfxModule</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00127"></a>00127     <span class="comment"></span>
+<a name="l00128"></a>00128 <span class="comment">    /** 设置自解压模块文件名</span>
+<a name="l00129"></a>00129 <span class="comment">    @param [in] sfxModule 自解压模块</span>
+<a name="l00130"></a>00130 <span class="comment">    */</span>
+<a name="l00131"></a>00131     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a4ad4185691695670c81622afbbaca8e9">SetSfxModule</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; sfxModule);
+<a name="l00132"></a>00132 <span class="comment"></span>
+<a name="l00133"></a>00133 <span class="comment">    /** 返回共享写</span>
+<a name="l00134"></a>00134 <span class="comment">    @return 共享写返回true,否则返回false</span>
+<a name="l00135"></a>00135 <span class="comment">    */</span>
+<a name="l00136"></a>00136     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a17f6f55d2b75c8d70e2601a4d73d37c7">GetOpenShareForWrite</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00137"></a>00137     <span class="comment"></span>
+<a name="l00138"></a>00138 <span class="comment">    /** 设置共享写</span>
+<a name="l00139"></a>00139 <span class="comment">    @param [in] openShareForWrite 共享写</span>
+<a name="l00140"></a>00140 <span class="comment">    */</span>
+<a name="l00141"></a>00141     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a2d8480b92b61274f81a807eed9de0827">SetOpenShareForWrite</a>(<span class="keywordtype">bool</span> openShareForWrite);
+<a name="l00142"></a>00142 <span class="comment"></span>
+<a name="l00143"></a>00143 <span class="comment">    /** 标准输入模式</span>
+<a name="l00144"></a>00144 <span class="comment">    @return 标准输入模式返回true,否则返回false</span>
+<a name="l00145"></a>00145 <span class="comment">    */</span>
+<a name="l00146"></a>00146     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a258655ad360103d3f067e687f4449c52">GetStdInMode</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00147"></a>00147     <span class="comment"></span>
+<a name="l00148"></a>00148 <span class="comment">    /** 设置标准输入模式</span>
+<a name="l00149"></a>00149 <span class="comment">    @param [in] stdInMode 标准输入模式</span>
+<a name="l00150"></a>00150 <span class="comment">    */</span>
+<a name="l00151"></a>00151     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a436b4da549742e71b711c9bab6b75900">SetStdInMode</a>(<span class="keywordtype">bool</span> stdInMode);
+<a name="l00152"></a>00152 <span class="comment"></span>
+<a name="l00153"></a>00153 <span class="comment">    /** 返回标准输入文件名</span>
+<a name="l00154"></a>00154 <span class="comment">    @return 返回标准输入文件名</span>
+<a name="l00155"></a>00155 <span class="comment">    */</span>
+<a name="l00156"></a>00156     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a5f0aec9bbbfaf18a7e9cee0e7b4ca60a">GetStdInFileName</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00157"></a>00157     <span class="comment"></span>
+<a name="l00158"></a>00158 <span class="comment">    /** 设置标准输入文件名</span>
+<a name="l00159"></a>00159 <span class="comment">    @param [in] stdInFileName 标准输入文件名</span>
+<a name="l00160"></a>00160 <span class="comment">    */</span>
+<a name="l00161"></a>00161     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad6974d39ff72119f47b206c523927f58">SetStdInFileName</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; stdInFileName);
+<a name="l00162"></a>00162 <span class="comment"></span>
+<a name="l00163"></a>00163 <span class="comment">    /** 是否标准输出</span>
+<a name="l00164"></a>00164 <span class="comment">    @return 标准输出返回true,否则返回false</span>
+<a name="l00165"></a>00165 <span class="comment">    */</span>
+<a name="l00166"></a>00166     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#aed529020096a4444f814c09c8f329203">GetStdOutMode</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00167"></a>00167     <span class="comment"></span>
+<a name="l00168"></a>00168 <span class="comment">    /** 设置标准输出</span>
+<a name="l00169"></a>00169 <span class="comment">    @param [in] stdOutMode 标准输出模式</span>
+<a name="l00170"></a>00170 <span class="comment">    */</span>
+<a name="l00171"></a>00171     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0fea7ce2348763e5674d6a99f7def7ee">SetStdOutMode</a>(<span class="keywordtype">bool</span> stdOutMode);
+<a name="l00172"></a>00172     <span class="comment"></span>
+<a name="l00173"></a>00173 <span class="comment">    /** 是否测试模式</span>
+<a name="l00174"></a>00174 <span class="comment">    @return 测试模式返回true,否则返回false</span>
+<a name="l00175"></a>00175 <span class="comment">    */</span>
+<a name="l00176"></a>00176     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a5f3513b4695c3c3ddf1eafa769f748ce">IsTestMode</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00177"></a>00177     <span class="comment"></span>
+<a name="l00178"></a>00178 <span class="comment">    /** 设置测试模式</span>
+<a name="l00179"></a>00179 <span class="comment">    @param [in] isTestMode 测试模式</span>
+<a name="l00180"></a>00180 <span class="comment">    */</span>
+<a name="l00181"></a>00181     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a6543b73ce2f2e7bd0284dabf0d84d9c8">SetIsTestMode</a>(<span class="keywordtype">bool</span> isTestMode);
+<a name="l00182"></a>00182 <span class="comment"></span>
+<a name="l00183"></a>00183 <span class="comment">    /** 是否Email 模式</span>
+<a name="l00184"></a>00184 <span class="comment">    @return Email模式返回true，否则返回false</span>
+<a name="l00185"></a>00185 <span class="comment">    */</span>
+<a name="l00186"></a>00186     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a9edd9e5e68367bfcbbdb632c6580d7f4">GetEmailMode</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00187"></a>00187     <span class="comment"></span>
+<a name="l00188"></a>00188 <span class="comment">    /** 设置Email模式</span>
+<a name="l00189"></a>00189 <span class="comment">    @param [in] emailMode Email模式</span>
+<a name="l00190"></a>00190 <span class="comment">    */</span>
+<a name="l00191"></a>00191     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ac04dc805137e6009dd5dc9151139bae2">SetEmailMode</a>(<span class="keywordtype">bool</span> emailMode);
+<a name="l00192"></a>00192 <span class="comment"></span>
+<a name="l00193"></a>00193 <span class="comment">    /** 是否发生后删除</span>
+<a name="l00194"></a>00194 <span class="comment">    @return email后删除返回true，否则返回false</span>
+<a name="l00195"></a>00195 <span class="comment">    */</span>
+<a name="l00196"></a>00196     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a27c56d9607ec9d15c58d20fe6da56566">GetEmailRemoveAfter</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00197"></a>00197     <span class="comment"></span>
+<a name="l00198"></a>00198 <span class="comment">    /** 设置Email后删除</span>
+<a name="l00199"></a>00199 <span class="comment">    @param [in] emailRemoveAfter 发生后删除</span>
+<a name="l00200"></a>00200 <span class="comment">    */</span>
+<a name="l00201"></a>00201     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a3b12a1556a9c3043c4d76a4d618877dd">SetEmailRemoveAfter</a>(<span class="keywordtype">bool</span> emailRemoveAfter);
+<a name="l00202"></a>00202 <span class="comment"></span>
+<a name="l00203"></a>00203 <span class="comment">    /** 返回邮件地址</span>
+<a name="l00204"></a>00204 <span class="comment">    @return 返回邮件发生地址</span>
+<a name="l00205"></a>00205 <span class="comment">    */</span>
+<a name="l00206"></a>00206     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a89f16c02f4f768c7dec8a92fb28541cf">GetEmailAddress</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00207"></a>00207     <span class="comment"></span>
+<a name="l00208"></a>00208 <span class="comment">    /** 设置邮件地址</span>
+<a name="l00209"></a>00209 <span class="comment">    @param [in] emailAddress 邮件发送地址</span>
+<a name="l00210"></a>00210 <span class="comment">    */</span>
+<a name="l00211"></a>00211     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a7478a6db0421c4a63e87e298496de6f4">SetEmailAddress</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; emailAddress);
+<a name="l00212"></a>00212 <span class="comment"></span>
+<a name="l00213"></a>00213 <span class="comment">    /** 返回工作目录</span>
+<a name="l00214"></a>00214 <span class="comment">    @return 返回工作目录</span>
+<a name="l00215"></a>00215 <span class="comment">    */</span>
+<a name="l00216"></a>00216     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a684e3f98d6424d0a07c787ec7a057cf5">GetWorkDir</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00217"></a>00217     <span class="comment"></span>
+<a name="l00218"></a>00218 <span class="comment">    /** 设置工作目录</span>
+<a name="l00219"></a>00219 <span class="comment">    @param [in] workDir 工作目录</span>
+<a name="l00220"></a>00220 <span class="comment">    */</span>
+<a name="l00221"></a>00221     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ab46be84ae2b62f979c9cb12d1a8c8b01">SetWorkDir</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; workDir);
+<a name="l00222"></a>00222 <span class="comment"></span>
+<a name="l00223"></a>00223 <span class="comment">    /** 取得分卷大小列表</span>
+<a name="l00224"></a>00224 <span class="comment">    @return 返回分卷大小列表</span>
+<a name="l00225"></a>00225 <span class="comment">    */</span>
+<a name="l00226"></a>00226     <span class="keyword">const</span> std::vector&lt;uint64_t&gt;&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ae26d9fd8b8c960bbe05fc54e94667ad3">GetVolumnSizes</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00227"></a>00227     <span class="comment"></span>
+<a name="l00228"></a>00228 <span class="comment">    /** 取得分卷大小列表</span>
+<a name="l00229"></a>00229 <span class="comment">    @return 返回分卷大小列表</span>
+<a name="l00230"></a>00230 <span class="comment">    */</span>
+<a name="l00231"></a>00231     std::vector&lt;uint64_t&gt;&amp; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ae26d9fd8b8c960bbe05fc54e94667ad3">GetVolumnSizes</a>(<span class="keywordtype">void</span>);
+<a name="l00232"></a>00232         <span class="comment"></span>
+<a name="l00233"></a>00233 <span class="comment">    /** 获取保存路径模式</span>
+<a name="l00234"></a>00234 <span class="comment">    @return 返回路径保存模式</span>
+<a name="l00235"></a>00235 <span class="comment">    */</span>
+<a name="l00236"></a>00236     <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a16c6687026780e2d7a241832e9f5d2b7">GetPathMode</a>() <span class="keyword">const</span> ;
+<a name="l00237"></a>00237         <span class="comment"></span>
+<a name="l00238"></a>00238 <span class="comment">    /** 获取更新方式</span>
+<a name="l00239"></a>00239 <span class="comment">    @return 返回更新方式</span>
+<a name="l00240"></a>00240 <span class="comment">    */</span>
+<a name="l00241"></a>00241     <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a4b1d1777fc87e11d91a0462abec021f6">GetUpdateMode</a>() <span class="keyword">const</span> ;
+<a name="l00242"></a>00242         <span class="comment"></span>
+<a name="l00243"></a>00243 <span class="comment">    /** 设置IO写入事件处理</span>
+<a name="l00244"></a>00244 <span class="comment">    @param [in] outStreamEvent 输出流事件接口</span>
+<a name="l00245"></a>00245 <span class="comment">    */</span>
+<a name="l00246"></a>00246     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#acccfcc6fe02238df72784ad59a360d78">SetOutStreamEvent</a>(IOutStreamEvent* outStreamEvent) ;
+<a name="l00247"></a>00247     <span class="comment"></span>
+<a name="l00248"></a>00248 <span class="comment">    /** 获取IO写入事件处理</span>
+<a name="l00249"></a>00249 <span class="comment">    @return 返回输出流事件接口</span>
+<a name="l00250"></a>00250 <span class="comment">    */</span>
+<a name="l00251"></a>00251     IOutStreamEvent* <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a88d1fed9e4226c27acf0e985bda7318b">GetOutStreamEvent</a>() <span class="keyword">const</span> ;
+<a name="l00252"></a>00252     <span class="comment"></span>
+<a name="l00253"></a>00253 <span class="comment">    /** 设置压缩文件过滤器</span>
+<a name="l00254"></a>00254 <span class="comment">    @param [in] spUpdateFilter 压缩文件过滤器</span>
+<a name="l00255"></a>00255 <span class="comment">    */</span>
+<a name="l00256"></a>00256     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#aa3d606331cf79e7b78e970fe069e194b">SetUpdateFileter</a>(<span class="keyword">const</span> <a class="code" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a>&amp; spUpdateFilter) ;
+<a name="l00257"></a>00257     <span class="comment"></span>
+<a name="l00258"></a>00258 <span class="comment">    /** 获取压缩文件过滤器</span>
+<a name="l00259"></a>00259 <span class="comment">    @return 返回压缩文件过滤器</span>
+<a name="l00260"></a>00260 <span class="comment">    */</span>
+<a name="l00261"></a>00261     <a class="code" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a9d20430478c68abefd0684277c3dc821">GetUpdateFileter</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00262"></a>00262     <span class="comment"></span>
+<a name="l00263"></a>00263 <span class="comment">    /** 设置被压缩的文件过滤器</span>
+<a name="l00264"></a>00264 <span class="comment">    @param [in] spEnumDirItemFilter 文件枚举过滤器</span>
+<a name="l00265"></a>00265 <span class="comment">    */</span>
+<a name="l00266"></a>00266     <span class="keywordtype">void</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a636d1e31f572cce600a6fdae18bec191">SetEnumDirItemFilter</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a>&amp; spEnumDirItemFilter) ;
+<a name="l00267"></a>00267     <span class="comment"></span>
+<a name="l00268"></a>00268 <span class="comment">    /** 获取被压缩的文件过滤器</span>
+<a name="l00269"></a>00269 <span class="comment">    @return 返回被压缩的文件过滤器</span>
+<a name="l00270"></a>00270 <span class="comment">    */</span>
+<a name="l00271"></a>00271     <a class="code" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a75fa7bc233eb26ad9fd9473ab730a4ad">GetEnumDirItemFilter</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00272"></a>00272 
+<a name="l00273"></a>00273 <span class="keyword">private</span>:
+<a name="l00274"></a>00274     <span class="comment"></span>
+<a name="l00275"></a>00275 <span class="comment">    /** 压缩方法模式</span>
+<a name="l00276"></a>00276 <span class="comment">    */</span>
+<a name="l00277"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a59ff159021dd503f833b2e1678bd2eb0">00277</a>     <a class="code" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a59ff159021dd503f833b2e1678bd2eb0">m_methodMode</a>;
+<a name="l00278"></a>00278 <span class="comment"></span>
+<a name="l00279"></a>00279 <span class="comment">    /** 命令</span>
+<a name="l00280"></a>00280 <span class="comment">    */</span>
+<a name="l00281"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a626a06f846a95545e55f748a551a4d99">00281</a>     std::vector&lt;RCUpdateArchiveCommand&gt; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a626a06f846a95545e55f748a551a4d99">m_commands</a>;
+<a name="l00282"></a>00282 <span class="comment"></span>
+<a name="l00283"></a>00283 <span class="comment">    /** </span>
+<a name="l00284"></a>00284 <span class="comment">    */</span>
+<a name="l00285"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a4421b36bec02f082d69b4003fb6e69a5">00285</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a4421b36bec02f082d69b4003fb6e69a5">m_updateArchiveItSelf</a>;
+<a name="l00286"></a>00286 <span class="comment"></span>
+<a name="l00287"></a>00287 <span class="comment">    /** 文档路径信息</span>
+<a name="l00288"></a>00288 <span class="comment">    */</span>
+<a name="l00289"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a05fa58eb6a84c1d9febf5b8c671fb61c">00289</a>     <a class="code" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a05fa58eb6a84c1d9febf5b8c671fb61c">m_archivePath</a>;
+<a name="l00290"></a>00290 <span class="comment"></span>
+<a name="l00291"></a>00291 <span class="comment">    /** 自解压模式</span>
+<a name="l00292"></a>00292 <span class="comment">    */</span>
+<a name="l00293"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#ab5572b7bfc5d333ae32557fe77e20e07">00293</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ab5572b7bfc5d333ae32557fe77e20e07">m_sfxMode</a>;
+<a name="l00294"></a>00294 <span class="comment"></span>
+<a name="l00295"></a>00295 <span class="comment">    /** 自解压模块名称</span>
+<a name="l00296"></a>00296 <span class="comment">    */</span>
+<a name="l00297"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#ac4e7d47bdc7e3b30505af94aebda3636">00297</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ac4e7d47bdc7e3b30505af94aebda3636">m_sfxModule</a>;
+<a name="l00298"></a>00298 <span class="comment"></span>
+<a name="l00299"></a>00299 <span class="comment">    /** 共享写入</span>
+<a name="l00300"></a>00300 <span class="comment">    */</span>
+<a name="l00301"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a92396ccd4e2df2125962b944adb3cc62">00301</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a92396ccd4e2df2125962b944adb3cc62">m_openShareForWrite</a>;
+<a name="l00302"></a>00302 <span class="comment"></span>
+<a name="l00303"></a>00303 <span class="comment">    /** 标准输入模式</span>
+<a name="l00304"></a>00304 <span class="comment">    */</span>
+<a name="l00305"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a5150ce65bfc4d9116c1b1cbfc8f9696e">00305</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a5150ce65bfc4d9116c1b1cbfc8f9696e">m_stdInMode</a>;
+<a name="l00306"></a>00306 <span class="comment"></span>
+<a name="l00307"></a>00307 <span class="comment">    /** 标准输入文件名称</span>
+<a name="l00308"></a>00308 <span class="comment">    */</span>
+<a name="l00309"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a69e76806a6fe2287021af2334b4c1057">00309</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a69e76806a6fe2287021af2334b4c1057">m_stdInFileName</a>;
+<a name="l00310"></a>00310 <span class="comment"></span>
+<a name="l00311"></a>00311 <span class="comment">    /** 标准输出模式</span>
+<a name="l00312"></a>00312 <span class="comment">    */</span>
+<a name="l00313"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#acf53a8ec5b652a319e089dc5dc31d0da">00313</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#acf53a8ec5b652a319e089dc5dc31d0da">m_stdOutMode</a>;
+<a name="l00314"></a>00314     <span class="comment"></span>
+<a name="l00315"></a>00315 <span class="comment">    /** 是否为测试模式, 测试模式不生成压缩包，只做压缩测试</span>
+<a name="l00316"></a>00316 <span class="comment">    */</span>
+<a name="l00317"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0c8dd1a65215af95fba1cab4d265a5f7">00317</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0c8dd1a65215af95fba1cab4d265a5f7">m_isTestMode</a> ;
+<a name="l00318"></a>00318 <span class="comment"></span>
+<a name="l00319"></a>00319 <span class="comment">    /** 电子邮件模式</span>
+<a name="l00320"></a>00320 <span class="comment">    */</span>
+<a name="l00321"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#acccd3824456e7c70a663c69812bce744">00321</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#acccd3824456e7c70a663c69812bce744">m_emailMode</a>;
+<a name="l00322"></a>00322 <span class="comment"></span>
+<a name="l00323"></a>00323 <span class="comment">    /** 发送后删除文档</span>
+<a name="l00324"></a>00324 <span class="comment">    */</span>
+<a name="l00325"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a2d6ef172adcf1bc268407a14a4f0e684">00325</a>     <span class="keywordtype">bool</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a2d6ef172adcf1bc268407a14a4f0e684">m_emailRemoveAfter</a>;
+<a name="l00326"></a>00326 <span class="comment"></span>
+<a name="l00327"></a>00327 <span class="comment">    /** 电子邮件地址</span>
+<a name="l00328"></a>00328 <span class="comment">    */</span>
+<a name="l00329"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#aefbfb8c8e9f90efc4564a785606b1c88">00329</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#aefbfb8c8e9f90efc4564a785606b1c88">m_emailAddress</a>;
+<a name="l00330"></a>00330 <span class="comment"></span>
+<a name="l00331"></a>00331 <span class="comment">    /** 工作目录</span>
+<a name="l00332"></a>00332 <span class="comment">    */</span>
+<a name="l00333"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad525d265d01d9dbcffd3ed5619f7021f">00333</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad525d265d01d9dbcffd3ed5619f7021f">m_workingDir</a>;
+<a name="l00334"></a>00334 <span class="comment"></span>
+<a name="l00335"></a>00335 <span class="comment">    /** 分卷大小</span>
+<a name="l00336"></a>00336 <span class="comment">    */</span>
+<a name="l00337"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#aac4db616ae4e7cb9aa98889055488f82">00337</a>     std::vector&lt;uint64_t&gt; <a class="code" href="../../d1/de0/classRCUpdateOptions.html#aac4db616ae4e7cb9aa98889055488f82">m_volumnsSizes</a>;
+<a name="l00338"></a>00338         <span class="comment"></span>
+<a name="l00339"></a>00339 <span class="comment">    /** 保存路径模式</span>
+<a name="l00340"></a>00340 <span class="comment">    */</span>
+<a name="l00341"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad2b56f046bf57d7b90f25da4d304f357">00341</a>     <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad2b56f046bf57d7b90f25da4d304f357">m_pathMode</a> ;
+<a name="l00342"></a>00342         <span class="comment"></span>
+<a name="l00343"></a>00343 <span class="comment">    /** 更新方式</span>
+<a name="l00344"></a>00344 <span class="comment">    */</span>
+<a name="l00345"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#af014833b873dd9550ec97512090166a0">00345</a>     <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0362445e7a32934798a17ece7b2287ba">RCUpdateOptions::update_mode</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#af014833b873dd9550ec97512090166a0">m_updateMode</a> ;
+<a name="l00346"></a>00346 <span class="comment"></span>
+<a name="l00347"></a>00347 <span class="comment">    /** IO 事件处理</span>
+<a name="l00348"></a>00348 <span class="comment">    */</span>
+<a name="l00349"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a5268b156974b99f648a88c9c4499624b">00349</a>     IOutStreamEvent* <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a5268b156974b99f648a88c9c4499624b">m_outStreamEvent</a> ;
+<a name="l00350"></a>00350     <span class="comment"></span>
+<a name="l00351"></a>00351 <span class="comment">    /** 压缩文件过滤器</span>
+<a name="l00352"></a>00352 <span class="comment">    */</span>
+<a name="l00353"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad7c290e3baf37e60ddf1b7188e830c26">00353</a>     <a class="code" href="../../da/db9/RCArchiveUpdateFilter_8h.html#ac3f7c007b676063906c59d20e7ae79db">RCArchiveUpdateFilterPtr</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ad7c290e3baf37e60ddf1b7188e830c26">m_spUpdateFilter</a> ;
+<a name="l00354"></a>00354     <span class="comment"></span>
+<a name="l00355"></a>00355 <span class="comment">    /** 缺省文档类型</span>
+<a name="l00356"></a>00356 <span class="comment">    */</span>
+<a name="l00357"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#a52e33a9217b56f77cf9bc497d1400afa">00357</a>     <span class="keyword">static</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a52e33a9217b56f77cf9bc497d1400afa">s_kDefaultArchiveType</a>;
+<a name="l00358"></a>00358     <span class="comment"></span>
+<a name="l00359"></a>00359 <span class="comment">    /** 自解压扩展名</span>
+<a name="l00360"></a>00360 <span class="comment">    */</span>
+<a name="l00361"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#acfc0ccb8e8fc3c7e1057d84d91e4d0cf">00361</a>     <span class="keyword">static</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#acfc0ccb8e8fc3c7e1057d84d91e4d0cf">s_kSFXExtension</a>;
+<a name="l00362"></a>00362     <span class="comment"></span>
+<a name="l00363"></a>00363 <span class="comment">    /** 被压缩的文件过滤器</span>
+<a name="l00364"></a>00364 <span class="comment">    */</span>
+<a name="l00365"></a><a class="code" href="../../d1/de0/classRCUpdateOptions.html#ab0d779ab5c99075e6b0b939e8570ebfc">00365</a>     <a class="code" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> <a class="code" href="../../d1/de0/classRCUpdateOptions.html#ab0d779ab5c99075e6b0b939e8570ebfc">m_spEnumDirItemFilter</a> ;
+<a name="l00366"></a>00366 };
+<a name="l00367"></a>00367 
+<a name="l00368"></a>00368 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00369"></a>00369 
+<a name="l00370"></a>00370 <span class="preprocessor">#endif  //__RCUpdateOptions_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

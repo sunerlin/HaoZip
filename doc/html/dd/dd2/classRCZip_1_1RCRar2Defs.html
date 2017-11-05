@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCRar2Defs类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html">RCRar2Defs</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCRar2Defs类参考</h1><!-- doxytag: class="RCZip::RCRar2Defs" -->
+<p><code>#include &lt;<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>&gt;</code></p>
+
+<p><a href="../../db/d8b/classRCZip_1_1RCRar2Defs-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af0a5fe5c2d6a82922af25f3f20f15406">s_kNumRepDists</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a8f3213cd55f16bef5a1e86653aaf2f9c">s_kDistTableSize</a> = 48</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a87a67031597f41c4c88ed342c4ea613d">s_kMMTableSize</a> = 256 + 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aabbb3978d9a922a4349b033383696cdf">s_kMainTableSize</a> = 298</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a156526881487b0e52b090eee69c6a793">s_kLenTableSize</a> = 28</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a848bcad72896d1a0382453d1127c13d7">s_kDistTableStart</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aabbb3978d9a922a4349b033383696cdf">s_kMainTableSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a719174ccde993f439f35f1d5222393e6">s_kLenTableStart</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a848bcad72896d1a0382453d1127c13d7">s_kDistTableStart</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a8f3213cd55f16bef5a1e86653aaf2f9c">s_kDistTableSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a6de8401b557408e739126d898ee5c100">s_kHeapTablesSizesSum</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aabbb3978d9a922a4349b033383696cdf">s_kMainTableSize</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a8f3213cd55f16bef5a1e86653aaf2f9c">s_kDistTableSize</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a156526881487b0e52b090eee69c6a793">s_kLenTableSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a87ccf3de9bb206832614ac69e90a6467">s_kLevelTableSize</a> = 19</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ab3c72110a1835368db4c3cc32078ec1e">s_kMMTablesSizesSum</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a87a67031597f41c4c88ed342c4ea613d">s_kMMTableSize</a> * 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a25d3f2e193dd7d65b99d4d0121113c0b">s_kMaxTableSize</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ab3c72110a1835368db4c3cc32078ec1e">s_kMMTablesSizesSum</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a898bbd1a07159ecbb946910fb5f39da9">s_kTableDirectLevels</a> = 16</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a9d2920409fb8a0bdefe1d2ce83d485a4">s_kTableLevelRepNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a898bbd1a07159ecbb946910fb5f39da9">s_kTableDirectLevels</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a1d7adcb0040470a91d8c339d4376585d">s_kTableLevel0Number</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a9d2920409fb8a0bdefe1d2ce83d485a4">s_kTableLevelRepNumber</a> + 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a72bb28291366cc1edd3323b5d7fe5f1e">s_kTableLevel0Number2</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a1d7adcb0040470a91d8c339d4376585d">s_kTableLevel0Number</a> + 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af4d9e1e16784548d52946f85e8af1d84">s_kLevelMask</a> = 0xF</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a11f5f867333a621283537f48ef1463ac">s_kRepBothNumber</a> = 256</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ac46b61f9e8623c2ba70b402f7558be8e">s_kRepNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a11f5f867333a621283537f48ef1463ac">s_kRepBothNumber</a> + 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af488629e9d74ce58b1a779ed8c470539">s_kLen2Number</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ac46b61f9e8623c2ba70b402f7558be8e">s_kRepNumber</a> + 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aff5964663ff82ed06a7b18b20300e21e">s_kLen2NumNumbers</a> = 8</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a5d01b9e4660c17b97c5acbb5d6fcb65f">s_kReadTableNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af488629e9d74ce58b1a779ed8c470539">s_kLen2Number</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aff5964663ff82ed06a7b18b20300e21e">s_kLen2NumNumbers</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aa40cc365ba14cc75ebea7ed54d0cc1d3">s_kMatchNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a5d01b9e4660c17b97c5acbb5d6fcb65f">s_kReadTableNumber</a> + 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ae5574644995c863f3a22868293a337a8">s_kDistLimit2</a> = 0x101 - 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ab67aa8090718f230aae223b12b9a3165">s_kDistLimit3</a> = 0x2000 - 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a4b76ac060c8649e9a583788d3495cff4">s_kDistLimit4</a> = 0x40000 - 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a041b88d09f12417eb542c9e58f682132">s_kMatchMaxLen</a> = 255 + 2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#add39220d7ef5f93c4969a4db4921fbd5">s_kMatchMaxLenMax</a> = 255 + 5</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a09844f1aefc7cb327fd3d853bae10dce">s_kNormalMatchMinLen</a> = 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a01d77917602b6931192a94e73cbb9b20">s_kNumChanelsMax</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a1b85ee1b96574b60ca2136c1c8c802af">s_kNumHuffmanBits</a> = 15</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>RAR2 常量定义 </p>
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ae5574644995c863f3a22868293a337a8"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kDistLimit2" ref="ae5574644995c863f3a22868293a337a8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ae5574644995c863f3a22868293a337a8">RCZip::RCRar2Defs::s_kDistLimit2</a> = 0x101 - 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00044">44</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab67aa8090718f230aae223b12b9a3165"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kDistLimit3" ref="ab67aa8090718f230aae223b12b9a3165" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ab67aa8090718f230aae223b12b9a3165">RCZip::RCRar2Defs::s_kDistLimit3</a> = 0x2000 - 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00045">45</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b76ac060c8649e9a583788d3495cff4"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kDistLimit4" ref="a4b76ac060c8649e9a583788d3495cff4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a4b76ac060c8649e9a583788d3495cff4">RCZip::RCRar2Defs::s_kDistLimit4</a> = 0x40000 - 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00046">46</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f3213cd55f16bef5a1e86653aaf2f9c"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kDistTableSize" ref="a8f3213cd55f16bef5a1e86653aaf2f9c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a8f3213cd55f16bef5a1e86653aaf2f9c">RCZip::RCRar2Defs::s_kDistTableSize</a> = 48<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00023">23</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a848bcad72896d1a0382453d1127c13d7"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kDistTableStart" ref="a848bcad72896d1a0382453d1127c13d7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a848bcad72896d1a0382453d1127c13d7">RCZip::RCRar2Defs::s_kDistTableStart</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aabbb3978d9a922a4349b033383696cdf">s_kMainTableSize</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00027">27</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6de8401b557408e739126d898ee5c100"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kHeapTablesSizesSum" ref="a6de8401b557408e739126d898ee5c100" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a6de8401b557408e739126d898ee5c100">RCZip::RCRar2Defs::s_kHeapTablesSizesSum</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aabbb3978d9a922a4349b033383696cdf">s_kMainTableSize</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a8f3213cd55f16bef5a1e86653aaf2f9c">s_kDistTableSize</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a156526881487b0e52b090eee69c6a793">s_kLenTableSize</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00029">29</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af488629e9d74ce58b1a779ed8c470539"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kLen2Number" ref="af488629e9d74ce58b1a779ed8c470539" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af488629e9d74ce58b1a779ed8c470539">RCZip::RCRar2Defs::s_kLen2Number</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ac46b61f9e8623c2ba70b402f7558be8e">s_kRepNumber</a> + 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00040">40</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aff5964663ff82ed06a7b18b20300e21e"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kLen2NumNumbers" ref="aff5964663ff82ed06a7b18b20300e21e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aff5964663ff82ed06a7b18b20300e21e">RCZip::RCRar2Defs::s_kLen2NumNumbers</a> = 8<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00041">41</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a156526881487b0e52b090eee69c6a793"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kLenTableSize" ref="a156526881487b0e52b090eee69c6a793" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a156526881487b0e52b090eee69c6a793">RCZip::RCRar2Defs::s_kLenTableSize</a> = 28<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00026">26</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a719174ccde993f439f35f1d5222393e6"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kLenTableStart" ref="a719174ccde993f439f35f1d5222393e6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a719174ccde993f439f35f1d5222393e6">RCZip::RCRar2Defs::s_kLenTableStart</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a848bcad72896d1a0382453d1127c13d7">s_kDistTableStart</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a8f3213cd55f16bef5a1e86653aaf2f9c">s_kDistTableSize</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af4d9e1e16784548d52946f85e8af1d84"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kLevelMask" ref="af4d9e1e16784548d52946f85e8af1d84" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af4d9e1e16784548d52946f85e8af1d84">RCZip::RCRar2Defs::s_kLevelMask</a> = 0xF<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00037">37</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a87ccf3de9bb206832614ac69e90a6467"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kLevelTableSize" ref="a87ccf3de9bb206832614ac69e90a6467" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a87ccf3de9bb206832614ac69e90a6467">RCZip::RCRar2Defs::s_kLevelTableSize</a> = 19<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00030">30</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aabbb3978d9a922a4349b033383696cdf"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kMainTableSize" ref="aabbb3978d9a922a4349b033383696cdf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aabbb3978d9a922a4349b033383696cdf">RCZip::RCRar2Defs::s_kMainTableSize</a> = 298<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00025">25</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a041b88d09f12417eb542c9e58f682132"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kMatchMaxLen" ref="a041b88d09f12417eb542c9e58f682132" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a041b88d09f12417eb542c9e58f682132">RCZip::RCRar2Defs::s_kMatchMaxLen</a> = 255 + 2<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00047">47</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="add39220d7ef5f93c4969a4db4921fbd5"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kMatchMaxLenMax" ref="add39220d7ef5f93c4969a4db4921fbd5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#add39220d7ef5f93c4969a4db4921fbd5">RCZip::RCRar2Defs::s_kMatchMaxLenMax</a> = 255 + 5<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00048">48</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa40cc365ba14cc75ebea7ed54d0cc1d3"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kMatchNumber" ref="aa40cc365ba14cc75ebea7ed54d0cc1d3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aa40cc365ba14cc75ebea7ed54d0cc1d3">RCZip::RCRar2Defs::s_kMatchNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a5d01b9e4660c17b97c5acbb5d6fcb65f">s_kReadTableNumber</a> + 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00043">43</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a25d3f2e193dd7d65b99d4d0121113c0b"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kMaxTableSize" ref="a25d3f2e193dd7d65b99d4d0121113c0b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a25d3f2e193dd7d65b99d4d0121113c0b">RCZip::RCRar2Defs::s_kMaxTableSize</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ab3c72110a1835368db4c3cc32078ec1e">s_kMMTablesSizesSum</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00032">32</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a87a67031597f41c4c88ed342c4ea613d"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kMMTableSize" ref="a87a67031597f41c4c88ed342c4ea613d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a87a67031597f41c4c88ed342c4ea613d">RCZip::RCRar2Defs::s_kMMTableSize</a> = 256 + 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00024">24</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3c72110a1835368db4c3cc32078ec1e"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kMMTablesSizesSum" ref="ab3c72110a1835368db4c3cc32078ec1e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ab3c72110a1835368db4c3cc32078ec1e">RCZip::RCRar2Defs::s_kMMTablesSizesSum</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a87a67031597f41c4c88ed342c4ea613d">s_kMMTableSize</a> * 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00031">31</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a09844f1aefc7cb327fd3d853bae10dce"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kNormalMatchMinLen" ref="a09844f1aefc7cb327fd3d853bae10dce" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a09844f1aefc7cb327fd3d853bae10dce">RCZip::RCRar2Defs::s_kNormalMatchMinLen</a> = 3<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00049">49</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a01d77917602b6931192a94e73cbb9b20"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kNumChanelsMax" ref="a01d77917602b6931192a94e73cbb9b20" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a01d77917602b6931192a94e73cbb9b20">RCZip::RCRar2Defs::s_kNumChanelsMax</a> = 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00050">50</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b85ee1b96574b60ca2136c1c8c802af"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kNumHuffmanBits" ref="a1b85ee1b96574b60ca2136c1c8c802af" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a1b85ee1b96574b60ca2136c1c8c802af">RCZip::RCRar2Defs::s_kNumHuffmanBits</a> = 15<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00051">51</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af0a5fe5c2d6a82922af25f3f20f15406"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kNumRepDists" ref="af0a5fe5c2d6a82922af25f3f20f15406" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af0a5fe5c2d6a82922af25f3f20f15406">RCZip::RCRar2Defs::s_kNumRepDists</a> = 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00022">22</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d01b9e4660c17b97c5acbb5d6fcb65f"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kReadTableNumber" ref="a5d01b9e4660c17b97c5acbb5d6fcb65f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a5d01b9e4660c17b97c5acbb5d6fcb65f">RCZip::RCRar2Defs::s_kReadTableNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#af488629e9d74ce58b1a779ed8c470539">s_kLen2Number</a> + <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#aff5964663ff82ed06a7b18b20300e21e">s_kLen2NumNumbers</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00042">42</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a11f5f867333a621283537f48ef1463ac"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kRepBothNumber" ref="a11f5f867333a621283537f48ef1463ac" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a11f5f867333a621283537f48ef1463ac">RCZip::RCRar2Defs::s_kRepBothNumber</a> = 256<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00038">38</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac46b61f9e8623c2ba70b402f7558be8e"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kRepNumber" ref="ac46b61f9e8623c2ba70b402f7558be8e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#ac46b61f9e8623c2ba70b402f7558be8e">RCZip::RCRar2Defs::s_kRepNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a11f5f867333a621283537f48ef1463ac">s_kRepBothNumber</a> + 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00039">39</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a898bbd1a07159ecbb946910fb5f39da9"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kTableDirectLevels" ref="a898bbd1a07159ecbb946910fb5f39da9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a898bbd1a07159ecbb946910fb5f39da9">RCZip::RCRar2Defs::s_kTableDirectLevels</a> = 16<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00033">33</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d7adcb0040470a91d8c339d4376585d"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kTableLevel0Number" ref="a1d7adcb0040470a91d8c339d4376585d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a1d7adcb0040470a91d8c339d4376585d">RCZip::RCRar2Defs::s_kTableLevel0Number</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a9d2920409fb8a0bdefe1d2ce83d485a4">s_kTableLevelRepNumber</a> + 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00035">35</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a72bb28291366cc1edd3323b5d7fe5f1e"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kTableLevel0Number2" ref="a72bb28291366cc1edd3323b5d7fe5f1e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a72bb28291366cc1edd3323b5d7fe5f1e">RCZip::RCRar2Defs::s_kTableLevel0Number2</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a1d7adcb0040470a91d8c339d4376585d">s_kTableLevel0Number</a> + 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00036">36</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d2920409fb8a0bdefe1d2ce83d485a4"></a><!-- doxytag: member="RCZip::RCRar2Defs::s_kTableLevelRepNumber" ref="a9d2920409fb8a0bdefe1d2ce83d485a4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a9d2920409fb8a0bdefe1d2ce83d485a4">RCZip::RCRar2Defs::s_kTableLevelRepNumber</a> = <a class="el" href="../../dd/dd2/classRCZip_1_1RCRar2Defs.html#a898bbd1a07159ecbb946910fb5f39da9">s_kTableDirectLevels</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a>第<a class="el" href="../../de/db7/RCRar2Defs_8h_source.html#l00034">34</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../de/db7/RCRar2Defs_8h_source.html">RCRar2Defs.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

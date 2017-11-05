@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: CpuArch.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>CpuArch.h</h1><a href="../../d8/d0c/CpuArch_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* CpuArch.h</span>
+<a name="l00002"></a>00002 <span class="comment">2009-08-11 : Igor Pavlov : Public domain */</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef __CPU_ARCH_H</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define __CPU_ARCH_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00011"></a>00011 <span class="preprocessor">#endif</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="comment">/*</span>
+<a name="l00013"></a>00013 <span class="comment">LITTLE_ENDIAN_UNALIGN means:</span>
+<a name="l00014"></a>00014 <span class="comment">  1) CPU is LITTLE_ENDIAN</span>
+<a name="l00015"></a>00015 <span class="comment">  2) it&#39;s allowed to make unaligned memory accesses</span>
+<a name="l00016"></a>00016 <span class="comment">if LITTLE_ENDIAN_UNALIGN is not defined, it means that we don&#39;t know</span>
+<a name="l00017"></a>00017 <span class="comment">about these properties of platform.</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="preprocessor">#if defined(_M_X64) || defined(_M_AMD64) || defined(__x86_64__)</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#define MY_CPU_AMD64</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 <span class="preprocessor">#if defined(MY_CPU_AMD64) || defined(_M_IA64)</span>
+<a name="l00025"></a>00025 <span class="preprocessor"></span><span class="preprocessor">#define MY_CPU_64BIT</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span>
+<a name="l00028"></a>00028 <span class="preprocessor">#if defined(_M_IX86) || defined(__i386__) || defined(MY_CPU_AMD64)</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span><span class="preprocessor">#define MY_CPU_X86_OR_AMD64</span>
+<a name="l00030"></a>00030 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00032"></a>00032 <span class="preprocessor">#if defined(MY_CPU_X86_OR_AMD64)</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#define LITTLE_ENDIAN_UNALIGN</span>
+<a name="l00034"></a>00034 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00035"></a>00035 <span class="preprocessor"></span>
+<a name="l00036"></a>00036 <span class="preprocessor">#ifdef LITTLE_ENDIAN_UNALIGN</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a>00038 <span class="preprocessor">#define GetUi16(p) (*(const uint16_t *)(p))</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span><span class="preprocessor">#define GetUi32(p) (*(const uint32_t *)(p))</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span><span class="preprocessor">#define GetUi64(p) (*(const uint64_t *)(p))</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span><span class="preprocessor">#define SetUi16(p, d) *(uint16_t *)(p) = (d);</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span><span class="preprocessor">#define SetUi32(p, d) *(uint32_t *)(p) = (d);</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00044"></a>00044 <span class="preprocessor">#else</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00046"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#a01fd3a05593b4a3294b52a211ec2c4b6">00046</a> <span class="preprocessor">#define GetUi16(p) (((const byte_t *)(p))[0] | ((uint16_t)((const byte_t *)(p))[1] &lt;&lt; 8))</span>
+<a name="l00047"></a>00047 <span class="preprocessor"></span>
+<a name="l00048"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#a840d4c43628199670307473818ea02a3">00048</a> <span class="preprocessor">#define GetUi32(p) ( \</span>
+<a name="l00049"></a>00049 <span class="preprocessor">             ((const byte_t *)(p))[0]        | \</span>
+<a name="l00050"></a>00050 <span class="preprocessor">    ((uint32_t)((const byte_t *)(p))[1] &lt;&lt;  8) | \</span>
+<a name="l00051"></a>00051 <span class="preprocessor">    ((uint32_t)((const byte_t *)(p))[2] &lt;&lt; 16) | \</span>
+<a name="l00052"></a>00052 <span class="preprocessor">    ((uint32_t)((const byte_t *)(p))[3] &lt;&lt; 24))</span>
+<a name="l00053"></a>00053 <span class="preprocessor"></span>
+<a name="l00054"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#ac6fc6ac2cd957a9671186123916d5e2c">00054</a> <span class="preprocessor">#define GetUi64(p) (GetUi32(p) | ((uint64_t)GetUi32(((const byte_t *)(p)) + 4) &lt;&lt; 32))</span>
+<a name="l00055"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#aa13433ba2f025dd5c28d83ad4869778f">00055</a> <span class="preprocessor"></span><span class="preprocessor">#define SetUi16(p, d) { uint32_t _x_ = (d); \</span>
+<a name="l00056"></a>00056 <span class="preprocessor">    ((byte_t *)(p))[0] = (byte_t)_x_; \</span>
+<a name="l00057"></a>00057 <span class="preprocessor">    ((byte_t *)(p))[1] = (byte_t)(_x_ &gt;&gt; 8); }</span>
+<a name="l00058"></a>00058 <span class="preprocessor"></span>
+<a name="l00059"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#a132c88760583b34b04edadce45f2477d">00059</a> <span class="preprocessor">#define SetUi32(p, d) { uint32_t _x_ = (d); \</span>
+<a name="l00060"></a>00060 <span class="preprocessor">    ((byte_t *)(p))[0] = (byte_t)_x_; \</span>
+<a name="l00061"></a>00061 <span class="preprocessor">    ((byte_t *)(p))[1] = (byte_t)(_x_ &gt;&gt; 8); \</span>
+<a name="l00062"></a>00062 <span class="preprocessor">    ((byte_t *)(p))[2] = (byte_t)(_x_ &gt;&gt; 16); \</span>
+<a name="l00063"></a>00063 <span class="preprocessor">    ((byte_t *)(p))[3] = (byte_t)(_x_ &gt;&gt; 24); }</span>
+<a name="l00064"></a>00064 <span class="preprocessor"></span>
+<a name="l00065"></a>00065 <span class="preprocessor">#endif</span>
+<a name="l00066"></a>00066 <span class="preprocessor"></span>
+<a name="l00067"></a>00067 <span class="preprocessor">#if defined(LITTLE_ENDIAN_UNALIGN) &amp;&amp; defined(_WIN64) &amp;&amp; (_MSC_VER &gt;= 1300)</span>
+<a name="l00068"></a>00068 <span class="preprocessor"></span>
+<a name="l00069"></a>00069 <span class="preprocessor">#pragma intrinsic(_byteswap_ulong)</span>
+<a name="l00070"></a>00070 <span class="preprocessor"></span><span class="preprocessor">#pragma intrinsic(_byteswap_uint64)</span>
+<a name="l00071"></a>00071 <span class="preprocessor"></span><span class="preprocessor">#define GetBe32(p) _byteswap_ulong(*(const uint32_t *)(const byte_t *)(p))</span>
+<a name="l00072"></a>00072 <span class="preprocessor"></span><span class="preprocessor">#define GetBe64(p) _byteswap_uint64(*(const uint64_t *)(const byte_t *)(p))</span>
+<a name="l00073"></a>00073 <span class="preprocessor"></span>
+<a name="l00074"></a>00074 <span class="preprocessor">#else</span>
+<a name="l00075"></a>00075 <span class="preprocessor"></span>
+<a name="l00076"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#a29361f5136b6361900d9d2acaa04d769">00076</a> <span class="preprocessor">#define GetBe32(p) ( \</span>
+<a name="l00077"></a>00077 <span class="preprocessor">    ((uint32_t)((const byte_t *)(p))[0] &lt;&lt; 24) | \</span>
+<a name="l00078"></a>00078 <span class="preprocessor">    ((uint32_t)((const byte_t *)(p))[1] &lt;&lt; 16) | \</span>
+<a name="l00079"></a>00079 <span class="preprocessor">    ((uint32_t)((const byte_t *)(p))[2] &lt;&lt;  8) | \</span>
+<a name="l00080"></a>00080 <span class="preprocessor">             ((const byte_t *)(p))[3] )</span>
+<a name="l00081"></a>00081 <span class="preprocessor"></span>
+<a name="l00082"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#a1fd9f491ab9490d1a931baebfccdd895">00082</a> <span class="preprocessor">#define GetBe64(p) (((uint64_t)GetBe32(p) &lt;&lt; 32) | GetBe32(((const byte_t *)(p)) + 4))</span>
+<a name="l00083"></a>00083 <span class="preprocessor"></span>
+<a name="l00084"></a>00084 <span class="preprocessor">#endif</span>
+<a name="l00085"></a>00085 <span class="preprocessor"></span>
+<a name="l00086"></a><a class="code" href="../../d8/d0c/CpuArch_8h.html#abe684bc198244c53530700b20b630b0e">00086</a> <span class="preprocessor">#define GetBe16(p) (((uint16_t)((const byte_t *)(p))[0] &lt;&lt; 8) | ((const byte_t *)(p))[1])</span>
+<a name="l00087"></a>00087 <span class="preprocessor"></span>
+<a name="l00088"></a>00088 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00089"></a>00089 <span class="preprocessor"></span>}
+<a name="l00090"></a>00090 <span class="preprocessor">#endif</span>
+<a name="l00091"></a>00091 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

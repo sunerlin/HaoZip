@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCRangeCoderDefs类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html">RCRangeCoderDefs</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCRangeCoderDefs类参考</h1><!-- doxytag: class="RCZip::RCRangeCoderDefs" -->
+<p><code>#include &lt;<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>&gt;</code></p>
+
+<p><a href="../../dc/da4/classRCZip_1_1RCRangeCoderDefs-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a9ce4b7723aba6ab6052d430ec0d04128">s_kNumTopBits</a> = 24</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a4c7372eeb40cf5e9ea048e0549e9f97d">s_kTopValue</a> = (1 &lt;&lt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a9ce4b7723aba6ab6052d430ec0d04128">s_kNumTopBits</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#abdc79f17394c2f9c5047f167060cb06d">s_kNumBitModelTotalBits</a> = 11</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a599da54902260a186cbf2cca1c3b1d5c">s_kBitModelTotal</a> = (1 &lt;&lt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#abdc79f17394c2f9c5047f167060cb06d">s_kNumBitModelTotalBits</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a38a038f80b5fc9288d5dd6b1a9a26c7a">s_kNumMoveReducingBits</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a42b9576c41252ea91028309269a58903">s_kNumBitPriceShiftBits</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a4457af6fe83bd226a215c799ba9d5857">s_kBitPrice</a> = 1 &lt;&lt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a42b9576c41252ea91028309269a58903">s_kNumBitPriceShiftBits</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#aba3f9ca2a0bd09e82a76c6285e1a9ef8">s_probPrices</a> [<a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a599da54902260a186cbf2cca1c3b1d5c">s_kBitModelTotal</a> &gt;&gt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a38a038f80b5fc9288d5dd6b1a9a26c7a">s_kNumMoveReducingBits</a>]</td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a7502ec7af36969f348a9dc2c4d8c1827">RCRangeCoderDefs</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a7ffd0ac72727f319487620ca07d2dafe">~RCRangeCoderDefs</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Range 编码常量定义 </p>
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a7502ec7af36969f348a9dc2c4d8c1827"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::RCRangeCoderDefs" ref="a7502ec7af36969f348a9dc2c4d8c1827" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCRangeCoderDefs::RCRangeCoderDefs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ffd0ac72727f319487620ca07d2dafe"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::~RCRangeCoderDefs" ref="a7ffd0ac72727f319487620ca07d2dafe" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCRangeCoderDefs::~RCRangeCoderDefs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a599da54902260a186cbf2cca1c3b1d5c"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_kBitModelTotal" ref="a599da54902260a186cbf2cca1c3b1d5c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a599da54902260a186cbf2cca1c3b1d5c">RCZip::RCRangeCoderDefs::s_kBitModelTotal</a> = (1 &lt;&lt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#abdc79f17394c2f9c5047f167060cb06d">s_kNumBitModelTotalBits</a>)<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4457af6fe83bd226a215c799ba9d5857"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_kBitPrice" ref="a4457af6fe83bd226a215c799ba9d5857" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a4457af6fe83bd226a215c799ba9d5857">RCZip::RCRangeCoderDefs::s_kBitPrice</a> = 1 &lt;&lt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a42b9576c41252ea91028309269a58903">s_kNumBitPriceShiftBits</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00031">31</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abdc79f17394c2f9c5047f167060cb06d"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_kNumBitModelTotalBits" ref="abdc79f17394c2f9c5047f167060cb06d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#abdc79f17394c2f9c5047f167060cb06d">RCZip::RCRangeCoderDefs::s_kNumBitModelTotalBits</a> = 11<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00027">27</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a42b9576c41252ea91028309269a58903"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_kNumBitPriceShiftBits" ref="a42b9576c41252ea91028309269a58903" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a42b9576c41252ea91028309269a58903">RCZip::RCRangeCoderDefs::s_kNumBitPriceShiftBits</a> = 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00030">30</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a38a038f80b5fc9288d5dd6b1a9a26c7a"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_kNumMoveReducingBits" ref="a38a038f80b5fc9288d5dd6b1a9a26c7a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a38a038f80b5fc9288d5dd6b1a9a26c7a">RCZip::RCRangeCoderDefs::s_kNumMoveReducingBits</a> = 4<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00029">29</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ce4b7723aba6ab6052d430ec0d04128"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_kNumTopBits" ref="a9ce4b7723aba6ab6052d430ec0d04128" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a9ce4b7723aba6ab6052d430ec0d04128">RCZip::RCRangeCoderDefs::s_kNumTopBits</a> = 24<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00024">24</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c7372eeb40cf5e9ea048e0549e9f97d"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_kTopValue" ref="a4c7372eeb40cf5e9ea048e0549e9f97d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a4c7372eeb40cf5e9ea048e0549e9f97d">RCZip::RCRangeCoderDefs::s_kTopValue</a> = (1 &lt;&lt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a9ce4b7723aba6ab6052d430ec0d04128">s_kNumTopBits</a>)<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00025">25</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aba3f9ca2a0bd09e82a76c6285e1a9ef8"></a><!-- doxytag: member="RCZip::RCRangeCoderDefs::s_probPrices" ref="aba3f9ca2a0bd09e82a76c6285e1a9ef8" args="[s_kBitModelTotal &gt;&gt; s_kNumMoveReducingBits]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#aba3f9ca2a0bd09e82a76c6285e1a9ef8">RCZip::RCRangeCoderDefs::s_probPrices</a>[<a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a599da54902260a186cbf2cca1c3b1d5c">s_kBitModelTotal</a> &gt;&gt; <a class="el" href="../../da/d5d/classRCZip_1_1RCRangeCoderDefs.html#a38a038f80b5fc9288d5dd6b1a9a26c7a">s_kNumMoveReducingBits</a>]<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a>第<a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html#l00032">32</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d9/de2/RCRangeCoderDefs_8h_source.html">RCRangeCoderDefs.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

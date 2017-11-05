@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCMtLocalProgress类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html">RCMtLocalProgress</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCMtLocalProgress类参考</h1><!-- doxytag: class="RCZip::RCMtLocalProgress" --><!-- doxytag: inherits="IUnknownImpl&lt; ICompressProgressInfo &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCMtLocalProgress</div>
+<div class="dynsection">
+<div class="center"><img src="../../de/d43/classRCZip_1_1RCMtLocalProgress__inherit__graph.png" border="0" usemap="#RCZip_1_1RCMtLocalProgress_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCMtLocalProgress_inherit__map" id="RCZip_1_1RCMtLocalProgress_inherit__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressProgressInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="28,361,375,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html" title="{RCZip::ICompressProgressInfo\n||+ SetRatioInfo()\l# ~ICompressProgressInfo()\l}" alt="" coords="200,198,421,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="237,6,384,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCMtLocalProgress合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d7/d3d/classRCZip_1_1RCMtLocalProgress__coll__graph.png" border="0" usemap="#RCZip_1_1RCMtLocalProgress_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCMtLocalProgress_coll__map" id="RCZip_1_1RCMtLocalProgress_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressProgressInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="5,467,352,589"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="96,179,261,315"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="91,28,267,105"/><area shape="rect" id="node8" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html" title="{RCZip::ICompressProgressInfo\n||+ SetRatioInfo()\l# ~ICompressProgressInfo()\l}" alt="" coords="400,201,621,293"/><area shape="rect" id="node12" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ICompressProgressInfo \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="376,379,645,677"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="739,6,885,127"/><area shape="rect" id="node17" href="../../dd/dd0/classRCZip_1_1IMtCompressProgressInfo.html" title="{RCZip::IMtCompressProgressInfo\n||+ SetRatioInfo()\l# ~IMtCompressProgressInfo()\l}" alt="" coords="693,201,931,293"/><area shape="rect" id="node22" href="../../d6/d33/classRCZip_1_1IProgress.html" title="{RCZip::IProgress\n||+ SetTotal()\l+ SetCompleted()\l# ~IProgress()\l}" alt="" coords="965,193,1107,300"/><area shape="rect" id="node15" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IMtCompressProgressInfo \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="669,379,955,677"/><area shape="rect" id="node20" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IProgress \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="979,379,1157,677"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d7/d7c/classRCZip_1_1RCMtLocalProgress-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#ae742d8761f0a5bcaf1d07420d3c0d9df">RCMtLocalProgress</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a611237fcaacd96a8c0bd569f73fe318a">~RCMtLocalProgress</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a06b82c62f3453a7f08507845281bbcdb">Init</a> (<a class="el" href="../../d6/d33/classRCZip_1_1IProgress.html">IProgress</a> *progress, bool inSizeIsMain)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#adb5fa3d8fca9d4940c87d8f5623fecad">SetCur</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a562eb480c387cf1da43778b7f5a7b287">SetIndex</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#acd683f93cdb250c32af61a9000618d9c">GetProgressOffset</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#ac86d08628c7fa76a52ae4b61880698a9">GetInSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a9d9d103c15b8d3ff1b48a6722dc81e4d">GetOutSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a7554e0b95e5508f5f153b83502b033f5">IsSendRatio</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a61a076191aa820c45a6a07447520cd7d">IsSendProgress</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a7c45a79a3d38153890760d83257b5b54">SetProgressOffset</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a5324ca87e7393ecadddf2b9a48c294f6">SetInSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#aefa978c300819aa4efd55dd8d01da0df">SetOutSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#ad794cf7b8329ba377a893d86c2d27bb7">SetSendRatio</a> (bool value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a318490208e5b41edccf8af32340f4051">SetSendMtRatio</a> (bool value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a4d8f0fbaeea90196f6e16a0c5c904622">SetSendProgress</a> (bool value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#acfa71493a3da1b7d3e1087370d3afb21">SetRatioInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSize, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSize)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IProgressPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a0ab802b409e102750a90c8dac4d703b1">m_progress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressProgressInfoPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#aac993fd845036d22b4965b328a0bd57e">m_ratioProgress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IMtCompressProgressInfoPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#ad873ef0437e119c6544cc3429f69a773">m_spMtRatioProgress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#af8de20ae024d0093e3cbb22922c70970">m_inSizeIsMain</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a2591ba2543b8e8fe4cd55250f4144200">m_progressOffset</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#af902dcaab5d09388796fbddd94f83c7a">m_inSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#adb7d78ef92914f6e62669ccc7061d5a1">m_outSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a4d40a140bd97b57615cc4f1bc67d6fea">m_sendRatio</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a1b25a8fb8f46c86df181acba5ffce580">m_sendMtRatio</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a02041321fa41b3c22e3166f6b55f9821">m_sendProgress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a85e4df1799968ec987ad6c5e413aa3cc">m_curIndex</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="ae742d8761f0a5bcaf1d07420d3c0d9df"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::RCMtLocalProgress" ref="ae742d8761f0a5bcaf1d07420d3c0d9df" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCMtLocalProgress::RCMtLocalProgress </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a611237fcaacd96a8c0bd569f73fe318a"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::~RCMtLocalProgress" ref="a611237fcaacd96a8c0bd569f73fe318a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCMtLocalProgress::~RCMtLocalProgress </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ac86d08628c7fa76a52ae4b61880698a9"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::GetInSize" ref="ac86d08628c7fa76a52ae4b61880698a9" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCMtLocalProgress::GetInSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取输入数据大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回输入数据大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d9d103c15b8d3ff1b48a6722dc81e4d"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::GetOutSize" ref="a9d9d103c15b8d3ff1b48a6722dc81e4d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCMtLocalProgress::GetOutSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取输出数据大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回输出数据大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd683f93cdb250c32af61a9000618d9c"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::GetProgressOffset" ref="acd683f93cdb250c32af61a9000618d9c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCMtLocalProgress::GetProgressOffset </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取进度数据偏移 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回进度数据偏移 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a06b82c62f3453a7f08507845281bbcdb"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::Init" ref="a06b82c62f3453a7f08507845281bbcdb" args="(IProgress *progress, bool inSizeIsMain)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d33/classRCZip_1_1IProgress.html">IProgress</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>inSizeIsMain</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度回调接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSizeIsMain</em>&nbsp;</td><td>true表示按输入数据回调进度，否则按输出数据回调进度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a61a076191aa820c45a6a07447520cd7d"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::IsSendProgress" ref="a61a076191aa820c45a6a07447520cd7d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCMtLocalProgress::IsSendProgress </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取在设置进度时自动回调已完成接口 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果在设置进度时自动回调已完成接口返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7554e0b95e5508f5f153b83502b033f5"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::IsSendRatio" ref="a7554e0b95e5508f5f153b83502b033f5" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCMtLocalProgress::IsSendRatio </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取是否自动发送进度 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果自动发送进度返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb5fa3d8fca9d4940c87d8f5623fecad"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetCur" ref="adb5fa3d8fca9d4940c87d8f5623fecad" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCMtLocalProgress::SetCur </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>按当前进度数据回调进度接口 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败则返回错误码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a562eb480c387cf1da43778b7f5a7b287"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetIndex" ref="a562eb480c387cf1da43778b7f5a7b287" args="(uint32_t index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::SetIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置当前处理的下标值 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>当前处理的下标值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5324ca87e7393ecadddf2b9a48c294f6"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetInSize" ref="a5324ca87e7393ecadddf2b9a48c294f6" args="(uint64_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::SetInSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输入数据大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>输入数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aefa978c300819aa4efd55dd8d01da0df"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetOutSize" ref="aefa978c300819aa4efd55dd8d01da0df" args="(uint64_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::SetOutSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输出数据大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>输出数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c45a79a3d38153890760d83257b5b54"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetProgressOffset" ref="a7c45a79a3d38153890760d83257b5b54" args="(uint64_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::SetProgressOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置进度数据偏移 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>进度数据偏移 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acfa71493a3da1b7d3e1087370d3afb21"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetRatioInfo" ref="acfa71493a3da1b7d3e1087370d3afb21" args="(uint64_t inSize, uint64_t outSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCMtLocalProgress::SetRatioInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>outSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置压缩进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败则返回错误码 </dd></dl>
+
+<p>实现了<a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html#a7be8f2366b37a1d0107d34daf7b81e8a">RCZip::ICompressProgressInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a318490208e5b41edccf8af32340f4051"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetSendMtRatio" ref="a318490208e5b41edccf8af32340f4051" args="(bool value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::SetSendMtRatio </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置是否自动发送多线程进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>true表示是否自动发送进度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4d8f0fbaeea90196f6e16a0c5c904622"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetSendProgress" ref="a4d8f0fbaeea90196f6e16a0c5c904622" args="(bool value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::SetSendProgress </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置是否在设置进度时自动回调已完成接口 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>true在设置进度时自动回调已完成接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad794cf7b8329ba377a893d86c2d27bb7"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::SetSendRatio" ref="ad794cf7b8329ba377a893d86c2d27bb7" args="(bool value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtLocalProgress::SetSendRatio </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置是否自动发送进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>true表示是否自动发送进度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a85e4df1799968ec987ad6c5e413aa3cc"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_curIndex" ref="a85e4df1799968ec987ad6c5e413aa3cc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a85e4df1799968ec987ad6c5e413aa3cc">RCZip::RCMtLocalProgress::m_curIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当前处理项的索引 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00154">154</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af902dcaab5d09388796fbddd94f83c7a"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_inSize" ref="af902dcaab5d09388796fbddd94f83c7a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#af902dcaab5d09388796fbddd94f83c7a">RCZip::RCMtLocalProgress::m_inSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入数据大小 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00134">134</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af8de20ae024d0093e3cbb22922c70970"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_inSizeIsMain" ref="af8de20ae024d0093e3cbb22922c70970" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#af8de20ae024d0093e3cbb22922c70970">RCZip::RCMtLocalProgress::m_inSizeIsMain</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>true表示按输入数据回调进度，否则按输出数据回调进度 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00126">126</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adb7d78ef92914f6e62669ccc7061d5a1"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_outSize" ref="adb7d78ef92914f6e62669ccc7061d5a1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#adb7d78ef92914f6e62669ccc7061d5a1">RCZip::RCMtLocalProgress::m_outSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出数据大小 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00138">138</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ab802b409e102750a90c8dac4d703b1"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_progress" ref="a0ab802b409e102750a90c8dac4d703b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IProgressPtr</a> <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a0ab802b409e102750a90c8dac4d703b1">RCZip::RCMtLocalProgress::m_progress</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>进度接口 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00114">114</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2591ba2543b8e8fe4cd55250f4144200"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_progressOffset" ref="a2591ba2543b8e8fe4cd55250f4144200" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a2591ba2543b8e8fe4cd55250f4144200">RCZip::RCMtLocalProgress::m_progressOffset</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>进度数据偏移 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00130">130</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aac993fd845036d22b4965b328a0bd57e"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_ratioProgress" ref="aac993fd845036d22b4965b328a0bd57e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressProgressInfoPtr</a> <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#aac993fd845036d22b4965b328a0bd57e">RCZip::RCMtLocalProgress::m_ratioProgress</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩进度接口 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00118">118</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b25a8fb8f46c86df181acba5ffce580"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_sendMtRatio" ref="a1b25a8fb8f46c86df181acba5ffce580" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a1b25a8fb8f46c86df181acba5ffce580">RCZip::RCMtLocalProgress::m_sendMtRatio</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否自动发送多线程进度 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00146">146</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a02041321fa41b3c22e3166f6b55f9821"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_sendProgress" ref="a02041321fa41b3c22e3166f6b55f9821" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a02041321fa41b3c22e3166f6b55f9821">RCZip::RCMtLocalProgress::m_sendProgress</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否在设置进度时自动回调已完成接口 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00150">150</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d40a140bd97b57615cc4f1bc67d6fea"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_sendRatio" ref="a4d40a140bd97b57615cc4f1bc67d6fea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#a4d40a140bd97b57615cc4f1bc67d6fea">RCZip::RCMtLocalProgress::m_sendRatio</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否自动发送进度 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00142">142</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad873ef0437e119c6544cc3429f69a773"></a><!-- doxytag: member="RCZip::RCMtLocalProgress::m_spMtRatioProgress" ref="ad873ef0437e119c6544cc3429f69a773" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IMtCompressProgressInfoPtr</a> <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#ad873ef0437e119c6544cc3429f69a773">RCZip::RCMtLocalProgress::m_spMtRatioProgress</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>多线程压缩解压比例进度信息 </p>
+
+<p>在文件<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a>第<a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html#l00122">122</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d1/dba/RCMtLocalProgress_8h_source.html">RCMtLocalProgress.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

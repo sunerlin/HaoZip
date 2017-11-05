@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveOpen.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_e087791cafc9794d341e0d7b63d924f5.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveOpen.h</h1><a href="../../dd/d1f/RCArchiveOpen_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCArchiveOpen_h_</span>
+<a name="l00011"></a><a class="code" href="../../dd/d1f/RCArchiveOpen_8h.html#a6ba8193b7a8f3bb6b7701a96983313c6">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCArchiveOpen_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html">archive/manager/RCArchiveCodecs.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/ddb/RCArchiveLink_8h.html">archive/common/RCArchiveLink.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/df2/RCNonCopyable_8h.html">base/RCNonCopyable.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/dc9/IStream_8h.html">interface/IStream.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/dd0/RCPropertyID_8h.html">interface/RCPropertyID.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;set&gt;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00021"></a>00021 <span class="comment"></span>
+<a name="l00022"></a>00022 <span class="comment">/** 界面打开回调接口</span>
+<a name="l00023"></a>00023 <span class="comment">*/</span>
+<a name="l00024"></a>00024 <span class="keyword">class </span><a class="code" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> ;
+<a name="l00025"></a>00025 <span class="comment"></span>
+<a name="l00026"></a>00026 <span class="comment">/** 打开压缩包</span>
+<a name="l00027"></a>00027 <span class="comment">*/</span>
+<a name="l00028"></a><a class="code" href="../../d3/d73/classRCArchiveOpen.html">00028</a> <span class="keyword">class </span><a class="code" href="../../d3/d73/classRCArchiveOpen.html">RCArchiveOpen</a>:
+<a name="l00029"></a>00029     <span class="keyword">private</span> RCNonCopyable
+<a name="l00030"></a>00030 {
+<a name="l00031"></a>00031 <span class="keyword">public</span>:
+<a name="l00032"></a>00032 <span class="comment"></span>
+<a name="l00033"></a>00033 <span class="comment">    /** 默认构造函数</span>
+<a name="l00034"></a>00034 <span class="comment">    */</span>
+<a name="l00035"></a>00035     <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aa997c068f6b3fc1ff877831dce9895b9">RCArchiveOpen</a>() ;
+<a name="l00036"></a>00036     <span class="comment"></span>
+<a name="l00037"></a>00037 <span class="comment">    /** 默认析构函数</span>
+<a name="l00038"></a>00038 <span class="comment">    */</span>
+<a name="l00039"></a>00039     <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a6dee107097273e7e43e3984e330bd9be">~RCArchiveOpen</a>() ;
+<a name="l00040"></a>00040     
+<a name="l00041"></a>00041 <span class="keyword">public</span>:
+<a name="l00042"></a>00042 <span class="comment"></span>
+<a name="l00043"></a>00043 <span class="comment">    /** 打开压缩包</span>
+<a name="l00044"></a>00044 <span class="comment">    @param [in] archiveCodecs 文档格式管理器</span>
+<a name="l00045"></a>00045 <span class="comment">    @param [in] formatIndices 文档格式编号</span>
+<a name="l00046"></a>00046 <span class="comment">    @param [in] archiveName 文档名称</span>
+<a name="l00047"></a>00047 <span class="comment">    @param [out] archiveLink 文档链接</span>
+<a name="l00048"></a>00048 <span class="comment">    @param [in] openCallbackUI 界面打开回调接口指针</span>
+<a name="l00049"></a>00049 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00050"></a>00050 <span class="comment">    */</span>
+<a name="l00051"></a>00051     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aea2c8545cfb33e91e58be493869267ca">OpenArchive</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; archiveCodecs,
+<a name="l00052"></a>00052                                <span class="keyword">const</span> RCVector&lt;RCArchiveID&gt;&amp; formatIndices,
+<a name="l00053"></a>00053                                <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; archiveName,
+<a name="l00054"></a>00054                                <a class="code" href="../../d8/ddc/classRCArchiveLink.html">RCArchiveLink</a>&amp; archiveLink,
+<a name="l00055"></a>00055                                <a class="code" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a>* openCallbackUI) ;
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="keyword">public</span>:
+<a name="l00058"></a>00058     <span class="comment"></span>
+<a name="l00059"></a>00059 <span class="comment">    /** 根据文件签名内容匹配可能的文件格式</span>
+<a name="l00060"></a>00060 <span class="comment">    @param [in] fileName 文件名</span>
+<a name="l00061"></a>00061 <span class="comment">    @param [in] archiveCodecs 文档格式管理器</span>
+<a name="l00062"></a>00062 <span class="comment">    @param [out] matchFormatIndices 匹配签名的文件格式</span>
+<a name="l00063"></a>00063 <span class="comment">    @param [in] inputFormatIndices 文档格式编号集合</span>
+<a name="l00064"></a>00064 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00065"></a>00065 <span class="comment">    */</span>
+<a name="l00066"></a>00066     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a3e221116969f67b1893e90b1e79d07c9">FindFormatsBySignature</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName,
+<a name="l00067"></a>00067                                           <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> archiveCodecs,
+<a name="l00068"></a>00068                                           <a class="code" href="../../d7/d5a/namespaceRCZip.html#af09cff6d6d1a3925c3721176297ecf7a">RCIntVector</a>&amp; matchFormatIndices,
+<a name="l00069"></a>00069                                           <span class="keyword">const</span> std::set&lt;RCArchiveID&gt;* inputFormatIndices = NULL) ;
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="preprocessor">#ifndef RC_STATIC_SFX</span>
+<a name="l00072"></a>00072 <span class="preprocessor"></span><span class="comment"></span>
+<a name="l00073"></a>00073 <span class="comment">    /** 是否是RAR格式的分卷压缩</span>
+<a name="l00074"></a>00074 <span class="comment">    @param [in] fileName 文件名</span>
+<a name="l00075"></a>00075 <span class="comment">    @param [in] archiveCodecs 编码管理器</span>
+<a name="l00076"></a>00076 <span class="comment">    @param [in,out] result 是分卷压缩返回ture，否则返回false</span>
+<a name="l00077"></a>00077 <span class="comment">    @return 是rar格式返回RC_S_OK，否则返回错误号</span>
+<a name="l00078"></a>00078 <span class="comment">    */</span>
+<a name="l00079"></a>00079     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#ae66333dc4e39f9ceb61f8122d898279b">RCArchiveOpen::IsRarVolumeType</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName,
+<a name="l00080"></a>00080                                                   <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> archiveCodecs,
+<a name="l00081"></a>00081                                                   <span class="keywordtype">bool</span>&amp; result);
+<a name="l00082"></a>00082 <span class="preprocessor">#endif</span>
+<a name="l00083"></a>00083 <span class="preprocessor"></span>    
+<a name="l00084"></a>00084 <span class="keyword">public</span>:
+<a name="l00085"></a>00085     <span class="comment"></span>
+<a name="l00086"></a>00086 <span class="comment">    /** 返回包内项名称</span>
+<a name="l00087"></a>00087 <span class="comment">    @param [in] archive 输入文档指针</span>
+<a name="l00088"></a>00088 <span class="comment">    @param [in] index 包内项序号</span>
+<a name="l00089"></a>00089 <span class="comment">    @param [in] defaultName 缺省名称</span>
+<a name="l00090"></a>00090 <span class="comment">    @param [out] result 返回包内项名称</span>
+<a name="l00091"></a>00091 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00092"></a>00092 <span class="comment">    */</span>
+<a name="l00093"></a>00093     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a9396057d5dc8c2dcd7f0b2572d46aac3">GetArchiveItemPath</a>(IInArchive* archive,
+<a name="l00094"></a>00094                                       <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index,
+<a name="l00095"></a>00095                                       <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultName,
+<a name="l00096"></a>00096                                       <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; result) ;
+<a name="l00097"></a>00097 <span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">    /** 返回包内项是否为目录</span>
+<a name="l00099"></a>00099 <span class="comment">    @param [in] archive 输入文档指针</span>
+<a name="l00100"></a>00100 <span class="comment">    @param [in] index 包内项序号</span>
+<a name="l00101"></a>00101 <span class="comment">    @param [out] result 是目录返回true,否则返回false</span>
+<a name="l00102"></a>00102 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00103"></a>00103 <span class="comment">    */</span>
+<a name="l00104"></a>00104     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a7f1b75c782d01b164fbf884550bb5a79">IsArchiveItemFolder</a>(IInArchive* archive,
+<a name="l00105"></a>00105                                        <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index,
+<a name="l00106"></a>00106                                        <span class="keywordtype">bool</span>&amp; result) ;
+<a name="l00107"></a>00107 <span class="comment"></span>
+<a name="l00108"></a>00108 <span class="comment">    /** 返回包内项是否为反向</span>
+<a name="l00109"></a>00109 <span class="comment">    @param [in] archive 输入文档指针</span>
+<a name="l00110"></a>00110 <span class="comment">    @param [in] index 包内项序号</span>
+<a name="l00111"></a>00111 <span class="comment">    @param [out] result 是返回true,否则返回false</span>
+<a name="l00112"></a>00112 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00113"></a>00113 <span class="comment">    */</span>
+<a name="l00114"></a>00114     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aabae8a79f3299c1814dec8647f926e65">IsArchiveItemAnti</a>(IInArchive* archive,
+<a name="l00115"></a>00115                                      <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index,
+<a name="l00116"></a>00116                                      <span class="keywordtype">bool</span>&amp; result) ;
+<a name="l00117"></a>00117 <span class="comment"></span>
+<a name="l00118"></a>00118 <span class="comment">    /** 返回包内项路径</span>
+<a name="l00119"></a>00119 <span class="comment">    @param [in] archive 输入文档指针</span>
+<a name="l00120"></a>00120 <span class="comment">    @param [in] index 包内项序号</span>
+<a name="l00121"></a>00121 <span class="comment">    @param [out] result 返回包内项路径</span>
+<a name="l00122"></a>00122 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00123"></a>00123 <span class="comment">    */</span>
+<a name="l00124"></a>00124     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a3421e10e6c2282f553334bfa10c3879d">GetArchiveItemPathNoDefault</a>(IInArchive* archive,
+<a name="l00125"></a>00125                                                <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index,
+<a name="l00126"></a>00126                                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; result) ;
+<a name="l00127"></a>00127 <span class="comment"></span>
+<a name="l00128"></a>00128 <span class="comment">    /** 返回包内项目扩展名</span>
+<a name="l00129"></a>00129 <span class="comment">    @param [in] archive 输入文档指针</span>
+<a name="l00130"></a>00130 <span class="comment">    @param [in] index 包内项目序号</span>
+<a name="l00131"></a>00131 <span class="comment">    @param [out] result 返回扩展名</span>
+<a name="l00132"></a>00132 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00133"></a>00133 <span class="comment">    */</span>
+<a name="l00134"></a>00134     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aafea7463a89720416d1430530179075a">GetArchiveItemPathExtension</a>(IInArchive* archive,
+<a name="l00135"></a>00135                                                <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index,
+<a name="l00136"></a>00136                                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; result) ;
+<a name="l00137"></a>00137 <span class="comment"></span>
+<a name="l00138"></a>00138 <span class="comment">    /** 返回包内项目是否有某属性</span>
+<a name="l00139"></a>00139 <span class="comment">    @param [in] archive 输入文档指针</span>
+<a name="l00140"></a>00140 <span class="comment">    @param [in] index 包内项序号</span>
+<a name="l00141"></a>00141 <span class="comment">    @param [in] propID 属性序号</span>
+<a name="l00142"></a>00142 <span class="comment">    @param [out] result 有某属性返回true,否则返回false</span>
+<a name="l00143"></a>00143 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00144"></a>00144 <span class="comment">    */</span>
+<a name="l00145"></a>00145     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a8a0814634ff45a0e6cf0c234ee08da32">IsArchiveItemProp</a>(IInArchive* archive,
+<a name="l00146"></a>00146                                      <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index,
+<a name="l00147"></a>00147                                      <a class="code" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> propID,
+<a name="l00148"></a>00148                                      <span class="keywordtype">bool</span>&amp; result) ;
+<a name="l00149"></a>00149     
+<a name="l00150"></a>00150 <span class="keyword">private</span>:
+<a name="l00151"></a>00151 <span class="comment"></span>
+<a name="l00152"></a>00152 <span class="comment">    /** 打开文档</span>
+<a name="l00153"></a>00153 <span class="comment">    @param [in] archiveCodecs 文档格式编码管理器</span>
+<a name="l00154"></a>00154 <span class="comment">    @param [in] formatIndices 文档格式列表</span>
+<a name="l00155"></a>00155 <span class="comment">    @param [in] archiveName 文档名</span>
+<a name="l00156"></a>00156 <span class="comment">    @param [out] archive0 输入文档1</span>
+<a name="l00157"></a>00157 <span class="comment">    @param [out] archive1 输入文档2</span>
+<a name="l00158"></a>00158 <span class="comment">    @param [out] defaultItemName0 缺省名称1</span>
+<a name="l00159"></a>00159 <span class="comment">    @param [out] defaultItemName1 缺省名称2</span>
+<a name="l00160"></a>00160 <span class="comment">    @param [out] volumePaths 各分卷路径</span>
+<a name="l00161"></a>00161 <span class="comment">    @param [out] volumesSize 分卷大小</span>
+<a name="l00162"></a>00162 <span class="comment">    @param [in] openCallbackUI 界面打开回调接口指针</span>
+<a name="l00163"></a>00163 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00164"></a>00164 <span class="comment">    */</span>
+<a name="l00165"></a>00165     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aea2c8545cfb33e91e58be493869267ca">OpenArchive</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; archiveCodecs,
+<a name="l00166"></a>00166                                <span class="keyword">const</span> RCVector&lt;RCArchiveID&gt;&amp; formatIndices,
+<a name="l00167"></a>00167                                <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; archiveName,
+<a name="l00168"></a>00168                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">IInArchivePtr</a>&amp; archive0,
+<a name="l00169"></a>00169                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">IInArchivePtr</a>&amp; archive1,
+<a name="l00170"></a>00170                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultItemName0,
+<a name="l00171"></a>00171                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultItemName1,
+<a name="l00172"></a>00172                                RCVector&lt;RCString&gt;&amp; volumePaths,
+<a name="l00173"></a>00173                                <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&amp; volumesSize,
+<a name="l00174"></a>00174                                <a class="code" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a>* openCallbackUI) ;
+<a name="l00175"></a>00175 <span class="comment"></span>
+<a name="l00176"></a>00176 <span class="comment">    /** 打开文档</span>
+<a name="l00177"></a>00177 <span class="comment">    @param [in] archiveCodecs 文档格式编码管理器</span>
+<a name="l00178"></a>00178 <span class="comment">    @param [in] formatIndices 文档格式列表</span>
+<a name="l00179"></a>00179 <span class="comment">    @param [in] fileName 文件名</span>
+<a name="l00180"></a>00180 <span class="comment">    @param [out] archive0 输入文档1</span>
+<a name="l00181"></a>00181 <span class="comment">    @param [out] archive1 输入文档2</span>
+<a name="l00182"></a>00182 <span class="comment">    @param [out] formatIndex0 文档1格式编号</span>
+<a name="l00183"></a>00183 <span class="comment">    @param [out] formatIndex1 文档2格式编号</span>
+<a name="l00184"></a>00184 <span class="comment">    @param [out] defaultItemName0 缺省名称1</span>
+<a name="l00185"></a>00185 <span class="comment">    @param [out] defaultItemName1 缺省名称2</span>
+<a name="l00186"></a>00186 <span class="comment">    @param [in] archiveOpenCallback 打开回调接口指针</span>
+<a name="l00187"></a>00187 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00188"></a>00188 <span class="comment">    */</span>
+<a name="l00189"></a>00189     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aea2c8545cfb33e91e58be493869267ca">OpenArchive</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; archiveCodecs,
+<a name="l00190"></a>00190                                <span class="keyword">const</span> RCVector&lt;RCArchiveID&gt;&amp; formatIndices,
+<a name="l00191"></a>00191                                <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName,
+<a name="l00192"></a>00192                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">IInArchivePtr</a>&amp; archive0,
+<a name="l00193"></a>00193                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">IInArchivePtr</a>&amp; archive1,
+<a name="l00194"></a>00194                                <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&amp; formatIndex0,
+<a name="l00195"></a>00195                                <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&amp; formatIndex1,
+<a name="l00196"></a>00196                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultItemName0,
+<a name="l00197"></a>00197                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultItemName1,
+<a name="l00198"></a>00198                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a496d83ec5b4ee465f0d2f60002d3d4ee">IArchiveOpenCallbackPtr</a> archiveOpenCallback) ;
+<a name="l00199"></a>00199 <span class="comment"></span>
+<a name="l00200"></a>00200 <span class="comment">    /** 打开文档</span>
+<a name="l00201"></a>00201 <span class="comment">    @param [in] archiveCodecs 文档格式编码管理器</span>
+<a name="l00202"></a>00202 <span class="comment">    @param [in] arcTypeIndex 文档格式编号</span>
+<a name="l00203"></a>00203 <span class="comment">    @param [in] fileName 文件名</span>
+<a name="l00204"></a>00204 <span class="comment">    @param [out] archiveResult 打开的文件</span>
+<a name="l00205"></a>00205 <span class="comment">    @param [out] formatIndex 文档格式序号</span>
+<a name="l00206"></a>00206 <span class="comment">    @param [out] defaultItemName 项缺省名称</span>
+<a name="l00207"></a>00207 <span class="comment">    @param [in] archiveOpenCallback 打开回调接口指针</span>
+<a name="l00208"></a>00208 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00209"></a>00209 <span class="comment">    */</span>
+<a name="l00210"></a>00210     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aea2c8545cfb33e91e58be493869267ca">OpenArchive</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; archiveCodecs,
+<a name="l00211"></a>00211                                <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> arcTypeIndex,
+<a name="l00212"></a>00212                                <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName,
+<a name="l00213"></a>00213                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">IInArchivePtr</a>&amp; archiveResult,
+<a name="l00214"></a>00214                                <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&amp; formatIndex,
+<a name="l00215"></a>00215                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultItemName,
+<a name="l00216"></a>00216                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a496d83ec5b4ee465f0d2f60002d3d4ee">IArchiveOpenCallbackPtr</a> archiveOpenCallback) ;
+<a name="l00217"></a>00217 <span class="comment"></span>
+<a name="l00218"></a>00218 <span class="comment">    /** 打开文档</span>
+<a name="l00219"></a>00219 <span class="comment">    @param [in] archiveCodecs 文档格式编码管理器</span>
+<a name="l00220"></a>00220 <span class="comment">    @param [in] arcTypeIndex 格式序号</span>
+<a name="l00221"></a>00221 <span class="comment">    @param [in] inStream 输入文件流指针</span>
+<a name="l00222"></a>00222 <span class="comment">    @param [in] fileName 文件名</span>
+<a name="l00223"></a>00223 <span class="comment">    @param [out] archiveResult 打开的文件</span>
+<a name="l00224"></a>00224 <span class="comment">    @param [out] formatIndex 文档格式序号</span>
+<a name="l00225"></a>00225 <span class="comment">    @param [out] defaultItemName 缺省项目名称</span>
+<a name="l00226"></a>00226 <span class="comment">    @param [in] archiveOpenCallback 打开回调接口指针</span>
+<a name="l00227"></a>00227 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00228"></a>00228 <span class="comment">    */</span>
+<a name="l00229"></a>00229     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#aea2c8545cfb33e91e58be493869267ca">OpenArchive</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; archiveCodecs,
+<a name="l00230"></a>00230                                <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> arcTypeIndex,
+<a name="l00231"></a>00231                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#ae104d2963904a6af9b8a032a9e97c41d">IInStreamPtr</a> inStream,
+<a name="l00232"></a>00232                                <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName,
+<a name="l00233"></a>00233                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">IInArchivePtr</a>&amp; archiveResult,
+<a name="l00234"></a>00234                                <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&amp; formatIndex,
+<a name="l00235"></a>00235                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultItemName,
+<a name="l00236"></a>00236                                <a class="code" href="../../d7/d5a/namespaceRCZip.html#a496d83ec5b4ee465f0d2f60002d3d4ee">IArchiveOpenCallbackPtr</a> archiveOpenCallback) ;
+<a name="l00237"></a>00237 <span class="comment"></span>
+<a name="l00238"></a>00238 <span class="comment">    /** 设置回调</span>
+<a name="l00239"></a>00239 <span class="comment">    @param [in] fileName 文件名称</span>
+<a name="l00240"></a>00240 <span class="comment">    @param [in] openCallbackUI 界面打开回调接口指针</span>
+<a name="l00241"></a>00241 <span class="comment">    @param [in] reArchiveOpenCallback 打开回调接口指针</span>
+<a name="l00242"></a>00242 <span class="comment">    @param [in] archiveOpenCallback 打开回调接口指针</span>
+<a name="l00243"></a>00243 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00244"></a>00244 <span class="comment">    */</span>
+<a name="l00245"></a>00245     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a0779f62916e95a9a23176299ceab95b4">SetCallback</a>( <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName,
+<a name="l00246"></a>00246                                 <a class="code" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a>* openCallbackUI,
+<a name="l00247"></a>00247                                 <a class="code" href="../../d7/d5a/namespaceRCZip.html#a496d83ec5b4ee465f0d2f60002d3d4ee">IArchiveOpenCallbackPtr</a> reArchiveOpenCallback,
+<a name="l00248"></a>00248                                 <a class="code" href="../../d7/d5a/namespaceRCZip.html#a496d83ec5b4ee465f0d2f60002d3d4ee">IArchiveOpenCallbackPtr</a>&amp; archiveOpenCallback) ;
+<a name="l00249"></a>00249         
+<a name="l00250"></a>00250 <span class="preprocessor">#ifndef RC_STATIC_SFX</span>
+<a name="l00251"></a>00251 <span class="preprocessor"></span><span class="comment"></span>
+<a name="l00252"></a>00252 <span class="comment">    /** 测试文档格式签名</span>
+<a name="l00253"></a>00253 <span class="comment">    @param [in] p1 待匹配串1</span>
+<a name="l00254"></a>00254 <span class="comment">    @param [in] p2 待匹配串2</span>
+<a name="l00255"></a>00255 <span class="comment">    @param [in] size 需匹配的长度</span>
+<a name="l00256"></a>00256 <span class="comment">    @return p1 p2匹配成功返回 true,否则返回 false</span>
+<a name="l00257"></a>00257 <span class="comment">    */</span>
+<a name="l00258"></a>00258     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a5ca9011ac10764f8edd0c24424cab382">TestSignature</a>(<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* p1, <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* p2, <span class="keywordtype">size_t</span> size) ;
+<a name="l00259"></a>00259     
+<a name="l00260"></a>00260 <span class="preprocessor">#endif</span>
+<a name="l00261"></a>00261 <span class="preprocessor"></span><span class="comment"></span>
+<a name="l00262"></a>00262 <span class="comment">    /** 生成缺省名称</span>
+<a name="l00263"></a>00263 <span class="comment">    @param [in] name 项名称</span>
+<a name="l00264"></a>00264 <span class="comment">    */</span>
+<a name="l00265"></a>00265     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#ab3364533bf9abb0e787f2d4f2842d128">MakeDefaultName</a>(<a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; name) ;
+<a name="l00266"></a>00266     <span class="comment"></span>
+<a name="l00267"></a>00267 <span class="comment">    /** 根据文件前面内容匹配可能的文件格式</span>
+<a name="l00268"></a>00268 <span class="comment">    @param [in] inStream 输入流</span>
+<a name="l00269"></a>00269 <span class="comment">    @param [in] archiveCodecs 文档格式管理器</span>
+<a name="l00270"></a>00270 <span class="comment">    @param [in] fileExt 文件扩展名</span>
+<a name="l00271"></a>00271 <span class="comment">    @param [out] formatIndices 包含全部的以扩展名查找到的格式，把有签名的放在前面</span>
+<a name="l00272"></a>00272 <span class="comment">    @param [out] matchFormatIndices 匹配签名的文件格式</span>
+<a name="l00273"></a>00273 <span class="comment">    @param [in] inputFormatIndices 文档格式列表</span>
+<a name="l00274"></a>00274 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00275"></a>00275 <span class="comment">    */</span>
+<a name="l00276"></a>00276     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a3e221116969f67b1893e90b1e79d07c9">FindFormatsBySignature</a>(<a class="code" href="../../d7/d5a/namespaceRCZip.html#ae104d2963904a6af9b8a032a9e97c41d">IInStreamPtr</a> inStream,
+<a name="l00277"></a>00277                                           <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> archiveCodecs,
+<a name="l00278"></a>00278                                           <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileExt,
+<a name="l00279"></a>00279                                           <a class="code" href="../../d7/d5a/namespaceRCZip.html#af09cff6d6d1a3925c3721176297ecf7a">RCIntVector</a>&amp; formatIndices,
+<a name="l00280"></a>00280                                           <a class="code" href="../../d7/d5a/namespaceRCZip.html#af09cff6d6d1a3925c3721176297ecf7a">RCIntVector</a>* matchFormatIndices = NULL,
+<a name="l00281"></a>00281                                           <span class="keyword">const</span> std::set&lt;RCArchiveID&gt;* inputFormatIndices = NULL) ;
+<a name="l00282"></a>00282 <span class="comment"></span>
+<a name="l00283"></a>00283 <span class="comment">    /** 获取文件的扩展名, 不含&#39;.&#39;</span>
+<a name="l00284"></a>00284 <span class="comment">    @param [in] fileName 文件名</span>
+<a name="l00285"></a>00285 <span class="comment">    @return 返回文件扩展名,不含&#39;.&#39;</span>
+<a name="l00286"></a>00286 <span class="comment">    */</span>
+<a name="l00287"></a>00287     <span class="keyword">static</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a8feb122e210a0c569e095d93243ab9c3">GetFileExtension</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName) ;
+<a name="l00288"></a>00288     
+<a name="l00289"></a>00289 <span class="keyword">private</span>:
+<a name="l00290"></a>00290     <span class="comment"></span>
+<a name="l00291"></a>00291 <span class="comment">    /** 签名检查最大偏移量</span>
+<a name="l00292"></a>00292 <span class="comment">    */</span>
+<a name="l00293"></a><a class="code" href="../../d3/d73/classRCArchiveOpen.html#a16f48cabc0b0910ee3ea229489ec3cb1">00293</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../d3/d73/classRCArchiveOpen.html#a16f48cabc0b0910ee3ea229489ec3cb1">s_maxCheckStartPosition</a> ;
+<a name="l00294"></a>00294 };
+<a name="l00295"></a>00295 
+<a name="l00296"></a>00296 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00297"></a>00297 
+<a name="l00298"></a>00298 <span class="preprocessor">#endif //__RCArchiveOpen_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

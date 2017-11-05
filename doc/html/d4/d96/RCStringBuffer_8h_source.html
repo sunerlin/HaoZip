@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCStringBuffer.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_225935dcd765d0e1bc4921e7a6a35535.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCStringBuffer.h</h1><a href="../../d4/d96/RCStringBuffer_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCStringBuffer_h_</span>
+<a name="l00011"></a><a class="code" href="../../d4/d96/RCStringBuffer_8h.html#a664f701a4566546f9efa31241ecb00af">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCStringBuffer_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/df2/RCNonCopyable_8h.html">base/RCNonCopyable.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/dba/RCString_8h.html">base/RCString.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d4/dd4/RCStringUtil_8h.html">common/RCStringUtil.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">template</span> &lt;<span class="keyword">class</span> <span class="keywordtype">string</span>_type&gt;
+<a name="l00020"></a><a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">00020</a> <span class="keyword">class </span><a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferBase</a>:
+<a name="l00021"></a>00021     <span class="keyword">private</span> <a class="code" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html">RCNonCopyable</a>
+<a name="l00022"></a>00022 {
+<a name="l00023"></a>00023 <span class="keyword">public</span>:
+<a name="l00024"></a>00024 <span class="comment"></span>
+<a name="l00025"></a>00025 <span class="comment">    /** 默认构造函数</span>
+<a name="l00026"></a>00026 <span class="comment">    @param [in] str 字符串指针</span>
+<a name="l00027"></a>00027 <span class="comment">    */</span>
+<a name="l00028"></a>00028     <span class="keyword">explicit</span> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferBase</a>(string_type* str) ;
+<a name="l00029"></a>00029     <span class="comment"></span>
+<a name="l00030"></a>00030 <span class="comment">    /** 默认析构函数</span>
+<a name="l00031"></a>00031 <span class="comment">    */</span>
+<a name="l00032"></a>00032     ~<a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferBase</a>() ;
+<a name="l00033"></a>00033     <span class="comment"></span>
+<a name="l00034"></a>00034 <span class="comment">    /** 获取缓冲区</span>
+<a name="l00035"></a>00035 <span class="comment">    @param [in] minBufLength 缓冲区长度</span>
+<a name="l00036"></a>00036 <span class="comment">    @return 返回缓冲区地址, 如果minBufLength为0， 返回NULL</span>
+<a name="l00037"></a>00037 <span class="comment">    */</span>
+<a name="l00038"></a>00038     <span class="keyword">typename</span> string_type::value_type* GetBuffer(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> minBufLength) ;
+<a name="l00039"></a>00039     <span class="comment"></span>
+<a name="l00040"></a>00040 <span class="comment">    /** 释放缓冲区, 以尾零方式计算字符串长度</span>
+<a name="l00041"></a>00041 <span class="comment">    */</span>
+<a name="l00042"></a>00042     <span class="keywordtype">void</span> ReleaseBuffer() ;
+<a name="l00043"></a>00043     <span class="comment"></span>
+<a name="l00044"></a>00044 <span class="comment">    /** 释放缓冲区,并把缓冲区数据赋值给字符串</span>
+<a name="l00045"></a>00045 <span class="comment">    @param [in] newLength 字符串数据长度</span>
+<a name="l00046"></a>00046 <span class="comment">    */</span>
+<a name="l00047"></a>00047     <span class="keywordtype">void</span> ReleaseBuffer(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> newLength) ;
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="keyword">private</span>:
+<a name="l00050"></a>00050     <span class="comment"></span>
+<a name="l00051"></a>00051 <span class="comment">    /** 字符串地址</span>
+<a name="l00052"></a>00052 <span class="comment">    */</span>
+<a name="l00053"></a><a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html#a801a7da976f43ce58f9f59ce6b294618">00053</a>     string_type* m_str ;
+<a name="l00054"></a>00054     <span class="comment"></span>
+<a name="l00055"></a>00055 <span class="comment">    /** 缓冲区地址</span>
+<a name="l00056"></a>00056 <span class="comment">    */</span>
+<a name="l00057"></a><a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html#aa48de813d92089afd863bf10d207f23b">00057</a>     <span class="keyword">typename</span> string_type::value_type* m_buffer ;
+<a name="l00058"></a>00058         <span class="comment"></span>
+<a name="l00059"></a>00059 <span class="comment">    /** 缓冲区长度</span>
+<a name="l00060"></a>00060 <span class="comment">    */</span>
+<a name="l00061"></a><a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html#a467eb45d3a21fce661acb363ebe9a171">00061</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_length ;
+<a name="l00062"></a>00062 };
+<a name="l00063"></a>00063 
+<a name="l00064"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#adaa940a835ce3f64af9e239258bdd570">00064</a> <span class="keyword">typedef</span> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferBase&lt;RCStringA&gt;</a> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferA</a> ;
+<a name="l00065"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a5f98992e85140ca1fa73839dd7c3440e">00065</a> <span class="keyword">typedef</span> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferBase&lt;RCStringW&gt;</a> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferW</a> ;
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="preprocessor">#ifdef RCZIP_UNICODE</span>
+<a name="l00068"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a41c48b731736a9de0a41f980f0c06d7a">00068</a> <span class="preprocessor"></span>    <span class="keyword">typedef</span> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferW</a> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBuffer</a> ;
+<a name="l00069"></a>00069 <span class="preprocessor">#else</span>
+<a name="l00070"></a>00070 <span class="preprocessor"></span>    <span class="keyword">typedef</span> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBufferA</a> <a class="code" href="../../dc/dc6/classRCZip_1_1RCStringBufferBase.html">RCStringBuffer</a> ;
+<a name="l00071"></a>00071 <span class="preprocessor">#endif</span>
+<a name="l00072"></a>00072 <span class="preprocessor"></span>
+<a name="l00073"></a>00073 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00074"></a>00074 <span class="comment"></span>
+<a name="l00075"></a>00075 <span class="comment">/** 模板实现文件</span>
+<a name="l00076"></a>00076 <span class="comment">*/</span>
+<a name="l00077"></a>00077 <span class="preprocessor">#include &quot;RCStringBuffer.inl&quot;</span>
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 <span class="preprocessor">#endif //__RCStringBuffer_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

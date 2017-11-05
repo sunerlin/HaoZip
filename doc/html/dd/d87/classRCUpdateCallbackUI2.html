@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdateCallbackUI2类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdateCallbackUI2类参考</h1><!-- doxytag: class="RCUpdateCallbackUI2" --><!-- doxytag: inherits="RCUpdateCallbackUI" -->
+<p><code>#include &lt;<a class="el" href="../../d8/d2d/RCUpdateCallbackUI_8h_source.html">RCUpdateCallbackUI.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCUpdateCallbackUI2</div>
+<div class="dynsection">
+<div class="center"><img src="../../d3/d07/classRCUpdateCallbackUI2__inherit__graph.png" border="0" usemap="#RCUpdateCallbackUI2_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCUpdateCallbackUI2_inherit__map" id="RCUpdateCallbackUI2_inherit__map">
+<area shape="rect" id="node2" href="../../da/d10/classRCUpdateCallbackUI.html" title="{RCUpdateCallbackUI\n||+ SetTotal()\l+ SetCompleted()\l+ SetRatioInfo()\l+ SetCompressRatioInfo()\l+ CheckBreak()\l+ Finilize()\l+ SetNumFiles()\l+ GetStream()\l+ GetArchiveProperty()\l+ OpenFileResult()\l+ SetOperationResult()\l+ CryptoGetTextPassword2()\l+ CryptoGetTextPassword()\l+ SetMultiThread()\l+ SetComment()\l}" alt="" coords="5,5,216,288"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCUpdateCallbackUI2合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/d34/classRCUpdateCallbackUI2__coll__graph.png" border="0" usemap="#RCUpdateCallbackUI2_coll__map" alt="Collaboration graph"/></div>
+<map name="RCUpdateCallbackUI2_coll__map" id="RCUpdateCallbackUI2_coll__map">
+<area shape="rect" id="node2" href="../../da/d10/classRCUpdateCallbackUI.html" title="{RCUpdateCallbackUI\n||+ SetTotal()\l+ SetCompleted()\l+ SetRatioInfo()\l+ SetCompressRatioInfo()\l+ CheckBreak()\l+ Finilize()\l+ SetNumFiles()\l+ GetStream()\l+ GetArchiveProperty()\l+ OpenFileResult()\l+ SetOperationResult()\l+ CryptoGetTextPassword2()\l+ CryptoGetTextPassword()\l+ SetMultiThread()\l+ SetComment()\l}" alt="" coords="5,5,216,288"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../df/d92/classRCUpdateCallbackUI2-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#adca4959604f518b4ef6811bf9d5fe6e6">OpenResult</a> (const RCString &amp;name, <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> result)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#a56309540af970b64802247456c6b907f">StartScanning</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#ab384757e5826483e4e0f9b833f30811d">ScanProgress</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> numFolders, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> numFiles, const RCString &amp;path)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#ad60b9fee45cf882ff0b8c062a9552eb7">CanNotFindError</a> (const RCString &amp;name, <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> systemError)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#a86e5edee7d02b740de06fd40a998ea6c">FinishScanning</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#abe3fa5826bdd80b287204101cb5e9150">StartArchive</a> (const RCString &amp;name, bool updating)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#a7b080f015acbbb56b74831989538f4e6">FinishArchive</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#ae595fa00894fc4b18b41d7912c650602">OnAskFileFilter</a> (<a class="el" href="../../d9/dd9/classRCArchiveUpdateFilter.html">RCArchiveUpdateFilter</a> *updateFilter)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#ad3a3fdc2ef7e15a8e1060516c1652604">OnConvertImageStart</a> (const RCString &amp;imageFile, const RCString &amp;destFile)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d87/classRCUpdateCallbackUI2.html#af17ca6958eb9482cfd044084b9a66607">OnConvertImageEnd</a> (const RCString &amp;imageFile, <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> result)=0</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>压缩操作界面回调 </p>
+
+<p>在文件<a class="el" href="../../d8/d2d/RCUpdateCallbackUI_8h_source.html">RCUpdateCallbackUI.h</a>第<a class="el" href="../../d8/d2d/RCUpdateCallbackUI_8h_source.html#l00136">136</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ad60b9fee45cf882ff0b8c062a9552eb7"></a><!-- doxytag: member="RCUpdateCallbackUI2::CanNotFindError" ref="ad60b9fee45cf882ff0b8c062a9552eb7" args="(const RCString &amp;name, HResult systemError)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::CanNotFindError </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td>
+          <td class="paramname"> <em>systemError</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>扫描错误回调 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>扫描路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>systemError</em>&nbsp;</td><td>系统错误号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7b080f015acbbb56b74831989538f4e6"></a><!-- doxytag: member="RCUpdateCallbackUI2::FinishArchive" ref="a7b080f015acbbb56b74831989538f4e6" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::FinishArchive </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>完成文档操作 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86e5edee7d02b740de06fd40a998ea6c"></a><!-- doxytag: member="RCUpdateCallbackUI2::FinishScanning" ref="a86e5edee7d02b740de06fd40a998ea6c" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::FinishScanning </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>扫描完成回调 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae595fa00894fc4b18b41d7912c650602"></a><!-- doxytag: member="RCUpdateCallbackUI2::OnAskFileFilter" ref="ae595fa00894fc4b18b41d7912c650602" args="(RCArchiveUpdateFilter *updateFilter)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::OnAskFileFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/dd9/classRCArchiveUpdateFilter.html">RCArchiveUpdateFilter</a> *&nbsp;</td>
+          <td class="paramname"> <em>updateFilter</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>询问图片转换接口 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>updateFilter</em>&nbsp;</td><td>图片转换过滤器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af17ca6958eb9482cfd044084b9a66607"></a><!-- doxytag: member="RCUpdateCallbackUI2::OnConvertImageEnd" ref="af17ca6958eb9482cfd044084b9a66607" args="(const RCString &amp;imageFile, HResult result)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::OnConvertImageEnd </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>imageFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>结束转换图片 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>imageFile</em>&nbsp;</td><td>图片文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>转换结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad3a3fdc2ef7e15a8e1060516c1652604"></a><!-- doxytag: member="RCUpdateCallbackUI2::OnConvertImageStart" ref="ad3a3fdc2ef7e15a8e1060516c1652604" args="(const RCString &amp;imageFile, const RCString &amp;destFile)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::OnConvertImageStart </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>imageFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>destFile</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>开始转换图片 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>imageFile</em>&nbsp;</td><td>图片文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>destFile</em>&nbsp;</td><td>转换后文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adca4959604f518b4ef6811bf9d5fe6e6"></a><!-- doxytag: member="RCUpdateCallbackUI2::OpenResult" ref="adca4959604f518b4ef6811bf9d5fe6e6" args="(const RCString &amp;name, HResult result)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::OpenResult </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档结果 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>打开结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab384757e5826483e4e0f9b833f30811d"></a><!-- doxytag: member="RCUpdateCallbackUI2::ScanProgress" ref="ab384757e5826483e4e0f9b833f30811d" args="(uint64_t numFolders, uint64_t numFiles, const RCString &amp;path)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::ScanProgress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numFolders</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numFiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>扫描进度回调 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numFolders</em>&nbsp;</td><td>目录数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numFiles</em>&nbsp;</td><td>文件数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>扫描路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>参考自 <a class="el" href="../../d6/d6d/RCEnumDirItemUpdateCallback_8h_source.html#l00033">RCEnumDirItemUpdateCallback::ScanProgress()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图。</div>
+<div class="dynsection">
+<div class="center"><img src="../../dd/d87/classRCUpdateCallbackUI2_ab384757e5826483e4e0f9b833f30811d_icgraph.png" border="0" usemap="#dd/d87/classRCUpdateCallbackUI2_ab384757e5826483e4e0f9b833f30811d_icgraph_map" alt=""></div>
+<map name="dd/d87/classRCUpdateCallbackUI2_ab384757e5826483e4e0f9b833f30811d_icgraph_map" id="dd/d87/classRCUpdateCallbackUI2_ab384757e5826483e4e0f9b833f30811d_icgraph">
+<area shape="rect" id="node3" href="../../d4/d4f/structRCEnumDirItemUpdateCallback.html#ad9f0399298d490704e881301d81be829" title="RCEnumDirItemUpdateCallback::ScanProgress" alt="" coords="317,5,648,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe3fa5826bdd80b287204101cb5e9150"></a><!-- doxytag: member="RCUpdateCallbackUI2::StartArchive" ref="abe3fa5826bdd80b287204101cb5e9150" args="(const RCString &amp;name, bool updating)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::StartArchive </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>updating</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>开始文档操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>updating</em>&nbsp;</td><td>是否更新 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a56309540af970b64802247456c6b907f"></a><!-- doxytag: member="RCUpdateCallbackUI2::StartScanning" ref="a56309540af970b64802247456c6b907f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdateCallbackUI2::StartScanning </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>开始扫描磁盘 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d8/d2d/RCUpdateCallbackUI_8h_source.html">RCUpdateCallbackUI.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCSequentialOutTempBufferImp类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html">RCSequentialOutTempBufferImp</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCSequentialOutTempBufferImp类参考</h1><!-- doxytag: class="RCZip::RCSequentialOutTempBufferImp" --><!-- doxytag: inherits="IUnknownImpl&lt; ISequentialOutStream &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d8/de0/RCSequentialOutTempBufferImp_8h_source.html">RCSequentialOutTempBufferImp.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCSequentialOutTempBufferImp</div>
+<div class="dynsection">
+<div class="center"><img src="../../de/d61/classRCZip_1_1RCSequentialOutTempBufferImp__inherit__graph.png" border="0" usemap="#RCZip_1_1RCSequentialOutTempBufferImp_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCSequentialOutTempBufferImp_inherit__map" id="RCZip_1_1RCSequentialOutTempBufferImp_inherit__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="28,361,372,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="200,198,416,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="235,6,381,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCSequentialOutTempBufferImp合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dc/d4d/classRCZip_1_1RCSequentialOutTempBufferImp__coll__graph.png" border="0" usemap="#RCZip_1_1RCSequentialOutTempBufferImp_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCSequentialOutTempBufferImp_coll__map" id="RCZip_1_1RCSequentialOutTempBufferImp_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="229,542,573,663"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="261,216,427,352"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="72,28,248,105"/><area shape="rect" id="node12" href="../../d7/d17/classRCZip_1_1RCInOutTempBuffer.html" title="{RCZip::RCInOutTempBuffer\n|&#45; m_buf\l&#45; m_bufPos\l&#45; m_tempFileName\l&#45; m_tempFileCreated\l&#45; m_size\l&#45; m_crc\l&#45; m_tempFile\l&#45; m_outFile\l|+ RCInOutTempBuffer()\l+ ~RCInOutTempBuffer()\l+ Create()\l+ InitWriting()\l+ Write()\l+ GetDataSize()\l+ WriteToStream()\l&#45; Free()\l&#45; WriteToFile()\l}" alt="" coords="5,454,205,751"/><area shape="rect" id="node15" href="../../d6/d9e/classRCZip_1_1RCTempFile.html" title="{RCZip::RCTempFile\n|&#45; m_mustBeDeleted\l&#45; m_fileName\l|+ RCTempFile()\l+ ~RCTempFile()\l+ DisableDeleting()\l+ CreateTempFile()\l+ CreateTempFile()\l+ Remove()\l+ GetFileName()\l&#45; Create()\l&#45; Create()\l}" alt="" coords="83,179,237,389"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="451,238,667,330"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="485,6,632,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d8/d29/classRCZip_1_1RCSequentialOutTempBufferImp-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html#a39efe1e0e25185f31911e0c356d496b4">RCSequentialOutTempBufferImp</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html#a05711dcb167de382b67fefe7dcf9116e">~RCSequentialOutTempBufferImp</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html#ae8763642d4d052e93cb571e93e38205f">Init</a> (<a class="el" href="../../d7/d17/classRCZip_1_1RCInOutTempBuffer.html">RCInOutTempBuffer</a> *buffer)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html#add5fe8189e9f2124bca97bbe438bd998">Write</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d17/classRCZip_1_1RCInOutTempBuffer.html">RCInOutTempBuffer</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html#a7c9454db1db7cbb7ef34727288ddd144">m_buffer</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d8/de0/RCSequentialOutTempBufferImp_8h_source.html">RCSequentialOutTempBufferImp.h</a>第<a class="el" href="../../d8/de0/RCSequentialOutTempBufferImp_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a39efe1e0e25185f31911e0c356d496b4"></a><!-- doxytag: member="RCZip::RCSequentialOutTempBufferImp::RCSequentialOutTempBufferImp" ref="a39efe1e0e25185f31911e0c356d496b4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCSequentialOutTempBufferImp::RCSequentialOutTempBufferImp </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a05711dcb167de382b67fefe7dcf9116e"></a><!-- doxytag: member="RCZip::RCSequentialOutTempBufferImp::~RCSequentialOutTempBufferImp" ref="a05711dcb167de382b67fefe7dcf9116e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCSequentialOutTempBufferImp::~RCSequentialOutTempBufferImp </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ae8763642d4d052e93cb571e93e38205f"></a><!-- doxytag: member="RCZip::RCSequentialOutTempBufferImp::Init" ref="ae8763642d4d052e93cb571e93e38205f" args="(RCInOutTempBuffer *buffer)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCSequentialOutTempBufferImp::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d17/classRCZip_1_1RCInOutTempBuffer.html">RCInOutTempBuffer</a> *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="add5fe8189e9f2124bca97bbe438bd998"></a><!-- doxytag: member="RCZip::RCSequentialOutTempBufferImp::Write" ref="add5fe8189e9f2124bca97bbe438bd998" args="(const void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCSequentialOutTempBufferImp::Write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回 RC_S_OK, 失败返回错误码 </dd></dl>
+
+<p>实现了<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html#ad269989f026c6c6b69acbe5007fc940a">RCZip::ISequentialOutStream</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a7c9454db1db7cbb7ef34727288ddd144"></a><!-- doxytag: member="RCZip::RCSequentialOutTempBufferImp::m_buffer" ref="a7c9454db1db7cbb7ef34727288ddd144" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d17/classRCZip_1_1RCInOutTempBuffer.html">RCInOutTempBuffer</a>* <a class="el" href="../../d2/ddb/classRCZip_1_1RCSequentialOutTempBufferImp.html#a7c9454db1db7cbb7ef34727288ddd144">RCZip::RCSequentialOutTempBufferImp::m_buffer</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据输出缓冲区 </p>
+
+<p>在文件<a class="el" href="../../d8/de0/RCSequentialOutTempBufferImp_8h_source.html">RCSequentialOutTempBufferImp.h</a>第<a class="el" href="../../d8/de0/RCSequentialOutTempBufferImp_8h_source.html#l00051">51</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d8/de0/RCSequentialOutTempBufferImp_8h_source.html">RCSequentialOutTempBufferImp.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

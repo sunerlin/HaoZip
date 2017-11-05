@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: LzFind.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>LzFind.h</h1><a href="../../d8/dd9/LzFind_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* LzFind.h -- Match finder for LZ algorithms</span>
+<a name="l00002"></a>00002 <span class="comment">2009-04-22 : Igor Pavlov : Public domain */</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef __LZ_FIND_H</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define __LZ_FIND_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/df8/Types_8h.html">algorithm/Types.h</a>&quot;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00011"></a>00011 <span class="preprocessor">#endif</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a55efd0bf8cb5a8bb97750b2f2f290332">00013</a> <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d8/dd9/LzFind_8h.html#a55efd0bf8cb5a8bb97750b2f2f290332">CLzRef</a>;
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html">00015</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d1/d08/struct__CMatchFinder.html">_CMatchFinder</a>
+<a name="l00016"></a>00016 {
+<a name="l00017"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#af6820e81327f767f469a7bb2cd726e6c">00017</a>   <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *<a class="code" href="../../d1/d08/struct__CMatchFinder.html#af6820e81327f767f469a7bb2cd726e6c">buffer</a>;
+<a name="l00018"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#ae67ddacfc7ea3bc2972d3059ff09ca41">00018</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#ae67ddacfc7ea3bc2972d3059ff09ca41">pos</a>;
+<a name="l00019"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a6889360c8ea271cc8e1a6f492d55f216">00019</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a6889360c8ea271cc8e1a6f492d55f216">posLimit</a>;
+<a name="l00020"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a4c2622be2211a6c04c4ae12d6edbfda3">00020</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a4c2622be2211a6c04c4ae12d6edbfda3">streamPos</a>;
+<a name="l00021"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a36e2460096858683dce2f70e96bc17ad">00021</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a36e2460096858683dce2f70e96bc17ad">lenLimit</a>;
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#af6a0f036983f9a8e8559d39e3d4175b9">00023</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#af6a0f036983f9a8e8559d39e3d4175b9">cyclicBufferPos</a>;
+<a name="l00024"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#ac77741f48729e12a0dbb587219498915">00024</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#ac77741f48729e12a0dbb587219498915">cyclicBufferSize</a>; <span class="comment">/* it must be = (historySize + 1) */</span>
+<a name="l00025"></a>00025 
+<a name="l00026"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a074dda23d23ec089a98d0a31258720d6">00026</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a074dda23d23ec089a98d0a31258720d6">matchMaxLen</a>;
+<a name="l00027"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a2b8336f560052c8b60b39aa271100180">00027</a>   CLzRef *<a class="code" href="../../d1/d08/struct__CMatchFinder.html#a2b8336f560052c8b60b39aa271100180">hash</a>;
+<a name="l00028"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a3e51ba1b357dfe65fe5e8a1210a38a52">00028</a>   CLzRef *<a class="code" href="../../d1/d08/struct__CMatchFinder.html#a3e51ba1b357dfe65fe5e8a1210a38a52">son</a>;
+<a name="l00029"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#aa6deb3892f5e644d379e7bd96cfdf1ab">00029</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#aa6deb3892f5e644d379e7bd96cfdf1ab">hashMask</a>;
+<a name="l00030"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a462156e44475424bb009f2f49e52c37d">00030</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a462156e44475424bb009f2f49e52c37d">cutValue</a>;
+<a name="l00031"></a>00031 
+<a name="l00032"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#ac36264b55b195836c68aed332e97843f">00032</a>   <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *<a class="code" href="../../d1/d08/struct__CMatchFinder.html#ac36264b55b195836c68aed332e97843f">bufferBase</a>;
+<a name="l00033"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#add9ebf59ca70063b0bb724ff730015a0">00033</a>   <a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *<a class="code" href="../../d1/d08/struct__CMatchFinder.html#add9ebf59ca70063b0bb724ff730015a0">stream</a>;
+<a name="l00034"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#af0f1c0199f01b77735bfc159c27f8dd2">00034</a>   <span class="keywordtype">int</span> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#af0f1c0199f01b77735bfc159c27f8dd2">streamEndWasReached</a>;
+<a name="l00035"></a>00035 
+<a name="l00036"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a43b8a9795c79bca2280bff5d743cdaad">00036</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a43b8a9795c79bca2280bff5d743cdaad">blockSize</a>;
+<a name="l00037"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a1420989828990ca832ee08f2bc73b3a5">00037</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a1420989828990ca832ee08f2bc73b3a5">keepSizeBefore</a>;
+<a name="l00038"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a3464407f3aaf26be097840550576750d">00038</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a3464407f3aaf26be097840550576750d">keepSizeAfter</a>;
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a670d5827ff29e33bdc30451b6e2b08d9">00040</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a670d5827ff29e33bdc30451b6e2b08d9">numHashBytes</a>;
+<a name="l00041"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#ac453b7c202054f3b82800251d87d61f8">00041</a>   <span class="keywordtype">int</span> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#ac453b7c202054f3b82800251d87d61f8">directInput</a>;
+<a name="l00042"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#aeb8522f19059329549db84aee1bdd052">00042</a>   <span class="keywordtype">size_t</span> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#aeb8522f19059329549db84aee1bdd052">directInputRem</a>;
+<a name="l00043"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#ade8f46f27064f4f9b4234daabb8d6db4">00043</a>   <span class="keywordtype">int</span> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#ade8f46f27064f4f9b4234daabb8d6db4">btMode</a>;
+<a name="l00044"></a>00044   <span class="comment">/* int skipModeBits; */</span>
+<a name="l00045"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a55c701f1ed3833593b01b93c3a6aac26">00045</a>   <span class="keywordtype">int</span> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a55c701f1ed3833593b01b93c3a6aac26">bigHash</a>;
+<a name="l00046"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#afdc838bd37058d0de17736940f174b5d">00046</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#afdc838bd37058d0de17736940f174b5d">historySize</a>;
+<a name="l00047"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a0ffd9beb63c7e8ec36a560bf96637309">00047</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a0ffd9beb63c7e8ec36a560bf96637309">fixedHashSize</a>;
+<a name="l00048"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a4182f99a261d84c5ee2fcd432b1480cd">00048</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a4182f99a261d84c5ee2fcd432b1480cd">hashSizeSum</a>;
+<a name="l00049"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a73fb37abc06ef3aadf71473f5cbbc2d3">00049</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a73fb37abc06ef3aadf71473f5cbbc2d3">numSons</a>;
+<a name="l00050"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#a719e83315339ce64c4b5b18d469adb96">00050</a>   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#a719e83315339ce64c4b5b18d469adb96">result</a>;
+<a name="l00051"></a><a class="code" href="../../d1/d08/struct__CMatchFinder.html#ab75bea7c150fbd78edb6638b1a06b60e">00051</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d1/d08/struct__CMatchFinder.html#ab75bea7c150fbd78edb6638b1a06b60e">crc</a>[256];
+<a name="l00052"></a>00052 } <a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a>;
+<a name="l00053"></a>00053 
+<a name="l00054"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a786c1d27ce6a50a4d3a0dd59df8c9bd3">00054</a> <span class="preprocessor">#define Inline_MatchFinder_GetPointerToCurrentPos(p) ((p)-&gt;buffer)</span>
+<a name="l00055"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a97b91c42487b471027f5d075fabe29a3">00055</a> <span class="preprocessor"></span><span class="preprocessor">#define Inline_MatchFinder_GetIndexByte(p, index) ((p)-&gt;buffer[(int32_t)(index)])</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span>
+<a name="l00057"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#addf9afa832b5a2ece968912043f955fd">00057</a> <span class="preprocessor">#define Inline_MatchFinder_GetNumAvailableBytes(p) ((p)-&gt;streamPos - (p)-&gt;pos)</span>
+<a name="l00058"></a>00058 <span class="preprocessor"></span>
+<a name="l00059"></a>00059 <span class="keywordtype">int</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a73e1c37ad8c3c7825e18df404715717b">MatchFinder_NeedMove</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p);
+<a name="l00060"></a>00060 <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *<a class="code" href="../../d8/dd9/LzFind_8h.html#a98ac00cd9660cc95ffff3e04609870ea">MatchFinder_GetPointerToCurrentPos</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p);
+<a name="l00061"></a>00061 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a486cf924c1f3660f84871dfe21f22df5">MatchFinder_MoveBlock</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p);
+<a name="l00062"></a>00062 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a2f38eecea3cc5a353ddf42bafcca7c08">MatchFinder_ReadIfRequired</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p);
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a487aeb881073394dc1c0755d4790c5ea">MatchFinder_Construct</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="comment">/* Conditions:</span>
+<a name="l00067"></a>00067 <span class="comment">     historySize &lt;= 3 GB</span>
+<a name="l00068"></a>00068 <span class="comment">     keepAddBufferBefore + matchMaxLen + keepAddBufferAfter &lt; 511MB</span>
+<a name="l00069"></a>00069 <span class="comment">*/</span>
+<a name="l00070"></a>00070 <span class="keywordtype">int</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a53eba928ede7596cd78c86185f0a9e9d">MatchFinder_Create</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> historySize,
+<a name="l00071"></a>00071     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> keepAddBufferBefore, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> matchMaxLen, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> keepAddBufferAfter,
+<a name="l00072"></a>00072     <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc);
+<a name="l00073"></a>00073 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a7cd763a949f7a5f1bad61a9ebf0f7c30">MatchFinder_Free</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc);
+<a name="l00074"></a>00074 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#af4af29efe7e13faac6e70ea569ceb419">MatchFinder_Normalize3</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> subValue, CLzRef *items, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numItems);
+<a name="l00075"></a>00075 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a4a2650e28151be2fecedeb7f22c2824a">MatchFinder_ReduceOffsets</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> subValue);
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> * <a class="code" href="../../d8/dd9/LzFind_8h.html#aeedd81cba6680286caeee2fd764fad3c">GetMatchesSpec1</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> lenLimit, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> curMatch, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> pos, <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *buffer, CLzRef *son,
+<a name="l00078"></a>00078     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> _cyclicBufferPos, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> _cyclicBufferSize, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> _cutValue,
+<a name="l00079"></a>00079     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *distances, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> maxLen);
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 <span class="comment">/*</span>
+<a name="l00082"></a>00082 <span class="comment">Conditions:</span>
+<a name="l00083"></a>00083 <span class="comment">  Mf_GetNumAvailableBytes_Func must be called before each Mf_GetMatchLen_Func.</span>
+<a name="l00084"></a>00084 <span class="comment">  Mf_GetPointerToCurrentPos_Func&#39;s result must be used only before any other function</span>
+<a name="l00085"></a>00085 <span class="comment">*/</span>
+<a name="l00086"></a>00086 
+<a name="l00087"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a43190b49d2ee45852df13ce4d10acb7d">00087</a> <span class="keyword">typedef</span> void (*<a class="code" href="../../d8/dd9/LzFind_8h.html#a43190b49d2ee45852df13ce4d10acb7d">Mf_Init_Func</a>)(<span class="keywordtype">void</span> *object);
+<a name="l00088"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a65eba77dbd828292a5d1b00dff64015f">00088</a> <span class="keyword">typedef</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> (*<a class="code" href="../../d8/dd9/LzFind_8h.html#a65eba77dbd828292a5d1b00dff64015f">Mf_GetIndexByte_Func</a>)(<span class="keywordtype">void</span> *object, <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> index);
+<a name="l00089"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a4edb04a06754b866df49a04ab68498e9">00089</a> <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> (*<a class="code" href="../../d8/dd9/LzFind_8h.html#a4edb04a06754b866df49a04ab68498e9">Mf_GetNumAvailableBytes_Func</a>)(<span class="keywordtype">void</span> *object);
+<a name="l00090"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a67758fe1db01b3d4a5c50b6758125728">00090</a> <span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> * (*Mf_GetPointerToCurrentPos_Func)(<span class="keywordtype">void</span> *object);
+<a name="l00091"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#aaee80674f17dbe21936d0256b56810fe">00091</a> <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> (*<a class="code" href="../../d8/dd9/LzFind_8h.html#aaee80674f17dbe21936d0256b56810fe">Mf_GetMatches_Func</a>)(<span class="keywordtype">void</span> *object, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *distances);
+<a name="l00092"></a><a class="code" href="../../d8/dd9/LzFind_8h.html#a241c8a6af19cfbd28933b41ebcc247fb">00092</a> <span class="keyword">typedef</span> void (*<a class="code" href="../../d8/dd9/LzFind_8h.html#a241c8a6af19cfbd28933b41ebcc247fb">Mf_Skip_Func</a>)(<span class="keywordtype">void</span> *object, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>);
+<a name="l00093"></a>00093 
+<a name="l00094"></a><a class="code" href="../../d4/d41/struct__IMatchFinder.html">00094</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d4/d41/struct__IMatchFinder.html">_IMatchFinder</a>
+<a name="l00095"></a>00095 {
+<a name="l00096"></a><a class="code" href="../../d4/d41/struct__IMatchFinder.html#abfd72dee891c932d567298a92acbe4a6">00096</a>   <a class="code" href="../../d8/dd9/LzFind_8h.html#a43190b49d2ee45852df13ce4d10acb7d">Mf_Init_Func</a> <a class="code" href="../../d4/d41/struct__IMatchFinder.html#abfd72dee891c932d567298a92acbe4a6">Init</a>;
+<a name="l00097"></a><a class="code" href="../../d4/d41/struct__IMatchFinder.html#a9543d852e1512077ec6e49813dac54fe">00097</a>   <a class="code" href="../../d8/dd9/LzFind_8h.html#a65eba77dbd828292a5d1b00dff64015f">Mf_GetIndexByte_Func</a> <a class="code" href="../../d4/d41/struct__IMatchFinder.html#a9543d852e1512077ec6e49813dac54fe">GetIndexByte</a>;
+<a name="l00098"></a><a class="code" href="../../d4/d41/struct__IMatchFinder.html#a03b891f971db9ab073510a8cbb5ce613">00098</a>   <a class="code" href="../../d8/dd9/LzFind_8h.html#a4edb04a06754b866df49a04ab68498e9">Mf_GetNumAvailableBytes_Func</a> <a class="code" href="../../d4/d41/struct__IMatchFinder.html#a03b891f971db9ab073510a8cbb5ce613">GetNumAvailableBytes</a>;
+<a name="l00099"></a><a class="code" href="../../d4/d41/struct__IMatchFinder.html#acf4056a24139712495ddccc6cf0cc184">00099</a>   <a class="code" href="../../d8/dd9/LzFind_8h.html#a67758fe1db01b3d4a5c50b6758125728">Mf_GetPointerToCurrentPos_Func</a> <a class="code" href="../../d4/d41/struct__IMatchFinder.html#acf4056a24139712495ddccc6cf0cc184">GetPointerToCurrentPos</a>;
+<a name="l00100"></a><a class="code" href="../../d4/d41/struct__IMatchFinder.html#a1d8c88cc964418a057739a7157f9889b">00100</a>   <a class="code" href="../../d8/dd9/LzFind_8h.html#aaee80674f17dbe21936d0256b56810fe">Mf_GetMatches_Func</a> <a class="code" href="../../d4/d41/struct__IMatchFinder.html#a1d8c88cc964418a057739a7157f9889b">GetMatches</a>;
+<a name="l00101"></a><a class="code" href="../../d4/d41/struct__IMatchFinder.html#a0e00814f6a3716bb3fe8fa04c910d527">00101</a>   <a class="code" href="../../d8/dd9/LzFind_8h.html#a241c8a6af19cfbd28933b41ebcc247fb">Mf_Skip_Func</a> <a class="code" href="../../d4/d41/struct__IMatchFinder.html#a0e00814f6a3716bb3fe8fa04c910d527">Skip</a>;
+<a name="l00102"></a>00102 } <a class="code" href="../../d4/d41/struct__IMatchFinder.html">IMatchFinder</a>;
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a6f5f22fb5d40c695d917df8d89faa80f">MatchFinder_CreateVTable</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../d4/d41/struct__IMatchFinder.html">IMatchFinder</a> *vTable);
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a1cd7e1df8b5871e0f6754458a4fbc055">MatchFinder_Init</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p);
+<a name="l00107"></a>00107 <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d8/dd9/LzFind_8h.html#a5055cdeb5e85e2b504220f64266b517d">Bt3Zip_MatchFinder_GetMatches</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *distances);
+<a name="l00108"></a>00108 <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d8/dd9/LzFind_8h.html#ae9e13eb3550668473af7ded29e219aa8">Hc3Zip_MatchFinder_GetMatches</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *distances);
+<a name="l00109"></a>00109 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a16e415767b1943ddf602838dcde7f9bd">Bt3Zip_MatchFinder_Skip</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num);
+<a name="l00110"></a>00110 <span class="keywordtype">void</span> <a class="code" href="../../d8/dd9/LzFind_8h.html#a3af5f7841045eaf499eebfe48011cbb2">Hc3Zip_MatchFinder_Skip</a>(<a class="code" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num);
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00113"></a>00113 <span class="preprocessor"></span>}
+<a name="l00114"></a>00114 <span class="preprocessor">#endif</span>
+<a name="l00115"></a>00115 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

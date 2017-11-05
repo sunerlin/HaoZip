@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCLzmaHeader类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html">RCLzmaHeader</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCLzmaHeader类参考</h1><!-- doxytag: class="RCZip::RCLzmaHeader" -->
+<p><code>#include &lt;<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html">RCLzmaHeader.h</a>&gt;</code></p>
+
+<p><a href="../../da/dff/classRCZip_1_1RCLzmaHeader-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a3a4b05c5bfe0cb0e6f669430a6854f04">RCLzmaHeader</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a037650d207b5c9980f350046caff4087">GetDicSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#ae1aa607999e3f0698e77ae275bd60f18">HasSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#aef6fccc551e5742e96a8625f1d2bd4ca">Parse</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *buf, bool isThereFilter)</td></tr>
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a87637e921e1b2a45e7e992e6fadb1dff">CheckDicSize</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *p)</td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a2f2581d2b41a323378ae188bd2e47225">m_size</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a33dd9efec2b160981ba0ae06c4284d47">m_filterID</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a66cb252398e8934f70725fb157edab52">m_lzmaProps</a> [5]</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html">RCLzmaHeader.h</a>第<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html#l00017">17</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a3a4b05c5bfe0cb0e6f669430a6854f04"></a><!-- doxytag: member="RCZip::RCLzmaHeader::RCLzmaHeader" ref="a3a4b05c5bfe0cb0e6f669430a6854f04" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCLzmaHeader::RCLzmaHeader </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a87637e921e1b2a45e7e992e6fadb1dff"></a><!-- doxytag: member="RCZip::RCLzmaHeader::CheckDicSize" ref="a87637e921e1b2a45e7e992e6fadb1dff" args="(const byte_t *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCLzmaHeader::CheckDicSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查字典大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>内存数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>通过检查返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a037650d207b5c9980f350046caff4087"></a><!-- doxytag: member="RCZip::RCLzmaHeader::GetDicSize" ref="a037650d207b5c9980f350046caff4087" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCLzmaHeader::GetDicSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取字典大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回字典大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1aa607999e3f0698e77ae275bd60f18"></a><!-- doxytag: member="RCZip::RCLzmaHeader::HasSize" ref="ae1aa607999e3f0698e77ae275bd60f18" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCLzmaHeader::HasSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否有大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aef6fccc551e5742e96a8625f1d2bd4ca"></a><!-- doxytag: member="RCZip::RCLzmaHeader::Parse" ref="aef6fccc551e5742e96a8625f1d2bd4ca" args="(const byte_t *buf, bool isThereFilter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCLzmaHeader::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isThereFilter</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解析 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>buf</em>&nbsp;</td><td>内存数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isThereFilter</em>&nbsp;</td><td>是否是过滤 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>解析成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a33dd9efec2b160981ba0ae06c4284d47"></a><!-- doxytag: member="RCZip::RCLzmaHeader::m_filterID" ref="a33dd9efec2b160981ba0ae06c4284d47" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a33dd9efec2b160981ba0ae06c4284d47">RCZip::RCLzmaHeader::m_filterID</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>过滤id </p>
+
+<p>在文件<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html">RCLzmaHeader.h</a>第<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html#l00058">58</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a66cb252398e8934f70725fb157edab52"></a><!-- doxytag: member="RCZip::RCLzmaHeader::m_lzmaProps" ref="a66cb252398e8934f70725fb157edab52" args="[5]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a66cb252398e8934f70725fb157edab52">RCZip::RCLzmaHeader::m_lzmaProps</a>[5]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>lzma属性 </p>
+
+<p>在文件<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html">RCLzmaHeader.h</a>第<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html#l00062">62</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f2581d2b41a323378ae188bd2e47225"></a><!-- doxytag: member="RCZip::RCLzmaHeader::m_size" ref="a2f2581d2b41a323378ae188bd2e47225" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d8/d86/classRCZip_1_1RCLzmaHeader.html#a2f2581d2b41a323378ae188bd2e47225">RCZip::RCLzmaHeader::m_size</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>大小 </p>
+
+<p>在文件<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html">RCLzmaHeader.h</a>第<a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html#l00054">54</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dd/d45/RCLzmaHeader_8h_source.html">RCLzmaHeader.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

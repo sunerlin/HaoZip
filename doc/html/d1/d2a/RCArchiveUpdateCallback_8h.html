@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveUpdateCallback.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_1fee5ccf71dc3b0de21adbdee5795b7f.html">update</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveUpdateCallback.h文件参考</h1><code>#include &quot;<a class="el" href="../../dd/d51/RCTypes_8h_source.html">base/RCTypes.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d71/ICoder_8h_source.html">interface/ICoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/d06/IUnknownImpl_8h_source.html">interface/IUnknownImpl.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d7b/IArchive_8h_source.html">interface/IArchive.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/dcb/IPassword_8h_source.html">interface/IPassword.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d3/dd0/RCPropertyID_8h_source.html">interface/RCPropertyID.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d3/d90/RCFileInfo_8h_source.html">filesystem/RCFileInfo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../da/d67/RCDirItem_8h_source.html">archive/common/RCDirItem.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dd/d06/RCDirItems_8h_source.html">archive/common/RCDirItems.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../db/d38/RCArcItem_8h_source.html">archive/common/RCArcItem.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d2d/RCUpdateCallbackUI_8h_source.html">archive/update/RCUpdateCallbackUI.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d9/d1e/RCUpdatePair2_8h_source.html">archive/update/RCUpdatePair2.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../df/df3/RCUpdateOptions_8h_source.html">archive/update/RCUpdateOptions.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../da/db9/RCArchiveUpdateFilter_8h_source.html">archive/update/RCArchiveUpdateFilter.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d0/d38/RCVariant_8h_source.html">common/RCVariant.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCArchiveUpdateCallback.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dc/db9/RCArchiveUpdateCallback_8h__incl.png" border="0" usemap="#RCArchiveUpdateCallback_8h_map" alt=""/></div>
+<map name="RCArchiveUpdateCallback_8h_map" id="RCArchiveUpdateCallback_8h">
+<area shape="rect" id="node3" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="641,677,767,704"/><area shape="rect" id="node15" href="../../de/d71/ICoder_8h.html" title="interface/ICoder.h" alt="" coords="1897,229,2039,256"/><area shape="rect" id="node42" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="3780,379,3967,405"/><area shape="rect" id="node45" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="3175,379,3337,405"/><area shape="rect" id="node54" href="../../d2/d06/IUnknownImpl_8h.html" title="interface/IUnknownImpl.h" alt="" coords="3561,379,3756,405"/><area shape="rect" id="node63" href="../../d8/d7b/IArchive_8h.html" title="interface/IArchive.h" alt="" coords="1323,229,1475,256"/><area shape="rect" id="node85" href="../../df/dcb/IPassword_8h.html" title="interface/IPassword.h" alt="" coords="2215,379,2377,405"/><area shape="rect" id="node90" href="../../d3/d90/RCFileInfo_8h.html" title="filesystem/RCFileInfo.h" alt="" coords="2912,304,3083,331"/><area shape="rect" id="node96" href="../../da/d67/RCDirItem_8h.html" title="archive/common/RCDirItem.h" alt="" coords="3157,304,3376,331"/><area shape="rect" id="node108" href="../../dd/d06/RCDirItems_8h.html" title="archive/common/RCDirItems.h" alt="" coords="2527,229,2753,256"/><area shape="rect" id="node115" href="../../db/d38/RCArcItem_8h.html" title="archive/common/RCArcItem.h" alt="" coords="2997,229,3219,256"/><area shape="rect" id="node119" href="../../d8/d2d/RCUpdateCallbackUI_8h.html" title="archive/update/RCUpdateCallbackUI.h" alt="" coords="3451,304,3725,331"/><area shape="rect" id="node126" href="../../d9/d1e/RCUpdatePair2_8h.html" title="archive/update/RCUpdatePair2.h" alt="" coords="329,80,567,107"/><area shape="rect" id="node141" href="../../df/df3/RCUpdateOptions_8h.html" title="archive/update/RCUpdateOptions.h" alt="" coords="763,229,1019,256"/><area shape="rect" id="node158" href="../../da/db9/RCArchiveUpdateFilter_8h.html" title="archive/update/RCArchiveUpdateFilter.h" alt="" coords="2549,304,2837,331"/><area shape="rect" id="node7" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="807,752,972,779"/><area shape="rect" id="node9" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="471,752,601,779"/><area shape="rect" id="node17" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="1757,453,1923,480"/><area shape="rect" id="node29" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="1563,304,1731,331"/><area shape="rect" id="node39" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="2205,304,2373,331"/><area shape="rect" id="node19" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="2181,528,2344,555"/><area shape="rect" id="node24" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="2021,528,2157,555"/><area shape="rect" id="node21" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="2204,603,2321,629"/><area shape="rect" id="node31" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="1552,379,1731,405"/><area shape="rect" id="node34" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="2351,453,2479,480"/><area shape="rect" id="node57" href="../../d6/d44/RCRefCounted_8h.html" title="base/RCRefCounted.h" alt="" coords="3576,453,3741,480"/><area shape="rect" id="node59" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="3025,528,3201,555"/><area shape="rect" id="node65" href="../../d1/d97/IProgress_8h.html" title="interface/IProgress.h" alt="" coords="1128,304,1285,331"/><area shape="rect" id="node68" href="../../db/df8/IArchiveInfo_8h.html" title="interface/IArchiveInfo.h" alt="" coords="1360,304,1539,331"/><area shape="rect" id="node78" href="../../d3/d8b/RCExtractDefs_8h.html" title="archive/extract/RCExtractDefs.h" alt="" coords="1039,603,1273,629"/><area shape="rect" id="node81" href="../../dc/d53/RCVector_8h.html" title="common/RCVector.h" alt="" coords="753,453,911,480"/><area shape="rect" id="node70" href="../../d5/d96/RCArchiveType_8h.html" title="interface/RCArchiveType.h" alt="" coords="1656,528,1853,555"/><area shape="rect" id="node93" href="../../d3/d9e/RCFileDefs_8h.html" title="filesystem/RCFileDefs.h" alt="" coords="2924,379,3100,405"/><area shape="rect" id="node99" href="../../d7/d27/RCWindowsDefs_8h.html" title="base/RCWindowsDefs.h" alt="" coords="3361,379,3537,405"/><area shape="rect" id="node104" href="../../d7/d72/RCSmartPtr_8h.html" title="base/RCSmartPtr.h" alt="" coords="2655,379,2799,405"/><area shape="rect" id="node130" href="../../d5/d08/RCUpdatePair_8h.html" title="archive/update/RCUpdatePair.h" alt="" coords="1233,155,1460,181"/><area shape="rect" id="node136" href="../../dc/d7f/RCUpdateAction_8h.html" title="archive/update/RCUpdateAction.h" alt="" coords="629,379,875,405"/><area shape="rect" id="node144" href="../../d1/d1f/RCCompressMethodMode_8h.html" title="archive/update/RCCompressMethodMode.h" alt="" coords="195,379,504,405"/><area shape="rect" id="node148" href="../../d7/d63/RCUpdateArchiveCommand_8h.html" title="archive/update/RCUpdateArchiveCommand.h" alt="" coords="728,304,1053,331"/><area shape="rect" id="node151" href="../../d6/db1/RCArchivePath_8h.html" title="archive/update/RCArchivePath.h" alt="" coords="949,379,1184,405"/><area shape="rect" id="node162" href="../../d9/d1f/IEnumDirItemFilter_8h.html" title="archive/common/IEnumDirItemFilter.h" alt="" coords="1805,304,2080,331"/></map>
+</div>
+
+<p><a href="../../d1/d2a/RCArchiveUpdateCallback_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/classRCArchiveUpdateCallback.html">RCArchiveUpdateCallback</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2a/RCArchiveUpdateCallback_8h.html#a8d219433decfd5711f6cdd89a75e6ada">__RCArchiveUpdateCallback_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a8d219433decfd5711f6cdd89a75e6ada"></a><!-- doxytag: member="RCArchiveUpdateCallback.h::__RCArchiveUpdateCallback_h_" ref="a8d219433decfd5711f6cdd89a75e6ada" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCArchiveUpdateCallback_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d1/d2a/RCArchiveUpdateCallback_8h_source.html">RCArchiveUpdateCallback.h</a>第<a class="el" href="../../d1/d2a/RCArchiveUpdateCallback_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

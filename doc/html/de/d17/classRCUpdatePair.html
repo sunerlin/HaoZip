@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdatePair类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdatePair类参考</h1><!-- doxytag: class="RCUpdatePair" -->
+<p><code>#include &lt;<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html">RCUpdatePair.h</a>&gt;</code></p>
+
+<p><a href="../../d4/d09/classRCUpdatePair-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a3d61654891e5862cb666e78d06051294">RCUpdatePair</a> ()</td></tr>
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a66d50d2130a9743ca6e6dafcd8b33e73">CompareStrings</a> (const RCString &amp;s1, const RCString &amp;s2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a4127548daa84a96823b5e78af62a3d07">CompareFileTime</a> (const RC_FILE_TIME *ft1, const RC_FILE_TIME *ft2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a27fcc15c1adfffd109a9894972d491df">CompareFileNames</a> (const RCString &amp;s1, const RCString &amp;s2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a120ce7229c6c5bca31699d39efd396a8">MyCompareTime</a> (RCArchiveFileTimeType fileTimeType, const RC_FILE_TIME &amp;time1, const RC_FILE_TIME &amp;time2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a20afce6f9aec8216b69c945c1515d547">SortFileNames</a> (RCVector&lt; RCString &gt; &amp;strings, RCIntVector &amp;indices)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a154038955dbefe27675510c365cbdf72">TestDuplicateString</a> (const RCVector&lt; RCString &gt; &amp;strings, const RCIntVector &amp;indices)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#ab00eed16047c1702a5d23739dab9f0f2">GetUpdatePairInfoList</a> (const <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems, const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;arcItems, RCArchiveFileTimeType fileTimeType, RCVector&lt; <a class="el" href="../../de/d17/classRCUpdatePair.html">RCUpdatePair</a> &gt; &amp;updatePairs)</td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3">RCUpdateDefs::enum_pairstate</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a9104769f76a0fe83b875ff3a9aebcc72">m_state</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#a221ea53f1d324dd8960efa9f32fdafad">m_arcIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d17/classRCUpdatePair.html#aae6b500cf68b99cf52fef278aa095665">m_dirIndex</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>包内包外文件更新比较 </p>
+
+<p>在文件<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html">RCUpdatePair.h</a>第<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html#l00025">25</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a3d61654891e5862cb666e78d06051294"></a><!-- doxytag: member="RCUpdatePair::RCUpdatePair" ref="a3d61654891e5862cb666e78d06051294" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCUpdatePair::RCUpdatePair </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+<p>在文件<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html">RCUpdatePair.h</a>第<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html#l00031">31</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a27fcc15c1adfffd109a9894972d491df"></a><!-- doxytag: member="RCUpdatePair::CompareFileNames" ref="a27fcc15c1adfffd109a9894972d491df" args="(const RCString &amp;s1, const RCString &amp;s2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCUpdatePair::CompareFileNames </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s1</em>&nbsp;</td><td>文件名1 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s2</em>&nbsp;</td><td>文件名2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>= 0, 文件名相等 &lt; 0, s1 &lt; s2 &gt; 0, s1 &gt; s2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4127548daa84a96823b5e78af62a3d07"></a><!-- doxytag: member="RCUpdatePair::CompareFileTime" ref="a4127548daa84a96823b5e78af62a3d07" args="(const RC_FILE_TIME *ft1, const RC_FILE_TIME *ft2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCUpdatePair::CompareFileTime </td>
+          <td>(</td>
+          <td class="paramtype">const RC_FILE_TIME *&nbsp;</td>
+          <td class="paramname"> <em>ft1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC_FILE_TIME *&nbsp;</td>
+          <td class="paramname"> <em>ft2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>ft1</em>&nbsp;</td><td>文件时间1 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>ft2</em>&nbsp;</td><td>文件时间2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>= 0, 相等 &lt; 0, ft1 &lt; ft2 &gt; 0, ft1 &gt; ft2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a66d50d2130a9743ca6e6dafcd8b33e73"></a><!-- doxytag: member="RCUpdatePair::CompareStrings" ref="a66d50d2130a9743ca6e6dafcd8b33e73" args="(const RCString &amp;s1, const RCString &amp;s2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCUpdatePair::CompareStrings </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较字符串 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s1</em>&nbsp;</td><td>字符串1 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s2</em>&nbsp;</td><td>字符串2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>= 0, 两串匹配 &lt; 0, s1 &lt; s2 &gt; 0, s1 &gt; s2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab00eed16047c1702a5d23739dab9f0f2"></a><!-- doxytag: member="RCUpdatePair::GetUpdatePairInfoList" ref="ab00eed16047c1702a5d23739dab9f0f2" args="(const RCDirItems &amp;dirItems, const RCVector&lt; RCArcItem &gt; &amp;arcItems, RCArchiveFileTimeType fileTimeType, RCVector&lt; RCUpdatePair &gt; &amp;updatePairs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdatePair::GetUpdatePairInfoList </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; <a class="el" href="../../d4/d88/classRCArcItem.html">RCArcItem</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>arcItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCArchiveFileTimeType&nbsp;</td>
+          <td class="paramname"> <em>fileTimeType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; <a class="el" href="../../de/d17/classRCUpdatePair.html">RCUpdatePair</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>updatePairs</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置需要更新的文档列表 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>更新项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>arcItems</em>&nbsp;</td><td>包内项列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileTimeType</em>&nbsp;</td><td>文档时间类型 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>updatePairs</em>&nbsp;</td><td>更新项列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a120ce7229c6c5bca31699d39efd396a8"></a><!-- doxytag: member="RCUpdatePair::MyCompareTime" ref="a120ce7229c6c5bca31699d39efd396a8" args="(RCArchiveFileTimeType fileTimeType, const RC_FILE_TIME &amp;time1, const RC_FILE_TIME &amp;time2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCUpdatePair::MyCompareTime </td>
+          <td>(</td>
+          <td class="paramtype">RCArchiveFileTimeType&nbsp;</td>
+          <td class="paramname"> <em>fileTimeType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC_FILE_TIME &amp;&nbsp;</td>
+          <td class="paramname"> <em>time1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RC_FILE_TIME &amp;&nbsp;</td>
+          <td class="paramname"> <em>time2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>根据类型比较文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileTimeType</em>&nbsp;</td><td>文件时间类型 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>time1</em>&nbsp;</td><td>文件时间1 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>time2</em>&nbsp;</td><td>文件时间2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>= 0, 相等 &lt; 0, time1 &lt; time2 &gt; 0, time1 &gt; time2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a20afce6f9aec8216b69c945c1515d547"></a><!-- doxytag: member="RCUpdatePair::SortFileNames" ref="a20afce6f9aec8216b69c945c1515d547" args="(RCVector&lt; RCString &gt; &amp;strings, RCIntVector &amp;indices)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCUpdatePair::SortFileNames </td>
+          <td>(</td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCIntVector &amp;&nbsp;</td>
+          <td class="paramname"> <em>indices</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件名排序 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>strings</em>&nbsp;</td><td>文件名列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>indices</em>&nbsp;</td><td>序号列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a154038955dbefe27675510c365cbdf72"></a><!-- doxytag: member="RCUpdatePair::TestDuplicateString" ref="a154038955dbefe27675510c365cbdf72" args="(const RCVector&lt; RCString &gt; &amp;strings, const RCIntVector &amp;indices)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCUpdatePair::TestDuplicateString </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCIntVector &amp;&nbsp;</td>
+          <td class="paramname"> <em>indices</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查文件名是否重复 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>strings</em>&nbsp;</td><td>文件名列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>indices</em>&nbsp;</td><td>序号列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a221ea53f1d324dd8960efa9f32fdafad"></a><!-- doxytag: member="RCUpdatePair::m_arcIndex" ref="a221ea53f1d324dd8960efa9f32fdafad" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../de/d17/classRCUpdatePair.html#a221ea53f1d324dd8960efa9f32fdafad">RCUpdatePair::m_arcIndex</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>包内项编号 </p>
+
+<p>在文件<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html">RCUpdatePair.h</a>第<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html#l00108">108</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aae6b500cf68b99cf52fef278aa095665"></a><!-- doxytag: member="RCUpdatePair::m_dirIndex" ref="aae6b500cf68b99cf52fef278aa095665" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../de/d17/classRCUpdatePair.html#aae6b500cf68b99cf52fef278aa095665">RCUpdatePair::m_dirIndex</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>更新项编号 </p>
+
+<p>在文件<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html">RCUpdatePair.h</a>第<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html#l00112">112</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9104769f76a0fe83b875ff3a9aebcc72"></a><!-- doxytag: member="RCUpdatePair::m_state" ref="a9104769f76a0fe83b875ff3a9aebcc72" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d9d/classRCUpdateDefs.html#a7a483c54874c5ab6beb623883bd2a3b3">RCUpdateDefs::enum_pairstate</a> <a class="el" href="../../de/d17/classRCUpdatePair.html#a9104769f76a0fe83b875ff3a9aebcc72">RCUpdatePair::m_state</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>对比结果 </p>
+
+<p>在文件<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html">RCUpdatePair.h</a>第<a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html#l00104">104</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d5/d08/RCUpdatePair_8h_source.html">RCUpdatePair.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

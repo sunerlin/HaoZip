@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCMethodDefs.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_5df61e8bc95b34ee789cf93552e6d84b.html">interface</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCMethodDefs.h</h1><a href="../../d7/d83/RCMethodDefs_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCMethodDefs_h_</span>
+<a name="l00011"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#ae608a8e111d86ccc023ff856db95bf70">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCMethodDefs_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 <span class="comment"></span>
+<a name="l00017"></a>00017 <span class="comment">/** Method ID 定义</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html">00019</a> <span class="keyword">class </span><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html">RCMethod</a>
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021 <span class="keyword">public</span>:
+<a name="l00022"></a>00022     
+<a name="l00023"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457a">00023</a>     <span class="keyword">typedef</span> <span class="keyword">enum</span>
+<a name="l00024"></a>00024     {<span class="comment"></span>
+<a name="l00025"></a>00025 <span class="comment">        /** 加密解密算法</span>
+<a name="l00026"></a>00026 <span class="comment">        */</span>
+<a name="l00027"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa12d93b6a601c5025cc5a65dc39ae2055">00027</a>         ID_CRYPTO_7Z_AES    = 0x06F10701,
+<a name="l00028"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa564d9e533633832940d1c813b5e65172">00028</a>         ID_CRYPTO_RAR_20    = 0x0501 ,
+<a name="l00029"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaf490025a393cbdcfdc52a971332ec061">00029</a>         ID_CRYPTO_RAR_29    = 0x0502 ,
+<a name="l00030"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaa2819054dd7a84cc6740b433a26f90cc">00030</a>         ID_CRYPTO_WZ_AES    = 0x0503 ,
+<a name="l00031"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aad8531fedeb1092089d588c8f430ed93d">00031</a>         ID_CRYPTO_ZIP       = 0x0504 ,
+<a name="l00032"></a>00032         <span class="comment"></span>
+<a name="l00033"></a>00033 <span class="comment">        /** Filter算法</span>
+<a name="l00034"></a>00034 <span class="comment">        */</span>
+<a name="l00035"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa168da09dccc2083131c0fdfd2c7cf404">00035</a>         ID_COMPRESS_BYTE_SWAP_2     = 0x020302,
+<a name="l00036"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aabce64bf6206a653fac80c25be13a76f7">00036</a>         ID_COMPRESS_BYTE_SWAP_4     = 0x020304,        
+<a name="l00037"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aafe76d99f28c835cc4471aad020d75794">00037</a>         ID_COMPRESS_BRANCH_PPC      = 0x03030000 + (0x02 * 256) + 0x05,
+<a name="l00038"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aadd7df418e764f7bed8328ba9c8d083ce">00038</a>         ID_COMPRESS_BRANCH_IA64     = 0x03030000 + (0x04 * 256) + 1,
+<a name="l00039"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa282c01166c88118b727ab6f131d19ab3">00039</a>         ID_COMPRESS_BRANCH_ARM      = 0x03030000 + (0x05 * 256) + 1,
+<a name="l00040"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa6b4c509fd93d985cc4361188698c4ea1">00040</a>         ID_COMPRESS_BRANCH_ARMT     = 0x03030000 + (0x07 * 256) + 1,
+<a name="l00041"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aae7754493a941fd94d9b262b7b410f8bf">00041</a>         ID_COMPRESS_BRANCH_SPARC    = 0x03030000 + (0x08 * 256) + 0x05,
+<a name="l00042"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaa2f084e24f07f5eb9f64020daf396b43">00042</a>         ID_COMPRESS_BRANCH_BCJ      = 0x03030103,
+<a name="l00043"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaf0bf6289bafd3c6b7a0dcbe1a70e17dc">00043</a>         ID_COMPRESS_BRANCH_BCJ_2    = 0x0303011B,
+<a name="l00044"></a>00044 <span class="comment"></span>
+<a name="l00045"></a>00045 <span class="comment">        /** 压缩解压算法</span>
+<a name="l00046"></a>00046 <span class="comment">        */</span>
+<a name="l00047"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aac0bfdccb69d21613499223a95e8ab739">00047</a>         ID_COMPRESS_LZMA            = 0x030101,
+<a name="l00048"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa731f83d87a1288bfa9d62e8b559c865a">00048</a>         ID_COMPRESS_PPMD            = 0x030401,
+<a name="l00049"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa582cfd219923ca2e5453713f6b1fc0ad">00049</a>         ID_COMPRESS_PPMDI1          = 0x030402,
+<a name="l00050"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aac7bcd7c196b86ee1d0e081932c541282">00050</a>         ID_COMPRESS_WAVPACK         = 0x030403,
+<a name="l00051"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa341c1ea01d7932d683d40d2f040d9e67">00051</a>         ID_COMPRESS_RAR_1           = 0x040300 + 1,
+<a name="l00052"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa37726da0e98473a583b73d5e614d8ad7">00052</a>         ID_COMPRESS_RAR_2           = 0x040300 + 2, 
+<a name="l00053"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aacefce80edc53d6eab6bef2717e10d279">00053</a>         ID_COMPRESS_RAR_3           = 0x040300 + 3,
+<a name="l00054"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa6239c48d704b7d8c0820168bd1ccf6ce">00054</a>         ID_COMPRESS_BZIP2           = 0x040202,
+<a name="l00055"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aabf8138abd9e21b5d7646ffb7712bf8b6">00055</a>         ID_COMPRESS_DEFLATE_COM     = 0x040108,
+<a name="l00056"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aab2ac13c7ffdd4c6f596c1cb55c6388fb">00056</a>         ID_COMPRESS_DEFLATE_COM_64  = 0x040109,
+<a name="l00057"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa93bb01b005364652eac57b069786485b">00057</a>         ID_COMPRESS_DEFLATE_NSIS    = 0x040901,
+<a name="l00058"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aac32831757a6388f7fcfa900fcb6fe34c">00058</a>         ID_COMPRESS_COPY            = 0x0000 ,
+<a name="l00059"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa0aa09f6caa02636ac9c3a9880b9333b1">00059</a>         ID_COMPRESS_SHRINK          = 0x0001 ,        
+<a name="l00060"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aad384eb70656ec1ba4162fcf39b0b8cc8">00060</a>         ID_COMPRESS_LZH             = 0x0002 ,
+<a name="l00061"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa4640e1bad0a7165d267928fc8706fb78">00061</a>         ID_COMPRESS_DELTA           = 0x0003 ,
+<a name="l00062"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aabcdbd174f7168fd5bd380abbb2f467f0">00062</a>         ID_COMPRESS_ARJ_1           = 0x0004 ,
+<a name="l00063"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaef6d92fe42df8c27cd8093781d97fbae">00063</a>         ID_COMPRESS_ARJ_2           = 0x0005 ,
+<a name="l00064"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaf17512d62800417bb494905ef8d7a495">00064</a>         ID_COMPRESS_LZX             = 0x0006 ,
+<a name="l00065"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aab2d34a518dac70cb971472f2820ef19f">00065</a>         ID_COMPRESS_IMPLODE         = 0x0007 ,        
+<a name="l00066"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa16741af86a6e4a098dfc77324cac2dcf">00066</a>         ID_COMPRESS_QUANTUM         = 0x0008 ,
+<a name="l00067"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa4935294558d685c460783b0115862e62">00067</a>         ID_COMPRESS_ZLIB            = 0x0009 ,
+<a name="l00068"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa445e021670ae51c8c15922ae3f9ffeb7">00068</a>         ID_COMPRESS_Z               = 0x000A ,
+<a name="l00069"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa9120699564ec3ae9b453909d7de9972a">00069</a>         ID_COMPRESS_ADC             = 0x000B ,
+<a name="l00070"></a><a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa115b15f6a77550d49f879efdab868f85">00070</a>         ID_COMPRESS_LZMA2           = 0x0021
+<a name="l00071"></a>00071     }<a class="code" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457a">ID</a> ;
+<a name="l00072"></a>00072 };
+<a name="l00073"></a>00073 <span class="comment"></span>
+<a name="l00074"></a>00074 <span class="comment">/** 编码属性枚举值定义</span>
+<a name="l00075"></a>00075 <span class="comment">*/</span>
+<a name="l00076"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html">00076</a> <span class="keyword">class </span><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html">RCMethodProperty</a>
+<a name="l00077"></a>00077 {
+<a name="l00078"></a>00078 <span class="keyword">public</span>:
+<a name="l00079"></a>00079     
+<a name="l00080"></a>00080     <span class="keyword">enum</span>
+<a name="l00081"></a>00081     {
+<a name="l00082"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html#a2ca71f95ed80e6e84637d44fb5207567a5a66b0003ddf897261897150b7fc3868">00082</a>         ID_SET_PARAMS           = 0 , <span class="comment">// int64_t 类型</span>
+<a name="l00083"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html#a2ca71f95ed80e6e84637d44fb5207567a8d7b8879dab7deb84731a9c8f6355b04">00083</a>         ID_SET_KEEP_HISTORY     = 1 , <span class="comment">// bool 类型</span>
+<a name="l00084"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html#a2ca71f95ed80e6e84637d44fb5207567a4ca1c54889781ca6f80ff98608307ced">00084</a>         ID_SET_RAR_350_MODE     = 2 , <span class="comment">// bool 类型</span>
+<a name="l00085"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html#a2ca71f95ed80e6e84637d44fb5207567a6d7277439e9dbfa3ad36afa0724e3769">00085</a>         ID_SET_DICTIONARY_SIZE  = 3 , <span class="comment">// int64_t 类型</span>
+<a name="l00086"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html#a2ca71f95ed80e6e84637d44fb5207567a54f9b5037b1ef338465054218e19f35d">00086</a>         ID_SET_LZX_WIM_MODE     = 4 , <span class="comment">// bool 类型</span>
+<a name="l00087"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html#a2ca71f95ed80e6e84637d44fb5207567a1e0d2e5e44edbe4874f0734a598637df">00087</a>         ID_SET_NSIS_DEFLATE     = 5 , <span class="comment">// bool 类型</span>
+<a name="l00088"></a><a class="code" href="../../d1/d5f/classRCZip_1_1RCMethodProperty.html#a2ca71f95ed80e6e84637d44fb5207567a6bff2f83df15644f51a78775e97f5d0d">00088</a>         ID_SET_ISZ_BIZP2         =6   <span class="comment">// bool 类型</span>
+<a name="l00089"></a>00089     };
+<a name="l00090"></a>00090 };
+<a name="l00091"></a>00091 <span class="comment"></span>
+<a name="l00092"></a>00092 <span class="comment">/** 算法名称定义</span>
+<a name="l00093"></a>00093 <span class="comment">*/</span>
+<a name="l00094"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a3f5581ef0fd4b51db15a9baec17726bf">00094</a> <span class="preprocessor">#define RC_METHOD_NAME_CRYPTO_7Z_AES            _T(&quot;7zAES&quot;) </span>
+<a name="l00095"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a35ba14e4f5614422f5687c04132e56c8">00095</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_CRYPTO_RAR_20            _T(&quot;Rar20&quot;) </span>
+<a name="l00096"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a5a51b1e07d7f2888dea37425f3dfb2e9">00096</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_CRYPTO_RAR_29            _T(&quot;Rar29&quot;) </span>
+<a name="l00097"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a638c1b3d81745bad1d032528038bb0a7">00097</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_CRYPTO_WZ_AES            _T(&quot;WzAES&quot;) </span>
+<a name="l00098"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#aff58e8b9ebf7bf4692fa38c16cdf7de0">00098</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_CRYPTO_ZIP               _T(&quot;Zip&quot;) </span>
+<a name="l00099"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a8451afb3814deecf63c7b5994b2bf9f7">00099</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_COPY            _T(&quot;Copy&quot;) </span>
+<a name="l00100"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#af4672454d4bc900ba1f39305ed94d962">00100</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_SHRINK          _T(&quot;Shrink&quot;) </span>
+<a name="l00101"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a1b8b213e366e8246326d3383b4563610">00101</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BYTE_SWAP_2     _T(&quot;ByteSwap2&quot;) </span>
+<a name="l00102"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#af3636a2a48a001c6b3397b7e1c15c6e6">00102</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BYTE_SWAP_4     _T(&quot;ByteSwap4&quot;) </span>
+<a name="l00103"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#ac39c3826f5545d93d8ea1df7d62afe1f">00103</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_LZH             _T(&quot;Lzh&quot;) </span>
+<a name="l00104"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#aab0bb20d97601debfa8236767b567db2">00104</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_Z               _T(&quot;Z&quot;) </span>
+<a name="l00105"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a3ca6e29f4aae128da397c641dfc69399">00105</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_ARJ_1           _T(&quot;Arj1&quot;) </span>
+<a name="l00106"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#aea95780501f988abc54e07959ef83226">00106</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_ARJ_2           _T(&quot;Arj2&quot;) </span>
+<a name="l00107"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#ad78695a94cd68f3abeb02cf9a9d7b1cf">00107</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_LZX             _T(&quot;Lzx&quot;) </span>
+<a name="l00108"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a4e816bffafeabc8ed53e5a994a5911ba">00108</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_LZMA            _T(&quot;LZMA&quot;) </span>
+<a name="l00109"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#abf580ca4a60f8d1b41b4669f5394d42d">00109</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_IMPLODE         _T(&quot;Implode&quot;) </span>
+<a name="l00110"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a0cffa5f0c990230d9ae88b791187e869">00110</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BRANCH_ARM      _T(&quot;ARM&quot;)</span>
+<a name="l00111"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a727d249270dd45226f65cdf08072e56c">00111</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BRANCH_ARMT     _T(&quot;ARMT&quot;)</span>
+<a name="l00112"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#ad074386e23225d54ed8cdf7d0e6a9832">00112</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BRANCH_PPC      _T(&quot;PPC&quot;)</span>
+<a name="l00113"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a2e345b35fa5460469a69973e8b495132">00113</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BRANCH_IA64     _T(&quot;IA64&quot;)</span>
+<a name="l00114"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#ab9d9692ebe59ab50d19d690c2eec9c8b">00114</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BRANCH_SPARC    _T(&quot;SPARC&quot;)</span>
+<a name="l00115"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a9c18fb4483b095967ec4cbdd0929c8ec">00115</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BRANCH_BCJ      _T(&quot;BCJ&quot;)</span>
+<a name="l00116"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a3ecb9fa7d2b4be0bc1c15d7282d2c4bf">00116</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BRANCH_BCJ_2    _T(&quot;BCJ2&quot;)</span>
+<a name="l00117"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a2776723fd968ad809c85bbf8c6bf68fc">00117</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_PPMD            _T(&quot;PPMd&quot;) </span>
+<a name="l00118"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a62aac5dadc4ca5476a9d3b075b4a8abd">00118</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_QUANTUM         _T(&quot;Quantum&quot;) </span>
+<a name="l00119"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a170e6f365d9ccce7a9c3cfde3ceaeafb">00119</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_RAR_1           _T(&quot;Rar1&quot;) </span>
+<a name="l00120"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a8a15e62d40d6c9d0b539357c9981efca">00120</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_RAR_2           _T(&quot;Rar2&quot;) </span>
+<a name="l00121"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a8bff089b0ae68cd78ba4f0243edd2c09">00121</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_RAR_3           _T(&quot;Rar3&quot;) </span>
+<a name="l00122"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#aa1650e992f92d166517400af06bf76e6">00122</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_BZIP2           _T(&quot;BZip2&quot;)</span>
+<a name="l00123"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a61a4c7e83ad0f4d1866b0405bbdb2011">00123</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_DEFLATE_COM     _T(&quot;Deflate&quot;)</span>
+<a name="l00124"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a108754bf0a230b8b52af29271164dbec">00124</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_DEFLATE_COM_64  _T(&quot;Deflate64&quot;)</span>
+<a name="l00125"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a15b2082609ed960ea965fe8f9dcf84d7">00125</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_DEFLATE_NSIS    _T(&quot;DeflateNSIS&quot;)</span>
+<a name="l00126"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#aa5409ff9af8764851155f57004aa36e4">00126</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_ZLIB            _T(&quot;Zlib&quot;)</span>
+<a name="l00127"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#ae8d5b0cfa6835bfea0999221b4bac0ef">00127</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_LZMA2           _T(&quot;LZMA2&quot;) </span>
+<a name="l00128"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a8093884f853c35c1db0d4e622f823234">00128</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_DELTA           _T(&quot;Delta&quot;) </span>
+<a name="l00129"></a>00129 <span class="preprocessor"></span>
+<a name="l00130"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#ae3a5df0c968905813b660ce0521ea6be">00130</a> <span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_PPMDI1          _T(&quot;PPMDI1&quot;)</span>
+<a name="l00131"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a11550259ae228c333226740d5d5a12cb">00131</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_WAVPACK         _T(&quot;WAVPACK&quot;)</span>
+<a name="l00132"></a><a class="code" href="../../d7/d83/RCMethodDefs_8h.html#a9f12534fd174e0fb913902bb04d5168b">00132</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_METHOD_NAME_COMPRESS_ADC             _T(&quot;ADC&quot;) </span>
+<a name="l00133"></a>00133 <span class="preprocessor"></span>
+<a name="l00134"></a>00134 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="preprocessor">#endif //__RCMethodDefs_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

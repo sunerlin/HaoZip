@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveType.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_5df61e8bc95b34ee789cf93552e6d84b.html">interface</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveType.h</h1><a href="../../d5/d96/RCArchiveType_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCArchiveType_h_</span>
+<a name="l00011"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a4397cc37a0a99278a71b265ad00ec670">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCArchiveType_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 <span class="comment"></span>
+<a name="l00017"></a>00017 <span class="comment">/** 文档类型ID枚举值</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66">00019</a> <span class="keyword">enum</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66">RCArchiveType</a>
+<a name="l00020"></a>00020 {
+<a name="l00021"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a6a901f31f34716bedbe129537e2fc44d">00021</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a6a901f31f34716bedbe129537e2fc44d">RC_ARCHIVE_UNKNOWN</a>  = -1 ,
+<a name="l00022"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2751bf87fdcfc2ee1dc14577a6dc91b6">00022</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2751bf87fdcfc2ee1dc14577a6dc91b6">RC_ARCHIVE_ZIP</a>      =  1 ,
+<a name="l00023"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a68d91787c8df951b8ded9610b41e0b90">00023</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a68d91787c8df951b8ded9610b41e0b90">RC_ARCHIVE_7Z</a>       =  2 ,
+<a name="l00024"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a45bcaecf7cccbdc108c9d18e83221163">00024</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a45bcaecf7cccbdc108c9d18e83221163">RC_ARCHIVE_TAR</a>      =  3 ,
+<a name="l00025"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2eb67029e1ea1f572e111a0655b6df16">00025</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2eb67029e1ea1f572e111a0655b6df16">RC_ARCHIVE_RAR</a>      =  4 ,
+<a name="l00026"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ac6178ccb2a59d819ffe38b7e5304fc77">00026</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ac6178ccb2a59d819ffe38b7e5304fc77">RC_ARCHIVE_CAB</a>      =  5 ,
+<a name="l00027"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a5748f929af51f7b7b721b5d31889780f">00027</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a5748f929af51f7b7b721b5d31889780f">RC_ARCHIVE_ISO</a>      =  6 ,
+<a name="l00028"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a13fce485a7a2685b09099ef64c9704a6">00028</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a13fce485a7a2685b09099ef64c9704a6">RC_ARCHIVE_BZIP2</a>    =  7 ,
+<a name="l00029"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ada57abcee10ffface5dc37f30e6da2c9">00029</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ada57abcee10ffface5dc37f30e6da2c9">RC_ARCHIVE_UDF</a>      =  8 ,
+<a name="l00030"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a29747163d6f1fd324139ee02182819d1">00030</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a29747163d6f1fd324139ee02182819d1">RC_ARCHIVE_ARJ</a>      =  9 ,
+<a name="l00031"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ad67ccb527500801d1facb4a1791d1214">00031</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ad67ccb527500801d1facb4a1791d1214">RC_ARCHIVE_Z</a>        = 10 ,
+<a name="l00032"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ae53ad93ec8ad1283fdd47b3e6dd09785">00032</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ae53ad93ec8ad1283fdd47b3e6dd09785">RC_ARCHIVE_GZIP</a>     = 11 ,
+<a name="l00033"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a1e9fda4d6db7dd5e3df8797a21d350a8">00033</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a1e9fda4d6db7dd5e3df8797a21d350a8">RC_ARCHIVE_LZH</a>      = 12 ,
+<a name="l00034"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66aeb7cadb5f273d92519bd7d465aec0588">00034</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66aeb7cadb5f273d92519bd7d465aec0588">RC_ARCHIVE_RPM</a>      = 13 ,
+<a name="l00035"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2c4996bea91d20776f7f3331f92ee1fa">00035</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2c4996bea91d20776f7f3331f92ee1fa">RC_ARCHIVE_LZMA</a>     = 14 ,
+<a name="l00036"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66acebeef68981d40dd46d86774fc422e9e">00036</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66acebeef68981d40dd46d86774fc422e9e">RC_ARCHIVE_NSIS</a>     = 15 ,
+<a name="l00037"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66abc7e1fb2b948755cbc225729228f6568">00037</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66abc7e1fb2b948755cbc225729228f6568">RC_ARCHIVE_CHM</a>      = 16 ,
+<a name="l00038"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a89380d3253e6d5a205978ab3a5329671">00038</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a89380d3253e6d5a205978ab3a5329671">RC_ARCHIVE_DMG</a>      = 17 ,
+<a name="l00039"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66abc88b9f93a58e3f05b2b657f09f8c0c3">00039</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66abc88b9f93a58e3f05b2b657f09f8c0c3">RC_ARCHIVE_HFS</a>      = 18 ,
+<a name="l00040"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a3a0c0f3b50be596914681ec47bfef49f">00040</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a3a0c0f3b50be596914681ec47bfef49f">RC_ARCHIVE_WIM</a>      = 19 ,
+<a name="l00041"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ae8cd26b31cfeae40d05ccfcefaa4f4a2">00041</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ae8cd26b31cfeae40d05ccfcefaa4f4a2">RC_ARCHIVE_DEB</a>      = 20 ,
+<a name="l00042"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a3be42cdbf67a66775cbb6fe4b2a581a7">00042</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a3be42cdbf67a66775cbb6fe4b2a581a7">RC_ARCHIVE_COM</a>      = 21 ,
+<a name="l00043"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a51971cb2ba63b4a8042b59f4fde017b8">00043</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a51971cb2ba63b4a8042b59f4fde017b8">RC_ARCHIVE_CPIO</a>     = 22 ,
+<a name="l00044"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a25c617c7d2a67fd75af52420cd288289">00044</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a25c617c7d2a67fd75af52420cd288289">RC_ARCHIVE_PE</a>       = 23 ,
+<a name="l00045"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a6756df1d484a6d37ef3f5aa1e0aa1ffa">00045</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a6756df1d484a6d37ef3f5aa1e0aa1ffa">RC_ARCHIVE_XAR</a>      = 24 ,
+<a name="l00046"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a1ed71a187c3ec05cb62a795418b49c5c">00046</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a1ed71a187c3ec05cb62a795418b49c5c">RC_ARCHIVE_SPLIT</a>    = 25 ,
+<a name="l00047"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ab5b748410c9dfa4d5f9d72f0d87c2c9d">00047</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ab5b748410c9dfa4d5f9d72f0d87c2c9d">RC_ARCHIVE_UUE</a>      = 26 ,
+<a name="l00048"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a7cf93d542e5e3afee88eea3ef85af158">00048</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a7cf93d542e5e3afee88eea3ef85af158">RC_ARCHIVE_ACE</a>      = 27 ,
+<a name="l00049"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a9094b9438aba35ee08ae531be09d40ed">00049</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a9094b9438aba35ee08ae531be09d40ed">RC_ARCHIVE_ZIP_SPLIT</a>= 28 ,
+<a name="l00050"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ab08415b712e262b1f11e82ba6a17edba">00050</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ab08415b712e262b1f11e82ba6a17edba">RC_ARCHIVE_LZMA86</a>   = 29 ,
+<a name="l00051"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a4015d62b53fdefa8782c9fdb28da7f63">00051</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a4015d62b53fdefa8782c9fdb28da7f63">RC_ARCHIVE_ISZ</a>      = 30
+<a name="l00052"></a>00052 };
+<a name="l00053"></a>00053 <span class="comment"></span>
+<a name="l00054"></a>00054 <span class="comment">/** 文档类型ID</span>
+<a name="l00055"></a>00055 <span class="comment">*/</span>
+<a name="l00056"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a6d7155d8406e293df197089a12eb8f03">00056</a> <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a6d7155d8406e293df197089a12eb8f03">RCArchiveID</a> ;
+<a name="l00057"></a>00057 <span class="comment"></span>
+<a name="l00058"></a>00058 <span class="comment">/** 文档类型，字符串形式</span>
+<a name="l00059"></a>00059 <span class="comment">*/</span>
+<a name="l00060"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a22eb5269a50c58959c4b11d2d3cd30a9">00060</a> <span class="preprocessor">#define RC_ARCHIVE_TYPE_ZIP             _T(&quot;zip&quot;)       </span>
+<a name="l00061"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a05a6f26fa7fff33b5b86d7ea2b26ea74">00061</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_7Z              _T(&quot;7z&quot;)       </span>
+<a name="l00062"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#adb60a8d857b031f9343788be0b11b067">00062</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_TAR             _T(&quot;tar&quot;)       </span>
+<a name="l00063"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#ad89e5ac9ac284558008f5ab479cd0918">00063</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_RAR             _T(&quot;rar&quot;)       </span>
+<a name="l00064"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a9f0eab578d5a896114e5ef9ecff45afe">00064</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_CAB             _T(&quot;cab&quot;)       </span>
+<a name="l00065"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a29e0c7325fbcb125ea473ab85ee64c15">00065</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_ISO             _T(&quot;iso&quot;)       </span>
+<a name="l00066"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a380b3a31071941c3f46170c9eaa22ef4">00066</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_UDF             _T(&quot;udf&quot;)       </span>
+<a name="l00067"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a4ccad918f56b95d12e2553555ed60050">00067</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_BZIP2           _T(&quot;bzip2&quot;)       </span>
+<a name="l00068"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#ac68451bd0b00908a53b67f2b1d6b45d6">00068</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_ARJ             _T(&quot;arj&quot;)       </span>
+<a name="l00069"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a69e38163c5c884e214d3b4fb10983c6d">00069</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_Z               _T(&quot;z&quot;)       </span>
+<a name="l00070"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a286f0e921b7e0f681ba995346f5c61db">00070</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_GZIP            _T(&quot;gzip&quot;)       </span>
+<a name="l00071"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#afee92b1f1315fdb3e667d3de186c1637">00071</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_LZH             _T(&quot;lzh&quot;)       </span>
+<a name="l00072"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a68cf186ee336844170e32357010db5b5">00072</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_RPM             _T(&quot;rpm&quot;)       </span>
+<a name="l00073"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a1d8cbd8d88e8c75b856da687489b82e2">00073</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_LZMA            _T(&quot;lzma&quot;)      </span>
+<a name="l00074"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#ab7c9f3caf442af809d1a5cf2471947d9">00074</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_LZMA86          _T(&quot;lzma86&quot;)   </span>
+<a name="l00075"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#aae3a15f3b129b4b25f14be128703aacc">00075</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_NSIS            _T(&quot;nsis&quot;)       </span>
+<a name="l00076"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a200f8af476c1773d92224b71f39f0cd2">00076</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_CHM             _T(&quot;chm&quot;)       </span>
+<a name="l00077"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a219b57f20a20e609f13f014e52a40472">00077</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_DMG             _T(&quot;dmg&quot;)       </span>
+<a name="l00078"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a30f5a2391bdff59872b9c3ff485e9e31">00078</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_HFS             _T(&quot;hfs&quot;)       </span>
+<a name="l00079"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#af97a34b71619adf4b17c412d5d005c63">00079</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_WIM             _T(&quot;wim&quot;)       </span>
+<a name="l00080"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a0b2e4a802e501afb559a7c0ca828b5ed">00080</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_DEB             _T(&quot;deb&quot;)       </span>
+<a name="l00081"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a242d4b2d8c4225ed27a9c94267b8af4a">00081</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_COM             _T(&quot;com&quot;)       </span>
+<a name="l00082"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a55454b8bcb7fd69f83fec110dd4d04e9">00082</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_CPIO            _T(&quot;cpio&quot;)       </span>
+<a name="l00083"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a6baf2a251344b8d190dde245cb492ab6">00083</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_PE              _T(&quot;PE&quot;)       </span>
+<a name="l00084"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#afca80d817214a9d68c1f4d9574826cbb">00084</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_XAR             _T(&quot;xar&quot;)       </span>
+<a name="l00085"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#af83d41276d315c841ac1cb2b7d1a1561">00085</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_SPLIT           _T(&quot;split&quot;) </span>
+<a name="l00086"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#ae0ca0e0e0ba6a697eed9ad25833ae764">00086</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_UUE             _T(&quot;uue&quot;)   </span>
+<a name="l00087"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a435fc36c7443beb57b57ddca7feb9b3f">00087</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_ACE             _T(&quot;ace&quot;)</span>
+<a name="l00088"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#a1cab541a7f617ba4fb3467b305ef3b18">00088</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_ZIP_SPLIT       _T(&quot;zip_split&quot;)</span>
+<a name="l00089"></a><a class="code" href="../../d5/d96/RCArchiveType_8h.html#ac0914ee4295c6b91f15c2069f0757537">00089</a> <span class="preprocessor"></span><span class="preprocessor">#define RC_ARCHIVE_TYPE_ISZ             _T(&quot;isz&quot;)</span>
+<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="comment"></span>
+<a name="l00091"></a>00091 <span class="comment">/** 压缩格式枚举值</span>
+<a name="l00092"></a>00092 <span class="comment">*/</span>
+<a name="l00093"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffb">00093</a> <span class="keyword">enum</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffb">RCCompressFormatEnum</a>
+<a name="l00094"></a>00094 {
+<a name="l00095"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffba05cec5888b82b6cd10697281ef7846b6">00095</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffba05cec5888b82b6cd10697281ef7846b6">RC_COMPRESS_FORMAT_ZIP</a> = 0 ,
+<a name="l00096"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffbaddda4112fb19f647980c292c5988cbc8">00096</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffbaddda4112fb19f647980c292c5988cbc8">RC_COMPRESS_FORMAT_7Z</a>  = 1 ,
+<a name="l00097"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffba18baa4038e5d497998d369f2d5d2a01f">00097</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffba18baa4038e5d497998d369f2d5d2a01f">RC_COMPRESS_FORMAT_TAR</a> = 2 
+<a name="l00098"></a>00098 };
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 <span class="preprocessor">#endif //__RCArchiveType_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

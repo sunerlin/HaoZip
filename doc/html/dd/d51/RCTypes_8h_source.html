@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCTypes.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_652e9eac6e3814fe5d5564e0a4905fbd.html">base</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCTypes.h</h1><a href="../../dd/d51/RCTypes_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCTypes_h_</span>
+<a name="l00011"></a><a class="code" href="../../dd/d51/RCTypes_8h.html#a926dc8e323467e18c762653bcd8f08a4">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCTypes_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &lt;tchar.h&gt;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d53/RCNameSpace_8h.html">base/RCNameSpace.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/dd6/RCConfig_8h.html">base/RCConfig.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#ifndef RCZIP_HAS_STDINT</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">    #define BOOST__STDC_CONSTANT_MACROS_DEFINED 1</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">    #define __STDC_CONSTANT_MACROS 1</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">    #include &lt;<a class="code" href="../../df/dd8/stdint_8h.html">base/stdint.h</a>&gt;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#else</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">    #include &lt;cstdint&gt;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#endif</span>
+<a name="l00024"></a>00024 <span class="preprocessor"></span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00026"></a>00026 <span class="comment"></span>
+<a name="l00027"></a>00027 <span class="comment">/** 返回值类型</span>
+<a name="l00028"></a>00028 <span class="comment">*/</span>
+<a name="l00029"></a><a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">00029</a> <span class="keyword">typedef</span> <span class="keywordtype">long</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> ;
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00032"></a>00032 <span class="comment"></span>
+<a name="l00033"></a>00033 <span class="comment">/** 字符类型</span>
+<a name="l00034"></a>00034 <span class="comment">*/</span>
+<a name="l00035"></a>00035 <span class="preprocessor">#if defined RCZIP_UNICODE</span>
+<a name="l00036"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">00036</a> <span class="preprocessor"></span>    <span class="keyword">typedef</span> <span class="keywordtype">wchar_t</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> ;
+<a name="l00037"></a>00037 <span class="preprocessor">#else </span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span>    <span class="keyword">typedef</span> <span class="keywordtype">char</span>    <a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> ;
+<a name="l00039"></a>00039 <span class="preprocessor">#endif</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span><span class="comment"></span>
+<a name="l00041"></a>00041 <span class="comment">/** 字节类型</span>
+<a name="l00042"></a>00042 <span class="comment">*/</span>
+<a name="l00043"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">00043</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> ;
+<a name="l00044"></a>00044 <span class="comment"></span>
+<a name="l00045"></a>00045 <span class="comment">/** 接口ID类型</span>
+<a name="l00046"></a>00046 <span class="comment">*/</span>
+<a name="l00047"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">00047</a> <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a> ;
+<a name="l00048"></a>00048 <span class="comment"></span>
+<a name="l00049"></a>00049 <span class="comment">/** 压缩解压编码ID类型</span>
+<a name="l00050"></a>00050 <span class="comment">*/</span>
+<a name="l00051"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">00051</a> <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> ;
+<a name="l00052"></a>00052 <span class="comment"></span>
+<a name="l00053"></a>00053 <span class="comment">/** 返回值定义</span>
+<a name="l00054"></a>00054 <span class="comment">*/</span>
+<a name="l00055"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12">00055</a> <span class="keyword">enum</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12">HResultCode</a>
+<a name="l00056"></a>00056 {<span class="comment"></span>
+<a name="l00057"></a>00057 <span class="comment">    /** 系统错误号</span>
+<a name="l00058"></a>00058 <span class="comment">    */</span>
+<a name="l00059"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a9a10b4b0c00316e7d88c03c8626d93f0">00059</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a9a10b4b0c00316e7d88c03c8626d93f0">RC_S_OK</a>                    = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x00000000L),
+<a name="l00060"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a75e97b11d8c5727ca8a1ac0418ced56f">00060</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a75e97b11d8c5727ca8a1ac0418ced56f">RC_S_FALSE</a>                 = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x00000001L),
+<a name="l00061"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12abe3b23c8c4ff937ce3e0f55d070e0f4d">00061</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12abe3b23c8c4ff937ce3e0f55d070e0f4d">RC_E_NOTIMPL</a>               = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x80004001L),
+<a name="l00062"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aada26630434ee2e5bb900606b68dfcf2">00062</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aada26630434ee2e5bb900606b68dfcf2">RC_E_NOINTERFACE</a>           = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x80004002L),
+<a name="l00063"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12ac28f23bff7be0a4227d3bdfda3afb083">00063</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12ac28f23bff7be0a4227d3bdfda3afb083">RC_E_ABORT</a>                 = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x80004004L),
+<a name="l00064"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a6aea6544144b7e9fd34112d0ddecef1a">00064</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a6aea6544144b7e9fd34112d0ddecef1a">RC_E_FAIL</a>                  = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x80004005L),
+<a name="l00065"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a735e9aa13288dfc2dea5e64b118faa73">00065</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a735e9aa13288dfc2dea5e64b118faa73">RC_E_OUTOFMEMORY</a>           = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x8007000EL),
+<a name="l00066"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a3ec2bb8f373d6097c05b3e3c8f555a29">00066</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a3ec2bb8f373d6097c05b3e3c8f555a29">RC_E_INVALIDARG</a>            = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x80070057L),
+<a name="l00067"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a14cb529d03d373a4cc2c1e999027228a">00067</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a14cb529d03d373a4cc2c1e999027228a">RC_E_CLASSNOTAVAILABLE</a>     = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x80040111L),
+<a name="l00068"></a>00068     <span class="comment"></span>
+<a name="l00069"></a>00069 <span class="comment">    /** 自定义错误号</span>
+<a name="l00070"></a>00070 <span class="comment">    */</span>
+<a name="l00071"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aed091cf9c5a5357f454746e7e5cad9b5">00071</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aed091cf9c5a5357f454746e7e5cad9b5">RC_E_CodeBegin</a>             = ((<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>)0x00000002L) ,   <span class="comment">//自定义错误号起始值</span>
+<a name="l00072"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a4fda106bed0b27b300864d3fc918c717">00072</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a4fda106bed0b27b300864d3fc918c717">RC_E_Password</a>                                       ,   <span class="comment">//密码错误</span>
+<a name="l00073"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a2e6a69e5e0f263f66058b571af229ea0">00073</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a2e6a69e5e0f263f66058b571af229ea0">RC_E_UnexpectedEndOfArchive</a>                         ,   <span class="comment">//意外的文件结尾</span>
+<a name="l00074"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a9f3f272a92e889d9238664945bf1c899">00074</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a9f3f272a92e889d9238664945bf1c899">RC_E_ArchiveHeaderCRCError</a>                          ,   <span class="comment">//文件数据头CRC错误  </span>
+<a name="l00075"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aae84535df72aa1316deda4c87206c538">00075</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aae84535df72aa1316deda4c87206c538">RC_E_FileHeaderCRCError</a>                             ,   <span class="comment">//文件头CRC错误</span>
+<a name="l00076"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aaeddf10771a7eb4434a5f5769d193d95">00076</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12aaeddf10771a7eb4434a5f5769d193d95">RC_E_DataCRCError</a>                                   ,   <span class="comment">//文件CRC校验错误</span>
+<a name="l00077"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a6e3760949bcf97ef958fcff0e7f4ebc1">00077</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a6e3760949bcf97ef958fcff0e7f4ebc1">RC_E_IncorrectArchive</a>                               ,   <span class="comment">//文件格式错误</span>
+<a name="l00078"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a570f1ad084ba50c9af6a6087385fe688">00078</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a570f1ad084ba50c9af6a6087385fe688">RC_E_MultiVolumeArchiveAreNotSupported</a>              ,   <span class="comment">//不支持分卷</span>
+<a name="l00079"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12affc5fd2243f11cf1bf7edaec71cd0634">00079</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12affc5fd2243f11cf1bf7edaec71cd0634">RC_E_ReadStreamError</a>                                ,   <span class="comment">//读取文件流失败</span>
+<a name="l00080"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a625cafdbd2904520b6e101acc008e02c">00080</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a625cafdbd2904520b6e101acc008e02c">RC_E_SeekStreamError</a>                                ,   <span class="comment">//Seek文件失败</span>
+<a name="l00081"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a8391a63b12f9c7793df1ff468e849934">00081</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a8391a63b12f9c7793df1ff468e849934">RC_E_WriteStreamError</a>                               ,   <span class="comment">//写文件流失败</span>
+<a name="l00082"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a5f27afaa21d6600bb43ccecf2b9ee744">00082</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a5f27afaa21d6600bb43ccecf2b9ee744">RC_E_DataError</a>                                      ,   <span class="comment">//数据错误</span>
+<a name="l00083"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12ab8562f73bd7ae815ea65de2008467e5d">00083</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12ab8562f73bd7ae815ea65de2008467e5d">RC_E_VersionNotSupported</a>                            ,   <span class="comment">//不支持该版本</span>
+<a name="l00084"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a7244120dab242402c1b7ddec5c42759f">00084</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a7244120dab242402c1b7ddec5c42759f">RC_E_Skip</a>                                           ,   <span class="comment">//跳过该操作</span>
+<a name="l00085"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12acaeace1a811279e5c7f6cf9c3ebf2ae6">00085</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12acaeace1a811279e5c7f6cf9c3ebf2ae6">RC_E_Password_Too_Long</a>                              ,   <span class="comment">//密码长度超过限制</span>
+<a name="l00086"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a21abe390b3eba08a22cebbf3c408e398">00086</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a21abe390b3eba08a22cebbf3c408e398">RC_E_NonSupport_Isz_Password</a>                        ,   <span class="comment">//不支持带密码的isz文件</span>
+<a name="l00087"></a>00087     
+<a name="l00088"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a49a9c872364331fad3974cf6e795fb36">00088</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a49a9c872364331fad3974cf6e795fb36">RC_E_CodeEnd</a>                                            <span class="comment">//自定义错误号结束值</span>
+<a name="l00089"></a>00089 };
+<a name="l00090"></a>00090 <span class="comment"></span>
+<a name="l00091"></a>00091 <span class="comment">/** 判断HResult是否为成功</span>
+<a name="l00092"></a>00092 <span class="comment">@param [in] value 需要判断的值</span>
+<a name="l00093"></a>00093 <span class="comment">@return 如果为成功值则返回true，否则返回false</span>
+<a name="l00094"></a>00094 <span class="comment">*/</span>
+<a name="l00095"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#aecc6b34b1c6415b7d4b7659e46f728f3">00095</a> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#aecc6b34b1c6415b7d4b7659e46f728f3">IsSuccess</a>(<span class="keyword">const</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&amp; value)
+<a name="l00096"></a>00096 {
+<a name="l00097"></a>00097     <span class="keywordflow">return</span> (value == <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a9a10b4b0c00316e7d88c03c8626d93f0">RC_S_OK</a>) ;
+<a name="l00098"></a>00098 }
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 <span class="preprocessor">#endif //__RCTypes_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

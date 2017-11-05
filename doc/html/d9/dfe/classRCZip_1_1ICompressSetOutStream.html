@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::ICompressSetOutStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d9/dfe/classRCZip_1_1ICompressSetOutStream.html">ICompressSetOutStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::ICompressSetOutStream类参考</h1><!-- doxytag: class="RCZip::ICompressSetOutStream" --><!-- doxytag: inherits="RCZip::IUnknown" -->
+<p><code>#include &lt;<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::ICompressSetOutStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d0/dfb/classRCZip_1_1ICompressSetOutStream__inherit__graph.png" border="0" usemap="#RCZip_1_1ICompressSetOutStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1ICompressSetOutStream_inherit__map" id="RCZip_1_1ICompressSetOutStream_inherit__map">
+<area shape="rect" id="node5" href="../../d9/d18/classRCZip_1_1IUnknownImpl11.html" title="{RCZip::IUnknownImpl11\&lt; ICompressCoder, ICompressSetInStream, ISequentialInStream, ICompressSetOutStream, ISequentialOutStream, IOutStreamFlush, ICryptoSetPassword, ICompressSetCoderProperties, ICompressWriteCoderProperties, ICryptoResetInitVector, ICompressSetDecoderProperties2 \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl11()\l}" alt="" coords="5,331,2032,453"/><area shape="rect" id="node9" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; ICompressCoder, ICompressSetOutStream, ICompressSetCoderProperties, ICompressWriteCoderProperties \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="2056,331,2968,453"/><area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="1692,6,1839,127"/><area shape="rect" id="node7" href="../../d9/dcf/classRCZip_1_1RCFilterCoder.html" title="{RCZip::RCFilterCoder\n|# m_buffer\l# m_spInStream\l# m_spOutStream\l# m_bufferPos\l# m_convertedPosBegin\l# m_convertedPosEnd\l# m_outSizeIsDefined\l# m_outSize\l# m_nowPos64\l# m_spSetPassword\l# m_spSetCoderProperties\l# m_spWriteCoderProperties\l# m_spCryptoResetInitVector\l# m_spSetDecoderProperties\l# m_spFilter\l|+ RCFilterCoder()\l+ ~RCFilterCoder()\l+ Init()\l+ WriteWithLimit()\l+ NeedMore()\l+ SetFilter()\l+ Code()\l+ SetInStream()\l+ ReleaseInStream()\l+ Read()\l+ SetOutStream()\l+ ReleaseOutStream()\l+ Write()\l+ Flush()\l+ CryptoSetPassword()\l+ SetCoderProperties()\l+ WriteCoderProperties()\l+ ResetInitVector()\l+ SetDecoderProperties2()\l+ QueryInterface()\l}" alt="" coords="911,502,1127,1063"/><area shape="rect" id="node11" href="../../d5/dd5/classRCZip_1_1RCLzma2Encoder.html" title="{RCZip::RCLzma2Encoder\n|&#45; m_encoder\l&#45; m_seqInStream\l&#45; m_seqOutStream\l&#45; s_bigAlloc\l&#45; s_alloc\l|+ RCLzma2Encoder()\l+ ~RCLzma2Encoder()\l+ Code()\l+ SetOutStream()\l+ ReleaseOutStream()\l+ SetCoderProperties()\l+ WriteCoderProperties()\l&#45; ReadData()\l&#45; WriteData()\l&#45; SzBigAlloc()\l&#45; SzBigFree()\l&#45; SzAlloc()\l&#45; SzFree()\l&#45; SResToHRESULT()\l&#45; CompressProgress()\l&#45; GetUpperChar()\l&#45; ParseMatchFinder()\l}" alt="" coords="2417,597,2607,968"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::ICompressSetOutStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../de/db6/classRCZip_1_1ICompressSetOutStream__coll__graph.png" border="0" usemap="#RCZip_1_1ICompressSetOutStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1ICompressSetOutStream_coll__map" id="RCZip_1_1ICompressSetOutStream_coll__map">
+<area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="48,6,195,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d6/d0e/classRCZip_1_1ICompressSetOutStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../d9/dfe/classRCZip_1_1ICompressSetOutStream.html#a3b8450ea3d35a0df24c9220f56e6f3eda56041c1b779086b9f6ba52dd952f8384">IID</a> =  IID_ICompressSetOutStream
+ }</td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classRCZip_1_1ICompressSetOutStream.html#a05dce8a92a6920b6fb792ab826a0659a">SetOutStream</a> (<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classRCZip_1_1ICompressSetOutStream.html#afeaca47290c9c0bb8907628aa35deb47">ReleaseOutStream</a> ()=0</td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classRCZip_1_1ICompressSetOutStream.html#a89261ec3e6a51024693b73b53cd1b64f">~ICompressSetOutStream</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>设置输出流 </p>
+
+<p>在文件<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>第<a class="el" href="../../de/d71/ICoder_8h_source.html#l00403">403</a>行定义。</p>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a3b8450ea3d35a0df24c9220f56e6f3ed"></a><!-- doxytag: member="RCZip::ICompressSetOutStream::@51" ref="a3b8450ea3d35a0df24c9220f56e6f3ed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>接口ID </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a3b8450ea3d35a0df24c9220f56e6f3eda56041c1b779086b9f6ba52dd952f8384"></a><!-- doxytag: member="IID" ref="a3b8450ea3d35a0df24c9220f56e6f3eda56041c1b779086b9f6ba52dd952f8384" args="" -->IID</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>第<a class="el" href="../../de/d71/ICoder_8h_source.html#l00410">410</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a89261ec3e6a51024693b73b53cd1b64f"></a><!-- doxytag: member="RCZip::ICompressSetOutStream::~ICompressSetOutStream" ref="a89261ec3e6a51024693b73b53cd1b64f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::ICompressSetOutStream::~ICompressSetOutStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+<p>在文件<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>第<a class="el" href="../../de/d71/ICoder_8h_source.html#l00429">429</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="afeaca47290c9c0bb8907628aa35deb47"></a><!-- doxytag: member="RCZip::ICompressSetOutStream::ReleaseOutStream" ref="afeaca47290c9c0bb8907628aa35deb47" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::ICompressSetOutStream::ReleaseOutStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放输出流 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 否则返回错误码 </dd></dl>
+
+<p>在<a class="el" href="../../d9/dcf/classRCZip_1_1RCFilterCoder.html#a890454574af97ac74477b139b59888a2">RCZip::RCFilterCoder</a>及<a class="el" href="../../d5/dd5/classRCZip_1_1RCLzma2Encoder.html#af47dc2d5ad6a94f8c7ddef130e873a63">RCZip::RCLzma2Encoder</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a05dce8a92a6920b6fb792ab826a0659a"></a><!-- doxytag: member="RCZip::ICompressSetOutStream::SetOutStream" ref="a05dce8a92a6920b6fb792ab826a0659a" args="(ISequentialOutStream *outStream)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::ICompressSetOutStream::SetOutStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输出流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 否则返回错误码 </dd></dl>
+
+<p>在<a class="el" href="../../d9/dcf/classRCZip_1_1RCFilterCoder.html#ac2b07db6b3af40be0086d694c70cd6c8">RCZip::RCFilterCoder</a>及<a class="el" href="../../d5/dd5/classRCZip_1_1RCLzma2Encoder.html#aaa0bf6fa66736e88e70acaae89c04a01">RCZip::RCLzma2Encoder</a>内被实现。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

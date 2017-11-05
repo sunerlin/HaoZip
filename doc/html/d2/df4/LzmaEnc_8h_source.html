@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: LzmaEnc.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>LzmaEnc.h</h1><a href="../../d2/df4/LzmaEnc_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*  LzmaEnc.h -- LZMA Encoder</span>
+<a name="l00002"></a>00002 <span class="comment">2009-02-07 : Igor Pavlov : Public domain */</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef __LZMA_ENC_H</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define __LZMA_ENC_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/df8/Types_8h.html">algorithm/Types.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00010"></a>00010 <span class="preprocessor">#endif</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span>
+<a name="l00012"></a><a class="code" href="../../d2/df4/LzmaEnc_8h.html#a4b339e98a6261f3b64a9c93394fe5bb2">00012</a> <span class="preprocessor">#define LZMA_PROPS_SIZE 5</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span>
+<a name="l00014"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">00014</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">_CLzmaEncProps</a>
+<a name="l00015"></a>00015 {
+<a name="l00016"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a5e5052efe520ba12f9135e3573c904f7">00016</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a5e5052efe520ba12f9135e3573c904f7">level</a>;       <span class="comment">/*  0 &lt;= level &lt;= 9 */</span>
+<a name="l00017"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#ae6df6cf4ce3a1caa903e5d8901992ec5">00017</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#ae6df6cf4ce3a1caa903e5d8901992ec5">dictSize</a>; <span class="comment">/* (1 &lt;&lt; 12) &lt;= dictSize &lt;= (1 &lt;&lt; 27) for 32-bit version</span>
+<a name="l00018"></a>00018 <span class="comment">                      (1 &lt;&lt; 12) &lt;= dictSize &lt;= (1 &lt;&lt; 30) for 64-bit version</span>
+<a name="l00019"></a>00019 <span class="comment">                       default = (1 &lt;&lt; 24) */</span>
+<a name="l00020"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#aeeacd1d7984b6ef217d094e2ef6adf45">00020</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#aeeacd1d7984b6ef217d094e2ef6adf45">lc</a>;          <span class="comment">/* 0 &lt;= lc &lt;= 8, default = 3 */</span>
+<a name="l00021"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a3f67284251cee171929c806df1a52ad4">00021</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a3f67284251cee171929c806df1a52ad4">lp</a>;          <span class="comment">/* 0 &lt;= lp &lt;= 4, default = 0 */</span>
+<a name="l00022"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#aa1d9d0c7c3adccb35410fdbe8f102d5b">00022</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#aa1d9d0c7c3adccb35410fdbe8f102d5b">pb</a>;          <span class="comment">/* 0 &lt;= pb &lt;= 4, default = 2 */</span>
+<a name="l00023"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a7f0f5097ea57a20235dd8fde67cb21e0">00023</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a7f0f5097ea57a20235dd8fde67cb21e0">algo</a>;        <span class="comment">/* 0 - fast, 1 - normal, default = 1 */</span>
+<a name="l00024"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#abc44b9026c4edba45c8aef3f4131407d">00024</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#abc44b9026c4edba45c8aef3f4131407d">fb</a>;          <span class="comment">/* 5 &lt;= fb &lt;= 273, default = 32 */</span>
+<a name="l00025"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a43f6e9aec36e824f75d2c50753b437a7">00025</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a43f6e9aec36e824f75d2c50753b437a7">btMode</a>;      <span class="comment">/* 0 - hashChain Mode, 1 - binTree mode - normal, default = 1 */</span>
+<a name="l00026"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#aeb2d74921eca7e9bbbdc45cfc6c3014f">00026</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#aeb2d74921eca7e9bbbdc45cfc6c3014f">numHashBytes</a>; <span class="comment">/* 2, 3 or 4, default = 4 */</span>
+<a name="l00027"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a8911cb535f9b8c78c524c909026b0376">00027</a>   <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a8911cb535f9b8c78c524c909026b0376">mc</a>;        <span class="comment">/* 1 &lt;= mc &lt;= (1 &lt;&lt; 30), default = 32 */</span>
+<a name="l00028"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a5dbb3c603287d5de9073b291f3b1c52a">00028</a>   <span class="keywordtype">unsigned</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a5dbb3c603287d5de9073b291f3b1c52a">writeEndMark</a>;  <span class="comment">/* 0 - do not write EOPM, 1 - write EOPM, default = 0 */</span>
+<a name="l00029"></a><a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a1e64cefdc7909da1b65db1bf692a2b14">00029</a>   <span class="keywordtype">int</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html#a1e64cefdc7909da1b65db1bf692a2b14">numThreads</a>;  <span class="comment">/* 1 or 2, default = 2 */</span>
+<a name="l00030"></a>00030 } <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a>;
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 <span class="keywordtype">void</span> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#a336bf0e92adf6ff680547c58fd60baa6">LzmaEncProps_Init</a>(<a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *p);
+<a name="l00033"></a>00033 <span class="keywordtype">void</span> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#acd23d29a44a6a248851b7e0ef8016d87">LzmaEncProps_Normalize</a>(<a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *p);
+<a name="l00034"></a>00034 <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#adbdb8d9faeb99b5c53dad00e60589c6c">LzmaEncProps_GetDictSize</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *props2);
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037 <span class="comment">/* ---------- CLzmaEncHandle Interface ---------- */</span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="comment">/* LzmaEnc_* functions can return the following exit codes:</span>
+<a name="l00040"></a>00040 <span class="comment">Returns:</span>
+<a name="l00041"></a>00041 <span class="comment">  SZ_OK           - OK</span>
+<a name="l00042"></a>00042 <span class="comment">  SZ_ERROR_MEM    - Memory allocation error</span>
+<a name="l00043"></a>00043 <span class="comment">  SZ_ERROR_PARAM  - Incorrect paramater in props</span>
+<a name="l00044"></a>00044 <span class="comment">  SZ_ERROR_WRITE  - Write callback error.</span>
+<a name="l00045"></a>00045 <span class="comment">  SZ_ERROR_PROGRESS - some break from progress callback</span>
+<a name="l00046"></a>00046 <span class="comment">  SZ_ERROR_THREAD - errors in multithreading functions (only for Mt version)</span>
+<a name="l00047"></a>00047 <span class="comment">*/</span>
+<a name="l00048"></a>00048 
+<a name="l00049"></a><a class="code" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">00049</a> <span class="keyword">typedef</span> <span class="keywordtype">void</span> * <a class="code" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 CLzmaEncHandle <a class="code" href="../../d2/df4/LzmaEnc_8h.html#a1205a513b1d33c24a6cc5788c4ca8990">LzmaEnc_Create</a>(<a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc);
+<a name="l00052"></a>00052 <span class="keywordtype">void</span> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#a065756196601bbeb1910df0f574205ac">LzmaEnc_Destroy</a>(CLzmaEncHandle p, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig);
+<a name="l00053"></a>00053 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#aebab762563ff7e4ad5bde8644ef35059">LzmaEnc_SetProps</a>(CLzmaEncHandle p, <span class="keyword">const</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *props);
+<a name="l00054"></a>00054 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#aecf75778a8032dea9aa5cf9c7db22884">LzmaEnc_WriteProperties</a>(CLzmaEncHandle p, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *properties, <span class="keywordtype">size_t</span> *size);
+<a name="l00055"></a>00055 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#a3aae18552c9f2674fb80b9e222d18542">LzmaEnc_Encode</a>(CLzmaEncHandle p, <a class="code" href="../../dd/d89/structISeqOutStream.html">ISeqOutStream</a> *outStream, <a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *inStream,
+<a name="l00056"></a>00056     <a class="code" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *progress, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig);
+<a name="l00057"></a>00057 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#a424b6bc96ac32f9919f96efbc59724d2">LzmaEnc_MemEncode</a>(CLzmaEncHandle p, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, <span class="keywordtype">size_t</span> *destLen, <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, <span class="keywordtype">size_t</span> srcLen,
+<a name="l00058"></a>00058     <span class="keywordtype">int</span> writeEndMark, <a class="code" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *progress, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig);
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="comment">/* ---------- One Call Interface ---------- */</span>
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 <span class="comment">/* LzmaEncode</span>
+<a name="l00063"></a>00063 <span class="comment">Return code:</span>
+<a name="l00064"></a>00064 <span class="comment">  SZ_OK               - OK</span>
+<a name="l00065"></a>00065 <span class="comment">  SZ_ERROR_MEM        - Memory allocation error</span>
+<a name="l00066"></a>00066 <span class="comment">  SZ_ERROR_PARAM      - Incorrect paramater</span>
+<a name="l00067"></a>00067 <span class="comment">  SZ_ERROR_OUTPUT_EOF - output buffer overflow</span>
+<a name="l00068"></a>00068 <span class="comment">  SZ_ERROR_THREAD     - errors in multithreading functions (only for Mt version)</span>
+<a name="l00069"></a>00069 <span class="comment">*/</span>
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d2/df4/LzmaEnc_8h.html#a4e41487978b05185db9647f05f2dbf70">LzmaEncode</a>(<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, <span class="keywordtype">size_t</span> *destLen, <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, <span class="keywordtype">size_t</span> srcLen,
+<a name="l00072"></a>00072     <span class="keyword">const</span> <a class="code" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *props, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *propsEncoded, <span class="keywordtype">size_t</span> *propsSize, <span class="keywordtype">int</span> writeEndMark,
+<a name="l00073"></a>00073     <a class="code" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *progress, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig);
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00076"></a>00076 <span class="preprocessor"></span>}
+<a name="l00077"></a>00077 <span class="preprocessor">#endif</span>
+<a name="l00078"></a>00078 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

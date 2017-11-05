@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCLzxX86ConvertOutStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html">RCLzxX86ConvertOutStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCLzxX86ConvertOutStream类参考</h1><!-- doxytag: class="RCZip::RCLzxX86ConvertOutStream" --><!-- doxytag: inherits="IUnknownImpl&lt; ISequentialOutStream &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCLzxX86ConvertOutStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d2/d72/classRCZip_1_1RCLzxX86ConvertOutStream__inherit__graph.png" border="0" usemap="#RCZip_1_1RCLzxX86ConvertOutStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCLzxX86ConvertOutStream_inherit__map" id="RCZip_1_1RCLzxX86ConvertOutStream_inherit__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="28,361,372,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="200,198,416,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="235,6,381,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCLzxX86ConvertOutStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d4/de3/classRCZip_1_1RCLzxX86ConvertOutStream__coll__graph.png" border="0" usemap="#RCZip_1_1RCLzxX86ConvertOutStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCLzxX86ConvertOutStream_coll__map" id="RCZip_1_1RCLzxX86ConvertOutStream_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="5,467,349,589"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="95,179,260,315"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="89,28,265,105"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="341,201,557,293"/><area shape="rect" id="node12" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="373,379,640,677"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="376,6,523,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d0/d07/classRCZip_1_1RCLzxX86ConvertOutStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a6d0c14b5e659502bd3f11daec69bfff8">RCLzxX86ConvertOutStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a404a1d788707e19853e82ea7501f9c61">~RCLzxX86ConvertOutStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#aafe5746111d7edc1f2d4af4d4915d145">SetStream</a> (<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a8e6cce1a49f5b303b208a00a5404ffd0">ReleaseStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#ae049187c186ebcacc2e5350373fbb1bf">Init</a> (bool translationMode, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> translationSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a27db449a2349fa8f242fc3aaf8d78470">Flush</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#aaed4d8595d9f8d2cc7258c3c0befab40">Write</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a407eb9503626ef351ce7d6f08d20c6cf">MakeTranslation</a> ()</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a15db7a74ce8d1183fc113b2566d4d0a7">m_stream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#abcc1495493a8a808eff39181c3af0b4a">m_processedSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a10d7fa1266052ce7149cd1d7e78399de">m_pos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#ad58acba7fd7c24a334f2fe8dc76e7c52">m_translationSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#af7e409c6d0c6950c9201b272c3fbc966">m_translationMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#afe3ce3e6c2909fc63f1df13d5978772c">m_buffer</a> [<a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a91a96c5b27c12cd224f3c2bc10876ee1">s_kUncompressedBlockSize</a>]</td></tr>
+<tr><td colspan="2"><h2>静态私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a91a96c5b27c12cd224f3c2bc10876ee1">s_kUncompressedBlockSize</a> = 1 &lt;&lt; 15</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Lzx 输出流 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a6d0c14b5e659502bd3f11daec69bfff8"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::RCLzxX86ConvertOutStream" ref="a6d0c14b5e659502bd3f11daec69bfff8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCLzxX86ConvertOutStream::RCLzxX86ConvertOutStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a404a1d788707e19853e82ea7501f9c61"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::~RCLzxX86ConvertOutStream" ref="a404a1d788707e19853e82ea7501f9c61" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCLzxX86ConvertOutStream::~RCLzxX86ConvertOutStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a27db449a2349fa8f242fc3aaf8d78470"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::Flush" ref="a27db449a2349fa8f242fc3aaf8d78470" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCLzxX86ConvertOutStream::Flush </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Flush数据 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae049187c186ebcacc2e5350373fbb1bf"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::Init" ref="ae049187c186ebcacc2e5350373fbb1bf" args="(bool translationMode, uint32_t translationSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCLzxX86ConvertOutStream::Init </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>translationMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>translationSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>translationMode</em>&nbsp;</td><td>转换模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>translationSize</em>&nbsp;</td><td>转换大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a407eb9503626ef351ce7d6f08d20c6cf"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::MakeTranslation" ref="a407eb9503626ef351ce7d6f08d20c6cf" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCLzxX86ConvertOutStream::MakeTranslation </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>转换 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e6cce1a49f5b303b208a00a5404ffd0"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::ReleaseStream" ref="a8e6cce1a49f5b303b208a00a5404ffd0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCLzxX86ConvertOutStream::ReleaseStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放流 </p>
+
+</div>
+</div>
+<a class="anchor" id="aafe5746111d7edc1f2d4af4d4915d145"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::SetStream" ref="aafe5746111d7edc1f2d4af4d4915d145" args="(ISequentialOutStream *outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCLzxX86ConvertOutStream::SetStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输出流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaed4d8595d9f8d2cc7258c3c0befab40"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::Write" ref="aaed4d8595d9f8d2cc7258c3c0befab40" args="(const void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCLzxX86ConvertOutStream::Write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html#ad269989f026c6c6b69acbe5007fc940a">RCZip::ISequentialOutStream</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="afe3ce3e6c2909fc63f1df13d5978772c"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::m_buffer" ref="afe3ce3e6c2909fc63f1df13d5978772c" args="[s_kUncompressedBlockSize]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#afe3ce3e6c2909fc63f1df13d5978772c">RCZip::RCLzxX86ConvertOutStream::m_buffer</a>[<a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a91a96c5b27c12cd224f3c2bc10876ee1">s_kUncompressedBlockSize</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>缓存 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00099">99</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a10d7fa1266052ce7149cd1d7e78399de"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::m_pos" ref="a10d7fa1266052ce7149cd1d7e78399de" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a10d7fa1266052ce7149cd1d7e78399de">RCZip::RCLzxX86ConvertOutStream::m_pos</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>位置 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00087">87</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abcc1495493a8a808eff39181c3af0b4a"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::m_processedSize" ref="abcc1495493a8a808eff39181c3af0b4a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#abcc1495493a8a808eff39181c3af0b4a">RCZip::RCLzxX86ConvertOutStream::m_processedSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>已经处理大小 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00083">83</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a15db7a74ce8d1183fc113b2566d4d0a7"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::m_stream" ref="a15db7a74ce8d1183fc113b2566d4d0a7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a> <a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a15db7a74ce8d1183fc113b2566d4d0a7">RCZip::RCLzxX86ConvertOutStream::m_stream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出流 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af7e409c6d0c6950c9201b272c3fbc966"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::m_translationMode" ref="af7e409c6d0c6950c9201b272c3fbc966" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#af7e409c6d0c6950c9201b272c3fbc966">RCZip::RCLzxX86ConvertOutStream::m_translationMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放转换模式 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00095">95</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad58acba7fd7c24a334f2fe8dc76e7c52"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::m_translationSize" ref="ad58acba7fd7c24a334f2fe8dc76e7c52" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#ad58acba7fd7c24a334f2fe8dc76e7c52">RCZip::RCLzxX86ConvertOutStream::m_translationSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>转换大小 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00091">91</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a91a96c5b27c12cd224f3c2bc10876ee1"></a><!-- doxytag: member="RCZip::RCLzxX86ConvertOutStream::s_kUncompressedBlockSize" ref="a91a96c5b27c12cd224f3c2bc10876ee1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="../../d0/df2/classRCZip_1_1RCLzxX86ConvertOutStream.html#a91a96c5b27c12cd224f3c2bc10876ee1">RCZip::RCLzxX86ConvertOutStream::s_kUncompressedBlockSize</a> = 1 &lt;&lt; 15<code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压块大小 </p>
+
+<p>在文件<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a>第<a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html#l00073">73</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d1/dcf/RCLzxX86ConvertOutStream_8h_source.html">RCLzxX86ConvertOutStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

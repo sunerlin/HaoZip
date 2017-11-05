@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCBuffer.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_225935dcd765d0e1bc4921e7a6a35535.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCBuffer.h文件参考</h1><code>#include &quot;<a class="el" href="../../d0/d20/RCDefs_8h_source.html">base/RCDefs.h</a>&quot;</code><br/>
+<code>#include &lt;algorithm&gt;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &quot;RCBuffer.inl&quot;</code><br/>
+<div class="dynheader">
+RCBuffer.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d9/de8/RCBuffer_8h__incl.png" border="0" usemap="#RCBuffer_8h_map" alt=""/></div>
+<map name="RCBuffer_8h_map" id="RCBuffer_8h">
+<area shape="rect" id="node3" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="292,80,409,107"/><area shape="rect" id="node5" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="288,155,413,181"/><area shape="rect" id="node9" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="96,229,261,256"/><area shape="rect" id="node11" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="285,229,416,256"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../de/dec/RCBuffer_8h__dep__incl.png" border="0" usemap="#RCBuffer_8hdep_map" alt=""/></div>
+<map name="RCBuffer_8hdep_map" id="RCBuffer_8hdep">
+<area shape="rect" id="node3" href="../../d1/d90/RCDynamicBuffer_8h.html" title="RCDynamicBuffer.h" alt="" coords="227,80,376,107"/><area shape="rect" id="node7" href="../../de/d7e/RCZipItem_8h.html" title="RCZipItem.h" alt="" coords="43,229,147,256"/><area shape="rect" id="node9" href="../../df/d43/RCZipIn_8h.html" title="RCZipIn.h" alt="" coords="230,304,315,331"/><area shape="rect" id="node13" href="../../db/d60/RCWavUnpackStreamReader_8h.html" title="RCWavUnpackStreamReader.h" alt="" coords="487,80,711,107"/><area shape="rect" id="node15" href="../../d7/dae/RC7zAESKeyInfo_8h.html" title="RC7zAESKeyInfo.h" alt="" coords="735,80,876,107"/><area shape="rect" id="node19" href="../../d9/d51/RCRarAESDecoder_8h.html" title="RCRarAESDecoder.h" alt="" coords="951,80,1106,107"/><area shape="rect" id="node21" href="../../d1/dc4/RCRarIn_8h.html" title="RCRarIn.h" alt="" coords="870,155,955,181"/><area shape="rect" id="node25" href="../../d6/d7d/RCWzAESKeyInfo_8h.html" title="RCWzAESKeyInfo.h" alt="" coords="1130,80,1276,107"/><area shape="rect" id="node29" href="../../df/d32/RCZipStrongDecoder_8h.html" title="RCZipStrongDecoder.h" alt="" coords="1300,80,1471,107"/><area shape="rect" id="node31" href="../../d0/db0/RCBufInStream_8h.html" title="RCBufInStream.h" alt="" coords="1495,80,1631,107"/><area shape="rect" id="node33" href="../../d6/d2a/RC7zItem_8h.html" title="RC7zItem.h" alt="" coords="1706,80,1804,107"/><area shape="rect" id="node41" href="../../d0/de1/RC7zUpdate_8h.html" title="RC7zUpdate.h" alt="" coords="1280,304,1395,331"/><area shape="rect" id="node47" href="../../d9/ded/RC7zOutArchive_8h.html" title="RC7zOutArchive.h" alt="" coords="1734,229,1875,256"/><area shape="rect" id="node56" href="../../d6/d35/RCCabFolderOutStream_8h.html" title="RCCabFolderOutStream.h" alt="" coords="1987,80,2179,107"/><area shape="rect" id="node58" href="../../de/db4/RCChmItem_8h.html" title="RCChmItem.h" alt="" coords="2211,80,2326,107"/><area shape="rect" id="node66" href="../../dd/d41/RCDmgFile_8h.html" title="RCDmgFile.h" alt="" coords="2426,80,2532,107"/><area shape="rect" id="node70" href="../../de/dff/RCGZipItem_8h.html" title="RCGZipItem.h" alt="" coords="2606,80,2720,107"/><area shape="rect" id="node74" href="../../df/d88/RCHfsIn_8h.html" title="RCHfsIn.h" alt="" coords="2775,80,2860,107"/><area shape="rect" id="node78" href="../../de/df6/RCIsoItem_8h.html" title="RCIsoItem.h" alt="" coords="2915,80,3016,107"/><area shape="rect" id="node85" href="../../d9/dbf/RCLzhItem_8h.html" title="RCLzhItem.h" alt="" coords="3124,80,3231,107"/><area shape="rect" id="node91" href="../../d3/dc2/RCNsisIn_8h.html" title="RCNsisIn.h" alt="" coords="3310,80,3400,107"/><area shape="rect" id="node96" href="../../df/ded/RCUdfCDString_8h.html" title="RCUdfCDString.h" alt="" coords="3528,80,3662,107"/><area shape="rect" id="node100" href="../../dc/d4a/RCUdfIn_8h.html" title="RCUdfIn.h" alt="" coords="3551,229,3639,256"/><area shape="rect" id="node106" href="../../d3/d05/RCWimUnpacker_8h.html" title="RCWimUnpacker.h" alt="" coords="3686,80,3830,107"/><area shape="rect" id="node108" href="../../d4/d23/RCWimUtils_8h.html" title="RCWimUtils.h" alt="" coords="3854,80,3966,107"/><area shape="rect" id="node110" href="../../d1/de0/RCWimXml_8h.html" title="RCWimXml.h" alt="" coords="3990,80,4099,107"/><area shape="rect" id="node5" href="../../d3/d63/RCStringConvert_8h.html" title="RCStringConvert.h" alt="" coords="23,155,167,181"/><area shape="rect" id="node11" href="../../df/dd1/RCSequentialOutStreamImp_8h.html" title="RCSequentialOutStreamImp.h" alt="" coords="191,155,412,181"/><area shape="rect" id="node17" href="../../da/dee/RC7zAESKeyInfoCache_8h.html" title="RC7zAESKeyInfoCache.h" alt="" coords="662,155,846,181"/><area shape="rect" id="node23" href="../../d2/d42/RCRarVolumeInStream_8h.html" title="RCRarVolumeInStream.h" alt="" coords="820,229,1004,256"/><area shape="rect" id="node27" href="../../db/ddb/RCWzAESBaseCoder_8h.html" title="RCWzAESBaseCoder.h" alt="" coords="979,155,1147,181"/><area shape="rect" id="node35" href="../../d8/dd6/RC7zArchiveDatabaseEx_8h.html" title="RC7zArchiveDatabaseEx.h" alt="" coords="1323,155,1520,181"/><area shape="rect" id="node37" href="../../d9/deb/RC7zHandler_8h.html" title="RC7zHandler.h" alt="" coords="1487,229,1607,256"/><area shape="rect" id="node39" href="../../de/d9d/RC7zInArchive_8h.html" title="RC7zInArchive.h" alt="" coords="1272,229,1403,256"/><area shape="rect" id="node43" href="../../d4/dd7/RC7zDecoder_8h.html" title="RC7zDecoder.h" alt="" coords="1595,155,1718,181"/><area shape="rect" id="node45" href="../../d6/d67/RC7zEncoder_8h.html" title="RC7zEncoder.h" alt="" coords="1792,155,1912,181"/><area shape="rect" id="node60" href="../../d3/d50/RCChmFolderOutStream_8h.html" title="RCChmFolderOutStream.h" alt="" coords="1987,155,2184,181"/><area shape="rect" id="node62" href="../../d2/d3c/RCChmHandler_8h.html" title="RCChmHandler.h" alt="" coords="2208,155,2342,181"/><area shape="rect" id="node64" href="../../db/d65/RCChmIn_8h.html" title="RCChmIn.h" alt="" coords="2366,155,2462,181"/><area shape="rect" id="node68" href="../../dd/d9d/RCDmgHandler_8h.html" title="RCDmgHandler.h" alt="" coords="2486,155,2622,181"/><area shape="rect" id="node72" href="../../d1/dbe/RCGZipHandler_8h.html" title="RCGZipHandler.h" alt="" coords="2646,155,2779,181"/><area shape="rect" id="node76" href="../../d7/d59/RCHfsHandler_8h.html" title="RCHfsHandler.h" alt="" coords="2803,155,2928,181"/><area shape="rect" id="node80" href="../../da/d5c/RCIsoDir_8h.html" title="RCIsoDir.h" alt="" coords="3003,155,3091,181"/><area shape="rect" id="node82" href="../../d9/d16/RCIsoIn_8h.html" title="RCIsoIn.h" alt="" coords="2966,229,3048,256"/><area shape="rect" id="node87" href="../../d8/dbb/RCLzhHandler_8h.html" title="RCLzhHandler.h" alt="" coords="3115,155,3240,181"/><area shape="rect" id="node89" href="../../d0/d0e/RCLzhIn_8h.html" title="RCLzhIn.h" alt="" coords="3264,155,3352,181"/><area shape="rect" id="node93" href="../../db/d18/RCNsisHandler_8h.html" title="RCNsisHandler.h" alt="" coords="3376,155,3507,181"/><area shape="rect" id="node98" href="../../d6/d69/RCUdfFile_8h.html" title="RCUdfFile.h" alt="" coords="3632,155,3731,181"/><area shape="rect" id="node102" href="../../d3/db3/RCUdfExtentsStream_8h.html" title="RCUdfExtentsStream.h" alt="" coords="3508,304,3682,331"/></map>
+</div>
+
+<p><a href="../../d9/d2d/RCBuffer_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCZip::RCBuffer&lt; T &gt;</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2d/RCBuffer_8h.html#abfb2a8b2648a77b5c3399d5a691d77c7">__RCBuffer_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td colspan="2"><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef RCBuffer&lt; <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a6bf43d8b64a38d7a7c04b9fbefba6cca">RCZip::RCByteBuffer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef RCBuffer&lt; char &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a91a8a351b494259d9f6913148759064f">RCZip::RCCharBuffer</a></td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="abfb2a8b2648a77b5c3399d5a691d77c7"></a><!-- doxytag: member="RCBuffer.h::__RCBuffer_h_" ref="abfb2a8b2648a77b5c3399d5a691d77c7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCBuffer_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/d2d/RCBuffer_8h_source.html">RCBuffer.h</a>第<a class="el" href="../../d9/d2d/RCBuffer_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

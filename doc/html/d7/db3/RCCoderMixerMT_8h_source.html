@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCCoderMixerMT.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_ab70c5bc1a4800a2e6aa9d8e0a077b43.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCCoderMixerMT.h</h1><a href="../../d7/db3/RCCoderMixerMT_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCCoderMixerMT_h_</span>
+<a name="l00011"></a><a class="code" href="../../d7/db3/RCCoderMixerMT_8h.html#a9fe3509e429e6a70fe2460cc7a284e4d">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCCoderMixerMT_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d9f/RCCoderMixer_8h.html">format/common/RCCoderMixer.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/RCVirtThread_8h.html">locked/RCVirtThread.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/dbe/RCStreamBinder_8h.html">locked/RCStreamBinder.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/dc9/IStream_8h.html">interface/IStream.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../de/d71/ICoder_8h.html">interface/ICoder.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d06/IUnknownImpl_8h.html">interface/IUnknownImpl.h</a>&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d72/RCSmartPtr_8h.html">base/RCSmartPtr.h</a>&quot;</span>
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html">00023</a> <span class="keyword">struct </span><a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html">RCCoderMixerCoder</a>: 
+<a name="l00024"></a>00024     <span class="keyword">public</span> <a class="code" href="../../da/d8c/structRCZip_1_1RCCoderMixserCoderInfo.html">RCCoderMixserCoderInfo</a>, 
+<a name="l00025"></a>00025     <span class="keyword">public</span> <a class="code" href="../../d4/d61/classRCZip_1_1RCVirtThread.html">RCVirtThread</a>
+<a name="l00026"></a>00026 {<span class="comment"></span>
+<a name="l00027"></a>00027 <span class="comment">    /** 结果</span>
+<a name="l00028"></a>00028 <span class="comment">    */</span>
+<a name="l00029"></a><a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html#a4f5f8d723146564602966798a87528fc">00029</a>     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> m_result;
+<a name="l00030"></a>00030 <span class="comment"></span>
+<a name="l00031"></a>00031 <span class="comment">    /** 输入流</span>
+<a name="l00032"></a>00032 <span class="comment">    */</span>
+<a name="l00033"></a><a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html#a4a4c50fbdffb54fd370da5262e9fe255">00033</a>     RCVector&lt;ISequentialInStreamPtr&gt; m_inStreams;
+<a name="l00034"></a>00034 <span class="comment"></span>
+<a name="l00035"></a>00035 <span class="comment">    /** 输出流</span>
+<a name="l00036"></a>00036 <span class="comment">    */</span>
+<a name="l00037"></a><a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html#a4eeeb1b3e6284d4a1420bc678b3cbea7">00037</a>     RCVector&lt;ISequentialOutStreamPtr&gt; m_outStreams;
+<a name="l00038"></a>00038 <span class="comment"></span>
+<a name="l00039"></a>00039 <span class="comment">    /** 输入流指针</span>
+<a name="l00040"></a>00040 <span class="comment">    */</span>
+<a name="l00041"></a><a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html#ab0531d0b32c9cf80feddce5035a48100">00041</a>     RCVector&lt;ISequentialInStream*&gt; m_inStreamPointers;
+<a name="l00042"></a>00042 <span class="comment"></span>
+<a name="l00043"></a>00043 <span class="comment">    /** 输出流指针</span>
+<a name="l00044"></a>00044 <span class="comment">    */</span>
+<a name="l00045"></a><a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html#a061fc707ef764c741397e329c9f95973">00045</a>     RCVector&lt;ISequentialOutStream*&gt; m_outStreamPointers;
+<a name="l00046"></a>00046 <span class="comment"></span>
+<a name="l00047"></a>00047 <span class="comment">    /** 构造函数</span>
+<a name="l00048"></a>00048 <span class="comment">    */</span>
+<a name="l00049"></a>00049     <a class="code" href="../../de/d7b/structRCZip_1_1RCCoderMixerCoder.html">RCCoderMixerCoder</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numInStreams, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numOutStreams);
+<a name="l00050"></a>00050 <span class="comment"></span>
+<a name="l00051"></a>00051 <span class="comment">    /** 设置编码/解码器信息</span>
+<a name="l00052"></a>00052 <span class="comment">    @param [in] inSizes 输入大小</span>
+<a name="l00053"></a>00053 <span class="comment">    @param [in] outSizes 输出大小</span>
+<a name="l00054"></a>00054 <span class="comment">    */</span>
+<a name="l00055"></a>00055     <span class="keywordtype">void</span> SetCoderInfo(<span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>** inSizes, <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>** outSizes);
+<a name="l00056"></a>00056 <span class="comment"></span>
+<a name="l00057"></a>00057 <span class="comment">    /** 运行</span>
+<a name="l00058"></a>00058 <span class="comment">    */</span>
+<a name="l00059"></a>00059     <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute();
+<a name="l00060"></a>00060 <span class="comment"></span>
+<a name="l00061"></a>00061 <span class="comment">    /** 编码</span>
+<a name="l00062"></a>00062 <span class="comment">    @param [in] progress 压缩进度管理器</span>
+<a name="l00063"></a>00063 <span class="comment">    */</span>
+<a name="l00064"></a>00064     <span class="keywordtype">void</span> Code(<a class="code" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a>* progress) ;
+<a name="l00065"></a>00065 };
+<a name="l00066"></a>00066 <span class="comment"></span>
+<a name="l00067"></a>00067 <span class="comment">/** RCCoderMixerCoder智能指针</span>
+<a name="l00068"></a>00068 <span class="comment">*/</span>
+<a name="l00069"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a647720ebc058f1920fdcc40cee080ded">00069</a> <span class="keyword">typedef</span> RCSharedPtr&lt;RCCoderMixerCoder&gt; <a class="code" href="../../d7/d5a/namespaceRCZip.html#a647720ebc058f1920fdcc40cee080ded">RCCoderMixerCoderPtr</a> ;
+<a name="l00070"></a>00070 
+<a name="l00071"></a><a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html">00071</a> <span class="keyword">class </span><a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html">RCCoderMixerMT</a>:
+<a name="l00072"></a>00072     <span class="keyword">public</span> <a class="code" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html">IUnknownImpl</a>&lt;ICompressCoder2&gt;,
+<a name="l00073"></a>00073     <span class="keyword">public</span> <a class="code" href="../../d2/ded/classRCZip_1_1RCCoderMixer.html">RCCoderMixer</a>
+<a name="l00074"></a>00074 {
+<a name="l00075"></a>00075 <span class="keyword">public</span>:
+<a name="l00076"></a>00076 <span class="comment"></span>
+<a name="l00077"></a>00077 <span class="comment">    /** 默认构造函数</span>
+<a name="l00078"></a>00078 <span class="comment">    */</span>
+<a name="l00079"></a>00079     <a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html">RCCoderMixerMT</a>() ;
+<a name="l00080"></a>00080     <span class="comment"></span>
+<a name="l00081"></a>00081 <span class="comment">    /** 默认析构函数</span>
+<a name="l00082"></a>00082 <span class="comment">    */</span>
+<a name="l00083"></a>00083     ~<a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html">RCCoderMixerMT</a>() ;
+<a name="l00084"></a>00084     
+<a name="l00085"></a>00085 <span class="keyword">public</span>:
+<a name="l00086"></a>00086 <span class="comment"></span>
+<a name="l00087"></a>00087 <span class="comment">    /** 设置混合编码器绑定信息</span>
+<a name="l00088"></a>00088 <span class="comment">    @param [in] bindInfo 混合编码器绑定信息</span>
+<a name="l00089"></a>00089 <span class="comment">    @return 成功返回RC_S_OK，否则返回错误号</span>
+<a name="l00090"></a>00090 <span class="comment">    */</span>
+<a name="l00091"></a>00091     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> SetBindInfo(<span class="keyword">const</span> <a class="code" href="../../d2/d6b/structRCZip_1_1RCCoderMixserBindInfo.html">RCCoderMixserBindInfo</a>&amp; bindInfo) ;
+<a name="l00092"></a>00092 <span class="comment"></span>
+<a name="l00093"></a>00093 <span class="comment">    /** 添加编码器</span>
+<a name="l00094"></a>00094 <span class="comment">    @param [in] coder 编码器</span>
+<a name="l00095"></a>00095 <span class="comment">    */</span>
+<a name="l00096"></a>00096     <span class="keywordtype">void</span> AddCoder(<a class="code" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html">ICompressCoder</a>* coder) ;
+<a name="l00097"></a>00097 <span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">    /** 添加编码器二</span>
+<a name="l00099"></a>00099 <span class="comment">    @param [in] coder 编码器二</span>
+<a name="l00100"></a>00100 <span class="comment">    */</span>
+<a name="l00101"></a>00101     <span class="keywordtype">void</span> AddCoder2(<a class="code" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html">ICompressCoder2</a>* coder) ;
+<a name="l00102"></a>00102 <span class="comment"></span>
+<a name="l00103"></a>00103 <span class="comment">    /** 设置进度编码索引</span>
+<a name="l00104"></a>00104 <span class="comment">    @param [in] coderIndex 编码索引</span>
+<a name="l00105"></a>00105 <span class="comment">    */</span>
+<a name="l00106"></a>00106     <span class="keywordtype">void</span> SetProgressCoderIndex(<a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> coderIndex) ;
+<a name="l00107"></a>00107 <span class="comment"></span>
+<a name="l00108"></a>00108 <span class="comment">    /** 重新初始化</span>
+<a name="l00109"></a>00109 <span class="comment">    */</span>
+<a name="l00110"></a>00110     <span class="keywordtype">void</span> ReInit() ;
+<a name="l00111"></a>00111 <span class="comment"></span>
+<a name="l00112"></a>00112 <span class="comment">    /** 设置编码/解码器信息</span>
+<a name="l00113"></a>00113 <span class="comment">    @param [in] coderIndex 编码器索引</span>
+<a name="l00114"></a>00114 <span class="comment">    @param [in] inSizes 输入大小</span>
+<a name="l00115"></a>00115 <span class="comment">    @param [in] outSizes 输出大小</span>
+<a name="l00116"></a>00116 <span class="comment">    */</span>
+<a name="l00117"></a>00117     <span class="keywordtype">void</span> SetCoderInfo(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> coderIndex, <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>** inSizes, <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>** outSizes) ;
+<a name="l00118"></a>00118 <span class="comment"></span>
+<a name="l00119"></a>00119 <span class="comment">    /** 获取写处理大小</span>
+<a name="l00120"></a>00120 <span class="comment">    @param [in] binderIndex 混合编码器绑定索引</span>
+<a name="l00121"></a>00121 <span class="comment">    @return 返回处理大小</span>
+<a name="l00122"></a>00122 <span class="comment">    */</span>
+<a name="l00123"></a>00123     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> GetWriteProcessedSize(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> binderIndex) <span class="keyword">const</span> ;
+<a name="l00124"></a>00124 <span class="comment"></span>
+<a name="l00125"></a>00125 <span class="comment">    /** 压缩/解压数据</span>
+<a name="l00126"></a>00126 <span class="comment">    @param [in] inStreams 输入流信息</span>
+<a name="l00127"></a>00127 <span class="comment">    @param [in] outStreams 输出流信息</span>
+<a name="l00128"></a>00128 <span class="comment">    @param [in] progress 进度回调接口</span>
+<a name="l00129"></a>00129 <span class="comment">    @return 成功返回RC_S_OK，否则返回错误号</span>
+<a name="l00130"></a>00130 <span class="comment">    */</span>
+<a name="l00131"></a>00131     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Code(<span class="keyword">const</span> std::vector&lt;in_stream_data&gt;&amp; inStreams,
+<a name="l00132"></a>00132                          <span class="keyword">const</span> std::vector&lt;out_stream_data&gt;&amp; outStreams, 
+<a name="l00133"></a>00133                          <a class="code" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a>* progress) ;
+<a name="l00134"></a>00134                              
+<a name="l00135"></a>00135 <span class="keyword">public</span>:
+<a name="l00136"></a>00136 <span class="comment"></span>
+<a name="l00137"></a>00137 <span class="comment">    /** 混合编码器</span>
+<a name="l00138"></a>00138 <span class="comment">    */</span>
+<a name="l00139"></a><a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7856d8bd311664f61f1f4f40edfb16ee">00139</a>     RCVector&lt;RCCoderMixerCoderPtr&gt; m_coders ;
+<a name="l00140"></a>00140     
+<a name="l00141"></a>00141 <span class="keyword">private</span>:
+<a name="l00142"></a>00142 <span class="comment"></span>
+<a name="l00143"></a>00143 <span class="comment">    /** 添加编码器公共信息</span>
+<a name="l00144"></a>00144 <span class="comment">    */</span>
+<a name="l00145"></a>00145     <span class="keywordtype">void</span> AddCoderCommon() ;
+<a name="l00146"></a>00146 <span class="comment"></span>
+<a name="l00147"></a>00147 <span class="comment">    /** 初始化</span>
+<a name="l00148"></a>00148 <span class="comment">    @param [in] inStreams 输入流</span>
+<a name="l00149"></a>00149 <span class="comment">    @param [in] outStreams 输出流</span>
+<a name="l00150"></a>00150 <span class="comment">    @return 成功返回RC_S_OK，否则返回错误号</span>
+<a name="l00151"></a>00151 <span class="comment">    */</span>
+<a name="l00152"></a>00152     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> Init(<span class="keyword">const</span> std::vector&lt;in_stream_data&gt;&amp; inStreams,
+<a name="l00153"></a>00153                  <span class="keyword">const</span> std::vector&lt;out_stream_data&gt;&amp; outStreams) ;
+<a name="l00154"></a>00154 <span class="comment"></span>
+<a name="l00155"></a>00155 <span class="comment">    /** 错误就返回</span>
+<a name="l00156"></a>00156 <span class="comment">    @param [in] code 错误码</span>
+<a name="l00157"></a>00157 <span class="comment">    @return 成功返回RC_S_OK，否则返回错误号</span>
+<a name="l00158"></a>00158 <span class="comment">    */</span>
+<a name="l00159"></a>00159     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> ReturnIfError(<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> code) ;
+<a name="l00160"></a>00160     
+<a name="l00161"></a>00161 <span class="keyword">private</span>:
+<a name="l00162"></a>00162 <span class="comment"></span>
+<a name="l00163"></a>00163 <span class="comment">    /** RCStreamBinder智能指针</span>
+<a name="l00164"></a>00164 <span class="comment">    */</span>
+<a name="l00165"></a><a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7d8f9ee2cbbae3cefdc1f021c673e106">00165</a>     <span class="keyword">typedef</span> RCSharedPtr&lt;RCStreamBinder&gt; RCStreamBinderPtr ;
+<a name="l00166"></a>00166 <span class="comment"></span>
+<a name="l00167"></a>00167 <span class="comment">    /** 混合编码器绑定信息</span>
+<a name="l00168"></a>00168 <span class="comment">    */</span>
+<a name="l00169"></a><a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a656163c4ea8e30b2fda933679a3616f0">00169</a>     <a class="code" href="../../d2/d6b/structRCZip_1_1RCCoderMixserBindInfo.html">RCCoderMixserBindInfo</a> m_bindInfo;
+<a name="l00170"></a>00170 <span class="comment"></span>
+<a name="l00171"></a>00171 <span class="comment">    /** 流的绑定信息</span>
+<a name="l00172"></a>00172 <span class="comment">    */</span>
+<a name="l00173"></a><a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#ad82697e86e872a13dc6ab6a4836a198c">00173</a>     RCVector&lt;RCStreamBinderPtr&gt; m_streamBinders;
+<a name="l00174"></a>00174 <span class="comment"></span>
+<a name="l00175"></a>00175 <span class="comment">    /** 进度编码索引</span>
+<a name="l00176"></a>00176 <span class="comment">    */</span>
+<a name="l00177"></a><a class="code" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a6d5cefa322bc1e2237a1d5a1641b80e5">00177</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> m_progressCoderIndex ;
+<a name="l00178"></a>00178 };
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00181"></a>00181 
+<a name="l00182"></a>00182 <span class="preprocessor">#endif //__RCCoderMixerMT_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

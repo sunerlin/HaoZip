@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCMethod类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html">RCMethod</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCMethod类参考</h1><!-- doxytag: class="RCZip::RCMethod" -->
+<p><code>#include &lt;<a class="el" href="../../d7/d83/RCMethodDefs_8h_source.html">RCMethodDefs.h</a>&gt;</code></p>
+
+<p><a href="../../d6/d6d/classRCZip_1_1RCMethod-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457a">ID</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa12d93b6a601c5025cc5a65dc39ae2055">ID_CRYPTO_7Z_AES</a> =  0x06F10701, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa564d9e533633832940d1c813b5e65172">ID_CRYPTO_RAR_20</a> =  0x0501, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaf490025a393cbdcfdc52a971332ec061">ID_CRYPTO_RAR_29</a> =  0x0502, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaa2819054dd7a84cc6740b433a26f90cc">ID_CRYPTO_WZ_AES</a> =  0x0503, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aad8531fedeb1092089d588c8f430ed93d">ID_CRYPTO_ZIP</a> =  0x0504, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa168da09dccc2083131c0fdfd2c7cf404">ID_COMPRESS_BYTE_SWAP_2</a> =  0x020302, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aabce64bf6206a653fac80c25be13a76f7">ID_COMPRESS_BYTE_SWAP_4</a> =  0x020304, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aafe76d99f28c835cc4471aad020d75794">ID_COMPRESS_BRANCH_PPC</a> =  0x03030000 + (0x02 * 256) + 0x05, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aadd7df418e764f7bed8328ba9c8d083ce">ID_COMPRESS_BRANCH_IA64</a> =  0x03030000 + (0x04 * 256) + 1, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa282c01166c88118b727ab6f131d19ab3">ID_COMPRESS_BRANCH_ARM</a> =  0x03030000 + (0x05 * 256) + 1, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa6b4c509fd93d985cc4361188698c4ea1">ID_COMPRESS_BRANCH_ARMT</a> =  0x03030000 + (0x07 * 256) + 1, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aae7754493a941fd94d9b262b7b410f8bf">ID_COMPRESS_BRANCH_SPARC</a> =  0x03030000 + (0x08 * 256) + 0x05, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaa2f084e24f07f5eb9f64020daf396b43">ID_COMPRESS_BRANCH_BCJ</a> =  0x03030103, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaf0bf6289bafd3c6b7a0dcbe1a70e17dc">ID_COMPRESS_BRANCH_BCJ_2</a> =  0x0303011B, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aac0bfdccb69d21613499223a95e8ab739">ID_COMPRESS_LZMA</a> =  0x030101, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa731f83d87a1288bfa9d62e8b559c865a">ID_COMPRESS_PPMD</a> =  0x030401, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa582cfd219923ca2e5453713f6b1fc0ad">ID_COMPRESS_PPMDI1</a> =  0x030402, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aac7bcd7c196b86ee1d0e081932c541282">ID_COMPRESS_WAVPACK</a> =  0x030403, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa341c1ea01d7932d683d40d2f040d9e67">ID_COMPRESS_RAR_1</a> =  0x040300 + 1, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa37726da0e98473a583b73d5e614d8ad7">ID_COMPRESS_RAR_2</a> =  0x040300 + 2, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aacefce80edc53d6eab6bef2717e10d279">ID_COMPRESS_RAR_3</a> =  0x040300 + 3, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa6239c48d704b7d8c0820168bd1ccf6ce">ID_COMPRESS_BZIP2</a> =  0x040202, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aabf8138abd9e21b5d7646ffb7712bf8b6">ID_COMPRESS_DEFLATE_COM</a> =  0x040108, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aab2ac13c7ffdd4c6f596c1cb55c6388fb">ID_COMPRESS_DEFLATE_COM_64</a> =  0x040109, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa93bb01b005364652eac57b069786485b">ID_COMPRESS_DEFLATE_NSIS</a> =  0x040901, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aac32831757a6388f7fcfa900fcb6fe34c">ID_COMPRESS_COPY</a> =  0x0000, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa0aa09f6caa02636ac9c3a9880b9333b1">ID_COMPRESS_SHRINK</a> =  0x0001, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aad384eb70656ec1ba4162fcf39b0b8cc8">ID_COMPRESS_LZH</a> =  0x0002, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa4640e1bad0a7165d267928fc8706fb78">ID_COMPRESS_DELTA</a> =  0x0003, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aabcdbd174f7168fd5bd380abbb2f467f0">ID_COMPRESS_ARJ_1</a> =  0x0004, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaef6d92fe42df8c27cd8093781d97fbae">ID_COMPRESS_ARJ_2</a> =  0x0005, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aaf17512d62800417bb494905ef8d7a495">ID_COMPRESS_LZX</a> =  0x0006, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aab2d34a518dac70cb971472f2820ef19f">ID_COMPRESS_IMPLODE</a> =  0x0007, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa16741af86a6e4a098dfc77324cac2dcf">ID_COMPRESS_QUANTUM</a> =  0x0008, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa4935294558d685c460783b0115862e62">ID_COMPRESS_ZLIB</a> =  0x0009, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa445e021670ae51c8c15922ae3f9ffeb7">ID_COMPRESS_Z</a> =  0x000A, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa9120699564ec3ae9b453909d7de9972a">ID_COMPRESS_ADC</a> =  0x000B, 
+<a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457aa115b15f6a77550d49f879efdab868f85">ID_COMPRESS_LZMA2</a> =  0x0021
+<br/>
+ }</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Method ID 定义 </p>
+
+<p>在文件<a class="el" href="../../d7/d83/RCMethodDefs_8h_source.html">RCMethodDefs.h</a>第<a class="el" href="../../d7/d83/RCMethodDefs_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a7469231b90d5da1b6473da3e4110457a"></a><!-- doxytag: member="RCZip::RCMethod::ID" ref="a7469231b90d5da1b6473da3e4110457a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d2/d4d/classRCZip_1_1RCMethod.html#a7469231b90d5da1b6473da3e4110457a">RCZip::RCMethod::ID</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa12d93b6a601c5025cc5a65dc39ae2055"></a><!-- doxytag: member="ID_CRYPTO_7Z_AES" ref="a7469231b90d5da1b6473da3e4110457aa12d93b6a601c5025cc5a65dc39ae2055" args="" -->ID_CRYPTO_7Z_AES</em>&nbsp;</td><td>
+<p>加密解密算法 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa564d9e533633832940d1c813b5e65172"></a><!-- doxytag: member="ID_CRYPTO_RAR_20" ref="a7469231b90d5da1b6473da3e4110457aa564d9e533633832940d1c813b5e65172" args="" -->ID_CRYPTO_RAR_20</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aaf490025a393cbdcfdc52a971332ec061"></a><!-- doxytag: member="ID_CRYPTO_RAR_29" ref="a7469231b90d5da1b6473da3e4110457aaf490025a393cbdcfdc52a971332ec061" args="" -->ID_CRYPTO_RAR_29</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aaa2819054dd7a84cc6740b433a26f90cc"></a><!-- doxytag: member="ID_CRYPTO_WZ_AES" ref="a7469231b90d5da1b6473da3e4110457aaa2819054dd7a84cc6740b433a26f90cc" args="" -->ID_CRYPTO_WZ_AES</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aad8531fedeb1092089d588c8f430ed93d"></a><!-- doxytag: member="ID_CRYPTO_ZIP" ref="a7469231b90d5da1b6473da3e4110457aad8531fedeb1092089d588c8f430ed93d" args="" -->ID_CRYPTO_ZIP</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa168da09dccc2083131c0fdfd2c7cf404"></a><!-- doxytag: member="ID_COMPRESS_BYTE_SWAP_2" ref="a7469231b90d5da1b6473da3e4110457aa168da09dccc2083131c0fdfd2c7cf404" args="" -->ID_COMPRESS_BYTE_SWAP_2</em>&nbsp;</td><td>
+<p>Filter算法 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aabce64bf6206a653fac80c25be13a76f7"></a><!-- doxytag: member="ID_COMPRESS_BYTE_SWAP_4" ref="a7469231b90d5da1b6473da3e4110457aabce64bf6206a653fac80c25be13a76f7" args="" -->ID_COMPRESS_BYTE_SWAP_4</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aafe76d99f28c835cc4471aad020d75794"></a><!-- doxytag: member="ID_COMPRESS_BRANCH_PPC" ref="a7469231b90d5da1b6473da3e4110457aafe76d99f28c835cc4471aad020d75794" args="" -->ID_COMPRESS_BRANCH_PPC</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aadd7df418e764f7bed8328ba9c8d083ce"></a><!-- doxytag: member="ID_COMPRESS_BRANCH_IA64" ref="a7469231b90d5da1b6473da3e4110457aadd7df418e764f7bed8328ba9c8d083ce" args="" -->ID_COMPRESS_BRANCH_IA64</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa282c01166c88118b727ab6f131d19ab3"></a><!-- doxytag: member="ID_COMPRESS_BRANCH_ARM" ref="a7469231b90d5da1b6473da3e4110457aa282c01166c88118b727ab6f131d19ab3" args="" -->ID_COMPRESS_BRANCH_ARM</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa6b4c509fd93d985cc4361188698c4ea1"></a><!-- doxytag: member="ID_COMPRESS_BRANCH_ARMT" ref="a7469231b90d5da1b6473da3e4110457aa6b4c509fd93d985cc4361188698c4ea1" args="" -->ID_COMPRESS_BRANCH_ARMT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aae7754493a941fd94d9b262b7b410f8bf"></a><!-- doxytag: member="ID_COMPRESS_BRANCH_SPARC" ref="a7469231b90d5da1b6473da3e4110457aae7754493a941fd94d9b262b7b410f8bf" args="" -->ID_COMPRESS_BRANCH_SPARC</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aaa2f084e24f07f5eb9f64020daf396b43"></a><!-- doxytag: member="ID_COMPRESS_BRANCH_BCJ" ref="a7469231b90d5da1b6473da3e4110457aaa2f084e24f07f5eb9f64020daf396b43" args="" -->ID_COMPRESS_BRANCH_BCJ</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aaf0bf6289bafd3c6b7a0dcbe1a70e17dc"></a><!-- doxytag: member="ID_COMPRESS_BRANCH_BCJ_2" ref="a7469231b90d5da1b6473da3e4110457aaf0bf6289bafd3c6b7a0dcbe1a70e17dc" args="" -->ID_COMPRESS_BRANCH_BCJ_2</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aac0bfdccb69d21613499223a95e8ab739"></a><!-- doxytag: member="ID_COMPRESS_LZMA" ref="a7469231b90d5da1b6473da3e4110457aac0bfdccb69d21613499223a95e8ab739" args="" -->ID_COMPRESS_LZMA</em>&nbsp;</td><td>
+<p>压缩解压算法 </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa731f83d87a1288bfa9d62e8b559c865a"></a><!-- doxytag: member="ID_COMPRESS_PPMD" ref="a7469231b90d5da1b6473da3e4110457aa731f83d87a1288bfa9d62e8b559c865a" args="" -->ID_COMPRESS_PPMD</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa582cfd219923ca2e5453713f6b1fc0ad"></a><!-- doxytag: member="ID_COMPRESS_PPMDI1" ref="a7469231b90d5da1b6473da3e4110457aa582cfd219923ca2e5453713f6b1fc0ad" args="" -->ID_COMPRESS_PPMDI1</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aac7bcd7c196b86ee1d0e081932c541282"></a><!-- doxytag: member="ID_COMPRESS_WAVPACK" ref="a7469231b90d5da1b6473da3e4110457aac7bcd7c196b86ee1d0e081932c541282" args="" -->ID_COMPRESS_WAVPACK</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa341c1ea01d7932d683d40d2f040d9e67"></a><!-- doxytag: member="ID_COMPRESS_RAR_1" ref="a7469231b90d5da1b6473da3e4110457aa341c1ea01d7932d683d40d2f040d9e67" args="" -->ID_COMPRESS_RAR_1</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa37726da0e98473a583b73d5e614d8ad7"></a><!-- doxytag: member="ID_COMPRESS_RAR_2" ref="a7469231b90d5da1b6473da3e4110457aa37726da0e98473a583b73d5e614d8ad7" args="" -->ID_COMPRESS_RAR_2</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aacefce80edc53d6eab6bef2717e10d279"></a><!-- doxytag: member="ID_COMPRESS_RAR_3" ref="a7469231b90d5da1b6473da3e4110457aacefce80edc53d6eab6bef2717e10d279" args="" -->ID_COMPRESS_RAR_3</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa6239c48d704b7d8c0820168bd1ccf6ce"></a><!-- doxytag: member="ID_COMPRESS_BZIP2" ref="a7469231b90d5da1b6473da3e4110457aa6239c48d704b7d8c0820168bd1ccf6ce" args="" -->ID_COMPRESS_BZIP2</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aabf8138abd9e21b5d7646ffb7712bf8b6"></a><!-- doxytag: member="ID_COMPRESS_DEFLATE_COM" ref="a7469231b90d5da1b6473da3e4110457aabf8138abd9e21b5d7646ffb7712bf8b6" args="" -->ID_COMPRESS_DEFLATE_COM</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aab2ac13c7ffdd4c6f596c1cb55c6388fb"></a><!-- doxytag: member="ID_COMPRESS_DEFLATE_COM_64" ref="a7469231b90d5da1b6473da3e4110457aab2ac13c7ffdd4c6f596c1cb55c6388fb" args="" -->ID_COMPRESS_DEFLATE_COM_64</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa93bb01b005364652eac57b069786485b"></a><!-- doxytag: member="ID_COMPRESS_DEFLATE_NSIS" ref="a7469231b90d5da1b6473da3e4110457aa93bb01b005364652eac57b069786485b" args="" -->ID_COMPRESS_DEFLATE_NSIS</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aac32831757a6388f7fcfa900fcb6fe34c"></a><!-- doxytag: member="ID_COMPRESS_COPY" ref="a7469231b90d5da1b6473da3e4110457aac32831757a6388f7fcfa900fcb6fe34c" args="" -->ID_COMPRESS_COPY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa0aa09f6caa02636ac9c3a9880b9333b1"></a><!-- doxytag: member="ID_COMPRESS_SHRINK" ref="a7469231b90d5da1b6473da3e4110457aa0aa09f6caa02636ac9c3a9880b9333b1" args="" -->ID_COMPRESS_SHRINK</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aad384eb70656ec1ba4162fcf39b0b8cc8"></a><!-- doxytag: member="ID_COMPRESS_LZH" ref="a7469231b90d5da1b6473da3e4110457aad384eb70656ec1ba4162fcf39b0b8cc8" args="" -->ID_COMPRESS_LZH</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa4640e1bad0a7165d267928fc8706fb78"></a><!-- doxytag: member="ID_COMPRESS_DELTA" ref="a7469231b90d5da1b6473da3e4110457aa4640e1bad0a7165d267928fc8706fb78" args="" -->ID_COMPRESS_DELTA</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aabcdbd174f7168fd5bd380abbb2f467f0"></a><!-- doxytag: member="ID_COMPRESS_ARJ_1" ref="a7469231b90d5da1b6473da3e4110457aabcdbd174f7168fd5bd380abbb2f467f0" args="" -->ID_COMPRESS_ARJ_1</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aaef6d92fe42df8c27cd8093781d97fbae"></a><!-- doxytag: member="ID_COMPRESS_ARJ_2" ref="a7469231b90d5da1b6473da3e4110457aaef6d92fe42df8c27cd8093781d97fbae" args="" -->ID_COMPRESS_ARJ_2</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aaf17512d62800417bb494905ef8d7a495"></a><!-- doxytag: member="ID_COMPRESS_LZX" ref="a7469231b90d5da1b6473da3e4110457aaf17512d62800417bb494905ef8d7a495" args="" -->ID_COMPRESS_LZX</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aab2d34a518dac70cb971472f2820ef19f"></a><!-- doxytag: member="ID_COMPRESS_IMPLODE" ref="a7469231b90d5da1b6473da3e4110457aab2d34a518dac70cb971472f2820ef19f" args="" -->ID_COMPRESS_IMPLODE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa16741af86a6e4a098dfc77324cac2dcf"></a><!-- doxytag: member="ID_COMPRESS_QUANTUM" ref="a7469231b90d5da1b6473da3e4110457aa16741af86a6e4a098dfc77324cac2dcf" args="" -->ID_COMPRESS_QUANTUM</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa4935294558d685c460783b0115862e62"></a><!-- doxytag: member="ID_COMPRESS_ZLIB" ref="a7469231b90d5da1b6473da3e4110457aa4935294558d685c460783b0115862e62" args="" -->ID_COMPRESS_ZLIB</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa445e021670ae51c8c15922ae3f9ffeb7"></a><!-- doxytag: member="ID_COMPRESS_Z" ref="a7469231b90d5da1b6473da3e4110457aa445e021670ae51c8c15922ae3f9ffeb7" args="" -->ID_COMPRESS_Z</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa9120699564ec3ae9b453909d7de9972a"></a><!-- doxytag: member="ID_COMPRESS_ADC" ref="a7469231b90d5da1b6473da3e4110457aa9120699564ec3ae9b453909d7de9972a" args="" -->ID_COMPRESS_ADC</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a7469231b90d5da1b6473da3e4110457aa115b15f6a77550d49f879efdab868f85"></a><!-- doxytag: member="ID_COMPRESS_LZMA2" ref="a7469231b90d5da1b6473da3e4110457aa115b15f6a77550d49f879efdab868f85" args="" -->ID_COMPRESS_LZMA2</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../d7/d83/RCMethodDefs_8h_source.html">RCMethodDefs.h</a>第<a class="el" href="../../d7/d83/RCMethodDefs_8h_source.html#l00023">23</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d7/d83/RCMethodDefs_8h_source.html">RCMethodDefs.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

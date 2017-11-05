@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCExtract类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCExtract类参考</h1><!-- doxytag: class="RCExtract" -->
+<p><code>#include &lt;<a class="el" href="../../da/d8a/RCExtract_8h_source.html">RCExtract.h</a>&gt;</code></p>
+
+<p><a href="../../d4/d1c/classRCExtract-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5c/classRCExtract.html#aeab197731866ccc61c94055301313315">RCExtract</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5c/classRCExtract.html#aad95c5ef9a949eb9669c95a9168a5225">~RCExtract</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5c/classRCExtract.html#a38d914af295fe34f80d47e5f7406171d">DecompressArchives</a> (const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;spCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, RCVector&lt; RCString &gt; &amp;archivePaths, RCVector&lt; RCString &gt; &amp;archivePathsFull, const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;wildcardCensor, const <a class="el" href="../../d7/d4b/classRCExtractOptions.html">RCExtractOptions</a> &amp;options, <a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *openCallbackUI, <a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a> *extractCallbackUI, RCString &amp;errorMessage, <a class="el" href="../../dd/dd5/classRCExtractStatus.html">RCExtractStatus</a> &amp;stat, IOutStreamEvent *outStreamEvent, <a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> *overWriteMode=0)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5c/classRCExtract.html#aec9789eb947b1a7f8bc3f4b6e968a914">DecompressArchive</a> (IInArchive *archive, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> packSize, const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;wildcardCensor, const <a class="el" href="../../d7/d4b/classRCExtractOptions.html">RCExtractOptions</a> &amp;options, <a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a> *extractCallbackUI, <a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html">RCExtractArchiveCallback</a> *extractArchiveCallback, RCString &amp;errorMessage)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>解压操作 </p>
+
+<p>在文件<a class="el" href="../../da/d8a/RCExtract_8h_source.html">RCExtract.h</a>第<a class="el" href="../../da/d8a/RCExtract_8h_source.html#l00044">44</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aeab197731866ccc61c94055301313315"></a><!-- doxytag: member="RCExtract::RCExtract" ref="aeab197731866ccc61c94055301313315" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCExtract::RCExtract </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="aad95c5ef9a949eb9669c95a9168a5225"></a><!-- doxytag: member="RCExtract::~RCExtract" ref="aad95c5ef9a949eb9669c95a9168a5225" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCExtract::~RCExtract </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="aec9789eb947b1a7f8bc3f4b6e968a914"></a><!-- doxytag: member="RCExtract::DecompressArchive" ref="aec9789eb947b1a7f8bc3f4b6e968a914" args="(IInArchive *archive, uint64_t packSize, const RCWildcardCensorNode &amp;wildcardCensor, const RCExtractOptions &amp;options, IExtractCallbackUI *extractCallbackUI, RCExtractArchiveCallback *extractArchiveCallback, RCString &amp;errorMessage)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtract::DecompressArchive </td>
+          <td>(</td>
+          <td class="paramtype">IInArchive *&nbsp;</td>
+          <td class="paramname"> <em>archive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>packSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>wildcardCensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d4b/classRCExtractOptions.html">RCExtractOptions</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractCallbackUI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d69/classRCExtractArchiveCallback.html">RCExtractArchiveCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractArchiveCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorMessage</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>单个文件解压操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archive</em>&nbsp;</td><td>输入文档 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>packSize</em>&nbsp;</td><td>压缩大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>wildcardCensor</em>&nbsp;</td><td>通配符匹配 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>options</em>&nbsp;</td><td>解压参数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractCallbackUI</em>&nbsp;</td><td>解压界面回调接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractArchiveCallback</em>&nbsp;</td><td>文档解压回调接口 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorMessage</em>&nbsp;</td><td>错误信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38d914af295fe34f80d47e5f7406171d"></a><!-- doxytag: member="RCExtract::DecompressArchives" ref="a38d914af295fe34f80d47e5f7406171d" args="(const RCArchiveCodecsPtr &amp;spCodecs, const RCVector&lt; RCArchiveID &gt; &amp;formatIndices, RCVector&lt; RCString &gt; &amp;archivePaths, RCVector&lt; RCString &gt; &amp;archivePathsFull, const RCWildcardCensorNode &amp;wildcardCensor, const RCExtractOptions &amp;options, IOpenCallbackUI *openCallbackUI, IExtractCallbackUI *extractCallbackUI, RCString &amp;errorMessage, RCExtractStatus &amp;stat, IOutStreamEvent *outStreamEvent, RCExractOverwriteMode *overWriteMode=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCExtract::DecompressArchives </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spCodecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCArchiveID &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>formatIndices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>archivePaths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>archivePathsFull</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>wildcardCensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d4b/classRCExtractOptions.html">RCExtractOptions</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>openCallbackUI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d19/classIExtractCallbackUI.html">IExtractCallbackUI</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractCallbackUI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/dd5/classRCExtractStatus.html">RCExtractStatus</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>stat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IOutStreamEvent *&nbsp;</td>
+          <td class="paramname"> <em>outStreamEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> *&nbsp;</td>
+          <td class="paramname"> <em>overWriteMode</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spCodecs</em>&nbsp;</td><td>编码管理器 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>formatIndices</em>&nbsp;</td><td>文件格式列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archivePaths</em>&nbsp;</td><td>压缩包路径列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>archivePathsFull</em>&nbsp;</td><td>压缩包全路径列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>wildcardCensor</em>&nbsp;</td><td>通配符匹配 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>options</em>&nbsp;</td><td>解压参数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openCallbackUI</em>&nbsp;</td><td>压缩包打开回调界面 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractCallbackUI</em>&nbsp;</td><td>解压回调界面 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorMessage</em>&nbsp;</td><td>错误信息 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>stat</em>&nbsp;</td><td>解压状态 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStreamEvent</em>&nbsp;</td><td>输出流事件接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>overWriteMode</em>&nbsp;</td><td>文件覆盖模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../da/d8a/RCExtract_8h_source.html">RCExtract.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

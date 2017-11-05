@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCPPMDDecodeInfo类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../da/d72/classRCZip_1_1RCPPMDDecodeInfo.html">RCPPMDDecodeInfo</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCPPMDDecodeInfo类参考</h1><!-- doxytag: class="RCZip::RCPPMDDecodeInfo" --><!-- doxytag: inherits="RCZip::RCPPMDInfo" -->
+<p><code>#include &lt;<a class="el" href="../../d2/d20/RCPPMDDecodeInfo_8h_source.html">RCPPMDDecodeInfo.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCPPMDDecodeInfo</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/dc8/classRCZip_1_1RCPPMDDecodeInfo__inherit__graph.png" border="0" usemap="#RCZip_1_1RCPPMDDecodeInfo_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCPPMDDecodeInfo_inherit__map" id="RCZip_1_1RCPPMDDecodeInfo_inherit__map">
+<area shape="rect" id="node2" href="../../dd/d09/classRCZip_1_1RCPPMDInfo.html" title="{RCZip::RCPPMDInfo\n|+ m_subAllocator\l+ m_SEE2Cont\l+ m_dummySEE2Cont\l+ m_minContext\l+ m_maxContext\l+ m_foundState\l+ m_numMasked\l+ m_initEsc\l+ m_orderFall\l+ m_runLength\l+ m_initRL\l+ m_maxOrder\l+ m_charMask\l+ m_NS2Indx\l+ m_NS2BSIndx\l+ m_HB2Flag\l+ m_escCount\l+ m_printCount\l+ m_prevSuccess\l+ m_hiBitsFlag\l+ m_binSumm\l|+ RCPPMDInfo()\l+ ~RCPPMDInfo()\l+ GetBinSumm()\l+ GetContext()\l+ GetContextNoCheck()\l+ GetState()\l+ GetStateNoCheck()\l+ RestartModelRare()\l+ StartModelRare()\l+ CreateSuccessors()\l+ UpdateModel()\l+ ClearMask()\l+ update1()\l+ update2()\l+ makeEscFreq2()\l+ rescale()\l+ NextContext()\l}" alt="" coords="15,5,196,611"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCPPMDDecodeInfo合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/d20/classRCZip_1_1RCPPMDDecodeInfo__coll__graph.png" border="0" usemap="#RCZip_1_1RCPPMDDecodeInfo_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCPPMDDecodeInfo_coll__map" id="RCZip_1_1RCPPMDDecodeInfo_coll__map">
+<area shape="rect" id="node2" href="../../dd/d09/classRCZip_1_1RCPPMDInfo.html" title="{RCZip::RCPPMDInfo\n|+ m_subAllocator\l+ m_SEE2Cont\l+ m_dummySEE2Cont\l+ m_minContext\l+ m_maxContext\l+ m_foundState\l+ m_numMasked\l+ m_initEsc\l+ m_orderFall\l+ m_runLength\l+ m_initRL\l+ m_maxOrder\l+ m_charMask\l+ m_NS2Indx\l+ m_NS2BSIndx\l+ m_HB2Flag\l+ m_escCount\l+ m_printCount\l+ m_prevSuccess\l+ m_hiBitsFlag\l+ m_binSumm\l|+ RCPPMDInfo()\l+ ~RCPPMDInfo()\l+ GetBinSumm()\l+ GetContext()\l+ GetContextNoCheck()\l+ GetState()\l+ GetStateNoCheck()\l+ RestartModelRare()\l+ StartModelRare()\l+ CreateSuccessors()\l+ UpdateModel()\l+ ClearMask()\l+ update1()\l+ update2()\l+ makeEscFreq2()\l+ rescale()\l+ NextContext()\l}" alt="" coords="385,891,567,1496"/><area shape="rect" id="node4" href="../../d5/dff/classRCZip_1_1RCPPMDSEE2Context.html" title="{RCZip::RCPPMDSEE2Context\n|+ m_summ\l+ m_shift\l+ m_count\l|+ RCPPMDSEE2Context()\l+ ~RCPPMDSEE2Context()\l+ init()\l+ getMean()\l+ update()\l}" alt="" coords="5,391,213,556"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="153,5,329,83"/><area shape="rect" id="node10" href="../../de/dfb/classRCZip_1_1RCPPMDSubAlloc.html" title="{RCZip::RCPPMDSubAlloc\n|+ m_pText\l+ m_unitsStart\l+ s_kExtraSize\l+ s_kMaxMemBlockSize\l&#45; m_subAllocatorSize\l&#45; m_indx2Units\l&#45; m_units2Indx\l&#45; m_glueCount\l&#45; m_freeList\l&#45; m_base\l&#45; m_heapStart\l&#45; m_loUnit\l&#45; m_hiUnit\l&#45; N1\l&#45; N2\l&#45; N3\l&#45; N4\l&#45; UNIT_SIZE\l&#45; N_INDEXES\l|+ RCPPMDSubAlloc()\l+ ~RCPPMDSubAlloc()\l+ GetPtr()\l+ GetPtrNoCheck()\l+ GetOffset()\l+ GetOffsetNoCheck()\l+ GetBlk()\l+ GetNode()\l+ InsertNode()\l+ RemoveNode()\l+ U2B()\l+ SplitBlock()\l+ GetUsedMemory()\l+ GetSubAllocatorSize()\l+ StopSubAllocator()\l+ StartSubAllocator()\l+ InitSubAllocator()\l+ GlueFreeBlocks()\l+ AllocUnitsRare()\l+ AllocUnits()\l+ AllocContext()\l+ ExpandUnits()\l+ ShrinkUnits()\l+ FreeUnits()\l}" alt="" coords="237,134,419,813"/><area shape="rect" id="node8" href="../../d5/d51/classRCZip_1_1RCPPMDPPMContext.html" title="{RCZip::RCPPMDPPMContext\n|+ m_numStats\l+ m_summFreq\l+ m_stats\l+ m_suffix\l|+ RCPPMDPPMContext()\l+ ~RCPPMDPPMContext()\l+ CreateChild()\l+ OneState()\l}" alt="" coords="443,391,645,556"/><area shape="rect" id="node13" href="../../d1/dd8/classRCZip_1_1RCPPMDPPMContext_1_1TState.html" title="{RCZip::RCPPMDPPMContext::TState\n|+ m_symbol\l+ m_freq\l+ m_successorLow\l+ m_successorHigh\l|+ TState()\l+ GetSuccessor()\l+ SetSuccessor()\l}" alt="" coords="669,398,923,549"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../da/d00/classRCZip_1_1RCPPMDDecodeInfo-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classRCZip_1_1RCPPMDDecodeInfo.html#a98e7a3f0ea7195f857511fade6127174">DecodeBinSymbol</a> (<a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *rangeDecoder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classRCZip_1_1RCPPMDDecodeInfo.html#a47af6e4987fd4b6295f60e6a7417f48c">DecodeSymbol1</a> (<a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *rangeDecoder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classRCZip_1_1RCPPMDDecodeInfo.html#a15b395d0b77636080278c8a473bd78f5">DecodeSymbol2</a> (<a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *rangeDecoder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classRCZip_1_1RCPPMDDecodeInfo.html#a2dd1e66f85683faaf081f75d09fc2814">DecodeSymbol</a> (<a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *rangeDecoder)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>PPMD 解码器 </p>
+
+<p>在文件<a class="el" href="../../d2/d20/RCPPMDDecodeInfo_8h_source.html">RCPPMDDecodeInfo.h</a>第<a class="el" href="../../d2/d20/RCPPMDDecodeInfo_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a98e7a3f0ea7195f857511fade6127174"></a><!-- doxytag: member="RCZip::RCPPMDDecodeInfo::DecodeBinSymbol" ref="a98e7a3f0ea7195f857511fade6127174" args="(RCPPMDRangeDecoderVirt *rangeDecoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCPPMDDecodeInfo::DecodeBinSymbol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *&nbsp;</td>
+          <td class="paramname"> <em>rangeDecoder</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>rangeDecoder</em>&nbsp;</td><td>解码器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2dd1e66f85683faaf081f75d09fc2814"></a><!-- doxytag: member="RCZip::RCPPMDDecodeInfo::DecodeSymbol" ref="a2dd1e66f85683faaf081f75d09fc2814" args="(RCPPMDRangeDecoderVirt *rangeDecoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RCPPMDDecodeInfo::DecodeSymbol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *&nbsp;</td>
+          <td class="paramname"> <em>rangeDecoder</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>rangeDecoder</em>&nbsp;</td><td>解码器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回解码字节数 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a47af6e4987fd4b6295f60e6a7417f48c"></a><!-- doxytag: member="RCZip::RCPPMDDecodeInfo::DecodeSymbol1" ref="a47af6e4987fd4b6295f60e6a7417f48c" args="(RCPPMDRangeDecoderVirt *rangeDecoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCPPMDDecodeInfo::DecodeSymbol1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *&nbsp;</td>
+          <td class="paramname"> <em>rangeDecoder</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>rangeDecoder</em>&nbsp;</td><td>解码器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a15b395d0b77636080278c8a473bd78f5"></a><!-- doxytag: member="RCZip::RCPPMDDecodeInfo::DecodeSymbol2" ref="a15b395d0b77636080278c8a473bd78f5" args="(RCPPMDRangeDecoderVirt *rangeDecoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCPPMDDecodeInfo::DecodeSymbol2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d91/classRCZip_1_1RCPPMDRangeDecoderVirt.html">RCPPMDRangeDecoderVirt</a> *&nbsp;</td>
+          <td class="paramname"> <em>rangeDecoder</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>rangeDecoder</em>&nbsp;</td><td>解码器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d2/d20/RCPPMDDecodeInfo_8h_source.html">RCPPMDDecodeInfo.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

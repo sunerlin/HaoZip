@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCBitlDecoderData.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_225935dcd765d0e1bc4921e7a6a35535.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCBitlDecoderData.h</h1><a href="../../d4/d44/RCBitlDecoderData_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCBitlDecoderData_h_</span>
+<a name="l00011"></a><a class="code" href="../../d4/d44/RCBitlDecoderData_8h.html#a13c6317abd2d6a8e4069fe2547b3fedd">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCBitlDecoderData_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d0f/RCSingleton_8h.html">base/RCSingleton.h</a>&quot;</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00017"></a>00017 
+<a name="l00018"></a><a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html">00018</a> <span class="keyword">class </span><a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html">RCBitlDecoderData</a>
+<a name="l00019"></a>00019 {
+<a name="l00020"></a>00020 <span class="keyword">public</span>:
+<a name="l00021"></a>00021     <span class="comment"></span>
+<a name="l00022"></a>00022 <span class="comment">    /** 默认构造函数</span>
+<a name="l00023"></a>00023 <span class="comment">    */</span>
+<a name="l00024"></a>00024     <a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html">RCBitlDecoderData</a>() ;
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="keyword">public</span>:
+<a name="l00027"></a>00027     <span class="comment"></span>
+<a name="l00028"></a>00028 <span class="comment">    /** 大数值位数</span>
+<a name="l00029"></a>00029 <span class="comment">    */</span>
+<a name="l00030"></a><a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html#a389debc5d83d9563c6a504700ccb5aa2">00030</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumBigValueBits = 8 * 4;
+<a name="l00031"></a>00031     <span class="comment"></span>
+<a name="l00032"></a>00032 <span class="comment">    /** 数值字节数</span>
+<a name="l00033"></a>00033 <span class="comment">    */</span>
+<a name="l00034"></a><a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html#ab6680978f895b5795e65f7042226284b">00034</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumValueBytes = 3;
+<a name="l00035"></a>00035     <span class="comment"></span>
+<a name="l00036"></a>00036 <span class="comment">    /** 数值位数</span>
+<a name="l00037"></a>00037 <span class="comment">    */</span>
+<a name="l00038"></a><a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html#a715d6fb6a64d71af8985890538d94869">00038</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumValueBits = 8  * RCBitlDecoderData::s_kNumValueBytes ;
+<a name="l00039"></a>00039     <span class="comment"></span>
+<a name="l00040"></a>00040 <span class="comment">    /** 数值掩码</span>
+<a name="l00041"></a>00041 <span class="comment">    */</span>
+<a name="l00042"></a><a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html#a7362b7c10ae9022b134736b4d636cc19">00042</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kMask = (1 &lt;&lt; s_kNumValueBits) - 1 ;
+<a name="l00043"></a>00043     <span class="comment"></span>
+<a name="l00044"></a>00044 <span class="comment">    /** Invert表</span>
+<a name="l00045"></a>00045 <span class="comment">    */</span>
+<a name="l00046"></a><a class="code" href="../../de/d4f/classRCZip_1_1RCBitlDecoderData.html#a48c60fa06f88d5b773b85c00f3d6dde3">00046</a>     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> s_kInvertTable[256] ;    
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 
+<a name="l00049"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a5525b993b0691006746fddc0e35e3316">00049</a> <span class="keyword">typedef</span> <a class="code" href="../../df/d40/classRCZip_1_1RCSingleton.html">RCSingleton&lt;RCBitlDecoderData&gt;</a>  <a class="code" href="../../df/d40/classRCZip_1_1RCSingleton.html">RCBitlDefs</a> ;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="preprocessor">#endif //__RCBitlDecoderData_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

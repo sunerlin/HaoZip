@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCSeekInStreamWrap结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html">RCSeekInStreamWrap</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCSeekInStreamWrap结构参考</h1><!-- doxytag: class="RCZip::RCSeekInStreamWrap" -->
+<p><code>#include &lt;<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html">RCCoderWrappers.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCSeekInStreamWrap合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d9/d98/structRCZip_1_1RCSeekInStreamWrap__coll__graph.png" border="0" usemap="#RCZip_1_1RCSeekInStreamWrap_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCSeekInStreamWrap_coll__map" id="RCZip_1_1RCSeekInStreamWrap_coll__map">
+<area shape="rect" id="node2" href="../../db/da6/classRCZip_1_1IInStream.html" title="{RCZip::IInStream\n||+ Seek()\l# ~IInStream()\l}" alt="" coords="41,323,175,415"/><area shape="rect" id="node4" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="5,179,211,271"/><area shape="rect" id="node6" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="35,6,181,127"/><area shape="rect" id="node8" href="../../d0/dce/structISeekInStream.html" title="{ISeekInStream\n|+ Read\l+ Seek\l|}" alt="" coords="199,323,316,415"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d5/da1/structRCZip_1_1RCSeekInStreamWrap-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html#a3727faa18fccee24b4bf57f259ac64a5">RCSeekInStreamWrap</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *stream)</td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dce/structISeekInStream.html">ISeekInStream</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html#ac86bb68705dc6ebb90b22bdfc507c662">m_seekIn</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html#a3a8d9117d088fa373dcf35137b889d38">m_inStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html#a039e545f57bdf16cad515aed5ae22c6e">m_hr</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>流的位置重定位接口封装 </p>
+
+<p>在文件<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html">RCCoderWrappers.h</a>第<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html#l00065">65</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a3727faa18fccee24b4bf57f259ac64a5"></a><!-- doxytag: member="RCZip::RCSeekInStreamWrap::RCSeekInStreamWrap" ref="a3727faa18fccee24b4bf57f259ac64a5" args="(IInStream *stream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCSeekInStreamWrap::RCSeekInStreamWrap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>stream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>构造函数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stream</em>&nbsp;</td><td>输入流接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a039e545f57bdf16cad515aed5ae22c6e"></a><!-- doxytag: member="RCZip::RCSeekInStreamWrap::m_hr" ref="a039e545f57bdf16cad515aed5ae22c6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html#a039e545f57bdf16cad515aed5ae22c6e">RCZip::RCSeekInStreamWrap::m_hr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>操作结果 </p>
+
+<p>在文件<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html">RCCoderWrappers.h</a>第<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html#l00077">77</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a8d9117d088fa373dcf35137b889d38"></a><!-- doxytag: member="RCZip::RCSeekInStreamWrap::m_inStream" ref="a3a8d9117d088fa373dcf35137b889d38" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a>* <a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html#a3a8d9117d088fa373dcf35137b889d38">RCZip::RCSeekInStreamWrap::m_inStream</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入流接口 </p>
+
+<p>在文件<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html">RCCoderWrappers.h</a>第<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html#l00073">73</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac86bb68705dc6ebb90b22bdfc507c662"></a><!-- doxytag: member="RCZip::RCSeekInStreamWrap::m_seekIn" ref="ac86bb68705dc6ebb90b22bdfc507c662" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dce/structISeekInStream.html">ISeekInStream</a> <a class="el" href="../../d0/d5e/structRCZip_1_1RCSeekInStreamWrap.html#ac86bb68705dc6ebb90b22bdfc507c662">RCZip::RCSeekInStreamWrap::m_seekIn</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>底层重定位接口 </p>
+
+<p>在文件<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html">RCCoderWrappers.h</a>第<a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html#l00069">69</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d7/d5e/RCCoderWrappers_8h_source.html">RCCoderWrappers.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

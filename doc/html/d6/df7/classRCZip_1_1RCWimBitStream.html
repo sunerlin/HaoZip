@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCWimBitStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html">RCWimBitStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCWimBitStream类参考</h1><!-- doxytag: class="RCZip::RCWimBitStream" -->
+<p><code>#include &lt;<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html">RCWimBitStream.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCWimBitStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d2/d7f/classRCZip_1_1RCWimBitStream__coll__graph.png" border="0" usemap="#RCZip_1_1RCWimBitStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCWimBitStream_coll__map" id="RCZip_1_1RCWimBitStream_coll__map">
+<area shape="rect" id="node2" href="../../d8/de1/classRCZip_1_1RCInBuffer.html" title="{RCZip::RCInBuffer\n|&#45; m_buffer\l&#45; m_bufferLimit\l&#45; m_bufferBase\l&#45; m_spStream\l&#45; m_processedSize\l&#45; m_bufferSize\l&#45; m_wasFinished\l|+ RCInBuffer()\l+ ~RCInBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetStream()\l+ ReleaseStream()\l+ ReadByte()\l+ ReadByte()\l+ ReadBytes()\l+ GetProcessedSize()\l+ WasFinished()\l&#45; ReadBlock()\l&#45; ReadBlock2()\l}" alt="" coords="83,699,245,1055"/><area shape="rect" id="node4" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,447,181,524"/><area shape="rect" id="node6" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="205,337,459,634"/><area shape="rect" id="node8" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="229,179,435,271"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="259,6,405,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d7/de0/classRCZip_1_1RCWimBitStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a0d3d36359d48fabd953b8ec294f6420a">RCWimBitStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a3d27d4ad07790626657f7db8d711aaff">~RCWimBitStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#aa526120266ed0f05b7061d24a8c5dfdd">Create</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> bufferSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a2fba878046620b88ec582fcd13ad9867">SetStream</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a4e2a23cba7adc7085836413fa9704c3c">ReleaseStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#aa395d6e0798cbf7efb1becf26c6b1e58">Init</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a3544e1219cc92f7d2de58d5c2d0a050b">DirectReadByte</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#adba2f4cca92d8cc4ce9767ccac51ef55">Normalize</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a777f74d145526f753b6167c7d2d39d44">GetValue</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numBits)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a0552e331d1cf3e18e098da4e7a7fba3f">MovePos</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numBits)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a5537fdb4924985b79f50aed17d62ce70">ReadBits</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numBits)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html">RCInBuffer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a9cba0bc0bcba23c174ac148be9fc8849">m_stream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#aab2f54beb90b5e71ff6e568e7670ee85">m_value</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#ac72b7ae967bf4c85cc2001ff843532bf">m_bitPos</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Wim 位数据流 </p>
+
+<p>在文件<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html">RCWimBitStream.h</a>第<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html#l00021">21</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a0d3d36359d48fabd953b8ec294f6420a"></a><!-- doxytag: member="RCZip::RCWimBitStream::RCWimBitStream" ref="a0d3d36359d48fabd953b8ec294f6420a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWimBitStream::RCWimBitStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3d27d4ad07790626657f7db8d711aaff"></a><!-- doxytag: member="RCZip::RCWimBitStream::~RCWimBitStream" ref="a3d27d4ad07790626657f7db8d711aaff" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWimBitStream::~RCWimBitStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="aa526120266ed0f05b7061d24a8c5dfdd"></a><!-- doxytag: member="RCZip::RCWimBitStream::Create" ref="aa526120266ed0f05b7061d24a8c5dfdd" args="(uint32_t bufferSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCWimBitStream::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>bufferSize</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bufferSize</em>&nbsp;</td><td>缓存大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3544e1219cc92f7d2de58d5c2d0a050b"></a><!-- doxytag: member="RCZip::RCWimBitStream::DirectReadByte" ref="a3544e1219cc92f7d2de58d5c2d0a050b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> RCZip::RCWimBitStream::DirectReadByte </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>直接读取字节 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回读取的字节 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a777f74d145526f753b6167c7d2d39d44"></a><!-- doxytag: member="RCZip::RCWimBitStream::GetValue" ref="a777f74d145526f753b6167c7d2d39d44" args="(uint32_t numBits)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCWimBitStream::GetValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numBits</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回值 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numBits</em>&nbsp;</td><td>位数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回uint32值 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa395d6e0798cbf7efb1becf26c6b1e58"></a><!-- doxytag: member="RCZip::RCWimBitStream::Init" ref="aa395d6e0798cbf7efb1becf26c6b1e58" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCWimBitStream::Init </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0552e331d1cf3e18e098da4e7a7fba3f"></a><!-- doxytag: member="RCZip::RCWimBitStream::MovePos" ref="a0552e331d1cf3e18e098da4e7a7fba3f" args="(uint32_t numBits)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCWimBitStream::MovePos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numBits</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>移动位置 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numBits</em>&nbsp;</td><td>位数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adba2f4cca92d8cc4ce9767ccac51ef55"></a><!-- doxytag: member="RCZip::RCWimBitStream::Normalize" ref="adba2f4cca92d8cc4ce9767ccac51ef55" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCWimBitStream::Normalize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>正常化 </p>
+
+</div>
+</div>
+<a class="anchor" id="a5537fdb4924985b79f50aed17d62ce70"></a><!-- doxytag: member="RCZip::RCWimBitStream::ReadBits" ref="a5537fdb4924985b79f50aed17d62ce70" args="(uint32_t numBits)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCWimBitStream::ReadBits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numBits</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取位 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numBits</em>&nbsp;</td><td>位数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回uint32 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e2a23cba7adc7085836413fa9704c3c"></a><!-- doxytag: member="RCZip::RCWimBitStream::ReleaseStream" ref="a4e2a23cba7adc7085836413fa9704c3c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCWimBitStream::ReleaseStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放流 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2fba878046620b88ec582fcd13ad9867"></a><!-- doxytag: member="RCZip::RCWimBitStream::SetStream" ref="a2fba878046620b88ec582fcd13ad9867" args="(ISequentialInStream *s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCWimBitStream::SetStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>s</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输入流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s</em>&nbsp;</td><td>输入流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ac72b7ae967bf4c85cc2001ff843532bf"></a><!-- doxytag: member="RCZip::RCWimBitStream::m_bitPos" ref="ac72b7ae967bf4c85cc2001ff843532bf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#ac72b7ae967bf4c85cc2001ff843532bf">RCZip::RCWimBitStream::m_bitPos</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html">RCWimBitStream.h</a>第<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html#l00092">92</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cba0bc0bcba23c174ac148be9fc8849"></a><!-- doxytag: member="RCZip::RCWimBitStream::m_stream" ref="a9cba0bc0bcba23c174ac148be9fc8849" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html">RCInBuffer</a> <a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#a9cba0bc0bcba23c174ac148be9fc8849">RCZip::RCWimBitStream::m_stream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入流 </p>
+
+<p>在文件<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html">RCWimBitStream.h</a>第<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html#l00084">84</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aab2f54beb90b5e71ff6e568e7670ee85"></a><!-- doxytag: member="RCZip::RCWimBitStream::m_value" ref="aab2f54beb90b5e71ff6e568e7670ee85" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html#aab2f54beb90b5e71ff6e568e7670ee85">RCZip::RCWimBitStream::m_value</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html">RCWimBitStream.h</a>第<a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html#l00088">88</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dc/de6/RCWimBitStream_8h_source.html">RCWimBitStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RC7zHeader.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_74ed847265da93e9cefef0816abf9a58.html">7z</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RC7zHeader.h</h1><a href="../../d4/db5/RC7zHeader_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RC7zHeader_h_</span>
+<a name="l00011"></a><a class="code" href="../../d4/db5/RC7zHeader_8h.html#abb6be2a81508f88c1c978f19578f7be1">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RC7zHeader_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="comment">//#define _7Z_VOL</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00018"></a>00018 
+<a name="l00019"></a><a class="code" href="../../d4/df3/classRCZip_1_1RC7zHeader.html">00019</a> <span class="keyword">class </span><a class="code" href="../../d4/df3/classRCZip_1_1RC7zHeader.html">RC7zHeader</a>
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021 <span class="keyword">public</span>:
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="../../d4/df3/classRCZip_1_1RC7zHeader.html#a433b9dea6ed6abb10db0cd6504b43efb">00023</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_k7zSignatureSize = 6;
+<a name="l00024"></a><a class="code" href="../../d4/df3/classRCZip_1_1RC7zHeader.html#aaa3a48ec417d560e89e03ba12f1f64d0">00024</a>     <span class="keyword">static</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> s_k7zSignature[s_k7zSignatureSize];
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026     <span class="comment">// #define _7Z_VOL</span>
+<a name="l00027"></a>00027     <span class="comment">// 7z-MultiVolume is not finished yet.</span>
+<a name="l00028"></a>00028     <span class="comment">// It can work already, but I still do not like some</span>
+<a name="l00029"></a>00029     <span class="comment">// things of that new multivolume format.</span>
+<a name="l00030"></a>00030     <span class="comment">// So please keep it commented.</span>
+<a name="l00031"></a>00031     
+<a name="l00032"></a><a class="code" href="../../d4/df3/classRCZip_1_1RC7zHeader.html#ac3da9eabe1f66bb6755b9e5e10e3cb05">00032</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> s_k7zMajorVersion = 0;
+<a name="l00033"></a><a class="code" href="../../d4/df3/classRCZip_1_1RC7zHeader.html#ab99272164c9f658e4346026efbfff094">00033</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_k7zStartHeaderSize = 20;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="preprocessor">#ifdef _7Z_VOL</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span>    <span class="keyword">static</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> s_k7zFinishSignature[s_k7zSignatureSize];
+<a name="l00037"></a>00037     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_k7zFinishHeaderSize = s_k7zStartHeaderSize + 16;
+<a name="l00038"></a>00038 <span class="preprocessor">#endif</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span>    
+<a name="l00040"></a>00040 };
+<a name="l00041"></a>00041 
+<a name="l00042"></a><a class="code" href="../../d4/d13/structRCZip_1_1RC7zArchiveVersion.html">00042</a> <span class="keyword">struct </span><a class="code" href="../../d4/d13/structRCZip_1_1RC7zArchiveVersion.html">RC7zArchiveVersion</a>
+<a name="l00043"></a>00043 {<span class="comment"></span>
+<a name="l00044"></a>00044 <span class="comment">    /** 主版本号</span>
+<a name="l00045"></a>00045 <span class="comment">    */</span>
+<a name="l00046"></a><a class="code" href="../../d4/d13/structRCZip_1_1RC7zArchiveVersion.html#ae4e2b44d07db570e729339eb3d928625">00046</a>     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> m_major ;
+<a name="l00047"></a>00047 <span class="comment"></span>
+<a name="l00048"></a>00048 <span class="comment">    /** 子版本号</span>
+<a name="l00049"></a>00049 <span class="comment">    */</span>
+<a name="l00050"></a><a class="code" href="../../d4/d13/structRCZip_1_1RC7zArchiveVersion.html#aae76af69ddd5c3268b62337675d035f4">00050</a>     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> m_minor ;
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00053"></a><a class="code" href="../../d2/d43/structRCZip_1_1RC7zStartHeader.html">00053</a> <span class="keyword">struct </span><a class="code" href="../../d2/d43/structRCZip_1_1RC7zStartHeader.html">RC7zStartHeader</a>
+<a name="l00054"></a>00054 {<span class="comment"></span>
+<a name="l00055"></a>00055 <span class="comment">    /** 下一个头的偏移</span>
+<a name="l00056"></a>00056 <span class="comment">    */</span>
+<a name="l00057"></a><a class="code" href="../../d2/d43/structRCZip_1_1RC7zStartHeader.html#ab71b0e1cc98186aa33009b38eb80bdd3">00057</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_nextHeaderOffset;
+<a name="l00058"></a>00058 <span class="comment"></span>
+<a name="l00059"></a>00059 <span class="comment">    /** 下一个头的大小</span>
+<a name="l00060"></a>00060 <span class="comment">    */</span>
+<a name="l00061"></a><a class="code" href="../../d2/d43/structRCZip_1_1RC7zStartHeader.html#a1cfeb7d8ce2dd16892dbd200a7c21340">00061</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_nextHeaderSize;
+<a name="l00062"></a>00062 <span class="comment"></span>
+<a name="l00063"></a>00063 <span class="comment">    /** 下一个头的crc</span>
+<a name="l00064"></a>00064 <span class="comment">    */</span>
+<a name="l00065"></a><a class="code" href="../../d2/d43/structRCZip_1_1RC7zStartHeader.html#a623157cbc04728986f7c493f0353db86">00065</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_nextHeaderCRC;
+<a name="l00066"></a>00066 };
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 <span class="preprocessor">#ifdef _7Z_VOL</span>
+<a name="l00069"></a>00069 <span class="preprocessor"></span>
+<a name="l00070"></a>00070 <span class="keyword">struct </span>RC7zFinishHeader: 
+<a name="l00071"></a>00071     <span class="keyword">public</span> <a class="code" href="../../d2/d43/structRCZip_1_1RC7zStartHeader.html">RC7zStartHeader</a>
+<a name="l00072"></a>00072 {
+<a name="l00073"></a>00073     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_archiveStartOffset;       <span class="comment">// data offset from end if that struct</span>
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_additionalStartBlockSize; <span class="comment">// start  signature &amp; start header size</span>
+<a name="l00076"></a>00076 };
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 <span class="preprocessor">#endif</span>
+<a name="l00079"></a>00079 <span class="preprocessor"></span>
+<a name="l00080"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html">00080</a> <span class="keyword">class </span><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html">RC7zID</a>
+<a name="l00081"></a>00081 {
+<a name="l00082"></a>00082 <span class="keyword">public</span>:
+<a name="l00083"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5">00083</a>     <span class="keyword">enum</span> <a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5">Enum</a>
+<a name="l00084"></a>00084     {
+<a name="l00085"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5aa4ef1b1eda9459429335b96a5b0b4c1d">00085</a>         kEnd,
+<a name="l00086"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a9230808b41864433b2df9862e602781b">00086</a>         kHeader,
+<a name="l00087"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a97067c8050a8e989de234d98c21c2a31">00087</a>         kArchiveProperties,    
+<a name="l00088"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5ad26322c42eab0cb0a8860bceb6407a9e">00088</a>         kAdditionalStreamsInfo,
+<a name="l00089"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5afc12f6d2d763c64bc2483901b31e2267">00089</a>         kMainStreamsInfo,
+<a name="l00090"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a032464d37e448bb33e3fcf4a34a1b844">00090</a>         kFilesInfo,    
+<a name="l00091"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5abf895384288781d301ebfa732feae51c">00091</a>         kPackInfo,
+<a name="l00092"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5ac3086be479f09940530a19614a149fc4">00092</a>         kUnpackInfo,
+<a name="l00093"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5ac85a796060ca95f021f8cb2b1c186d6a">00093</a>         kSubStreamsInfo,
+<a name="l00094"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a5959fe8f4fc296ab8dfbd2b708dac2b1">00094</a>         kSize,
+<a name="l00095"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5aaff0c3aec4d8ebe21b7ae46e2f48e785">00095</a>         kCRC,
+<a name="l00096"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5ad70d2bfc4590ca9227bb07c151f69ee7">00096</a>         kFolder,
+<a name="l00097"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a4733011a7c6736560ade3744fd51b355">00097</a>         kCodersUnpackSize,
+<a name="l00098"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5afd48916a5058bc8f63682080e31d426c">00098</a>         kNumUnpackStream,
+<a name="l00099"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a461927df2bf12a5cd2f6cfb1d01ef922">00099</a>         kEmptyStream,
+<a name="l00100"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a00651961d43a28b49b16092ec04e0e97">00100</a>         kEmptyFile,
+<a name="l00101"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5ad07df5660841cdbf6c8ebecc75371459">00101</a>         kAnti,
+<a name="l00102"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a6ae180fbf2ebb5c769e79b6efd4be767">00102</a>         <a class="code" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html#ac985839c677781a6e2bc87b688b849f6">kName</a>,
+<a name="l00103"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a06adb957cea80b7d0b4e478b9e5d1c58">00103</a>         kCTime,
+<a name="l00104"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a60cfb277f3f94cd5f2a786370877a3ff">00104</a>         kATime,
+<a name="l00105"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a4b853c66dfe05aa4ef98ce87b460f745">00105</a>         kMTime,
+<a name="l00106"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a74921c21c58ce969e202ed9beb290021">00106</a>         kWinAttributes,
+<a name="l00107"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5ab6d41ca8f0d1b91a803477d3505ab11c">00107</a>         <a class="code" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html#aa1d5233ca2904926363689b9a24b7fab">kComment</a>,
+<a name="l00108"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a41ea127e12313284131eef6af804af8f">00108</a>         kEncodedHeader,
+<a name="l00109"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a30d7f7c6f1f06c15fd2998f801361f17">00109</a>         kStartPos,
+<a name="l00110"></a><a class="code" href="../../d4/ddb/classRCZip_1_1RC7zID.html#aec9fcf91f9686fdb4965cedfb0707cb5a2819d91c9de450b7e8978e3c034df95d">00110</a>         kDummy
+<a name="l00111"></a>00111     };
+<a name="l00112"></a>00112 } ;
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 <span class="preprocessor">#endif //__RC7zHeader_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

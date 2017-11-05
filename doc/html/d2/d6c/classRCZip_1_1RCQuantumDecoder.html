@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCQuantumDecoder类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html">RCQuantumDecoder</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCQuantumDecoder类参考</h1><!-- doxytag: class="RCZip::RCQuantumDecoder" --><!-- doxytag: inherits="IUnknownImpl4&lt; ICompressCoder, ICompressSetInStream, ICompressSetOutStreamSize, ICompressSetCoderProperties &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCQuantumDecoder</div>
+<div class="dynsection">
+<div class="center"><img src="../../d5/db4/classRCZip_1_1RCQuantumDecoder__inherit__graph.png" border="0" usemap="#RCZip_1_1RCQuantumDecoder_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCQuantumDecoder_inherit__map" id="RCZip_1_1RCQuantumDecoder_inherit__map">
+<area shape="rect" id="node2" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; ICompressCoder, ICompressSetInStream, ICompressSetOutStreamSize, ICompressSetCoderProperties \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="73,361,953,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html" title="{RCZip::ICompressCoder\n||+ Code()\l# ~ICompressCoder()\l}" alt="" coords="200,198,379,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="572,6,719,127"/><area shape="rect" id="node12" href="../../d5/d78/classRCZip_1_1ICompressSetInStream.html" title="{RCZip::ICompressSetInStream\n||+ SetInStream()\l+ ReleaseInStream()\l# ~ICompressSetInStream()\l}" alt="" coords="403,191,624,297"/><area shape="rect" id="node15" href="../../d0/da8/classRCZip_1_1ICompressSetOutStreamSize.html" title="{RCZip::ICompressSetOutStreamSize\n||+ SetOutStreamSize()\l# ~ICompressSetOutStreamSize()\l}" alt="" coords="648,198,909,290"/><area shape="rect" id="node18" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html" title="{RCZip::ICompressSetCoderProperties\n||+ SetCoderProperties()\l# ~ICompressSetCoderProperties()\l}" alt="" coords="933,198,1200,290"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCQuantumDecoder合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d1/d6c/classRCZip_1_1RCQuantumDecoder__coll__graph.png" border="0" usemap="#RCZip_1_1RCQuantumDecoder_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCQuantumDecoder_coll__map" id="RCZip_1_1RCQuantumDecoder_coll__map">
+<area shape="rect" id="node2" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; ICompressCoder, ICompressSetInStream, ICompressSetOutStreamSize, ICompressSetCoderProperties \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="171,467,1051,589"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="1269,179,1435,315"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="1639,28,1815,105"/><area shape="rect" id="node25" href="../../d0/dfc/classRCZip_1_1RCOutBuffer.html" title="{RCZip::RCOutBuffer\n|# m_buffer\l# m_pos\l# m_limitPos\l# m_streamPos\l# m_bufferSize\l# m_spStream\l# m_processedSize\l# m_buffer2\l# m_overDict\l|+ RCOutBuffer()\l+ ~RCOutBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetMemStream()\l+ SetStream()\l+ Flush()\l+ FlushWithCheck()\l+ ReleaseStream()\l+ WriteByte()\l+ WriteBytes()\l+ GetProcessedSize()\l# FlushPart()\l}" alt="" coords="1195,742,1357,1127"/><area shape="rect" id="node35" href="../../d8/d12/classRCZip_1_1RCQuantumStreamBitDecoder.html" title="{RCZip::RCQuantumStreamBitDecoder\n|&#45; m_value\l&#45; m_stream\l|+ RCQuantumStreamBitDecoder()\l+ ~RCQuantumStreamBitDecoder()\l+ Create()\l+ SetStream()\l+ ReleaseStream()\l+ Finish()\l+ Init()\l+ GetProcessedSize()\l+ WasFinished()\l+ ReadBit()\l+ ReadBits()\l}" alt="" coords="1544,1193,1816,1431"/><area shape="rect" id="node38" href="../../d8/de1/classRCZip_1_1RCInBuffer.html" title="{RCZip::RCInBuffer\n|&#45; m_buffer\l&#45; m_bufferLimit\l&#45; m_bufferBase\l&#45; m_spStream\l&#45; m_processedSize\l&#45; m_bufferSize\l&#45; m_wasFinished\l|+ RCInBuffer()\l+ ~RCInBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetStream()\l+ ReleaseStream()\l+ ReadByte()\l+ ReadByte()\l+ ReadBytes()\l+ GetProcessedSize()\l+ WasFinished()\l&#45; ReadBlock()\l&#45; ReadBlock2()\l}" alt="" coords="1599,757,1761,1113"/><area shape="rect" id="node8" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html" title="{RCZip::ICompressCoder\n||+ Code()\l# ~ICompressCoder()\l}" alt="" coords="251,201,429,293"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="700,6,847,127"/><area shape="rect" id="node12" href="../../d5/d78/classRCZip_1_1ICompressSetInStream.html" title="{RCZip::ICompressSetInStream\n||+ SetInStream()\l+ ReleaseInStream()\l# ~ICompressSetInStream()\l}" alt="" coords="5,193,227,300"/><area shape="rect" id="node15" href="../../d0/da8/classRCZip_1_1ICompressSetOutStreamSize.html" title="{RCZip::ICompressSetOutStreamSize\n||+ SetOutStreamSize()\l# ~ICompressSetOutStreamSize()\l}" alt="" coords="453,201,715,293"/><area shape="rect" id="node18" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html" title="{RCZip::ICompressSetCoderProperties\n||+ SetCoderProperties()\l# ~ICompressSetCoderProperties()\l}" alt="" coords="739,201,1005,293"/><area shape="rect" id="node30" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="1029,201,1245,293"/><area shape="rect" id="node43" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="1459,201,1664,293"/><area shape="rect" id="node21" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html" title="{RCZip::RCQuantumModelDecoder\n|&#45; m_numItems\l&#45; m_reorderCount\l&#45; m_freqs\l&#45; m_values\l|+ RCQuantumModelDecoder()\l+ ~RCQuantumModelDecoder()\l+ Init()\l+ Decode()\l}" alt="" coords="983,1676,1228,1841"/><area shape="rect" id="node23" href="../../d9/dae/classRCZip_1_1RCLZOutWindow.html" title="{RCZip::RCLZOutWindow\n||+ RCLZOutWindow()\l+ ~RCLZOutWindow()\l+ Init()\l+ CopyBlock()\l+ PutByte()\l+ GetByte()\l}" alt="" coords="1185,1457,1367,1607"/><area shape="rect" id="node28" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="1084,379,1351,677"/><area shape="rect" id="node33" href="../../dd/d79/classRCZip_1_1RCQuantumRangeDecoder.html" title="{RCZip::RCQuantumRangeDecoder\n|+ m_stream\l&#45; m_low\l&#45; m_range\l&#45; m_code\l|+ RCQuantumRangeDecoder()\l+ ~RCQuantumRangeDecoder()\l+ Create()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ Finish()\l+ GetProcessedSize()\l+ GetThreshold()\l+ Decode()\l}" alt="" coords="1513,1632,1761,1885"/><area shape="rect" id="node41" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="1411,379,1664,677"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d6/d62/classRCZip_1_1RCQuantumDecoder-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#adc830b55061c18e8c513bbd45a205efa">RCQuantumDecoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a496050a941695a37c7f04435c4141aa9">~RCQuantumDecoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#ac12718caa3bd029fea022a67e165acab">Init</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a9e4030b4c2f97051989f1e21aeee30d1">CodeSpec</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a4d0ee70b7221aec43ad5d2c72049e5c9">ReleaseStreams</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a3624b1b255157666864cbb69a8028b32">Flush</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a0b668a8b421faabe371d1b8bc3b93165">Code</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *inStream, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *inSize, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *outSize, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a8db61ac8bb86496aec5aff2468e0dacb">SetInStream</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *inStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a42f06a93cab5cc713c4cf1c55a4fbb1b">ReleaseInStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#ae7cdbbaf6469863bd0f1fa4fdfc466f2">SetOutStreamSize</a> (const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *outSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a2ac24d464d2036652c745a0b403ee49a">SetCoderProperties</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2bb59fe6bfba19bd670402eadba0b81b">RCPropertyIDPairArray</a> &amp;propertyArray)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a3e79a9193d211b8aa92b7c6ed7077f21">CodeReal</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *inStream, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *inSize, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *outSize, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a3a884f5e69e4211e8dbad5f392618c45">SetParams</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> numDictBits)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a5b4229e5f4e5ae018074b466859b1568">SetKeepHistory</a> (bool keepHistory)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dae/classRCZip_1_1RCLZOutWindow.html">RCLZOutWindow</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a55d3ca3052a6e9dc8a13df311a71a387">m_outWindowStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d79/classRCZip_1_1RCQuantumRangeDecoder.html">RCQuantumRangeDecoder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#ad49a1a0edf62651904dedb23f8323aa6">m_rangeDecoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a74de38ae34df8ca1023833a8bee44922">m_outSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#aec7e08dac4b551e187e53cf01733dbd4">m_remainLen</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a1db781d655c76e7667220964a1939ad9">m_rep0</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a77cf6e0eaeefad329fe2db8c37b61e7f">m_numDictBits</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a295eab554efcec05e0a9164f5d04def2">m_dictionarySize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#aac0b7cb816d49df88579be91197ae306">m_selector</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a9df669db07f8d405e05d4c5b268a5c49">m_literals</a> [<a class="el" href="../../db/d50/classRCZip_1_1RCQuantumDefs.html#a4450b7541e9458b8659cf9b945c93ffb">RCQuantumDefs::s_kNumLitSelectors</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a15b8a945168561e9885a5a8ff84c1a73">m_posSlot</a> [<a class="el" href="../../db/d50/classRCZip_1_1RCQuantumDefs.html#a50366aa4f2782f3e142bc0796f9f7a4a">RCQuantumDefs::s_kNumMatchSelectors</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#aeff2a80fd92b1e526cbc57f7f38e5817">m_lenSlot</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a5fbde1c3777a29d45f906ec0976b0adf">m_keepHistory</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Quantum 解码器 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00024">24</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="adc830b55061c18e8c513bbd45a205efa"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::RCQuantumDecoder" ref="adc830b55061c18e8c513bbd45a205efa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCQuantumDecoder::RCQuantumDecoder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a496050a941695a37c7f04435c4141aa9"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::~RCQuantumDecoder" ref="a496050a941695a37c7f04435c4141aa9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCQuantumDecoder::~RCQuantumDecoder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a0b668a8b421faabe371d1b8bc3b93165"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::Code" ref="a0b668a8b421faabe371d1b8bc3b93165" args="(ISequentialInStream *inStream, ISequentialOutStream *outStream, const uint64_t *inSize, const uint64_t *outSize, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::Code </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>outSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩/解压数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>数据输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>数据输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html#ae34de8b5d603e70bea726ef99e130184">RCZip::ICompressCoder</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e79a9193d211b8aa92b7c6ed7077f21"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::CodeReal" ref="a3e79a9193d211b8aa92b7c6ed7077f21" args="(ISequentialInStream *inStream, ISequentialOutStream *outStream, const uint64_t *inSize, const uint64_t *outSize, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::CodeReal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>outSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩/解压数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>数据输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>数据输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e4030b4c2f97051989f1e21aeee30d1"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::CodeSpec" ref="a9e4030b4c2f97051989f1e21aeee30d1" args="(uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::CodeSpec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3624b1b255157666864cbb69a8028b32"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::Flush" ref="a3624b1b255157666864cbb69a8028b32" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::Flush </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac12718caa3bd029fea022a67e165acab"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::Init" ref="ac12718caa3bd029fea022a67e165acab" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCQuantumDecoder::Init </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42f06a93cab5cc713c4cf1c55a4fbb1b"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::ReleaseInStream" ref="a42f06a93cab5cc713c4cf1c55a4fbb1b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::ReleaseInStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放输入流 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d78/classRCZip_1_1ICompressSetInStream.html#ac599b725e0d32cbc179c0cde039d9529">RCZip::ICompressSetInStream</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d0ee70b7221aec43ad5d2c72049e5c9"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::ReleaseStreams" ref="a4d0ee70b7221aec43ad5d2c72049e5c9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCQuantumDecoder::ReleaseStreams </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ac24d464d2036652c745a0b403ee49a"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::SetCoderProperties" ref="a2ac24d464d2036652c745a0b403ee49a" args="(const RCPropertyIDPairArray &amp;propertyArray)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::SetCoderProperties </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a2bb59fe6bfba19bd670402eadba0b81b">RCPropertyIDPairArray</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>propertyArray</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置压缩编码属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propertyArray</em>&nbsp;</td><td>压缩编码属性列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../df/db0/classRCZip_1_1ICompressSetCoderProperties.html#a150fa55100c6926a4782f514e43f8fb1">RCZip::ICompressSetCoderProperties</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8db61ac8bb86496aec5aff2468e0dacb"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::SetInStream" ref="a8db61ac8bb86496aec5aff2468e0dacb" args="(ISequentialInStream *inStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::SetInStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输入流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d78/classRCZip_1_1ICompressSetInStream.html#aed844d82ab7932b02cb8eb66c2bf4f07">RCZip::ICompressSetInStream</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b4229e5f4e5ae018074b466859b1568"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::SetKeepHistory" ref="a5b4229e5f4e5ae018074b466859b1568" args="(bool keepHistory)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCQuantumDecoder::SetKeepHistory </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>keepHistory</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置是否保留历史 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>keepHistory</em>&nbsp;</td><td>是否保留历史 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae7cdbbaf6469863bd0f1fa4fdfc466f2"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::SetOutStreamSize" ref="ae7cdbbaf6469863bd0f1fa4fdfc466f2" args="(const uint64_t *outSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCQuantumDecoder::SetOutStreamSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>outSize</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输出流大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出流大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d0/da8/classRCZip_1_1ICompressSetOutStreamSize.html#ac22a6f104cdebe5da01167483f948b36">RCZip::ICompressSetOutStreamSize</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a884f5e69e4211e8dbad5f392618c45"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::SetParams" ref="a3a884f5e69e4211e8dbad5f392618c45" args="(int32_t numDictBits)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCQuantumDecoder::SetParams </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numDictBits</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置参数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numDictBits</em>&nbsp;</td><td>字典位数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a295eab554efcec05e0a9164f5d04def2"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_dictionarySize" ref="a295eab554efcec05e0a9164f5d04def2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a295eab554efcec05e0a9164f5d04def2">RCZip::RCQuantumDecoder::m_dictionarySize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>字典大小 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00152">152</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fbde1c3777a29d45f906ec0976b0adf"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_keepHistory" ref="a5fbde1c3777a29d45f906ec0976b0adf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a5fbde1c3777a29d45f906ec0976b0adf">RCZip::RCQuantumDecoder::m_keepHistory</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否保留历史 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00172">172</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aeff2a80fd92b1e526cbc57f7f38e5817"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_lenSlot" ref="aeff2a80fd92b1e526cbc57f7f38e5817" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#aeff2a80fd92b1e526cbc57f7f38e5817">RCZip::RCQuantumDecoder::m_lenSlot</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码器 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00168">168</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9df669db07f8d405e05d4c5b268a5c49"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_literals" ref="a9df669db07f8d405e05d4c5b268a5c49" args="[RCQuantumDefs::s_kNumLitSelectors]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a9df669db07f8d405e05d4c5b268a5c49">RCZip::RCQuantumDecoder::m_literals</a>[<a class="el" href="../../db/d50/classRCZip_1_1RCQuantumDefs.html#a4450b7541e9458b8659cf9b945c93ffb">RCQuantumDefs::s_kNumLitSelectors</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码器 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00160">160</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a77cf6e0eaeefad329fe2db8c37b61e7f"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_numDictBits" ref="a77cf6e0eaeefad329fe2db8c37b61e7f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a77cf6e0eaeefad329fe2db8c37b61e7f">RCZip::RCQuantumDecoder::m_numDictBits</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>字典位数 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00148">148</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a74de38ae34df8ca1023833a8bee44922"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_outSize" ref="a74de38ae34df8ca1023833a8bee44922" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a74de38ae34df8ca1023833a8bee44922">RCZip::RCQuantumDecoder::m_outSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出大小 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00136">136</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a55d3ca3052a6e9dc8a13df311a71a387"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_outWindowStream" ref="a55d3ca3052a6e9dc8a13df311a71a387" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/dae/classRCZip_1_1RCLZOutWindow.html">RCLZOutWindow</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a55d3ca3052a6e9dc8a13df311a71a387">RCZip::RCQuantumDecoder::m_outWindowStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出流 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00128">128</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a15b8a945168561e9885a5a8ff84c1a73"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_posSlot" ref="a15b8a945168561e9885a5a8ff84c1a73" args="[RCQuantumDefs::s_kNumMatchSelectors]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a15b8a945168561e9885a5a8ff84c1a73">RCZip::RCQuantumDecoder::m_posSlot</a>[<a class="el" href="../../db/d50/classRCZip_1_1RCQuantumDefs.html#a50366aa4f2782f3e142bc0796f9f7a4a">RCQuantumDefs::s_kNumMatchSelectors</a>]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码器 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00164">164</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad49a1a0edf62651904dedb23f8323aa6"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_rangeDecoder" ref="ad49a1a0edf62651904dedb23f8323aa6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d79/classRCZip_1_1RCQuantumRangeDecoder.html">RCQuantumRangeDecoder</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#ad49a1a0edf62651904dedb23f8323aa6">RCZip::RCQuantumDecoder::m_rangeDecoder</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Range解码器 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00132">132</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aec7e08dac4b551e187e53cf01733dbd4"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_remainLen" ref="aec7e08dac4b551e187e53cf01733dbd4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#aec7e08dac4b551e187e53cf01733dbd4">RCZip::RCQuantumDecoder::m_remainLen</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>保留长度 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00140">140</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1db781d655c76e7667220964a1939ad9"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_rep0" ref="a1db781d655c76e7667220964a1939ad9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#a1db781d655c76e7667220964a1939ad9">RCZip::RCQuantumDecoder::m_rep0</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>重复0 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00144">144</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aac0b7cb816d49df88579be91197ae306"></a><!-- doxytag: member="RCZip::RCQuantumDecoder::m_selector" ref="aac0b7cb816d49df88579be91197ae306" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/dd7/classRCZip_1_1RCQuantumModelDecoder.html">RCQuantumModelDecoder</a> <a class="el" href="../../d2/d6c/classRCZip_1_1RCQuantumDecoder.html#aac0b7cb816d49df88579be91197ae306">RCZip::RCQuantumDecoder::m_selector</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解码器 </p>
+
+<p>在文件<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a>第<a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html#l00156">156</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d31/RCQuantumDecoder_8h_source.html">RCQuantumDecoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

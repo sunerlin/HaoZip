@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCLzhHeader.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_b9a228776f85d3c1bc7c65ffce283bfb.html">lzh</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCLzhHeader.h</h1><a href="../../da/d24/RCLzhHeader_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCLzhHeader_h_</span>
+<a name="l00011"></a><a class="code" href="../../da/d24/RCLzhHeader_8h.html#a42fc2d07163bad14b661051aeb599b1d">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCLzhHeader_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#ifdef RCZIP_OS_WIN</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="preprocessor">#define CHAR_PATH_SEPARATOR &#39;\\&#39;</span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define WCHAR_PATH_SEPARATOR L&#39;\\&#39;</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#define WSTRING_PATH_SEPARATOR L&quot;\\&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00022"></a><a class="code" href="../../da/d24/RCLzhHeader_8h.html#af6c667ad21477a940183563afc6d3419">00022</a> <span class="preprocessor"></span><span class="preprocessor">#define CHAR_PATH_SEPARATOR &#39;/&#39;</span>
+<a name="l00023"></a><a class="code" href="../../da/d24/RCLzhHeader_8h.html#a88c181fe5c3cf0c6c238002abe03d14a">00023</a> <span class="preprocessor"></span><span class="preprocessor">#define WCHAR_PATH_SEPARATOR L&#39;/&#39;</span>
+<a name="l00024"></a><a class="code" href="../../da/d24/RCLzhHeader_8h.html#a5ca9416e656f68d6e9d71202c2f7b9b7">00024</a> <span class="preprocessor"></span><span class="preprocessor">#define WSTRING_PATH_SEPARATOR L&quot;/&quot;</span>
+<a name="l00025"></a>00025 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00027"></a><a class="code" href="../../db/dee/classRCZip_1_1RCLzhHeader.html">00027</a> <span class="keyword">class </span><a class="code" href="../../db/dee/classRCZip_1_1RCLzhHeader.html">RCLzhHeader</a>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029 <span class="keyword">public</span>:
+<a name="l00030"></a>00030 <span class="comment"></span>
+<a name="l00031"></a>00031 <span class="comment">    /** 方法id大小</span>
+<a name="l00032"></a>00032 <span class="comment">    */</span>
+<a name="l00033"></a><a class="code" href="../../db/dee/classRCZip_1_1RCLzhHeader.html#a5885f368b1f1e105bd0c01096b5260d4">00033</a>     <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> s_methodIdSize = 5;
+<a name="l00034"></a>00034 <span class="comment"></span>
+<a name="l00035"></a>00035 <span class="comment">    /** 扩展id文件名</span>
+<a name="l00036"></a>00036 <span class="comment">    */</span>
+<a name="l00037"></a><a class="code" href="../../db/dee/classRCZip_1_1RCLzhHeader.html#a60af49c99213165483a8faddd8441b5c">00037</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> s_extIdFileName = 0x01;
+<a name="l00038"></a>00038 <span class="comment"></span>
+<a name="l00039"></a>00039 <span class="comment">    /** 扩展id目录名</span>
+<a name="l00040"></a>00040 <span class="comment">    */</span>
+<a name="l00041"></a><a class="code" href="../../db/dee/classRCZip_1_1RCLzhHeader.html#a8fde0c55b583ec872167c77d95fbd775">00041</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> s_extIdDirName  = 0x02;
+<a name="l00042"></a>00042 <span class="comment"></span>
+<a name="l00043"></a>00043 <span class="comment">    /** 扩展id unix时间</span>
+<a name="l00044"></a>00044 <span class="comment">    */</span>
+<a name="l00045"></a><a class="code" href="../../db/dee/classRCZip_1_1RCLzhHeader.html#a4999732e183739f0348c48d5266f0e79">00045</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> s_extIdUnixTime = 0x54;
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="preprocessor">#endif //__RCLzhHeader_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

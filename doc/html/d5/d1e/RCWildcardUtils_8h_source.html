@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCWildcardUtils.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_e087791cafc9794d341e0d7b63d924f5.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCWildcardUtils.h</h1><a href="../../d5/d1e/RCWildcardUtils_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCWildcardUtils_h_</span>
+<a name="l00011"></a><a class="code" href="../../d5/d1e/RCWildcardUtils_8h.html#aa48d6e86bb9366e77512a3fc923d0e8b">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCWildcardUtils_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/dba/RCString_8h.html">base/RCString.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/d53/RCVector_8h.html">common/RCVector.h</a>&quot;</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00017"></a>00017 <span class="comment"></span>
+<a name="l00018"></a>00018 <span class="comment">/** 通配辅助类</span>
+<a name="l00019"></a>00019 <span class="comment">*/</span>
+<a name="l00020"></a><a class="code" href="../../d9/d94/classRCWildcardUtils.html">00020</a> <span class="keyword">class </span><a class="code" href="../../d9/d94/classRCWildcardUtils.html">RCWildcardUtils</a>
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022 <span class="keyword">public</span>:
+<a name="l00023"></a>00023     <span class="comment"></span>
+<a name="l00024"></a>00024 <span class="comment">    /** 比较文件名，大小写是否区分以s_isCaseSensitive进行判断</span>
+<a name="l00025"></a>00025 <span class="comment">    @param [in] s1 第一个文件名</span>
+<a name="l00026"></a>00026 <span class="comment">    @param [in] s2 第二个文件名</span>
+<a name="l00027"></a>00027 <span class="comment">    @return 返回值定义如下：</span>
+<a name="l00028"></a>00028 <span class="comment">            0  - 相等</span>
+<a name="l00029"></a>00029 <span class="comment">            1  - lhs &gt; rhs</span>
+<a name="l00030"></a>00030 <span class="comment">            -1 - lhs &lt; rhs</span>
+<a name="l00031"></a>00031 <span class="comment">    */</span>
+<a name="l00032"></a>00032     <span class="keyword">static</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a61b55b8de1ce52b83de6858b5df17b9d">CompareFileNames</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; s1, <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; s2);
+<a name="l00033"></a>00033     <span class="comment"></span>
+<a name="l00034"></a>00034 <span class="comment">    /** 分解路径字符串为字符串数组，分隔符为文件路径分隔符</span>
+<a name="l00035"></a>00035 <span class="comment">    @param [in] path 文件路径</span>
+<a name="l00036"></a>00036 <span class="comment">    @param [out] pathParts 返回分隔结果</span>
+<a name="l00037"></a>00037 <span class="comment">    */</span>
+<a name="l00038"></a>00038     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a057b3c13e530eb7b6b4108f010cf2c12">SplitPathToParts</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; path, RCVector&lt;RCString&gt;&amp; pathParts);
+<a name="l00039"></a>00039     <span class="comment"></span>
+<a name="l00040"></a>00040 <span class="comment">    /** 分解文件名为文件路径和文件名两个部分</span>
+<a name="l00041"></a>00041 <span class="comment">    @param [in] path 文件名</span>
+<a name="l00042"></a>00042 <span class="comment">    @param [out] dirPrefix 路径名，不含文件名</span>
+<a name="l00043"></a>00043 <span class="comment">    @param [out] name 文件名，不含路径</span>
+<a name="l00044"></a>00044 <span class="comment">    */</span>
+<a name="l00045"></a>00045     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a057b3c13e530eb7b6b4108f010cf2c12">SplitPathToParts</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; path, <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; dirPrefix, <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; name);
+<a name="l00046"></a>00046     <span class="comment"></span>
+<a name="l00047"></a>00047 <span class="comment">    /** 从文件名中分解出文件路径</span>
+<a name="l00048"></a>00048 <span class="comment">    @param [in] path 文件名，含路径</span>
+<a name="l00049"></a>00049 <span class="comment">    @return 返回文件路径</span>
+<a name="l00050"></a>00050 <span class="comment">    */</span>
+<a name="l00051"></a>00051     <span class="keyword">static</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#aa17fc5cf01b9610a745ac434e40de8e7">ExtractDirPrefixFromPath</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; path);
+<a name="l00052"></a>00052     <span class="comment"></span>
+<a name="l00053"></a>00053 <span class="comment">    /** 从文件名中分解出文件名</span>
+<a name="l00054"></a>00054 <span class="comment">    @param [in] path 文件名，含路径</span>
+<a name="l00055"></a>00055 <span class="comment">    @return 返回文件名，不含路径</span>
+<a name="l00056"></a>00056 <span class="comment">    */</span>
+<a name="l00057"></a>00057     <span class="keyword">static</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a11dfe2656ee3c106a6fa8e13743710d5">ExtractFileNameFromPath</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; path);
+<a name="l00058"></a>00058     <span class="comment"></span>
+<a name="l00059"></a>00059 <span class="comment">    /** 文件名中是否含有通配符</span>
+<a name="l00060"></a>00060 <span class="comment">    @param [in] path 文件名</span>
+<a name="l00061"></a>00061 <span class="comment">    @return 如果含有通配符返回true，否则返回false</span>
+<a name="l00062"></a>00062 <span class="comment">    */</span>
+<a name="l00063"></a>00063     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a7fc9fec0e74176210decea31a9718db9">DoesNameContainWildCard</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; path);
+<a name="l00064"></a>00064     <span class="comment"></span>
+<a name="l00065"></a>00065 <span class="comment">    /** 判断文件名是否匹配通配符</span>
+<a name="l00066"></a>00066 <span class="comment">    @param [in] mask 通配符文件名</span>
+<a name="l00067"></a>00067 <span class="comment">    @param [in] name 文件名</span>
+<a name="l00068"></a>00068 <span class="comment">    @return 如果匹配返回true，否则返回false</span>
+<a name="l00069"></a>00069 <span class="comment">    */</span>
+<a name="l00070"></a>00070     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#add5aa4d3474e5dd184fa39be40db2c9d">CompareWildCardWithName</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; mask, <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; name);
+<a name="l00071"></a>00071     <span class="comment"></span>
+<a name="l00072"></a>00072 <span class="comment">    /** 判断字符是否为路径分隔符</span>
+<a name="l00073"></a>00073 <span class="comment">    @param [in] ch 需要判断的字符</span>
+<a name="l00074"></a>00074 <span class="comment">    @return 如果是分隔符返回true，否则返回false</span>
+<a name="l00075"></a>00075 <span class="comment">    */</span>
+<a name="l00076"></a>00076     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#ab8b0f5ac5f1b4afd6bbaac6995e0b056">IsCharDirLimiter</a>(<a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> ch) ;
+<a name="l00077"></a>00077     <span class="comment"></span>
+<a name="l00078"></a>00078 <span class="comment">    /** 获取路径分隔符</span>
+<a name="l00079"></a>00079 <span class="comment">    @return 返回路径分隔符</span>
+<a name="l00080"></a>00080 <span class="comment">    */</span>
+<a name="l00081"></a>00081     <span class="keyword">static</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a576058730b581151795b478a1346d392">GetDirLimiter</a>(<span class="keywordtype">void</span>) ;
+<a name="l00082"></a>00082     <span class="comment"></span>
+<a name="l00083"></a>00083 <span class="comment">    /** 获取是否区分大小写</span>
+<a name="l00084"></a>00084 <span class="comment">    @return 区分大小写返回true,否则返回false</span>
+<a name="l00085"></a>00085 <span class="comment">    */</span>
+<a name="l00086"></a>00086     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#ad3ae57505363e03752e13653181a08fe">IsCaseSensitive</a>(<span class="keywordtype">void</span>) ;
+<a name="l00087"></a>00087     <span class="comment"></span>
+<a name="l00088"></a>00088 <span class="comment">    /** 设置是否区分大小写</span>
+<a name="l00089"></a>00089 <span class="comment">    @param [in] isCaseSensitive 是否区分大小写</span>
+<a name="l00090"></a>00090 <span class="comment">    */</span>
+<a name="l00091"></a>00091     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a5ea36fc8fa602324b2dc416e8216ca66">SetCaseSensitive</a>(<span class="keywordtype">bool</span> isCaseSensitive) ;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="keyword">private</span>:
+<a name="l00094"></a>00094     <span class="comment"></span>
+<a name="l00095"></a>00095 <span class="comment">    /** 比较文件名时，是否区分大小写</span>
+<a name="l00096"></a>00096 <span class="comment">    */</span>
+<a name="l00097"></a><a class="code" href="../../d9/d94/classRCWildcardUtils.html#afb9270cbec61fe50ddc6a3bd579271a5">00097</a>     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#afb9270cbec61fe50ddc6a3bd579271a5">s_isCaseSensitive</a> ;
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 <span class="keyword">private</span>:
+<a name="l00100"></a>00100     <span class="comment"></span>
+<a name="l00101"></a>00101 <span class="comment">    /** 判断文件名是否匹配通配符</span>
+<a name="l00102"></a>00102 <span class="comment">    @param [in] mask 通配符文件名</span>
+<a name="l00103"></a>00103 <span class="comment">    @param [in] name 文件名</span>
+<a name="l00104"></a>00104 <span class="comment">    @return 如果匹配返回true，否则返回false</span>
+<a name="l00105"></a>00105 <span class="comment">    */</span>
+<a name="l00106"></a>00106     <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../d9/d94/classRCWildcardUtils.html#a39b041e1935a9b77d7e5ff93c3cc1b21">EnhancedMaskTest</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a>* mask, <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a>* name) ;
+<a name="l00107"></a>00107 };
+<a name="l00108"></a>00108 
+<a name="l00109"></a>00109 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 <span class="preprocessor">#endif //__RCWildcardUtils_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCLzhDecoderDefs.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_cc7e93e42d485f1b7b57b5b16d837b01.html">lzh</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCLzhDecoderDefs.h</h1><a href="../../dd/d2a/RCLzhDecoderDefs_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCLzhDecoderDefs_h_</span>
+<a name="l00011"></a><a class="code" href="../../dd/d2a/RCLzhDecoderDefs_8h.html#a14ac3b2c5e0cae1cd574331677235159">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCLzhDecoderDefs_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 <span class="comment"></span>
+<a name="l00017"></a>00017 <span class="comment">/** Lzh 编码常量定义</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html">00019</a> <span class="keyword">class </span><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html">RCLzhDecoderDefs</a>
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021 <span class="keyword">public</span>:
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a28f1bdb69db87c8511db166c13577923">00023</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kMaxHuffmanLen = 16; <span class="comment">// Check it</span>
+<a name="l00024"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a2939e9a94ccce5b8f94aa1df737e75e4">00024</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumSpecLevelSymbols = 3;
+<a name="l00025"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a72566b75b3b66069082d32130d76cf45">00025</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumLevelSymbols = s_kNumSpecLevelSymbols + s_kMaxHuffmanLen;
+<a name="l00026"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad830e0aa4c3920e793b6a3ee38c6d178">00026</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kDictBitsMax = 16;
+<a name="l00027"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a0e294318b718c2a16f8646ad029ea799">00027</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumDistanceSymbols = s_kDictBitsMax + 1;
+<a name="l00028"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a386eb95aefae30695f94c579824b0c1e">00028</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kMaxMatch = 256;
+<a name="l00029"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a5f58acc04c1508ac4b01d10fa621ea20">00029</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kMinMatch = 3;
+<a name="l00030"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad516de806cb414348c18b1559541e7df">00030</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumCSymbols = 256 + s_kMaxMatch + 2 - s_kMinMatch;
+<a name="l00031"></a>00031     
+<a name="l00032"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#afa22a159bd28b6e5b2e676a080cc37a3">00032</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kHistorySize = (1 &lt;&lt; 16);
+<a name="l00033"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#afeb97c4c2e5db1f9b6c1ee480fefb489">00033</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kBlockSizeBits = 16;
+<a name="l00034"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a195b627ef2b4cd198e8873e4fd40c869">00034</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumCBits = 9;
+<a name="l00035"></a><a class="code" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#aed0c74379ac113da64a5cbd94f584bd2">00035</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> s_kNumLevelBits = 5;
+<a name="l00036"></a>00036 };
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="preprocessor">#endif //__RCLzhDecoderDefs_h_</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

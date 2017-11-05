@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCRar20DecoderInfo类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html">RCRar20DecoderInfo</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCRar20DecoderInfo类参考</h1><!-- doxytag: class="RCZip::RCRar20DecoderInfo" --><!-- doxytag: inherits="RCZip::RCCodecInfoBase" -->
+<p><code>#include &lt;<a class="el" href="../../de/dd3/RCRar20DecoderInfo_8h_source.html">RCRar20DecoderInfo.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCRar20DecoderInfo</div>
+<div class="dynsection">
+<div class="center"><img src="../../d1/d86/classRCZip_1_1RCRar20DecoderInfo__inherit__graph.png" border="0" usemap="#RCZip_1_1RCRar20DecoderInfo_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCRar20DecoderInfo_inherit__map" id="RCZip_1_1RCRar20DecoderInfo_inherit__map">
+<area shape="rect" id="node2" href="../../d9/d9d/classRCZip_1_1RCCodecInfoBase.html" title="{RCZip::RCCodecInfoBase\n||+ RCCodecInfoBase()\l+ ~RCCodecInfoBase()\l+ AddRef()\l+ Release()\l}" alt="" coords="117,649,304,770"/><area shape="rect" id="node4" href="../../d5/d31/classRCZip_1_1ICodecInfo.html" title="{RCZip::ICodecInfo\n||+ GetCreateDecoderFunc()\l+ GetDecoderIID()\l+ GetCreateEncoderFunc()\l+ GetEncoderIID()\l+ GetMethodID()\l+ GetMethodName()\l+ GetNumInStreams()\l+ GetNumOutStreams()\l+ IsEncoderAssigned()\l+ IsDecoderAssigned()\l+ IsSimpleCodec()\l+ IsFilter()\l# ~ICodecInfo()\l}" alt="" coords="5,347,208,600"/><area shape="rect" id="node6" href="../../db/dce/classRCZip_1_1IRefCounted.html" title="{RCZip::IRefCounted\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IRefCounted()\l}" alt="" coords="31,177,183,298"/><area shape="rect" id="node8" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="33,6,180,127"/><area shape="rect" id="node10" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="232,405,397,541"/><area shape="rect" id="node12" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="227,199,403,276"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCRar20DecoderInfo合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/dd2/classRCZip_1_1RCRar20DecoderInfo__coll__graph.png" border="0" usemap="#RCZip_1_1RCRar20DecoderInfo_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCRar20DecoderInfo_coll__map" id="RCZip_1_1RCRar20DecoderInfo_coll__map">
+<area shape="rect" id="node2" href="../../d9/d9d/classRCZip_1_1RCCodecInfoBase.html" title="{RCZip::RCCodecInfoBase\n||+ RCCodecInfoBase()\l+ ~RCCodecInfoBase()\l+ AddRef()\l+ Release()\l}" alt="" coords="117,649,304,770"/><area shape="rect" id="node4" href="../../d5/d31/classRCZip_1_1ICodecInfo.html" title="{RCZip::ICodecInfo\n||+ GetCreateDecoderFunc()\l+ GetDecoderIID()\l+ GetCreateEncoderFunc()\l+ GetEncoderIID()\l+ GetMethodID()\l+ GetMethodName()\l+ GetNumInStreams()\l+ GetNumOutStreams()\l+ IsEncoderAssigned()\l+ IsDecoderAssigned()\l+ IsSimpleCodec()\l+ IsFilter()\l# ~ICodecInfo()\l}" alt="" coords="5,347,208,600"/><area shape="rect" id="node6" href="../../db/dce/classRCZip_1_1IRefCounted.html" title="{RCZip::IRefCounted\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IRefCounted()\l}" alt="" coords="31,177,183,298"/><area shape="rect" id="node8" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="33,6,180,127"/><area shape="rect" id="node10" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="232,405,397,541"/><area shape="rect" id="node12" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="227,199,403,276"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d6/da9/classRCZip_1_1RCRar20DecoderInfo-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a032dfc8fcf70fb8c864fa9fda675b4fd">RCRar20DecoderInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#ab81531059afaa93f0eb985e1a442db41">~RCRar20DecoderInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#abfa0876a35d9b61494c9796a90a415b2">PFNCreateCodec</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#af6d60f5321d8de4b53213baa6d326025">GetCreateDecoderFunc</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a4d99ed2c762d7d262e8051f1a749f58e">GetDecoderIID</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#abfa0876a35d9b61494c9796a90a415b2">PFNCreateCodec</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a4d09098b75ee56bc258cac9c07a26b10">GetCreateEncoderFunc</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a8f41a69486bd79773ccc37d3339511cb">GetEncoderIID</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a6eff333655d0a9635b709ce64e6b991f">GetMethodID</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#acd995905eeb58b75c8f65f25e1ec4ba1">GetMethodName</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a44eedd377f1a6998ad348b3e4800c477">GetNumInStreams</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#accabf56c97bf279e45d5448ed96c4f5e">GetNumOutStreams</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a81afbcc28ece094c5c71064ed6bf0f8a">IsEncoderAssigned</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a0af21151ab7eab6ba8cc669e761265ae">IsDecoderAssigned</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#a4301255f35766d473da42f145520d35f">IsSimpleCodec</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d10/classRCZip_1_1RCRar20DecoderInfo.html#ab6921e3b70f57bcb63746158245821fc">IsFilter</a> (void) const </td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Rar 20 解码器 </p>
+
+<p>在文件<a class="el" href="../../de/dd3/RCRar20DecoderInfo_8h_source.html">RCRar20DecoderInfo.h</a>第<a class="el" href="../../de/dd3/RCRar20DecoderInfo_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a032dfc8fcf70fb8c864fa9fda675b4fd"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::RCRar20DecoderInfo" ref="a032dfc8fcf70fb8c864fa9fda675b4fd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCRar20DecoderInfo::RCRar20DecoderInfo </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab81531059afaa93f0eb985e1a442db41"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::~RCRar20DecoderInfo" ref="ab81531059afaa93f0eb985e1a442db41" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCRar20DecoderInfo::~RCRar20DecoderInfo </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="af6d60f5321d8de4b53213baa6d326025"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetCreateDecoderFunc" ref="af6d60f5321d8de4b53213baa6d326025" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#abfa0876a35d9b61494c9796a90a415b2">PFNCreateCodec</a> RCZip::RCRar20DecoderInfo::GetCreateDecoderFunc </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取创建解码器的函数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回解码创建函数 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a4d334e19431b8f683cec3ae8709f0d82">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d09098b75ee56bc258cac9c07a26b10"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetCreateEncoderFunc" ref="a4d09098b75ee56bc258cac9c07a26b10" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#abfa0876a35d9b61494c9796a90a415b2">PFNCreateCodec</a> RCZip::RCRar20DecoderInfo::GetCreateEncoderFunc </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取创建编码器的函数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回编码器创建函数 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#adbf1db8111fc82d73b9de75c40f36532">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d99ed2c762d7d262e8051f1a749f58e"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetDecoderIID" ref="a4d99ed2c762d7d262e8051f1a749f58e" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a> RCZip::RCRar20DecoderInfo::GetDecoderIID </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解码器的接口ID, 为IID_ICompressCoder or IID_ICompressCoder2 or IID_ICompressFilter </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回解码器ID </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a2be5249276c4c3475f4089632d543a36">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f41a69486bd79773ccc37d3339511cb"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetEncoderIID" ref="a8f41a69486bd79773ccc37d3339511cb" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a18e660794f04328c7708c3139c18c959">RC_IID</a> RCZip::RCRar20DecoderInfo::GetEncoderIID </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取编码器的接口ID </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回编码器ID </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a8fe4c55d0b6175f501796553beb89cac">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6eff333655d0a9635b709ce64e6b991f"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetMethodID" ref="a6eff333655d0a9635b709ce64e6b991f" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> RCZip::RCRar20DecoderInfo::GetMethodID </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取编码ID </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回编码 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a55e4bd1e6e56904cabbac119a630a7bf">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="acd995905eeb58b75c8f65f25e1ec4ba1"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetMethodName" ref="acd995905eeb58b75c8f65f25e1ec4ba1" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RCRar20DecoderInfo::GetMethodName </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取编码名称 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回编码名称 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a26e0d2401584865bd9929a49ebe3354f">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a44eedd377f1a6998ad348b3e4800c477"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetNumInStreams" ref="a44eedd377f1a6998ad348b3e4800c477" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCRar20DecoderInfo::GetNumInStreams </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取InStream的个数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回输入流个数 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#ab6f4e4a223578d17d06f4ad5327e55a8">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="accabf56c97bf279e45d5448ed96c4f5e"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::GetNumOutStreams" ref="accabf56c97bf279e45d5448ed96c4f5e" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCRar20DecoderInfo::GetNumOutStreams </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取输出流的个数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回输出流的个数 </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a524f48d4196b170f0e85df59b3df9d55">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0af21151ab7eab6ba8cc669e761265ae"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::IsDecoderAssigned" ref="a0af21151ab7eab6ba8cc669e761265ae" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RCZip::RCRar20DecoderInfo::IsDecoderAssigned </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否定义解码器 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果定义解码器返回true，否则返回false </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#ab168f1f643ea5fe1e8ff7f0ee49893e2">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a81afbcc28ece094c5c71064ed6bf0f8a"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::IsEncoderAssigned" ref="a81afbcc28ece094c5c71064ed6bf0f8a" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RCZip::RCRar20DecoderInfo::IsEncoderAssigned </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否定义编码器 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果定义编码器返回true，否则返回false </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a8ceb1e656ccbc184aaa80a85c40325df">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6921e3b70f57bcb63746158245821fc"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::IsFilter" ref="ab6921e3b70f57bcb63746158245821fc" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RCZip::RCRar20DecoderInfo::IsFilter </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取Filter属性 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果是过滤编码器返回true,否则返回false </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a91157645f807f3a87f4f30308986da89">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4301255f35766d473da42f145520d35f"></a><!-- doxytag: member="RCZip::RCRar20DecoderInfo::IsSimpleCodec" ref="a4301255f35766d473da42f145520d35f" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RCZip::RCRar20DecoderInfo::IsSimpleCodec </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否为简单编码器 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果只含有一个输入流和一个输出流返回true,否则返回false </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/d31/classRCZip_1_1ICodecInfo.html#a582cabaa4e982f8d4e93744c1388ac85">RCZip::ICodecInfo</a>。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../de/dd3/RCRar20DecoderInfo_8h_source.html">RCRar20DecoderInfo.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

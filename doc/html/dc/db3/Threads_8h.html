@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: Threads.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Threads.h文件参考</h1><code>#include &quot;<a class="el" href="../../d7/df8/Types_8h_source.html">algorithm/Types.h</a>&quot;</code><br/>
+<div class="dynheader">
+Threads.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d4/d77/Threads_8h__incl.png" border="0" usemap="#Threads_8h_map" alt=""/></div>
+<map name="Threads_8h_map" id="Threads_8h">
+<area shape="rect" id="node3" href="../../d7/df8/Types_8h.html" title="algorithm/Types.h" alt="" coords="76,80,217,107"/><area shape="rect" id="node5" href="../../df/dd8/stdint_8h.html" title="base/stdint.h" alt="" coords="36,155,143,181"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/de7/Threads_8h__dep__incl.png" border="0" usemap="#Threads_8hdep_map" alt=""/></div>
+<map name="Threads_8hdep_map" id="Threads_8hdep">
+<area shape="rect" id="node3" href="../../db/db2/LzFindMt_8h.html" title="LzFindMt.h" alt="" coords="205,80,299,107"/><area shape="rect" id="node5" href="../../df/da4/MtCoder_8h.html" title="MtCoder.h" alt="" coords="323,80,411,107"/><area shape="rect" id="node7" href="../../d1/d8f/RCBaseEvent_8h.html" title="RCBaseEvent.h" alt="" coords="435,80,557,107"/><area shape="rect" id="node41" href="../../d8/d62/RCSemaphore_8h.html" title="RCSemaphore.h" alt="" coords="668,155,796,181"/><area shape="rect" id="node9" href="../../db/d4a/RCAutoResetEvent_8h.html" title="RCAutoResetEvent.h" alt="" coords="239,155,396,181"/><area shape="rect" id="node11" href="../../d2/db0/RCSynchronization_8h.html" title="RCSynchronization.h" alt="" coords="415,229,575,256"/><area shape="rect" id="node37" href="../../de/ddc/RCManualResetEvent_8h.html" title="RCManualResetEvent.h" alt="" coords="471,155,644,181"/><area shape="rect" id="node13" href="../../d4/dc5/RCBZip2DecoderState_8h.html" title="RCBZip2DecoderState.h" alt="" coords="5,304,187,331"/><area shape="rect" id="node17" href="../../df/d12/RCBZip2ThreadInfo_8h.html" title="RCBZip2ThreadInfo.h" alt="" coords="211,304,373,331"/><area shape="rect" id="node21" href="../../df/d1b/RCMemBlockManagerMt_8h.html" title="RCMemBlockManagerMt.h" alt="" coords="397,304,592,331"/><area shape="rect" id="node23" href="../../d3/dfe/RCOutMemStream_8h.html" title="RCOutMemStream.h" alt="" coords="616,304,773,331"/><area shape="rect" id="node25" href="../../dc/dbe/RCStreamBinder_8h.html" title="RCStreamBinder.h" alt="" coords="797,304,939,331"/><area shape="rect" id="node15" href="../../dc/d76/RCBZip2Decoder_8h.html" title="RCBZip2Decoder.h" alt="" coords="24,379,168,405"/><area shape="rect" id="node19" href="../../df/d52/RCBZip2Encoder_8h.html" title="RCBZip2Encoder.h" alt="" coords="220,379,364,405"/><area shape="rect" id="node27" href="../../d7/db3/RCCoderMixerMT_8h.html" title="RCCoderMixerMT.h" alt="" coords="795,379,941,405"/><area shape="rect" id="node29" href="../../d4/dd7/RC7zDecoder_8h.html" title="RC7zDecoder.h" alt="" coords="733,453,856,480"/><area shape="rect" id="node31" href="../../d6/d67/RC7zEncoder_8h.html" title="RC7zEncoder.h" alt="" coords="880,453,1000,480"/><area shape="rect" id="node33" href="../../d9/ded/RC7zOutArchive_8h.html" title="RC7zOutArchive.h" alt="" coords="869,528,1011,555"/><area shape="rect" id="node35" href="../../d0/de1/RC7zUpdate_8h.html" title="RC7zUpdate.h" alt="" coords="883,603,997,629"/></map>
+</div>
+
+<p><a href="../../dc/db3/Threads_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#af06c4a816bb08a4fb5a9f10b5401ebd1">Thread_Construct</a>(p)&nbsp;&nbsp;&nbsp;*(p) = NULL</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#ab3edc1bfefd2bf6915622f8348ac8a5b">Thread_WasCreated</a>(p)&nbsp;&nbsp;&nbsp;(*(p) != NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a9aab58a2032fde0749a62f0346c9b8da">Thread_Close</a>(p)&nbsp;&nbsp;&nbsp;HandlePtr_Close(p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#ad396d7992e2911f93e874a64d7aa8c5c">Thread_Wait</a>(p)&nbsp;&nbsp;&nbsp;Handle_WaitObject(*(p))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a563e8964d90165aacba91d48c5660b6f">THREAD_FUNC_CALL_TYPE</a>&nbsp;&nbsp;&nbsp;MY_STD_CALL</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#ab2f15a34292562b3181768294286af0a">THREAD_FUNC_DECL</a>&nbsp;&nbsp;&nbsp;<a class="el" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a> THREAD_FUNC_CALL_TYPE</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a0dcbeac27920a30bae1e546ea697eb94">Event_Construct</a>(p)&nbsp;&nbsp;&nbsp;*(p) = NULL</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#ac3a227f0ec82ec90b4f24df85b132887">Event_IsCreated</a>(p)&nbsp;&nbsp;&nbsp;(*(p) != NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a92323a977a31f0a6c21653df74f503c2">Event_Close</a>(p)&nbsp;&nbsp;&nbsp;HandlePtr_Close(p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#afaf660b623588b3d691fdc56d725cd32">Event_Wait</a>(p)&nbsp;&nbsp;&nbsp;Handle_WaitObject(*(p))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a63b67aef5cbe33dbfc1d28584dabb47f">Semaphore_Construct</a>(p)&nbsp;&nbsp;&nbsp;(*p) = NULL</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a8807f038a48925de093fbcb8ab3f2495">Semaphore_Close</a>(p)&nbsp;&nbsp;&nbsp;HandlePtr_Close(p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a7a0f8eac6ca540fa25d6a44b46c595c6">Semaphore_Wait</a>(p)&nbsp;&nbsp;&nbsp;Handle_WaitObject(*(p))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a67cf84f9755450ba898acd55f1661d69">CriticalSection_Delete</a>(p)&nbsp;&nbsp;&nbsp;DeleteCriticalSection(p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#addaeaf02649e7ff653df59f52b422835">CriticalSection_Enter</a>(p)&nbsp;&nbsp;&nbsp;EnterCriticalSection(p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a6fcc1ed56a7e4428387ba74697c58ce3">CriticalSection_Leave</a>(p)&nbsp;&nbsp;&nbsp;LeaveCriticalSection(p)</td></tr>
+<tr><td colspan="2"><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef HANDLE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a068a5473befa776f23a97add9512d427">CThread</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef unsigned&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a>(MY_STD_CALL *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">THREAD_FUNC_TYPE</a> )(void *)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef HANDLE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">CManualResetEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef HANDLE&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef CRITICAL_SECTION&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a></td></tr>
+<tr><td colspan="2"><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a8699e434fbe3c169535ab3fef1fa6f3d">HandlePtr_Close</a> (HANDLE *h)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a2bf0ebdd9901830b8e5f90d29b6e63bb">Handle_WaitObject</a> (HANDLE h)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a62e1050845b14c17f4d628ab4c60284f">Thread_Create</a> (<a class="el" href="../../dc/db3/Threads_8h.html#a068a5473befa776f23a97add9512d427">CThread</a> *p, <a class="el" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">THREAD_FUNC_TYPE</a> func, LPVOID param)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a4c894884b1268b8d00d2a96489ba89e3">Event_Set</a> (<a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#adcebff2a2a5098940f037eb6ba9d6873">Event_Reset</a> (<a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a674ddf2bcc8c81d557d9d7c6062d9d6d">ManualResetEvent_Create</a> (<a class="el" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">CManualResetEvent</a> *p, int signaled)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#aea4abce1bd8c949beec4ec4b04a20dc9">ManualResetEvent_CreateNotSignaled</a> (<a class="el" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">CManualResetEvent</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#adb1324b7e6541e5ccb3467a41378390e">AutoResetEvent_Create</a> (<a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> *p, int signaled)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a412a057fdddc508871f7c63812a96aff">AutoResetEvent_CreateNotSignaled</a> (<a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a42fc4ad00c925e060303de04d8ce4fc6">Semaphore_Create</a> (<a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a> *p, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> initCount, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> maxCount)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#ac916408332d8330414a3439610175e0b">Semaphore_ReleaseN</a> (<a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a> *p, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a6d392082486c2dd897b1256a5b5eb8f7">Semaphore_Release1</a> (<a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db3/Threads_8h.html#a1e49081fd33200900841f17035ecb15b">CriticalSection_Init</a> (<a class="el" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a> *p)</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a67cf84f9755450ba898acd55f1661d69"></a><!-- doxytag: member="Threads.h::CriticalSection_Delete" ref="a67cf84f9755450ba898acd55f1661d69" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CriticalSection_Delete</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;DeleteCriticalSection(p)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00060">60</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="addaeaf02649e7ff653df59f52b422835"></a><!-- doxytag: member="Threads.h::CriticalSection_Enter" ref="addaeaf02649e7ff653df59f52b422835" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CriticalSection_Enter</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;EnterCriticalSection(p)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00061">61</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fcc1ed56a7e4428387ba74697c58ce3"></a><!-- doxytag: member="Threads.h::CriticalSection_Leave" ref="a6fcc1ed56a7e4428387ba74697c58ce3" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CriticalSection_Leave</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;LeaveCriticalSection(p)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00062">62</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a92323a977a31f0a6c21653df74f503c2"></a><!-- doxytag: member="Threads.h::Event_Close" ref="a92323a977a31f0a6c21653df74f503c2" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Event_Close</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;HandlePtr_Close(p)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00037">37</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dcbeac27920a30bae1e546ea697eb94"></a><!-- doxytag: member="Threads.h::Event_Construct" ref="a0dcbeac27920a30bae1e546ea697eb94" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Event_Construct</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;*(p) = NULL</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00035">35</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3a227f0ec82ec90b4f24df85b132887"></a><!-- doxytag: member="Threads.h::Event_IsCreated" ref="ac3a227f0ec82ec90b4f24df85b132887" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Event_IsCreated</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(*(p) != NULL)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00036">36</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afaf660b623588b3d691fdc56d725cd32"></a><!-- doxytag: member="Threads.h::Event_Wait" ref="afaf660b623588b3d691fdc56d725cd32" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Event_Wait</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;Handle_WaitObject(*(p))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00038">38</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8807f038a48925de093fbcb8ab3f2495"></a><!-- doxytag: member="Threads.h::Semaphore_Close" ref="a8807f038a48925de093fbcb8ab3f2495" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Semaphore_Close</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;HandlePtr_Close(p)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00050">50</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a63b67aef5cbe33dbfc1d28584dabb47f"></a><!-- doxytag: member="Threads.h::Semaphore_Construct" ref="a63b67aef5cbe33dbfc1d28584dabb47f" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Semaphore_Construct</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(*p) = NULL</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00049">49</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a0f8eac6ca540fa25d6a44b46c595c6"></a><!-- doxytag: member="Threads.h::Semaphore_Wait" ref="a7a0f8eac6ca540fa25d6a44b46c595c6" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Semaphore_Wait</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;Handle_WaitObject(*(p))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00051">51</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9aab58a2032fde0749a62f0346c9b8da"></a><!-- doxytag: member="Threads.h::Thread_Close" ref="a9aab58a2032fde0749a62f0346c9b8da" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Thread_Close</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;HandlePtr_Close(p)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00019">19</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af06c4a816bb08a4fb5a9f10b5401ebd1"></a><!-- doxytag: member="Threads.h::Thread_Construct" ref="af06c4a816bb08a4fb5a9f10b5401ebd1" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Thread_Construct</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;*(p) = NULL</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00017">17</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a563e8964d90165aacba91d48c5660b6f"></a><!-- doxytag: member="Threads.h::THREAD_FUNC_CALL_TYPE" ref="a563e8964d90165aacba91d48c5660b6f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_FUNC_CALL_TYPE&nbsp;&nbsp;&nbsp;MY_STD_CALL</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00023">23</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2f15a34292562b3181768294286af0a"></a><!-- doxytag: member="Threads.h::THREAD_FUNC_DECL" ref="ab2f15a34292562b3181768294286af0a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_FUNC_DECL&nbsp;&nbsp;&nbsp;<a class="el" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a> THREAD_FUNC_CALL_TYPE</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00024">24</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad396d7992e2911f93e874a64d7aa8c5c"></a><!-- doxytag: member="Threads.h::Thread_Wait" ref="ad396d7992e2911f93e874a64d7aa8c5c" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Thread_Wait</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;Handle_WaitObject(*(p))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00020">20</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3edc1bfefd2bf6915622f8348ac8a5b"></a><!-- doxytag: member="Threads.h::Thread_WasCreated" ref="ab3edc1bfefd2bf6915622f8348ac8a5b" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Thread_WasCreated</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(*(p) != NULL)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00018">18</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>类型定义文档</h2>
+<a class="anchor" id="ab7aa6e63ea49ce5799992cfc4b1262cd"></a><!-- doxytag: member="Threads.h::CAutoResetEvent" ref="ab7aa6e63ea49ce5799992cfc4b1262cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a> <a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00032">32</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b3880669408bfbc0974840ee06c8bb6"></a><!-- doxytag: member="Threads.h::CCriticalSection" ref="a3b3880669408bfbc0974840ee06c8bb6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CRITICAL_SECTION <a class="el" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00057">57</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3b664012f3ed6e3e8f05d26cd9df807"></a><!-- doxytag: member="Threads.h::CEvent" ref="ad3b664012f3ed6e3e8f05d26cd9df807" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef HANDLE <a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00030">30</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a577b1156766499bb9817e8304c529263"></a><!-- doxytag: member="Threads.h::CManualResetEvent" ref="a577b1156766499bb9817e8304c529263" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a> <a class="el" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">CManualResetEvent</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00033">33</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a06778ea105c5f99d685edf99dd15db73"></a><!-- doxytag: member="Threads.h::CSemaphore" ref="a06778ea105c5f99d685edf99dd15db73" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef HANDLE <a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00047">47</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a068a5473befa776f23a97add9512d427"></a><!-- doxytag: member="Threads.h::CThread" ref="a068a5473befa776f23a97add9512d427" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef HANDLE <a class="el" href="../../dc/db3/Threads_8h.html#a068a5473befa776f23a97add9512d427">CThread</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00016">16</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af9264da4ca787c227d6cf5a66426032b"></a><!-- doxytag: member="Threads.h::THREAD_FUNC_RET_TYPE" ref="af9264da4ca787c227d6cf5a66426032b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned <a class="el" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00022">22</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3a93631c3c20a2bd167dcb3748ec0c7"></a><!-- doxytag: member="Threads.h::THREAD_FUNC_TYPE" ref="aa3a93631c3c20a2bd167dcb3748ec0c7" args=")(void *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a>( MY_STD_CALL * <a class="el" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">THREAD_FUNC_TYPE</a>)(void *)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/db3/Threads_8h_source.html">Threads.h</a>第<a class="el" href="../../dc/db3/Threads_8h_source.html#l00025">25</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="adb1324b7e6541e5ccb3467a41378390e"></a><!-- doxytag: member="Threads.h::AutoResetEvent_Create" ref="adb1324b7e6541e5ccb3467a41378390e" args="(CAutoResetEvent *p, int signaled)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> AutoResetEvent_Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>signaled</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a412a057fdddc508871f7c63812a96aff"></a><!-- doxytag: member="Threads.h::AutoResetEvent_CreateNotSignaled" ref="a412a057fdddc508871f7c63812a96aff" args="(CAutoResetEvent *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> AutoResetEvent_CreateNotSignaled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e49081fd33200900841f17035ecb15b"></a><!-- doxytag: member="Threads.h::CriticalSection_Init" ref="a1e49081fd33200900841f17035ecb15b" args="(CCriticalSection *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> CriticalSection_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adcebff2a2a5098940f037eb6ba9d6873"></a><!-- doxytag: member="Threads.h::Event_Reset" ref="adcebff2a2a5098940f037eb6ba9d6873" args="(CEvent *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> Event_Reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c894884b1268b8d00d2a96489ba89e3"></a><!-- doxytag: member="Threads.h::Event_Set" ref="a4c894884b1268b8d00d2a96489ba89e3" args="(CEvent *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> Event_Set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2bf0ebdd9901830b8e5f90d29b6e63bb"></a><!-- doxytag: member="Threads.h::Handle_WaitObject" ref="a2bf0ebdd9901830b8e5f90d29b6e63bb" args="(HANDLE h)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> Handle_WaitObject </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&nbsp;</td>
+          <td class="paramname"> <em>h</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8699e434fbe3c169535ab3fef1fa6f3d"></a><!-- doxytag: member="Threads.h::HandlePtr_Close" ref="a8699e434fbe3c169535ab3fef1fa6f3d" args="(HANDLE *h)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> HandlePtr_Close </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE *&nbsp;</td>
+          <td class="paramname"> <em>h</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a674ddf2bcc8c81d557d9d7c6062d9d6d"></a><!-- doxytag: member="Threads.h::ManualResetEvent_Create" ref="a674ddf2bcc8c81d557d9d7c6062d9d6d" args="(CManualResetEvent *p, int signaled)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> ManualResetEvent_Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">CManualResetEvent</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>signaled</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea4abce1bd8c949beec4ec4b04a20dc9"></a><!-- doxytag: member="Threads.h::ManualResetEvent_CreateNotSignaled" ref="aea4abce1bd8c949beec4ec4b04a20dc9" args="(CManualResetEvent *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> ManualResetEvent_CreateNotSignaled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">CManualResetEvent</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42fc4ad00c925e060303de04d8ce4fc6"></a><!-- doxytag: member="Threads.h::Semaphore_Create" ref="a42fc4ad00c925e060303de04d8ce4fc6" args="(CSemaphore *p, uint32_t initCount, uint32_t maxCount)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> Semaphore_Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>initCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>maxCount</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d392082486c2dd897b1256a5b5eb8f7"></a><!-- doxytag: member="Threads.h::Semaphore_Release1" ref="a6d392082486c2dd897b1256a5b5eb8f7" args="(CSemaphore *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> Semaphore_Release1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac916408332d8330414a3439610175e0b"></a><!-- doxytag: member="Threads.h::Semaphore_ReleaseN" ref="ac916408332d8330414a3439610175e0b" args="(CSemaphore *p, uint32_t num)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> Semaphore_ReleaseN </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>num</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62e1050845b14c17f4d628ab4c60284f"></a><!-- doxytag: member="Threads.h::Thread_Create" ref="a62e1050845b14c17f4d628ab4c60284f" args="(CThread *p, THREAD_FUNC_TYPE func, LPVOID param)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> Thread_Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#a068a5473befa776f23a97add9512d427">CThread</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">THREAD_FUNC_TYPE</a>&nbsp;</td>
+          <td class="paramname"> <em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPVOID&nbsp;</td>
+          <td class="paramname"> <em>param</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

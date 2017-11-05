@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCSha1Defs.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_d3ad43f7f4209fed68c37a759e8e675c.html">crypto</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_7634fad44bba84d471a8bebe46d60dd2.html">hash</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCSha1Defs.h</h1><a href="../../df/d9b/RCSha1Defs_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCSha1Defs_h_</span>
+<a name="l00011"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#a953f2bd1443d961dc1b2b12d19f2acfe">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCSha1Defs_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 <span class="comment"></span>
+<a name="l00017"></a>00017 <span class="comment">/** Sha1 常量定义</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a><a class="code" href="../../d0/de7/classRCZip_1_1RCSha1Defs.html">00019</a> <span class="keyword">class </span><a class="code" href="../../d0/de7/classRCZip_1_1RCSha1Defs.html">RCSha1Defs</a>
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021 <span class="keyword">public</span>:
+<a name="l00022"></a>00022     <span class="keyword">enum</span>
+<a name="l00023"></a>00023     {
+<a name="l00024"></a><a class="code" href="../../d0/de7/classRCZip_1_1RCSha1Defs.html#a0fc3ff88f629195b46e53f0bb47019ecad6b007dba12bdc0fdc6ba62015b750d7">00024</a>         kBlockSize = 64,
+<a name="l00025"></a><a class="code" href="../../d0/de7/classRCZip_1_1RCSha1Defs.html#a0fc3ff88f629195b46e53f0bb47019eca3c22ccf5aeb20ab911bdefa10e484bcb">00025</a>         kDigestSize = 20,
+<a name="l00026"></a><a class="code" href="../../d0/de7/classRCZip_1_1RCSha1Defs.html#a0fc3ff88f629195b46e53f0bb47019eca4af6760e7fb4046f5c9dcc29c9dc9c0a">00026</a>         kBlockSizeInWords = (kBlockSize &gt;&gt; 2),
+<a name="l00027"></a><a class="code" href="../../d0/de7/classRCZip_1_1RCSha1Defs.html#a0fc3ff88f629195b46e53f0bb47019ecaf52e14a6ec54efbeb3896eb7ec988117">00027</a>         kDigestSizeInWords = (kDigestSize &gt;&gt; 2)
+<a name="l00028"></a>00028     };
+<a name="l00029"></a>00029 };
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="comment">// define it for speed optimization</span>
+<a name="l00032"></a>00032 <span class="comment">// #define _SHA1_UNROLL</span>
+<a name="l00033"></a>00033 
+<a name="l00034"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a79f92984a79f992312ea5abb54b7c4f9">00034</a> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a79f92984a79f992312ea5abb54b7c4f9">s_kNumW</a> =
+<a name="l00035"></a>00035 <span class="preprocessor">#ifdef _SHA1_UNROLL</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span>                                    16;
+<a name="l00037"></a>00037 <span class="preprocessor">#else</span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span>                                    80;
+<a name="l00039"></a>00039 <span class="preprocessor">#endif</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span>  
+<a name="l00041"></a>00041 
+<a name="l00042"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#ae216d7a612e7f7d3a22bda62c8f0a8de">00042</a> <span class="preprocessor">#define w0(i) (W[(i)] = data[(i)])</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span>
+<a name="l00044"></a>00044 <span class="preprocessor">#ifdef _SHA1_UNROLL</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span><span class="preprocessor">#define w1(i) (W[(i)&amp;15] = rotlFixed(W[((i)-3)&amp;15] ^ W[((i)-8)&amp;15] ^ W[((i)-14)&amp;15] ^ W[((i)-16)&amp;15], 1))</span>
+<a name="l00046"></a>00046 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00047"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#ac55921daeb2e81d6214d028a80e61a05">00047</a> <span class="preprocessor"></span><span class="preprocessor">#define w1(i) (W[(i)] = rotlFixed(W[(i)-3] ^ W[(i)-8] ^ W[(i)-14] ^ W[(i)-16], 1))</span>
+<a name="l00048"></a>00048 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00050"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#a895cf264b1bd506426ebc9e51336241e">00050</a> <span class="preprocessor">#define f1(x,y,z) (z^(x&amp;(y^z)))</span>
+<a name="l00051"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#a5a8cd147d49dfc130047aad8b83ddadf">00051</a> <span class="preprocessor"></span><span class="preprocessor">#define f2(x,y,z) (x^y^z)</span>
+<a name="l00052"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#ae4a6b9a0d304177d9ce0e7488a890bb4">00052</a> <span class="preprocessor"></span><span class="preprocessor">#define f3(x,y,z) ((x&amp;y)|(z&amp;(x|y)))</span>
+<a name="l00053"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#ad91225588c8fe60771183f5a9d653cea">00053</a> <span class="preprocessor"></span><span class="preprocessor">#define f4(x,y,z) (x^y^z)</span>
+<a name="l00054"></a>00054 <span class="preprocessor"></span>
+<a name="l00055"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#ab2dc7fb5a719c7ac1d236d32867f3149">00055</a> <span class="preprocessor">#define RK1(a,b,c,d,e,i, f, w, k) e += f(b,c,d) + w(i) + k + rotlFixed(a,5); b = rotlFixed(b,30);</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span>
+<a name="l00057"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#afacf7547038a69338bec88bbf0b0dc9e">00057</a> <span class="preprocessor">#define R0(a,b,c,d,e,i) RK1(a,b,c,d,e,i, f1, w0, 0x5A827999)</span>
+<a name="l00058"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#a3aeb03acb89d3bc810ef05f990859495">00058</a> <span class="preprocessor"></span><span class="preprocessor">#define R1(a,b,c,d,e,i) RK1(a,b,c,d,e,i, f1, w1, 0x5A827999)</span>
+<a name="l00059"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#a4c6fcf782639b34600e15754757e5ebf">00059</a> <span class="preprocessor"></span><span class="preprocessor">#define R2(a,b,c,d,e,i) RK1(a,b,c,d,e,i, f2, w1, 0x6ED9EBA1)</span>
+<a name="l00060"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#a04c34826fb219c49d61d4a55b791485c">00060</a> <span class="preprocessor"></span><span class="preprocessor">#define R3(a,b,c,d,e,i) RK1(a,b,c,d,e,i, f3, w1, 0x8F1BBCDC)</span>
+<a name="l00061"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#a49eca87c6675d47e01502af27ca7c4ea">00061</a> <span class="preprocessor"></span><span class="preprocessor">#define R4(a,b,c,d,e,i) RK1(a,b,c,d,e,i, f4, w1, 0xCA62C1D6)</span>
+<a name="l00062"></a>00062 <span class="preprocessor"></span>
+<a name="l00063"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#ac51d7558921d7ca5050be28ceece80cc">00063</a> <span class="preprocessor">#define RX_1_4(rx1, rx4, i) rx1(a,b,c,d,e,i); rx4(e,a,b,c,d,i+1); rx4(d,e,a,b,c,i+2); rx4(c,d,e,a,b,i+3); rx4(b,c,d,e,a,i+4);</span>
+<a name="l00064"></a><a class="code" href="../../df/d9b/RCSha1Defs_8h.html#ae80ade247bba9871f9d4afba45e70057">00064</a> <span class="preprocessor"></span><span class="preprocessor">#define RX_5(rx, i) RX_1_4(rx, rx, i);</span>
+<a name="l00065"></a>00065 <span class="preprocessor"></span>
+<a name="l00066"></a>00066 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 <span class="preprocessor">#endif //__RCSha1Defs_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

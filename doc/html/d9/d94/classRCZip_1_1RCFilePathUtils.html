@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCFilePathUtils类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html">RCFilePathUtils</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCFilePathUtils类参考</h1><!-- doxytag: class="RCZip::RCFilePathUtils" -->
+<p><code>#include &lt;<a class="el" href="../../d0/dec/RCFilePathUtils_8h_source.html">RCFilePathUtils.h</a>&gt;</code></p>
+
+<p><a href="../../dd/d03/classRCZip_1_1RCFilePathUtils-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#aeb99dba527022cab1ce0710f01561bf5">IsExists</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#a57e9ba54115d3d0d3731632d5284dcdc">IsDirectory</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#acfdc35f5b4cf96f817fa6e45ccc70c51">IsEmpty</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#abbb4bf2636661dd6abcef5ea0437ab9c">FileSize</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;fileName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#acbda0d039aa28549e25666b5cca216ab">RemoveAll</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#ac201d083bf643341f0ef6cbd4f5a5a20">Rename</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;from, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;to)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#abc7d21aefe2395029306b40ec7ac6951">CopyPathFile</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;from, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;to)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#ad609a6f73071788cd6b54f9fa3321625">CreateDirectories</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#a8575680cba0ac44c0cae89eb68ec2bbe">Extension</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#a969c8219e3571e5402635794308f51ed">BaseName</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#aea91977084fba794965d62cb977a5de9">ChangeExtension</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;path, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;newExtension)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classRCZip_1_1RCFilePathUtils.html#a04efae2c4d0e9144768647f66797a7d0">GetAllSons</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;path, std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &gt; &amp;sons)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d0/dec/RCFilePathUtils_8h_source.html">RCFilePathUtils.h</a>第<a class="el" href="../../d0/dec/RCFilePathUtils_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a969c8219e3571e5402635794308f51ed"></a><!-- doxytag: member="RCZip::RCFilePathUtils::BaseName" ref="a969c8219e3571e5402635794308f51ed" args="(const RCFilePath &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RCFilePathUtils::BaseName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件名，去掉扩展名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件的文件名部分，不含扩展名 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aea91977084fba794965d62cb977a5de9"></a><!-- doxytag: member="RCZip::RCFilePathUtils::ChangeExtension" ref="aea91977084fba794965d62cb977a5de9" args="(const RCFilePath &amp;path, const RCString &amp;newExtension)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RCFilePathUtils::ChangeExtension </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>newExtension</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>修改扩展名，字符串操作，不对真实文件操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>newExtension</em>&nbsp;</td><td>新的扩展名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回修改扩展名后的新路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abc7d21aefe2395029306b40ec7ac6951"></a><!-- doxytag: member="RCZip::RCFilePathUtils::CopyPathFile" ref="abc7d21aefe2395029306b40ec7ac6951" args="(const RCFilePath &amp;from, const RCFilePath &amp;to)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFilePathUtils::CopyPathFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>to</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>复制文件或者目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>from</em>&nbsp;</td><td>源文件路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>to</em>&nbsp;</td><td>源文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad609a6f73071788cd6b54f9fa3321625"></a><!-- doxytag: member="RCZip::RCFilePathUtils::CreateDirectories" ref="ad609a6f73071788cd6b54f9fa3321625" args="(const RCFilePath &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFilePathUtils::CreateDirectories </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建目录，支持多级目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>目录名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8575680cba0ac44c0cae89eb68ec2bbe"></a><!-- doxytag: member="RCZip::RCFilePathUtils::Extension" ref="a8575680cba0ac44c0cae89eb68ec2bbe" args="(const RCFilePath &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RCFilePathUtils::Extension </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件的扩展名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件的扩展名 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abbb4bf2636661dd6abcef5ea0437ab9c"></a><!-- doxytag: member="RCZip::RCFilePathUtils::FileSize" ref="abbb4bf2636661dd6abcef5ea0437ab9c" args="(const RCFilePath &amp;fileName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCFilePathUtils::FileSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回文件大小，若文件不存在，返回 0 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a04efae2c4d0e9144768647f66797a7d0"></a><!-- doxytag: member="RCZip::RCFilePathUtils::GetAllSons" ref="a04efae2c4d0e9144768647f66797a7d0" args="(const RCFilePath &amp;path, std::vector&lt; RCString &gt; &amp;sons)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCFilePathUtils::GetAllSons </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>sons</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取所有的子对象 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>文件路径 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>sons</em>&nbsp;</td><td>当前目录中，所有一层的文件路径和文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a57e9ba54115d3d0d3731632d5284dcdc"></a><!-- doxytag: member="RCZip::RCFilePathUtils::IsDirectory" ref="a57e9ba54115d3d0d3731632d5284dcdc" args="(const RCFilePath &amp;p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFilePathUtils::IsDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>判断是否为目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果为目录返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acfdc35f5b4cf96f817fa6e45ccc70c51"></a><!-- doxytag: member="RCZip::RCFilePathUtils::IsEmpty" ref="acfdc35f5b4cf96f817fa6e45ccc70c51" args="(const RCFilePath &amp;p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFilePathUtils::IsEmpty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>判断是否为空，如果是目录，则目录中没有内容返回true，如果是文件，则当文件大小为0返回true </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果为空返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb99dba527022cab1ce0710f01561bf5"></a><!-- doxytag: member="RCZip::RCFilePathUtils::IsExists" ref="aeb99dba527022cab1ce0710f01561bf5" args="(const RCFilePath &amp;p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFilePathUtils::IsExists </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>判断路径是否存在 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>p</em>&nbsp;</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果存在返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acbda0d039aa28549e25666b5cca216ab"></a><!-- doxytag: member="RCZip::RCFilePathUtils::RemoveAll" ref="acbda0d039aa28549e25666b5cca216ab" args="(const RCFilePath &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCFilePathUtils::RemoveAll </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>删除目录，及子目录和所有文件。 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>路径名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回删除的文件数量 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac201d083bf643341f0ef6cbd4f5a5a20"></a><!-- doxytag: member="RCZip::RCFilePathUtils::Rename" ref="ac201d083bf643341f0ef6cbd4f5a5a20" args="(const RCFilePath &amp;from, const RCFilePath &amp;to)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFilePathUtils::Rename </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a888415eed9754309f86db694338380e2">RCFilePath</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>to</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>重命名目录或者文件 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>from</em>&nbsp;</td><td>需要重命名的文件 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>to</em>&nbsp;</td><td>重名为新文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d0/dec/RCFilePathUtils_8h_source.html">RCFilePathUtils.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

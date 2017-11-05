@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCChmIn类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html">RCChmIn</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCChmIn类参考</h1><!-- doxytag: class="RCZip::RCChmIn" -->
+<p><code>#include &lt;<a class="el" href="../../db/d65/RCChmIn_8h_source.html">RCChmIn.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCChmIn合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d1/d71/classRCZip_1_1RCChmIn__coll__graph.png" border="0" usemap="#RCZip_1_1RCChmIn_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCChmIn_coll__map" id="RCZip_1_1RCChmIn_coll__map">
+<area shape="rect" id="node2" href="../../d8/de1/classRCZip_1_1RCInBuffer.html" title="{RCZip::RCInBuffer\n|&#45; m_buffer\l&#45; m_bufferLimit\l&#45; m_bufferBase\l&#45; m_spStream\l&#45; m_processedSize\l&#45; m_bufferSize\l&#45; m_wasFinished\l|+ RCInBuffer()\l+ ~RCInBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetStream()\l+ ReleaseStream()\l+ ReadByte()\l+ ReadByte()\l+ ReadBytes()\l+ GetProcessedSize()\l+ WasFinished()\l&#45; ReadBlock()\l&#45; ReadBlock2()\l}" alt="" coords="83,699,245,1055"/><area shape="rect" id="node4" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,447,181,524"/><area shape="rect" id="node6" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="205,337,459,634"/><area shape="rect" id="node8" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="229,179,435,271"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="259,6,405,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../de/d60/classRCZip_1_1RCChmIn-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#afe27450837ee2a814c86715fb877dcd5">OpenChm</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, RCChmDatabase &amp;database)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#adffdef29af9608150c2cc43e37077892">OpenHelp2</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, RCChmDatabase &amp;database)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#aae8433f62297c0dd057e44a5880c1636">OpenHighLevel</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, RCChmFilesDatabase &amp;database)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a265316ed2f72f492c55686b6d97e3775">Open2</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *searchHeaderSizeLimit, RCChmFilesDatabase &amp;database)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#af29c97167526568816123c923dccd750">Open</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *searchHeaderSizeLimit, RCChmFilesDatabase &amp;database)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a09d30bbdb9456e5e24e9403ba3bccade">ReadByte</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#ad054b6c6b9cb8226a8f717f79da7f1e1">ReadBytes</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a8a38625c29d0a4bd93dd709c0a5f2a6d">Skip</a> (size_t size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#ac25a0f8e7c4d268568c63dd0c4bfdcce">ReadUInt16</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a9dc80075ce72cb943ba02dfa23a8dd65">ReadUInt32</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#aa418b3e97cebee5005d9602c751d5dee">ReadUInt64</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#ac46656fc419998bc72038619dc809ef5">ReadEncInt</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#acd23d9e96d582d2930a4a3dd114b283d">ReadString</a> (int size, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a> &amp;s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#aaf06e33263db5c152405a5c6c99c2352">ReadUString</a> (int size, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#adbc2aabec40126f446c5e60e3ab1d15a">ReadGUID</a> (<a class="el" href="../../d6/da4/RCGuidDefs_8h.html#ab41ff67e5f188b6298fb1b09e907986d">RC_GUID</a> &amp;g)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a0290a53c9eb6fb5949c8dcaea5827171">ReadChunk</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> pos, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#ae88a6a0614f31beaaa3accb5e2c8200b">ReadDirEntry</a> (RCChmDatabase &amp;database)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a56c6d152bc36b9f612b26f9d5362a809">DecompressStream</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, const RCChmDatabase &amp;database, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a> &amp;name)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a235d970f886b40d07a89ccc6aa21759a">m_startPosition</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html">RCInBuffer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#ac07673532fbac24cfd6be4d6fc6f49d5">m_inBuffer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a4006c38b31683e5a4828f1a9614a822d">m_chunkSize</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../db/d65/RCChmIn_8h_source.html">RCChmIn.h</a>第<a class="el" href="../../db/d65/RCChmIn_8h_source.html#l00035">35</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a56c6d152bc36b9f612b26f9d5362a809"></a><!-- doxytag: member="RCZip::RCChmIn::DecompressStream" ref="a56c6d152bc36b9f612b26f9d5362a809" args="(IInStream *inStream, const RCChmDatabase &amp;database, const RCStringA &amp;name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::DecompressStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCChmDatabase &amp;&nbsp;</td>
+          <td class="paramname"> <em>database</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>基本数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>名字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af29c97167526568816123c923dccd750"></a><!-- doxytag: member="RCZip::RCChmIn::Open" ref="af29c97167526568816123c923dccd750" args="(IInStream *inStream, const uint64_t *searchHeaderSizeLimit, RCChmFilesDatabase &amp;database)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::Open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>searchHeaderSizeLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCChmFilesDatabase &amp;&nbsp;</td>
+          <td class="paramname"> <em>database</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>searchHeaderSizeLimit</em>&nbsp;</td><td>查找头部的最大偏移位置 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>输出chm基本数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a265316ed2f72f492c55686b6d97e3775"></a><!-- doxytag: member="RCZip::RCChmIn::Open2" ref="a265316ed2f72f492c55686b6d97e3775" args="(IInStream *inStream, const uint64_t *searchHeaderSizeLimit, RCChmFilesDatabase &amp;database)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::Open2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>searchHeaderSizeLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCChmFilesDatabase &amp;&nbsp;</td>
+          <td class="paramname"> <em>database</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>searchHeaderSizeLimit</em>&nbsp;</td><td>查找头部的最大偏移位置 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>输出chm基本数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afe27450837ee2a814c86715fb877dcd5"></a><!-- doxytag: member="RCZip::RCChmIn::OpenChm" ref="afe27450837ee2a814c86715fb877dcd5" args="(IInStream *inStream, RCChmDatabase &amp;database)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::OpenChm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCChmDatabase &amp;&nbsp;</td>
+          <td class="paramname"> <em>database</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开chm文件 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>输出chm基本数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adffdef29af9608150c2cc43e37077892"></a><!-- doxytag: member="RCZip::RCChmIn::OpenHelp2" ref="adffdef29af9608150c2cc43e37077892" args="(IInStream *inStream, RCChmDatabase &amp;database)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::OpenHelp2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCChmDatabase &amp;&nbsp;</td>
+          <td class="paramname"> <em>database</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开帮助文件 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>输出chm基本数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aae8433f62297c0dd057e44a5880c1636"></a><!-- doxytag: member="RCZip::RCChmIn::OpenHighLevel" ref="aae8433f62297c0dd057e44a5880c1636" args="(IInStream *inStream, RCChmFilesDatabase &amp;database)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::OpenHighLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCChmFilesDatabase &amp;&nbsp;</td>
+          <td class="paramname"> <em>database</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开高级 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>输出chm基本数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09d30bbdb9456e5e24e9403ba3bccade"></a><!-- doxytag: member="RCZip::RCChmIn::ReadByte" ref="a09d30bbdb9456e5e24e9403ba3bccade" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> RCZip::RCChmIn::ReadByte </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读一个字节 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回一个字节 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad054b6c6b9cb8226a8f717f79da7f1e1"></a><!-- doxytag: member="RCZip::RCChmIn::ReadBytes" ref="ad054b6c6b9cb8226a8f717f79da7f1e1" args="(byte_t *data, uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCChmIn::ReadBytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>返回读取的内容 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0290a53c9eb6fb5949c8dcaea5827171"></a><!-- doxytag: member="RCZip::RCChmIn::ReadChunk" ref="a0290a53c9eb6fb5949c8dcaea5827171" args="(IInStream *inStream, uint64_t pos, uint64_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::ReadChunk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读快信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>pos</em>&nbsp;</td><td>位置 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae88a6a0614f31beaaa3accb5e2c8200b"></a><!-- doxytag: member="RCZip::RCChmIn::ReadDirEntry" ref="ae88a6a0614f31beaaa3accb5e2c8200b" args="(RCChmDatabase &amp;database)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCChmIn::ReadDirEntry </td>
+          <td>(</td>
+          <td class="paramtype">RCChmDatabase &amp;&nbsp;</td>
+          <td class="paramname"> <em>database</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读目录入口 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>返回chm基本数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac46656fc419998bc72038619dc809ef5"></a><!-- doxytag: member="RCZip::RCChmIn::ReadEncInt" ref="ac46656fc419998bc72038619dc809ef5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCChmIn::ReadEncInt </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读加密的八个字节 return 返回64位无符号整型 </p>
+
+</div>
+</div>
+<a class="anchor" id="adbc2aabec40126f446c5e60e3ab1d15a"></a><!-- doxytag: member="RCZip::RCChmIn::ReadGUID" ref="adbc2aabec40126f446c5e60e3ab1d15a" args="(RC_GUID &amp;g)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCChmIn::ReadGUID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/da4/RCGuidDefs_8h.html#ab41ff67e5f188b6298fb1b09e907986d">RC_GUID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>g</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读GUID </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>g</em>&nbsp;</td><td>返回GUDI </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acd23d9e96d582d2930a4a3dd114b283d"></a><!-- doxytag: member="RCZip::RCChmIn::ReadString" ref="acd23d9e96d582d2930a4a3dd114b283d" args="(int size, RCStringA &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCChmIn::ReadString </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读字符串 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>读的大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>s</em>&nbsp;</td><td>返回字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac25a0f8e7c4d268568c63dd0c4bfdcce"></a><!-- doxytag: member="RCZip::RCChmIn::ReadUInt16" ref="ac25a0f8e7c4d268568c63dd0c4bfdcce" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> RCZip::RCChmIn::ReadUInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读两个字节转成16位无符号整型 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回16位无符号整型 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9dc80075ce72cb943ba02dfa23a8dd65"></a><!-- doxytag: member="RCZip::RCChmIn::ReadUInt32" ref="a9dc80075ce72cb943ba02dfa23a8dd65" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCChmIn::ReadUInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读四个字节转成32位无符号整型 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回32位无符号整型 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa418b3e97cebee5005d9602c751d5dee"></a><!-- doxytag: member="RCZip::RCChmIn::ReadUInt64" ref="aa418b3e97cebee5005d9602c751d5dee" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCChmIn::ReadUInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读八个字节转成64位无符号整型 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回64位无符号整型 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf06e33263db5c152405a5c6c99c2352"></a><!-- doxytag: member="RCZip::RCChmIn::ReadUString" ref="aaf06e33263db5c152405a5c6c99c2352" args="(int size, RCString &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCChmIn::ReadUString </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读unicode字符串 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>读的大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>s</em>&nbsp;</td><td>返回unicode字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8a38625c29d0a4bd93dd709c0a5f2a6d"></a><!-- doxytag: member="RCZip::RCChmIn::Skip" ref="a8a38625c29d0a4bd93dd709c0a5f2a6d" args="(size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCChmIn::Skip </td>
+          <td>(</td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>跳过 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>跳过的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a4006c38b31683e5a4828f1a9614a822d"></a><!-- doxytag: member="RCZip::RCChmIn::m_chunkSize" ref="a4006c38b31683e5a4828f1a9614a822d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a4006c38b31683e5a4828f1a9614a822d">RCZip::RCChmIn::m_chunkSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>块大小 </p>
+
+<p>在文件<a class="el" href="../../db/d65/RCChmIn_8h_source.html">RCChmIn.h</a>第<a class="el" href="../../db/d65/RCChmIn_8h_source.html#l00165">165</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac07673532fbac24cfd6be4d6fc6f49d5"></a><!-- doxytag: member="RCZip::RCChmIn::m_inBuffer" ref="ac07673532fbac24cfd6be4d6fc6f49d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html">RCInBuffer</a> <a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#ac07673532fbac24cfd6be4d6fc6f49d5">RCZip::RCChmIn::m_inBuffer</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入缓冲区 </p>
+
+<p>在文件<a class="el" href="../../db/d65/RCChmIn_8h_source.html">RCChmIn.h</a>第<a class="el" href="../../db/d65/RCChmIn_8h_source.html#l00161">161</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a235d970f886b40d07a89ccc6aa21759a"></a><!-- doxytag: member="RCZip::RCChmIn::m_startPosition" ref="a235d970f886b40d07a89ccc6aa21759a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d0/db6/classRCZip_1_1RCChmIn.html#a235d970f886b40d07a89ccc6aa21759a">RCZip::RCChmIn::m_startPosition</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>起始位置 </p>
+
+<p>在文件<a class="el" href="../../db/d65/RCChmIn_8h_source.html">RCChmIn.h</a>第<a class="el" href="../../db/d65/RCChmIn_8h_source.html#l00157">157</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../db/d65/RCChmIn_8h_source.html">RCChmIn.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

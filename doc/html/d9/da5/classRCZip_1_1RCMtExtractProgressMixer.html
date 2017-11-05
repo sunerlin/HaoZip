@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCMtExtractProgressMixer类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html">RCMtExtractProgressMixer</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCMtExtractProgressMixer类参考</h1><!-- doxytag: class="RCZip::RCMtExtractProgressMixer" --><!-- doxytag: inherits="RCZip::RCNonCopyable" -->
+<p><code>#include &lt;<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCMtExtractProgressMixer</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/dd8/classRCZip_1_1RCMtExtractProgressMixer__inherit__graph.png" border="0" usemap="#RCZip_1_1RCMtExtractProgressMixer_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCMtExtractProgressMixer_inherit__map" id="RCZip_1_1RCMtExtractProgressMixer_inherit__map">
+<area shape="rect" id="node2" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="40,5,216,83"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCMtExtractProgressMixer合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d7/d6e/classRCZip_1_1RCMtExtractProgressMixer__coll__graph.png" border="0" usemap="#RCZip_1_1RCMtExtractProgressMixer_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCMtExtractProgressMixer_coll__map" id="RCZip_1_1RCMtExtractProgressMixer_coll__map">
+<area shape="rect" id="node2" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node10" href="../../d6/d3c/classRCZip_1_1RCMutex.html" title="{RCZip::RCMutex\n|&#45; m_impl\l|+ RCMutex()\l+ ~RCMutex()\l+ Lock()\l+ TryLock()\l+ UnLock()\l}" alt="" coords="29,339,157,475"/><area shape="rect" id="node17" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="152,179,317,315"/><area shape="rect" id="node4" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ICompressProgressInfo \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="468,499,737,797"/><area shape="rect" id="node13" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html" title="{RCZip::RCMtLocalProgress\n|&#45; m_progress\l&#45; m_ratioProgress\l&#45; m_spMtRatioProgress\l&#45; m_inSizeIsMain\l&#45; m_progressOffset\l&#45; m_inSize\l&#45; m_outSize\l&#45; m_sendRatio\l&#45; m_sendMtRatio\l&#45; m_sendProgress\l&#45; m_curIndex\l|+ RCMtLocalProgress()\l+ ~RCMtLocalProgress()\l+ Init()\l+ SetCur()\l+ SetIndex()\l+ GetProgressOffset()\l+ GetInSize()\l+ GetOutSize()\l+ IsSendRatio()\l+ IsSendProgress()\l+ SetProgressOffset()\l+ SetInSize()\l+ SetOutSize()\l+ SetSendRatio()\l+ SetSendMtRatio()\l+ SetSendProgress()\l+ SetRatioInfo()\l}" alt="" coords="505,861,700,1320"/><area shape="rect" id="node6" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html" title="{RCZip::ICompressProgressInfo\n||+ SetRatioInfo()\l# ~ICompressProgressInfo()\l}" alt="" coords="492,201,713,293"/><area shape="rect" id="node15" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressProgressInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="97,587,444,709"/><area shape="rect" id="node8" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="831,6,977,127"/><area shape="rect" id="node24" href="../../dd/dd0/classRCZip_1_1IMtCompressProgressInfo.html" title="{RCZip::IMtCompressProgressInfo\n||+ SetRatioInfo()\l# ~IMtCompressProgressInfo()\l}" alt="" coords="785,201,1023,293"/><area shape="rect" id="node29" href="../../d6/d33/classRCZip_1_1IProgress.html" title="{RCZip::IProgress\n||+ SetTotal()\l+ SetCompleted()\l# ~IProgress()\l}" alt="" coords="1057,193,1199,300"/><area shape="rect" id="node22" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IMtCompressProgressInfo \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="761,499,1047,797"/><area shape="rect" id="node27" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IProgress \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="1071,499,1249,797"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../dc/d80/classRCZip_1_1RCMtExtractProgressMixer-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a7868c43e2328357bd0892f6a8c4301af">RCMtExtractProgressMixer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#ae1be6bf7a88f03ac762295511595c474">~RCMtExtractProgressMixer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a236ca5f205ca6c494db954c31d9f0f52">Init</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> numItems, <a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html">RCMtLocalProgress</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#af05012e4cb0da92aa3e9541e9dd60e7d">Reinit</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a1d185c293c2e2261beb8fb89fa807583">SetRatioInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSize, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a0ee3f76c6f54254ff4e35816882ce04e">SetInSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a8f73edd5640577710dc37afd3398c397">SetOutSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a6d3c12d3248588067decd9f83dbd737c">SetCur</a> ()</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html">RCMtLocalProgress</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a48821a2df2c930db433d121e4ec0687e">m_progressSpec</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressProgressInfoPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#ab57ffe94b4e6b142173fbe89615f87d6">m_progress</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a8fd5265cc998ea0868963300cc9334ba">m_inSizes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a93b050a20e6b8d858bfecfe05ee6785f">m_outSizes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a22d2ae416068a0129b1870e48378b63a">m_totalInSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a302405179a742a3e95f7e48eae35274c">m_totalOutSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d3c/classRCZip_1_1RCMutex.html">RCMutex</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#aa0b024cd8afbf4a87386ce5fa87f1c97">m_lock</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00022">22</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a7868c43e2328357bd0892f6a8c4301af"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::RCMtExtractProgressMixer" ref="a7868c43e2328357bd0892f6a8c4301af" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCMtExtractProgressMixer::RCMtExtractProgressMixer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1be6bf7a88f03ac762295511595c474"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::~RCMtExtractProgressMixer" ref="ae1be6bf7a88f03ac762295511595c474" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCMtExtractProgressMixer::~RCMtExtractProgressMixer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a236ca5f205ca6c494db954c31d9f0f52"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::Init" ref="a236ca5f205ca6c494db954c31d9f0f52" args="(uint32_t numItems, RCMtLocalProgress *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtExtractProgressMixer::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>numItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html">RCMtLocalProgress</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>numItems</em>&nbsp;</td><td>进度项目个数 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af05012e4cb0da92aa3e9541e9dd60e7d"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::Reinit" ref="af05012e4cb0da92aa3e9541e9dd60e7d" args="(uint32_t index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtExtractProgressMixer::Reinit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>对进度项重新初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>进度项序号 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d3c12d3248588067decd9f83dbd737c"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::SetCur" ref="a6d3c12d3248588067decd9f83dbd737c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCMtExtractProgressMixer::SetCur </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>以当前数据回调进度 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败则返回错误码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ee3f76c6f54254ff4e35816882ce04e"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::SetInSize" ref="a0ee3f76c6f54254ff4e35816882ce04e" args="(uint64_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtExtractProgressMixer::SetInSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输入数据大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>输入数据大小值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f73edd5640577710dc37afd3398c397"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::SetOutSize" ref="a8f73edd5640577710dc37afd3398c397" args="(uint64_t value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCMtExtractProgressMixer::SetOutSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输出数据大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>输出数据大小值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d185c293c2e2261beb8fb89fa807583"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::SetRatioInfo" ref="a1d185c293c2e2261beb8fb89fa807583" args="(uint32_t index, uint64_t inSize, uint64_t outSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCMtExtractProgressMixer::SetRatioInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>outSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>进度项序号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败则返回错误码 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a8fd5265cc998ea0868963300cc9334ba"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::m_inSizes" ref="a8fd5265cc998ea0868963300cc9334ba" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&gt; <a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a8fd5265cc998ea0868963300cc9334ba">RCZip::RCMtExtractProgressMixer::m_inSizes</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入数据大小列表 </p>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00083">83</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0b024cd8afbf4a87386ce5fa87f1c97"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::m_lock" ref="aa0b024cd8afbf4a87386ce5fa87f1c97" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d3c/classRCZip_1_1RCMutex.html">RCMutex</a> <a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#aa0b024cd8afbf4a87386ce5fa87f1c97">RCZip::RCMtExtractProgressMixer::m_lock</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>多线程同步锁 </p>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00099">99</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a93b050a20e6b8d858bfecfe05ee6785f"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::m_outSizes" ref="a93b050a20e6b8d858bfecfe05ee6785f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&gt; <a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a93b050a20e6b8d858bfecfe05ee6785f">RCZip::RCMtExtractProgressMixer::m_outSizes</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出数据大小列表 </p>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00087">87</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab57ffe94b4e6b142173fbe89615f87d6"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::m_progress" ref="ab57ffe94b4e6b142173fbe89615f87d6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressProgressInfoPtr</a> <a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#ab57ffe94b4e6b142173fbe89615f87d6">RCZip::RCMtExtractProgressMixer::m_progress</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压进度接口 </p>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a48821a2df2c930db433d121e4ec0687e"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::m_progressSpec" ref="a48821a2df2c930db433d121e4ec0687e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html">RCMtLocalProgress</a>* <a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a48821a2df2c930db433d121e4ec0687e">RCZip::RCMtExtractProgressMixer::m_progressSpec</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压进度管理接口 </p>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00075">75</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a22d2ae416068a0129b1870e48378b63a"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::m_totalInSize" ref="a22d2ae416068a0129b1870e48378b63a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a22d2ae416068a0129b1870e48378b63a">RCZip::RCMtExtractProgressMixer::m_totalInSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入数据总大小 </p>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00091">91</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a302405179a742a3e95f7e48eae35274c"></a><!-- doxytag: member="RCZip::RCMtExtractProgressMixer::m_totalOutSize" ref="a302405179a742a3e95f7e48eae35274c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d9/da5/classRCZip_1_1RCMtExtractProgressMixer.html#a302405179a742a3e95f7e48eae35274c">RCZip::RCMtExtractProgressMixer::m_totalOutSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输出数据总大小 </p>
+
+<p>在文件<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a>第<a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html#l00095">95</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d7/dde/RCMtExtractProgressMixer_8h_source.html">RCMtExtractProgressMixer.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

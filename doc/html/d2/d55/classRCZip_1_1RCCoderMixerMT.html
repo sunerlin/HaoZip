@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCCoderMixerMT类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html">RCCoderMixerMT</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCCoderMixerMT类参考</h1><!-- doxytag: class="RCZip::RCCoderMixerMT" --><!-- doxytag: inherits="IUnknownImpl&lt; ICompressCoder2 &gt;,RCZip::RCCoderMixer" -->
+<p><code>#include &lt;<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCCoderMixerMT</div>
+<div class="dynsection">
+<div class="center"><img src="../../df/ddc/classRCZip_1_1RCCoderMixerMT__inherit__graph.png" border="0" usemap="#RCZip_1_1RCCoderMixerMT_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCCoderMixerMT_inherit__map" id="RCZip_1_1RCCoderMixerMT_inherit__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressCoder2 \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="36,361,351,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html" title="{RCZip::ICompressCoder2\n||+ Code()\l# ~ICompressCoder2()\l}" alt="" coords="200,198,387,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="220,6,367,127"/><area shape="rect" id="node12" href="../../d2/ded/classRCZip_1_1RCCoderMixer.html" title="{RCZip::RCCoderMixer\n||+ SetBindInfo()\l+ ReInit()\l+ SetCoderInfo()\l# ~RCCoderMixer()\l}" alt="" coords="375,361,537,482"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCCoderMixerMT合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../df/db1/classRCZip_1_1RCCoderMixerMT__coll__graph.png" border="0" usemap="#RCZip_1_1RCCoderMixerMT_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCCoderMixerMT_coll__map" id="RCZip_1_1RCCoderMixerMT_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressCoder2 \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="5,417,320,538"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="23,179,188,315"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="17,28,193,105"/><area shape="rect" id="node8" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html" title="{RCZip::ICompressCoder2\n||+ Code()\l# ~ICompressCoder2()\l}" alt="" coords="212,201,399,293"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="232,6,379,127"/><area shape="rect" id="node12" href="../../d2/ded/classRCZip_1_1RCCoderMixer.html" title="{RCZip::RCCoderMixer\n||+ SetBindInfo()\l+ ReInit()\l+ SetCoderInfo()\l# ~RCCoderMixer()\l}" alt="" coords="344,417,507,538"/><area shape="rect" id="node14" href="../../d2/d6b/structRCZip_1_1RCCoderMixserBindInfo.html" title="{RCZip::RCCoderMixserBindInfo\n|+ m_coders\l+ m_bindPairs\l+ m_inStreams\l+ m_outStreams\l|+ Clear()\l+ GetNumStreams()\l+ FindBinderForInStream()\l+ FindBinderForOutStream()\l+ GetCoderInStreamIndex()\l+ GetCoderOutStreamIndex()\l+ FindInStream()\l+ FindOutStream()\l}" alt="" coords="531,365,757,589"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../da/dfb/classRCZip_1_1RCCoderMixerMT-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a54a451d1b877f59f3806ebc0f4c8f7cd">RCCoderMixerMT</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#ac3bf4cef9a3b76463e17192a249a9f4a">~RCCoderMixerMT</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a3f04ab108f1e8be90658e3a6de622997">SetBindInfo</a> (const <a class="el" href="../../d2/d6b/structRCZip_1_1RCCoderMixserBindInfo.html">RCCoderMixserBindInfo</a> &amp;bindInfo)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a0b08cfce488115fd74e2adc9731a5b65">AddCoder</a> (<a class="el" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html">ICompressCoder</a> *coder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#ae4e5f77574e35ebe2f88b13ca29673f3">AddCoder2</a> (<a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html">ICompressCoder2</a> *coder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#ac9f3aeba0fed0dcb6ff59766a72c6b56">SetProgressCoderIndex</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> coderIndex)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a2b914508098329d7f985617584c759f9">ReInit</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a2e46c60f9e0adf8564dd5e587ed1418a">SetCoderInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> coderIndex, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> **inSizes, const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> **outSizes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a73d6d5f04cdb2fd86e6caa32186cecd1">GetWriteProcessedSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> binderIndex) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#aaa791285f950a7d1cc6fa34031461110">Code</a> (const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a9e6c5a094d58b0a224637af59e597450">in_stream_data</a> &gt; &amp;inStreams, const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a57a71ae2505f0241a9830ebb6c855727">out_stream_data</a> &gt; &amp;outStreams, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a647720ebc058f1920fdcc40cee080ded">RCCoderMixerCoderPtr</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7856d8bd311664f61f1f4f40edfb16ee">m_coders</a></td></tr>
+<tr><td colspan="2"><h2>私有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="../../d4/d44/classRCZip_1_1RCStreamBinder.html">RCStreamBinder</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7d8f9ee2cbbae3cefdc1f021c673e106">RCStreamBinderPtr</a></td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#ad3997b3258f00d4e6fd242a3b8e8e7dc">AddCoderCommon</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#aeb8f9d7aa463c9422ecbf131e4bbc890">Init</a> (const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a9e6c5a094d58b0a224637af59e597450">in_stream_data</a> &gt; &amp;inStreams, const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a57a71ae2505f0241a9830ebb6c855727">out_stream_data</a> &gt; &amp;outStreams)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a89df2ea9b9ca1313b84eecbd95fbda6c">ReturnIfError</a> (<a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> code)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d6b/structRCZip_1_1RCCoderMixserBindInfo.html">RCCoderMixserBindInfo</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a656163c4ea8e30b2fda933679a3616f0">m_bindInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7d8f9ee2cbbae3cefdc1f021c673e106">RCStreamBinderPtr</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#ad82697e86e872a13dc6ab6a4836a198c">m_streamBinders</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a6d5cefa322bc1e2237a1d5a1641b80e5">m_progressCoderIndex</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a>第<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html#l00071">71</a>行定义。</p>
+<hr/><h2>成员类型定义文档</h2>
+<a class="anchor" id="a7d8f9ee2cbbae3cefdc1f021c673e106"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::RCStreamBinderPtr" ref="a7d8f9ee2cbbae3cefdc1f021c673e106" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="../../d4/d44/classRCZip_1_1RCStreamBinder.html">RCStreamBinder</a>&gt; <a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7d8f9ee2cbbae3cefdc1f021c673e106">RCZip::RCCoderMixerMT::RCStreamBinderPtr</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>RCStreamBinder智能指针 </p>
+
+<p>在文件<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a>第<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html#l00165">165</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a54a451d1b877f59f3806ebc0f4c8f7cd"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::RCCoderMixerMT" ref="a54a451d1b877f59f3806ebc0f4c8f7cd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCCoderMixerMT::RCCoderMixerMT </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3bf4cef9a3b76463e17192a249a9f4a"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::~RCCoderMixerMT" ref="ac3bf4cef9a3b76463e17192a249a9f4a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCCoderMixerMT::~RCCoderMixerMT </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a0b08cfce488115fd74e2adc9731a5b65"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::AddCoder" ref="a0b08cfce488115fd74e2adc9731a5b65" args="(ICompressCoder *coder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCCoderMixerMT::AddCoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html">ICompressCoder</a> *&nbsp;</td>
+          <td class="paramname"> <em>coder</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>添加编码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>编码器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae4e5f77574e35ebe2f88b13ca29673f3"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::AddCoder2" ref="ae4e5f77574e35ebe2f88b13ca29673f3" args="(ICompressCoder2 *coder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCCoderMixerMT::AddCoder2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html">ICompressCoder2</a> *&nbsp;</td>
+          <td class="paramname"> <em>coder</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>添加编码器二 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>编码器二 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad3997b3258f00d4e6fd242a3b8e8e7dc"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::AddCoderCommon" ref="ad3997b3258f00d4e6fd242a3b8e8e7dc" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCCoderMixerMT::AddCoderCommon </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>添加编码器公共信息 </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa791285f950a7d1cc6fa34031461110"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::Code" ref="aaa791285f950a7d1cc6fa34031461110" args="(const std::vector&lt; in_stream_data &gt; &amp;inStreams, const std::vector&lt; out_stream_data &gt; &amp;outStreams, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCoderMixerMT::Code </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a9e6c5a094d58b0a224637af59e597450">in_stream_data</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>inStreams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a57a71ae2505f0241a9830ebb6c855727">out_stream_data</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>outStreams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>压缩/解压数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStreams</em>&nbsp;</td><td>输入流信息 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStreams</em>&nbsp;</td><td>输出流信息 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#ae2059d3d7b4ac6d0a18d326653483e9e">RCZip::ICompressCoder2</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a73d6d5f04cdb2fd86e6caa32186cecd1"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::GetWriteProcessedSize" ref="a73d6d5f04cdb2fd86e6caa32186cecd1" args="(uint32_t binderIndex) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCCoderMixerMT::GetWriteProcessedSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>binderIndex</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取写处理大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>binderIndex</em>&nbsp;</td><td>混合编码器绑定索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回处理大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb8f9d7aa463c9422ecbf131e4bbc890"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::Init" ref="aeb8f9d7aa463c9422ecbf131e4bbc890" args="(const std::vector&lt; in_stream_data &gt; &amp;inStreams, const std::vector&lt; out_stream_data &gt; &amp;outStreams)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCoderMixerMT::Init </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a9e6c5a094d58b0a224637af59e597450">in_stream_data</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>inStreams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d0/d3f/classRCZip_1_1ICompressCoder2.html#a57a71ae2505f0241a9830ebb6c855727">out_stream_data</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>outStreams</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStreams</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStreams</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b914508098329d7f985617584c759f9"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::ReInit" ref="a2b914508098329d7f985617584c759f9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCCoderMixerMT::ReInit </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>重新初始化 </p>
+
+<p>实现了<a class="el" href="../../d2/ded/classRCZip_1_1RCCoderMixer.html#ac62ea0a34ae7c4b98eba6758259e44bb">RCZip::RCCoderMixer</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a89df2ea9b9ca1313b84eecbd95fbda6c"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::ReturnIfError" ref="a89df2ea9b9ca1313b84eecbd95fbda6c" args="(HResult code)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCoderMixerMT::ReturnIfError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td>
+          <td class="paramname"> <em>code</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>错误就返回 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>code</em>&nbsp;</td><td>错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3f04ab108f1e8be90658e3a6de622997"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::SetBindInfo" ref="a3f04ab108f1e8be90658e3a6de622997" args="(const RCCoderMixserBindInfo &amp;bindInfo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCoderMixerMT::SetBindInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d6b/structRCZip_1_1RCCoderMixserBindInfo.html">RCCoderMixserBindInfo</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>bindInfo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置混合编码器绑定信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bindInfo</em>&nbsp;</td><td>混合编码器绑定信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d2/ded/classRCZip_1_1RCCoderMixer.html#aaf0afe2e2399569eed5c7b8340940fdf">RCZip::RCCoderMixer</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e46c60f9e0adf8564dd5e587ed1418a"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::SetCoderInfo" ref="a2e46c60f9e0adf8564dd5e587ed1418a" args="(uint32_t coderIndex, const uint64_t **inSizes, const uint64_t **outSizes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCCoderMixerMT::SetCoderInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>coderIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> **&nbsp;</td>
+          <td class="paramname"> <em>inSizes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> **&nbsp;</td>
+          <td class="paramname"> <em>outSizes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置编码/解码器信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>coderIndex</em>&nbsp;</td><td>编码器索引 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSizes</em>&nbsp;</td><td>输入大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSizes</em>&nbsp;</td><td>输出大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>实现了<a class="el" href="../../d2/ded/classRCZip_1_1RCCoderMixer.html#a0369a51b8a8f90f3dff2f8eb1d4e67d6">RCZip::RCCoderMixer</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9f3aeba0fed0dcb6ff59766a72c6b56"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::SetProgressCoderIndex" ref="ac9f3aeba0fed0dcb6ff59766a72c6b56" args="(int32_t coderIndex)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCCoderMixerMT::SetProgressCoderIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>coderIndex</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置进度编码索引 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>coderIndex</em>&nbsp;</td><td>编码索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a656163c4ea8e30b2fda933679a3616f0"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::m_bindInfo" ref="a656163c4ea8e30b2fda933679a3616f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d6b/structRCZip_1_1RCCoderMixserBindInfo.html">RCCoderMixserBindInfo</a> <a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a656163c4ea8e30b2fda933679a3616f0">RCZip::RCCoderMixerMT::m_bindInfo</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>混合编码器绑定信息 </p>
+
+<p>在文件<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a>第<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html#l00169">169</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7856d8bd311664f61f1f4f40edfb16ee"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::m_coders" ref="a7856d8bd311664f61f1f4f40edfb16ee" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d7/d5a/namespaceRCZip.html#a647720ebc058f1920fdcc40cee080ded">RCCoderMixerCoderPtr</a>&gt; <a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7856d8bd311664f61f1f4f40edfb16ee">RCZip::RCCoderMixerMT::m_coders</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>混合编码器 </p>
+
+<p>在文件<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a>第<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html#l00139">139</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d5cefa322bc1e2237a1d5a1641b80e5"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::m_progressCoderIndex" ref="a6d5cefa322bc1e2237a1d5a1641b80e5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a6d5cefa322bc1e2237a1d5a1641b80e5">RCZip::RCCoderMixerMT::m_progressCoderIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>进度编码索引 </p>
+
+<p>在文件<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a>第<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html#l00177">177</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad82697e86e872a13dc6ab6a4836a198c"></a><!-- doxytag: member="RCZip::RCCoderMixerMT::m_streamBinders" ref="ad82697e86e872a13dc6ab6a4836a198c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#a7d8f9ee2cbbae3cefdc1f021c673e106">RCStreamBinderPtr</a>&gt; <a class="el" href="../../d2/d55/classRCZip_1_1RCCoderMixerMT.html#ad82697e86e872a13dc6ab6a4836a198c">RCZip::RCCoderMixerMT::m_streamBinders</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>流的绑定信息 </p>
+
+<p>在文件<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a>第<a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html#l00173">173</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d7/db3/RCCoderMixerMT_8h_source.html">RCCoderMixerMT.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

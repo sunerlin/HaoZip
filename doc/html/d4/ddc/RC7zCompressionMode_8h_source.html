@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RC7zCompressionMode.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_74ed847265da93e9cefef0816abf9a58.html">7z</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RC7zCompressionMode.h</h1><a href="../../d4/ddc/RC7zCompressionMode_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RC7zCompressionMode_h_</span>
+<a name="l00011"></a><a class="code" href="../../d4/ddc/RC7zCompressionMode_8h.html#aeaa79f1e8a2049618b25ca82c1b393a9">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RC7zCompressionMode_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/dec/RCMethodProps_8h.html">format/common/RCMethodProps.h</a>&quot;</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00017"></a>00017 
+<a name="l00018"></a><a class="code" href="../../d8/d20/structRCZip_1_1RC7zArchiveMethodFull.html">00018</a> <span class="keyword">struct </span><a class="code" href="../../d8/d20/structRCZip_1_1RC7zArchiveMethodFull.html">RC7zArchiveMethodFull</a>: 
+<a name="l00019"></a>00019     <span class="keyword">public</span> <a class="code" href="../../dc/d77/structRCZip_1_1RCArchiveMethod.html">RCArchiveMethod</a>
+<a name="l00020"></a>00020 {<span class="comment"></span>
+<a name="l00021"></a>00021 <span class="comment">    /** 输入流的个数</span>
+<a name="l00022"></a>00022 <span class="comment">    */</span>
+<a name="l00023"></a><a class="code" href="../../d8/d20/structRCZip_1_1RC7zArchiveMethodFull.html#aa8b36b4381ab85b03667ebe38e495928">00023</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_numInStreams;
+<a name="l00024"></a>00024 <span class="comment"></span>
+<a name="l00025"></a>00025 <span class="comment">    /** 输出流的个数</span>
+<a name="l00026"></a>00026 <span class="comment">    */</span>
+<a name="l00027"></a><a class="code" href="../../d8/d20/structRCZip_1_1RC7zArchiveMethodFull.html#a4cf48c802497fb6f5cd014e93ecf0c6b">00027</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_numOutStreams;
+<a name="l00028"></a>00028 <span class="comment"></span>
+<a name="l00029"></a>00029 <span class="comment">    /** 是否是简单编码</span>
+<a name="l00030"></a>00030 <span class="comment">    */</span>
+<a name="l00031"></a><a class="code" href="../../d8/d20/structRCZip_1_1RC7zArchiveMethodFull.html#a80ae065d6cdf4f3283a32271ec37cb43">00031</a>     <span class="keywordtype">bool</span> IsSimpleCoder()<span class="keyword"> const</span>
+<a name="l00032"></a>00032 <span class="keyword">    </span>{
+<a name="l00033"></a>00033         <span class="keywordflow">return</span> (m_numInStreams == 1) &amp;&amp; (m_numOutStreams == 1);
+<a name="l00034"></a>00034     }
+<a name="l00035"></a>00035 };
+<a name="l00036"></a>00036 
+<a name="l00037"></a><a class="code" href="../../d8/d97/structRCZip_1_1RC7zBind.html">00037</a> <span class="keyword">struct </span><a class="code" href="../../d8/d97/structRCZip_1_1RC7zBind.html">RC7zBind</a>
+<a name="l00038"></a>00038 {<span class="comment"></span>
+<a name="l00039"></a>00039 <span class="comment">    /** 输入编码</span>
+<a name="l00040"></a>00040 <span class="comment">    */</span>
+<a name="l00041"></a><a class="code" href="../../d8/d97/structRCZip_1_1RC7zBind.html#a01de628eb4fcbd86b6a0b5a2d1e6b442">00041</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_inCoder;
+<a name="l00042"></a>00042 <span class="comment"></span>
+<a name="l00043"></a>00043 <span class="comment">    /** 输入流</span>
+<a name="l00044"></a>00044 <span class="comment">    */</span>
+<a name="l00045"></a><a class="code" href="../../d8/d97/structRCZip_1_1RC7zBind.html#a57b08ea5541f3fdf643e7c09ac33c4f6">00045</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_inStream;
+<a name="l00046"></a>00046 <span class="comment"></span>
+<a name="l00047"></a>00047 <span class="comment">    /** 输出编码</span>
+<a name="l00048"></a>00048 <span class="comment">    */</span>
+<a name="l00049"></a><a class="code" href="../../d8/d97/structRCZip_1_1RC7zBind.html#a88d276190f3526198f775d7332bfd44b">00049</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_outCoder;
+<a name="l00050"></a>00050 <span class="comment"></span>
+<a name="l00051"></a>00051 <span class="comment">    /** 输出流</span>
+<a name="l00052"></a>00052 <span class="comment">    */</span>
+<a name="l00053"></a><a class="code" href="../../d8/d97/structRCZip_1_1RC7zBind.html#a916a3fda8bb8811ab7021778292b375d">00053</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_outStream;
+<a name="l00054"></a>00054 };
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html">00056</a> <span class="keyword">class </span><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html">RC7zCompressionMethodMode</a>
+<a name="l00057"></a>00057 {
+<a name="l00058"></a>00058 <span class="keyword">public</span>:
+<a name="l00059"></a>00059 <span class="comment"></span>
+<a name="l00060"></a>00060 <span class="comment">    /** 默认构造函数</span>
+<a name="l00061"></a>00061 <span class="comment">    */</span>
+<a name="l00062"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html#ab2af10084a6dfa760f7ca9b6a3093db0">00062</a>     <a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html">RC7zCompressionMethodMode</a>():
+<a name="l00063"></a>00063       m_passwordIsDefined(false),
+<a name="l00064"></a>00064       m_numThreads(1)
+<a name="l00065"></a>00065     {
+<a name="l00066"></a>00066     }
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 <span class="keyword">public</span>:
+<a name="l00069"></a>00069 <span class="comment"></span>
+<a name="l00070"></a>00070 <span class="comment">    /** 是否是空</span>
+<a name="l00071"></a>00071 <span class="comment">    */</span>
+<a name="l00072"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html#a3fb5051544a10363832b5ae67a023250">00072</a>     <span class="keywordtype">bool</span> IsEmpty()<span class="keyword"> const</span>
+<a name="l00073"></a>00073 <span class="keyword">    </span>{
+<a name="l00074"></a>00074         <span class="keywordflow">return</span> (m_methods.empty() &amp;&amp; !m_passwordIsDefined);
+<a name="l00075"></a>00075     }
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 <span class="keyword">public</span>:
+<a name="l00078"></a>00078 <span class="comment"></span>
+<a name="l00079"></a>00079 <span class="comment">    /** 压缩模式</span>
+<a name="l00080"></a>00080 <span class="comment">    */</span>
+<a name="l00081"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html#a7d013b6751ee53daff9d873884686c09">00081</a>     RCVector&lt;RC7zArchiveMethodFull&gt; m_methods;
+<a name="l00082"></a>00082 <span class="comment"></span>
+<a name="l00083"></a>00083 <span class="comment">    /** 绑定信息</span>
+<a name="l00084"></a>00084 <span class="comment">    */</span>
+<a name="l00085"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html#ad7ca1e78a602cd219acba33ae4741a39">00085</a>     RCVector&lt;RC7zBind&gt; m_binds;
+<a name="l00086"></a>00086 <span class="comment"></span>
+<a name="l00087"></a>00087 <span class="comment">    /** 线程个数</span>
+<a name="l00088"></a>00088 <span class="comment">    */</span>
+<a name="l00089"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html#acc1121a54c15cc160453415622c4644c">00089</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_numThreads;
+<a name="l00090"></a>00090 <span class="comment"></span>
+<a name="l00091"></a>00091 <span class="comment">    /** 是否有密码</span>
+<a name="l00092"></a>00092 <span class="comment">    */</span>
+<a name="l00093"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html#a619c1b6ddb98cb0fabdd65c2c90c1a74">00093</a>     <span class="keywordtype">bool</span> m_passwordIsDefined;
+<a name="l00094"></a>00094 <span class="comment"></span>
+<a name="l00095"></a>00095 <span class="comment">    /** 密码</span>
+<a name="l00096"></a>00096 <span class="comment">    */</span>
+<a name="l00097"></a><a class="code" href="../../db/dd1/classRCZip_1_1RC7zCompressionMethodMode.html#aefcf33277ce159969162867eb4b5cca3">00097</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> m_password;
+<a name="l00098"></a>00098 };
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102 <span class="preprocessor">#endif //__RC7zCompressionMode_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

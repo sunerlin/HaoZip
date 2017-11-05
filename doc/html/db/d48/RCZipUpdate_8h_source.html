@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZipUpdate.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_844c112daf2a590492fe8d1abb539981.html">zip</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZipUpdate.h</h1><a href="../../db/d48/RCZipUpdate_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCZipUpdate_h_</span>
+<a name="l00011"></a><a class="code" href="../../db/d48/RCZipUpdate_8h.html#a256ada4b7ad09c9ac84813aa90e323e7">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCZipUpdate_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/dba/RCString_8h.html">base/RCString.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d72/RCSmartPtr_8h.html">base/RCSmartPtr.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d9e/RCFileDefs_8h.html">filesystem/RCFileDefs.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../de/d71/ICoder_8h.html">interface/ICoder.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/d7b/IArchive_8h.html">interface/IArchive.h</a>&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="../../de/d7e/RCZipItem_8h.html">RCZipItem.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="../../df/d43/RCZipIn_8h.html">RCZipIn.h</a>&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d4c/RCZipCompressionMethodMode_8h.html">RCZipCompressionMethodMode.h</a>&quot;</span>
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00024"></a>00024 
+<a name="l00025"></a><a class="code" href="../../d2/d76/classRCZip_1_1RCZipUpdate.html">00025</a> <span class="keyword">class </span><a class="code" href="../../d2/d76/classRCZip_1_1RCZipUpdate.html">RCZipUpdate</a>
+<a name="l00026"></a>00026 {
+<a name="l00027"></a>00027 <span class="keyword">public</span>:
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html">00029</a>     <span class="keyword">struct </span><a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html">RCZipUpdateRange</a>
+<a name="l00030"></a>00030     {<span class="comment"></span>
+<a name="l00031"></a>00031 <span class="comment">        /** 位置</span>
+<a name="l00032"></a>00032 <span class="comment">        */</span>
+<a name="l00033"></a><a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html#abdc22de0950c68202d24f43a9b6beaa4">00033</a>         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_position;
+<a name="l00034"></a>00034 <span class="comment"></span>
+<a name="l00035"></a>00035 <span class="comment">        /** 大小</span>
+<a name="l00036"></a>00036 <span class="comment">        */</span>
+<a name="l00037"></a><a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html#a8f0b7ba20d6fc1c65f8f27db7c0b0f66">00037</a>         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_size;
+<a name="l00038"></a>00038 <span class="comment"></span>
+<a name="l00039"></a>00039 <span class="comment">        /** 默认构造函数</span>
+<a name="l00040"></a>00040 <span class="comment">        */</span>
+<a name="l00041"></a><a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html#a81e7f957c260fb54fcbb89c761d5068b">00041</a>         <a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html">RCZipUpdateRange</a>():
+<a name="l00042"></a>00042             m_position(0),
+<a name="l00043"></a>00043             m_size(0)
+<a name="l00044"></a>00044         {
+<a name="l00045"></a>00045         };
+<a name="l00046"></a>00046 <span class="comment"></span>
+<a name="l00047"></a>00047 <span class="comment">        /** 构造函数</span>
+<a name="l00048"></a>00048 <span class="comment">        */</span>
+<a name="l00049"></a><a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html#a85ce40ee672f90fcbb53d0267a53bf97">00049</a>         <a class="code" href="../../dd/d90/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateRange.html">RCZipUpdateRange</a>(<a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> position, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size): 
+<a name="l00050"></a>00050             m_position(position), 
+<a name="l00051"></a>00051             m_size(size)
+<a name="l00052"></a>00052         {
+<a name="l00053"></a>00053         };
+<a name="l00054"></a>00054     };
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html">00056</a>     <span class="keyword">struct </span><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html">RCZipUpdateItem</a>
+<a name="l00057"></a>00057     {<span class="comment"></span>
+<a name="l00058"></a>00058 <span class="comment">        /** 是否是新数据</span>
+<a name="l00059"></a>00059 <span class="comment">        */</span>
+<a name="l00060"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a8cfe37153edec4f01f0d3297b38155f3">00060</a>         <span class="keywordtype">bool</span> m_newData;
+<a name="l00061"></a>00061 <span class="comment"></span>
+<a name="l00062"></a>00062 <span class="comment">        /** 是否是新属性</span>
+<a name="l00063"></a>00063 <span class="comment">        */</span>
+<a name="l00064"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#ae0f250fbbb503bfd827bfa163e24338c">00064</a>         <span class="keywordtype">bool</span> m_newProperties;
+<a name="l00065"></a>00065 <span class="comment"></span>
+<a name="l00066"></a>00066 <span class="comment">        /** 是否是目录</span>
+<a name="l00067"></a>00067 <span class="comment">        */</span>
+<a name="l00068"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a1ec84ee6085b1da7a7b526c2abd71d71">00068</a>         <span class="keywordtype">bool</span> m_isDir;
+<a name="l00069"></a>00069 <span class="comment"></span>
+<a name="l00070"></a>00070 <span class="comment">        /** 是否定义ntfs时间</span>
+<a name="l00071"></a>00071 <span class="comment">        */</span>
+<a name="l00072"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a3fdf35466156825ce85929eb79303ff5">00072</a>         <span class="keywordtype">bool</span> m_ntfsTimeIsDefined;
+<a name="l00073"></a>00073 <span class="comment"></span>
+<a name="l00074"></a>00074 <span class="comment">        /** 是否UTF8</span>
+<a name="l00075"></a>00075 <span class="comment">        */</span>
+<a name="l00076"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a2c778a94d85d18a5fcc82af0f7a14cc1">00076</a>         <span class="keywordtype">bool</span> m_isUtf8;
+<a name="l00077"></a>00077 <span class="comment"></span>
+<a name="l00078"></a>00078 <span class="comment">        /** 在archive中的索引</span>
+<a name="l00079"></a>00079 <span class="comment">        */</span>
+<a name="l00080"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a7f142f0a056caa4da65c7707c0ca63ed">00080</a>         <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> m_indexInArchive;
+<a name="l00081"></a>00081 <span class="comment"></span>
+<a name="l00082"></a>00082 <span class="comment">        /** 在client中的索引</span>
+<a name="l00083"></a>00083 <span class="comment">        */</span>
+<a name="l00084"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a6606ae060d91a1b62f96d9fa3b35d64c">00084</a>         <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> m_indexInClient;
+<a name="l00085"></a>00085 <span class="comment"></span>
+<a name="l00086"></a>00086 <span class="comment">        /** 属性</span>
+<a name="l00087"></a>00087 <span class="comment">        */</span>
+<a name="l00088"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#aecfd5ea9a640993498454a41907f6097">00088</a>         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_attributes;
+<a name="l00089"></a>00089 <span class="comment"></span>
+<a name="l00090"></a>00090 <span class="comment">        /** 时间</span>
+<a name="l00091"></a>00091 <span class="comment">        */</span>
+<a name="l00092"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a45d7fcd2fddf91b3aa9135c51f721843">00092</a>         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_time;
+<a name="l00093"></a>00093 <span class="comment"></span>
+<a name="l00094"></a>00094 <span class="comment">        /** 大小</span>
+<a name="l00095"></a>00095 <span class="comment">        */</span>
+<a name="l00096"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a8ab18446a79f7c2e48ada9c9d9922e9d">00096</a>         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_size;
+<a name="l00097"></a>00097 <span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">        /** 名字</span>
+<a name="l00099"></a>00099 <span class="comment">        */</span>
+<a name="l00100"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a32113a6daefa748c7cfa5f2fda96e208">00100</a>         <a class="code" href="../../d7/d5a/namespaceRCZip.html#a65ed8cf1e966f0b70481f11188a12b62">RCStringA</a> m_name;
+<a name="l00101"></a>00101 <span class="comment"></span>
+<a name="l00102"></a>00102 <span class="comment">        /** ntfs修改时间</span>
+<a name="l00103"></a>00103 <span class="comment">        */</span>
+<a name="l00104"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#ac1b39c0d5ee6a7bc62ea818c47da0bcd">00104</a>         <a class="code" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> m_ntfsMTime;
+<a name="l00105"></a>00105 <span class="comment"></span>
+<a name="l00106"></a>00106 <span class="comment">        /** ntfs访问时间</span>
+<a name="l00107"></a>00107 <span class="comment">        */</span>
+<a name="l00108"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#aed06ca575e6066ae822dafd42ccb176b">00108</a>         <a class="code" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> m_ntfsATime;
+<a name="l00109"></a>00109 <span class="comment"></span>
+<a name="l00110"></a>00110 <span class="comment">        /** ntfs创建时间</span>
+<a name="l00111"></a>00111 <span class="comment">        */</span>
+<a name="l00112"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a044f2206c9f724139aa1f5a2dd48adf9">00112</a>         <a class="code" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> m_ntfsCTime;
+<a name="l00113"></a>00113 <span class="comment"></span>
+<a name="l00114"></a>00114 <span class="comment">        /** 默认构造函数</span>
+<a name="l00115"></a>00115 <span class="comment">        */</span>
+<a name="l00116"></a><a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html#a7c4809d8d6fcd910d356fd6753d31a63">00116</a>         <a class="code" href="../../d2/d53/structRCZip_1_1RCZipUpdate_1_1RCZipUpdateItem.html">RCZipUpdateItem</a>(): 
+<a name="l00117"></a>00117             m_newData(false),
+<a name="l00118"></a>00118             m_newProperties(false),
+<a name="l00119"></a>00119             m_isDir(false),
+<a name="l00120"></a>00120             m_ntfsTimeIsDefined(false), 
+<a name="l00121"></a>00121             m_isUtf8(false), 
+<a name="l00122"></a>00122             m_indexInArchive(0),
+<a name="l00123"></a>00123             m_indexInClient(0),
+<a name="l00124"></a>00124             m_attributes(0),
+<a name="l00125"></a>00125             m_time(0),
+<a name="l00126"></a>00126             m_size(0)
+<a name="l00127"></a>00127         {
+<a name="l00128"></a>00128         }
+<a name="l00129"></a>00129     };
+<a name="l00130"></a>00130 <span class="comment"></span>
+<a name="l00131"></a>00131 <span class="comment">    /** RCZipUpdateItem智能指针</span>
+<a name="l00132"></a>00132 <span class="comment">    */</span>
+<a name="l00133"></a><a class="code" href="../../d2/d76/classRCZip_1_1RCZipUpdate.html#a453013aed3586992ffaf5e5d1257095e">00133</a>     <span class="keyword">typedef</span> RCSharedPtr&lt;RCZipUpdateItem&gt;  RCZipUpdateItemPtr ;
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135 <span class="keyword">public</span>:
+<a name="l00136"></a>00136 <span class="comment"></span>
+<a name="l00137"></a>00137 <span class="comment">    /** 压缩数据</span>
+<a name="l00138"></a>00138 <span class="comment">    @param [in] codecsInfo 编码管理器</span>
+<a name="l00139"></a>00139 <span class="comment">    @param [in] inputItems 输入items信息</span>
+<a name="l00140"></a>00140 <span class="comment">    @param [in] updateItems 更新items信息</span>
+<a name="l00141"></a>00141 <span class="comment">    @param [in] seqOutStream 输出流</span>
+<a name="l00142"></a>00142 <span class="comment">    @param [in] inArchive 输入文档</span>
+<a name="l00143"></a>00143 <span class="comment">    @param [in] compressionMethodMode 压缩模式</span>
+<a name="l00144"></a>00144 <span class="comment">    @param [in] updateCallback 更新管理器回调接口</span>
+<a name="l00145"></a>00145 <span class="comment">    @return 成功返回RC_S_OK，否则返回错误号</span>
+<a name="l00146"></a>00146 <span class="comment">    */</span>
+<a name="l00147"></a>00147     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> UpdateArchive(<a class="code" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a>* codecsInfo,
+<a name="l00148"></a>00148                                  <span class="keyword">const</span> RCVector&lt;RCZipItemExPtr&gt;&amp; inputItems,
+<a name="l00149"></a>00149                                  <span class="keyword">const</span> RCVector&lt;RCZipUpdateItemPtr&gt;&amp; updateItems,
+<a name="l00150"></a>00150                                  <a class="code" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a>* seqOutStream,
+<a name="l00151"></a>00151                                  RCZipIn* inArchive,
+<a name="l00152"></a>00152                                  RCZipCompressionMethodMode* compressionMethodMode,
+<a name="l00153"></a>00153                                  <a class="code" href="../../d0/d37/classRCZip_1_1IArchiveUpdateCallback.html">IArchiveUpdateCallback</a>* updateCallback);
+<a name="l00154"></a>00154 };
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158 <span class="preprocessor">#endif //__RCZipUpdate_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

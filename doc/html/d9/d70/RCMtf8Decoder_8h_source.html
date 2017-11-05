@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCMtf8Decoder.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_63b9fa4beacbaea4ab2cfca1b0b2a979.html">bwt</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCMtf8Decoder.h</h1><a href="../../d9/d70/RCMtf8Decoder_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCMtf8Decoder_h_</span>
+<a name="l00011"></a><a class="code" href="../../d9/d70/RCMtf8Decoder_8h.html#a387fb12354a84dd5bea6d1f85ec0d5ea">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCMtf8Decoder_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/df2/RCNonCopyable_8h.html">base/RCNonCopyable.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 <span class="comment"></span>
+<a name="l00017"></a>00017 <span class="comment">/** Mtf8 解码器</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a><a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html">00019</a> <span class="keyword">class </span><a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html">RCMtf8Decoder</a>:
+<a name="l00020"></a>00020     <span class="keyword">private</span> <a class="code" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html">RCNonCopyable</a>
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022 <span class="keyword">public</span>:
+<a name="l00023"></a>00023     <span class="comment"></span>
+<a name="l00024"></a>00024 <span class="comment">    /** 宏与类型定义</span>
+<a name="l00025"></a>00025 <span class="comment">    */</span>
+<a name="l00026"></a>00026 <span class="preprocessor">#ifdef RCZIP_BIT_64</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span>    <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCMtfVar ;
+<a name="l00028"></a>00028     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RC_MTF_MOVS = 3 ;
+<a name="l00029"></a>00029 <span class="preprocessor">#else</span>
+<a name="l00030"></a><a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html#a3b12ec0b3ccd530dbd758a61a75fb087">00030</a> <span class="preprocessor"></span>    <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCMtfVar ;
+<a name="l00031"></a><a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html#a8ead5be38ce9df6be1adbf519260c004">00031</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RC_MTF_MOVS = 2 ;
+<a name="l00032"></a>00032 <span class="preprocessor">#endif</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span><span class="comment"></span>
+<a name="l00034"></a>00034 <span class="comment">    /** 缓冲区位置的最大值</span>
+<a name="l00035"></a>00035 <span class="comment">    */</span>
+<a name="l00036"></a><a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html#aa2ffb48bb2746bf46cabdf8faf568705">00036</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> POS_LEN = 256 ;
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038 <span class="keyword">public</span>:
+<a name="l00039"></a>00039 <span class="comment"></span>
+<a name="l00040"></a>00040 <span class="comment">    /** 默认构造函数</span>
+<a name="l00041"></a>00041 <span class="comment">    */</span>
+<a name="l00042"></a>00042     <a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html">RCMtf8Decoder</a>() ;
+<a name="l00043"></a>00043     <span class="comment"></span>
+<a name="l00044"></a>00044 <span class="comment">    /** 默认析构函数</span>
+<a name="l00045"></a>00045 <span class="comment">    */</span>
+<a name="l00046"></a>00046     ~<a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html">RCMtf8Decoder</a>() ;
+<a name="l00047"></a>00047     
+<a name="l00048"></a>00048 <span class="keyword">public</span>:
+<a name="l00049"></a>00049     <span class="comment"></span>
+<a name="l00050"></a>00050 <span class="comment">    /** 缓冲区数据清零</span>
+<a name="l00051"></a>00051 <span class="comment">    */</span>
+<a name="l00052"></a>00052     <span class="keywordtype">void</span> StartInit() ;
+<a name="l00053"></a>00053     <span class="comment"></span>
+<a name="l00054"></a>00054 <span class="comment">    /** 数据赋值</span>
+<a name="l00055"></a>00055 <span class="comment">    @param [in] pos 数值下标</span>
+<a name="l00056"></a>00056 <span class="comment">    @param [in] value 位数据值</span>
+<a name="l00057"></a>00057 <span class="comment">    */</span>
+<a name="l00058"></a>00058     <span class="keywordtype">void</span> Add(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> pos, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> value) ;
+<a name="l00059"></a>00059     <span class="comment"></span>
+<a name="l00060"></a>00060 <span class="comment">    /** 获取缓冲区第一个数据</span>
+<a name="l00061"></a>00061 <span class="comment">    @return 返回位数据值</span>
+<a name="l00062"></a>00062 <span class="comment">    */</span>
+<a name="l00063"></a>00063     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> GetHead() <span class="keyword">const</span> ;
+<a name="l00064"></a>00064     <span class="comment"></span>
+<a name="l00065"></a>00065 <span class="comment">    /** 获取并把数据移动到第一个位置</span>
+<a name="l00066"></a>00066 <span class="comment">    @param [in] pos 数据下标</span>
+<a name="l00067"></a>00067 <span class="comment">    @return 返回第一个数据值</span>
+<a name="l00068"></a>00068 <span class="comment">    */</span>
+<a name="l00069"></a>00069     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> GetAndMove(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> pos) ;
+<a name="l00070"></a>00070     
+<a name="l00071"></a>00071 <span class="keyword">private</span>:
+<a name="l00072"></a>00072     <span class="comment"></span>
+<a name="l00073"></a>00073 <span class="comment">    /** 数据缓冲区</span>
+<a name="l00074"></a>00074 <span class="comment">    */</span>
+<a name="l00075"></a><a class="code" href="../../d7/d4c/classRCZip_1_1RCMtf8Decoder.html#a0eb00057275ee092d76a3a5764cf941e">00075</a>     RCMtfVar Buffer[POS_LEN &gt;&gt; RC_MTF_MOVS] ;
+<a name="l00076"></a>00076 };
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="preprocessor">#endif //__RCMtf8Decoder_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

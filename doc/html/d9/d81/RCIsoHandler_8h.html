@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCIsoHandler.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_089fe494769afeaad4d3061861db6791.html">iso</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCIsoHandler.h文件参考</h1><code>#include &quot;<a class="el" href="../../d8/d7b/IArchive_8h_source.html">interface/IArchive.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d71/ICoder_8h_source.html">interface/ICoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d2/d06/IUnknownImpl_8h_source.html">interface/IUnknownImpl.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/dc9/IStream_8h_source.html">interface/IStream.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d7/d83/RCMethodDefs_8h_source.html">interface/RCMethodDefs.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d9/d16/RCIsoIn_8h_source.html">RCIsoIn.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCIsoHandler.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/de2/RCIsoHandler_8h__incl.png" border="0" usemap="#RCIsoHandler_8h_map" alt=""/></div>
+<map name="RCIsoHandler_8h_map" id="RCIsoHandler_8h">
+<area shape="rect" id="node3" href="../../d8/d7b/IArchive_8h.html" title="interface/IArchive.h" alt="" coords="959,155,1111,181"/><area shape="rect" id="node65" href="../../de/d71/ICoder_8h.html" title="interface/ICoder.h" alt="" coords="188,155,329,181"/><area shape="rect" id="node75" href="../../d2/d06/IUnknownImpl_8h.html" title="interface/IUnknownImpl.h" alt="" coords="453,229,648,256"/><area shape="rect" id="node84" href="../../d8/dc9/IStream_8h.html" title="interface/IStream.h" alt="" coords="1263,155,1412,181"/><area shape="rect" id="node88" href="../../d7/d83/RCMethodDefs_8h.html" title="interface/RCMethodDefs.h" alt="" coords="2333,80,2528,107"/><area shape="rect" id="node91" href="../../d9/d16/RCIsoIn_8h.html" title="RCIsoIn.h" alt="" coords="1763,80,1845,107"/><area shape="rect" id="node5" href="../../d1/d97/IProgress_8h.html" title="interface/IProgress.h" alt="" coords="672,229,829,256"/><area shape="rect" id="node30" href="../../db/df8/IArchiveInfo_8h.html" title="interface/IArchiveInfo.h" alt="" coords="853,229,1032,256"/><area shape="rect" id="node38" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="1413,379,1541,405"/><area shape="rect" id="node45" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="261,229,429,256"/><area shape="rect" id="node58" href="../../d3/d8b/RCExtractDefs_8h.html" title="archive/extract/RCExtractDefs.h" alt="" coords="93,528,328,555"/><area shape="rect" id="node61" href="../../dc/d53/RCVector_8h.html" title="common/RCVector.h" alt="" coords="1400,229,1557,256"/><area shape="rect" id="node7" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="505,379,671,405"/><area shape="rect" id="node9" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="648,453,811,480"/><area shape="rect" id="node25" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="488,453,624,480"/><area shape="rect" id="node11" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="1495,528,1612,555"/><area shape="rect" id="node13" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="2519,603,2644,629"/><area shape="rect" id="node17" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="2265,677,2431,704"/><area shape="rect" id="node19" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="2455,677,2585,704"/><area shape="rect" id="node32" href="../../d5/d96/RCArchiveType_8h.html" title="interface/RCArchiveType.h" alt="" coords="1099,453,1296,480"/><area shape="rect" id="node35" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="531,304,709,331"/><area shape="rect" id="node48" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="277,453,464,480"/><area shape="rect" id="node51" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="835,304,997,331"/><area shape="rect" id="node68" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="1056,229,1224,256"/><area shape="rect" id="node78" href="../../d6/d44/RCRefCounted_8h.html" title="base/RCRefCounted.h" alt="" coords="1224,304,1389,331"/><area shape="rect" id="node80" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="1628,379,1804,405"/><area shape="rect" id="node96" href="../../d4/d96/RCStringBuffer_8h.html" title="common/RCStringBuffer.h" alt="" coords="1707,229,1901,256"/><area shape="rect" id="node100" href="../../d4/dd4/RCStringUtil_8h.html" title="common/RCStringUtil.h" alt="" coords="1931,304,2109,331"/><area shape="rect" id="node111" href="../../de/df6/RCIsoItem_8h.html" title="RCIsoItem.h" alt="" coords="2301,229,2403,256"/><area shape="rect" id="node130" href="../../d6/d1d/RCIsoHeader_8h.html" title="format/iso/RCIsoHeader.h" alt="" coords="2669,304,2859,331"/><area shape="rect" id="node134" href="../../da/d5c/RCIsoDir_8h.html" title="RCIsoDir.h" alt="" coords="1976,155,2064,181"/><area shape="rect" id="node114" href="../../d3/d9e/RCFileDefs_8h.html" title="filesystem/RCFileDefs.h" alt="" coords="1941,379,2117,405"/><area shape="rect" id="node117" href="../../d7/d62/RCFileTime_8h.html" title="filesystem/RCFileTime.h" alt="" coords="2133,304,2315,331"/><area shape="rect" id="node121" href="../../d9/d2d/RCBuffer_8h.html" title="common/RCBuffer.h" alt="" coords="2389,304,2544,331"/></map>
+</div>
+
+<p><a href="../../d9/d81/RCIsoHandler_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html">RCZip::RCIsoHandler</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d81/RCIsoHandler_8h.html#ab85bf0bd7b565a5b833df7cd116dfdb1">__RCIsoHandler_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="ab85bf0bd7b565a5b833df7cd116dfdb1"></a><!-- doxytag: member="RCIsoHandler.h::__RCIsoHandler_h_" ref="ab85bf0bd7b565a5b833df7cd116dfdb1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCIsoHandler_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d9/d81/RCIsoHandler_8h_source.html">RCIsoHandler.h</a>第<a class="el" href="../../d9/d81/RCIsoHandler_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

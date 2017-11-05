@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCCabFolderOutStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html">RCCabFolderOutStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCCabFolderOutStream类参考</h1><!-- doxytag: class="RCZip::RCCabFolderOutStream" --><!-- doxytag: inherits="IUnknownImpl&lt; ISequentialOutStream &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCCabFolderOutStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d2/d3a/classRCZip_1_1RCCabFolderOutStream__inherit__graph.png" border="0" usemap="#RCZip_1_1RCCabFolderOutStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCCabFolderOutStream_inherit__map" id="RCZip_1_1RCCabFolderOutStream_inherit__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="28,361,372,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="200,198,416,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="235,6,381,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCCabFolderOutStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/df8/classRCZip_1_1RCCabFolderOutStream__coll__graph.png" border="0" usemap="#RCZip_1_1RCCabFolderOutStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCCabFolderOutStream_coll__map" id="RCZip_1_1RCCabFolderOutStream_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ISequentialOutStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="5,713,349,834"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="95,380,260,516"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="89,193,265,271"/><area shape="rect" id="node8" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="399,402,615,494"/><area shape="rect" id="node14" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="373,625,640,922"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="511,6,657,127"/><area shape="rect" id="node21" href="../../d6/d33/classRCZip_1_1IProgress.html" title="{RCZip::IProgress\n||+ SetTotal()\l+ SetCompleted()\l# ~IProgress()\l}" alt="" coords="600,179,741,285"/><area shape="rect" id="node12" href="../../d3/db6/classRCZip_1_1RCBuffer.html" title="{RCZip::RCBuffer\&lt; byte_t \&gt;\n|# m_capacity\l# m_data\l# m_dataLen\l|+ RCBuffer()\l+ RCBuffer()\l+ RCBuffer()\l+ ~RCBuffer()\l+ operator=()\l+ GetCapacity()\l+ SetCapacity()\l+ Free()\l+ data()\l+ data()\l+ SetDataLength()\l+ GetDataLength()\l+ operator[]()\l}" alt="" coords="965,632,1165,915"/><area shape="rect" id="node17" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; IArchiveExtractCallback \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="664,625,941,922"/><area shape="rect" id="node19" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html" title="{RCZip::IArchiveExtractCallback\n||+ GetStream()\l+ PrepareOperation()\l+ SetOperationResult()\l+ SetMultiThreadMode()\l+ GetDestinationDirectory()\l+ GetRemovePathParts()\l+ GetPathMode()\l+ GetOverwriteMode()\l+ GetUpdateMode()\l+ IsKeepDamageFiles()\l# ~IArchiveExtractCallback()\l}" alt="" coords="651,336,880,560"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d9/d89/classRCZip_1_1RCCabFolderOutStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#ad02f9b59832e427fc9e10a6b0c17918c">Write</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a81076f3ad90b60cfb3b6cdc6abdfc3f7">WriteEmptyFiles</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#afa8e0f8e1bdff97956872cecda3aba02">Init</a> (const RCCabMvDatabaseEx *database, const std::vector&lt; bool &gt; *extractStatuses, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> startIndex, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> folderSize, <a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *extractCallback, bool testMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#abf29d07f143a124dd664c2ec0e173739">FlushCorrupted</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a358ad804f31803477ad37413d3f9b415">Unsupported</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a612173b84ac6af4b4b3da505ddcc33ad">GetRemain</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a9fafff7f980ac4ec90bd978a932aad7a">GetPosInFolder</a> () const </td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#ab55bb1276f9bbd5aca54ebe73ba1eb62">OpenFile</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a26c8c96cca7b0793a625d5e81ab5fac5">CloseFile</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a3ccb87029bb0ce09c2cace82a0a8ed99">Write2</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize, bool isOK)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const RCCabMvDatabaseEx *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a4a775aef29855711919ae20cfe939a58">m_database</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::vector&lt; bool &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#abe63101d89fb63ecee56574997a2c03e">m_extractStatuses</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#afeef0020362f37c4cf6c5f77d96eed0f">m_startIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aee37c1bc199245ce2f1315414a37bebf">m_currentIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">IArchiveExtractCallbackPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#af0592dbaf43fa40fe60f04efc50b468a">m_extractCallback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a5ece51ab63f6200d3e6a7049d7833405">m_testMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aff3981870223204b45927639ab7137da">m_realOutStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aba33daf362f1856cc90c4df43ad7c72d">m_isOk</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a4bee070a63a8caa7d6b77badc741ac4e">m_fileIsOpen</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a4655ee3b4949f4eb87ecf9f0f9ee218b">m_remainFileSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a8d2026ccb9d90b7e44676d0d2e0e50a9">m_folderSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aaf95499dcc8741c4b5debe296e906e21">m_posInFolder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a58031e26d286dbef04c59542a5674ab4">m_tempBuf</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#ab645f66a0a5efa13e1c7450809a94e90">m_tempBufMode</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#afacc0368a3d1f384f8433f08881b2bf4">m_isSupported</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a080ce2b1fd4c8c363b56f1c11bcb05a9">m_bufStartFolderOffset</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00021">21</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a26c8c96cca7b0793a625d5e81ab5fac5"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::CloseFile" ref="a26c8c96cca7b0793a625d5e81ab5fac5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCabFolderOutStream::CloseFile </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>关闭文件 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abf29d07f143a124dd664c2ec0e173739"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::FlushCorrupted" ref="abf29d07f143a124dd664c2ec0e173739" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCabFolderOutStream::FlushCorrupted </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>flush损坏数据 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9fafff7f980ac4ec90bd978a932aad7a"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::GetPosInFolder" ref="a9fafff7f980ac4ec90bd978a932aad7a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCCabFolderOutStream::GetPosInFolder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文件夹中的偏移位置 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>偏移位置 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a612173b84ac6af4b4b3da505ddcc33ad"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::GetRemain" ref="a612173b84ac6af4b4b3da505ddcc33ad" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCCabFolderOutStream::GetRemain </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取剩余大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回剩余大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afa8e0f8e1bdff97956872cecda3aba02"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::Init" ref="afa8e0f8e1bdff97956872cecda3aba02" args="(const RCCabMvDatabaseEx *database, const std::vector&lt; bool &gt; *extractStatuses, int32_t startIndex, uint64_t folderSize, IArchiveExtractCallback *extractCallback, bool testMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCCabFolderOutStream::Init </td>
+          <td>(</td>
+          <td class="paramtype">const RCCabMvDatabaseEx *&nbsp;</td>
+          <td class="paramname"> <em>database</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; bool &gt; *&nbsp;</td>
+          <td class="paramname"> <em>extractStatuses</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>startIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>folderSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>testMode</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>database</em>&nbsp;</td><td>cab基本数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractStatuses</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>startIndex</em>&nbsp;</td><td>起始索引 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>folderSize</em>&nbsp;</td><td>文件夹大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractCallback</em>&nbsp;</td><td>解压回调接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>testMode</em>&nbsp;</td><td>是否是测试模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab55bb1276f9bbd5aca54ebe73ba1eb62"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::OpenFile" ref="ab55bb1276f9bbd5aca54ebe73ba1eb62" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCabFolderOutStream::OpenFile </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文件 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a358ad804f31803477ad37413d3f9b415"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::Unsupported" ref="a358ad804f31803477ad37413d3f9b415" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCabFolderOutStream::Unsupported </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否支持 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad02f9b59832e427fc9e10a6b0c17918c"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::Write" ref="ad02f9b59832e427fc9e10a6b0c17918c" args="(const void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCabFolderOutStream::Write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html#ad269989f026c6c6b69acbe5007fc940a">RCZip::ISequentialOutStream</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ccb87029bb0ce09c2cace82a0a8ed99"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::Write2" ref="a3ccb87029bb0ce09c2cace82a0a8ed99" args="(const void *data, uint32_t size, uint32_t *processedSize, bool isOK)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCabFolderOutStream::Write2 </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isOK</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写文件 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际写入的大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isOK</em>&nbsp;</td><td>是否ok </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81076f3ad90b60cfb3b6cdc6abdfc3f7"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::WriteEmptyFiles" ref="a81076f3ad90b60cfb3b6cdc6abdfc3f7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCabFolderOutStream::WriteEmptyFiles </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写空文件 </p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a080ce2b1fd4c8c363b56f1c11bcb05a9"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_bufStartFolderOffset" ref="a080ce2b1fd4c8c363b56f1c11bcb05a9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a080ce2b1fd4c8c363b56f1c11bcb05a9">RCZip::RCCabFolderOutStream::m_bufStartFolderOffset</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件中数据起始偏移 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00160">160</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aee37c1bc199245ce2f1315414a37bebf"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_currentIndex" ref="aee37c1bc199245ce2f1315414a37bebf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aee37c1bc199245ce2f1315414a37bebf">RCZip::RCCabFolderOutStream::m_currentIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当前索引 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00112">112</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a775aef29855711919ae20cfe939a58"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_database" ref="a4a775aef29855711919ae20cfe939a58" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const RCCabMvDatabaseEx* <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a4a775aef29855711919ae20cfe939a58">RCZip::RCCabFolderOutStream::m_database</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>cab基本数据 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00100">100</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af0592dbaf43fa40fe60f04efc50b468a"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_extractCallback" ref="af0592dbaf43fa40fe60f04efc50b468a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">IArchiveExtractCallbackPtr</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#af0592dbaf43fa40fe60f04efc50b468a">RCZip::RCCabFolderOutStream::m_extractCallback</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压回调接口指针 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00116">116</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abe63101d89fb63ecee56574997a2c03e"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_extractStatuses" ref="abe63101d89fb63ecee56574997a2c03e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;bool&gt;* <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#abe63101d89fb63ecee56574997a2c03e">RCZip::RCCabFolderOutStream::m_extractStatuses</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压状态 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00104">104</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bee070a63a8caa7d6b77badc741ac4e"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_fileIsOpen" ref="a4bee070a63a8caa7d6b77badc741ac4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a4bee070a63a8caa7d6b77badc741ac4e">RCZip::RCCabFolderOutStream::m_fileIsOpen</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件是否被打开 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00132">132</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d2026ccb9d90b7e44676d0d2e0e50a9"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_folderSize" ref="a8d2026ccb9d90b7e44676d0d2e0e50a9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a8d2026ccb9d90b7e44676d0d2e0e50a9">RCZip::RCCabFolderOutStream::m_folderSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件夹大小 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00140">140</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aba33daf362f1856cc90c4df43ad7c72d"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_isOk" ref="aba33daf362f1856cc90c4df43ad7c72d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aba33daf362f1856cc90c4df43ad7c72d">RCZip::RCCabFolderOutStream::m_isOk</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否ok </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00128">128</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afacc0368a3d1f384f8433f08881b2bf4"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_isSupported" ref="afacc0368a3d1f384f8433f08881b2bf4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#afacc0368a3d1f384f8433f08881b2bf4">RCZip::RCCabFolderOutStream::m_isSupported</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否支持 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00156">156</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf95499dcc8741c4b5debe296e906e21"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_posInFolder" ref="aaf95499dcc8741c4b5debe296e906e21" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aaf95499dcc8741c4b5debe296e906e21">RCZip::RCCabFolderOutStream::m_posInFolder</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件中的偏移位置 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00144">144</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aff3981870223204b45927639ab7137da"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_realOutStream" ref="aff3981870223204b45927639ab7137da" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#aff3981870223204b45927639ab7137da">RCZip::RCCabFolderOutStream::m_realOutStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>真实输出流 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00124">124</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4655ee3b4949f4eb87ecf9f0f9ee218b"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_remainFileSize" ref="a4655ee3b4949f4eb87ecf9f0f9ee218b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a4655ee3b4949f4eb87ecf9f0f9ee218b">RCZip::RCCabFolderOutStream::m_remainFileSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>剩余文件大小 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00136">136</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afeef0020362f37c4cf6c5f77d96eed0f"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_startIndex" ref="afeef0020362f37c4cf6c5f77d96eed0f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#afeef0020362f37c4cf6c5f77d96eed0f">RCZip::RCCabFolderOutStream::m_startIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>起始索引 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00108">108</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a58031e26d286dbef04c59542a5674ab4"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_tempBuf" ref="a58031e26d286dbef04c59542a5674ab4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a58031e26d286dbef04c59542a5674ab4">RCZip::RCCabFolderOutStream::m_tempBuf</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据缓冲区 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00148">148</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab645f66a0a5efa13e1c7450809a94e90"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_tempBufMode" ref="ab645f66a0a5efa13e1c7450809a94e90" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#ab645f66a0a5efa13e1c7450809a94e90">RCZip::RCCabFolderOutStream::m_tempBufMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是临时缓冲区模式 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00152">152</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ece51ab63f6200d3e6a7049d7833405"></a><!-- doxytag: member="RCZip::RCCabFolderOutStream::m_testMode" ref="a5ece51ab63f6200d3e6a7049d7833405" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/df5/classRCZip_1_1RCCabFolderOutStream.html#a5ece51ab63f6200d3e6a7049d7833405">RCZip::RCCabFolderOutStream::m_testMode</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是测试模式 </p>
+
+<p>在文件<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a>第<a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html#l00120">120</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d6/d35/RCCabFolderOutStream_8h_source.html">RCCabFolderOutStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

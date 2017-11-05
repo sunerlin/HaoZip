@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: Threads.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Threads.h</h1><a href="../../dc/db3/Threads_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Threads.h -- multithreading library</span>
+<a name="l00002"></a>00002 <span class="comment">2009-03-27 : Igor Pavlov : Public domain */</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef __7Z_THREADS_H</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define __7Z_THREADS_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/df8/Types_8h.html">algorithm/Types.h</a>&quot;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00011"></a>00011 <span class="preprocessor">#endif</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a8699e434fbe3c169535ab3fef1fa6f3d">HandlePtr_Close</a>(HANDLE *h);
+<a name="l00014"></a>00014 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a2bf0ebdd9901830b8e5f90d29b6e63bb">Handle_WaitObject</a>(HANDLE h);
+<a name="l00015"></a>00015 
+<a name="l00016"></a><a class="code" href="../../dc/db3/Threads_8h.html#a068a5473befa776f23a97add9512d427">00016</a> <span class="keyword">typedef</span> HANDLE <a class="code" href="../../dc/db3/Threads_8h.html#a068a5473befa776f23a97add9512d427">CThread</a>;
+<a name="l00017"></a><a class="code" href="../../dc/db3/Threads_8h.html#af06c4a816bb08a4fb5a9f10b5401ebd1">00017</a> <span class="preprocessor">#define Thread_Construct(p) *(p) = NULL</span>
+<a name="l00018"></a><a class="code" href="../../dc/db3/Threads_8h.html#ab3edc1bfefd2bf6915622f8348ac8a5b">00018</a> <span class="preprocessor"></span><span class="preprocessor">#define Thread_WasCreated(p) (*(p) != NULL)</span>
+<a name="l00019"></a><a class="code" href="../../dc/db3/Threads_8h.html#a9aab58a2032fde0749a62f0346c9b8da">00019</a> <span class="preprocessor"></span><span class="preprocessor">#define Thread_Close(p) HandlePtr_Close(p)</span>
+<a name="l00020"></a><a class="code" href="../../dc/db3/Threads_8h.html#ad396d7992e2911f93e874a64d7aa8c5c">00020</a> <span class="preprocessor"></span><span class="preprocessor">#define Thread_Wait(p) Handle_WaitObject(*(p))</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span> 
+<a name="l00022"></a><a class="code" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">00022</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <a class="code" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a>;
+<a name="l00023"></a><a class="code" href="../../dc/db3/Threads_8h.html#a563e8964d90165aacba91d48c5660b6f">00023</a> <span class="preprocessor">#define THREAD_FUNC_CALL_TYPE MY_STD_CALL</span>
+<a name="l00024"></a><a class="code" href="../../dc/db3/Threads_8h.html#ab2f15a34292562b3181768294286af0a">00024</a> <span class="preprocessor"></span><span class="preprocessor">#define THREAD_FUNC_DECL THREAD_FUNC_RET_TYPE THREAD_FUNC_CALL_TYPE</span>
+<a name="l00025"></a><a class="code" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">00025</a> <span class="preprocessor"></span><span class="keyword">typedef</span> <a class="code" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a> (<a class="code" href="../../dc/db3/Threads_8h.html#a563e8964d90165aacba91d48c5660b6f">THREAD_FUNC_CALL_TYPE</a> * <a class="code" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">THREAD_FUNC_TYPE</a>)(<span class="keywordtype">void</span> *);
+<a name="l00026"></a>00026 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a62e1050845b14c17f4d628ab4c60284f">Thread_Create</a>(CThread *p, <a class="code" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">THREAD_FUNC_TYPE</a> func, LPVOID param);
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 
+<a name="l00030"></a><a class="code" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">00030</a> <span class="keyword">typedef</span> HANDLE <a class="code" href="../../dc/db3/Threads_8h.html#ad3b664012f3ed6e3e8f05d26cd9df807">CEvent</a>;
+<a name="l00031"></a>00031 
+<a name="l00032"></a><a class="code" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">00032</a> <span class="keyword">typedef</span> CEvent <a class="code" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a>;
+<a name="l00033"></a><a class="code" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">00033</a> <span class="keyword">typedef</span> CEvent <a class="code" href="../../dc/db3/Threads_8h.html#a577b1156766499bb9817e8304c529263">CManualResetEvent</a>;
+<a name="l00034"></a>00034 
+<a name="l00035"></a><a class="code" href="../../dc/db3/Threads_8h.html#a0dcbeac27920a30bae1e546ea697eb94">00035</a> <span class="preprocessor">#define Event_Construct(p) *(p) = NULL</span>
+<a name="l00036"></a><a class="code" href="../../dc/db3/Threads_8h.html#ac3a227f0ec82ec90b4f24df85b132887">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define Event_IsCreated(p) (*(p) != NULL)</span>
+<a name="l00037"></a><a class="code" href="../../dc/db3/Threads_8h.html#a92323a977a31f0a6c21653df74f503c2">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define Event_Close(p) HandlePtr_Close(p)</span>
+<a name="l00038"></a><a class="code" href="../../dc/db3/Threads_8h.html#afaf660b623588b3d691fdc56d725cd32">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define Event_Wait(p) Handle_WaitObject(*(p))</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span><a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a4c894884b1268b8d00d2a96489ba89e3">Event_Set</a>(CEvent *p);
+<a name="l00040"></a>00040 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#adcebff2a2a5098940f037eb6ba9d6873">Event_Reset</a>(CEvent *p);
+<a name="l00041"></a>00041 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a674ddf2bcc8c81d557d9d7c6062d9d6d">ManualResetEvent_Create</a>(CManualResetEvent *p, <span class="keywordtype">int</span> signaled);
+<a name="l00042"></a>00042 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#aea4abce1bd8c949beec4ec4b04a20dc9">ManualResetEvent_CreateNotSignaled</a>(CManualResetEvent *p);
+<a name="l00043"></a>00043 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#adb1324b7e6541e5ccb3467a41378390e">AutoResetEvent_Create</a>(CAutoResetEvent *p, <span class="keywordtype">int</span> signaled);
+<a name="l00044"></a>00044 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a412a057fdddc508871f7c63812a96aff">AutoResetEvent_CreateNotSignaled</a>(CAutoResetEvent *p);
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 
+<a name="l00047"></a><a class="code" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">00047</a> <span class="keyword">typedef</span> HANDLE <a class="code" href="../../dc/db3/Threads_8h.html#a06778ea105c5f99d685edf99dd15db73">CSemaphore</a>;
+<a name="l00048"></a>00048 
+<a name="l00049"></a><a class="code" href="../../dc/db3/Threads_8h.html#a63b67aef5cbe33dbfc1d28584dabb47f">00049</a> <span class="preprocessor">#define Semaphore_Construct(p) (*p) = NULL</span>
+<a name="l00050"></a><a class="code" href="../../dc/db3/Threads_8h.html#a8807f038a48925de093fbcb8ab3f2495">00050</a> <span class="preprocessor"></span><span class="preprocessor">#define Semaphore_Close(p) HandlePtr_Close(p)</span>
+<a name="l00051"></a><a class="code" href="../../dc/db3/Threads_8h.html#a7a0f8eac6ca540fa25d6a44b46c595c6">00051</a> <span class="preprocessor"></span><span class="preprocessor">#define Semaphore_Wait(p) Handle_WaitObject(*(p))</span>
+<a name="l00052"></a>00052 <span class="preprocessor"></span><a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a42fc4ad00c925e060303de04d8ce4fc6">Semaphore_Create</a>(CSemaphore *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> initCount, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> maxCount);
+<a name="l00053"></a>00053 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#ac916408332d8330414a3439610175e0b">Semaphore_ReleaseN</a>(CSemaphore *p, <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> num);
+<a name="l00054"></a>00054 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a6d392082486c2dd897b1256a5b5eb8f7">Semaphore_Release1</a>(CSemaphore *p);
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 
+<a name="l00057"></a><a class="code" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">00057</a> <span class="keyword">typedef</span> CRITICAL_SECTION <a class="code" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a>;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../dc/db3/Threads_8h.html#a1e49081fd33200900841f17035ecb15b">CriticalSection_Init</a>(CCriticalSection *p);
+<a name="l00060"></a><a class="code" href="../../dc/db3/Threads_8h.html#a67cf84f9755450ba898acd55f1661d69">00060</a> <span class="preprocessor">#define CriticalSection_Delete(p) DeleteCriticalSection(p)</span>
+<a name="l00061"></a><a class="code" href="../../dc/db3/Threads_8h.html#addaeaf02649e7ff653df59f52b422835">00061</a> <span class="preprocessor"></span><span class="preprocessor">#define CriticalSection_Enter(p) EnterCriticalSection(p)</span>
+<a name="l00062"></a><a class="code" href="../../dc/db3/Threads_8h.html#a6fcc1ed56a7e4428387ba74697c58ce3">00062</a> <span class="preprocessor"></span><span class="preprocessor">#define CriticalSection_Leave(p) LeaveCriticalSection(p)</span>
+<a name="l00063"></a>00063 <span class="preprocessor"></span>
+<a name="l00064"></a>00064 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00065"></a>00065 <span class="preprocessor"></span>}
+<a name="l00066"></a>00066 <span class="preprocessor">#endif</span>
+<a name="l00067"></a>00067 <span class="preprocessor"></span>
+<a name="l00068"></a>00068 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

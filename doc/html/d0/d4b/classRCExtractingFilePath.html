@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCExtractingFilePath类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCExtractingFilePath类参考</h1><!-- doxytag: class="RCExtractingFilePath" -->
+<p><code>#include &lt;<a class="el" href="../../dc/d9e/RCExtractingFilePath_8h_source.html">RCExtractingFilePath.h</a>&gt;</code></p>
+
+<p><a href="../../d0/d9a/classRCExtractingFilePath-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classRCExtractingFilePath.html#a386c09da7413a920cfa7e76829c3a37e">MakeCorrectPath</a> (RCVector&lt; RCString &gt; &amp;pathParts)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classRCExtractingFilePath.html#a418d21db14bb41a85e19ad8b36102a1d">MakePathNameFromParts</a> (const RCVector&lt; RCString &gt; &amp;parts)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classRCExtractingFilePath.html#a17bad9c8c40a58f5d370f8d0062a3d9d">GetCorrectFsPath</a> (const RCString &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classRCExtractingFilePath.html#a254733ba3529c96f5ee578a77ca5a55c">GetCorrectFullFsPath</a> (const RCString &amp;path)</td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classRCExtractingFilePath.html#a33b31b2669de235d36708be03f67f295">GetCorrectFileName</a> (const RCString &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classRCExtractingFilePath.html#a85e9be76ad3a4c2da2647345632ff6b9">ReplaceIncorrectChars</a> (const RCString &amp;s)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>解压文件路径 </p>
+
+<p>在文件<a class="el" href="../../dc/d9e/RCExtractingFilePath_8h_source.html">RCExtractingFilePath.h</a>第<a class="el" href="../../dc/d9e/RCExtractingFilePath_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a33b31b2669de235d36708be03f67f295"></a><!-- doxytag: member="RCExtractingFilePath::GetCorrectFileName" ref="a33b31b2669de235d36708be03f67f295" args="(const RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCExtractingFilePath::GetCorrectFileName </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取正确的文件名 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>原文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回正确的文件名 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a17bad9c8c40a58f5d370f8d0062a3d9d"></a><!-- doxytag: member="RCExtractingFilePath::GetCorrectFsPath" ref="a17bad9c8c40a58f5d370f8d0062a3d9d" args="(const RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCExtractingFilePath::GetCorrectFsPath </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>生成路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>原路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回生成的路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a254733ba3529c96f5ee578a77ca5a55c"></a><!-- doxytag: member="RCExtractingFilePath::GetCorrectFullFsPath" ref="a254733ba3529c96f5ee578a77ca5a55c" args="(const RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCExtractingFilePath::GetCorrectFullFsPath </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>生成路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>原路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回生成的路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a386c09da7413a920cfa7e76829c3a37e"></a><!-- doxytag: member="RCExtractingFilePath::MakeCorrectPath" ref="a386c09da7413a920cfa7e76829c3a37e" args="(RCVector&lt; RCString &gt; &amp;pathParts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCExtractingFilePath::MakeCorrectPath </td>
+          <td>(</td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>pathParts</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>筛选正确路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>pathParts</em>&nbsp;</td><td>文件路径列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a418d21db14bb41a85e19ad8b36102a1d"></a><!-- doxytag: member="RCExtractingFilePath::MakePathNameFromParts" ref="a418d21db14bb41a85e19ad8b36102a1d" args="(const RCVector&lt; RCString &gt; &amp;parts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCExtractingFilePath::MakePathNameFromParts </td>
+          <td>(</td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>parts</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>生成路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>parts</em>&nbsp;</td><td>各级路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回生成的路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a85e9be76ad3a4c2da2647345632ff6b9"></a><!-- doxytag: member="RCExtractingFilePath::ReplaceIncorrectChars" ref="a85e9be76ad3a4c2da2647345632ff6b9" args="(const RCString &amp;s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RCString RCExtractingFilePath::ReplaceIncorrectChars </td>
+          <td>(</td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>s</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>替换字符 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>s</em>&nbsp;</td><td>原字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>替换后字符串 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dc/d9e/RCExtractingFilePath_8h_source.html">RCExtractingFilePath.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

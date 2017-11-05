@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveType.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_5df61e8bc95b34ee789cf93552e6d84b.html">interface</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveType.h文件参考</h1><code>#include &quot;<a class="el" href="../../d0/d20/RCDefs_8h_source.html">base/RCDefs.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCArchiveType.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d8/dff/RCArchiveType_8h__incl.png" border="0" usemap="#RCArchiveType_8h_map" alt=""/></div>
+<map name="RCArchiveType_8h_map" id="RCArchiveType_8h">
+<area shape="rect" id="node3" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="292,80,409,107"/><area shape="rect" id="node5" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="288,155,413,181"/><area shape="rect" id="node9" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="96,229,261,256"/><area shape="rect" id="node11" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="285,229,416,256"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d2/d77/RCArchiveType_8h__dep__incl.png" border="0" usemap="#RCArchiveType_8hdep_map" alt=""/></div>
+<map name="RCArchiveType_8hdep_map" id="RCArchiveType_8hdep">
+<area shape="rect" id="node3" href="../../dc/db6/RCPropertyIDUtils_8h.html" title="RCPropertyIDUtils.h" alt="" coords="156,80,308,107"/><area shape="rect" id="node5" href="../../db/df8/IArchiveInfo_8h.html" title="IArchiveInfo.h" alt="" coords="332,80,447,107"/><area shape="rect" id="node7" href="../../da/d8a/RCExtract_8h.html" title="RCExtract.h" alt="" coords="5,304,104,331"/><area shape="rect" id="node9" href="../../d5/dea/RCArchiveInfoEx_8h.html" title="RCArchiveInfoEx.h" alt="" coords="173,155,317,181"/><area shape="rect" id="node16" href="../../d4/d50/RCArchiveManager_8h.html" title="RCArchiveManager.h" alt="" coords="309,229,469,256"/><area shape="rect" id="node23" href="../../d8/d63/RCArchiveInfoBase_8h.html" title="RCArchiveInfoBase.h" alt="" coords="4484,155,4644,181"/><area shape="rect" id="node77" href="../../d8/d7b/IArchive_8h.html" title="IArchive.h" alt="" coords="1343,155,1431,181"/><area shape="rect" id="node11" href="../../d2/d8a/RCArchiveCodecs_8h.html" title="RCArchiveCodecs.h" alt="" coords="136,229,285,256"/><area shape="rect" id="node14" href="../../d5/d46/RCArchiveCodecsLoader_8h.html" title="RCArchiveCodecsLoader.h" alt="" coords="128,304,323,331"/><area shape="rect" id="node19" href="../../d4/d18/RCArchiveLoader_8h.html" title="RCArchiveLoader.h" alt="" coords="347,304,493,331"/><area shape="rect" id="node21" href="../../de/d47/RCArchiveRegister_8h.html" title="RCArchiveRegister.h" alt="" coords="517,304,672,331"/><area shape="rect" id="node25" href="../../d8/d0e/RC7zArchiveInfo_8h.html" title="RC7zArchiveInfo.h" alt="" coords="3600,229,3744,256"/><area shape="rect" id="node27" href="../../df/df1/RCArjArchiveInfo_8h.html" title="RCArjArchiveInfo.h" alt="" coords="3768,229,3915,256"/><area shape="rect" id="node29" href="../../d4/d18/RCBZip2ArchiveInfo_8h.html" title="RCBZip2ArchiveInfo.h" alt="" coords="3939,229,4104,256"/><area shape="rect" id="node31" href="../../d6/df5/RCCabArchiveInfo_8h.html" title="RCCabArchiveInfo.h" alt="" coords="4128,229,4280,256"/><area shape="rect" id="node33" href="../../d7/d02/RCChmArchiveInfo_8h.html" title="RCChmArchiveInfo.h" alt="" coords="4304,229,4461,256"/><area shape="rect" id="node35" href="../../dc/d5b/RCComArchiveInfo_8h.html" title="RCComArchiveInfo.h" alt="" coords="4485,229,4643,256"/><area shape="rect" id="node37" href="../../d6/d84/RCCpioArchiveInfo_8h.html" title="RCCpioArchiveInfo.h" alt="" coords="4667,229,4824,256"/><area shape="rect" id="node39" href="../../d3/de3/RCDebArchiveInfo_8h.html" title="RCDebArchiveInfo.h" alt="" coords="4848,229,5003,256"/><area shape="rect" id="node41" href="../../dc/d36/RCDmgArchiveInfo_8h.html" title="RCDmgArchiveInfo.h" alt="" coords="5027,229,5187,256"/><area shape="rect" id="node43" href="../../d4/d3d/RCGZipArchiveInfo_8h.html" title="RCGZipArchiveInfo.h" alt="" coords="5211,229,5368,256"/><area shape="rect" id="node45" href="../../d5/d73/RCHfsArchiveInfo_8h.html" title="RCHfsArchiveInfo.h" alt="" coords="5392,229,5541,256"/><area shape="rect" id="node47" href="../../da/df3/RCIsoArchiveInfo_8h.html" title="RCIsoArchiveInfo.h" alt="" coords="5565,229,5712,256"/><area shape="rect" id="node49" href="../../d1/ded/RCLzhArchiveInfo_8h.html" title="RCLzhArchiveInfo.h" alt="" coords="5736,229,5885,256"/><area shape="rect" id="node51" href="../../d2/df1/RCLzma86ArchiveInfo_8h.html" title="RCLzma86ArchiveInfo.h" alt="" coords="5909,229,6091,256"/><area shape="rect" id="node53" href="../../d3/dda/RCLzmaArchiveInfo_8h.html" title="RCLzmaArchiveInfo.h" alt="" coords="6115,229,6277,256"/><area shape="rect" id="node55" href="../../d8/d75/RCNsisArchiveInfo_8h.html" title="RCNsisArchiveInfo.h" alt="" coords="6301,229,6456,256"/><area shape="rect" id="node57" href="../../de/da9/RCRarArchiveInfo_8h.html" title="RCRarArchiveInfo.h" alt="" coords="6480,229,6629,256"/><area shape="rect" id="node59" href="../../da/d2a/RCRpmArchiveInfo_8h.html" title="RCRpmArchiveInfo.h" alt="" coords="6653,229,6811,256"/><area shape="rect" id="node61" href="../../dc/d8f/RCSplitArchiveInfo_8h.html" title="RCSplitArchiveInfo.h" alt="" coords="6835,229,6992,256"/><area shape="rect" id="node63" href="../../d4/d83/RCTarArchiveInfo_8h.html" title="RCTarArchiveInfo.h" alt="" coords="2365,229,2512,256"/><area shape="rect" id="node65" href="../../d3/d94/RCUdfArchiveInfo_8h.html" title="RCUdfArchiveInfo.h" alt="" coords="2536,229,2685,256"/><area shape="rect" id="node67" href="../../d2/dee/RCWimArchiveInfo_8h.html" title="RCWimArchiveInfo.h" alt="" coords="2709,229,2867,256"/><area shape="rect" id="node69" href="../../d3/ddc/RCXarArchiveInfo_8h.html" title="RCXarArchiveInfo.h" alt="" coords="2891,229,3040,256"/><area shape="rect" id="node71" href="../../d6/d26/RCZArchiveInfo_8h.html" title="RCZArchiveInfo.h" alt="" coords="3064,229,3200,256"/><area shape="rect" id="node73" href="../../d8/d24/RCZipArchiveInfo_8h.html" title="RCZipArchiveInfo.h" alt="" coords="3224,229,3373,256"/><area shape="rect" id="node75" href="../../d5/db9/RCZipSplitArchiveInfo_8h.html" title="RCZipSplitArchiveInfo.h" alt="" coords="3397,229,3576,256"/><area shape="rect" id="node79" href="../../d3/d07/IOpenCallbackUI_8h.html" title="IOpenCallbackUI.h" alt="" coords="1992,229,2136,256"/><area shape="rect" id="node81" href="../../dd/d90/RCArchiveOpenCallback_8h.html" title="RCArchiveOpenCallback.h" alt="" coords="2021,304,2216,331"/><area shape="rect" id="node83" href="../../d0/ddb/RCArchiveLink_8h.html" title="RCArchiveLink.h" alt="" coords="2211,229,2341,256"/><area shape="rect" id="node86" href="../../d2/ddc/RCExtractArchiveCallback_8h.html" title="RCExtractArchiveCallback.h" alt="" coords="493,229,699,256"/><area shape="rect" id="node90" href="../../d1/d2a/RCArchiveUpdateCallback_8h.html" title="RCArchiveUpdateCallback.h" alt="" coords="723,229,931,256"/><area shape="rect" id="node92" href="../../d5/d08/RCUpdatePair_8h.html" title="RCUpdatePair.h" alt="" coords="955,229,1077,256"/><area shape="rect" id="node94" href="../../dc/d90/RC7zFolderInStream_8h.html" title="RC7zFolderInStream.h" alt="" coords="1101,229,1272,256"/><area shape="rect" id="node96" href="../../d1/d0f/RC7zFolderOutStream_8h.html" title="RC7zFolderOutStream.h" alt="" coords="1296,229,1477,256"/><area shape="rect" id="node98" href="../../d9/deb/RC7zHandler_8h.html" title="RC7zHandler.h" alt="" coords="1501,229,1621,256"/><area shape="rect" id="node100" href="../../d0/de1/RC7zUpdate_8h.html" title="RC7zUpdate.h" alt="" coords="1645,229,1760,256"/><area shape="rect" id="node102" href="../../da/d48/RCArjHandler_8h.html" title="RCArjHandler.h" alt="" coords="1832,304,1955,331"/><area shape="rect" id="node104" href="../../d9/d1b/RCArjInArchive_8h.html" title="RCArjInArchive.h" alt="" coords="1784,229,1917,256"/></map>
+</div>
+
+<p><a href="../../d5/d96/RCArchiveType_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a4397cc37a0a99278a71b265ad00ec670">__RCArchiveType_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a22eb5269a50c58959c4b11d2d3cd30a9">RC_ARCHIVE_TYPE_ZIP</a>&nbsp;&nbsp;&nbsp;_T(&quot;zip&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a05a6f26fa7fff33b5b86d7ea2b26ea74">RC_ARCHIVE_TYPE_7Z</a>&nbsp;&nbsp;&nbsp;_T(&quot;7z&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#adb60a8d857b031f9343788be0b11b067">RC_ARCHIVE_TYPE_TAR</a>&nbsp;&nbsp;&nbsp;_T(&quot;tar&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#ad89e5ac9ac284558008f5ab479cd0918">RC_ARCHIVE_TYPE_RAR</a>&nbsp;&nbsp;&nbsp;_T(&quot;rar&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a9f0eab578d5a896114e5ef9ecff45afe">RC_ARCHIVE_TYPE_CAB</a>&nbsp;&nbsp;&nbsp;_T(&quot;cab&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a29e0c7325fbcb125ea473ab85ee64c15">RC_ARCHIVE_TYPE_ISO</a>&nbsp;&nbsp;&nbsp;_T(&quot;iso&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a380b3a31071941c3f46170c9eaa22ef4">RC_ARCHIVE_TYPE_UDF</a>&nbsp;&nbsp;&nbsp;_T(&quot;udf&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a4ccad918f56b95d12e2553555ed60050">RC_ARCHIVE_TYPE_BZIP2</a>&nbsp;&nbsp;&nbsp;_T(&quot;bzip2&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#ac68451bd0b00908a53b67f2b1d6b45d6">RC_ARCHIVE_TYPE_ARJ</a>&nbsp;&nbsp;&nbsp;_T(&quot;arj&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a69e38163c5c884e214d3b4fb10983c6d">RC_ARCHIVE_TYPE_Z</a>&nbsp;&nbsp;&nbsp;_T(&quot;z&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a286f0e921b7e0f681ba995346f5c61db">RC_ARCHIVE_TYPE_GZIP</a>&nbsp;&nbsp;&nbsp;_T(&quot;gzip&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#afee92b1f1315fdb3e667d3de186c1637">RC_ARCHIVE_TYPE_LZH</a>&nbsp;&nbsp;&nbsp;_T(&quot;lzh&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a68cf186ee336844170e32357010db5b5">RC_ARCHIVE_TYPE_RPM</a>&nbsp;&nbsp;&nbsp;_T(&quot;rpm&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a1d8cbd8d88e8c75b856da687489b82e2">RC_ARCHIVE_TYPE_LZMA</a>&nbsp;&nbsp;&nbsp;_T(&quot;lzma&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#ab7c9f3caf442af809d1a5cf2471947d9">RC_ARCHIVE_TYPE_LZMA86</a>&nbsp;&nbsp;&nbsp;_T(&quot;lzma86&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#aae3a15f3b129b4b25f14be128703aacc">RC_ARCHIVE_TYPE_NSIS</a>&nbsp;&nbsp;&nbsp;_T(&quot;nsis&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a200f8af476c1773d92224b71f39f0cd2">RC_ARCHIVE_TYPE_CHM</a>&nbsp;&nbsp;&nbsp;_T(&quot;chm&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a219b57f20a20e609f13f014e52a40472">RC_ARCHIVE_TYPE_DMG</a>&nbsp;&nbsp;&nbsp;_T(&quot;dmg&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a30f5a2391bdff59872b9c3ff485e9e31">RC_ARCHIVE_TYPE_HFS</a>&nbsp;&nbsp;&nbsp;_T(&quot;hfs&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#af97a34b71619adf4b17c412d5d005c63">RC_ARCHIVE_TYPE_WIM</a>&nbsp;&nbsp;&nbsp;_T(&quot;wim&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a0b2e4a802e501afb559a7c0ca828b5ed">RC_ARCHIVE_TYPE_DEB</a>&nbsp;&nbsp;&nbsp;_T(&quot;deb&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a242d4b2d8c4225ed27a9c94267b8af4a">RC_ARCHIVE_TYPE_COM</a>&nbsp;&nbsp;&nbsp;_T(&quot;com&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a55454b8bcb7fd69f83fec110dd4d04e9">RC_ARCHIVE_TYPE_CPIO</a>&nbsp;&nbsp;&nbsp;_T(&quot;cpio&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a6baf2a251344b8d190dde245cb492ab6">RC_ARCHIVE_TYPE_PE</a>&nbsp;&nbsp;&nbsp;_T(&quot;PE&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#afca80d817214a9d68c1f4d9574826cbb">RC_ARCHIVE_TYPE_XAR</a>&nbsp;&nbsp;&nbsp;_T(&quot;xar&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#af83d41276d315c841ac1cb2b7d1a1561">RC_ARCHIVE_TYPE_SPLIT</a>&nbsp;&nbsp;&nbsp;_T(&quot;split&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#ae0ca0e0e0ba6a697eed9ad25833ae764">RC_ARCHIVE_TYPE_UUE</a>&nbsp;&nbsp;&nbsp;_T(&quot;uue&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a435fc36c7443beb57b57ddca7feb9b3f">RC_ARCHIVE_TYPE_ACE</a>&nbsp;&nbsp;&nbsp;_T(&quot;ace&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#a1cab541a7f617ba4fb3467b305ef3b18">RC_ARCHIVE_TYPE_ZIP_SPLIT</a>&nbsp;&nbsp;&nbsp;_T(&quot;zip_split&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d96/RCArchiveType_8h.html#ac0914ee4295c6b91f15c2069f0757537">RC_ARCHIVE_TYPE_ISZ</a>&nbsp;&nbsp;&nbsp;_T(&quot;isz&quot;)</td></tr>
+<tr><td colspan="2"><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a6d7155d8406e293df197089a12eb8f03">RCZip::RCArchiveID</a></td></tr>
+<tr><td colspan="2"><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66">RCZip::RCArchiveType</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a6a901f31f34716bedbe129537e2fc44d">RCZip::RC_ARCHIVE_UNKNOWN</a> =  -1, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2751bf87fdcfc2ee1dc14577a6dc91b6">RCZip::RC_ARCHIVE_ZIP</a> =  1, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a68d91787c8df951b8ded9610b41e0b90">RCZip::RC_ARCHIVE_7Z</a> =  2, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a45bcaecf7cccbdc108c9d18e83221163">RCZip::RC_ARCHIVE_TAR</a> =  3, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2eb67029e1ea1f572e111a0655b6df16">RCZip::RC_ARCHIVE_RAR</a> =  4, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ac6178ccb2a59d819ffe38b7e5304fc77">RCZip::RC_ARCHIVE_CAB</a> =  5, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a5748f929af51f7b7b721b5d31889780f">RCZip::RC_ARCHIVE_ISO</a> =  6, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a13fce485a7a2685b09099ef64c9704a6">RCZip::RC_ARCHIVE_BZIP2</a> =  7, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ada57abcee10ffface5dc37f30e6da2c9">RCZip::RC_ARCHIVE_UDF</a> =  8, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a29747163d6f1fd324139ee02182819d1">RCZip::RC_ARCHIVE_ARJ</a> =  9, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ad67ccb527500801d1facb4a1791d1214">RCZip::RC_ARCHIVE_Z</a> =  10, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ae53ad93ec8ad1283fdd47b3e6dd09785">RCZip::RC_ARCHIVE_GZIP</a> =  11, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a1e9fda4d6db7dd5e3df8797a21d350a8">RCZip::RC_ARCHIVE_LZH</a> =  12, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66aeb7cadb5f273d92519bd7d465aec0588">RCZip::RC_ARCHIVE_RPM</a> =  13, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a2c4996bea91d20776f7f3331f92ee1fa">RCZip::RC_ARCHIVE_LZMA</a> =  14, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66acebeef68981d40dd46d86774fc422e9e">RCZip::RC_ARCHIVE_NSIS</a> =  15, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66abc7e1fb2b948755cbc225729228f6568">RCZip::RC_ARCHIVE_CHM</a> =  16, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a89380d3253e6d5a205978ab3a5329671">RCZip::RC_ARCHIVE_DMG</a> =  17, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66abc88b9f93a58e3f05b2b657f09f8c0c3">RCZip::RC_ARCHIVE_HFS</a> =  18, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a3a0c0f3b50be596914681ec47bfef49f">RCZip::RC_ARCHIVE_WIM</a> =  19, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ae8cd26b31cfeae40d05ccfcefaa4f4a2">RCZip::RC_ARCHIVE_DEB</a> =  20, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a3be42cdbf67a66775cbb6fe4b2a581a7">RCZip::RC_ARCHIVE_COM</a> =  21, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a51971cb2ba63b4a8042b59f4fde017b8">RCZip::RC_ARCHIVE_CPIO</a> =  22, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a25c617c7d2a67fd75af52420cd288289">RCZip::RC_ARCHIVE_PE</a> =  23, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a6756df1d484a6d37ef3f5aa1e0aa1ffa">RCZip::RC_ARCHIVE_XAR</a> =  24, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a1ed71a187c3ec05cb62a795418b49c5c">RCZip::RC_ARCHIVE_SPLIT</a> =  25, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ab5b748410c9dfa4d5f9d72f0d87c2c9d">RCZip::RC_ARCHIVE_UUE</a> =  26, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a7cf93d542e5e3afee88eea3ef85af158">RCZip::RC_ARCHIVE_ACE</a> =  27, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a9094b9438aba35ee08ae531be09d40ed">RCZip::RC_ARCHIVE_ZIP_SPLIT</a> =  28, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66ab08415b712e262b1f11e82ba6a17edba">RCZip::RC_ARCHIVE_LZMA86</a> =  29, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#abeb9958f703c511f0e636829028a4f66a4015d62b53fdefa8782c9fdb28da7f63">RCZip::RC_ARCHIVE_ISZ</a> =  30
+<br/>
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffb">RCZip::RCCompressFormatEnum</a> { <a class="el" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffba05cec5888b82b6cd10697281ef7846b6">RCZip::RC_COMPRESS_FORMAT_ZIP</a> =  0, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffbaddda4112fb19f647980c292c5988cbc8">RCZip::RC_COMPRESS_FORMAT_7Z</a> =  1, 
+<a class="el" href="../../d7/d5a/namespaceRCZip.html#ae4fd7b2e64cb82a971f1e81a46c42ffba18baa4038e5d497998d369f2d5d2a01f">RCZip::RC_COMPRESS_FORMAT_TAR</a> =  2
+ }</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a4397cc37a0a99278a71b265ad00ec670"></a><!-- doxytag: member="RCArchiveType.h::__RCArchiveType_h_" ref="a4397cc37a0a99278a71b265ad00ec670" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCArchiveType_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a05a6f26fa7fff33b5b86d7ea2b26ea74"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_7Z" ref="a05a6f26fa7fff33b5b86d7ea2b26ea74" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_7Z&nbsp;&nbsp;&nbsp;_T(&quot;7z&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00061">61</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a435fc36c7443beb57b57ddca7feb9b3f"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_ACE" ref="a435fc36c7443beb57b57ddca7feb9b3f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_ACE&nbsp;&nbsp;&nbsp;_T(&quot;ace&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00087">87</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac68451bd0b00908a53b67f2b1d6b45d6"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_ARJ" ref="ac68451bd0b00908a53b67f2b1d6b45d6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_ARJ&nbsp;&nbsp;&nbsp;_T(&quot;arj&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00068">68</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ccad918f56b95d12e2553555ed60050"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_BZIP2" ref="a4ccad918f56b95d12e2553555ed60050" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_BZIP2&nbsp;&nbsp;&nbsp;_T(&quot;bzip2&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00067">67</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f0eab578d5a896114e5ef9ecff45afe"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_CAB" ref="a9f0eab578d5a896114e5ef9ecff45afe" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_CAB&nbsp;&nbsp;&nbsp;_T(&quot;cab&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00064">64</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a200f8af476c1773d92224b71f39f0cd2"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_CHM" ref="a200f8af476c1773d92224b71f39f0cd2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_CHM&nbsp;&nbsp;&nbsp;_T(&quot;chm&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00076">76</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a242d4b2d8c4225ed27a9c94267b8af4a"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_COM" ref="a242d4b2d8c4225ed27a9c94267b8af4a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_COM&nbsp;&nbsp;&nbsp;_T(&quot;com&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00081">81</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a55454b8bcb7fd69f83fec110dd4d04e9"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_CPIO" ref="a55454b8bcb7fd69f83fec110dd4d04e9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_CPIO&nbsp;&nbsp;&nbsp;_T(&quot;cpio&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00082">82</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b2e4a802e501afb559a7c0ca828b5ed"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_DEB" ref="a0b2e4a802e501afb559a7c0ca828b5ed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_DEB&nbsp;&nbsp;&nbsp;_T(&quot;deb&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00080">80</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a219b57f20a20e609f13f014e52a40472"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_DMG" ref="a219b57f20a20e609f13f014e52a40472" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_DMG&nbsp;&nbsp;&nbsp;_T(&quot;dmg&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00077">77</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a286f0e921b7e0f681ba995346f5c61db"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_GZIP" ref="a286f0e921b7e0f681ba995346f5c61db" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_GZIP&nbsp;&nbsp;&nbsp;_T(&quot;gzip&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00070">70</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a30f5a2391bdff59872b9c3ff485e9e31"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_HFS" ref="a30f5a2391bdff59872b9c3ff485e9e31" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_HFS&nbsp;&nbsp;&nbsp;_T(&quot;hfs&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00078">78</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a29e0c7325fbcb125ea473ab85ee64c15"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_ISO" ref="a29e0c7325fbcb125ea473ab85ee64c15" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_ISO&nbsp;&nbsp;&nbsp;_T(&quot;iso&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00065">65</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0914ee4295c6b91f15c2069f0757537"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_ISZ" ref="ac0914ee4295c6b91f15c2069f0757537" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_ISZ&nbsp;&nbsp;&nbsp;_T(&quot;isz&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00089">89</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afee92b1f1315fdb3e667d3de186c1637"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_LZH" ref="afee92b1f1315fdb3e667d3de186c1637" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_LZH&nbsp;&nbsp;&nbsp;_T(&quot;lzh&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00071">71</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d8cbd8d88e8c75b856da687489b82e2"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_LZMA" ref="a1d8cbd8d88e8c75b856da687489b82e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_LZMA&nbsp;&nbsp;&nbsp;_T(&quot;lzma&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00073">73</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7c9f3caf442af809d1a5cf2471947d9"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_LZMA86" ref="ab7c9f3caf442af809d1a5cf2471947d9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_LZMA86&nbsp;&nbsp;&nbsp;_T(&quot;lzma86&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00074">74</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aae3a15f3b129b4b25f14be128703aacc"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_NSIS" ref="aae3a15f3b129b4b25f14be128703aacc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_NSIS&nbsp;&nbsp;&nbsp;_T(&quot;nsis&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00075">75</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6baf2a251344b8d190dde245cb492ab6"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_PE" ref="a6baf2a251344b8d190dde245cb492ab6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_PE&nbsp;&nbsp;&nbsp;_T(&quot;PE&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00083">83</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad89e5ac9ac284558008f5ab479cd0918"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_RAR" ref="ad89e5ac9ac284558008f5ab479cd0918" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_RAR&nbsp;&nbsp;&nbsp;_T(&quot;rar&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00063">63</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a68cf186ee336844170e32357010db5b5"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_RPM" ref="a68cf186ee336844170e32357010db5b5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_RPM&nbsp;&nbsp;&nbsp;_T(&quot;rpm&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00072">72</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af83d41276d315c841ac1cb2b7d1a1561"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_SPLIT" ref="af83d41276d315c841ac1cb2b7d1a1561" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_SPLIT&nbsp;&nbsp;&nbsp;_T(&quot;split&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00085">85</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adb60a8d857b031f9343788be0b11b067"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_TAR" ref="adb60a8d857b031f9343788be0b11b067" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_TAR&nbsp;&nbsp;&nbsp;_T(&quot;tar&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00062">62</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a380b3a31071941c3f46170c9eaa22ef4"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_UDF" ref="a380b3a31071941c3f46170c9eaa22ef4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_UDF&nbsp;&nbsp;&nbsp;_T(&quot;udf&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00066">66</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0ca0e0e0ba6a697eed9ad25833ae764"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_UUE" ref="ae0ca0e0e0ba6a697eed9ad25833ae764" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_UUE&nbsp;&nbsp;&nbsp;_T(&quot;uue&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00086">86</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af97a34b71619adf4b17c412d5d005c63"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_WIM" ref="af97a34b71619adf4b17c412d5d005c63" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_WIM&nbsp;&nbsp;&nbsp;_T(&quot;wim&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afca80d817214a9d68c1f4d9574826cbb"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_XAR" ref="afca80d817214a9d68c1f4d9574826cbb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_XAR&nbsp;&nbsp;&nbsp;_T(&quot;xar&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00084">84</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a69e38163c5c884e214d3b4fb10983c6d"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_Z" ref="a69e38163c5c884e214d3b4fb10983c6d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_Z&nbsp;&nbsp;&nbsp;_T(&quot;z&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00069">69</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a22eb5269a50c58959c4b11d2d3cd30a9"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_ZIP" ref="a22eb5269a50c58959c4b11d2d3cd30a9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_ZIP&nbsp;&nbsp;&nbsp;_T(&quot;zip&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文档类型，字符串形式 </p>
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00060">60</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cab541a7f617ba4fb3467b305ef3b18"></a><!-- doxytag: member="RCArchiveType.h::RC_ARCHIVE_TYPE_ZIP_SPLIT" ref="a1cab541a7f617ba4fb3467b305ef3b18" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RC_ARCHIVE_TYPE_ZIP_SPLIT&nbsp;&nbsp;&nbsp;_T(&quot;zip_split&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html">RCArchiveType.h</a>第<a class="el" href="../../d5/d96/RCArchiveType_8h_source.html#l00088">88</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

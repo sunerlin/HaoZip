@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCGZipHeader.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_d3b5bf57623d9982078247d5b042776b.html">gzip</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCGZipHeader.h文件参考</h1><code>#include &quot;<a class="el" href="../../d0/d20/RCDefs_8h_source.html">base/RCDefs.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCGZipHeader.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/da2/RCGZipHeader_8h__incl.png" border="0" usemap="#RCGZipHeader_8h_map" alt=""/></div>
+<map name="RCGZipHeader_8h_map" id="RCGZipHeader_8h">
+<area shape="rect" id="node3" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="292,80,409,107"/><area shape="rect" id="node5" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="288,155,413,181"/><area shape="rect" id="node9" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="96,229,261,256"/><area shape="rect" id="node11" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="285,229,416,256"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dc/da9/RCGZipHeader_8h__dep__incl.png" border="0" usemap="#RCGZipHeader_8hdep_map" alt=""/></div>
+<map name="RCGZipHeader_8hdep_map" id="RCGZipHeader_8hdep">
+<area shape="rect" id="node3" href="../../de/dff/RCGZipItem_8h.html" title="RCGZipItem.h" alt="" coords="15,80,129,107"/><area shape="rect" id="node5" href="../../d1/dbe/RCGZipHandler_8h.html" title="RCGZipHandler.h" alt="" coords="5,155,139,181"/></map>
+</div>
+
+<p><a href="../../d4/d34/RCGZipHeader_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/deb/namespaceRCZip_1_1RCGZipSignature.html">RCZip::RCGZipSignature</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddc/namespaceRCZip_1_1RCGZipHeader.html">RCZip::RCGZipHeader</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html">RCZip::RCGZipHeader::NFlags</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/namespaceRCZip_1_1RCGZipHeader_1_1NExtraFlags.html">RCZip::RCGZipHeader::NExtraFlags</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dfe/namespaceRCZip_1_1RCGZipHeader_1_1NCompressionMethod.html">RCZip::RCGZipHeader::NCompressionMethod</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html">RCZip::RCGZipHeader::NHostOS</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d34/RCGZipHeader_8h.html#aa7a2176f615508591df8c172b47f191c">__RCGZipHeader_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td colspan="2"><h2>枚举</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5b">RCZip::RCGZipHeader::NHostOS::EEnum</a> { <br/>
+&nbsp;&nbsp;<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5bad1f6dab4e0df61736c361cb67b2f5cfb">RCZip::RCGZipHeader::NHostOS::kFAT</a> =  0, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5babda386f30cca4f44f2086838da9fa1d1">RCZip::RCGZipHeader::NHostOS::kAMIGA</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba0d4cff9b97b16f37fc8b55dd9bd7e5df">RCZip::RCGZipHeader::NHostOS::kVMS</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba13f815b68e89b58fba6310a206ee5ae3">RCZip::RCGZipHeader::NHostOS::kUnix</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba999999f1f8089a9865d63da9a99634c2">RCZip::RCGZipHeader::NHostOS::kVM_CMS</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba8f829febb06052928795b052aa5c3db5">RCZip::RCGZipHeader::NHostOS::kAtari</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5babd24ab15e8622be64700a0a65ba7d56f">RCZip::RCGZipHeader::NHostOS::kHPFS</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba157df367dc5951369f3dc75125e0cf4c">RCZip::RCGZipHeader::NHostOS::kMac</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba27066861e94690bc41d9ec9eafa221a8">RCZip::RCGZipHeader::NHostOS::kZ_System</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5bafb09174720119a6a1e4a62a0c1d79265">RCZip::RCGZipHeader::NHostOS::kCPM</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba35be025931be406dd403594478b3ebc6">RCZip::RCGZipHeader::NHostOS::kTOPS20</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5baac1b1a4b6c059ae36b258c901f3ecab3">RCZip::RCGZipHeader::NHostOS::kNTFS</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba24740a90642499bffb04df31d5396d33">RCZip::RCGZipHeader::NHostOS::kQDOS</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba54c836764972134708b1354a3a3e8696">RCZip::RCGZipHeader::NHostOS::kAcorn</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5babf8222564bd7e724253d78726622fb35">RCZip::RCGZipHeader::NHostOS::kVFAT</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5baccea82753659cfb016da6810fa5d59e8">RCZip::RCGZipHeader::NHostOS::kMVS</a>, 
+<br/>
+&nbsp;&nbsp;<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5bab078489ada7941a69eae8fb49d7d3078">RCZip::RCGZipHeader::NHostOS::kBeOS</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5bad3173da5ad49a024a7c710c9ee77743f">RCZip::RCGZipHeader::NHostOS::kTandem</a>, 
+<a class="el" href="../../d4/dd3/namespaceRCZip_1_1RCGZipHeader_1_1NHostOS.html#a78e605ada494c33e4f055c792d709d5ba293a0b9e77e62cf5657828f8ca68d11f">RCZip::RCGZipHeader::NHostOS::kUnknown</a> =  255
+<br/>
+ }</td></tr>
+<tr><td colspan="2"><h2>变量</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/deb/namespaceRCZip_1_1RCGZipSignature.html#acad543ca3005a10c9c4256880e34ab6e">RCZip::RCGZipSignature::kSignature</a> = 0x8B1F</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html#a4ee26844289521b6a7d408add5c692f2">RCZip::RCGZipHeader::NFlags::kIsText</a> = 1 &lt;&lt; 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html#a9b59d02ec6ac50dd4e84940e73bbc3ac">RCZip::RCGZipHeader::NFlags::kCrc</a> = 1 &lt;&lt; 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html#acc3d4047607a11bb3957921e447bf98e">RCZip::RCGZipHeader::NFlags::kExtra</a> = 1 &lt;&lt; 2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html#ac985839c677781a6e2bc87b688b849f6">RCZip::RCGZipHeader::NFlags::kName</a> = 1 &lt;&lt; 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4f/namespaceRCZip_1_1RCGZipHeader_1_1NFlags.html#aa1d5233ca2904926363689b9a24b7fab">RCZip::RCGZipHeader::NFlags::kComment</a> = 1 &lt;&lt; 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/namespaceRCZip_1_1RCGZipHeader_1_1NExtraFlags.html#ab9fcbf983f340b2ef667a45ac775a05d">RCZip::RCGZipHeader::NExtraFlags::kMaximum</a> = 2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de4/namespaceRCZip_1_1RCGZipHeader_1_1NExtraFlags.html#a74a4475cea272bbf353b1e0effb56feb">RCZip::RCGZipHeader::NExtraFlags::kFastest</a> = 4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dfe/namespaceRCZip_1_1RCGZipHeader_1_1NCompressionMethod.html#a74485db6212d749e7178147987959bd7">RCZip::RCGZipHeader::NCompressionMethod::kDeflate</a> = 8</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="aa7a2176f615508591df8c172b47f191c"></a><!-- doxytag: member="RCGZipHeader.h::__RCGZipHeader_h_" ref="aa7a2176f615508591df8c172b47f191c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCGZipHeader_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d4/d34/RCGZipHeader_8h_source.html">RCGZipHeader.h</a>第<a class="el" href="../../d4/d34/RCGZipHeader_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

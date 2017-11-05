@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: CpuArch.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>CpuArch.h文件参考</h1><code>#include &lt;stdlib.h&gt;</code><br/>
+<div class="dynheader">
+CpuArch.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dc/d98/CpuArch_8h__incl.png" border="0" usemap="#CpuArch_8h_map" alt=""/></div>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/d96/CpuArch_8h__dep__incl.png" border="0" usemap="#CpuArch_8hdep_map" alt=""/></div>
+<map name="CpuArch_8hdep_map" id="CpuArch_8hdep">
+<area shape="rect" id="node3" href="../../d9/dbf/RCLzhItem_8h.html" title="RCLzhItem.h" alt="" coords="80,80,187,107"/><area shape="rect" id="node5" href="../../d8/dbb/RCLzhHandler_8h.html" title="RCLzhHandler.h" alt="" coords="5,155,131,181"/><area shape="rect" id="node7" href="../../d0/d0e/RCLzhIn_8h.html" title="RCLzhIn.h" alt="" coords="155,155,243,181"/></map>
+</div>
+
+<p><a href="../../d8/d0c/CpuArch_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#a01fd3a05593b4a3294b52a211ec2c4b6">GetUi16</a>(p)&nbsp;&nbsp;&nbsp;(((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0] | ((<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>)((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1] &lt;&lt; 8))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#a840d4c43628199670307473818ea02a3">GetUi32</a>(p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#ac6fc6ac2cd957a9671186123916d5e2c">GetUi64</a>(p)&nbsp;&nbsp;&nbsp;(GetUi32(p) | ((<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>)GetUi32(((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p)) + 4) &lt;&lt; 32))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#aa13433ba2f025dd5c28d83ad4869778f">SetUi16</a>(p, d)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#a132c88760583b34b04edadce45f2477d">SetUi32</a>(p, d)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#a29361f5136b6361900d9d2acaa04d769">GetBe32</a>(p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#a1fd9f491ab9490d1a931baebfccdd895">GetBe64</a>(p)&nbsp;&nbsp;&nbsp;(((<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>)GetBe32(p) &lt;&lt; 32) | GetBe32(((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p)) + 4))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0c/CpuArch_8h.html#abe684bc198244c53530700b20b630b0e">GetBe16</a>(p)&nbsp;&nbsp;&nbsp;(((<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>)((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0] &lt;&lt; 8) | ((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1])</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="abe684bc198244c53530700b20b630b0e"></a><!-- doxytag: member="CpuArch.h::GetBe16" ref="abe684bc198244c53530700b20b630b0e" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetBe16</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(((<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>)((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0] &lt;&lt; 8) | ((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1])</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00086">86</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a29361f5136b6361900d9d2acaa04d769"></a><!-- doxytag: member="CpuArch.h::GetBe32" ref="a29361f5136b6361900d9d2acaa04d769" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetBe32</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">( \
+    ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0] &lt;&lt; 24) | \
+    ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1] &lt;&lt; 16) | \
+    ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[2] &lt;&lt;  8) | \
+             ((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[3] )
+</pre></div>
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00076">76</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fd9f491ab9490d1a931baebfccdd895"></a><!-- doxytag: member="CpuArch.h::GetBe64" ref="a1fd9f491ab9490d1a931baebfccdd895" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetBe64</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(((<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>)GetBe32(p) &lt;&lt; 32) | GetBe32(((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p)) + 4))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00082">82</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a01fd3a05593b4a3294b52a211ec2c4b6"></a><!-- doxytag: member="CpuArch.h::GetUi16" ref="a01fd3a05593b4a3294b52a211ec2c4b6" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetUi16</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0] | ((<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>)((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1] &lt;&lt; 8))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00046">46</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a840d4c43628199670307473818ea02a3"></a><!-- doxytag: member="CpuArch.h::GetUi32" ref="a840d4c43628199670307473818ea02a3" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetUi32</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">( \
+             ((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0]        | \
+    ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1] &lt;&lt;  8) | \
+    ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[2] &lt;&lt; 16) | \
+    ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)((<span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[3] &lt;&lt; 24))
+</pre></div>
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00048">48</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6fc6ac2cd957a9671186123916d5e2c"></a><!-- doxytag: member="CpuArch.h::GetUi64" ref="ac6fc6ac2cd957a9671186123916d5e2c" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetUi64</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;(GetUi32(p) | ((<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>)GetUi32(((const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p)) + 4) &lt;&lt; 32))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00054">54</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa13433ba2f025dd5c28d83ad4869778f"></a><!-- doxytag: member="CpuArch.h::SetUi16" ref="aa13433ba2f025dd5c28d83ad4869778f" args="(p, d)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SetUi16</td>
+          <td>(</td>
+          <td class="paramtype">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">{ <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> _x_ = (d); \
+    ((<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0] = (<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>)_x_; \
+    ((<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1] = (<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>)(_x_ &gt;&gt; 8); }
+</pre></div>
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00055">55</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a132c88760583b34b04edadce45f2477d"></a><!-- doxytag: member="CpuArch.h::SetUi32" ref="a132c88760583b34b04edadce45f2477d" args="(p, d)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SetUi32</td>
+          <td>(</td>
+          <td class="paramtype">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">d&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">{ <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> _x_ = (d); \
+    ((<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[0] = (<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>)_x_; \
+    ((<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[1] = (<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>)(_x_ &gt;&gt; 8); \
+    ((<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[2] = (<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>)(_x_ &gt;&gt; 16); \
+    ((<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *)(p))[3] = (<a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>)(_x_ &gt;&gt; 24); }
+</pre></div>
+<p>在文件<a class="el" href="../../d8/d0c/CpuArch_8h_source.html">CpuArch.h</a>第<a class="el" href="../../d8/d0c/CpuArch_8h_source.html#l00059">59</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

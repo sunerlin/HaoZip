@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveManager类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveManager类参考</h1><!-- doxytag: class="RCArchiveManager" -->
+<p><code>#include &lt;<a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html">RCArchiveManager.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCArchiveManager</div>
+<div class="dynsection">
+<div class="center"><img src="../../df/da4/classRCArchiveManager__inherit__graph.png" border="0" usemap="#RCArchiveManager_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCArchiveManager_inherit__map" id="RCArchiveManager_inherit__map">
+<area shape="rect" id="node3" href="../../d7/d0f/classRCArchiveLoader.html" title="{RCArchiveLoader\n||+ RCArchiveLoader()\l+ ~RCArchiveLoader()\l+ LoadFormat()\l}" alt="" coords="5,235,179,341"/><area shape="rect" id="node5" href="../../d5/d45/classRCArchiveRegister.html" title="{RCArchiveRegister\n||+ RCArchiveRegister()\l+ ~RCArchiveRegister()\l+ LoadArchives()\l}" alt="" coords="203,235,384,341"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d9/d20/classRCArchiveManager-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; IArchiveInfoPtr &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a7f6e55132144dea9b501c0f9c64872a7">container_type</a></td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a3c15e8dd84ea9c14dbdb984f46fe5b39">RCArchiveManager</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#ae67e9efb15eac92d44792abf1bbf8842">~RCArchiveManager</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a163c84dcdc0282e98e25506b389cb039">GetNumberOfFormats</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numFormats) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#af225e41934ef782fe5d5155745b3502d">GetFormat</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, IArchiveInfoPtr &amp;spArcInfo) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a99f0f3830fa7905a367fbd64ab63af4b">CreateInArchive</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, IInArchivePtr &amp;spInArchive) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a6522169fba0db640f83c66e2af66b161">CreateOutArchive</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, IOutArchivePtr &amp;spOutArchive) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d1/dfe/classRCArchiveManager.html#a7f6e55132144dea9b501c0f9c64872a7">container_type</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a7ef5a1248ef09819d791603dfc424e25">GetArchiveArray</a> (void) const </td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#acd8fb88f60c2ab393f543e93acb0287f">RegisterArchive</a> (const IArchiveInfoPtr &amp;spArcInfo)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a7f6e55132144dea9b501c0f9c64872a7">container_type</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a8bd111e382ff1589c17680028cfb6387">m_archiveArray</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>文档格式管理器 </p>
+
+<p>在文件<a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html">RCArchiveManager.h</a>第<a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html#l00030">30</a>行定义。</p>
+<hr/><h2>成员类型定义文档</h2>
+<a class="anchor" id="a7f6e55132144dea9b501c0f9c64872a7"></a><!-- doxytag: member="RCArchiveManager::container_type" ref="a7f6e55132144dea9b501c0f9c64872a7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;IArchiveInfoPtr&gt; <a class="el" href="../../d1/dfe/classRCArchiveManager.html#a7f6e55132144dea9b501c0f9c64872a7">RCArchiveManager::container_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文档格式管理容器 </p>
+
+<p>在文件<a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html">RCArchiveManager.h</a>第<a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html#l00037">37</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a3c15e8dd84ea9c14dbdb984f46fe5b39"></a><!-- doxytag: member="RCArchiveManager::RCArchiveManager" ref="a3c15e8dd84ea9c14dbdb984f46fe5b39" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCArchiveManager::RCArchiveManager </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae67e9efb15eac92d44792abf1bbf8842"></a><!-- doxytag: member="RCArchiveManager::~RCArchiveManager" ref="ae67e9efb15eac92d44792abf1bbf8842" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual RCArchiveManager::~RCArchiveManager </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a99f0f3830fa7905a367fbd64ab63af4b"></a><!-- doxytag: member="RCArchiveManager::CreateInArchive" ref="a99f0f3830fa7905a367fbd64ab63af4b" args="(uint32_t index, IInArchivePtr &amp;spInArchive) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveManager::CreateInArchive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IInArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>spInArchive</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建输入文档接口 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>文档格式下标 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>spInArchive</em>&nbsp;</td><td>输入文档接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果成功则返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6522169fba0db640f83c66e2af66b161"></a><!-- doxytag: member="RCArchiveManager::CreateOutArchive" ref="a6522169fba0db640f83c66e2af66b161" args="(uint32_t index, IOutArchivePtr &amp;spOutArchive) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveManager::CreateOutArchive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IOutArchivePtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>spOutArchive</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建输出文档接口 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>文档格式下标 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>spOutArchive</em>&nbsp;</td><td>输出文档接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果成功则返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ef5a1248ef09819d791603dfc424e25"></a><!-- doxytag: member="RCArchiveManager::GetArchiveArray" ref="a7ef5a1248ef09819d791603dfc424e25" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d1/dfe/classRCArchiveManager.html#a7f6e55132144dea9b501c0f9c64872a7">container_type</a>&amp; RCArchiveManager::GetArchiveArray </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得容器内容 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>文档格式容器引用 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af225e41934ef782fe5d5155745b3502d"></a><!-- doxytag: member="RCArchiveManager::GetFormat" ref="af225e41934ef782fe5d5155745b3502d" args="(uint32_t index, IArchiveInfoPtr &amp;spArcInfo) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveManager::GetFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IArchiveInfoPtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>spArcInfo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文档信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>文档格式下标 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>spArcInfo</em>&nbsp;</td><td>文档格式信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果成功则返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a163c84dcdc0282e98e25506b389cb039"></a><!-- doxytag: member="RCArchiveManager::GetNumberOfFormats" ref="a163c84dcdc0282e98e25506b389cb039" args="(uint32_t &amp;numFormats) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCArchiveManager::GetNumberOfFormats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numFormats</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取支持的文档格式个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numFormats</em>&nbsp;</td><td>文档格式格式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果成功则返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd8fb88f60c2ab393f543e93acb0287f"></a><!-- doxytag: member="RCArchiveManager::RegisterArchive" ref="acd8fb88f60c2ab393f543e93acb0287f" args="(const IArchiveInfoPtr &amp;spArcInfo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCArchiveManager::RegisterArchive </td>
+          <td>(</td>
+          <td class="paramtype">const IArchiveInfoPtr &amp;&nbsp;</td>
+          <td class="paramname"> <em>spArcInfo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>注册文档格式信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>spArcInfo</em>&nbsp;</td><td>文档格式信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a8bd111e382ff1589c17680028cfb6387"></a><!-- doxytag: member="RCArchiveManager::m_archiveArray" ref="a8bd111e382ff1589c17680028cfb6387" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dfe/classRCArchiveManager.html#a7f6e55132144dea9b501c0f9c64872a7">container_type</a> <a class="el" href="../../d1/dfe/classRCArchiveManager.html#a8bd111e382ff1589c17680028cfb6387">RCArchiveManager::m_archiveArray</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码解码容器 </p>
+
+<p>在文件<a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html">RCArchiveManager.h</a>第<a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html#l00097">97</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d4/d50/RCArchiveManager_8h_source.html">RCArchiveManager.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

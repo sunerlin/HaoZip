@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCDirItem.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_e087791cafc9794d341e0d7b63d924f5.html">common</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCDirItem.h</h1><a href="../../da/d67/RCDirItem_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCDirItem_h_</span>
+<a name="l00011"></a><a class="code" href="../../da/d67/RCDirItem_8h.html#a6d07bf561987b59311c59a14080b4e2e">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCDirItem_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/dba/RCString_8h.html">base/RCString.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d27/RCWindowsDefs_8h.html">base/RCWindowsDefs.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d9e/RCFileDefs_8h.html">filesystem/RCFileDefs.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d72/RCSmartPtr_8h.html">base/RCSmartPtr.h</a>&quot;</span>
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00019"></a>00019 <span class="comment"></span>
+<a name="l00020"></a>00020 <span class="comment">/** 目录项</span>
+<a name="l00021"></a>00021 <span class="comment">*/</span>
+<a name="l00022"></a><a class="code" href="../../d0/d0c/classRCDirItem.html">00022</a> <span class="keyword">class </span><a class="code" href="../../d0/d0c/classRCDirItem.html">RCDirItem</a>
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024 <span class="keyword">public</span>:
+<a name="l00025"></a>00025 <span class="comment"></span>
+<a name="l00026"></a>00026 <span class="comment">    /** 默认构造函数</span>
+<a name="l00027"></a>00027 <span class="comment">    */</span>
+<a name="l00028"></a>00028     <a class="code" href="../../d0/d0c/classRCDirItem.html#a8fa6886bf3e4c2c044f5f8fada928957">RCDirItem</a>() ;
+<a name="l00029"></a>00029     <span class="comment"></span>
+<a name="l00030"></a>00030 <span class="comment">    /** 默认析构函数</span>
+<a name="l00031"></a>00031 <span class="comment">    */</span>
+<a name="l00032"></a>00032     <a class="code" href="../../d0/d0c/classRCDirItem.html#accd1d65d2ca4f271c1cd139281ede5c0">~RCDirItem</a>() ;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 <span class="keyword">private</span>:
+<a name="l00035"></a>00035         <span class="comment"></span>
+<a name="l00036"></a>00036 <span class="comment">    /** 拷贝构造函数</span>
+<a name="l00037"></a>00037 <span class="comment">    @param [in] rhs 拷贝参数</span>
+<a name="l00038"></a>00038 <span class="comment">    */</span>
+<a name="l00039"></a>00039     <a class="code" href="../../d0/d0c/classRCDirItem.html#a8fa6886bf3e4c2c044f5f8fada928957">RCDirItem</a>(<span class="keyword">const</span> <a class="code" href="../../d0/d0c/classRCDirItem.html">RCDirItem</a>&amp; rhs) ;
+<a name="l00040"></a>00040     <span class="comment"></span>
+<a name="l00041"></a>00041 <span class="comment">    /** 赋值操作符</span>
+<a name="l00042"></a>00042 <span class="comment">    @param [in] rhs 复制参数</span>
+<a name="l00043"></a>00043 <span class="comment">    */</span>
+<a name="l00044"></a>00044     <a class="code" href="../../d0/d0c/classRCDirItem.html">RCDirItem</a>&amp; <a class="code" href="../../d0/d0c/classRCDirItem.html#a80bf7adafebba7a4291322092e013427">operator= </a>(<span class="keyword">const</span> <a class="code" href="../../d0/d0c/classRCDirItem.html">RCDirItem</a>&amp; rhs) ;
+<a name="l00045"></a>00045     
+<a name="l00046"></a>00046 <span class="keyword">public</span>:
+<a name="l00047"></a>00047     <span class="comment"></span>
+<a name="l00048"></a>00048 <span class="comment">    /** 设置文件大小</span>
+<a name="l00049"></a>00049 <span class="comment">    @param [in] size 项大小</span>
+<a name="l00050"></a>00050 <span class="comment">    */</span>
+<a name="l00051"></a>00051     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#a787dd3790c5d98162b75c70911b18644">SetSize</a>(<a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size) ;
+<a name="l00052"></a>00052     <span class="comment"></span>
+<a name="l00053"></a>00053 <span class="comment">    /** 设置文件创建时间</span>
+<a name="l00054"></a>00054 <span class="comment">    @param [in] cTime 创建时间</span>
+<a name="l00055"></a>00055 <span class="comment">    */</span>
+<a name="l00056"></a>00056     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#aa78508c5755d634ed685cea15cea27da">SetCreateTime</a>(<span class="keyword">const</span> RC_FILE_TIME&amp; cTime) ;
+<a name="l00057"></a>00057     <span class="comment"></span>
+<a name="l00058"></a>00058 <span class="comment">    /** 设置文件访问时间</span>
+<a name="l00059"></a>00059 <span class="comment">    @param [in] aTime 访问时间</span>
+<a name="l00060"></a>00060 <span class="comment">    */</span>
+<a name="l00061"></a>00061     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#a8d2f4fdefd32688b2711ce0cf563ee5e">SetAccessTime</a>(<span class="keyword">const</span> RC_FILE_TIME&amp; aTime) ;
+<a name="l00062"></a>00062     <span class="comment"></span>
+<a name="l00063"></a>00063 <span class="comment">    /** 设置文件修改时间</span>
+<a name="l00064"></a>00064 <span class="comment">    @param [in] mTime 修改时间</span>
+<a name="l00065"></a>00065 <span class="comment">    */</span>
+<a name="l00066"></a>00066     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#aac1227161630b105f68dcb7b808c297e">SetModifyTime</a>(<span class="keyword">const</span> RC_FILE_TIME&amp; mTime) ;
+<a name="l00067"></a>00067     <span class="comment"></span>
+<a name="l00068"></a>00068 <span class="comment">    /** 设置文件属性</span>
+<a name="l00069"></a>00069 <span class="comment">    @param [in] attrib 项属性</span>
+<a name="l00070"></a>00070 <span class="comment">    */</span>
+<a name="l00071"></a>00071     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#a5858db8d2e26d61d0ee90a11a16247c7">SetAttribuite</a>( <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> attrib) ;
+<a name="l00072"></a>00072     <span class="comment"></span>
+<a name="l00073"></a>00073 <span class="comment">    /** 设置文件名</span>
+<a name="l00074"></a>00074 <span class="comment">    @param [in] fileName 目录项名称</span>
+<a name="l00075"></a>00075 <span class="comment">    */</span>
+<a name="l00076"></a>00076     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#a4ffc966bbfeb1c548008d123d66b247e">SetFileName</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName) ;
+<a name="l00077"></a>00077     <span class="comment"></span>
+<a name="l00078"></a>00078 <span class="comment">    /** 设置物理父节点</span>
+<a name="l00079"></a>00079 <span class="comment">    @param [in] phyParent 物理父节点</span>
+<a name="l00080"></a>00080 <span class="comment">    */</span>
+<a name="l00081"></a>00081     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#a1fd56e439965b442e44ae9d37da415a3">SetPhyParent</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> phyParent) ;
+<a name="l00082"></a>00082     <span class="comment"></span>
+<a name="l00083"></a>00083 <span class="comment">    /** 设置逻辑父节点</span>
+<a name="l00084"></a>00084 <span class="comment">    @param [in] logParent 逻辑父节点</span>
+<a name="l00085"></a>00085 <span class="comment">    */</span>
+<a name="l00086"></a>00086     <span class="keywordtype">void</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#a662a0bac61704608b3c202df9a24baf2">SetLogParent</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> logParent) ;
+<a name="l00087"></a>00087     <span class="comment"></span>
+<a name="l00088"></a>00088 <span class="comment">    /** 获取文件大小</span>
+<a name="l00089"></a>00089 <span class="comment">    @return 返回文件大小</span>
+<a name="l00090"></a>00090 <span class="comment">    */</span>
+<a name="l00091"></a>00091     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#a3045f611ad7228d0d435eaa6309c164f">GetSize</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00092"></a>00092     <span class="comment"></span>
+<a name="l00093"></a>00093 <span class="comment">    /** 获取文件创建时间</span>
+<a name="l00094"></a>00094 <span class="comment">    @return 返回创建时间</span>
+<a name="l00095"></a>00095 <span class="comment">    */</span>
+<a name="l00096"></a>00096     <span class="keyword">const</span> RC_FILE_TIME&amp; <a class="code" href="../../d0/d0c/classRCDirItem.html#af2c9e709363a42c6195a5ee27f6c7b5a">GetCreateTime</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00097"></a>00097     <span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">    /** 获取文件访问时间</span>
+<a name="l00099"></a>00099 <span class="comment">    @return 返回访问时间</span>
+<a name="l00100"></a>00100 <span class="comment">    */</span>
+<a name="l00101"></a>00101     <span class="keyword">const</span> RC_FILE_TIME&amp; <a class="code" href="../../d0/d0c/classRCDirItem.html#ac7694b206ea30157f460feee25fe6e98">GetAccessTime</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00102"></a>00102     <span class="comment"></span>
+<a name="l00103"></a>00103 <span class="comment">    /** 获取文件修改时间</span>
+<a name="l00104"></a>00104 <span class="comment">    @return 返回修改时间</span>
+<a name="l00105"></a>00105 <span class="comment">    */</span>
+<a name="l00106"></a>00106     <span class="keyword">const</span> RC_FILE_TIME&amp; <a class="code" href="../../d0/d0c/classRCDirItem.html#ac48b848ed00f171663506e9473d8eaf4">GetModifyTime</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00107"></a>00107     <span class="comment"></span>
+<a name="l00108"></a>00108 <span class="comment">    /** 获取文件属性</span>
+<a name="l00109"></a>00109 <span class="comment">    @return 返回属性</span>
+<a name="l00110"></a>00110 <span class="comment">    */</span>
+<a name="l00111"></a>00111     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#aeaad275c599873795780335840490cba">GetAttribuite</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00112"></a>00112     <span class="comment"></span>
+<a name="l00113"></a>00113 <span class="comment">    /** 获取文件名</span>
+<a name="l00114"></a>00114 <span class="comment">    @return 返回文件名</span>
+<a name="l00115"></a>00115 <span class="comment">    */</span>
+<a name="l00116"></a>00116     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../d0/d0c/classRCDirItem.html#a6a30a2d21d2de315f9f1b03aa00f3c65">GetFileName</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00117"></a>00117     <span class="comment"></span>
+<a name="l00118"></a>00118 <span class="comment">    /** 获取物理父节点</span>
+<a name="l00119"></a>00119 <span class="comment">    @return 返回物理父节点</span>
+<a name="l00120"></a>00120 <span class="comment">    */</span>
+<a name="l00121"></a>00121     <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#ac2f50e0297fba5cf3975a5937d208870">GetPhyParent</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00122"></a>00122     <span class="comment"></span>
+<a name="l00123"></a>00123 <span class="comment">    /** 获取逻辑父节点</span>
+<a name="l00124"></a>00124 <span class="comment">    @return 返回逻辑父节点</span>
+<a name="l00125"></a>00125 <span class="comment">    */</span>
+<a name="l00126"></a>00126     <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#ae73ee2264659914421b6f16a238bd485">GetLogParent</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00127"></a>00127     <span class="comment"></span>
+<a name="l00128"></a>00128 <span class="comment">    /** 判断是否为目录</span>
+<a name="l00129"></a>00129 <span class="comment">    @return 是目录返回true,否则返回false</span>
+<a name="l00130"></a>00130 <span class="comment">    */</span>
+<a name="l00131"></a>00131     <span class="keywordtype">bool</span> <a class="code" href="../../d0/d0c/classRCDirItem.html#a6287594dfeb4731fcf19a8920de6b763">IsDir</a>() <span class="keyword">const</span> ;
+<a name="l00132"></a>00132     
+<a name="l00133"></a>00133 <span class="keyword">private</span>:
+<a name="l00134"></a>00134    <span class="comment"></span>
+<a name="l00135"></a>00135 <span class="comment">    /** 文件大小</span>
+<a name="l00136"></a>00136 <span class="comment">    */</span>
+<a name="l00137"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#ac6255cf708517590945577d49439108b">00137</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#ac6255cf708517590945577d49439108b">m_size</a> ;
+<a name="l00138"></a>00138     <span class="comment"></span>
+<a name="l00139"></a>00139 <span class="comment">    /** 文件创建时间</span>
+<a name="l00140"></a>00140 <span class="comment">    */</span>
+<a name="l00141"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#acde3ef86434b34f83b7a7ec46c62cc05">00141</a>     RC_FILE_TIME <a class="code" href="../../d0/d0c/classRCDirItem.html#acde3ef86434b34f83b7a7ec46c62cc05">m_cTime</a> ;
+<a name="l00142"></a>00142     
+<a name="l00143"></a>00143     <span class="comment"></span>
+<a name="l00144"></a>00144 <span class="comment">    /** 文件访问时间</span>
+<a name="l00145"></a>00145 <span class="comment">    */</span>
+<a name="l00146"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#a5c8e9243287e7877c85d0721bb8ba4d1">00146</a>     RC_FILE_TIME <a class="code" href="../../d0/d0c/classRCDirItem.html#a5c8e9243287e7877c85d0721bb8ba4d1">m_aTime</a> ;
+<a name="l00147"></a>00147     <span class="comment"></span>
+<a name="l00148"></a>00148 <span class="comment">    /** 文件修改时间</span>
+<a name="l00149"></a>00149 <span class="comment">    */</span>
+<a name="l00150"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#a515ab3c30f02f238f06b0698c8786a2d">00150</a>     RC_FILE_TIME <a class="code" href="../../d0/d0c/classRCDirItem.html#a515ab3c30f02f238f06b0698c8786a2d">m_mTime</a> ;
+<a name="l00151"></a>00151     <span class="comment"></span>
+<a name="l00152"></a>00152 <span class="comment">    /** 文件属性</span>
+<a name="l00153"></a>00153 <span class="comment">    */</span>
+<a name="l00154"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#ad6f44bf6284823d622dec703d87e6bb7">00154</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#ad6f44bf6284823d622dec703d87e6bb7">m_attrib</a> ;
+<a name="l00155"></a>00155     <span class="comment"></span>
+<a name="l00156"></a>00156 <span class="comment">    /** 文件名</span>
+<a name="l00157"></a>00157 <span class="comment">    */</span>
+<a name="l00158"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#a7fad38273a8ef236ebd0aa1b06bb7b4b">00158</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#a7fad38273a8ef236ebd0aa1b06bb7b4b">m_fileName</a> ;
+<a name="l00159"></a>00159     <span class="comment"></span>
+<a name="l00160"></a>00160 <span class="comment">    /** 物理父节点</span>
+<a name="l00161"></a>00161 <span class="comment">    */</span>
+<a name="l00162"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#accfed50c6ec1bd70953ae503f06b1b4a">00162</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#accfed50c6ec1bd70953ae503f06b1b4a">m_phyParent</a> ;
+<a name="l00163"></a>00163     <span class="comment"></span>
+<a name="l00164"></a>00164 <span class="comment">    /** 逻辑父节点</span>
+<a name="l00165"></a>00165 <span class="comment">    */</span>
+<a name="l00166"></a><a class="code" href="../../d0/d0c/classRCDirItem.html#a29132e643bf9df34d704de72d667e37a">00166</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d0/d0c/classRCDirItem.html#a29132e643bf9df34d704de72d667e37a">m_logParent</a>;
+<a name="l00167"></a>00167 };
+<a name="l00168"></a>00168 
+<a name="l00169"></a><a class="code" href="../../da/d67/RCDirItem_8h.html#ad35e6d4ee1cd94576a870dd278607c44">00169</a> <span class="keyword">typedef</span> RCSharedPtr&lt;RCDirItem&gt; <a class="code" href="../../da/d67/RCDirItem_8h.html#ad35e6d4ee1cd94576a870dd278607c44">RCDirItemPtr</a> ; 
+<a name="l00170"></a>00170 
+<a name="l00171"></a>00171 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173 <span class="preprocessor">#endif //__RCDirItem_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

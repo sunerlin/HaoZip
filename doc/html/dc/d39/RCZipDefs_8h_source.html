@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZipDefs.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_844c112daf2a590492fe8d1abb539981.html">zip</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZipDefs.h</h1><a href="../../dc/d39/RCZipDefs_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCZipDefs_h_</span>
+<a name="l00011"></a><a class="code" href="../../dc/d39/RCZipDefs_8h.html#ab7c1413ec6cb935a3ad4fc7618957f1c">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCZipDefs_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 
+<a name="l00017"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html">00017</a> <span class="keyword">namespace </span>RCZipDefs
+<a name="l00018"></a>00018 {<span class="comment"></span>
+<a name="l00019"></a>00019 <span class="comment">    /** lz algo x1</span>
+<a name="l00020"></a>00020 <span class="comment">    */</span>
+<a name="l00021"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#ab852c6d9c399a3968ca72c278c63711c">00021</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#ab852c6d9c399a3968ca72c278c63711c">s_lzAlgoX1</a> = 0;
+<a name="l00022"></a>00022 <span class="comment"></span>
+<a name="l00023"></a>00023 <span class="comment">    /** lz algo x5</span>
+<a name="l00024"></a>00024 <span class="comment">    */</span>
+<a name="l00025"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a88552b90f01ea7d94a91f6a6ae2d5a6a">00025</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a88552b90f01ea7d94a91f6a6ae2d5a6a">s_lzAlgoX5</a> = 1;
+<a name="l00026"></a>00026 <span class="comment"></span>
+<a name="l00027"></a>00027 <span class="comment">    /** deflate passes x1</span>
+<a name="l00028"></a>00028 <span class="comment">    */</span>
+<a name="l00029"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a102604982293d4cb287d46426e946512">00029</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a102604982293d4cb287d46426e946512">s_deflateNumPassesX1</a>  = 1;
+<a name="l00030"></a>00030 <span class="comment"></span>
+<a name="l00031"></a>00031 <span class="comment">    /** deflate passes x7</span>
+<a name="l00032"></a>00032 <span class="comment">    */</span>
+<a name="l00033"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#acb7df72840ecae6fd8fa2c81e8def35e">00033</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#acb7df72840ecae6fd8fa2c81e8def35e">s_deflateNumPassesX7</a>  = 3;
+<a name="l00034"></a>00034 <span class="comment"></span>
+<a name="l00035"></a>00035 <span class="comment">    /** deflate passes x9</span>
+<a name="l00036"></a>00036 <span class="comment">    */</span>
+<a name="l00037"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a0b74f6a27ee55ce20b84a98dc7df6cd4">00037</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a0b74f6a27ee55ce20b84a98dc7df6cd4">s_deflateNumPassesX9</a>  = 10;
+<a name="l00038"></a>00038 <span class="comment"></span>
+<a name="l00039"></a>00039 <span class="comment">    /** deflate fastbytes x1</span>
+<a name="l00040"></a>00040 <span class="comment">    */</span>
+<a name="l00041"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#aa5f43bcdead2e2ed2f72b0c00eefe65b">00041</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#aa5f43bcdead2e2ed2f72b0c00eefe65b">s_deflateNumFastBytesX1</a> = 32;
+<a name="l00042"></a>00042 <span class="comment"></span>
+<a name="l00043"></a>00043 <span class="comment">    /** deflate fastbytes x7</span>
+<a name="l00044"></a>00044 <span class="comment">    */</span>
+<a name="l00045"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a26e78d031526dc14e909b82d25bcdfee">00045</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a26e78d031526dc14e909b82d25bcdfee">s_deflateNumFastBytesX7</a> = 64;
+<a name="l00046"></a>00046 <span class="comment"></span>
+<a name="l00047"></a>00047 <span class="comment">    /** deflate fastbytes x9</span>
+<a name="l00048"></a>00048 <span class="comment">    */</span>
+<a name="l00049"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#abae2780a92e636167b65a446ad2fdd23">00049</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#abae2780a92e636167b65a446ad2fdd23">s_deflateNumFastBytesX9</a> = 128;
+<a name="l00050"></a>00050 <span class="comment"></span>
+<a name="l00051"></a>00051 <span class="comment">    /** 匹配搜索 x1</span>
+<a name="l00052"></a>00052 <span class="comment">    */</span>
+<a name="l00053"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#affc55b61ef4c7fbb0c9de626d62668fe">00053</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a>* <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#affc55b61ef4c7fbb0c9de626d62668fe">s_lzmaMatchFinderX1</a> = <a class="code" href="../../d0/d20/RCDefs_8h.html#ae936e4c15227768f7da4e0951def89c8">_T</a>(<span class="stringliteral">&quot;HC4&quot;</span>);
+<a name="l00054"></a>00054 <span class="comment"></span>
+<a name="l00055"></a>00055 <span class="comment">    /** 匹配搜索 x5</span>
+<a name="l00056"></a>00056 <span class="comment">    */</span>
+<a name="l00057"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a0d58c2d489280dc6181941e72f78813b">00057</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#ad1980e2e293cca37103cef450a823ce8">char_t</a>* <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a0d58c2d489280dc6181941e72f78813b">s_lzmaMatchFinderX5</a> = <a class="code" href="../../d0/d20/RCDefs_8h.html#ae936e4c15227768f7da4e0951def89c8">_T</a>(<span class="stringliteral">&quot;BT4&quot;</span>);
+<a name="l00058"></a>00058 <span class="comment"></span>
+<a name="l00059"></a>00059 <span class="comment">    /** lzma fastbytes x1</span>
+<a name="l00060"></a>00060 <span class="comment">    */</span>
+<a name="l00061"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a4df968cda1eb8f968123c2277103df0f">00061</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a4df968cda1eb8f968123c2277103df0f">s_lzmaNumFastBytesX1</a> = 32;
+<a name="l00062"></a>00062 <span class="comment"></span>
+<a name="l00063"></a>00063 <span class="comment">    /** deflate fastbytes x7</span>
+<a name="l00064"></a>00064 <span class="comment">    */</span>
+<a name="l00065"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a0923c70bb0f066ca733a24381addd254">00065</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a0923c70bb0f066ca733a24381addd254">s_lzmaNumFastBytesX7</a> = 64;
+<a name="l00066"></a>00066 <span class="comment"></span>
+<a name="l00067"></a>00067 <span class="comment">    /** lzma 字典大小 x1</span>
+<a name="l00068"></a>00068 <span class="comment">    */</span>
+<a name="l00069"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a9bedcd0f9b177e35ae5b89ea5cd96e1e">00069</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a9bedcd0f9b177e35ae5b89ea5cd96e1e">s_lzmaDicSizeX1</a> = 1 &lt;&lt; 16;
+<a name="l00070"></a>00070 <span class="comment"></span>
+<a name="l00071"></a>00071 <span class="comment">    /** lzma 字典大小 x3</span>
+<a name="l00072"></a>00072 <span class="comment">    */</span>
+<a name="l00073"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a81be9c9d761179402f51b306469689f1">00073</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a81be9c9d761179402f51b306469689f1">s_lzmaDicSizeX3</a> = 1 &lt;&lt; 20;
+<a name="l00074"></a>00074 <span class="comment"></span>
+<a name="l00075"></a>00075 <span class="comment">    /** lzma 字典大小 x5</span>
+<a name="l00076"></a>00076 <span class="comment">    */</span>
+<a name="l00077"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a14b51e4d44a1d53a273dd1356b57352d">00077</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a14b51e4d44a1d53a273dd1356b57352d">s_lzmaDicSizeX5</a> = 1 &lt;&lt; 24;
+<a name="l00078"></a>00078 <span class="comment"></span>
+<a name="l00079"></a>00079 <span class="comment">    /** lzma 字典大小 x7</span>
+<a name="l00080"></a>00080 <span class="comment">    */</span>
+<a name="l00081"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#aeea90b79af78cdc671be358cb61bb3d8">00081</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#aeea90b79af78cdc671be358cb61bb3d8">s_lzmaDicSizeX7</a> = 1 &lt;&lt; 25;
+<a name="l00082"></a>00082 <span class="comment"></span>
+<a name="l00083"></a>00083 <span class="comment">    /** lzma 字典大小 x9</span>
+<a name="l00084"></a>00084 <span class="comment">    */</span>
+<a name="l00085"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a110ac3cafce555aa2e2ed0e4f7295f7b">00085</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a110ac3cafce555aa2e2ed0e4f7295f7b">s_lzmaDicSizeX9</a> = 1 &lt;&lt; 26;
+<a name="l00086"></a>00086 <span class="comment"></span>
+<a name="l00087"></a>00087 <span class="comment">    /** bzip2 passes x1</span>
+<a name="l00088"></a>00088 <span class="comment">    */</span>
+<a name="l00089"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#ac1742f05962a90993b62c0d457c22253">00089</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#ac1742f05962a90993b62c0d457c22253">s_bzip2NumPassesX1</a> = 1;
+<a name="l00090"></a>00090 <span class="comment"></span>
+<a name="l00091"></a>00091 <span class="comment">    /** bzip2 passes x7</span>
+<a name="l00092"></a>00092 <span class="comment">    */</span>
+<a name="l00093"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#aded7e76dd37d2aa65825db4cf41101fe">00093</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#aded7e76dd37d2aa65825db4cf41101fe">s_bzip2NumPassesX7</a> = 2;
+<a name="l00094"></a>00094 <span class="comment"></span>
+<a name="l00095"></a>00095 <span class="comment">    /** bzip2 passes x9</span>
+<a name="l00096"></a>00096 <span class="comment">    */</span>
+<a name="l00097"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a29ff90321fced143a2269fbd88b5d313">00097</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a29ff90321fced143a2269fbd88b5d313">s_bzip2NumPassesX9</a> = 7;
+<a name="l00098"></a>00098 <span class="comment"></span>
+<a name="l00099"></a>00099 <span class="comment">    /** bzip2 字典大小 x1</span>
+<a name="l00100"></a>00100 <span class="comment">    */</span>
+<a name="l00101"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a9f3d5f3f224d643415d99b12c0048ab0">00101</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a9f3d5f3f224d643415d99b12c0048ab0">s_bzip2DicSizeX1</a> = 100000;
+<a name="l00102"></a>00102 <span class="comment"></span>
+<a name="l00103"></a>00103 <span class="comment">    /** bzip2 字典大小 x3</span>
+<a name="l00104"></a>00104 <span class="comment">    */</span>
+<a name="l00105"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a8587c4922f0ec9b051320a7751a15f12">00105</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a8587c4922f0ec9b051320a7751a15f12">s_bzip2DicSizeX3</a> = 500000;
+<a name="l00106"></a>00106 <span class="comment"></span>
+<a name="l00107"></a>00107 <span class="comment">    /** bzip2 字典大小 x5</span>
+<a name="l00108"></a>00108 <span class="comment">    */</span>
+<a name="l00109"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a2c7bec5922834bb696b80cf75784cc84">00109</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#a2c7bec5922834bb696b80cf75784cc84">s_bzip2DicSizeX5</a> = 900000;
+<a name="l00110"></a>00110 <span class="comment"></span>
+<a name="l00111"></a>00111 <span class="comment">    /** 最多线程数</span>
+<a name="l00112"></a>00112 <span class="comment">    */</span>
+<a name="l00113"></a><a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#af65f8267fb46bb270a775e6e1ed998ef">00113</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../d4/d02/namespaceRCZip_1_1RCZipDefs.html#af65f8267fb46bb270a775e6e1ed998ef">s_maxThreadNums</a> = 10;
+<a name="l00114"></a>00114 };
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118 <span class="preprocessor">#endif //__RCZipDefs_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

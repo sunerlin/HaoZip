@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdate.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_1fee5ccf71dc3b0de21adbdee5795b7f.html">update</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdate.h</h1><a href="../../db/d50/RCUpdate_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCUpdate_h_</span>
+<a name="l00011"></a><a class="code" href="../../db/d50/RCUpdate_8h.html#a65dfbc10b67cacfb640f24b93f3f95a8">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCUpdate_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;base/RCtypes.h&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d27/RCWindowsDefs_8h.html">base/RCWindowsDefs.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html">archive/manager/RCArchiveCodecs.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../df/df3/RCUpdateOptions_8h.html">archive/update/RCUpdateOptions.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/d09/RCUpdateErrorInfo_8h.html">archive/update/RCUpdateErrorInfo.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/d2d/RCUpdateCallbackUI_8h.html">archive/update/RCUpdateCallbackUI.h</a>&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/d1f/RCCompressMethodMode_8h.html">archive/update/RCCompressMethodMode.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d07/IOpenCallbackUI_8h.html">archive/common/IOpenCallbackUI.h</a>&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="../../db/d38/RCArcItem_8h.html">archive/common/RCArcItem.h</a>&quot;</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/d06/RCDirItems_8h.html">archive/common/RCDirItems.h</a>&quot;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#include &quot;<a class="code" href="../../db/d3f/RCTempFiles_8h.html">archive/common/RCTempFiles.h</a>&quot;</span>
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00026"></a>00026 <span class="comment"></span>
+<a name="l00027"></a>00027 <span class="comment">/** 通配符匹配</span>
+<a name="l00028"></a>00028 <span class="comment">*/</span>
+<a name="l00029"></a>00029 <span class="keyword">class </span><a class="code" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a> ;
+<a name="l00030"></a>00030 <span class="comment"></span>
+<a name="l00031"></a>00031 <span class="comment">/** 输出流事件接口</span>
+<a name="l00032"></a>00032 <span class="comment">*/</span>
+<a name="l00033"></a>00033 <span class="keyword">class </span>IOutStreamEvent ;
+<a name="l00034"></a>00034 <span class="comment"></span>
+<a name="l00035"></a>00035 <span class="comment">/** 更新流程封装</span>
+<a name="l00036"></a>00036 <span class="comment">*/</span>
+<a name="l00037"></a><a class="code" href="../../db/dc2/classRCUpdate.html">00037</a> <span class="keyword">class </span><a class="code" href="../../db/dc2/classRCUpdate.html">RCUpdate</a>
+<a name="l00038"></a>00038 {
+<a name="l00039"></a>00039 <span class="keyword">public</span>:
+<a name="l00040"></a>00040 <span class="comment"></span>
+<a name="l00041"></a>00041 <span class="comment">    /** 压缩数据</span>
+<a name="l00042"></a>00042 <span class="comment">    @param [in] codecs 编码管理器</span>
+<a name="l00043"></a>00043 <span class="comment">    @param [in] censor 通配符匹配</span>
+<a name="l00044"></a>00044 <span class="comment">    @param [in] options 更新参数</span>
+<a name="l00045"></a>00045 <span class="comment">    @param [out]  errorInfo 错误信息</span>
+<a name="l00046"></a>00046 <span class="comment">    @param [in] openCallback 打开回调接口</span>
+<a name="l00047"></a>00047 <span class="comment">    @param [in] callback 界面回调接口</span>
+<a name="l00048"></a>00048 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00049"></a>00049 <span class="comment">    */</span>
+<a name="l00050"></a>00050     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../db/dc2/classRCUpdate.html#acac96d834e62104e772f9027a78627bc">UpdateArchive</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; codecs,
+<a name="l00051"></a>00051                                  <span class="keyword">const</span> <a class="code" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a>&amp; censor,
+<a name="l00052"></a>00052                                  <a class="code" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a>&amp; options,
+<a name="l00053"></a>00053                                  <a class="code" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a>&amp; errorInfo,
+<a name="l00054"></a>00054                                  <a class="code" href="../../dd/d8c/classIOpenCallbackUI.html">IOpenCallbackUI</a>* openCallback,
+<a name="l00055"></a>00055                                  <a class="code" href="../../dd/d87/classRCUpdateCallbackUI2.html">RCUpdateCallbackUI2</a>* callback);
+<a name="l00056"></a>00056 <span class="keyword">private</span>:
+<a name="l00057"></a>00057     <span class="comment"></span>
+<a name="l00058"></a>00058 <span class="comment">    /** 更新压缩文件数据</span>
+<a name="l00059"></a>00059 <span class="comment">    @param [in] codecs 编码管理器</span>
+<a name="l00060"></a>00060 <span class="comment">    @param [in] options 更新参数</span>
+<a name="l00061"></a>00061 <span class="comment">    @param [in] archive 输入文档</span>
+<a name="l00062"></a>00062 <span class="comment">    @param [in] arcItems 包内文件列表</span>
+<a name="l00063"></a>00063 <span class="comment">    @param [in] dirItems 更新项列表</span>
+<a name="l00064"></a>00064 <span class="comment">    @param [in] tempFiles 临时文件</span>
+<a name="l00065"></a>00065 <span class="comment">    @param [out] errorInfo 错误信息</span>
+<a name="l00066"></a>00066 <span class="comment">    @param [in] callback 更新回调接口</span>
+<a name="l00067"></a>00067 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00068"></a>00068 <span class="comment">    */</span>
+<a name="l00069"></a>00069     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../db/dc2/classRCUpdate.html#a05f6255f5bd029cd5b5c140b8b59fdcb">UpdateWithItemLists</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; codecs,
+<a name="l00070"></a>00070                                        <a class="code" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a>&amp; options,
+<a name="l00071"></a>00071                                        IInArchive* archive,
+<a name="l00072"></a>00072                                        <span class="keyword">const</span> RCVector&lt;RCArcItem&gt;&amp; arcItems,
+<a name="l00073"></a>00073                                        <a class="code" href="../../d8/dad/classRCDirItems.html">RCDirItems</a>&amp; dirItems,
+<a name="l00074"></a>00074                                        <a class="code" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a>&amp; tempFiles,
+<a name="l00075"></a>00075                                        <a class="code" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a>&amp; errorInfo,
+<a name="l00076"></a>00076                                        <a class="code" href="../../dd/d87/classRCUpdateCallbackUI2.html">RCUpdateCallbackUI2</a>* callback);
+<a name="l00077"></a>00077 <span class="comment"></span>
+<a name="l00078"></a>00078 <span class="comment">    /** 读取输入文档中的内容</span>
+<a name="l00079"></a>00079 <span class="comment">    @param [in] censor 通配符匹配</span>
+<a name="l00080"></a>00080 <span class="comment">    @param [in] archive 输入文档</span>
+<a name="l00081"></a>00081 <span class="comment">    @param [in] defaultItemName 缺省文件名</span>
+<a name="l00082"></a>00082 <span class="comment">    @param [out] archiveFileInfo 文档信息</span>
+<a name="l00083"></a>00083 <span class="comment">    @param [out] arcItems 包内项列表</span>
+<a name="l00084"></a>00084 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00085"></a>00085 <span class="comment">    */</span>
+<a name="l00086"></a>00086     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../db/dc2/classRCUpdate.html#ad65634c23374e032bb6cf9b9e3770549">EnumerateInArchiveItems</a>(<span class="keyword">const</span> <a class="code" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a>&amp; censor,
+<a name="l00087"></a>00087                                            IInArchive* archive,
+<a name="l00088"></a>00088                                            <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; defaultItemName,
+<a name="l00089"></a>00089                                            RCFileInfo&amp; archiveFileInfo,
+<a name="l00090"></a>00090                                            RCVector&lt;RCArcItem&gt;&amp; arcItems);
+<a name="l00091"></a>00091 <span class="comment"></span>
+<a name="l00092"></a>00092 <span class="comment">    /** 压缩数据</span>
+<a name="l00093"></a>00093 <span class="comment">    @param [in] codecs 编码管理器</span>
+<a name="l00094"></a>00094 <span class="comment">    @param [in] actionSet 更新方式</span>
+<a name="l00095"></a>00095 <span class="comment">    @param [in] archive 输入文档</span>
+<a name="l00096"></a>00096 <span class="comment">    @param [in] compressionMethod 压缩模式</span>
+<a name="l00097"></a>00097 <span class="comment">    @param [out] archivePath 文档路径</span>
+<a name="l00098"></a>00098 <span class="comment">    @param [in] arcItems 包内项列表</span>
+<a name="l00099"></a>00099 <span class="comment">    @param [in] shareForWrite 共享写</span>
+<a name="l00100"></a>00100 <span class="comment">    @param [in] stdInMode 标准输入模式</span>
+<a name="l00101"></a>00101 <span class="comment">    @param [in] stdOutMode 标准输出模式</span>
+<a name="l00102"></a>00102 <span class="comment">    @param [in] isTestMode 测试模式</span>
+<a name="l00103"></a>00103 <span class="comment">    @param [in] dirItems 更新项列表</span>
+<a name="l00104"></a>00104 <span class="comment">    @param [in] sfxMode 自解压模式</span>
+<a name="l00105"></a>00105 <span class="comment">    @param [in] sfxModule 自解压模块文件名</span>
+<a name="l00106"></a>00106 <span class="comment">    @param [in] volumesSizes 分卷大小</span>
+<a name="l00107"></a>00107 <span class="comment">    @param [in] tempFiles 临时文件</span>
+<a name="l00108"></a>00108 <span class="comment">    @param [out] errorInfo 错误信息</span>
+<a name="l00109"></a>00109 <span class="comment">    @param [in] callback 界面回调接口</span>
+<a name="l00110"></a>00110 <span class="comment">    @param [in] pathMode 路径保存模式</span>
+<a name="l00111"></a>00111 <span class="comment">    @param [in] outStreamEvent 输出流事件接口</span>
+<a name="l00112"></a>00112 <span class="comment">    @param [in] options 更新参数</span>
+<a name="l00113"></a>00113 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00114"></a>00114 <span class="comment">    */</span>
+<a name="l00115"></a>00115     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../db/dc2/classRCUpdate.html#a2004090ae326040e060b839dbfed0146">Compress</a>(<span class="keyword">const</span> <a class="code" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a>&amp; codecs,
+<a name="l00116"></a>00116                             <span class="keyword">const</span> <a class="code" href="../../d1/dad/classRCActionSet.html">RCActionSet</a>&amp; actionSet,
+<a name="l00117"></a>00117                             IInArchive* archive,
+<a name="l00118"></a>00118                             <span class="keyword">const</span> <a class="code" href="../../d8/d53/classRCCompressMethodMode.html">RCCompressMethodMode</a>&amp; compressionMethod,
+<a name="l00119"></a>00119                             <a class="code" href="../../d0/d87/classRCArchivePath.html">RCArchivePath</a>&amp; archivePath,
+<a name="l00120"></a>00120                             <span class="keyword">const</span> RCVector&lt;RCArcItem&gt;&amp; arcItems,
+<a name="l00121"></a>00121                             <span class="keywordtype">bool</span> shareForWrite,
+<a name="l00122"></a>00122                             <span class="keywordtype">bool</span> stdInMode,
+<a name="l00123"></a>00123                             <span class="keywordtype">bool</span> stdOutMode,
+<a name="l00124"></a>00124                             <span class="keywordtype">bool</span> isTestMode,
+<a name="l00125"></a>00125                             <span class="keyword">const</span> <a class="code" href="../../d8/dad/classRCDirItems.html">RCDirItems</a>&amp; dirItems,
+<a name="l00126"></a>00126                             <span class="keywordtype">bool</span> sfxMode,                            
+<a name="l00127"></a>00127                             <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; sfxModule,
+<a name="l00128"></a>00128                             <span class="keyword">const</span> RCVector&lt;uint64_t&gt;&amp; volumesSizes,
+<a name="l00129"></a>00129                             <a class="code" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a>&amp; tempFiles,
+<a name="l00130"></a>00130                             <a class="code" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a>&amp; errorInfo,
+<a name="l00131"></a>00131                             <a class="code" href="../../da/d10/classRCUpdateCallbackUI.html">RCUpdateCallbackUI</a>* callback,
+<a name="l00132"></a>00132                             <a class="code" href="../../d1/de0/classRCUpdateOptions.html#a0bf96c9b0d86cd3d421a153fefbe90eb">RCUpdateOptions::path_mode</a> pathMode,
+<a name="l00133"></a>00133                             IOutStreamEvent* outStreamEvent,
+<a name="l00134"></a>00134                             <span class="keyword">const</span> <a class="code" href="../../d1/de0/classRCUpdateOptions.html">RCUpdateOptions</a>&amp; options );
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="comment"></span>
+<a name="l00137"></a>00137 <span class="comment">    /** 复制数据</span>
+<a name="l00138"></a>00138 <span class="comment">    @param [in] inStream 输入流</span>
+<a name="l00139"></a>00139 <span class="comment">    @param [in] outStream 输出流</span>
+<a name="l00140"></a>00140 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00141"></a>00141 <span class="comment">    */</span>
+<a name="l00142"></a>00142     <span class="keyword">static</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../db/dc2/classRCUpdate.html#adda0a7a5443870c2ccae9e5a83ecba34">CopyBlock</a>(ISequentialInStream* inStream, 
+<a name="l00143"></a>00143                              ISequentialOutStream* outStream);
+<a name="l00144"></a>00144 <span class="comment"></span>
+<a name="l00145"></a>00145 <span class="comment">    /** 比较文件时间</span>
+<a name="l00146"></a>00146 <span class="comment">    @param [in] arcItems 包内项列表</span>
+<a name="l00147"></a>00147 <span class="comment">    @param [in] arcItemIndex 项目编号</span>
+<a name="l00148"></a>00148 <span class="comment">    @param [in] mTime 修改时间</span>
+<a name="l00149"></a>00149 <span class="comment">    @return = 0, 相等</span>
+<a name="l00150"></a>00150 <span class="comment">            &lt; 0, 包内 &lt; mTime</span>
+<a name="l00151"></a>00151 <span class="comment">            &gt; 0, 包内 &gt; mTime</span>
+<a name="l00152"></a>00152 <span class="comment">    */</span>
+<a name="l00153"></a>00153     <span class="keyword">static</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../db/dc2/classRCUpdate.html#a8b87207785202f397f9d5b168234f6a9">CompareArchiveItemFileTime</a>(<span class="keyword">const</span> RCVector&lt;RCArcItem&gt;&amp; arcItems,
+<a name="l00154"></a>00154                                               <span class="keywordtype">size_t</span> arcItemIndex,
+<a name="l00155"></a>00155                                               <span class="keyword">const</span> RC_FILE_TIME&amp; mTime) ;
+<a name="l00156"></a>00156 <span class="comment"></span>
+<a name="l00157"></a>00157 <span class="comment">    /** 检查需要更新的新文件，进行过滤</span>
+<a name="l00158"></a>00158 <span class="comment">    @param [in] arcItems 包内项列表</span>
+<a name="l00159"></a>00159 <span class="comment">    @param [in] dirItems 更新项列表</span>
+<a name="l00160"></a>00160 <span class="comment">    @param [in] deleteNoneExists 删除不存在</span>
+<a name="l00161"></a>00161 <span class="comment">    */</span>
+<a name="l00162"></a>00162     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../db/dc2/classRCUpdate.html#a016d385fee2cb01afc384bcb104d57c4">FilterDirItems</a>(<span class="keyword">const</span> RCVector&lt;RCArcItem&gt;&amp; arcItems,
+<a name="l00163"></a>00163                                <a class="code" href="../../d8/dad/classRCDirItems.html">RCDirItems</a>&amp; dirItems,
+<a name="l00164"></a>00164                                <span class="keywordtype">bool</span> deleteNoneExists) ;
+<a name="l00165"></a>00165 <span class="comment"></span>
+<a name="l00166"></a>00166 <span class="comment">    /** 检查已经存在文档中的文件，进行过滤</span>
+<a name="l00167"></a>00167 <span class="comment">    @param [in] arcItems 包内项列表</span>
+<a name="l00168"></a>00168 <span class="comment">    @param [in] dirItems 更新项列表</span>
+<a name="l00169"></a>00169 <span class="comment">    */</span>
+<a name="l00170"></a>00170     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../db/dc2/classRCUpdate.html#af946d34aeb8f957314da6a496b16b670">FilterArcItems</a>(RCVector&lt;RCArcItem&gt;&amp; arcItems,
+<a name="l00171"></a>00171                                <span class="keyword">const</span> <a class="code" href="../../d8/dad/classRCDirItems.html">RCDirItems</a>&amp; dirItems) ;
+<a name="l00172"></a>00172 };
+<a name="l00173"></a>00173 
+<a name="l00174"></a>00174 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176 <span class="preprocessor">#endif //__RCUpdate_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

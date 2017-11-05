@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCEnumDirItems类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCEnumDirItems类参考</h1><!-- doxytag: class="RCEnumDirItems" -->
+<p><code>#include &lt;<a class="el" href="../../da/dba/RCEnumDirItems_8h_source.html">RCEnumDirItems.h</a>&gt;</code></p>
+
+<p><a href="../../da/d7a/classRCEnumDirItems-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d71/classRCEnumDirItems.html#a57a6ddc4f78d4d316367333c29e5ef54">SetEnumDirItemFilter</a> (const <a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> &amp;spEnumDirItemFilter)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d71/classRCEnumDirItems.html#a2b543c39b4c58ed00c86911819b2269e">EnumerateItems</a> (const <a class="el" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a> &amp;censor, <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems, <a class="el" href="../../db/dd4/classIEnumDirItemCallback.html">IEnumDirItemCallback</a> *callback, bool isForUpdateArchive, RCVector&lt; RCString &gt; &amp;errorPaths, RCVector&lt; <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> &gt; &amp;errorCodes)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d71/classRCEnumDirItems.html#adb9ffc7958e620eb29de9b8ad27fad90">EnumerateDirItems</a> (const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;curNode, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> phyParent, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> logParent, const RCString &amp;phyPrefix, const RCVector&lt; RCString &gt; &amp;addArchivePrefix, <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems, bool enterToSubFolders, <a class="el" href="../../db/dd4/classIEnumDirItemCallback.html">IEnumDirItemCallback</a> *callback, bool isForUpdateArchive, RCVector&lt; RCString &gt; &amp;errorPaths, RCVector&lt; <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> &gt; &amp;errorCodes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d71/classRCEnumDirItems.html#a351aaff433096a9768fc2d0a14c594b9">EnumerateDirItems_Spec</a> (const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;curNode, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> phyParent, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> logParent, const RCString &amp;curFolderName, const RCString &amp;phyPrefix, const RCVector&lt; RCString &gt; &amp;addArchivePrefix, <a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;dirItems, bool enterToSubFolders, <a class="el" href="../../db/dd4/classIEnumDirItemCallback.html">IEnumDirItemCallback</a> *callback, bool isForUpdateArchive, RCVector&lt; RCString &gt; &amp;errorPaths, RCVector&lt; <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> &gt; &amp;errorCodes)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d71/classRCEnumDirItems.html#a22bd16550264dc7847f95f847a6711ce">m_spEnumDirItemFilter</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>枚举目录 </p>
+
+<p>在文件<a class="el" href="../../da/dba/RCEnumDirItems_8h_source.html">RCEnumDirItems.h</a>第<a class="el" href="../../da/dba/RCEnumDirItems_8h_source.html#l00057">57</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="adb9ffc7958e620eb29de9b8ad27fad90"></a><!-- doxytag: member="RCEnumDirItems::EnumerateDirItems" ref="adb9ffc7958e620eb29de9b8ad27fad90" args="(const RCWildcardCensorNode &amp;curNode, int32_t phyParent, int32_t logParent, const RCString &amp;phyPrefix, const RCVector&lt; RCString &gt; &amp;addArchivePrefix, RCDirItems &amp;dirItems, bool enterToSubFolders, IEnumDirItemCallback *callback, bool isForUpdateArchive, RCVector&lt; RCString &gt; &amp;errorPaths, RCVector&lt; HResult &gt; &amp;errorCodes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCEnumDirItems::EnumerateDirItems </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>curNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>phyParent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>logParent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>phyPrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>addArchivePrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>enterToSubFolders</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dd4/classIEnumDirItemCallback.html">IEnumDirItemCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isForUpdateArchive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorPaths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorCodes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>枚举目录 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>curNode</em>&nbsp;</td><td>当前目录 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>phyParent</em>&nbsp;</td><td>物理父节点 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>logParent</em>&nbsp;</td><td>逻辑父节点 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>phyPrefix</em>&nbsp;</td><td>物理前缀 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>addArchivePrefix</em>&nbsp;</td><td>增加的文档前缀 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>目录信息列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>enterToSubFolders</em>&nbsp;</td><td>枚举子目录 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>callback</em>&nbsp;</td><td>枚举操作回调 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isForUpdateArchive</em>&nbsp;</td><td>是否更新文档 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorPaths</em>&nbsp;</td><td>枚举操作错误路径列表 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorCodes</em>&nbsp;</td><td>枚举操作错误号列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a351aaff433096a9768fc2d0a14c594b9"></a><!-- doxytag: member="RCEnumDirItems::EnumerateDirItems_Spec" ref="a351aaff433096a9768fc2d0a14c594b9" args="(const RCWildcardCensorNode &amp;curNode, int32_t phyParent, int32_t logParent, const RCString &amp;curFolderName, const RCString &amp;phyPrefix, const RCVector&lt; RCString &gt; &amp;addArchivePrefix, RCDirItems &amp;dirItems, bool enterToSubFolders, IEnumDirItemCallback *callback, bool isForUpdateArchive, RCVector&lt; RCString &gt; &amp;errorPaths, RCVector&lt; HResult &gt; &amp;errorCodes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCEnumDirItems::EnumerateDirItems_Spec </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d03/classRCWildcardCensorNode.html">RCWildcardCensorNode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>curNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>phyParent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>logParent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>curFolderName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCString &amp;&nbsp;</td>
+          <td class="paramname"> <em>phyPrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>addArchivePrefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>enterToSubFolders</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dd4/classIEnumDirItemCallback.html">IEnumDirItemCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isForUpdateArchive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorPaths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorCodes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>枚举目录项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>curNode</em>&nbsp;</td><td>当前目录 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>phyParent</em>&nbsp;</td><td>物理父节点 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>logParent</em>&nbsp;</td><td>逻辑父节点 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>curFolderName</em>&nbsp;</td><td>当前目录名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>phyPrefix</em>&nbsp;</td><td>物理前缀 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>addArchivePrefix</em>&nbsp;</td><td>增加的文档前缀 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>目录信息列表 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>enterToSubFolders</em>&nbsp;</td><td>是否枚举子目录 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>callback</em>&nbsp;</td><td>枚举回调 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isForUpdateArchive</em>&nbsp;</td><td>是否更新文档 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorPaths</em>&nbsp;</td><td>枚举操作错误路径列表 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorCodes</em>&nbsp;</td><td>枚举操作错误号列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b543c39b4c58ed00c86911819b2269e"></a><!-- doxytag: member="RCEnumDirItems::EnumerateItems" ref="a2b543c39b4c58ed00c86911819b2269e" args="(const RCWildcardCensor &amp;censor, RCDirItems &amp;dirItems, IEnumDirItemCallback *callback, bool isForUpdateArchive, RCVector&lt; RCString &gt; &amp;errorPaths, RCVector&lt; HResult &gt; &amp;errorCodes)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCEnumDirItems::EnumerateItems </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dc7/classRCWildcardCensor.html">RCWildcardCensor</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>censor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dad/classRCDirItems.html">RCDirItems</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dirItems</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/dd4/classIEnumDirItemCallback.html">IEnumDirItemCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isForUpdateArchive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; RCString &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorPaths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RCVector&lt; <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>errorCodes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>枚举文件目录信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>censor</em>&nbsp;</td><td>通配符匹配处理 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dirItems</em>&nbsp;</td><td>目录项 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>callback</em>&nbsp;</td><td>枚举操作回调接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isForUpdateArchive</em>&nbsp;</td><td>是否为更新压缩文件模式 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorPaths</em>&nbsp;</td><td>枚举操作错误路径列表 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>errorCodes</em>&nbsp;</td><td>枚举操作错误号列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a57a6ddc4f78d4d316367333c29e5ef54"></a><!-- doxytag: member="RCEnumDirItems::SetEnumDirItemFilter" ref="a57a6ddc4f78d4d316367333c29e5ef54" args="(const IEnumDirItemFilterPtr &amp;spEnumDirItemFilter)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCEnumDirItems::SetEnumDirItemFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spEnumDirItemFilter</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置被压缩的文件过滤器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>spEnumDirItemFilter</em>&nbsp;</td><td>文件过滤器指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a22bd16550264dc7847f95f847a6711ce"></a><!-- doxytag: member="RCEnumDirItems::m_spEnumDirItemFilter" ref="a22bd16550264dc7847f95f847a6711ce" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d1f/IEnumDirItemFilter_8h.html#a0110622270b468dfd9b91c8d65f7c502">IEnumDirItemFilterPtr</a> <a class="el" href="../../d5/d71/classRCEnumDirItems.html#a22bd16550264dc7847f95f847a6711ce">RCEnumDirItems::m_spEnumDirItemFilter</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>被压缩的文件过滤器 </p>
+
+<p>在文件<a class="el" href="../../da/dba/RCEnumDirItems_8h_source.html">RCEnumDirItems.h</a>第<a class="el" href="../../da/dba/RCEnumDirItems_8h_source.html#l00142">142</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../da/dba/RCEnumDirItems_8h_source.html">RCEnumDirItems.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

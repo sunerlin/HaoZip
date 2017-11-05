@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: CMtThread结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>CMtThread结构参考</h1><!-- doxytag: class="CMtThread" -->
+<p><code>#include &lt;<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>&gt;</code></p>
+<div class="dynheader">
+CMtThread合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d4/d4d/structCMtThread__coll__graph.png" border="0" usemap="#CMtThread_coll__map" alt="Collaboration graph"/></div>
+<map name="CMtThread_coll__map" id="CMtThread_coll__map">
+<area shape="rect" id="node4" href="../../d0/dd7/struct__CMtCoder.html" title="{_CMtCoder\n|+ blockSize\l+ destBlockSize\l+ numThreads\l+ inStream\l+ outStream\l+ progress\l+ alloc\l+ mtCallback\l+ cs\l+ res\l+ mtProgress\l+ threads\l|}" alt="" coords="420,523,548,762"/><area shape="rect" id="node2" href="../../d2/dba/structCLoopThread.html" title="{CLoopThread\n|+ thread\l+ startEvent\l+ finishedEvent\l+ stop\l+ func\l+ param\l+ res\l|}" alt="" coords="791,5,919,171"/><area shape="rect" id="node6" href="../../d4/d55/structISzAlloc.html" title="{ISzAlloc\n|+ Alloc\l+ Free\l|}" alt="" coords="5,301,77,393"/><area shape="rect" id="node8" href="../../d4/dfe/structISeqInStream.html" title="{ISeqInStream\n|+ Read\l|}" alt="" coords="101,308,213,385"/><area shape="rect" id="node11" href="../../de/dab/structICompressProgress.html" title="{ICompressProgress\n|+ Progress\l|}" alt="" coords="235,49,381,127"/><area shape="rect" id="node15" href="../../de/d31/structCMtProgress.html" title="{CMtProgress\n|+ totalInSize\l+ totalOutSize\l+ progress\l+ res\l+ cs\l+ inSizes\l+ outSizes\l|}" alt="" coords="344,264,461,429"/><area shape="rect" id="node13" href="../../dd/d89/structISeqOutStream.html" title="{ISeqOutStream\n|+ Write\l|}" alt="" coords="485,308,608,385"/><area shape="rect" id="node18" href="../../dc/de4/structIMtCoderCallback.html" title="{IMtCoderCallback\n|+ Code\l|}" alt="" coords="632,308,771,385"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d7/d90/structCMtThread-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d0/dd7/struct__CMtCoder.html">_CMtCoder</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#a8b5a010691afdcbd4dcaf353f9121094">mtCoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#a7dbcc0cc7a3f0c56ce8c332f7e3799b6">outBuf</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#a49f4905b5ff92f944b82a1d251612d00">outBufSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#a93897d492ae9b190aaab3b6f6eb5cd67">inBuf</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#ace8f75de5dc7d30bde891b45f87171d0">inBufSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#af58b83fad7bae80232a2e3cd9814ed75">index</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dba/structCLoopThread.html">CLoopThread</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#a597eb48281930d65df3bfad20f71fa8c">thread</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#a58fa066a1a2083f930c0e11e5bd6beb0">stopReading</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#af175d409bd1068578bda2dc05512d521">stopWriting</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#ab3632eff505492c27acb55bbd6a722cc">canRead</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/structCMtThread.html#aee7d463fff58c188d0d94a251912435e">canWrite</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00053">53</a>行定义。</p>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ab3632eff505492c27acb55bbd6a722cc"></a><!-- doxytag: member="CMtThread::canRead" ref="ab3632eff505492c27acb55bbd6a722cc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> <a class="el" href="../../d4/d77/structCMtThread.html#ab3632eff505492c27acb55bbd6a722cc">CMtThread::canRead</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00065">65</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aee7d463fff58c188d0d94a251912435e"></a><!-- doxytag: member="CMtThread::canWrite" ref="aee7d463fff58c188d0d94a251912435e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> <a class="el" href="../../d4/d77/structCMtThread.html#aee7d463fff58c188d0d94a251912435e">CMtThread::canWrite</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00066">66</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a93897d492ae9b190aaab3b6f6eb5cd67"></a><!-- doxytag: member="CMtThread::inBuf" ref="a93897d492ae9b190aaab3b6f6eb5cd67" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* <a class="el" href="../../d4/d77/structCMtThread.html#a93897d492ae9b190aaab3b6f6eb5cd67">CMtThread::inBuf</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00058">58</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ace8f75de5dc7d30bde891b45f87171d0"></a><!-- doxytag: member="CMtThread::inBufSize" ref="ace8f75de5dc7d30bde891b45f87171d0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../d4/d77/structCMtThread.html#ace8f75de5dc7d30bde891b45f87171d0">CMtThread::inBufSize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00059">59</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af58b83fad7bae80232a2e3cd9814ed75"></a><!-- doxytag: member="CMtThread::index" ref="af58b83fad7bae80232a2e3cd9814ed75" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="../../d4/d77/structCMtThread.html#af58b83fad7bae80232a2e3cd9814ed75">CMtThread::index</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00060">60</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b5a010691afdcbd4dcaf353f9121094"></a><!-- doxytag: member="CMtThread::mtCoder" ref="a8b5a010691afdcbd4dcaf353f9121094" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../d0/dd7/struct__CMtCoder.html">_CMtCoder</a>* <a class="el" href="../../d4/d77/structCMtThread.html#a8b5a010691afdcbd4dcaf353f9121094">CMtThread::mtCoder</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00055">55</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7dbcc0cc7a3f0c56ce8c332f7e3799b6"></a><!-- doxytag: member="CMtThread::outBuf" ref="a7dbcc0cc7a3f0c56ce8c332f7e3799b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* <a class="el" href="../../d4/d77/structCMtThread.html#a7dbcc0cc7a3f0c56ce8c332f7e3799b6">CMtThread::outBuf</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00056">56</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a49f4905b5ff92f944b82a1d251612d00"></a><!-- doxytag: member="CMtThread::outBufSize" ref="a49f4905b5ff92f944b82a1d251612d00" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="../../d4/d77/structCMtThread.html#a49f4905b5ff92f944b82a1d251612d00">CMtThread::outBufSize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00057">57</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a58fa066a1a2083f930c0e11e5bd6beb0"></a><!-- doxytag: member="CMtThread::stopReading" ref="a58fa066a1a2083f930c0e11e5bd6beb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a> <a class="el" href="../../d4/d77/structCMtThread.html#a58fa066a1a2083f930c0e11e5bd6beb0">CMtThread::stopReading</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00063">63</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af175d409bd1068578bda2dc05512d521"></a><!-- doxytag: member="CMtThread::stopWriting" ref="af175d409bd1068578bda2dc05512d521" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a> <a class="el" href="../../d4/d77/structCMtThread.html#af175d409bd1068578bda2dc05512d521">CMtThread::stopWriting</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00064">64</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a597eb48281930d65df3bfad20f71fa8c"></a><!-- doxytag: member="CMtThread::thread" ref="a597eb48281930d65df3bfad20f71fa8c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> <a class="el" href="../../d4/d77/structCMtThread.html#a597eb48281930d65df3bfad20f71fa8c">CMtThread::thread</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a>第<a class="el" href="../../df/da4/MtCoder_8h_source.html#l00061">61</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/da4/MtCoder_8h_source.html">MtCoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

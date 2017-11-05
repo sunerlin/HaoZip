@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveCodecs.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_afcd99ce1b4294f65dd4628074146ecb.html">manager</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveCodecs.h文件参考</h1><code>#include &quot;<a class="el" href="../../d1/dcb/RCCodecsManager_8h_source.html">coder/RCCodecsManager.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d5/dea/RCArchiveInfoEx_8h_source.html">archive/manager/RCArchiveInfoEx.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d7b/IArchive_8h_source.html">interface/IArchive.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dc/d53/RCVector_8h_source.html">common/RCVector.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dd/d75/RCIntrusivePtr_8h_source.html">base/RCIntrusivePtr.h</a>&quot;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<div class="dynheader">
+RCArchiveCodecs.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d5/dc9/RCArchiveCodecs_8h__incl.png" border="0" usemap="#RCArchiveCodecs_8h_map" alt=""/></div>
+<map name="RCArchiveCodecs_8h_map" id="RCArchiveCodecs_8h">
+<area shape="rect" id="node3" href="../../d1/dcb/RCCodecsManager_8h.html" title="coder/RCCodecsManager.h" alt="" coords="196,80,396,107"/><area shape="rect" id="node65" href="../../d5/dea/RCArchiveInfoEx_8h.html" title="archive/manager/RCArchiveInfoEx.h" alt="" coords="1443,155,1704,181"/><area shape="rect" id="node78" href="../../dc/d53/RCVector_8h.html" title="common/RCVector.h" alt="" coords="1637,229,1795,256"/><area shape="rect" id="node83" href="../../d8/d7b/IArchive_8h.html" title="interface/IArchive.h" alt="" coords="1267,155,1419,181"/><area shape="rect" id="node96" href="../../dd/d75/RCIntrusivePtr_8h.html" title="base/RCIntrusivePtr.h" alt="" coords="1073,80,1236,107"/><area shape="rect" id="node5" href="../../de/d71/ICoder_8h.html" title="interface/ICoder.h" alt="" coords="163,155,304,181"/><area shape="rect" id="node55" href="../../d2/d06/IUnknownImpl_8h.html" title="interface/IUnknownImpl.h" alt="" coords="515,304,709,331"/><area shape="rect" id="node7" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="695,379,860,405"/><area shape="rect" id="node30" href="../../d8/d51/ICodecInfo_8h.html" title="interface/ICodecInfo.h" alt="" coords="845,229,1013,256"/><area shape="rect" id="node40" href="../../d6/ddc/RCProperty_8h.html" title="common/RCProperty.h" alt="" coords="211,229,379,256"/><area shape="rect" id="node9" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="699,453,861,480"/><area shape="rect" id="node25" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="539,453,675,480"/><area shape="rect" id="node11" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="915,528,1032,555"/><area shape="rect" id="node13" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="1727,603,1852,629"/><area shape="rect" id="node17" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="1776,677,1941,704"/><area shape="rect" id="node19" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="1965,677,2096,704"/><area shape="rect" id="node32" href="../../d1/d3e/IRefCounted_8h.html" title="interface/IRefCounted.h" alt="" coords="835,304,1013,331"/><area shape="rect" id="node35" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="1077,379,1205,405"/><area shape="rect" id="node43" href="../../d3/dd0/RCPropertyID_8h.html" title="interface/RCPropertyID.h" alt="" coords="277,379,464,405"/><area shape="rect" id="node46" href="../../d0/d38/RCVariant_8h.html" title="common/RCVariant.h" alt="" coords="328,304,491,331"/><area shape="rect" id="node58" href="../../d6/d44/RCRefCounted_8h.html" title="base/RCRefCounted.h" alt="" coords="888,379,1053,405"/><area shape="rect" id="node60" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="885,453,1061,480"/><area shape="rect" id="node67" href="../../d9/d9e/RCArchiveExtInfo_8h.html" title="archive/manager/RCArchiveExtInfo.h" alt="" coords="1341,304,1608,331"/><area shape="rect" id="node70" href="../../db/df8/IArchiveInfo_8h.html" title="interface/IArchiveInfo.h" alt="" coords="1189,229,1368,256"/><area shape="rect" id="node72" href="../../d5/d96/RCArchiveType_8h.html" title="interface/RCArchiveType.h" alt="" coords="1229,379,1427,405"/><area shape="rect" id="node85" href="../../d1/d97/IProgress_8h.html" title="interface/IProgress.h" alt="" coords="664,229,821,256"/><area shape="rect" id="node91" href="../../d3/d8b/RCExtractDefs_8h.html" title="archive/extract/RCExtractDefs.h" alt="" coords="1545,528,1780,555"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d4/d85/RCArchiveCodecs_8h__dep__incl.png" border="0" usemap="#RCArchiveCodecs_8hdep_map" alt=""/></div>
+<map name="RCArchiveCodecs_8hdep_map" id="RCArchiveCodecs_8hdep">
+<area shape="rect" id="node3" href="../../dd/d1f/RCArchiveOpen_8h.html" title="RCArchiveOpen.h" alt="" coords="5,80,144,107"/><area shape="rect" id="node5" href="../../da/d8a/RCExtract_8h.html" title="RCExtract.h" alt="" coords="168,80,267,107"/><area shape="rect" id="node7" href="../../d5/d46/RCArchiveCodecsLoader_8h.html" title="RCArchiveCodecsLoader.h" alt="" coords="291,80,485,107"/><area shape="rect" id="node9" href="../../db/d50/RCUpdate_8h.html" title="RCUpdate.h" alt="" coords="509,80,608,107"/></map>
+</div>
+
+<p><a href="../../d2/d8a/RCArchiveCodecs_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd1/classRCArchiveCodecs.html">RCArchiveCodecs</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#afbe6eb6abb3a8bd31bd1d774b1ff6d62">__RCArchiveCodecs_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+<tr><td colspan="2"><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef RCIntrusivePtr<br class="typebreak"/>
+&lt; <a class="el" href="../../dd/dd1/classRCArchiveCodecs.html">RCArchiveCodecs</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a></td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="afbe6eb6abb3a8bd31bd1d774b1ff6d62"></a><!-- doxytag: member="RCArchiveCodecs.h::__RCArchiveCodecs_h_" ref="afbe6eb6abb3a8bd31bd1d774b1ff6d62" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCArchiveCodecs_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d2/d8a/RCArchiveCodecs_8h_source.html">RCArchiveCodecs.h</a>第<a class="el" href="../../d2/d8a/RCArchiveCodecs_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>类型定义文档</h2>
+<a class="anchor" id="a17249792955a3127e864b9f1a8abd973"></a><!-- doxytag: member="RCArchiveCodecs.h::RCArchiveCodecsPtr" ref="a17249792955a3127e864b9f1a8abd973" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RCIntrusivePtr&lt;<a class="el" href="../../dd/dd1/classRCArchiveCodecs.html">RCArchiveCodecs</a>&gt; <a class="el" href="../../d2/d8a/RCArchiveCodecs_8h.html#a17249792955a3127e864b9f1a8abd973">RCArchiveCodecsPtr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>智能指针定义 </p>
+
+<p>在文件<a class="el" href="../../d2/d8a/RCArchiveCodecs_8h_source.html">RCArchiveCodecs.h</a>第<a class="el" href="../../d2/d8a/RCArchiveCodecs_8h_source.html#l00132">132</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

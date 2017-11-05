@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::ICompressProgressInfo类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::ICompressProgressInfo类参考</h1><!-- doxytag: class="RCZip::ICompressProgressInfo" --><!-- doxytag: inherits="RCZip::IUnknown" -->
+<p><code>#include &lt;<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::ICompressProgressInfo</div>
+<div class="dynsection">
+<div class="center"><img src="../../d9/d73/classRCZip_1_1ICompressProgressInfo__inherit__graph.png" border="0" usemap="#RCZip_1_1ICompressProgressInfo_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1ICompressProgressInfo_inherit__map" id="RCZip_1_1ICompressProgressInfo_inherit__map">
+<area shape="rect" id="node5" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; ICompressProgressInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="268,318,615,439"/><area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="368,6,515,127"/><area shape="rect" id="node7" href="../../df/d61/classRCZip_1_1RCLocalProgress.html" title="{RCZip::RCLocalProgress\n|&#45; m_spProgress\l&#45; m_spRatioProgress\l&#45; m_spMtRatioProgress\l&#45; m_inSizeIsMain\l&#45; m_progressOffset\l&#45; m_inSize\l&#45; m_outSize\l&#45; m_sendRatio\l&#45; m_sendProgress\l&#45; m_curIndex\l|+ RCLocalProgress()\l+ ~RCLocalProgress()\l+ Init()\l+ SetCur()\l+ SetIndex()\l+ GetProgressOffset()\l+ GetInSize()\l+ GetOutSize()\l+ IsSendRatio()\l+ IsSendProgress()\l+ SetProgressOffset()\l+ SetInSize()\l+ SetOutSize()\l+ SetSendRatio()\l+ SetSendProgress()\l+ SetRatioInfo()\l}" alt="" coords="5,503,184,932"/><area shape="rect" id="node9" href="../../d3/d53/classRCZip_1_1RCMtCompressProgress.html" title="{RCZip::RCMtCompressProgress\n|&#45; m_progress\l&#45; m_index\l&#45; m_itemIndex\l|+ RCMtCompressProgress()\l+ ~RCMtCompressProgress()\l+ Init()\l+ Reinit()\l+ SetItemIndex()\l+ SetRatioInfo()\l}" alt="" coords="208,627,435,807"/><area shape="rect" id="node11" href="../../d7/d3c/classRCZip_1_1RCMtExtractProgress.html" title="{RCZip::RCMtExtractProgress\n|&#45; m_progress\l&#45; m_index\l|+ RCMtExtractProgress()\l+ ~RCMtExtractProgress()\l+ Init()\l+ Reinit()\l+ SetRatioInfo()\l}" alt="" coords="459,642,667,793"/><area shape="rect" id="node13" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html" title="{RCZip::RCMtLocalProgress\n|&#45; m_progress\l&#45; m_ratioProgress\l&#45; m_spMtRatioProgress\l&#45; m_inSizeIsMain\l&#45; m_progressOffset\l&#45; m_inSize\l&#45; m_outSize\l&#45; m_sendRatio\l&#45; m_sendMtRatio\l&#45; m_sendProgress\l&#45; m_curIndex\l|+ RCMtLocalProgress()\l+ ~RCMtLocalProgress()\l+ Init()\l+ SetCur()\l+ SetIndex()\l+ GetProgressOffset()\l+ GetInSize()\l+ GetOutSize()\l+ IsSendRatio()\l+ IsSendProgress()\l+ SetProgressOffset()\l+ SetInSize()\l+ SetOutSize()\l+ SetSendRatio()\l+ SetSendMtRatio()\l+ SetSendProgress()\l+ SetRatioInfo()\l}" alt="" coords="691,488,885,947"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::ICompressProgressInfo合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d3/d99/classRCZip_1_1ICompressProgressInfo__coll__graph.png" border="0" usemap="#RCZip_1_1ICompressProgressInfo_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1ICompressProgressInfo_coll__map" id="RCZip_1_1ICompressProgressInfo_coll__map">
+<area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="43,6,189,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d6/d60/classRCZip_1_1ICompressProgressInfo-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html#a341d44cdda0c412e46168c9d744bc743aa6441ada0c77814a6f4a0ebedc6a6cbc">IID</a> =  IID_ICompressProgressInfo
+ }</td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html#a7be8f2366b37a1d0107d34daf7b81e8a">SetRatioInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSize, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSize)=0</td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html#aa86f1bcb3d38fa285c204356e29ae4ff">~ICompressProgressInfo</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>压缩进度接口 </p>
+
+<p>在文件<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>第<a class="el" href="../../de/d71/ICoder_8h_source.html#l00060">60</a>行定义。</p>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a341d44cdda0c412e46168c9d744bc743"></a><!-- doxytag: member="RCZip::ICompressProgressInfo::@39" ref="a341d44cdda0c412e46168c9d744bc743" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>接口ID </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a341d44cdda0c412e46168c9d744bc743aa6441ada0c77814a6f4a0ebedc6a6cbc"></a><!-- doxytag: member="IID" ref="a341d44cdda0c412e46168c9d744bc743aa6441ada0c77814a6f4a0ebedc6a6cbc" args="" -->IID</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>第<a class="el" href="../../de/d71/ICoder_8h_source.html#l00067">67</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aa86f1bcb3d38fa285c204356e29ae4ff"></a><!-- doxytag: member="RCZip::ICompressProgressInfo::~ICompressProgressInfo" ref="aa86f1bcb3d38fa285c204356e29ae4ff" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::ICompressProgressInfo::~ICompressProgressInfo </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+<p>在文件<a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a>第<a class="el" href="../../de/d71/ICoder_8h_source.html#l00082">82</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a7be8f2366b37a1d0107d34daf7b81e8a"></a><!-- doxytag: member="RCZip::ICompressProgressInfo::SetRatioInfo" ref="a7be8f2366b37a1d0107d34daf7b81e8a" args="(uint64_t inSize, uint64_t outSize)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::ICompressProgressInfo::SetRatioInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>outSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置压缩进度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inSize</em>&nbsp;</td><td>输入数据大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outSize</em>&nbsp;</td><td>输出数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 否则返回错误码 </dd></dl>
+
+<p>在<a class="el" href="../../df/d61/classRCZip_1_1RCLocalProgress.html#a709a041217657deb7ebcd520725d36c9">RCZip::RCLocalProgress</a>、<a class="el" href="../../d3/d53/classRCZip_1_1RCMtCompressProgress.html#aeffbdc8aafe27642f62cf5763efbf88a">RCZip::RCMtCompressProgress</a>、<a class="el" href="../../d7/d3c/classRCZip_1_1RCMtExtractProgress.html#a3955ee9dbd7667e742b9ab1162a16120">RCZip::RCMtExtractProgress</a>及<a class="el" href="../../d0/d76/classRCZip_1_1RCMtLocalProgress.html#acfa71493a3da1b7d3e1087370d3afb21">RCZip::RCMtLocalProgress</a>内被实现。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../de/d71/ICoder_8h_source.html">ICoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

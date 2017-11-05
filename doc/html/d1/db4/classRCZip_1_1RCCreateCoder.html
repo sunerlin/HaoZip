@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCCreateCoder类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html">RCCreateCoder</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCCreateCoder类参考</h1><!-- doxytag: class="RCZip::RCCreateCoder" -->
+<p><code>#include &lt;<a class="el" href="../../dc/db4/RCCreateCoder_8h_source.html">RCCreateCoder.h</a>&gt;</code></p>
+
+<p><a href="../../d7/d8b/classRCZip_1_1RCCreateCoder-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html#acd23de25a22107223de7b963a2e50f84">FindMethodByID</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecInfo, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> methodID, <a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;spCodecInfo, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *codecIndex=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html#a8599e7552438b4ecf673040287222bf5">FindMethodByName</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecInfo, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;methodName, <a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;spCodecInfo, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *codecIndex=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html#a60039ff8b381374505ac08c3227a6674">FindMethodID</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecInfo, const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;methodName, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> &amp;methodID, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *codecIndex=NULL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html#acb18b4aa017ef7abe141e1ba0fb76f71">CreateCoder</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecInfo, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> methodID, <a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> &amp;coder, bool isEncoder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html#ae033cb4e1457e9a588f0066c01362236">CreateCoder</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecsInfo, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> methodID, <a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> &amp;coder, <a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoder2Ptr</a> &amp;coder2, bool isEncoder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html#acd79eaffc556fa8bb2e62498115db8b7">CreateFilter</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecsInfo, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> methodID, <a class="el" href="../../d9/d13/classRCComPtr.html">ICompressFilterPtr</a> &amp;filter, bool isEncoder)</td></tr>
+<tr><td colspan="2"><h2>静态私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classRCZip_1_1RCCreateCoder.html#a5dc94d846a8195dbbc4fcb0220204be1">CreateCoder</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *codecsInfo, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> methodID, <a class="el" href="../../d9/d13/classRCComPtr.html">ICompressFilterPtr</a> &amp;filter, <a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> &amp;coder, <a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoder2Ptr</a> &amp;coder2, bool isEncoder, bool isOnlyCoder)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../dc/db4/RCCreateCoder_8h_source.html">RCCreateCoder.h</a>第<a class="el" href="../../dc/db4/RCCreateCoder_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a5dc94d846a8195dbbc4fcb0220204be1"></a><!-- doxytag: member="RCZip::RCCreateCoder::CreateCoder" ref="a5dc94d846a8195dbbc4fcb0220204be1" args="(ICompressCodecsInfo *codecsInfo, RCMethodID methodID, ICompressFilterPtr &amp;filter, ICompressCoderPtr &amp;coder, ICompressCoder2Ptr &amp;coder2, bool isEncoder, bool isOnlyCoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCreateCoder::CreateCoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecsInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a>&nbsp;</td>
+          <td class="paramname"> <em>methodID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressFilterPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>coder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoder2Ptr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>coder2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isEncoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isOnlyCoder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建编码/解码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecsInfo</em>&nbsp;</td><td>编码器查询接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodID</em>&nbsp;</td><td>编码ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>filter</em>&nbsp;</td><td>返回ICompressFilter接口指针 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>返回ICompressCoder接口指针 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder2</em>&nbsp;</td><td>返回ICompressCoder2接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isEncoder</em>&nbsp;</td><td>如果为true，创建编码器接口指针，如果为false，则创建解码器接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isOnlyCoder</em>&nbsp;</td><td>如果为true，创建RCFilterCoder作为coder接口指针， 如果为false,如果编码器是Filter，则不创建coder接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae033cb4e1457e9a588f0066c01362236"></a><!-- doxytag: member="RCZip::RCCreateCoder::CreateCoder" ref="ae033cb4e1457e9a588f0066c01362236" args="(ICompressCodecsInfo *codecsInfo, RCMethodID methodID, ICompressCoderPtr &amp;coder, ICompressCoder2Ptr &amp;coder2, bool isEncoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCreateCoder::CreateCoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecsInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a>&nbsp;</td>
+          <td class="paramname"> <em>methodID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>coder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoder2Ptr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>coder2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isEncoder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建编码/解码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecsInfo</em>&nbsp;</td><td>编码器查询接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodID</em>&nbsp;</td><td>编码ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>返回ICompressCoder接口指针 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder2</em>&nbsp;</td><td>返回ICompressCoder2接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isEncoder</em>&nbsp;</td><td>如果为true，创建编码器接口指针，如果为false，则创建解码器接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acb18b4aa017ef7abe141e1ba0fb76f71"></a><!-- doxytag: member="RCZip::RCCreateCoder::CreateCoder" ref="acb18b4aa017ef7abe141e1ba0fb76f71" args="(ICompressCodecsInfo *codecInfo, RCMethodID methodID, ICompressCoderPtr &amp;coder, bool isEncoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCreateCoder::CreateCoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a>&nbsp;</td>
+          <td class="paramname"> <em>methodID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>coder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isEncoder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建编码/解码器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecInfo</em>&nbsp;</td><td>编码器查询接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodID</em>&nbsp;</td><td>编码ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>coder</em>&nbsp;</td><td>返回ICompressCoder接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isEncoder</em>&nbsp;</td><td>如果为true，创建编码器接口指针，如果为false，则创建解码器接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd79eaffc556fa8bb2e62498115db8b7"></a><!-- doxytag: member="RCZip::RCCreateCoder::CreateFilter" ref="acd79eaffc556fa8bb2e62498115db8b7" args="(ICompressCodecsInfo *codecsInfo, RCMethodID methodID, ICompressFilterPtr &amp;filter, bool isEncoder)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCCreateCoder::CreateFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecsInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a>&nbsp;</td>
+          <td class="paramname"> <em>methodID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressFilterPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isEncoder</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建编码/解码器的过滤器 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecsInfo</em>&nbsp;</td><td>编码器查询接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodID</em>&nbsp;</td><td>编码ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>filter</em>&nbsp;</td><td>返回ICompressFilter接口指针 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isEncoder</em>&nbsp;</td><td>如果为true，创建编码器接口指针，如果为false，则创建解码器接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd23de25a22107223de7b963a2e50f84"></a><!-- doxytag: member="RCZip::RCCreateCoder::FindMethodByID" ref="acd23de25a22107223de7b963a2e50f84" args="(ICompressCodecsInfo *codecInfo, RCMethodID methodID, ICodecInfoPtr &amp;spCodecInfo, uint32_t *codecIndex=NULL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCCreateCoder::FindMethodByID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a>&nbsp;</td>
+          <td class="paramname"> <em>methodID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spCodecInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecIndex</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>根据ID查找编码方法信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecInfo</em>&nbsp;</td><td>编码器查询接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodID</em>&nbsp;</td><td>编码ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>spCodecInfo</em>&nbsp;</td><td>返回该方法接口指针 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>codecIndex</em>&nbsp;</td><td>返回该编码器的下标值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true，如果不存在该方法则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8599e7552438b4ecf673040287222bf5"></a><!-- doxytag: member="RCZip::RCCreateCoder::FindMethodByName" ref="a8599e7552438b4ecf673040287222bf5" args="(ICompressCodecsInfo *codecInfo, const RCString &amp;methodName, ICodecInfoPtr &amp;spCodecInfo, uint32_t *codecIndex=NULL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCCreateCoder::FindMethodByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>methodName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d13/classRCComPtr.html">ICodecInfoPtr</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>spCodecInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecIndex</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>根据Name查找编码方法信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecInfo</em>&nbsp;</td><td>编码器查询接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodName</em>&nbsp;</td><td>编码名称，不区分大小写 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>spCodecInfo</em>&nbsp;</td><td>返回该方法接口指针 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>codecIndex</em>&nbsp;</td><td>返回该编码器的下标值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true，如果不存在该方法则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a60039ff8b381374505ac08c3227a6674"></a><!-- doxytag: member="RCZip::RCCreateCoder::FindMethodID" ref="a60039ff8b381374505ac08c3227a6674" args="(ICompressCodecsInfo *codecInfo, const RCString &amp;methodName, RCMethodID &amp;methodID, uint32_t *codecIndex=NULL)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCCreateCoder::FindMethodID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>methodName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a75409d5430c107a5771544f50973c533">RCMethodID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>methodID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>codecIndex</em> = <code>NULL</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>根据Name查找编码ID </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>codecInfo</em>&nbsp;</td><td>编码器查询接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>methodName</em>&nbsp;</td><td>编码名称，不区分大小写 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>methodID</em>&nbsp;</td><td>返回编码名称对应的编码ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>codecIndex</em>&nbsp;</td><td>返回该编码器的下标值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true，如果不存在该方法则返回false </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dc/db4/RCCreateCoder_8h_source.html">RCCreateCoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

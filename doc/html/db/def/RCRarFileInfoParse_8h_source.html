@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCRarFileInfoParse.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_728c656fbc05cd4a835302e4bd732c5f.html">rar</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCRarFileInfoParse.h</h1><a href="../../db/def/RCRarFileInfoParse_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCRarFileInfoParse_h_</span>
+<a name="l00011"></a><a class="code" href="../../db/def/RCRarFileInfoParse_8h.html#ac4c310a4bf6360b8690d4d35a07a20c0">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCRarFileInfoParse_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/d7b/IArchive_8h.html">interface/IArchive.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../de/d71/ICoder_8h.html">interface/ICoder.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d06/IUnknownImpl_8h.html">interface/IUnknownImpl.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d42/RCRarVolumeInStream_8h.html">RCRarVolumeInStream.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../da/d38/RCSystemUtils_8h.html">common/RCSystemUtils.h</a>&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a7e92965e925dafe07f03802461534e54">00019</a> <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00020"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a453b02a8c9bae4a6bec58173c637bda9">00020</a> 
+<a name="l00021"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a0b8195cbbe5c19ae72459194a5cd6ea6">00021</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a7e92965e925dafe07f03802461534e54">SALT_SIZE</a>              = 8;
+<a name="l00022"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a1bf9e84dfa07f33a1e27b94fbb97d76d">00022</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a453b02a8c9bae4a6bec58173c637bda9">SIZEOF_MARKHEAD</a>        = 7;
+<a name="l00023"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a618701e74e66273680da571ec5fcfdc0">00023</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a0b8195cbbe5c19ae72459194a5cd6ea6">SIZEOF_OLDMHD</a>          = 7;
+<a name="l00024"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a412fa9b80b4dfa90d38e959a07dd065f">00024</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a1bf9e84dfa07f33a1e27b94fbb97d76d">SIZEOF_NEWMHD</a>          = 13;
+<a name="l00025"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a60bb71d3834d9623a18e5f72734d3e48">00025</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a618701e74e66273680da571ec5fcfdc0">SIZEOF_OLDLHD</a>          = 21;
+<a name="l00026"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a82ba072f238f0ec9077456711d098337">00026</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a412fa9b80b4dfa90d38e959a07dd065f">SIZEOF_NEWLHD</a>          = 32;
+<a name="l00027"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#abba0a2baae73c6b965921a2d5acbc680">00027</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a60bb71d3834d9623a18e5f72734d3e48">SIZEOF_SHORTBLOCKHEAD</a>  = 7;
+<a name="l00028"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a1c086e64e74aa896cc1928ee12fdbfae">00028</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a82ba072f238f0ec9077456711d098337">SIZEOF_LONGBLOCKHEAD</a>   = 11;
+<a name="l00029"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a47a5a3df8d73fe8e485933b2adaa2090">00029</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#abba0a2baae73c6b965921a2d5acbc680">SIZEOF_SUBBLOCKHEAD</a>    = 14;
+<a name="l00030"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a4497a6728ac8e74d5179c4ca00a2f325">00030</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a1c086e64e74aa896cc1928ee12fdbfae">SIZEOF_COMMHEAD</a>        = 13;
+<a name="l00031"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#af2442ead84d614042f530352c8a66362">00031</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47a5a3df8d73fe8e485933b2adaa2090">SIZEOF_PROTECTHEAD</a>     = 26;
+<a name="l00032"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a9dcec08863e0d659fb68ffff77ddc485">00032</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a4497a6728ac8e74d5179c4ca00a2f325">SIZEOF_AVHEAD</a>          = 14;
+<a name="l00033"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a8818ec387c341e4871c4869b4613145f">00033</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#af2442ead84d614042f530352c8a66362">SIZEOF_SIGNHEAD</a>        = 15;
+<a name="l00034"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a77ffb5cc93bc90ee822640e4d007f035">00034</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a9dcec08863e0d659fb68ffff77ddc485">SIZEOF_UOHEAD</a>          = 18;
+<a name="l00035"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a1bc2d06a43b75dcd1f4dc9201dc2b59c">00035</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a8818ec387c341e4871c4869b4613145f">SIZEOF_MACHEAD</a>         = 22;
+<a name="l00036"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a3f09a30f02658665acb802250e4b670b">00036</a> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a77ffb5cc93bc90ee822640e4d007f035">SIZEOF_EAHEAD</a>          = 24;
+<a name="l00037"></a>00037 <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a1bc2d06a43b75dcd1f4dc9201dc2b59c">SIZEOF_BEEAHEAD</a>        = 24;
+<a name="l00038"></a>00038 <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a3f09a30f02658665acb802250e4b670b">SIZEOF_STREAMHEAD</a>      = 26;
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aaf2a653637cd765a59819a439929ef53c">00040</a> <span class="keyword">enum</span> 
+<a name="l00041"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aace6529b546e7230b6dc5a60f3b991bb9">00041</a> {
+<a name="l00042"></a><a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aace2dc433df240370bfa8c84a43f67617">00042</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aaf2a653637cd765a59819a439929ef53c">MARK_HEAD</a>=0x72,<a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aa2b89085cd12f9278d970ac4b523ee3a3">MAIN_HEAD</a>=0x73,<a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aaa759a6da0a8d8f5d4fe3c2afab75cc93">FILE_HEAD</a>=0x74,<a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aa6942890cfe8907ec74863fd000c70ec5">COMM_HEAD</a>=0x75,<a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aab91198f65cf84b2ed907351ef3991de1">AV_HEAD</a>=0x76,
+<a name="l00043"></a>00043     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aace6529b546e7230b6dc5a60f3b991bb9">SUB_HEAD</a>=0x77,<a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aaca64a97bcbf15f9389952af1b65cbc52">PROTECT_HEAD</a>=0x78,<a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aab382281dd69af523fe094502079a5dd6">SIGN_HEAD</a>=0x79,<a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aa1c08fd000d8b4416f28dcfba97612cb8">NEWSUB_HEAD</a>=0x7a,
+<a name="l00044"></a>00044     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a5cf6d044de66bb54ae68764b5df6c65aace2dc433df240370bfa8c84a43f67617">ENDARC_HEAD</a>=0x7b
+<a name="l00045"></a>00045 };
+<a name="l00046"></a>00046 <span class="comment"></span>
+<a name="l00047"></a><a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html">00047</a> <span class="comment">/** RAR文件信息分析器，输入流的头部地址即为RAR文件地址，不在文件内部搜索RAR标记头。</span>
+<a name="l00048"></a>00048 <span class="comment">*/</span>
+<a name="l00049"></a>00049 <span class="keyword">class </span><a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html">RCRarFileInfoParse</a>
+<a name="l00050"></a>00050 {
+<a name="l00051"></a>00051 <span class="keyword">public</span>:
+<a name="l00052"></a>00052 <span class="comment"></span>
+<a name="l00053"></a>00053 <span class="comment">    /** 构造函数</span>
+<a name="l00054"></a><a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html#a7fb15983ce9633ce2d86415bbe0d9fc6">00054</a> <span class="comment">    @param [in] stream 输入流</span>
+<a name="l00055"></a>00055 <span class="comment">    */</span>
+<a name="l00056"></a>00056     <a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html">RCRarFileInfoParse</a>(<a class="code" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a>* stream) : m_stream(0)
+<a name="l00057"></a>00057     {
+<a name="l00058"></a>00058         <span class="keywordflow">if</span> (!stream)
+<a name="l00059"></a>00059         {
+<a name="l00060"></a>00060             <span class="keywordflow">return</span>;
+<a name="l00061"></a>00061         }
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> SFXSize = 0;
+<a name="l00064"></a>00064         <span class="keywordflow">if</span> (stream-&gt;<a class="code" href="../../db/da6/classRCZip_1_1IInStream.html#a84fdb6c0a6fa196481a4349cc2017476">Seek</a>(0, <a class="code" href="../../d7/d5a/namespaceRCZip.html#a0bb101585da6c62f02ca00f67fb48741ab888c9f9cddb6d87b099874b577dcf7d">RC_STREAM_SEEK_CUR</a>, &amp;SFXSize) != <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a9a10b4b0c00316e7d88c03c8626d93f0">RC_S_OK</a>)
+<a name="l00065"></a>00065         {
+<a name="l00066"></a>00066             <span class="keywordflow">return</span>;
+<a name="l00067"></a>00067         }
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069         m_sfxSize = SFXSize;
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071         m_stream = stream;
+<a name="l00072"></a>00072     }
+<a name="l00073"></a>00073 <span class="comment"></span>
+<a name="l00074"></a><a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html#a048824e43a47d6f0ab2c115c515c90ef">00074</a> <span class="comment">    /** 默认析构函数</span>
+<a name="l00075"></a>00075 <span class="comment">    */</span>
+<a name="l00076"></a>00076     ~<a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html">RCRarFileInfoParse</a>()
+<a name="l00077"></a>00077     {
+<a name="l00078"></a>00078         <span class="keywordflow">if</span> (!m_stream)
+<a name="l00079"></a>00079         {
+<a name="l00080"></a>00080             <span class="keywordflow">return</span>;
+<a name="l00081"></a>00081         }
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> position = 0;
+<a name="l00084"></a>00084         <span class="keywordflow">if</span> (m_stream-&gt;Seek(m_sfxSize, <a class="code" href="../../d7/d5a/namespaceRCZip.html#a0bb101585da6c62f02ca00f67fb48741a8159bcc93650a12d6726f5827c1473cd">RC_STREAM_SEEK_SET</a>, &amp;position) != <a class="code" href="../../d7/d5a/namespaceRCZip.html#a670438552da02f23d0b75273e4144a12a9a10b4b0c00316e7d88c03c8626d93f0">RC_S_OK</a>)
+<a name="l00085"></a>00085         {
+<a name="l00086"></a>00086             <span class="keywordflow">return</span>;
+<a name="l00087"></a>00087         }
+<a name="l00088"></a>00088     }
+<a name="l00089"></a>00089 <span class="comment"></span>
+<a name="l00090"></a><a class="code" href="../../d7/d5a/classRCZip_1_1RCRarFileInfoParse_1_1RCMarkHeader.html">00090</a> <span class="comment">    /** 头部信息</span>
+<a name="l00091"></a>00091 <span class="comment">    */</span>
+<a name="l00092"></a>00092     <span class="keyword">class </span><a class="code" href="../../d7/d5a/classRCZip_1_1RCRarFileInfoParse_1_1RCMarkHeader.html">RCMarkHeader</a>
+<a name="l00093"></a>00093     {
+<a name="l00094"></a>00094     <span class="keyword">public</span>:
+<a name="l00095"></a>00095 <span class="comment"></span>
+<a name="l00096"></a><a class="code" href="../../d7/d5a/classRCZip_1_1RCRarFileInfoParse_1_1RCMarkHeader.html#a387fa5aa18d84205a6d8c65d3f33052d">00096</a> <span class="comment">        /** 头部信息</span>
+<a name="l00097"></a>00097 <span class="comment">        */</span>
+<a name="l00098"></a>00098         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> Data[<a class="code" href="../../d7/d5a/namespaceRCZip.html#a453b02a8c9bae4a6bec58173c637bda9">SIZEOF_MARKHEAD</a>];
+<a name="l00099"></a>00099 <span class="comment"></span>
+<a name="l00100"></a>00100 <span class="comment">        /** 文件标签是否正确</span>
+<a name="l00101"></a>00101 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00102"></a>00102 <span class="comment">        */</span>
+<a name="l00103"></a>00103         <span class="keywordtype">bool</span> IsSignature();
+<a name="l00104"></a>00104 <span class="comment"></span>
+<a name="l00105"></a>00105 <span class="comment">        /** 是否是旧版本</span>
+<a name="l00106"></a>00106 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00107"></a>00107 <span class="comment">        */</span>
+<a name="l00108"></a>00108         <span class="keywordtype">bool</span> IsOldFormat();
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110     }m_markHeader;
+<a name="l00111"></a>00111 <span class="comment"></span>
+<a name="l00112"></a><a class="code" href="../../dd/dfb/structRCZip_1_1RCRarFileInfoParse_1_1RCBlockHeader.html">00112</a> <span class="comment">    /** 块头部信息</span>
+<a name="l00113"></a>00113 <span class="comment">    */</span>
+<a name="l00114"></a>00114     <span class="keyword">struct </span><a class="code" href="../../dd/dfb/structRCZip_1_1RCRarFileInfoParse_1_1RCBlockHeader.html">RCBlockHeader</a>
+<a name="l00115"></a>00115     {
+<a name="l00116"></a>00116     <span class="keyword">public</span>:
+<a name="l00117"></a>00117 <span class="comment"></span>
+<a name="l00118"></a><a class="code" href="../../dd/dfb/structRCZip_1_1RCRarFileInfoParse_1_1RCBlockHeader.html#af1bf9c2b147ef9b5172d6380f6636462">00118</a> <span class="comment">        /** 头部信息</span>
+<a name="l00119"></a>00119 <span class="comment">        */</span>
+<a name="l00120"></a>00120         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> Data[<a class="code" href="../../d7/d5a/namespaceRCZip.html#a60bb71d3834d9623a18e5f72734d3e48">SIZEOF_SHORTBLOCKHEAD</a>];
+<a name="l00121"></a>00121 <span class="comment"></span>
+<a name="l00122"></a>00122 <span class="comment">        /** 是否是子块</span>
+<a name="l00123"></a>00123 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00124"></a>00124 <span class="comment">        */</span>
+<a name="l00125"></a>00125         <span class="keywordtype">bool</span> IsSubBlock();
+<a name="l00126"></a>00126 <span class="comment"></span>
+<a name="l00127"></a>00127 <span class="comment">        /** 块CRC</span>
+<a name="l00128"></a>00128 <span class="comment">        @return 返回crc</span>
+<a name="l00129"></a>00129 <span class="comment">        */</span>
+<a name="l00130"></a>00130         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> HeadCRC();
+<a name="l00131"></a>00131 <span class="comment"></span>
+<a name="l00132"></a>00132 <span class="comment">        /** 块类型</span>
+<a name="l00133"></a>00133 <span class="comment">        @return 返回类型</span>
+<a name="l00134"></a>00134 <span class="comment">        */</span>
+<a name="l00135"></a>00135         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> HeadType();
+<a name="l00136"></a>00136 <span class="comment"></span>
+<a name="l00137"></a>00137 <span class="comment">        /** 块风格</span>
+<a name="l00138"></a>00138 <span class="comment">        @return 返回风格</span>
+<a name="l00139"></a>00139 <span class="comment">        */</span>
+<a name="l00140"></a>00140         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> Flags();
+<a name="l00141"></a>00141 <span class="comment"></span>
+<a name="l00142"></a>00142 <span class="comment">        /** 设置快风格</span>
+<a name="l00143"></a>00143 <span class="comment">        @param [in] flags 风格</span>
+<a name="l00144"></a>00144 <span class="comment">        */</span>
+<a name="l00145"></a>00145         <span class="keywordtype">void</span> SetFlags(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> flags);
+<a name="l00146"></a>00146 <span class="comment"></span>
+<a name="l00147"></a>00147 <span class="comment">        /** 块头部大小</span>
+<a name="l00148"></a>00148 <span class="comment">        @return 返回大小</span>
+<a name="l00149"></a>00149 <span class="comment">        */</span>
+<a name="l00150"></a>00150         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> HeadSize();
+<a name="l00151"></a>00151 <span class="comment"></span>
+<a name="l00152"></a>00152 <span class="comment">        /** 设置头部大小</span>
+<a name="l00153"></a>00153 <span class="comment">        @param [in] size 大小</span>
+<a name="l00154"></a>00154 <span class="comment">        */</span>
+<a name="l00155"></a>00155         <span class="keywordtype">void</span> SetHeadSize(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> size);
+<a name="l00156"></a>00156 <span class="comment"></span>
+<a name="l00157"></a>00157 <span class="comment">        /** 是否子块</span>
+<a name="l00158"></a>00158 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00159"></a>00159 <span class="comment">        */</span>
+<a name="l00160"></a>00160         <span class="keywordtype">bool</span> SubBlock();
+<a name="l00161"></a>00161     };
+<a name="l00162"></a>00162 <span class="comment"></span>
+<a name="l00163"></a><a class="code" href="../../d3/d2e/structRCZip_1_1RCRarFileInfoParse_1_1RCMainHeader.html">00163</a> <span class="comment">    /** Main块头部信息</span>
+<a name="l00164"></a>00164 <span class="comment">    */</span>
+<a name="l00165"></a>00165     <span class="keyword">struct </span><a class="code" href="../../d3/d2e/structRCZip_1_1RCRarFileInfoParse_1_1RCMainHeader.html">RCMainHeader</a> : <span class="keyword">public</span> <a class="code" href="../../dd/dfb/structRCZip_1_1RCRarFileInfoParse_1_1RCBlockHeader.html">RCBlockHeader</a>
+<a name="l00166"></a>00166     {
+<a name="l00167"></a>00167     <span class="keyword">public</span>:
+<a name="l00168"></a>00168 <span class="comment"></span>
+<a name="l00169"></a>00169 <span class="comment">        /** 头部信息</span>
+<a name="l00170"></a>00170 <span class="comment">        @param [in] data 数据</span>
+<a name="l00171"></a>00171 <span class="comment">        @param [in] size 大小</span>
+<a name="l00172"></a>00172 <span class="comment">        @return 成功返回true，否则返回false</span>
+<a name="l00173"></a>00173 <span class="comment">        */</span>
+<a name="l00174"></a>00174         <span class="keywordtype">bool</span> ReadFrom(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* data, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size) ;
+<a name="l00175"></a>00175 <span class="comment"></span>
+<a name="l00176"></a>00176 <span class="comment">        /** 是否加密</span>
+<a name="l00177"></a>00177 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00178"></a>00178 <span class="comment">        */</span>
+<a name="l00179"></a>00179         <span class="keywordtype">bool</span> IsEncrypted();
+<a name="l00180"></a>00180 <span class="comment"></span>
+<a name="l00181"></a>00181 <span class="comment">        /** 是否分卷</span>
+<a name="l00182"></a>00182 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00183"></a>00183 <span class="comment">        */</span>
+<a name="l00184"></a>00184         <span class="keywordtype">bool</span> IsVolume();
+<a name="l00185"></a>00185 <span class="comment"></span>
+<a name="l00186"></a>00186 <span class="comment">        /** 是否是第一个卷</span>
+<a name="l00187"></a>00187 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00188"></a>00188 <span class="comment">        */</span>
+<a name="l00189"></a>00189         <span class="keywordtype">bool</span> IsFirstVolume();
+<a name="l00190"></a>00190 <span class="comment"></span>
+<a name="l00191"></a>00191 <span class="comment">        /** 是否固始</span>
+<a name="l00192"></a>00192 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00193"></a>00193 <span class="comment">        */</span>
+<a name="l00194"></a>00194         <span class="keywordtype">bool</span> IsSolid();
+<a name="l00195"></a>00195 <span class="comment"></span>
+<a name="l00196"></a>00196 <span class="comment">        /** 是否在Main块保存注释</span>
+<a name="l00197"></a>00197 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00198"></a>00198 <span class="comment">        */</span>
+<a name="l00199"></a>00199         <span class="keywordtype">bool</span> IsMainComment();
+<a name="l00200"></a>00200 <span class="comment"></span>
+<a name="l00201"></a>00201 <span class="comment">        /** 是否锁定</span>
+<a name="l00202"></a>00202 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00203"></a>00203 <span class="comment">        */</span>
+<a name="l00204"></a>00204         <span class="keywordtype">bool</span> IsLocked();
+<a name="l00205"></a>00205 <span class="comment"></span>
+<a name="l00206"></a>00206 <span class="comment">        /** 是否标记</span>
+<a name="l00207"></a>00207 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00208"></a>00208 <span class="comment">        */</span>
+<a name="l00209"></a>00209         <span class="keywordtype">bool</span> IsSigned();
+<a name="l00210"></a>00210 <span class="comment"></span>
+<a name="l00211"></a>00211 <span class="comment">        /** 是否保护</span>
+<a name="l00212"></a>00212 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00213"></a>00213 <span class="comment">        */</span>
+<a name="l00214"></a>00214         <span class="keywordtype">bool</span> IsProtected();
+<a name="l00215"></a>00215 <span class="comment"></span>
+<a name="l00216"></a>00216 <span class="comment">        /** 加密版本</span>
+<a name="l00217"></a><a class="code" href="../../d3/d2e/structRCZip_1_1RCRarFileInfoParse_1_1RCMainHeader.html#a781fbe6f1e7c549ea90c68734cbf2559">00217</a> <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00218"></a>00218 <span class="comment">        */</span>
+<a name="l00219"></a>00219         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> m_encryptVer;
+<a name="l00220"></a>00220 <span class="comment"></span>
+<a name="l00221"></a><a class="code" href="../../d3/d2e/structRCZip_1_1RCRarFileInfoParse_1_1RCMainHeader.html#a782ca521fbb09762e1ee6b85ff41dc6b">00221</a> <span class="comment">        /** posAV的高位</span>
+<a name="l00222"></a>00222 <span class="comment">        */</span>
+<a name="l00223"></a>00223         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> m_highPosAV;
+<a name="l00224"></a>00224 <span class="comment"></span>
+<a name="l00225"></a><a class="code" href="../../d3/d2e/structRCZip_1_1RCRarFileInfoParse_1_1RCMainHeader.html#af5b8009082879380383cd8446e8d1419">00225</a> <span class="comment">        /** posAV</span>
+<a name="l00226"></a>00226 <span class="comment">        */</span>
+<a name="l00227"></a>00227         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> m_posAV;
+<a name="l00228"></a>00228 
+<a name="l00229"></a>00229     }m_mainHeader;
+<a name="l00230"></a>00230 <span class="comment"></span>
+<a name="l00231"></a><a class="code" href="../../d5/dbc/structRCZip_1_1RCRarFileInfoParse_1_1RCEndHeader.html">00231</a> <span class="comment">    /** End块头部信息</span>
+<a name="l00232"></a>00232 <span class="comment">    */</span>
+<a name="l00233"></a>00233     <span class="keyword">struct </span><a class="code" href="../../d5/dbc/structRCZip_1_1RCRarFileInfoParse_1_1RCEndHeader.html">RCEndHeader</a> : <span class="keyword">public</span> <a class="code" href="../../dd/dfb/structRCZip_1_1RCRarFileInfoParse_1_1RCBlockHeader.html">RCBlockHeader</a>
+<a name="l00234"></a>00234     {
+<a name="l00235"></a>00235     <span class="keyword">public</span>:
+<a name="l00236"></a>00236 <span class="comment"></span>
+<a name="l00237"></a>00237 <span class="comment">        /** 头部信息</span>
+<a name="l00238"></a>00238 <span class="comment">        @param [in] data 数据</span>
+<a name="l00239"></a>00239 <span class="comment">        @param [in] size 大小</span>
+<a name="l00240"></a>00240 <span class="comment">        @return 成功返回true，否则返回false</span>
+<a name="l00241"></a>00241 <span class="comment">        */</span>
+<a name="l00242"></a>00242         <span class="keywordtype">bool</span> ReadFrom(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* data, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size) ;
+<a name="l00243"></a>00243 <span class="comment"></span>
+<a name="l00244"></a>00244 <span class="comment">        /** 是否有下一个分卷</span>
+<a name="l00245"></a>00245 <span class="comment">        @return 是返回true，否则返回false</span>
+<a name="l00246"></a>00246 <span class="comment">        */</span>
+<a name="l00247"></a>00247         <span class="keywordtype">bool</span> IsLastVolume();
+<a name="l00248"></a>00248 <span class="comment"></span>
+<a name="l00249"></a><a class="code" href="../../d5/dbc/structRCZip_1_1RCRarFileInfoParse_1_1RCEndHeader.html#a1e454490a616258da9a59de88d3c1285">00249</a> <span class="comment">        /** 压缩包CRC32校验</span>
+<a name="l00250"></a>00250 <span class="comment">        */</span>
+<a name="l00251"></a>00251         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_arcDataCRC;
+<a name="l00252"></a>00252 <span class="comment"></span>
+<a name="l00253"></a><a class="code" href="../../d5/dbc/structRCZip_1_1RCRarFileInfoParse_1_1RCEndHeader.html#af3299a13a7ab2d81307e154f7fafb3c1">00253</a> <span class="comment">        /** 当前分卷序号</span>
+<a name="l00254"></a>00254 <span class="comment">        */</span>
+<a name="l00255"></a>00255         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> m_volNumber;
+<a name="l00256"></a>00256 
+<a name="l00257"></a>00257     }m_endHeader;
+<a name="l00258"></a>00258 <span class="comment"></span>
+<a name="l00259"></a><a class="code" href="../../d8/d4d/structRCZip_1_1RCRarFileInfoParse_1_1RCProtectHeader.html">00259</a> <span class="comment">    /** Protect块头部信息</span>
+<a name="l00260"></a>00260 <span class="comment">    */</span>
+<a name="l00261"></a>00261     <span class="keyword">struct </span><a class="code" href="../../d8/d4d/structRCZip_1_1RCRarFileInfoParse_1_1RCProtectHeader.html">RCProtectHeader</a>
+<a name="l00262"></a>00262     {
+<a name="l00263"></a>00263     <span class="keyword">public</span>:
+<a name="l00264"></a>00264 <span class="comment"></span>
+<a name="l00265"></a>00265 <span class="comment">        /** 头部信息</span>
+<a name="l00266"></a>00266 <span class="comment">        @param [in] data 数据</span>
+<a name="l00267"></a>00267 <span class="comment">        @param [in] size 大小</span>
+<a name="l00268"></a>00268 <span class="comment">        @return 成功返回true，否则返回false</span>
+<a name="l00269"></a>00269 <span class="comment">        */</span>
+<a name="l00270"></a>00270         <span class="keywordtype">bool</span> ReadFrom(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* data, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size) ;
+<a name="l00271"></a>00271 <span class="comment"></span>
+<a name="l00272"></a><a class="code" href="../../d8/d4d/structRCZip_1_1RCRarFileInfoParse_1_1RCProtectHeader.html#a3f94c2c4f7c28d84f421d8520af02417">00272</a> <span class="comment">        /** 数据大小</span>
+<a name="l00273"></a>00273 <span class="comment">        */</span>
+<a name="l00274"></a>00274         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_dataSize;
+<a name="l00275"></a>00275 <span class="comment"></span>
+<a name="l00276"></a>00276 <span class="comment">        /** 其他</span>
+<a name="l00277"></a>00277 <span class="comment">        unsigned char m_version;</span>
+<a name="l00278"></a>00278 <span class="comment">        unsigned short m_recSectors;</span>
+<a name="l00279"></a>00279 <span class="comment">        uint32_t m_totalBlocks;</span>
+<a name="l00280"></a>00280 <span class="comment">        unsigned char m_mark[8];</span>
+<a name="l00281"></a>00281 <span class="comment">        */</span>
+<a name="l00282"></a>00282     };
+<a name="l00283"></a>00283 
+<a name="l00284"></a>00284 <span class="comment"></span>
+<a name="l00285"></a><a class="code" href="../../db/d00/structRCZip_1_1RCRarFileInfoParse_1_1RCSubHeader.html">00285</a> <span class="comment">    /** Sub块头部信息</span>
+<a name="l00286"></a>00286 <span class="comment">    */</span>
+<a name="l00287"></a>00287     <span class="keyword">struct </span><a class="code" href="../../db/d00/structRCZip_1_1RCRarFileInfoParse_1_1RCSubHeader.html">RCSubHeader</a>
+<a name="l00288"></a>00288     {
+<a name="l00289"></a>00289     <span class="keyword">public</span>:
+<a name="l00290"></a>00290 <span class="comment"></span>
+<a name="l00291"></a>00291 <span class="comment">        /** 头部信息</span>
+<a name="l00292"></a>00292 <span class="comment">        @param [in] data 数据</span>
+<a name="l00293"></a>00293 <span class="comment">        @param [in] size 大小</span>
+<a name="l00294"></a>00294 <span class="comment">        @return 成功返回true，否则返回false</span>
+<a name="l00295"></a>00295 <span class="comment">        */</span>
+<a name="l00296"></a>00296         <span class="keywordtype">bool</span> ReadFrom(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* data, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size) ;
+<a name="l00297"></a>00297 <span class="comment"></span>
+<a name="l00298"></a><a class="code" href="../../db/d00/structRCZip_1_1RCRarFileInfoParse_1_1RCSubHeader.html#af801b092be48c0c26e263aef48149eea">00298</a> <span class="comment">        /** 数据大小</span>
+<a name="l00299"></a>00299 <span class="comment">        */</span>
+<a name="l00300"></a>00300         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_dataSize;
+<a name="l00301"></a>00301 <span class="comment"></span>
+<a name="l00302"></a>00302 <span class="comment">        /** 其他</span>
+<a name="l00303"></a>00303 <span class="comment">        unsigned short m_subType;</span>
+<a name="l00304"></a>00304 <span class="comment">        unsigned char m_level;</span>
+<a name="l00305"></a>00305 <span class="comment">        */</span>
+<a name="l00306"></a>00306     };
+<a name="l00307"></a>00307 <span class="comment"></span>
+<a name="l00308"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html">00308</a> <span class="comment">    /** File块头部信息</span>
+<a name="l00309"></a>00309 <span class="comment">    */</span>
+<a name="l00310"></a>00310     <span class="keyword">struct </span><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html">RCFileHeader</a> : <span class="keyword">public</span> <a class="code" href="../../dd/dfb/structRCZip_1_1RCRarFileInfoParse_1_1RCBlockHeader.html">RCBlockHeader</a>
+<a name="l00311"></a>00311     {
+<a name="l00312"></a>00312     <span class="keyword">public</span>:
+<a name="l00313"></a>00313 <span class="comment"></span>
+<a name="l00314"></a>00314 <span class="comment">        /** 头部信息</span>
+<a name="l00315"></a>00315 <span class="comment">        @param [in] data 数据</span>
+<a name="l00316"></a>00316 <span class="comment">        @param [in] size 大小</span>
+<a name="l00317"></a>00317 <span class="comment">        @return 成功返回true，否则返回false</span>
+<a name="l00318"></a>00318 <span class="comment">        */</span>
+<a name="l00319"></a>00319         <span class="keywordtype">bool</span> ReadFrom(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* data, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> size) ;
+<a name="l00320"></a>00320 <span class="comment"></span>
+<a name="l00321"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#ae6dea1a3076f5bcac349b255b71f3385">00321</a> <span class="comment">        /** 包大小(低位)</span>
+<a name="l00322"></a>00322 <span class="comment">        */</span>
+<a name="l00323"></a>00323         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_packSize;
+<a name="l00324"></a>00324 <span class="comment"></span>
+<a name="l00325"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#ada56fbb2eec02ad3a82e825cc7b57001">00325</a> <span class="comment">        /** 解压后大小(低位)</span>
+<a name="l00326"></a>00326 <span class="comment">        */</span>
+<a name="l00327"></a>00327         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_unpSize;
+<a name="l00328"></a>00328 <span class="comment"></span>
+<a name="l00329"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#aec9bb2a54e996939939bc06926f7e194">00329</a> <span class="comment">        /** 平台类型</span>
+<a name="l00330"></a>00330 <span class="comment">        */</span>
+<a name="l00331"></a>00331         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> HostOS;
+<a name="l00332"></a>00332 <span class="comment"></span>
+<a name="l00333"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#aa12e8cda89aa3a4dfc386db50dc831b7">00333</a> <span class="comment">        /** crc</span>
+<a name="l00334"></a>00334 <span class="comment">        */</span>
+<a name="l00335"></a>00335         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_fileCRC;
+<a name="l00336"></a>00336 <span class="comment"></span>
+<a name="l00337"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#aec0c1f327c505edb9aac90f6184672d4">00337</a> <span class="comment">        /** 文件时间</span>
+<a name="l00338"></a>00338 <span class="comment">        */</span>
+<a name="l00339"></a>00339         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_fileTime;
+<a name="l00340"></a>00340 <span class="comment"></span>
+<a name="l00341"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#a91fe465f1b4681090cd4c79afa230062">00341</a> <span class="comment">        /** 解压版本</span>
+<a name="l00342"></a>00342 <span class="comment">        */</span>
+<a name="l00343"></a>00343         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> m_unpVer;
+<a name="l00344"></a>00344 <span class="comment"></span>
+<a name="l00345"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#a773982f629f78c3123d39641eeb1f8b1">00345</a> <span class="comment">        /** 方法</span>
+<a name="l00346"></a>00346 <span class="comment">        */</span>
+<a name="l00347"></a>00347         <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> m_method;
+<a name="l00348"></a>00348 <span class="comment"></span>
+<a name="l00349"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#aad1d5a9b596c4a511ccb7faca64671fb">00349</a> <span class="comment">        /** 名字大小</span>
+<a name="l00350"></a>00350 <span class="comment">        */</span>
+<a name="l00351"></a>00351         <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> m_nameSize;
+<a name="l00352"></a>00352 
+<a name="l00353"></a>00353         <span class="keyword">union </span>
+<a name="l00354"></a>00354         {<span class="comment"></span>
+<a name="l00355"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#a80b1e4a6230d3ce3985b42c1fa760bda">00355</a> <span class="comment">            /** 文件属性</span>
+<a name="l00356"></a>00356 <span class="comment">            */</span>
+<a name="l00357"></a>00357             <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_fileAttr;
+<a name="l00358"></a>00358 <span class="comment"></span>
+<a name="l00359"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#af4bf720b7d17aa22554b00634e38c9af">00359</a> <span class="comment">            /** 子风格</span>
+<a name="l00360"></a>00360 <span class="comment">            */</span>
+<a name="l00361"></a>00361             <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_subFlags;
+<a name="l00362"></a>00362         };
+<a name="l00363"></a>00363 <span class="comment"></span>
+<a name="l00364"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#a350f1653ec3fd9c10ac999e76f14984e">00364</a> <span class="comment">        /** 包大小(高位)</span>
+<a name="l00365"></a>00365 <span class="comment">        */</span>
+<a name="l00366"></a>00366         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_highPackSize;
+<a name="l00367"></a>00367 <span class="comment"></span>
+<a name="l00368"></a><a class="code" href="../../d1/d35/structRCZip_1_1RCRarFileInfoParse_1_1RCFileHeader.html#ae9e30714fa69efc369559091fc8a3991">00368</a> <span class="comment">        /** 解压后大小(高位)</span>
+<a name="l00369"></a>00369 <span class="comment">        */</span>
+<a name="l00370"></a>00370         <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_highUnpSize;
+<a name="l00371"></a>00371     <span class="comment"></span>
+<a name="l00372"></a>00372 <span class="comment">        /** 其他</span>
+<a name="l00373"></a>00373 <span class="comment">        char m_fileName[NM];</span>
+<a name="l00374"></a>00374 <span class="comment">        wchar m_fileNameW[NM];</span>
+<a name="l00375"></a>00375 <span class="comment">        Array&lt;byte&gt; m_subData;</span>
+<a name="l00376"></a>00376 <span class="comment">        byte m_salt[SALT_SIZE];</span>
+<a name="l00377"></a>00377 <span class="comment">        RarTime m_mTime;</span>
+<a name="l00378"></a>00378 <span class="comment">        RarTime m_cTime;</span>
+<a name="l00379"></a>00379 <span class="comment">        RarTime m_aTime;</span>
+<a name="l00380"></a>00380 <span class="comment">        RarTime m_arcTime;</span>
+<a name="l00381"></a>00381 <span class="comment">        */</span>
+<a name="l00382"></a>00382     };
+<a name="l00383"></a>00383 <span class="comment"></span>
+<a name="l00384"></a>00384 <span class="comment">    /** 从文件流读取文件信息</span>
+<a name="l00385"></a>00385 <span class="comment">    @return 成功返回true，否则返回false</span>
+<a name="l00386"></a>00386 <span class="comment">    */</span>
+<a name="l00387"></a>00387     <span class="keywordtype">bool</span> ReadInfoFromStream();
+<a name="l00388"></a>00388 
+<a name="l00389"></a>00389 <span class="keyword">private</span>:
+<a name="l00390"></a>00390 <span class="comment"></span>
+<a name="l00391"></a><a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html#a6e2ad410b125741dc69ea25fd9f05012">00391</a> <span class="comment">    /** 输入流</span>
+<a name="l00392"></a>00392 <span class="comment">    */</span>
+<a name="l00393"></a>00393     <a class="code" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a>* m_stream;
+<a name="l00394"></a>00394 <span class="comment"></span>
+<a name="l00395"></a><a class="code" href="../../da/db9/classRCZip_1_1RCRarFileInfoParse.html#ae3a1e80022ddc57613c8bee2f05f4f05">00395</a> <span class="comment">    /** 输入流的起始地址</span>
+<a name="l00396"></a>00396 <span class="comment">    */</span>
+<a name="l00397"></a>00397     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> m_sfxSize;
+<a name="l00398"></a>00398 <span class="comment"></span>
+<a name="l00399"></a>00399 <span class="comment">    /** 读取块头部</span>
+<a name="l00400"></a>00400 <span class="comment">    @param [out] BlockType 块类型</span>
+<a name="l00401"></a>00401 <span class="comment">    @param [out] CurBlockPos 当前块头部的位置</span>
+<a name="l00402"></a>00402 <span class="comment">    @param [out] NextBlockPos 下一个块头部的位置</span>
+<a name="l00403"></a>00403 <span class="comment">    @return 返回块头部大小</span>
+<a name="l00404"></a>00404 <span class="comment">    */</span>
+<a name="l00405"></a>00405     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> ReadHeader(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>&amp; BlockType, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;CurBlockPos, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&amp; NextBlockPos);
+<a name="l00406"></a>00406 <span class="comment"></span>
+<a name="l00407"></a>00407 <span class="comment">    /** 读取老的头部</span>
+<a name="l00408"></a>00408 <span class="comment">    @param [out] BlockType 块类型</span>
+<a name="l00409"></a>00409 <span class="comment">    @param [out] CurBlockPos 当前块头部的位置</span>
+<a name="l00410"></a>00410 <span class="comment">    @param [out] NextBlockPos 下一个块头部的位置</span>
+<a name="l00411"></a>00411 <span class="comment">    @return 返回块头部大小</span>
+<a name="l00412"></a>00412 <span class="comment">    */</span>
+<a name="l00413"></a>00413     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> ReadOldHeader(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>&amp; BlockType, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> CurBlockPos, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&amp; NextBlockPos);
+<a name="l00414"></a>00414 <span class="comment"></span>
+<a name="l00415"></a>00415 <span class="comment">    /** 读取新的头部</span>
+<a name="l00416"></a>00416 <span class="comment">    @param [out] BlockType 块类型</span>
+<a name="l00417"></a>00417 <span class="comment">    @param [out] CurBlockPos 当前块头部的位置</span>
+<a name="l00418"></a>00418 <span class="comment">    @param [out] NextBlockPos 下一个块头部的位置</span>
+<a name="l00419"></a>00419 <span class="comment">    @return 返回块头部大小</span>
+<a name="l00420"></a>00420 <span class="comment">    */</span>
+<a name="l00421"></a>00421     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> ReadNewHeader(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>&amp; BlockType, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> CurBlockPos, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&amp; NextBlockPos);
+<a name="l00422"></a>00422 <span class="comment"></span>
+<a name="l00423"></a>00423 <span class="comment">    /** 搜索块</span>
+<a name="l00424"></a>00424 <span class="comment">    @param [in] BlockType 块类型</span>
+<a name="l00425"></a>00425 <span class="comment">    @return 返回位置</span>
+<a name="l00426"></a>00426 <span class="comment">    */</span>
+<a name="l00427"></a>00427     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> SearchBlock(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> BlockType);
+<a name="l00428"></a>00428 <span class="comment"></span>
+<a name="l00429"></a>00429 <span class="comment">    /** 获取当前位置</span>
+<a name="l00430"></a>00430 <span class="comment">    @return 返回当前位置</span>
+<a name="l00431"></a>00431 <span class="comment">    */</span>
+<a name="l00432"></a>00432     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> Tell();
+<a name="l00433"></a>00433 <span class="comment"></span>
+<a name="l00434"></a>00434 <span class="comment">    /** 读取数据</span>
+<a name="l00435"></a>00435 <span class="comment">    @param [in] data 地址</span>
+<a name="l00436"></a>00436 <span class="comment">    @param [in] size 大小</span>
+<a name="l00437"></a>00437 <span class="comment">    @return 成功返回true，否则返回false</span>
+<a name="l00438"></a>00438 <span class="comment">    */</span>
+<a name="l00439"></a>00439     <span class="keywordtype">bool</span> Read(<span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> size);
+<a name="l00440"></a>00440 };
+<a name="l00441"></a>00441 
+<a name="l00442"></a>00442 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00443"></a>00443 
+<a name="l00444"></a>00444 <span class="preprocessor">#endif //RCRarFileInfoParse_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

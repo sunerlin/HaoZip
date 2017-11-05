@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCWinInFileStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html">RCWinInFileStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCWinInFileStream类参考</h1><!-- doxytag: class="RCZip::RCWinInFileStream" --><!-- doxytag: inherits="IUnknownImpl4&lt; IInStream, IStreamGetSize, ICloneStream, IStreamGetFileName &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../df/df5/RCWinInFileStream_8h_source.html">RCWinInFileStream.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCWinInFileStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d5/d41/classRCZip_1_1RCWinInFileStream__inherit__graph.png" border="0" usemap="#RCZip_1_1RCWinInFileStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCWinInFileStream_inherit__map" id="RCZip_1_1RCWinInFileStream_inherit__map">
+<area shape="rect" id="node2" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; IInStream, IStreamGetSize, ICloneStream, IStreamGetFileName \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="131,502,755,623"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,317,176,453"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,184,181,261"/><area shape="rect" id="node8" href="../../db/da6/classRCZip_1_1IInStream.html" title="{RCZip::IInStream\n||+ Seek()\l# ~IInStream()\l}" alt="" coords="200,339,333,431"/><area shape="rect" id="node10" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="260,177,465,269"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="489,6,636,127"/><area shape="rect" id="node14" href="../../da/d84/classRCZip_1_1IStreamGetSize.html" title="{RCZip::IStreamGetSize\n||+ GetSize()\l# ~IStreamGetSize()\l}" alt="" coords="357,339,528,431"/><area shape="rect" id="node17" href="../../d5/da2/classRCZip_1_1ICloneStream.html" title="{RCZip::ICloneStream\n||+ Clone()\l# ~ICloneStream()\l}" alt="" coords="552,339,712,431"/><area shape="rect" id="node20" href="../../dc/dd5/classRCZip_1_1IStreamGetFileName.html" title="{RCZip::IStreamGetFileName\n||+ GetFileName()\l# ~IStreamGetFileName()\l}" alt="" coords="639,177,844,269"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCWinInFileStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d2/d4c/classRCZip_1_1RCWinInFileStream__coll__graph.png" border="0" usemap="#RCZip_1_1RCWinInFileStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCWinInFileStream_coll__map" id="RCZip_1_1RCWinInFileStream_coll__map">
+<area shape="rect" id="node2" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; IInStream, IStreamGetSize, ICloneStream, IStreamGetFileName \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="176,726,800,847"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="223,465,388,601"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="85,187,261,264"/><area shape="rect" id="node25" href="../../d0/d20/classRCZip_1_1RCWinFileBase.html" title="{RCZip::RCWinFileBase\n|# m_handle\l# m_fileName\l|+ RCWinFileBase()\l+ ~RCWinFileBase()\l+ Close()\l+ GetPosition()\l+ GetLength()\l+ Seek()\l+ Seek()\l+ SeekToBegin()\l+ SeekToEnd()\l+ GetFileName()\l# Create()\l}" alt="" coords="21,414,187,653"/><area shape="rect" id="node8" href="../../db/da6/classRCZip_1_1IInStream.html" title="{RCZip::IInStream\n||+ Seek()\l# ~IInStream()\l}" alt="" coords="633,487,767,579"/><area shape="rect" id="node10" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="669,179,875,271"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="472,6,619,127"/><area shape="rect" id="node14" href="../../da/d84/classRCZip_1_1IStreamGetSize.html" title="{RCZip::IStreamGetSize\n||+ GetSize()\l# ~IStreamGetSize()\l}" alt="" coords="219,297,389,389"/><area shape="rect" id="node17" href="../../d5/da2/classRCZip_1_1ICloneStream.html" title="{RCZip::ICloneStream\n||+ Clone()\l# ~ICloneStream()\l}" alt="" coords="396,297,556,389"/><area shape="rect" id="node20" href="../../dc/dd5/classRCZip_1_1IStreamGetFileName.html" title="{RCZip::IStreamGetFileName\n||+ GetFileName()\l# ~IStreamGetFileName()\l}" alt="" coords="563,297,768,389"/><area shape="rect" id="node23" href="../../da/d5a/classRCZip_1_1RCWinInFile.html" title="{RCZip::RCWinInFile\n||+ RCWinInFile()\l+ ~RCWinInFile()\l+ Open()\l+ OpenShared()\l+ Open()\l+ Read()\l&#45; ReadPart()\l}" alt="" coords="5,704,152,869"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d7/dd5/classRCZip_1_1RCWinInFileStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a53093372eb0f06e35071942489b4ba49">RCWinInFileStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a8cea16d79969e0db79f64e707891de28">~RCWinInFileStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a99a657dc4426a3931a9e7cb83370a4bb">Open</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;fileName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a80344d34879061592670c759a7c37d42">OpenShared</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;fileName, bool shareForWrite)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#ae02ece18e0bf3090425c8a3ed0b705bd">Read</a> (void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a533e2c7b35b9e65dbe58a5fffd77d61d">Seek</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> offset, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a0bb101585da6c62f02ca00f67fb48741">RC_STREAM_SEEK</a> seekOrigin, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *newPosition)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#ac131e2e5d6245ce432664d65ce5aeeb3">GetSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d02/classRCZip_1_1IUnknown.html">IUnknown</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#ad745d0ced693aa075d671c314d5a5e99">Clone</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a42eddabfcf2a380cc3aff0366fb17290">GetFileName</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;fileName)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d5a/classRCZip_1_1RCWinInFile.html">RCWinInFile</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a13ad733eccc6d1bdc8cebdfcaabc391f">m_file</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../df/df5/RCWinInFileStream_8h_source.html">RCWinInFileStream.h</a>第<a class="el" href="../../df/df5/RCWinInFileStream_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a53093372eb0f06e35071942489b4ba49"></a><!-- doxytag: member="RCZip::RCWinInFileStream::RCWinInFileStream" ref="a53093372eb0f06e35071942489b4ba49" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWinInFileStream::RCWinInFileStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8cea16d79969e0db79f64e707891de28"></a><!-- doxytag: member="RCZip::RCWinInFileStream::~RCWinInFileStream" ref="a8cea16d79969e0db79f64e707891de28" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWinInFileStream::~RCWinInFileStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ad745d0ced693aa075d671c314d5a5e99"></a><!-- doxytag: member="RCZip::RCWinInFileStream::Clone" ref="ad745d0ced693aa075d671c314d5a5e99" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d8/d02/classRCZip_1_1IUnknown.html">IUnknown</a>* RCZip::RCWinInFileStream::Clone </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Clone 数据流 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>Clone 的数据流，如果失败返回NULL </dd></dl>
+
+<p>实现了<a class="el" href="../../d5/da2/classRCZip_1_1ICloneStream.html#a52dffc5c18daa9506a85d5269a882897">RCZip::ICloneStream</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a42eddabfcf2a380cc3aff0366fb17290"></a><!-- doxytag: member="RCZip::RCWinInFileStream::GetFileName" ref="a42eddabfcf2a380cc3aff0366fb17290" args="(RCString &amp;fileName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWinInFileStream::GetFileName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取流对应的文件名，含完整路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败返回错误码 </dd></dl>
+
+<p>实现了<a class="el" href="../../dc/dd5/classRCZip_1_1IStreamGetFileName.html#af7c827fa4f80267c2baee3c5203dccbe">RCZip::IStreamGetFileName</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac131e2e5d6245ce432664d65ce5aeeb3"></a><!-- doxytag: member="RCZip::RCWinInFileStream::GetSize" ref="ac131e2e5d6245ce432664d65ce5aeeb3" args="(uint64_t *size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWinInFileStream::GetSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>size</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取长度 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>返回流的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败返回错误码 </dd></dl>
+
+<p>实现了<a class="el" href="../../da/d84/classRCZip_1_1IStreamGetSize.html#a22428dd99caeadb29628ee5b11131d06">RCZip::IStreamGetSize</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a99a657dc4426a3931a9e7cb83370a4bb"></a><!-- doxytag: member="RCZip::RCWinInFileStream::Open" ref="a99a657dc4426a3931a9e7cb83370a4bb" args="(const RCString &amp;fileName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCWinInFileStream::Open </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文件 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 失败返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a80344d34879061592670c759a7c37d42"></a><!-- doxytag: member="RCZip::RCWinInFileStream::OpenShared" ref="a80344d34879061592670c759a7c37d42" args="(const RCString &amp;fileName, bool shareForWrite)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCWinInFileStream::OpenShared </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>shareForWrite</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>共享方式打开文件 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileName</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>shareForWrite</em>&nbsp;</td><td>是否设置共享写属性 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 失败返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae02ece18e0bf3090425c8a3ed0b705bd"></a><!-- doxytag: member="RCZip::RCWinInFileStream::Read" ref="ae02ece18e0bf3090425c8a3ed0b705bd" args="(void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWinInFileStream::Read </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败返回错误码 </dd></dl>
+
+<p>实现了<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html#a5ed6bed760370b86241c3b5987ea8281">RCZip::ISequentialInStream</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a533e2c7b35b9e65dbe58a5fffd77d61d"></a><!-- doxytag: member="RCZip::RCWinInFileStream::Seek" ref="a533e2c7b35b9e65dbe58a5fffd77d61d" args="(int64_t offset, RC_STREAM_SEEK seekOrigin, uint64_t *newPosition)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWinInFileStream::Seek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a0bb101585da6c62f02ca00f67fb48741">RC_STREAM_SEEK</a>&nbsp;</td>
+          <td class="paramname"> <em>seekOrigin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>newPosition</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>调整指针位置 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>offset</em>&nbsp;</td><td>需要调整的偏移量 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>seekOrigin</em>&nbsp;</td><td>调整的基准位置 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>newPosition</em>&nbsp;</td><td>调整后的文件偏移 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK, 失败返回错误码 </dd></dl>
+
+<p>实现了<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html#a84fdb6c0a6fa196481a4349cc2017476">RCZip::IInStream</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a13ad733eccc6d1bdc8cebdfcaabc391f"></a><!-- doxytag: member="RCZip::RCWinInFileStream::m_file" ref="a13ad733eccc6d1bdc8cebdfcaabc391f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d5a/classRCZip_1_1RCWinInFile.html">RCWinInFile</a> <a class="el" href="../../da/d05/classRCZip_1_1RCWinInFileStream.html#a13ad733eccc6d1bdc8cebdfcaabc391f">RCZip::RCWinInFileStream::m_file</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件内容读取实现对象 </p>
+
+<p>在文件<a class="el" href="../../df/df5/RCWinInFileStream_8h_source.html">RCWinInFileStream.h</a>第<a class="el" href="../../df/df5/RCWinInFileStream_8h_source.html#l00087">87</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/df5/RCWinInFileStream_8h_source.html">RCWinInFileStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

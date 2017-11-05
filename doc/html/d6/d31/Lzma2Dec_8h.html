@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: Lzma2Dec.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Lzma2Dec.h文件参考</h1><code>#include &quot;<a class="el" href="../../dc/dba/LzmaDec_8h_source.html">LzmaDec.h</a>&quot;</code><br/>
+<div class="dynheader">
+Lzma2Dec.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/d8e/Lzma2Dec_8h__incl.png" border="0" usemap="#Lzma2Dec_8h_map" alt=""/></div>
+<map name="Lzma2Dec_8h_map" id="Lzma2Dec_8h">
+<area shape="rect" id="node3" href="../../dc/dba/LzmaDec_8h.html" title="LzmaDec.h" alt="" coords="99,80,195,107"/><area shape="rect" id="node5" href="../../d7/df8/Types_8h.html" title="algorithm/Types.h" alt="" coords="76,155,217,181"/><area shape="rect" id="node7" href="../../df/dd8/stdint_8h.html" title="base/stdint.h" alt="" coords="36,229,143,256"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/da8/Lzma2Dec_8h__dep__incl.png" border="0" usemap="#Lzma2Dec_8hdep_map" alt=""/></div>
+<map name="Lzma2Dec_8hdep_map" id="Lzma2Dec_8hdep">
+<area shape="rect" id="node3" href="../../d7/d2e/RCLzma2Decoder_8h.html" title="RCLzma2Decoder.h" alt="" coords="5,80,155,107"/></map>
+</div>
+
+<p><a href="../../d6/d31/Lzma2Dec_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#ad4e3d81977decb7c5d2802097274c620">Lzma2Dec_Construct</a>(p)&nbsp;&nbsp;&nbsp;LzmaDec_Construct(&amp;(p)-&gt;decoder)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#ad9487a630167e44dbb3c23380997a11f">Lzma2Dec_FreeProbs</a>(p, alloc)&nbsp;&nbsp;&nbsp;LzmaDec_FreeProbs(&amp;(p)-&gt;decoder, alloc);</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#ad88c174d2169655dd5ca2bedd9ef0fb0">Lzma2Dec_Free</a>(p, alloc)&nbsp;&nbsp;&nbsp;LzmaDec_Free(&amp;(p)-&gt;decoder, alloc);</td></tr>
+<tr><td colspan="2"><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#af8862bcaefa7a288cab123063abf7e15">Lzma2Dec_AllocateProbs</a> (<a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> prop, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#a53e067b06d5c0bca41a7e2fa50e5ba02">Lzma2Dec_Allocate</a> (<a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> prop, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#a3aca6449979b2d9b77824fe941046378">Lzma2Dec_Init</a> (<a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#a0d07d375f91c48c4daea6f2673f18970">Lzma2Dec_DecodeToDic</a> (<a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, size_t dicLimit, const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, size_t *srcLen, <a class="el" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a> finishMode, <a class="el" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *status)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#a15b49f0c361a8a92a863099478243a77">Lzma2Dec_DecodeToBuf</a> (<a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *p, <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, size_t *destLen, const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, size_t *srcLen, <a class="el" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a> finishMode, <a class="el" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *status)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d31/Lzma2Dec_8h.html#a2d8514bc9893c6bf0f7475ae37b91fc4">Lzma2Decode</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, size_t *destLen, const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, size_t *srcLen, <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> prop, <a class="el" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a> finishMode, <a class="el" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *status, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc)</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="ad4e3d81977decb7c5d2802097274c620"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_Construct" ref="ad4e3d81977decb7c5d2802097274c620" args="(p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Lzma2Dec_Construct</td>
+          <td>(</td>
+          <td class="paramtype">p&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;LzmaDec_Construct(&amp;(p)-&gt;decoder)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d31/Lzma2Dec_8h_source.html">Lzma2Dec.h</a>第<a class="el" href="../../d6/d31/Lzma2Dec_8h_source.html#l00027">27</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad88c174d2169655dd5ca2bedd9ef0fb0"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_Free" ref="ad88c174d2169655dd5ca2bedd9ef0fb0" args="(p, alloc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Lzma2Dec_Free</td>
+          <td>(</td>
+          <td class="paramtype">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">alloc&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;LzmaDec_Free(&amp;(p)-&gt;decoder, alloc);</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d31/Lzma2Dec_8h_source.html">Lzma2Dec.h</a>第<a class="el" href="../../d6/d31/Lzma2Dec_8h_source.html#l00029">29</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9487a630167e44dbb3c23380997a11f"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_FreeProbs" ref="ad9487a630167e44dbb3c23380997a11f" args="(p, alloc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Lzma2Dec_FreeProbs</td>
+          <td>(</td>
+          <td class="paramtype">p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">alloc&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td>&nbsp;&nbsp;&nbsp;LzmaDec_FreeProbs(&amp;(p)-&gt;decoder, alloc);</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d31/Lzma2Dec_8h_source.html">Lzma2Dec.h</a>第<a class="el" href="../../d6/d31/Lzma2Dec_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="a53e067b06d5c0bca41a7e2fa50e5ba02"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_Allocate" ref="a53e067b06d5c0bca41a7e2fa50e5ba02" args="(CLzma2Dec *p, byte_t prop, ISzAlloc *alloc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> Lzma2Dec_Allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td>
+          <td class="paramname"> <em>prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8862bcaefa7a288cab123063abf7e15"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_AllocateProbs" ref="af8862bcaefa7a288cab123063abf7e15" args="(CLzma2Dec *p, byte_t prop, ISzAlloc *alloc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> Lzma2Dec_AllocateProbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td>
+          <td class="paramname"> <em>prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15b49f0c361a8a92a863099478243a77"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_DecodeToBuf" ref="a15b49f0c361a8a92a863099478243a77" args="(CLzma2Dec *p, byte_t *dest, size_t *destLen, const byte_t *src, size_t *srcLen, ELzmaFinishMode finishMode, ELzmaStatus *status)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> Lzma2Dec_DecodeToBuf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>destLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>srcLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a>&nbsp;</td>
+          <td class="paramname"> <em>finishMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *&nbsp;</td>
+          <td class="paramname"> <em>status</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d07d375f91c48c4daea6f2673f18970"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_DecodeToDic" ref="a0d07d375f91c48c4daea6f2673f18970" args="(CLzma2Dec *p, size_t dicLimit, const byte_t *src, size_t *srcLen, ELzmaFinishMode finishMode, ELzmaStatus *status)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> Lzma2Dec_DecodeToDic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>dicLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>srcLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a>&nbsp;</td>
+          <td class="paramname"> <em>finishMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *&nbsp;</td>
+          <td class="paramname"> <em>status</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3aca6449979b2d9b77824fe941046378"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Dec_Init" ref="a3aca6449979b2d9b77824fe941046378" args="(CLzma2Dec *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Lzma2Dec_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d64/structCLzma2Dec.html">CLzma2Dec</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d8514bc9893c6bf0f7475ae37b91fc4"></a><!-- doxytag: member="Lzma2Dec.h::Lzma2Decode" ref="a2d8514bc9893c6bf0f7475ae37b91fc4" args="(byte_t *dest, size_t *destLen, const byte_t *src, size_t *srcLen, byte_t prop, ELzmaFinishMode finishMode, ELzmaStatus *status, ISzAlloc *alloc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> Lzma2Decode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>destLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>srcLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td>
+          <td class="paramname"> <em>prop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/dba/LzmaDec_8h.html#a61326609cb619c55df7de7377082b79a">ELzmaFinishMode</a>&nbsp;</td>
+          <td class="paramname"> <em>finishMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/dba/LzmaDec_8h.html#aec5f6be8053dbbef6f7117ffb81aea6a">ELzmaStatus</a> *&nbsp;</td>
+          <td class="paramname"> <em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

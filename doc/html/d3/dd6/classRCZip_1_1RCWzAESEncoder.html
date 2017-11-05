@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCWzAESEncoder类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html">RCWzAESEncoder</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCWzAESEncoder类参考</h1><!-- doxytag: class="RCZip::RCWzAESEncoder" --><!-- doxytag: inherits="RCZip::RCWzAESBaseCoder" -->
+<p><code>#include &lt;<a class="el" href="../../dd/d45/RCWzAESEncoder_8h_source.html">RCWzAESEncoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCWzAESEncoder</div>
+<div class="dynsection">
+<div class="center"><img src="../../d6/d9f/classRCZip_1_1RCWzAESEncoder__inherit__graph.png" border="0" usemap="#RCZip_1_1RCWzAESEncoder_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCWzAESEncoder_inherit__map" id="RCZip_1_1RCWzAESEncoder_inherit__map">
+<area shape="rect" id="node2" href="../../dc/d13/classRCZip_1_1RCWzAESBaseCoder.html" title="{RCZip::RCWzAESBaseCoder\n|# m_key\l# m_counter\l# m_buffer\l# m_hmac\l# m_blockPos\l# m_pwdVerifFromArchive\l# m_aes\l|+ RCWzAESBaseCoder()\l+ ~RCWzAESBaseCoder()\l+ GetHeaderSize()\l# EncryptData()\l# Init()\l# Filter()\l# CryptoSetPassword()\l}" alt="" coords="184,531,389,784"/><area shape="rect" id="node4" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ICompressFilter, ICryptoSetPassword \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="64,361,509,482"/><area shape="rect" id="node6" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node8" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node10" href="../../d2/db9/classRCZip_1_1ICompressFilter.html" title="{RCZip::ICompressFilter\n||+ Init()\l+ Filter()\l# ~ICompressFilter()\l}" alt="" coords="200,191,373,297"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="319,6,465,127"/><area shape="rect" id="node14" href="../../da/d3b/classRCZip_1_1ICryptoSetPassword.html" title="{RCZip::ICryptoSetPassword\n||+ CryptoSetPassword()\l# ~ICryptoSetPassword()\l}" alt="" coords="397,198,597,290"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCWzAESEncoder合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d7/d71/classRCZip_1_1RCWzAESEncoder__coll__graph.png" border="0" usemap="#RCZip_1_1RCWzAESEncoder_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCWzAESEncoder_coll__map" id="RCZip_1_1RCWzAESEncoder_coll__map">
+<area shape="rect" id="node2" href="../../dc/d13/classRCZip_1_1RCWzAESBaseCoder.html" title="{RCZip::RCWzAESBaseCoder\n|# m_key\l# m_counter\l# m_buffer\l# m_hmac\l# m_blockPos\l# m_pwdVerifFromArchive\l# m_aes\l|+ RCWzAESBaseCoder()\l+ ~RCWzAESBaseCoder()\l+ GetHeaderSize()\l# EncryptData()\l# Init()\l# Filter()\l# CryptoSetPassword()\l}" alt="" coords="584,1043,789,1296"/><area shape="rect" id="node4" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ICompressFilter, ICryptoSetPassword \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="301,842,747,963"/><area shape="rect" id="node6" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="235,591,400,727"/><area shape="rect" id="node8" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="229,324,405,401"/><area shape="rect" id="node17" href="../../dc/d9d/classRCZip_1_1RCWzAESKeyInfo.html" title="{RCZip::RCWzAESKeyInfo\n|+ m_keySizeMode\l+ m_salt\l+ m_pwdVerifComputed\l+ m_password\l|+ RCWzAESKeyInfo()\l+ ~RCWzAESKeyInfo()\l+ Init()\l+ GetKeySize()\l+ GetSaltSize()\l}" alt="" coords="27,569,211,749"/><area shape="rect" id="node10" href="../../d2/db9/classRCZip_1_1ICompressFilter.html" title="{RCZip::ICompressFilter\n||+ Init()\l+ Filter()\l# ~ICompressFilter()\l}" alt="" coords="648,605,821,712"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="596,302,743,423"/><area shape="rect" id="node14" href="../../da/d3b/classRCZip_1_1ICryptoSetPassword.html" title="{RCZip::ICryptoSetPassword\n||+ CryptoSetPassword()\l# ~ICryptoSetPassword()\l}" alt="" coords="424,613,624,705"/><area shape="rect" id="node20" href="../../d3/db6/classRCZip_1_1RCBuffer.html" title="{RCZip::RCBuffer\&lt; byte_t \&gt;\n|# m_capacity\l# m_data\l# m_dataLen\l|+ RCBuffer()\l+ RCBuffer()\l+ RCBuffer()\l+ ~RCBuffer()\l+ operator=()\l+ GetCapacity()\l+ SetCapacity()\l+ Free()\l+ data()\l+ data()\l+ SetDataLength()\l+ GetDataLength()\l+ operator[]()\l}" alt="" coords="5,221,205,504"/><area shape="rect" id="node22" href="../../d9/dd3/classRCZip_1_1RCSha1Hmac.html" title="{RCZip::RCSha1Hmac\n|&#45; m_sha\l&#45; m_sha2\l|+ RCSha1Hmac()\l+ ~RCSha1Hmac()\l+ SetKey()\l+ Update()\l+ Final()\l}" alt="" coords="771,827,931,978"/><area shape="rect" id="node24" href="../../da/dff/classRCZip_1_1RCSha1Context.html" title="{RCZip::RCSha1Context\n||+ RCSha1Context()\l+ ~RCSha1Context()\l+ Update()\l+ Update()\l+ Final()\l}" alt="" coords="845,591,1019,727"/><area shape="rect" id="node26" href="../../d1/d74/classRCZip_1_1RCSha1ContextBase2.html" title="{RCZip::RCSha1ContextBase2\n|# m_count2\l# m_buffer\l|+ RCSha1ContextBase2()\l+ ~RCSha1ContextBase2()\l+ Init()\l# UpdateBlock()\l}" alt="" coords="825,295,1039,431"/><area shape="rect" id="node28" href="../../da/d6c/classRCZip_1_1RCSha1ContextBase.html" title="{RCZip::RCSha1ContextBase\n|# m_state\l# m_count\l|+ RCSha1ContextBase()\l+ ~RCSha1ContextBase()\l+ Init()\l+ GetBlockDigest()\l+ PrepareBlock()\l# UpdateBlock()\l}" alt="" coords="829,5,1035,171"/><area shape="rect" id="node30" href="../../dd/d92/structCAes.html" title="{CAes\n|+ numRounds2\l+ rkey\l|}" alt="" coords="955,857,1080,949"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d6/d37/classRCZip_1_1RCWzAESEncoder-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html#a8deab611d673b90b1cf4e06c63a45a1d">RCWzAESEncoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html#a8c79b963859b8342025d95af68c69d7f">~RCWzAESEncoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html#a9b05629abe2f4bfaeb153f0198fb05ee">WriteHeader</a> (<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html#aaaa6e87e549659bd30a9d1efe81801c6">WriteFooter</a> (<a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html#a4a9dc62ce079abb8cd0a7c20168eb248">SetKeyMode</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd6/classRCZip_1_1RCWzAESEncoder.html#a5327262ab228d8600b8e2b2e60b98bd3">Filter</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>WzAES 编码器 </p>
+
+<p>在文件<a class="el" href="../../dd/d45/RCWzAESEncoder_8h_source.html">RCWzAESEncoder.h</a>第<a class="el" href="../../dd/d45/RCWzAESEncoder_8h_source.html#l00023">23</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a8deab611d673b90b1cf4e06c63a45a1d"></a><!-- doxytag: member="RCZip::RCWzAESEncoder::RCWzAESEncoder" ref="a8deab611d673b90b1cf4e06c63a45a1d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWzAESEncoder::RCWzAESEncoder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c79b963859b8342025d95af68c69d7f"></a><!-- doxytag: member="RCZip::RCWzAESEncoder::~RCWzAESEncoder" ref="a8c79b963859b8342025d95af68c69d7f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWzAESEncoder::~RCWzAESEncoder </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a5327262ab228d8600b8e2b2e60b98bd3"></a><!-- doxytag: member="RCZip::RCWzAESEncoder::Filter" ref="a5327262ab228d8600b8e2b2e60b98bd3" args="(byte_t *data, uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCWzAESEncoder::Filter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>过滤数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>数据缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>实际处理数据的长度 </dd></dl>
+
+<p>实现了<a class="el" href="../../dc/d13/classRCZip_1_1RCWzAESBaseCoder.html#a494091f07cea526c4d4880d835af5d7c">RCZip::RCWzAESBaseCoder</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a9dc62ce079abb8cd0a7c20168eb248"></a><!-- doxytag: member="RCZip::RCWzAESEncoder::SetKeyMode" ref="a4a9dc62ce079abb8cd0a7c20168eb248" args="(byte_t mode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCWzAESEncoder::SetKeyMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td>
+          <td class="paramname"> <em>mode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置key模式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>mode</em>&nbsp;</td><td>模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaaa6e87e549659bd30a9d1efe81801c6"></a><!-- doxytag: member="RCZip::RCWzAESEncoder::WriteFooter" ref="aaaa6e87e549659bd30a9d1efe81801c6" args="(ISequentialOutStream *outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWzAESEncoder::WriteFooter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写尾标记 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b05629abe2f4bfaeb153f0198fb05ee"></a><!-- doxytag: member="RCZip::RCWzAESEncoder::WriteHeader" ref="a9b05629abe2f4bfaeb153f0198fb05ee" args="(ISequentialOutStream *outStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWzAESEncoder::WriteHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写头标记 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dd/d45/RCWzAESEncoder_8h_source.html">RCWzAESEncoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCFileTime类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html">RCFileTime</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCFileTime类参考</h1><!-- doxytag: class="RCZip::RCFileTime" -->
+<p><code>#include &lt;<a class="el" href="../../d7/d62/RCFileTime_8h_source.html">RCFileTime.h</a>&gt;</code></p>
+
+<p><a href="../../d0/de6/classRCZip_1_1RCFileTime-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#a6a199fef3e89436b50d3639e6864104b">DosTimeToFileTime</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> dosTime, <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#ab0e8f55104700bec396ad4539704e399">FileTimeToDosTime</a> (const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;dosTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#a29c653b97dc9ce203c572f8723bf2b0f">UnixTimeToFileTime</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> unixTime, <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#aea3613e0880e131c50b29299c3a153e2">FileTimeToUnixTime</a> (const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;unixTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#afa955eadd16bce583d31672789764c40">GetSecondsSince1601</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> year, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> month, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> day, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> hour, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> min, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> sec, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;resSeconds)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#a5ee12f42ebd0ed45f65d44fa20ab5c3b">GetCurUtcFileTime</a> (<a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#ae2942794c428faccb1bb6357d24c6168">ConvertFromFileTime</a> (const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#a2eea17b6f876c015586d6d8949dee83e">ConvertToFileTime</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> time, <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#acd0887c7271123d21bd37d6160eeb945">LocalFileTimeToFileTime</a> (const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime, <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;utcFileTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#aa46ec60d59b9667136a6f1277d09d6f6">FileTimeToLocalFileTime</a> (const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;utcFileTime, <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;fileTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd6/classRCZip_1_1RCFileTime.html#a42c41fe616a8960ec6a6462d5c6b1d4a">CompareFileTime</a> (const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> *time1, const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> *time2)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../d7/d62/RCFileTime_8h_source.html">RCFileTime.h</a>第<a class="el" href="../../d7/d62/RCFileTime_8h_source.html#l00018">18</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a42c41fe616a8960ec6a6462d5c6b1d4a"></a><!-- doxytag: member="RCZip::RCFileTime::CompareFileTime" ref="a42c41fe616a8960ec6a6462d5c6b1d4a" args="(const RC_FILE_TIME *time1, const RC_FILE_TIME *time2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> RCZip::RCFileTime::CompareFileTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> *&nbsp;</td>
+          <td class="paramname"> <em>time1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> *&nbsp;</td>
+          <td class="paramname"> <em>time2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>比较文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>time1</em>&nbsp;</td><td>第一个文件时间 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>time2</em>&nbsp;</td><td>第二个文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果相等返回0, 如果 time1 &gt; time2 返回1，如果time1 &lt; time2 返回 -1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae2942794c428faccb1bb6357d24c6168"></a><!-- doxytag: member="RCZip::RCFileTime::ConvertFromFileTime" ref="ae2942794c428faccb1bb6357d24c6168" args="(const RC_FILE_TIME &amp;fileTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCFileTime::ConvertFromFileTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>将RC_FILE_TIME转换成64位无符号整型表示 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回转换结果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2eea17b6f876c015586d6d8949dee83e"></a><!-- doxytag: member="RCZip::RCFileTime::ConvertToFileTime" ref="a2eea17b6f876c015586d6d8949dee83e" args="(uint64_t time, RC_FILE_TIME &amp;fileTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCFileTime::ConvertToFileTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>将64位无符号整型表示转换成RC_FILE_TIME </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>time</em>&nbsp;</td><td>64位无符号整型表示的文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>返回文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6a199fef3e89436b50d3639e6864104b"></a><!-- doxytag: member="RCZip::RCFileTime::DosTimeToFileTime" ref="a6a199fef3e89436b50d3639e6864104b" args="(uint32_t dosTime, RC_FILE_TIME &amp;fileTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFileTime::DosTimeToFileTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>dosTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>将Dos文件时间转换为本地文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dosTime</em>&nbsp;</td><td>Unix文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>返回本地文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab0e8f55104700bec396ad4539704e399"></a><!-- doxytag: member="RCZip::RCFileTime::FileTimeToDosTime" ref="ab0e8f55104700bec396ad4539704e399" args="(const RC_FILE_TIME &amp;fileTime, uint32_t &amp;dosTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFileTime::FileTimeToDosTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>dosTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>将本地文件时间转换为Dos文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>本地文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>dosTime</em>&nbsp;</td><td>Dos文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa46ec60d59b9667136a6f1277d09d6f6"></a><!-- doxytag: member="RCZip::RCFileTime::FileTimeToLocalFileTime" ref="aa46ec60d59b9667136a6f1277d09d6f6" args="(const RC_FILE_TIME &amp;utcFileTime, RC_FILE_TIME &amp;fileTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFileTime::FileTimeToLocalFileTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>utcFileTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>UTC时间转换成本地时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>utcFileTime</em>&nbsp;</td><td>UTC 文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>返回本地文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aea3613e0880e131c50b29299c3a153e2"></a><!-- doxytag: member="RCZip::RCFileTime::FileTimeToUnixTime" ref="aea3613e0880e131c50b29299c3a153e2" args="(const RC_FILE_TIME &amp;fileTime, uint32_t &amp;unixTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFileTime::FileTimeToUnixTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>unixTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>将本地文件时间转换为Unix文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>本地文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>unixTime</em>&nbsp;</td><td>Unix文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ee12f42ebd0ed45f65d44fa20ab5c3b"></a><!-- doxytag: member="RCZip::RCFileTime::GetCurUtcFileTime" ref="a5ee12f42ebd0ed45f65d44fa20ab5c3b" args="(RC_FILE_TIME &amp;fileTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCFileTime::GetCurUtcFileTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取本地UTC文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>返回UTC文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afa955eadd16bce583d31672789764c40"></a><!-- doxytag: member="RCZip::RCFileTime::GetSecondsSince1601" ref="afa955eadd16bce583d31672789764c40" args="(uint32_t year, uint32_t month, uint32_t day, uint32_t hour, uint32_t min, uint32_t sec, uint64_t &amp;resSeconds)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFileTime::GetSecondsSince1601 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>sec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>resSeconds</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取从1601年起的秒数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>year</em>&nbsp;</td><td>年 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>month</em>&nbsp;</td><td>月 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>day</em>&nbsp;</td><td>日 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hour</em>&nbsp;</td><td>时 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>min</em>&nbsp;</td><td>分 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sec</em>&nbsp;</td><td>秒 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>resSeconds</em>&nbsp;</td><td>返回UTC文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd0887c7271123d21bd37d6160eeb945"></a><!-- doxytag: member="RCZip::RCFileTime::LocalFileTimeToFileTime" ref="acd0887c7271123d21bd37d6160eeb945" args="(const RC_FILE_TIME &amp;fileTime, RC_FILE_TIME &amp;utcFileTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCFileTime::LocalFileTimeToFileTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>utcFileTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>本地时间转换成UTC时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>本地文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>utcFileTime</em>&nbsp;</td><td>返回UTC 文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a29c653b97dc9ce203c572f8723bf2b0f"></a><!-- doxytag: member="RCZip::RCFileTime::UnixTimeToFileTime" ref="a29c653b97dc9ce203c572f8723bf2b0f" args="(uint32_t unixTime, RC_FILE_TIME &amp;fileTime)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCFileTime::UnixTimeToFileTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>unixTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d19/classRCZip_1_1RC__FILE__TIME.html">RC_FILE_TIME</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fileTime</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>将Unix文件时间转换为本地文件时间 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>unixTime</em>&nbsp;</td><td>Unix文件时间 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>fileTime</em>&nbsp;</td><td>返回本地文件时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d7/d62/RCFileTime_8h_source.html">RCFileTime.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCDeltaDecoder类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d2/d58/classRCZip_1_1RCDeltaDecoder.html">RCDeltaDecoder</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCDeltaDecoder类参考</h1><!-- doxytag: class="RCZip::RCDeltaDecoder" --><!-- doxytag: inherits="RCZip::RCDelta,IUnknownImpl2&lt; ICompressFilter, ICompressSetDecoderProperties2 &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../d5/d59/RCDeltaDecoder_8h_source.html">RCDeltaDecoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCDeltaDecoder</div>
+<div class="dynsection">
+<div class="center"><img src="../../d0/de9/classRCZip_1_1RCDeltaDecoder__inherit__graph.png" border="0" usemap="#RCZip_1_1RCDeltaDecoder_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCDeltaDecoder_inherit__map" id="RCZip_1_1RCDeltaDecoder_inherit__map">
+<area shape="rect" id="node2" href="../../d7/db5/classRCZip_1_1RCDelta.html" title="{RCZip::RCDelta\n|# m_delta\l# m_state\l|+ RCDelta()\l+ DeltaInit()\l}" alt="" coords="5,368,128,475"/><area shape="rect" id="node4" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ICompressFilter, ICompressSetDecoderProperties2 \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="152,361,688,482"/><area shape="rect" id="node6" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="144,176,309,312"/><area shape="rect" id="node8" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="139,28,315,105"/><area shape="rect" id="node10" href="../../d2/db9/classRCZip_1_1ICompressFilter.html" title="{RCZip::ICompressFilter\n||+ Init()\l+ Filter()\l# ~ICompressFilter()\l}" alt="" coords="333,191,507,297"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="475,6,621,127"/><area shape="rect" id="node14" href="../../de/de2/classRCZip_1_1ICompressSetDecoderProperties2.html" title="{RCZip::ICompressSetDecoderProperties2\n||+ SetDecoderProperties2()\l# ~ICompressSetDecoderProperties2()\l}" alt="" coords="531,198,821,290"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCDeltaDecoder合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/dcf/classRCZip_1_1RCDeltaDecoder__coll__graph.png" border="0" usemap="#RCZip_1_1RCDeltaDecoder_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCDeltaDecoder_coll__map" id="RCZip_1_1RCDeltaDecoder_coll__map">
+<area shape="rect" id="node2" href="../../d7/db5/classRCZip_1_1RCDelta.html" title="{RCZip::RCDelta\n|# m_delta\l# m_state\l|+ RCDelta()\l+ DeltaInit()\l}" alt="" coords="5,368,128,475"/><area shape="rect" id="node4" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ICompressFilter, ICompressSetDecoderProperties2 \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="152,361,688,482"/><area shape="rect" id="node6" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="144,176,309,312"/><area shape="rect" id="node8" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="139,28,315,105"/><area shape="rect" id="node10" href="../../d2/db9/classRCZip_1_1ICompressFilter.html" title="{RCZip::ICompressFilter\n||+ Init()\l+ Filter()\l# ~ICompressFilter()\l}" alt="" coords="333,191,507,297"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="475,6,621,127"/><area shape="rect" id="node14" href="../../de/de2/classRCZip_1_1ICompressSetDecoderProperties2.html" title="{RCZip::ICompressSetDecoderProperties2\n||+ SetDecoderProperties2()\l# ~ICompressSetDecoderProperties2()\l}" alt="" coords="531,198,821,290"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../df/d12/classRCZip_1_1RCDeltaDecoder-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d58/classRCZip_1_1RCDeltaDecoder.html#af001a487573b859cedb0d88651f6fef8">Init</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d58/classRCZip_1_1RCDeltaDecoder.html#a45eb23427223c9abf53bc7efdfd9437c">Filter</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d58/classRCZip_1_1RCDeltaDecoder.html#aa4a06a64be82e616df08f4eca6e5bb53">SetDecoderProperties2</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Delta 解码器 </p>
+
+<p>在文件<a class="el" href="../../d5/d59/RCDeltaDecoder_8h_source.html">RCDeltaDecoder.h</a>第<a class="el" href="../../d5/d59/RCDeltaDecoder_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a45eb23427223c9abf53bc7efdfd9437c"></a><!-- doxytag: member="RCZip::RCDeltaDecoder::Filter" ref="a45eb23427223c9abf53bc7efdfd9437c" args="(byte_t *data, uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCDeltaDecoder::Filter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>过滤数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>数据缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>实际处理数据的长度 </dd></dl>
+
+<p>实现了<a class="el" href="../../d2/db9/classRCZip_1_1ICompressFilter.html#a9ed49550281a2d2bf5bb970dfc03ae33">RCZip::ICompressFilter</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="af001a487573b859cedb0d88651f6fef8"></a><!-- doxytag: member="RCZip::RCDeltaDecoder::Init" ref="af001a487573b859cedb0d88651f6fef8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCDeltaDecoder::Init </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+
+<p>实现了<a class="el" href="../../d2/db9/classRCZip_1_1ICompressFilter.html#a1969ff5e291c713bc242af13bebf9b22">RCZip::ICompressFilter</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4a06a64be82e616df08f4eca6e5bb53"></a><!-- doxytag: member="RCZip::RCDeltaDecoder::SetDecoderProperties2" ref="aa4a06a64be82e616df08f4eca6e5bb53" args="(const byte_t *data, uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCDeltaDecoder::SetDecoderProperties2 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置解压属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>属性数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../de/de2/classRCZip_1_1ICompressSetDecoderProperties2.html#a080affa51d18ec3492a2af5bbf5c189c">RCZip::ICompressSetDecoderProperties2</a>。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d5/d59/RCDeltaDecoder_8h_source.html">RCDeltaDecoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RC7zSpecStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html">RC7zSpecStream</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RC7zSpecStream类参考</h1><!-- doxytag: class="RCZip::RC7zSpecStream" --><!-- doxytag: inherits="IUnknownImpl2&lt; ISequentialInStream, ICompressGetSubStreamSize &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html">RC7zSpecStream.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RC7zSpecStream</div>
+<div class="dynsection">
+<div class="center"><img src="../../d4/dbc/classRCZip_1_1RC7zSpecStream__inherit__graph.png" border="0" usemap="#RCZip_1_1RC7zSpecStream_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RC7zSpecStream_inherit__map" id="RCZip_1_1RC7zSpecStream_inherit__map">
+<area shape="rect" id="node2" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ISequentialInStream, ICompressGetSubStreamSize \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="32,361,573,482"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node8" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="200,198,405,290"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="359,6,505,127"/><area shape="rect" id="node12" href="../../d1/d7d/classRCZip_1_1ICompressGetSubStreamSize.html" title="{RCZip::ICompressGetSubStreamSize\n||+ GetSubStreamSize()\l# ~ICompressGetSubStreamSize()\l}" alt="" coords="429,198,693,290"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RC7zSpecStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/d38/classRCZip_1_1RC7zSpecStream__coll__graph.png" border="0" usemap="#RCZip_1_1RC7zSpecStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RC7zSpecStream_coll__map" id="RCZip_1_1RC7zSpecStream_coll__map">
+<area shape="rect" id="node2" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ISequentialInStream, ICompressGetSubStreamSize \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="283,467,824,589"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="261,179,427,315"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="256,28,432,105"/><area shape="rect" id="node8" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="451,201,656,293"/><area shape="rect" id="node18" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="5,379,259,677"/><area shape="rect" id="node10" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="608,6,755,127"/><area shape="rect" id="node12" href="../../d1/d7d/classRCZip_1_1ICompressGetSubStreamSize.html" title="{RCZip::ICompressGetSubStreamSize\n||+ GetSubStreamSize()\l# ~ICompressGetSubStreamSize()\l}" alt="" coords="680,201,944,293"/><area shape="rect" id="node15" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ICompressGetSubStreamSize \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="848,379,1160,677"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d4/d3f/classRCZip_1_1RC7zSpecStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a00422bacfd495f94501776abbfa96582">RC7zSpecStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a9dfdc38317a560081fe47fd82074bac0">~RC7zSpecStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a1aa7eb2f8222f304fef6f3a2d4accc32">Init</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *stream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a6e10046d40782bf657cc37ec8bfa19a4">GetSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a35684dce0b7d9a2a9886b4297e6c7918">Read</a> (void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#ac6fb2148ae6e9db541d1a6f2036fe600">GetSubStreamSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> subStream, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;size)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialInStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a8c5115e5b45595c023d080e76a09f9af">m_stream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressGetSubStreamSizePtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a9f4a1cbde47dbac84f81d052183e8b8a">m_spGetSubStreamSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a76b0a89b833bf79a0784f4bffe38c259">m_size</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html">RC7zSpecStream.h</a>第<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a00422bacfd495f94501776abbfa96582"></a><!-- doxytag: member="RCZip::RC7zSpecStream::RC7zSpecStream" ref="a00422bacfd495f94501776abbfa96582" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RC7zSpecStream::RC7zSpecStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9dfdc38317a560081fe47fd82074bac0"></a><!-- doxytag: member="RCZip::RC7zSpecStream::~RC7zSpecStream" ref="a9dfdc38317a560081fe47fd82074bac0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RC7zSpecStream::~RC7zSpecStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a6e10046d40782bf657cc37ec8bfa19a4"></a><!-- doxytag: member="RCZip::RC7zSpecStream::GetSize" ref="a6e10046d40782bf657cc37ec8bfa19a4" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RC7zSpecStream::GetSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac6fb2148ae6e9db541d1a6f2036fe600"></a><!-- doxytag: member="RCZip::RC7zSpecStream::GetSubStreamSize" ref="ac6fb2148ae6e9db541d1a6f2036fe600" args="(uint64_t subStream, uint64_t &amp;size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zSpecStream::GetSubStreamSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>subStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取流大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>subStream</em>&nbsp;</td><td>流的下标 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>流的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d1/d7d/classRCZip_1_1ICompressGetSubStreamSize.html#aa37b300052c85d1d66e410bf5d2538b8">RCZip::ICompressGetSubStreamSize</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1aa7eb2f8222f304fef6f3a2d4accc32"></a><!-- doxytag: member="RCZip::RC7zSpecStream::Init" ref="a1aa7eb2f8222f304fef6f3a2d4accc32" args="(ISequentialInStream *stream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RC7zSpecStream::Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>stream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stream</em>&nbsp;</td><td>输入流 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a35684dce0b7d9a2a9886b4297e6c7918"></a><!-- doxytag: member="RCZip::RC7zSpecStream::Read" ref="a35684dce0b7d9a2a9886b4297e6c7918" args="(void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RC7zSpecStream::Read </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>存放数据的缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际读取的大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html#a5ed6bed760370b86241c3b5987ea8281">RCZip::ISequentialInStream</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a76b0a89b833bf79a0784f4bffe38c259"></a><!-- doxytag: member="RCZip::RC7zSpecStream::m_size" ref="a76b0a89b833bf79a0784f4bffe38c259" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a76b0a89b833bf79a0784f4bffe38c259">RCZip::RC7zSpecStream::m_size</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>大小 </p>
+
+<p>在文件<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html">RC7zSpecStream.h</a>第<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html#l00073">73</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f4a1cbde47dbac84f81d052183e8b8a"></a><!-- doxytag: member="RCZip::RC7zSpecStream::m_spGetSubStreamSize" ref="a9f4a1cbde47dbac84f81d052183e8b8a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressGetSubStreamSizePtr</a> <a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a9f4a1cbde47dbac84f81d052183e8b8a">RCZip::RC7zSpecStream::m_spGetSubStreamSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取流大小的接口 </p>
+
+<p>在文件<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html">RC7zSpecStream.h</a>第<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html#l00069">69</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c5115e5b45595c023d080e76a09f9af"></a><!-- doxytag: member="RCZip::RC7zSpecStream::m_stream" ref="a8c5115e5b45595c023d080e76a09f9af" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialInStreamPtr</a> <a class="el" href="../../d7/d34/classRCZip_1_1RC7zSpecStream.html#a8c5115e5b45595c023d080e76a09f9af">RCZip::RC7zSpecStream::m_stream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入流 </p>
+
+<p>在文件<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html">RC7zSpecStream.h</a>第<a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html#l00065">65</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dc/d3f/RC7zSpecStream_8h_source.html">RC7zSpecStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

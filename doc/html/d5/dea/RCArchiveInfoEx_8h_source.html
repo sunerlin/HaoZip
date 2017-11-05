@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCArchiveInfoEx.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_afcd99ce1b4294f65dd4628074146ecb.html">manager</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCArchiveInfoEx.h</h1><a href="../../d5/dea/RCArchiveInfoEx_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCArchiveInfoEx_h_</span>
+<a name="l00011"></a><a class="code" href="../../d5/dea/RCArchiveInfoEx_8h.html#ad4519427f7551a91746aed13e14eb161">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCArchiveInfoEx_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d9/d9e/RCArchiveExtInfo_8h.html">archive/manager/RCArchiveExtInfo.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../db/df8/IArchiveInfo_8h.html">interface/IArchiveInfo.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/d53/RCVector_8h.html">common/RCVector.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/dba/RCString_8h.html">base/RCString.h</a>&quot;</span>
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00019"></a>00019 <span class="comment"></span>
+<a name="l00020"></a>00020 <span class="comment">/** 文档管信息数据</span>
+<a name="l00021"></a>00021 <span class="comment">*/</span>
+<a name="l00022"></a><a class="code" href="../../df/dca/classRCArchiveInfoEx.html">00022</a> <span class="keyword">class </span><a class="code" href="../../df/dca/classRCArchiveInfoEx.html">RCArchiveInfoEx</a>
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024 <span class="keyword">public</span>:
+<a name="l00025"></a>00025 <span class="comment"></span>
+<a name="l00026"></a>00026 <span class="comment">    /** 默认构造函数</span>
+<a name="l00027"></a>00027 <span class="comment">    */</span>
+<a name="l00028"></a>00028     <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a41f0481b00d85e19e72d927074a68f76">RCArchiveInfoEx</a>() ;
+<a name="l00029"></a>00029     <span class="comment"></span>
+<a name="l00030"></a>00030 <span class="comment">    /** 默认析构函数</span>
+<a name="l00031"></a>00031 <span class="comment">    */</span>
+<a name="l00032"></a>00032     <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a8e65d50cc6fa2d53b0b78f55f6b47172">~RCArchiveInfoEx</a>() ;
+<a name="l00033"></a>00033     <span class="comment"></span>
+<a name="l00034"></a>00034 <span class="comment">    /** 拷贝构造函数</span>
+<a name="l00035"></a>00035 <span class="comment">    */</span>
+<a name="l00036"></a>00036     <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a41f0481b00d85e19e72d927074a68f76">RCArchiveInfoEx</a>(<span class="keyword">const</span> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html">RCArchiveInfoEx</a>&amp; rhs) ;
+<a name="l00037"></a>00037     <span class="comment"></span>
+<a name="l00038"></a>00038 <span class="comment">    /** 赋值操作符</span>
+<a name="l00039"></a>00039 <span class="comment">    */</span>
+<a name="l00040"></a>00040     <a class="code" href="../../df/dca/classRCArchiveInfoEx.html">RCArchiveInfoEx</a>&amp; <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#aaf11fee8551a7c3aaeab277d3af46478">operator= </a>(<span class="keyword">const</span> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html">RCArchiveInfoEx</a>&amp; rhs) ;
+<a name="l00041"></a>00041     
+<a name="l00042"></a>00042 <span class="keyword">public</span>:
+<a name="l00043"></a>00043     <span class="comment"></span>
+<a name="l00044"></a>00044 <span class="comment">    /** 初始化</span>
+<a name="l00045"></a>00045 <span class="comment">    @param [in] spArcInfo 文档格式信息</span>
+<a name="l00046"></a>00046 <span class="comment">    */</span>
+<a name="l00047"></a>00047     <span class="keywordtype">void</span> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a76988f3dbca6793b5ee09b4dfb135a80">initialize</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a026acde777483416ee5d906fa324184b">IArchiveInfoPtr</a>&amp; spArcInfo) ;
+<a name="l00048"></a>00048     <span class="comment"></span>
+<a name="l00049"></a>00049 <span class="comment">    /** 文档类型唯一ID</span>
+<a name="l00050"></a>00050 <span class="comment">    @return 文档ID</span>
+<a name="l00051"></a>00051 <span class="comment">    */</span>
+<a name="l00052"></a>00052     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a6d7155d8406e293df197089a12eb8f03">RCArchiveID</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a4d8ec271f34cb9e587ce870f44184bc2">GetArchiveID</a>() <span class="keyword">const</span> ;
+<a name="l00053"></a>00053 <span class="comment"></span>
+<a name="l00054"></a>00054 <span class="comment">    /** 获取文档名称</span>
+<a name="l00055"></a>00055 <span class="comment">    @return 文档名称</span>
+<a name="l00056"></a>00056 <span class="comment">    */</span>
+<a name="l00057"></a>00057     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#ab08eaec35aabfa1377d990fb2136898b">GetName</a>() <span class="keyword">const</span> ;
+<a name="l00058"></a>00058     <span class="comment"></span>
+<a name="l00059"></a>00059 <span class="comment">    /** 获取文档签名</span>
+<a name="l00060"></a>00060 <span class="comment">    @param [out] signature 返回文件签名</span>
+<a name="l00061"></a>00061 <span class="comment">    */</span>
+<a name="l00062"></a>00062     <span class="keywordtype">void</span> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#acee20ec657a243e6d94c730723980e78">GetSignature</a>(std::vector&lt;byte_t&gt;&amp; signature) <span class="keyword">const</span> ;
+<a name="l00063"></a>00063         <span class="comment"></span>
+<a name="l00064"></a>00064 <span class="comment">    /** 获取KeepName属性</span>
+<a name="l00065"></a>00065 <span class="comment">    @return 如果KeepName则返回true，否则返回false</span>
+<a name="l00066"></a>00066 <span class="comment">    */</span>
+<a name="l00067"></a>00067     <span class="keywordtype">bool</span> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#af7eaebdb2087a956b198c90212a565a6">IsKeepName</a>() <span class="keyword">const</span> ;
+<a name="l00068"></a>00068     <span class="comment"></span>
+<a name="l00069"></a>00069 <span class="comment">    /** 是否允许更新文档</span>
+<a name="l00070"></a>00070 <span class="comment">    @return 可以更新返回true,否则返回false</span>
+<a name="l00071"></a>00071 <span class="comment">    */</span>
+<a name="l00072"></a>00072     <span class="keywordtype">bool</span> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a7d828fdfc91752f7b5792199d0bb005c">IsEnableUpdate</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00073"></a>00073     <span class="comment"></span>
+<a name="l00074"></a>00074 <span class="comment">    /** 获取主扩展名</span>
+<a name="l00075"></a>00075 <span class="comment">    @return 返回格式扩展名</span>
+<a name="l00076"></a>00076 <span class="comment">    */</span>
+<a name="l00077"></a>00077     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a0f3359de5dabaa103997c716afee65bf">GetMainExt</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00078"></a>00078     <span class="comment"></span>
+<a name="l00079"></a>00079 <span class="comment">    /** 查找扩展名</span>
+<a name="l00080"></a>00080 <span class="comment">    @param [in] ext 扩展名</span>
+<a name="l00081"></a>00081 <span class="comment">    @return 如果匹配到扩展名，返回值 &gt;=0 ，如果没有匹配，则返回-1</span>
+<a name="l00082"></a>00082 <span class="comment">    */</span>
+<a name="l00083"></a>00083     <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a28013116942f5a5dceda2317df28731c">FindExtension</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; ext) <span class="keyword">const</span> ;
+<a name="l00084"></a>00084     <span class="comment"></span>
+<a name="l00085"></a>00085 <span class="comment">    /** 获取所有扩展名，以空格作为分隔符</span>
+<a name="l00086"></a>00086 <span class="comment">    @return 返回所有扩展名</span>
+<a name="l00087"></a>00087 <span class="comment">    */</span>
+<a name="l00088"></a>00088     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a8dfc4be23733f272d1bb10b8b69d689e">GetAllExtensions</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00089"></a>00089     <span class="comment"></span>
+<a name="l00090"></a>00090 <span class="comment">    /** 获取扩展名总数</span>
+<a name="l00091"></a>00091 <span class="comment">    @return 返回扩展名总数</span>
+<a name="l00092"></a>00092 <span class="comment">    */</span>
+<a name="l00093"></a>00093     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a6eff58f046883ff85812c7c52214ed4b">GetExtCount</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00094"></a>00094     <span class="comment"></span>
+<a name="l00095"></a>00095 <span class="comment">    /** 获取指定扩展名</span>
+<a name="l00096"></a>00096 <span class="comment">    @param [in] index 扩展名对应的下标值</span>
+<a name="l00097"></a>00097 <span class="comment">    @return 返回扩展名，如果下标不存在，则返回空</span>
+<a name="l00098"></a>00098 <span class="comment">    */</span>
+<a name="l00099"></a>00099     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a5ed80c06f32d6322e85afab51bd5973f">GetExt</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index) <span class="keyword">const</span> ; 
+<a name="l00100"></a>00100     <span class="comment"></span>
+<a name="l00101"></a>00101 <span class="comment">    /** 获取指定附加扩展名</span>
+<a name="l00102"></a>00102 <span class="comment">    @param [in] index 扩展名对应的下标值</span>
+<a name="l00103"></a>00103 <span class="comment">    @return 返回扩展名，如果下标不存在，则返回空</span>
+<a name="l00104"></a>00104 <span class="comment">    */</span>
+<a name="l00105"></a>00105     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#ac8469c7b9d55b92339d1bd7eef8810b2">GetAddExt</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index) <span class="keyword">const</span> ; 
+<a name="l00106"></a>00106     <span class="comment"></span>
+<a name="l00107"></a>00107 <span class="comment">    /** 获取IArchiveInfo接口</span>
+<a name="l00108"></a>00108 <span class="comment">    @return 返回文档信息接口指针</span>
+<a name="l00109"></a>00109 <span class="comment">    */</span>
+<a name="l00110"></a>00110     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a026acde777483416ee5d906fa324184b">IArchiveInfoPtr</a>&amp; <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#aa54e84bb8ab49706bcf76d979323614e">GetArchiveInfo</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00111"></a>00111     
+<a name="l00112"></a>00112 <span class="keyword">private</span>:
+<a name="l00113"></a>00113     <span class="comment"></span>
+<a name="l00114"></a>00114 <span class="comment">    /** 解析扩展名为数组</span>
+<a name="l00115"></a>00115 <span class="comment">    @param [in] src 扩展名</span>
+<a name="l00116"></a>00116 <span class="comment">    @param [out] dest 解析后数组</span>
+<a name="l00117"></a>00117 <span class="comment">    */</span>
+<a name="l00118"></a>00118     <span class="keywordtype">void</span> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#aee5b1054b75d0fdc0600fd39420e5517">SplitExt</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; src, RCVector&lt;RCString&gt;&amp; dest) ;
+<a name="l00119"></a>00119     
+<a name="l00120"></a>00120 <span class="keyword">private</span>:
+<a name="l00121"></a>00121     <span class="comment"></span>
+<a name="l00122"></a>00122 <span class="comment">    /** 文档格式信息</span>
+<a name="l00123"></a>00123 <span class="comment">    */</span>
+<a name="l00124"></a><a class="code" href="../../df/dca/classRCArchiveInfoEx.html#aaa31c3633ae7bc43bf09949c74787623">00124</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a026acde777483416ee5d906fa324184b">IArchiveInfoPtr</a> <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#aaa31c3633ae7bc43bf09949c74787623">m_spArcInfo</a> ;
+<a name="l00125"></a>00125     <span class="comment"></span>
+<a name="l00126"></a>00126 <span class="comment">    /** 扩展名容器</span>
+<a name="l00127"></a>00127 <span class="comment">    */</span>
+<a name="l00128"></a><a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a2a2dc470efdc4e317d37769a37209cd5">00128</a>     RCVector&lt;RCArchiveExtInfo&gt; <a class="code" href="../../df/dca/classRCArchiveInfoEx.html#a2a2dc470efdc4e317d37769a37209cd5">m_arcExts</a> ;
+<a name="l00129"></a>00129 };
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 <span class="preprocessor">#endif //__RCArchiveInfoEx_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

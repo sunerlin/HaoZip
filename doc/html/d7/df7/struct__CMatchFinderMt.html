@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: _CMatchFinderMt结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>_CMatchFinderMt结构参考</h1><!-- doxytag: class="_CMatchFinderMt" -->
+<p><code>#include &lt;<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>&gt;</code></p>
+<div class="dynheader">
+_CMatchFinderMt合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d3/d62/struct__CMatchFinderMt__coll__graph.png" border="0" usemap="#__CMatchFinderMt_coll__map" alt="Collaboration graph"/></div>
+<map name="__CMatchFinderMt_coll__map" id="__CMatchFinderMt_coll__map">
+<area shape="rect" id="node2" href="../../da/dd6/struct__CMtSync.html" title="{_CMtSync\n|+ wasCreated\l+ needStart\l+ exit\l+ stopWriting\l+ thread\l+ canStart\l+ wasStarted\l+ wasStopped\l+ freeSemaphore\l+ filledSemaphore\l+ csWasInitialized\l+ csWasEntered\l+ cs\l+ numProcessedBlocks\l|}" alt="" coords="5,257,181,525"/><area shape="rect" id="node4" href="../../d1/d08/struct__CMatchFinder.html" title="{_CMatchFinder\n|+ buffer\l+ pos\l+ posLimit\l+ streamPos\l+ lenLimit\l+ cyclicBufferPos\l+ cyclicBufferSize\l+ matchMaxLen\l+ hash\l+ son\l+ hashMask\l+ cutValue\l+ bufferBase\l+ stream\l+ streamEndWasReached\l+ blockSize\l+ keepSizeBefore\l+ keepSizeAfter\l+ numHashBytes\l+ directInput\l+ directInputRem\l+ btMode\l+ bigHash\l+ historySize\l+ fixedHashSize\l+ hashSizeSum\l+ numSons\l+ result\l+ crc\l|}" alt="" coords="205,147,397,635"/><area shape="rect" id="node6" href="../../d4/dfe/structISeqInStream.html" title="{ISeqInStream\n|+ Read\l|}" alt="" coords="245,5,357,83"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../da/dd1/struct__CMatchFinderMt-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a2967b26b137ecfbd60e6e94b1ac46971">pointerToCurPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a94ebb967e679c35d29944e947469d7b7">btBuf</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a3e43b2a9d00c3638b7c7385d85a68280">btBufPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aba580dff64bdbe0731c4b491ee7b5a95">btBufPosLimit</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a7f3cc930633def75ea6c2806b717305e">lzPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a1869ba7a448dd51c33c75326b076536d">btNumAvailBytes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a9e8f4a72b4e19579bdad48e644920b72">hash</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a42bbbdc523f896e3ed0f6dbd48944563">fixedHashSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#ab287df6ca89f4e8b04362b0a116c8ce3">historySize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#af33d2608199601150e921dcfdd81a3d9">crc</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db2/LzFindMt_8h.html#aa2f7d8b8e83b75e54284333e2662cb47">Mf_Mix_Matches</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aede626f553532467b8f19e56fed43789">MixMatchesFunc</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/dd6/struct__CMtSync.html">CMtSync</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a01249c11bb8f73379f4c9837bf615429">btSync</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aa2c97dbe8137f43b5f08d3cad3241875">btDummy</a> [128]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#ac9ca3b4cd2677f6fcf799c9f76b7b9fa">hashBuf</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a4542d8b0dbe1cf5bf81a8aa1c75f19d6">hashBufPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a33bfdf53382eb5ca00f5df54c193b6c5">hashBufPosLimit</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#af7786e94dd8fa46d86ca2954a7c5dce8">hashNumAvail</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dd9/LzFind_8h.html#a55efd0bf8cb5a8bb97750b2f2f290332">CLzRef</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a69601d189ad741341770b53d97b67aa0">son</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a1d35293d62f8f05adba381a129c0c36c">matchMaxLen</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aeacf22d2cf4995aec207c73ce0304ee1">numHashBytes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a862ff5bdec95636ab30407ef8e746f56">pos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a8d82f9002420ffee55cfd0ddbe5b5cbb">buffer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#abf0f55e596ab7cd2dfeebd02fa6ecd89">cyclicBufferPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a5d786c39f1cad10455cf565be3fcc2c3">cyclicBufferSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a29b8522227b66b4357b9ddb26df57b56">cutValue</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/dd6/struct__CMtSync.html">CMtSync</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a961338b2cf0e5d0e9988581670deab94">hashSync</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db2/LzFindMt_8h.html#a5893264d0359abcd0ad83c26b62900e1">Mf_GetHeads</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a477ba8252d9acc448bb352c0f816bcc1">GetHeadsFunc</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a5e81db947a173f6a8388d77f2dbb7ae8">MatchFinder</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00048">48</a>行定义。</p>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a94ebb967e679c35d29944e947469d7b7"></a><!-- doxytag: member="_CMatchFinderMt::btBuf" ref="a94ebb967e679c35d29944e947469d7b7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a94ebb967e679c35d29944e947469d7b7">_CMatchFinderMt::btBuf</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00052">52</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e43b2a9d00c3638b7c7385d85a68280"></a><!-- doxytag: member="_CMatchFinderMt::btBufPos" ref="a3e43b2a9d00c3638b7c7385d85a68280" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a3e43b2a9d00c3638b7c7385d85a68280">_CMatchFinderMt::btBufPos</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00053">53</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aba580dff64bdbe0731c4b491ee7b5a95"></a><!-- doxytag: member="_CMatchFinderMt::btBufPosLimit" ref="aba580dff64bdbe0731c4b491ee7b5a95" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aba580dff64bdbe0731c4b491ee7b5a95">_CMatchFinderMt::btBufPosLimit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00054">54</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2c97dbe8137f43b5f08d3cad3241875"></a><!-- doxytag: member="_CMatchFinderMt::btDummy" ref="aa2c97dbe8137f43b5f08d3cad3241875" args="[128]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aa2c97dbe8137f43b5f08d3cad3241875">_CMatchFinderMt::btDummy</a>[128]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00067">67</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1869ba7a448dd51c33c75326b076536d"></a><!-- doxytag: member="_CMatchFinderMt::btNumAvailBytes" ref="a1869ba7a448dd51c33c75326b076536d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a1869ba7a448dd51c33c75326b076536d">_CMatchFinderMt::btNumAvailBytes</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00056">56</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a01249c11bb8f73379f4c9837bf615429"></a><!-- doxytag: member="_CMatchFinderMt::btSync" ref="a01249c11bb8f73379f4c9837bf615429" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/dd6/struct__CMtSync.html">CMtSync</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a01249c11bb8f73379f4c9837bf615429">_CMatchFinderMt::btSync</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00066">66</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d82f9002420ffee55cfd0ddbe5b5cbb"></a><!-- doxytag: member="_CMatchFinderMt::buffer" ref="a8d82f9002420ffee55cfd0ddbe5b5cbb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a8d82f9002420ffee55cfd0ddbe5b5cbb">_CMatchFinderMt::buffer</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af33d2608199601150e921dcfdd81a3d9"></a><!-- doxytag: member="_CMatchFinderMt::crc" ref="af33d2608199601150e921dcfdd81a3d9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#af33d2608199601150e921dcfdd81a3d9">_CMatchFinderMt::crc</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00061">61</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a29b8522227b66b4357b9ddb26df57b56"></a><!-- doxytag: member="_CMatchFinderMt::cutValue" ref="a29b8522227b66b4357b9ddb26df57b56" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a29b8522227b66b4357b9ddb26df57b56">_CMatchFinderMt::cutValue</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00082">82</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abf0f55e596ab7cd2dfeebd02fa6ecd89"></a><!-- doxytag: member="_CMatchFinderMt::cyclicBufferPos" ref="abf0f55e596ab7cd2dfeebd02fa6ecd89" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#abf0f55e596ab7cd2dfeebd02fa6ecd89">_CMatchFinderMt::cyclicBufferPos</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00080">80</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d786c39f1cad10455cf565be3fcc2c3"></a><!-- doxytag: member="_CMatchFinderMt::cyclicBufferSize" ref="a5d786c39f1cad10455cf565be3fcc2c3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a5d786c39f1cad10455cf565be3fcc2c3">_CMatchFinderMt::cyclicBufferSize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00081">81</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a42bbbdc523f896e3ed0f6dbd48944563"></a><!-- doxytag: member="_CMatchFinderMt::fixedHashSize" ref="a42bbbdc523f896e3ed0f6dbd48944563" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a42bbbdc523f896e3ed0f6dbd48944563">_CMatchFinderMt::fixedHashSize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00059">59</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a477ba8252d9acc448bb352c0f816bcc1"></a><!-- doxytag: member="_CMatchFinderMt::GetHeadsFunc" ref="a477ba8252d9acc448bb352c0f816bcc1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/db2/LzFindMt_8h.html#a5893264d0359abcd0ad83c26b62900e1">Mf_GetHeads</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a477ba8252d9acc448bb352c0f816bcc1">_CMatchFinderMt::GetHeadsFunc</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00089">89</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e8f4a72b4e19579bdad48e644920b72"></a><!-- doxytag: member="_CMatchFinderMt::hash" ref="a9e8f4a72b4e19579bdad48e644920b72" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a9e8f4a72b4e19579bdad48e644920b72">_CMatchFinderMt::hash</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00058">58</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9ca3b4cd2677f6fcf799c9f76b7b9fa"></a><!-- doxytag: member="_CMatchFinderMt::hashBuf" ref="ac9ca3b4cd2677f6fcf799c9f76b7b9fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#ac9ca3b4cd2677f6fcf799c9f76b7b9fa">_CMatchFinderMt::hashBuf</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00070">70</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4542d8b0dbe1cf5bf81a8aa1c75f19d6"></a><!-- doxytag: member="_CMatchFinderMt::hashBufPos" ref="a4542d8b0dbe1cf5bf81a8aa1c75f19d6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a4542d8b0dbe1cf5bf81a8aa1c75f19d6">_CMatchFinderMt::hashBufPos</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00071">71</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a33bfdf53382eb5ca00f5df54c193b6c5"></a><!-- doxytag: member="_CMatchFinderMt::hashBufPosLimit" ref="a33bfdf53382eb5ca00f5df54c193b6c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a33bfdf53382eb5ca00f5df54c193b6c5">_CMatchFinderMt::hashBufPosLimit</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00072">72</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af7786e94dd8fa46d86ca2954a7c5dce8"></a><!-- doxytag: member="_CMatchFinderMt::hashNumAvail" ref="af7786e94dd8fa46d86ca2954a7c5dce8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#af7786e94dd8fa46d86ca2954a7c5dce8">_CMatchFinderMt::hashNumAvail</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00073">73</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a961338b2cf0e5d0e9988581670deab94"></a><!-- doxytag: member="_CMatchFinderMt::hashSync" ref="a961338b2cf0e5d0e9988581670deab94" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/dd6/struct__CMtSync.html">CMtSync</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a961338b2cf0e5d0e9988581670deab94">_CMatchFinderMt::hashSync</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00085">85</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab287df6ca89f4e8b04362b0a116c8ce3"></a><!-- doxytag: member="_CMatchFinderMt::historySize" ref="ab287df6ca89f4e8b04362b0a116c8ce3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#ab287df6ca89f4e8b04362b0a116c8ce3">_CMatchFinderMt::historySize</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00060">60</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f3cc930633def75ea6c2806b717305e"></a><!-- doxytag: member="_CMatchFinderMt::lzPos" ref="a7f3cc930633def75ea6c2806b717305e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a7f3cc930633def75ea6c2806b717305e">_CMatchFinderMt::lzPos</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00055">55</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e81db947a173f6a8388d77f2dbb7ae8"></a><!-- doxytag: member="_CMatchFinderMt::MatchFinder" ref="a5e81db947a173f6a8388d77f2dbb7ae8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d08/struct__CMatchFinder.html">CMatchFinder</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a5e81db947a173f6a8388d77f2dbb7ae8">_CMatchFinderMt::MatchFinder</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00090">90</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d35293d62f8f05adba381a129c0c36c"></a><!-- doxytag: member="_CMatchFinderMt::matchMaxLen" ref="a1d35293d62f8f05adba381a129c0c36c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a1d35293d62f8f05adba381a129c0c36c">_CMatchFinderMt::matchMaxLen</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00076">76</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aede626f553532467b8f19e56fed43789"></a><!-- doxytag: member="_CMatchFinderMt::MixMatchesFunc" ref="aede626f553532467b8f19e56fed43789" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/db2/LzFindMt_8h.html#aa2f7d8b8e83b75e54284333e2662cb47">Mf_Mix_Matches</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aede626f553532467b8f19e56fed43789">_CMatchFinderMt::MixMatchesFunc</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00063">63</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aeacf22d2cf4995aec207c73ce0304ee1"></a><!-- doxytag: member="_CMatchFinderMt::numHashBytes" ref="aeacf22d2cf4995aec207c73ce0304ee1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#aeacf22d2cf4995aec207c73ce0304ee1">_CMatchFinderMt::numHashBytes</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00077">77</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2967b26b137ecfbd60e6e94b1ac46971"></a><!-- doxytag: member="_CMatchFinderMt::pointerToCurPos" ref="a2967b26b137ecfbd60e6e94b1ac46971" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a2967b26b137ecfbd60e6e94b1ac46971">_CMatchFinderMt::pointerToCurPos</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00051">51</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a862ff5bdec95636ab30407ef8e746f56"></a><!-- doxytag: member="_CMatchFinderMt::pos" ref="a862ff5bdec95636ab30407ef8e746f56" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a862ff5bdec95636ab30407ef8e746f56">_CMatchFinderMt::pos</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00078">78</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a69601d189ad741341770b53d97b67aa0"></a><!-- doxytag: member="_CMatchFinderMt::son" ref="a69601d189ad741341770b53d97b67aa0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dd9/LzFind_8h.html#a55efd0bf8cb5a8bb97750b2f2f290332">CLzRef</a>* <a class="el" href="../../d7/df7/struct__CMatchFinderMt.html#a69601d189ad741341770b53d97b67aa0">_CMatchFinderMt::son</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a>第<a class="el" href="../../db/db2/LzFindMt_8h_source.html#l00075">75</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../db/db2/LzFindMt_8h_source.html">LzFindMt.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

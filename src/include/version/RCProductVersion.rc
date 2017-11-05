@@ -1,0 +1,55 @@
+#include <WinVer.h>
+#include "RCProductVersion.h"
+
+#define RC_VER               RC_VER_MAJOR,RC_VER_MINOR,RC_VER_BUILD,RC_VER_REVISION
+#define RC_FILE_VERSION      RC_VER_MAJOR.RC_VER_MINOR.RC_VER_BUILD.RC_VER_REVISION
+#define RC_PRODUCT_VERSION   RC_VER_MAJOR.RC_VER_MINOR
+
+#define RC_VER_TO_STRING( x )  RC_VER_TO_STRING1( x )
+#define RC_VER_TO_STRING1( x ) #x
+
+
+#ifdef DEBUG
+#define DBG_FL VS_FF_DEBUG
+#else
+#define DBG_FL 0
+#endif
+
+#define RC_VERSION_INFO(fileType, descr, intName, origName)  \
+VS_VERSION_INFO VERSIONINFO \
+  FILEVERSION RC_VER \
+  PRODUCTVERSION RC_VER \
+  FILEFLAGSMASK VS_FFI_FILEFLAGSMASK \
+  FILEFLAGS DBG_FL \
+  FILEOS VOS_NT_WINDOWS32 \
+  FILETYPE fileType \
+  FILESUBTYPE 0x0L \
+BEGIN \
+    BLOCK "StringFileInfo" \
+    BEGIN  \
+        BLOCK "080404b0" \
+        BEGIN \
+            VALUE "Comments","www.haozip.com" \
+            VALUE "CompanyName", RC_COMPANY_NAME \
+            VALUE "FileDescription", descr \
+            VALUE "FileVersion", RC_VER_TO_STRING(RC_FILE_VERSION)  \
+            VALUE "InternalName", intName \
+            VALUE "LegalCopyright", RC_COPYRIGHT RC_COMPANY_NAME \
+            VALUE "OriginalFilename", origName \
+            VALUE "ProductName", RC_PRODUCT_NAME \
+            VALUE "ProductVersion", RC_VER_TO_STRING(RC_PRODUCT_VERSION) \
+        END \
+    END \
+    BLOCK "VarFileInfo" \
+    BEGIN \
+        VALUE "Translation", 0x804, 1200 \
+    END \
+END
+
+/** For Exe
+*/
+#define RC_VERSION_INFO_APP(descr, intName) RC_VERSION_INFO(VFT_APP, descr, intName, intName ".exe")
+
+/** For DLL
+*/
+#define RC_VERSION_INFO_DLL(descr, intName) RC_VERSION_INFO(VFT_DLL, descr, intName, intName ".dll")

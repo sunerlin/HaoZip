@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: MtCoder.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>MtCoder.h</h1><a href="../../df/da4/MtCoder_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* MtCoder.h -- Multi-thread Coder</span>
+<a name="l00002"></a>00002 <span class="comment">2009-03-26 : Igor Pavlov : Public domain */</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="preprocessor">#ifndef __MT_CODER_H</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#define __MT_CODER_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/db3/Threads_8h.html">Threads.h</a>&quot;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a><a class="code" href="../../d2/dba/structCLoopThread.html#acea6fb28485278926d66bbcb4c610189">00009</a> <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00010"></a><a class="code" href="../../d2/dba/structCLoopThread.html#af1c0dd1f11167de17cf1f1bea3687a23">00010</a> <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00011"></a><a class="code" href="../../d2/dba/structCLoopThread.html#ad7fb748b1ec14ba08071042e3f4b7bb4">00011</a> <span class="preprocessor">#endif</span>
+<a name="l00012"></a><a class="code" href="../../d2/dba/structCLoopThread.html#a2409e14ea849358b4279d5b1c33b7c0d">00012</a> <span class="preprocessor"></span>
+<a name="l00013"></a><a class="code" href="../../d2/dba/structCLoopThread.html">00013</a>     <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00014"></a><a class="code" href="../../d2/dba/structCLoopThread.html#a6f6c73f9fb0915c93d60ed3646bba6ae">00014</a>     {
+<a name="l00015"></a><a class="code" href="../../d2/dba/structCLoopThread.html#a9a3acda93126f4e467b4b0929057b7ed">00015</a>         <a class="code" href="../../dc/db3/Threads_8h.html#a068a5473befa776f23a97add9512d427">CThread</a> thread;
+<a name="l00016"></a><a class="code" href="../../d2/dba/structCLoopThread.html#a7a476f97ec5b456f6a737b470a19bacf">00016</a>         <a class="code" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> startEvent;
+<a name="l00017"></a>00017         <a class="code" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> finishedEvent;
+<a name="l00018"></a>00018         <span class="keywordtype">int</span> stop;
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020         <a class="code" href="../../dc/db3/Threads_8h.html#aa3a93631c3c20a2bd167dcb3748ec0c7">THREAD_FUNC_TYPE</a> func;
+<a name="l00021"></a>00021         LPVOID param;
+<a name="l00022"></a>00022         <a class="code" href="../../dc/db3/Threads_8h.html#af9264da4ca787c227d6cf5a66426032b">THREAD_FUNC_RET_TYPE</a> res;
+<a name="l00023"></a>00023     } <a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a>;
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025     <span class="keywordtype">void</span> <a class="code" href="../../df/da4/MtCoder_8h.html#a07e3ffd2ec9621aacb62f303fcc986e7">LoopThread_Construct</a>(<a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> *p);
+<a name="l00026"></a>00026     <span class="keywordtype">void</span> <a class="code" href="../../df/da4/MtCoder_8h.html#a448f14e439bc7a1122cd7995d73997f1">LoopThread_Close</a>(<a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> *p);
+<a name="l00027"></a>00027     <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../df/da4/MtCoder_8h.html#a80096eca2a4d88869c282186bb2a5f67">LoopThread_Create</a>(<a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> *p);
+<a name="l00028"></a>00028     <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../df/da4/MtCoder_8h.html#a75e4fcc3de53302ead7dfffbfbcc148e">LoopThread_StopAndWait</a>(<a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> *p);
+<a name="l00029"></a>00029     <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../df/da4/MtCoder_8h.html#a53f8eb84a45349d3894702957b82828f">LoopThread_StartSubThread</a>(<a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> *p);
+<a name="l00030"></a>00030     <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a> <a class="code" href="../../df/da4/MtCoder_8h.html#a1318acf37ec2100d3f74cbbe0d6578d1">LoopThread_WaitSubThread</a>(<a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> *p);
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 <span class="preprocessor">#ifdef COMPRESS_MT</span>
+<a name="l00033"></a>00033 <span class="preprocessor"></span><span class="preprocessor">#define NUM_MT_CODER_THREADS_MAX 32</span>
+<a name="l00034"></a>00034 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00035"></a><a class="code" href="../../df/da4/MtCoder_8h.html#a5d5fcc0a119e812efc47b2f8d0282ca9">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define NUM_MT_CODER_THREADS_MAX 1</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a><a class="code" href="../../de/d31/structCMtProgress.html">00038</a>     <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00039"></a>00039     {
+<a name="l00040"></a><a class="code" href="../../de/d31/structCMtProgress.html#ae7250d8d4b722086a0705f64fa85310a">00040</a>         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> totalInSize;
+<a name="l00041"></a><a class="code" href="../../de/d31/structCMtProgress.html#a8ae7d7fe55950bf4c667e663c16aeb55">00041</a>         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> totalOutSize;
+<a name="l00042"></a><a class="code" href="../../de/d31/structCMtProgress.html#a05b46f108bba05a8058b1202f4cc36fb">00042</a>         <a class="code" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *progress;
+<a name="l00043"></a><a class="code" href="../../de/d31/structCMtProgress.html#a17c76cc80d68e8129a8ed1303a1b96e4">00043</a>         <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> res;
+<a name="l00044"></a><a class="code" href="../../de/d31/structCMtProgress.html#a72714c5863101764f011af2c2b43348e">00044</a>         <a class="code" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a> cs;
+<a name="l00045"></a><a class="code" href="../../de/d31/structCMtProgress.html#acff18f71014024a2190ee1037964300d">00045</a>         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSizes[<a class="code" href="../../df/da4/MtCoder_8h.html#a5d5fcc0a119e812efc47b2f8d0282ca9">NUM_MT_CODER_THREADS_MAX</a>];
+<a name="l00046"></a><a class="code" href="../../de/d31/structCMtProgress.html#afae56f29d26a5dafa0645af46a1c8131">00046</a>         <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSizes[<a class="code" href="../../df/da4/MtCoder_8h.html#a5d5fcc0a119e812efc47b2f8d0282ca9">NUM_MT_CODER_THREADS_MAX</a>];
+<a name="l00047"></a>00047     } <a class="code" href="../../de/d31/structCMtProgress.html">CMtProgress</a>;
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049     <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../df/da4/MtCoder_8h.html#a7b4538f6273d53b45bcf4385bd7644bf">MtProgress_Set</a>(<a class="code" href="../../de/d31/structCMtProgress.html">CMtProgress</a> *p, <span class="keywordtype">unsigned</span> index, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSize, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSize);
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051     <span class="keyword">struct </span><a class="code" href="../../d0/dd7/struct__CMtCoder.html">_CMtCoder</a>;
+<a name="l00052"></a>00052 
+<a name="l00053"></a><a class="code" href="../../d4/d77/structCMtThread.html">00053</a>     <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00054"></a>00054     {
+<a name="l00055"></a><a class="code" href="../../d4/d77/structCMtThread.html#a8b5a010691afdcbd4dcaf353f9121094">00055</a>         <span class="keyword">struct </span><a class="code" href="../../d0/dd7/struct__CMtCoder.html">_CMtCoder</a> *mtCoder;
+<a name="l00056"></a><a class="code" href="../../d4/d77/structCMtThread.html#a7dbcc0cc7a3f0c56ce8c332f7e3799b6">00056</a>         <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *outBuf;
+<a name="l00057"></a><a class="code" href="../../d4/d77/structCMtThread.html#a49f4905b5ff92f944b82a1d251612d00">00057</a>         <span class="keywordtype">size_t</span> outBufSize;
+<a name="l00058"></a><a class="code" href="../../d4/d77/structCMtThread.html#a93897d492ae9b190aaab3b6f6eb5cd67">00058</a>         <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *inBuf;
+<a name="l00059"></a><a class="code" href="../../d4/d77/structCMtThread.html#ace8f75de5dc7d30bde891b45f87171d0">00059</a>         <span class="keywordtype">size_t</span> inBufSize;
+<a name="l00060"></a><a class="code" href="../../d4/d77/structCMtThread.html#af58b83fad7bae80232a2e3cd9814ed75">00060</a>         <span class="keywordtype">unsigned</span> index;
+<a name="l00061"></a><a class="code" href="../../d4/d77/structCMtThread.html#a597eb48281930d65df3bfad20f71fa8c">00061</a>         <a class="code" href="../../d2/dba/structCLoopThread.html">CLoopThread</a> thread;
+<a name="l00062"></a>00062 
+<a name="l00063"></a><a class="code" href="../../d4/d77/structCMtThread.html#a58fa066a1a2083f930c0e11e5bd6beb0">00063</a>         <a class="code" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a> stopReading;
+<a name="l00064"></a><a class="code" href="../../d4/d77/structCMtThread.html#af175d409bd1068578bda2dc05512d521">00064</a>         <a class="code" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a> stopWriting;
+<a name="l00065"></a><a class="code" href="../../d4/d77/structCMtThread.html#ab3632eff505492c27acb55bbd6a722cc">00065</a>         <a class="code" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> canRead;
+<a name="l00066"></a><a class="code" href="../../d4/d77/structCMtThread.html#aee7d463fff58c188d0d94a251912435e">00066</a>         <a class="code" href="../../dc/db3/Threads_8h.html#ab7aa6e63ea49ce5799992cfc4b1262cd">CAutoResetEvent</a> canWrite;
+<a name="l00067"></a>00067     } <a class="code" href="../../d4/d77/structCMtThread.html">CMtThread</a>;
+<a name="l00068"></a>00068 
+<a name="l00069"></a><a class="code" href="../../dc/de4/structIMtCoderCallback.html">00069</a>     <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00070"></a>00070     {
+<a name="l00071"></a>00071         <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Code)(<span class="keywordtype">void</span> *p,
+<a name="l00072"></a>00072                          <span class="keywordtype">unsigned</span> index,
+<a name="l00073"></a>00073                          <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest,
+<a name="l00074"></a>00074                          <span class="keywordtype">size_t</span> *destSize,
+<a name="l00075"></a>00075                          <span class="keyword">const</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src,
+<a name="l00076"></a>00076                          <span class="keywordtype">size_t</span> srcSize,
+<a name="l00077"></a>00077                          <span class="keywordtype">int</span> finished);
+<a name="l00078"></a>00078     } <a class="code" href="../../dc/de4/structIMtCoderCallback.html">IMtCoderCallback</a>;
+<a name="l00079"></a>00079 
+<a name="l00080"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html">00080</a>     <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d0/dd7/struct__CMtCoder.html">_CMtCoder</a>
+<a name="l00081"></a>00081     {
+<a name="l00082"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#ad415a9cc8d689bb5a7dc28605e8c1f46">00082</a>         <span class="keywordtype">size_t</span> <a class="code" href="../../d0/dd7/struct__CMtCoder.html#ad415a9cc8d689bb5a7dc28605e8c1f46">blockSize</a>;
+<a name="l00083"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a4808cc4674a270855842fdceb0b93dc7">00083</a>         <span class="keywordtype">size_t</span> <a class="code" href="../../d0/dd7/struct__CMtCoder.html#a4808cc4674a270855842fdceb0b93dc7">destBlockSize</a>;
+<a name="l00084"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a9351fd1ebf3cc7c064c9776c4d42aca5">00084</a>         <span class="keywordtype">unsigned</span> <a class="code" href="../../d0/dd7/struct__CMtCoder.html#a9351fd1ebf3cc7c064c9776c4d42aca5">numThreads</a>;
+<a name="l00085"></a>00085 
+<a name="l00086"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a455825b25457a1f0c7aba6d9255379bb">00086</a>         <a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *<a class="code" href="../../d0/dd7/struct__CMtCoder.html#a455825b25457a1f0c7aba6d9255379bb">inStream</a>;
+<a name="l00087"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a0e36e568644fe4bbf9bdc110d5d6ea9a">00087</a>         <a class="code" href="../../dd/d89/structISeqOutStream.html">ISeqOutStream</a> *<a class="code" href="../../d0/dd7/struct__CMtCoder.html#a0e36e568644fe4bbf9bdc110d5d6ea9a">outStream</a>;
+<a name="l00088"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a0ad519d5852281bc8ed8bc23e47e0c41">00088</a>         <a class="code" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *<a class="code" href="../../d0/dd7/struct__CMtCoder.html#a0ad519d5852281bc8ed8bc23e47e0c41">progress</a>;
+<a name="l00089"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#ac8dab37f9e2659ab2dd913f47e3147d8">00089</a>         <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *<a class="code" href="../../d0/dd7/struct__CMtCoder.html#ac8dab37f9e2659ab2dd913f47e3147d8">alloc</a>;
+<a name="l00090"></a>00090 
+<a name="l00091"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#ad2810b6e44ed2c833130537e5c101d41">00091</a>         <a class="code" href="../../dc/de4/structIMtCoderCallback.html">IMtCoderCallback</a> *<a class="code" href="../../d0/dd7/struct__CMtCoder.html#ad2810b6e44ed2c833130537e5c101d41">mtCallback</a>;
+<a name="l00092"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a473e4fc6d54cea39ffb9344926ed791f">00092</a>         <a class="code" href="../../dc/db3/Threads_8h.html#a3b3880669408bfbc0974840ee06c8bb6">CCriticalSection</a> <a class="code" href="../../d0/dd7/struct__CMtCoder.html#a473e4fc6d54cea39ffb9344926ed791f">cs</a>;
+<a name="l00093"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a79f3b379807ac52d700d9bb0ebce9720">00093</a>         <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d0/dd7/struct__CMtCoder.html#a79f3b379807ac52d700d9bb0ebce9720">res</a>;
+<a name="l00094"></a>00094 
+<a name="l00095"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#a266199c35dbfcf48bbcd7edafa7184fc">00095</a>         <a class="code" href="../../de/d31/structCMtProgress.html">CMtProgress</a> <a class="code" href="../../d0/dd7/struct__CMtCoder.html#a266199c35dbfcf48bbcd7edafa7184fc">mtProgress</a>;
+<a name="l00096"></a><a class="code" href="../../d0/dd7/struct__CMtCoder.html#ac82e286ca96cb5d82e0b7f35f781d1ce">00096</a>         <a class="code" href="../../d4/d77/structCMtThread.html">CMtThread</a> <a class="code" href="../../d0/dd7/struct__CMtCoder.html#ac82e286ca96cb5d82e0b7f35f781d1ce">threads</a>[<a class="code" href="../../df/da4/MtCoder_8h.html#a5d5fcc0a119e812efc47b2f8d0282ca9">NUM_MT_CODER_THREADS_MAX</a>];
+<a name="l00097"></a>00097     } <a class="code" href="../../d0/dd7/struct__CMtCoder.html">CMtCoder</a>;
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099     <span class="keywordtype">void</span> <a class="code" href="../../df/da4/MtCoder_8h.html#a1e89f7bf714c735494dff4d09aa1f03c">MtCoder_Construct</a>(<a class="code" href="../../d0/dd7/struct__CMtCoder.html">CMtCoder</a>* p);
+<a name="l00100"></a>00100     <span class="keywordtype">void</span> <a class="code" href="../../df/da4/MtCoder_8h.html#a4dbad8a7f909fc115273273e0ae75e58">MtCoder_Destruct</a>(<a class="code" href="../../d0/dd7/struct__CMtCoder.html">CMtCoder</a>* p);
+<a name="l00101"></a>00101     <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../df/da4/MtCoder_8h.html#acec2c1ae1d2570cb590ba964e810f81b">MtCoder_Code</a>(<a class="code" href="../../d0/dd7/struct__CMtCoder.html">CMtCoder</a> *p);
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00104"></a>00104 <span class="preprocessor"></span>}
+<a name="l00105"></a>00105 <span class="preprocessor">#endif</span>
+<a name="l00106"></a>00106 <span class="preprocessor"></span>
+<a name="l00107"></a>00107 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

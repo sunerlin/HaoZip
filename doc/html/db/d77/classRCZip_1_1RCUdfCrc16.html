@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCUdfCrc16类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../db/d77/classRCZip_1_1RCUdfCrc16.html">RCUdfCrc16</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCUdfCrc16类参考</h1><!-- doxytag: class="RCZip::RCUdfCrc16" -->
+<p><code>#include &lt;<a class="el" href="../../de/dec/RCUdfCrc16_8h_source.html">RCUdfCrc16.h</a>&gt;</code></p>
+
+<p><a href="../../d8/d47/classRCZip_1_1RCUdfCrc16-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d77/classRCZip_1_1RCUdfCrc16.html#adbb4cb7b1a14507ef2c5dbc74a32511d">Crc16GenerateTable</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d77/classRCZip_1_1RCUdfCrc16.html#a887ffc261eb9dcfdd4fd2a181ea92f84">Crc16_Update</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> v, const void *data, size_t size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d77/classRCZip_1_1RCUdfCrc16.html#aa2205fee18115880ac0124fa7b7a9f60">Crc16Calc</a> (const void *data, size_t size)</td></tr>
+<tr><td colspan="2"><h2>静态私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d77/classRCZip_1_1RCUdfCrc16.html#a6e14be79347e4f0e4857dd50abcedceb">s_crc16Table</a> [256]</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Udf Crc 16 </p>
+
+<p>在文件<a class="el" href="../../de/dec/RCUdfCrc16_8h_source.html">RCUdfCrc16.h</a>第<a class="el" href="../../de/dec/RCUdfCrc16_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a887ffc261eb9dcfdd4fd2a181ea92f84"></a><!-- doxytag: member="RCZip::RCUdfCrc16::Crc16_Update" ref="a887ffc261eb9dcfdd4fd2a181ea92f84" args="(uint16_t v, const void *data, size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> RCZip::RCUdfCrc16::Crc16_Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td>
+          <td class="paramname"> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Crc 更新 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>v</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Crc </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa2205fee18115880ac0124fa7b7a9f60"></a><!-- doxytag: member="RCZip::RCUdfCrc16::Crc16Calc" ref="aa2205fee18115880ac0124fa7b7a9f60" args="(const void *data, size_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> RCZip::RCUdfCrc16::Crc16Calc </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Crc 计算 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Crc </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adbb4cb7b1a14507ef2c5dbc74a32511d"></a><!-- doxytag: member="RCZip::RCUdfCrc16::Crc16GenerateTable" ref="adbb4cb7b1a14507ef2c5dbc74a32511d" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RCZip::RCUdfCrc16::Crc16GenerateTable </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>生成Crc表 </p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a6e14be79347e4f0e4857dd50abcedceb"></a><!-- doxytag: member="RCZip::RCUdfCrc16::s_crc16Table" ref="a6e14be79347e4f0e4857dd50abcedceb" args="[256]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> <a class="el" href="../../db/d77/classRCZip_1_1RCUdfCrc16.html#a6e14be79347e4f0e4857dd50abcedceb">RCZip::RCUdfCrc16::s_crc16Table</a>[256]<code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Crc 数据表 </p>
+
+<p>在文件<a class="el" href="../../de/dec/RCUdfCrc16_8h_source.html">RCUdfCrc16.h</a>第<a class="el" href="../../de/dec/RCUdfCrc16_8h_source.html#l00047">47</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../de/dec/RCUdfCrc16_8h_source.html">RCUdfCrc16.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCWimUnpacker类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html">RCWimUnpacker</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCWimUnpacker类参考</h1><!-- doxytag: class="RCZip::RCWimUnpacker" -->
+<p><code>#include &lt;<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCWimUnpacker合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d0/d01/classRCZip_1_1RCWimUnpacker__coll__graph.png" border="0" usemap="#RCZip_1_1RCWimUnpacker_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCWimUnpacker_coll__map" id="RCZip_1_1RCWimUnpacker_coll__map">
+<area shape="rect" id="node2" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ICompressCoder \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="5,779,232,1077"/><area shape="rect" id="node4" href="../../dc/d2b/classRCZip_1_1ICompressCoder.html" title="{RCZip::ICompressCoder\n||+ Code()\l# ~ICompressCoder()\l}" alt="" coords="33,339,212,431"/><area shape="rect" id="node6" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="311,6,457,127"/><area shape="rect" id="node12" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html" title="{RCZip::ICompressCodecsInfo\n||+ GetNumberOfMethods()\l+ GetMethod()\l+ CreateDecoder()\l+ CreateEncoder()\l# ~ICompressCodecsInfo()\l}" alt="" coords="161,179,375,315"/><area shape="rect" id="node28" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="692,201,908,293"/><area shape="rect" id="node38" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="399,201,604,293"/><area shape="rect" id="node8" href="../../d3/db6/classRCZip_1_1RCBuffer.html" title="{RCZip::RCBuffer\&lt; byte_t \&gt;\n|# m_capacity\l# m_data\l# m_dataLen\l|+ RCBuffer()\l+ RCBuffer()\l+ RCBuffer()\l+ ~RCBuffer()\l+ operator=()\l+ GetCapacity()\l+ SetCapacity()\l+ Free()\l+ data()\l+ data()\l+ SetDataLength()\l+ GetDataLength()\l+ operator[]()\l}" alt="" coords="155,2160,355,2443"/><area shape="rect" id="node10" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ICompressCodecsInfo \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="137,1513,399,1810"/><area shape="rect" id="node15" href="../../dd/d2d/classRCZip_1_1RCWimDecoder.html" title="{RCZip::RCWimDecoder\n|&#45; m_inBitStream\l&#45; m_outWindowStream\l&#45; m_mainDecoder\l&#45; s_kWimNumHuffmanBits\l&#45; s_kWimMatchMinLen\l&#45; s_kWimNumLenSlots\l&#45; s_kWimNumPosSlots\l&#45; s_kWimNumPosLenSlots\l&#45; s_kWimMainTableSize\l&#45; s_kWimDictSize\l|+ RCWimDecoder()\l+ ~RCWimDecoder()\l+ ReleaseStreams()\l+ Flush()\l+ Code()\l&#45; CodeSpec()\l&#45; CodeReal()\l}" alt="" coords="592,2153,789,2450"/><area shape="rect" id="node17" href="../../dd/df6/classRCZip_1_1RCHuffmanDecoder.html" title="{RCZip::RCHuffmanDecoder\&lt; s_kWimNumHuffmanBits, s_kWimMainTableSize \&gt;\n|+ s_kNumTableBits\l&#45; m_limits\l&#45; m_positions\l&#45; m_symbols\l&#45; m_lengths\l|+ SetCodeLengths()\l+ DecodeSymbol()\l}" alt="" coords="504,1586,1056,1737"/><area shape="rect" id="node19" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="661,567,837,644"/><area shape="rect" id="node23" href="../../d0/dfc/classRCZip_1_1RCOutBuffer.html" title="{RCZip::RCOutBuffer\n|# m_buffer\l# m_pos\l# m_limitPos\l# m_streamPos\l# m_bufferSize\l# m_spStream\l# m_processedSize\l# m_buffer2\l# m_overDict\l|+ RCOutBuffer()\l+ ~RCOutBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetMemStream()\l+ SetStream()\l+ Flush()\l+ FlushWithCheck()\l+ ReleaseStream()\l+ WriteByte()\l+ WriteBytes()\l+ GetProcessedSize()\l# FlushPart()\l}" alt="" coords="913,1102,1076,1487"/><area shape="rect" id="node33" href="../../d8/de1/classRCZip_1_1RCInBuffer.html" title="{RCZip::RCInBuffer\n|&#45; m_buffer\l&#45; m_bufferLimit\l&#45; m_bufferBase\l&#45; m_spStream\l&#45; m_processedSize\l&#45; m_bufferSize\l&#45; m_wasFinished\l|+ RCInBuffer()\l+ ~RCInBuffer()\l+ Create()\l+ Init()\l+ Free()\l+ SetStream()\l+ ReleaseStream()\l+ ReadByte()\l+ ReadByte()\l+ ReadBytes()\l+ GetProcessedSize()\l+ WasFinished()\l&#45; ReadBlock()\l&#45; ReadBlock2()\l}" alt="" coords="420,1117,583,1473"/><area shape="rect" id="node21" href="../../d9/dae/classRCZip_1_1RCLZOutWindow.html" title="{RCZip::RCLZOutWindow\n||+ RCLZOutWindow()\l+ ~RCLZOutWindow()\l+ Init()\l+ CopyBlock()\l+ PutByte()\l+ GetByte()\l}" alt="" coords="940,1886,1121,2037"/><area shape="rect" id="node26" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="861,457,1128,754"/><area shape="rect" id="node31" href="../../d6/df7/classRCZip_1_1RCWimBitStream.html" title="{RCZip::RCWimBitStream\n|&#45; m_stream\l&#45; m_value\l&#45; m_bitPos\l|+ RCWimBitStream()\l+ ~RCWimBitStream()\l+ Create()\l+ SetStream()\l+ ReleaseStream()\l+ Init()\l+ DirectReadByte()\l+ Normalize()\l+ GetValue()\l+ MovePos()\l+ ReadBits()\l}" alt="" coords="479,1835,663,2088"/><area shape="rect" id="node36" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="375,457,628,754"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d2/daa/classRCZip_1_1RCWimUnpacker-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#ae441c93ed71d5d9ade97f8eff15ea37b">RCWimUnpacker</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *compressCodecsInfo)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#ab793bd02c6552551f5d76229c59964b6">~RCWimUnpacker</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#af0f900172995888b1e3c8e824f581d76">Unpack</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, const <a class="el" href="../../df/d03/classRCZip_1_1RCWimResource.html">RCWimResource</a> &amp;resource, bool lzxMode, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *digest)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#a045d65682f158a833d6df35ae79473a0">SetCompressCodecsInfo</a> (<a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *compressCodecsInfo)</td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#ad4650b0e3bd6c8abdb3bd267c7cfe168">Unpack</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, const <a class="el" href="../../df/d03/classRCZip_1_1RCWimResource.html">RCWimResource</a> &amp;resource, bool lzxMode, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *outStream, <a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *progress)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#ab279a744c211123d724a50159a1cf584">m_copyCoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#a24df90f68c455dd4d3284dbb18dc8de5">m_lzxDecoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d2d/classRCZip_1_1RCWimDecoder.html">RCWimDecoder</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#a3d8060024afdeb5a48a70fc476044124">m_xpressDecoder</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#a170927a5f38acf021aba987d4ebd0674">m_sizesBuf</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCodecsInfoPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#ac17cdcb0d5f98a05588dfbc50b87d116">m_compressCodecsInfo</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Wim Unpacker </p>
+
+<p>在文件<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a>第<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html#l00023">23</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="ae441c93ed71d5d9ade97f8eff15ea37b"></a><!-- doxytag: member="RCZip::RCWimUnpacker::RCWimUnpacker" ref="ae441c93ed71d5d9ade97f8eff15ea37b" args="(ICompressCodecsInfo *compressCodecsInfo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWimUnpacker::RCWimUnpacker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>compressCodecsInfo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab793bd02c6552551f5d76229c59964b6"></a><!-- doxytag: member="RCZip::RCWimUnpacker::~RCWimUnpacker" ref="ab793bd02c6552551f5d76229c59964b6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCWimUnpacker::~RCWimUnpacker </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a045d65682f158a833d6df35ae79473a0"></a><!-- doxytag: member="RCZip::RCWimUnpacker::SetCompressCodecsInfo" ref="a045d65682f158a833d6df35ae79473a0" args="(ICompressCodecsInfo *compressCodecsInfo)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWimUnpacker::SetCompressCodecsInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d8d/classRCZip_1_1ICompressCodecsInfo.html">ICompressCodecsInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>compressCodecsInfo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置编码解码器管理接口指针 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>compressCodecsInfo</em>&nbsp;</td><td>编码解码器指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad4650b0e3bd6c8abdb3bd267c7cfe168"></a><!-- doxytag: member="RCZip::RCWimUnpacker::Unpack" ref="ad4650b0e3bd6c8abdb3bd267c7cfe168" args="(IInStream *inStream, const RCWimResource &amp;resource, bool lzxMode, ISequentialOutStream *outStream, ICompressProgressInfo *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWimUnpacker::Unpack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d03/classRCZip_1_1RCWimResource.html">RCWimResource</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>lzxMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>resource</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lzxMode</em>&nbsp;</td><td>lzx模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af0f900172995888b1e3c8e824f581d76"></a><!-- doxytag: member="RCZip::RCWimUnpacker::Unpack" ref="af0f900172995888b1e3c8e824f581d76" args="(IInStream *inStream, const RCWimResource &amp;resource, bool lzxMode, ISequentialOutStream *outStream, ICompressProgressInfo *progress, byte_t *digest)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCWimUnpacker::Unpack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d03/classRCZip_1_1RCWimResource.html">RCWimResource</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>lzxMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/da1/classRCZip_1_1ICompressProgressInfo.html">ICompressProgressInfo</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>digest</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>resource</em>&nbsp;</td><td>WIM资源数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lzxMode</em>&nbsp;</td><td>lzx模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度回调接口 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>digest</em>&nbsp;</td><td>解压数据地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="ac17cdcb0d5f98a05588dfbc50b87d116"></a><!-- doxytag: member="RCZip::RCWimUnpacker::m_compressCodecsInfo" ref="ac17cdcb0d5f98a05588dfbc50b87d116" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCodecsInfoPtr</a> <a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#ac17cdcb0d5f98a05588dfbc50b87d116">RCZip::RCWimUnpacker::m_compressCodecsInfo</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>编码解码管理器 </p>
+
+<p>在文件<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a>第<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html#l00095">95</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab279a744c211123d724a50159a1cf584"></a><!-- doxytag: member="RCZip::RCWimUnpacker::m_copyCoder" ref="ab279a744c211123d724a50159a1cf584" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> <a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#ab279a744c211123d724a50159a1cf584">RCZip::RCWimUnpacker::m_copyCoder</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>copy coder </p>
+
+<p>在文件<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a>第<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a24df90f68c455dd4d3284dbb18dc8de5"></a><!-- doxytag: member="RCZip::RCWimUnpacker::m_lzxDecoder" ref="a24df90f68c455dd4d3284dbb18dc8de5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ICompressCoderPtr</a> <a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#a24df90f68c455dd4d3284dbb18dc8de5">RCZip::RCWimUnpacker::m_lzxDecoder</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>lzx decoder </p>
+
+<p>在文件<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a>第<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html#l00083">83</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a170927a5f38acf021aba987d4ebd0674"></a><!-- doxytag: member="RCZip::RCWimUnpacker::m_sizesBuf" ref="a170927a5f38acf021aba987d4ebd0674" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> <a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#a170927a5f38acf021aba987d4ebd0674">RCZip::RCWimUnpacker::m_sizesBuf</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>缓存 </p>
+
+<p>在文件<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a>第<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html#l00091">91</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d8060024afdeb5a48a70fc476044124"></a><!-- doxytag: member="RCZip::RCWimUnpacker::m_xpressDecoder" ref="a3d8060024afdeb5a48a70fc476044124" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d2d/classRCZip_1_1RCWimDecoder.html">RCWimDecoder</a> <a class="el" href="../../d8/da6/classRCZip_1_1RCWimUnpacker.html#a3d8060024afdeb5a48a70fc476044124">RCZip::RCWimUnpacker::m_xpressDecoder</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>xpress decoder </p>
+
+<p>在文件<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a>第<a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html#l00087">87</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d3/d05/RCWimUnpacker_8h_source.html">RCWimUnpacker.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

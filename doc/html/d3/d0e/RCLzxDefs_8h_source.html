@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCLzxDefs.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_9f52182aadfa6d8332bc7ea0cff42aaa.html">lzx</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCLzxDefs.h</h1><a href="../../d3/d0e/RCLzxDefs_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCLzxDefs_h_</span>
+<a name="l00011"></a><a class="code" href="../../d3/d0e/RCLzxDefs_8h.html#a675ea300b93a16741f49920f17249e8b">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCLzxDefs_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d20/RCDefs_8h.html">base/RCDefs.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 <span class="comment"></span>
+<a name="l00017"></a>00017 <span class="comment">/** Lzx 常量定义</span>
+<a name="l00018"></a>00018 <span class="comment">*/</span>
+<a name="l00019"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html">00019</a> <span class="keyword">class </span><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html">RCLzxDefs</a>
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021 <span class="keyword">public</span>:
+<a name="l00022"></a>00022 
+<a name="l00023"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a673cb0ba55082f4fd4a19807bbe99182">00023</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumHuffmanBits = 16 ;
+<a name="l00024"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a394e0b99172f4683d91442deb4e03ff1">00024</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kNumRepDistances = 3 ;
+<a name="l00025"></a>00025     
+<a name="l00026"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#ab87c615d5fcb38bb01443cbc8edf6495">00026</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kNumLenSlots = 8;
+<a name="l00027"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a6bf67481061ff0f1ccd6eeb63c3c2fc5">00027</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kMatchMinLen = 2;
+<a name="l00028"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a4d52034401d4f8cda35798f50fe26b5d">00028</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kNumLenSymbols = 249;
+<a name="l00029"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a80b6cbcf2caacdafb8f819a408cc2248">00029</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kMatchMaxLen = s_kMatchMinLen + (s_kNumLenSlots - 1) + s_kNumLenSymbols - 1;
+<a name="l00030"></a>00030     
+<a name="l00031"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a79914e7a8f5a19dbf3a69ba2d4171b46">00031</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumAlignBits = 3;
+<a name="l00032"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a757dd7654f7b4eea9ff49b27cbd7db11">00032</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kAlignTableSize = 1 &lt;&lt; s_kNumAlignBits;
+<a name="l00033"></a>00033     
+<a name="l00034"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a6ef6b00e8da2630151c013c652ec41da">00034</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kNumPosSlots = 50;
+<a name="l00035"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a5905491e1380e7c8d50add8d4bce74f1">00035</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kNumPosLenSlots = s_kNumPosSlots * s_kNumLenSlots;
+<a name="l00036"></a>00036     
+<a name="l00037"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a69c93754baa1467164f9d6c1d9ee2f8d">00037</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kMainTableSize = 256 + s_kNumPosLenSlots;
+<a name="l00038"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a138c752913e772203731ff9adc310396">00038</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kLevelTableSize = 20;
+<a name="l00039"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a7b43e7a2203baa6625df68f0adbd7f9b">00039</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kMaxTableSize = s_kMainTableSize;
+<a name="l00040"></a>00040     
+<a name="l00041"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#acdbac8ce3c298965419c28b774e21ba2">00041</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumBlockTypeBits = 3;
+<a name="l00042"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a1f2e539bed818b37c349c09b4ee58e31">00042</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kBlockTypeVerbatim = 1;
+<a name="l00043"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#ae69f43e4195a1d2771312c36d3054d4c">00043</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kBlockTypeAligned = 2;
+<a name="l00044"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a21f30e8a9602f0378ab7d1f9ce77eb84">00044</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kBlockTypeUncompressed = 3;
+<a name="l00045"></a>00045     
+<a name="l00046"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a97355fa17f1a99ebbce505a17ed44e86">00046</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kUncompressedBlockSizeNumBits = 24;
+<a name="l00047"></a>00047     
+<a name="l00048"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a2a0172aef65c8220a135bb69eb3e1708">00048</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumBitsForPreTreeLevel = 4;
+<a name="l00049"></a>00049     
+<a name="l00050"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a12c16907a29940b3fc64d413f5d12f7a">00050</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolZeros = 17;
+<a name="l00051"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a17e6c91e50784624e501a409096ba3b5">00051</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolZerosBig = 18;
+<a name="l00052"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a8c9215c5855aa857f75e801802f0147a">00052</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolSame = 19;
+<a name="l00053"></a>00053     
+<a name="l00054"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#aff28054323cf5f8c517e5faa22590550">00054</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolZerosStartValue = 4;
+<a name="l00055"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#ad123335a839211b3d38336639d5985f6">00055</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolZerosNumBits = 4;
+<a name="l00056"></a>00056     
+<a name="l00057"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a2e44f8f2593c0d5d7b457852a93631b5">00057</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolZerosBigStartValue = s_kLevelSymbolZerosStartValue +
+<a name="l00058"></a>00058                                                          (1 &lt;&lt; s_kLevelSymbolZerosNumBits) ;
+<a name="l00059"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a4dd4dbb649aeae148305d8bc4444048e">00059</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolZerosBigNumBits = 5;
+<a name="l00060"></a>00060     
+<a name="l00061"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a579ee82038aaa877747c8a62e232d97e">00061</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolSameNumBits = 1;
+<a name="l00062"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a5bc514088d6cadf17d3cfcde4467f3cf">00062</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kLevelSymbolSameStartValue = 4;
+<a name="l00063"></a>00063     
+<a name="l00064"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a2d58e45247ccd80c1b28cd7b164e2082">00064</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumBitsForAlignLevel = 3;
+<a name="l00065"></a>00065       
+<a name="l00066"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a49994c64c11e1d0e30c5dbc41c295e78">00066</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumDictionaryBitsMin = 15;
+<a name="l00067"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#a20d879946c38220375dfda2b191bbdad">00067</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumDictionaryBitsMax = 21;
+<a name="l00068"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#afe544dc1546ba25c35e1f312bea1a88f">00068</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kDictionarySizeMax = (1 &lt;&lt; s_kNumDictionaryBitsMax);
+<a name="l00069"></a>00069     
+<a name="l00070"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#ad577b14227b8fae7f605f1850f9ca255">00070</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>  s_kNumLinearPosSlotBits = 17;
+<a name="l00071"></a><a class="code" href="../../db/d53/classRCZip_1_1RCLzxDefs.html#aa81c194da7f7561d328e9ddf6c107fed">00071</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_kNumPowerPosSlots = 0x26;
+<a name="l00072"></a>00072 };
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 <span class="preprocessor">#endif //__RCLzxDefs_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

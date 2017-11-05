@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCHfsDatabase类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html">RCHfsDatabase</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCHfsDatabase类参考</h1><!-- doxytag: class="RCZip::RCHfsDatabase" -->
+<p><code>#include &lt;<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCHfsDatabase合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dd/d1c/classRCZip_1_1RCHfsDatabase__coll__graph.png" border="0" usemap="#RCZip_1_1RCHfsDatabase_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCHfsDatabase_coll__map" id="RCZip_1_1RCHfsDatabase_coll__map">
+<area shape="rect" id="node2" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html" title="{RCZip::RCHfsVolHeader\n|+ m_header\l+ m_version\l+ m_cTime\l+ m_mTime\l+ m_blockSizeLog\l+ m_numBlocks\l+ m_numFreeBlocks\l+ m_extentsFile\l+ m_catalogFile\l|+ IsHfsX()\l}" alt="" coords="5,347,181,541"/><area shape="rect" id="node4" href="../../d8/dce/structRCZip_1_1RCHfsFork.html" title="{RCZip::RCHfsFork\n|+ m_size\l+ m_numBlocks\l+ m_extents\l|+ Parse()\l}" alt="" coords="24,163,163,269"/><area shape="rect" id="node6" href="../../d5/d61/structRCZip_1_1RCHfsExtent.html" title="{RCZip::RCHfsExtent\n|+ m_pos\l+ m_numBlocks\l|}" alt="" coords="17,6,169,98"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d4/d91/classRCZip_1_1RCHfsDatabase-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#ac97d542e328b7b5eac349e967c2a82d3">RCHfsDatabase</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a341af040d8c797fb8e61fa068329bd12">~RCHfsDatabase</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a6f9baa734b4e57aa3c3b9d6709066f68">Clear</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#acbc655283421ed64e2b3a6d934f0a0a4">GetItemPath</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> index) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#adb83aeaf4af22cc5df605254d0a97754">Open</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, <a class="el" href="../../db/d79/structRCZip_1_1RCHfsProgressVirt.html">RCHfsProgressVirt</a> *progress)</td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html">RCHfsVolHeader</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a578c6a6baa05ae0bd2ffaad9efa11320">m_header</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d6/d50/structRCZip_1_1RCHfsItem.html">RCHfsItem</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a60c09e90373a427ac0b9df68c478d8ae">m_items</a></td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a3876395f44b6cc2d9e909d4b2ae07463">LoadExtentFile</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a27c7f8e9f2c3f4f4bf8bedbbc9e536ed">LoadCatalog</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream, <a class="el" href="../../db/d79/structRCZip_1_1RCHfsProgressVirt.html">RCHfsProgressVirt</a> *progress)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#ac063a6531738a3c0c39d8142e6906784">ReadFile</a> (const <a class="el" href="../../d8/dce/structRCZip_1_1RCHfsFork.html">RCHfsFork</a> &amp;fork, <a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;buf, <a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *inStream)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d9/dbf/structRCZip_1_1RCHfsIdIndexPair.html">RCHfsIdIndexPair</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a4c339e87c2a1ecd0ac765f75ee49efb1">m_idToIndexMap</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00181">181</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="ac97d542e328b7b5eac349e967c2a82d3"></a><!-- doxytag: member="RCZip::RCHfsDatabase::RCHfsDatabase" ref="ac97d542e328b7b5eac349e967c2a82d3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCHfsDatabase::RCHfsDatabase </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a341af040d8c797fb8e61fa068329bd12"></a><!-- doxytag: member="RCZip::RCHfsDatabase::~RCHfsDatabase" ref="a341af040d8c797fb8e61fa068329bd12" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCHfsDatabase::~RCHfsDatabase </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a6f9baa734b4e57aa3c3b9d6709066f68"></a><!-- doxytag: member="RCZip::RCHfsDatabase::Clear" ref="a6f9baa734b4e57aa3c3b9d6709066f68" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCHfsDatabase::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>清除 </p>
+
+</div>
+</div>
+<a class="anchor" id="acbc655283421ed64e2b3a6d934f0a0a4"></a><!-- doxytag: member="RCZip::RCHfsDatabase::GetItemPath" ref="acbc655283421ed64e2b3a6d934f0a0a4" args="(int32_t index) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> RCZip::RCHfsDatabase::GetItemPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>item索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回路径 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a27c7f8e9f2c3f4f4bf8bedbbc9e536ed"></a><!-- doxytag: member="RCZip::RCHfsDatabase::LoadCatalog" ref="a27c7f8e9f2c3f4f4bf8bedbbc9e536ed" args="(IInStream *inStream, RCHfsProgressVirt *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsDatabase::LoadCatalog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d79/structRCZip_1_1RCHfsProgressVirt.html">RCHfsProgressVirt</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取日志信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3876395f44b6cc2d9e909d4b2ae07463"></a><!-- doxytag: member="RCZip::RCHfsDatabase::LoadExtentFile" ref="a3876395f44b6cc2d9e909d4b2ae07463" args="(IInStream *inStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsDatabase::LoadExtentFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取扩展文件信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb83aeaf4af22cc5df605254d0a97754"></a><!-- doxytag: member="RCZip::RCHfsDatabase::Open" ref="adb83aeaf4af22cc5df605254d0a97754" args="(IInStream *inStream, RCHfsProgressVirt *progress)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsDatabase::Open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d79/structRCZip_1_1RCHfsProgressVirt.html">RCHfsProgressVirt</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>progress</em>&nbsp;</td><td>进度接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac063a6531738a3c0c39d8142e6906784"></a><!-- doxytag: member="RCZip::RCHfsDatabase::ReadFile" ref="ac063a6531738a3c0c39d8142e6906784" args="(const RCHfsFork &amp;fork, RCByteBuffer &amp;buf, IInStream *inStream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCHfsDatabase::ReadFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/dce/structRCZip_1_1RCHfsFork.html">RCHfsFork</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>fork</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取文件 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fork</em>&nbsp;</td><td>fork信息 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>buf</em>&nbsp;</td><td>返回读取的内容 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a578c6a6baa05ae0bd2ffaad9efa11320"></a><!-- doxytag: member="RCZip::RCHfsDatabase::m_header" ref="a578c6a6baa05ae0bd2ffaad9efa11320" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html">RCHfsVolHeader</a> <a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a578c6a6baa05ae0bd2ffaad9efa11320">RCZip::RCHfsDatabase::m_header</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>头部信息 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00216">216</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c339e87c2a1ecd0ac765f75ee49efb1"></a><!-- doxytag: member="RCZip::RCHfsDatabase::m_idToIndexMap" ref="a4c339e87c2a1ecd0ac765f75ee49efb1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d9/dbf/structRCZip_1_1RCHfsIdIndexPair.html">RCHfsIdIndexPair</a>&gt; <a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a4c339e87c2a1ecd0ac765f75ee49efb1">RCZip::RCHfsDatabase::m_idToIndexMap</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>ID到索引的MAP </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00249">249</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a60c09e90373a427ac0b9df68c478d8ae"></a><!-- doxytag: member="RCZip::RCHfsDatabase::m_items" ref="a60c09e90373a427ac0b9df68c478d8ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d6/d50/structRCZip_1_1RCHfsItem.html">RCHfsItem</a>&gt; <a class="el" href="../../de/dc0/classRCZip_1_1RCHfsDatabase.html#a60c09e90373a427ac0b9df68c478d8ae">RCZip::RCHfsDatabase::m_items</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>hfs项信息 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00220">220</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

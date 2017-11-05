@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCCabTempCabInBuffer2.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c7a0d21f7a6a4580d9acf7aabeada96c.html">format</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_29d62602763667bebda326aeb64727d2.html">cab</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCCabTempCabInBuffer2.h</h1><a href="../../d7/dfb/RCCabTempCabInBuffer2_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCCabTempCabInBuffer2_h_</span>
+<a name="l00011"></a><a class="code" href="../../d7/dfb/RCCabTempCabInBuffer2_8h.html#a309a01fdc20692cc662a0f395f82aa7b">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCCabTempCabInBuffer2_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/d51/RCTypes_8h.html">base/RCTypes.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00016"></a>00016 
+<a name="l00017"></a><a class="code" href="../../dd/d8d/classRCZip_1_1RCCabTempCabInBuffer2.html">00017</a> <span class="keyword">class </span><a class="code" href="../../dd/d8d/classRCZip_1_1RCCabTempCabInBuffer2.html">RCCabTempCabInBuffer2</a>
+<a name="l00018"></a>00018 {
+<a name="l00019"></a>00019 <span class="keyword">public</span>:
+<a name="l00020"></a>00020 <span class="comment"></span>
+<a name="l00021"></a>00021 <span class="comment">    /** 读取字节</span>
+<a name="l00022"></a>00022 <span class="comment">    @return 返回读取字节值</span>
+<a name="l00023"></a>00023 <span class="comment">    */</span>
+<a name="l00024"></a>00024     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> ReadByte();
+<a name="l00025"></a>00025 <span class="comment"></span>
+<a name="l00026"></a>00026 <span class="comment">    /** 读四个字节转成32位无符号整型</span>
+<a name="l00027"></a>00027 <span class="comment">    @return 返回32位无符号整型</span>
+<a name="l00028"></a>00028 <span class="comment">    */</span>
+<a name="l00029"></a>00029     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> ReadUInt32();
+<a name="l00030"></a>00030 <span class="comment"></span>
+<a name="l00031"></a>00031 <span class="comment">    /** 读两个字节转成16位无符号整型</span>
+<a name="l00032"></a>00032 <span class="comment">    @return 返回16位无符号整型</span>
+<a name="l00033"></a>00033 <span class="comment">    */</span>
+<a name="l00034"></a>00034     <a class="code" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> ReadUInt16();
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 <span class="keyword">public</span>:
+<a name="l00037"></a>00037 <span class="comment"></span>
+<a name="l00038"></a>00038 <span class="comment">    /** 数据块头部大小</span>
+<a name="l00039"></a>00039 <span class="comment">    */</span>
+<a name="l00040"></a><a class="code" href="../../dd/d8d/classRCZip_1_1RCCabTempCabInBuffer2.html#a08b3c7ed9665ca4c25a407898973c4c4">00040</a>     <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> s_dataBlockHeaderSize = 8;
+<a name="l00041"></a>00041 <span class="comment"></span>
+<a name="l00042"></a>00042 <span class="comment">    /** 存放数据块头部的缓冲区</span>
+<a name="l00043"></a>00043 <span class="comment">    */</span>
+<a name="l00044"></a><a class="code" href="../../dd/d8d/classRCZip_1_1RCCabTempCabInBuffer2.html#a2c9c17d473b452be816281313c0aeb5e">00044</a>     <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> m_buffer[s_dataBlockHeaderSize];
+<a name="l00045"></a>00045 <span class="comment"></span>
+<a name="l00046"></a>00046 <span class="comment">    /** 位置</span>
+<a name="l00047"></a>00047 <span class="comment">    */</span>
+<a name="l00048"></a><a class="code" href="../../dd/d8d/classRCZip_1_1RCCabTempCabInBuffer2.html#a2497aac9f6af92d87e6727cd6fee650c">00048</a>     <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> m_pos;
+<a name="l00049"></a>00049 };
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="preprocessor">#endif //__RCCabTempCabInBuffer2_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

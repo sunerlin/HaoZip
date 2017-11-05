@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::IInArchive类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html">IInArchive</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::IInArchive类参考</h1><!-- doxytag: class="RCZip::IInArchive" --><!-- doxytag: inherits="RCZip::IUnknown" -->
+<p><code>#include &lt;<a class="el" href="../../d8/d7b/IArchive_8h_source.html">IArchive.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::IInArchive</div>
+<div class="dynsection">
+<div class="center"><img src="../../d8/dd4/classRCZip_1_1IInArchive__inherit__graph.png" border="0" usemap="#RCZip_1_1IInArchive_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1IInArchive_inherit__map" id="RCZip_1_1IInArchive_inherit__map">
+<area shape="rect" id="node5" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; IInArchive, ISetCompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="2012,449,2455,570"/><area shape="rect" id="node37" href="../../d3/dc0/classRCZip_1_1IUnknownImpl3.html" title="{RCZip::IUnknownImpl3\&lt; IInArchive, IInArchiveGetStream, ISetCompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl3()\l}" alt="" coords="4307,449,4896,570"/><area shape="rect" id="node45" href="../../d3/dc0/classRCZip_1_1IUnknownImpl3.html" title="{RCZip::IUnknownImpl3\&lt; IInArchive, IOutArchive, ISetCompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl3()\l}" alt="" coords="4920,449,5451,570"/><area shape="rect" id="node49" href="../../d3/dc0/classRCZip_1_1IUnknownImpl3.html" title="{RCZip::IUnknownImpl3\&lt; IInArchive, ISetCompressCodecsInfo, IArchiveVolumeType \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl3()\l}" alt="" coords="5475,449,6061,570"/><area shape="rect" id="node53" href="../../d3/dc0/classRCZip_1_1IUnknownImpl3.html" title="{RCZip::IUnknownImpl3\&lt; IInArchive, ISetCompressCodecsInfo, IInArchiveGetStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl3()\l}" alt="" coords="6085,449,6675,570"/><area shape="rect" id="node57" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; IInArchive, IOutArchive, ISetCompressCodecsInfo, ISetProperties \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="6699,449,7331,570"/><area shape="rect" id="node61" href="../../d7/d70/classRCZip_1_1IUnknownImpl4.html" title="{RCZip::IUnknownImpl4\&lt; IInArchive, IOutArchive, ISetProperties, ISetCompressCodecsInfo \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl4()\l}" alt="" coords="7355,449,7987,570"/><area shape="rect" id="node65" href="../../dc/daa/classRCZip_1_1IUnknownImpl5.html" title="{RCZip::IUnknownImpl5\&lt; IInArchive, IOutArchive, ISetCompressCodecsInfo, ISetProperties, IInArchiveGetStream \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl5()\l}" alt="" coords="8011,449,8789,570"/><area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="6000,6,6147,127"/><area shape="rect" id="node7" href="../../dc/d94/classRCZip_1_1RCArjHandler.html" title="{RCZip::RCArjHandler\n|&#45; m_compressCodecsInfo\l&#45; m_archive\l&#45; m_items\l&#45; m_stream\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ Open2()\l+ SetCompressCodecsInfo()\l}" alt="" coords="5,897,261,1180"/><area shape="rect" id="node9" href="../../dc/de1/classRCZip_1_1RCCabHandler.html" title="{RCZip::RCCabHandler\n|&#45; m_compressCodecsInfo\l&#45; m_database\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l}" alt="" coords="285,919,541,1158"/><area shape="rect" id="node11" href="../../db/d24/classRCZip_1_1RCChmHandler.html" title="{RCZip::RCChmHandler\n|&#45; m_filesDatabase\l&#45; m_inStream\l&#45; m_compressCodecsInfo\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l}" alt="" coords="565,912,821,1165"/><area shape="rect" id="node13" href="../../d4/d97/classRCZip_1_1RCComHandler.html" title="{RCZip::RCComHandler\n|&#45; m_compressCodecsInfo\l&#45; m_stream\l&#45; m_db\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; GetStream()\l}" alt="" coords="845,905,1101,1173"/><area shape="rect" id="node15" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html" title="{RCZip::RCCpioHandler\n|&#45; m_cpioItems\l&#45; m_inStream\l&#45; m_compressCodecsInfo\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l}" alt="" coords="1125,912,1381,1165"/><area shape="rect" id="node17" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html" title="{RCZip::RCDebHandler\n|&#45; m_compressCodecsInfo\l&#45; m_debItems\l&#45; m_inStream\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l}" alt="" coords="1405,912,1661,1165"/><area shape="rect" id="node19" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html" title="{RCZip::RCDmgHandler\n|&#45; m_compressCodecsInfo\l&#45; m_inStream\l&#45; m_xml\l&#45; m_files\l&#45; m_fileIndices\l|+ RCDmgHandler()\l+ ~RCDmgHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; Open2()\l&#45; Base64ToByte()\l&#45; Base64ToBin()\l&#45; FindKeyPair()\l&#45; GetStringFromKeyPair()\l}" alt="" coords="1685,846,1941,1231"/><area shape="rect" id="node21" href="../../df/da3/classRCZip_1_1RCHfsHandler.html" title="{RCZip::RCHfsHandler\n|&#45; m_compressCodecsInfo\l&#45; m_stream\l&#45; m_db\l|+ RCHfsHandler()\l+ ~RCHfsHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l}" alt="" coords="1965,897,2221,1180"/><area shape="rect" id="node23" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html" title="{RCZip::RCIsoHandler\n|&#45; m_compressCodecsInfo\l&#45; m_inStream\l&#45; m_archive\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l}" alt="" coords="2245,912,2501,1165"/><area shape="rect" id="node25" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html" title="{RCZip::RCLzhHandler\n|&#45; m_compressCodecsInfo\l&#45; m_lzhItems\l&#45; m_stream\l|+ RCLzhHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l}" alt="" coords="2525,905,2781,1173"/><area shape="rect" id="node27" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html" title="{RCZip::RCLzmaHandler\n|&#45; m_compressCodecsInfo\l&#45; m_header\l&#45; m_lzma86\l&#45; m_startPosition\l&#45; m_packSize\l&#45; m_packSizeDefined\l&#45; m_stream\l&#45; m_seqStream\l|+ RCLzmaHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; GetHeaderSize()\l}" alt="" coords="2805,861,3061,1217"/><area shape="rect" id="node29" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html" title="{RCZip::RCNsisHandler\n|&#45; m_inStream\l&#45; m_inArchive\l&#45; m_compressCodecsInfo\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; GetUncompressedSize()\l&#45; GetCompressedSize()\l&#45; GetMethod()\l}" alt="" coords="3085,890,3341,1187"/><area shape="rect" id="node31" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html" title="{RCZip::RCUdfHandler\n|&#45; m_compressCodecsInfo\l&#45; m_inStream\l&#45; m_archive\l&#45; m_refs2\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; GetStream()\l&#45; UdfTimeToFileTime()\l}" alt="" coords="3365,890,3621,1187"/><area shape="rect" id="node33" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html" title="{RCZip::RCWimHandler\n|&#45; m_database\l&#45; m_volumes\l&#45; m_xmls\l&#45; m_nameLenForStreams\l&#45; m_compressCodecsInfo\l|+ RCWimHandler()\l+ ~RCWimHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; CompareFileTime()\l}" alt="" coords="3645,875,3901,1202"/><area shape="rect" id="node35" href="../../d8/df9/classRCZip_1_1RCXarHandler.html" title="{RCZip::RCXarHandler\n|&#45; m_compressCodecsInfo\l&#45; m_dataStartPos\l&#45; m_inStream\l&#45; m_xml\l&#45; m_files\l|+ RCXarHandler()\l+ ~RCXarHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; Open2()\l&#45; AddItem()\l&#45; ParseUInt64()\l&#45; ParseTime()\l&#45; ParseNumber()\l&#45; ParseSha1()\l&#45; HexToByte()\l}" alt="" coords="3925,831,4181,1246"/><area shape="rect" id="node39" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html" title="{RCZip::RCRpmHandler\n|&#45; m_compressCodecsInfo\l&#45; m_inStream\l&#45; m_pos\l&#45; m_size\l&#45; m_sig\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l+ GetStream()\l}" alt="" coords="4205,890,4461,1187"/><area shape="rect" id="node41" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html" title="{RCZip::RCSplitHandler\n|&#45; m_compressCodecsInfo\l&#45; m_subName\l&#45; m_inStreams\l&#45; m_sizes\l&#45; m_totalSize\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; GetStream()\l&#45; OpenReal()\l}" alt="" coords="4485,883,4741,1195"/><area shape="rect" id="node43" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html" title="{RCZip::RCZipSplitHandler\n|&#45; m_compressCodecsInfo\l&#45; m_subName\l&#45; m_name\l&#45; m_inStreams\l&#45; m_sizes\l&#45; m_totalSize\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l&#45; GetStream()\l}" alt="" coords="4765,883,5021,1195"/><area shape="rect" id="node47" href="../../d4/de5/classRCZip_1_1RCTarHandler.html" title="{RCZip::RCTarHandler\n|&#45; m_compressCodecsInfo\l&#45; m_items\l&#45; m_stream\l&#45; m_seqStream\l&#45; m_isGood\l&#45; m_curIndex\l&#45; m_latestIsRead\l&#45; m_latestItem\l&#45; m_phySize\l&#45; m_phySizeDefined\l&#45; m_spCopyCoder\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ UpdateItems()\l+ GetFileTimeType()\l+ SetCompressCodecsInfo()\l&#45; Open2()\l&#45; SkipTo()\l}" alt="" coords="5057,824,5313,1253"/><area shape="rect" id="node51" href="../../dc/da6/classRCZip_1_1RCRarHandler.html" title="{RCZip::RCRarHandler\n|&#45; m_compressCodecsInfo\l&#45; m_refItems\l&#45; m_items\l&#45; m_archives\l&#45; m_spInStream\l&#45; m_archiveInfo\l&#45; m_numThreads\l|+ RCRarHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l+ GetVolumeType()\l&#45; GetPackSize()\l&#45; IsSolid()\l&#45; Open2()\l}" alt="" coords="5640,846,5896,1231"/><area shape="rect" id="node55" href="../../d7/d3b/classRCZip_1_1RCZHandler.html" title="{RCZip::RCZHandler\n|&#45; m_compressCodecsInfo\l&#45; m_stream\l&#45; m_streamStartPosition\l&#45; m_packSize\l&#45; m_properties\l&#45; m_tmpFile\l&#45; m_subStream\l&#45; s_signatureSize\l|+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ SetCompressCodecsInfo()\l+ GetStream()\l&#45; IsNestedTarFile()\l}" alt="" coords="6252,861,6508,1217"/><area shape="rect" id="node59" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html" title="{RCZip::RCZipHandler\n|+ s_extFilters\l+ s_fileFilter\l&#45; m_hasExtFilters\l&#45; m_hasFileFilters\l&#45; m_zipItems\l&#45; m_zipInArchive\l&#45; m_spInStream\l&#45; m_compressCodecsInfo\l&#45; m_numThreads\l&#45; m_level\l&#45; m_mainMethod\l&#45; m_dicSize\l&#45; m_algo\l&#45; m_numPasses\l&#45; m_numFastBytes\l&#45; m_numMatchFinderCycles\l&#45; m_numMatchFinderCyclesDefined\l&#45; m_forceAesMode\l&#45; m_isAesMode\l&#45; m_aesKeyMode\l&#45; m_writeNtfsTimeExtra\l&#45; m_forseLocal\l&#45; m_forseUtf8\l|+ RCZipHandler()\l+ ~RCZipHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ UpdateItems()\l+ GetFileTimeType()\l+ SetCompressCodecsInfo()\l+ SetProperties()\l&#45; InitMethodProperties()\l* m_level\l* m_mainMethod\l* m_dicSize\l* m_algo\l* m_numPasses\l* m_numFastBytes\l* m_numMatchFinderCycles\l* m_numMatchFinderCyclesDefined\l* m_forceAesMode\l* m_isAesMode\l* m_aesKeyMode\l* m_writeNtfsTimeExtra\l* m_forseLocal\l* m_forseUtf8\l}" alt="" coords="6884,619,7145,1459"/><area shape="rect" id="node63" href="../../d4/db1/classRCZip_1_1RC7zHandler.html" title="{RCZip::RC7zHandler\n|&#45; m_inStream\l&#45; m_db\l&#45; m_passwordIsDefined\l&#45; m_numThreads\l&#45; m_crcSize\l&#45; m_binds\l&#45; m_codecsInfo\l&#45; m_fileInfoPopIDs\l|+ RC7zHandler()\l+ ~RC7zHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ UpdateItems()\l+ GetFileTimeType()\l+ SetProperties()\l+ SetCompressCodecsInfo()\l&#45; IsEncrypted()\l&#45; SetPassword()\l&#45; SetCompressionMethod()\l&#45; SetCompressionMethod()\l&#45; DoGetProperty()\l&#45; FillPopIDs()\l&#45; IsCopyMethod()\l&#45; GetUInt32FromMemLE()\l&#45; ConvertUInt32ToString()\l&#45; GetStringForSizeValue()\l&#45; GetHex()\l&#45; AddHexToString()\l&#45; SetPropFromUInt64Def()\l* Open()\l* Close()\l* GetNumberOfItems()\l* GetProperty()\l* Extract()\l* GetArchiveProperty()\l* GetNumberOfProperties()\l* GetPropertyInfo()\l* GetNumberOfArchiveProperties()\l* GetArchivePropertyInfo()\l* UpdateItems()\l* GetFileTimeType()\l* SetProperties()\l* SetCompressCodecsInfo()\l}" alt="" coords="7543,641,7799,1437"/><area shape="rect" id="node67" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html" title="{RCZip::RCBZip2Handler\n|&#45; m_stream\l&#45; m_seqStream\l&#45; m_packSize\l&#45; m_startPosition\l&#45; m_packSizeDefined\l&#45; m_compressCodecsInfo\l&#45; m_tmpFile\l&#45; m_subStream\l&#45; m_level\l&#45; m_dicSize\l&#45; m_numPasses\l&#45; m_numThreads\l|+ RCBZip2Handler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ GetStream()\l+ UpdateItems()\l+ GetFileTimeType()\l+ SetCompressCodecsInfo()\l+ SetProperties()\l&#45; InitMethodProperties()\l* m_level\l* m_dicSize\l* m_numPasses\l* m_numThreads\l}" alt="" coords="8132,773,8388,1305"/><area shape="rect" id="node69" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html" title="{RCZip::RCGZipHandler\n|&#45; m_compressCodecsInfo\l&#45; m_item\l&#45; m_startPosition\l&#45; m_headerSize\l&#45; m_packSize\l&#45; m_packSizeDefined\l&#45; m_inStream\l&#45; m_method\l&#45; m_decoder\l&#45; m_decoderSpec\l&#45; m_subStream\l&#45; m_tmpFile\l|+ RCGZipHandler()\l+ Open()\l+ Close()\l+ GetNumberOfItems()\l+ GetProperty()\l+ Extract()\l+ GetArchiveProperty()\l+ GetNumberOfProperties()\l+ GetPropertyInfo()\l+ GetNumberOfArchiveProperties()\l+ GetArchivePropertyInfo()\l+ GetStream()\l+ UpdateItems()\l+ GetFileTimeType()\l+ SetCompressCodecsInfo()\l+ SetProperties()\l&#45; OpenSeq()\l}" alt="" coords="8412,802,8668,1275"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::IInArchive合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d4/d48/classRCZip_1_1IInArchive__coll__graph.png" border="0" usemap="#RCZip_1_1IInArchive_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1IInArchive_coll__map" id="RCZip_1_1IInArchive_coll__map">
+<area shape="rect" id="node2" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="60,6,207,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d6/d73/classRCZip_1_1IInArchive-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a0f29ead2b8ea43b43c17396cdde1cd8aa6cea80215fad0e1ee32c1cae53a188d0">IID</a> =  IID_IInArchive
+ }</td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ac79e06f0e3e23287a3713d52610665b4">Open</a> (<a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *stream, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> maxCheckStartPosition, <a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a> *openArchiveCallback)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ae5b83794448dd98ee6281d407682c63e">Close</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a76964f4058a9accba200aee184519b62">GetNumberOfItems</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numItems)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ae4a70e4c5c95549f056bbc8d1d10886f">GetProperty</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> propID, <a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;value)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#aac0b755af958d4cf7552eba0125a8f33">Extract</a> (const std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &gt; &amp;indices, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> testMode, <a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *extractCallback)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a2c8f4a10be142e5c86080fda944b9d40">GetArchiveProperty</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> propID, <a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;value)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a96717329d292375a4493ec852c9fbc97">GetNumberOfProperties</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numProperties)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ab336b522c8bbb635857f5203421607bb">GetPropertyInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;name, <a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;propID, <a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;varType)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#ae6593b4ff5dd64ee4cdefed4c5c90a0b">GetNumberOfArchiveProperties</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;numProperties)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a3c0816751af7edd7f344ae1af1807618">GetArchivePropertyInfo</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;name, <a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;propID, <a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;varType)=0</td></tr>
+<tr><td colspan="2"><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d95/classRCZip_1_1IInArchive.html#a9e36410e29a92eb5403f63e054ec9a16">~IInArchive</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>输入文档接口 </p>
+
+<p>在文件<a class="el" href="../../d8/d7b/IArchive_8h_source.html">IArchive.h</a>第<a class="el" href="../../d8/d7b/IArchive_8h_source.html#l00379">379</a>行定义。</p>
+<hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a0f29ead2b8ea43b43c17396cdde1cd8a"></a><!-- doxytag: member="RCZip::IInArchive::@31" ref="a0f29ead2b8ea43b43c17396cdde1cd8a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>接口ID </p>
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a0f29ead2b8ea43b43c17396cdde1cd8aa6cea80215fad0e1ee32c1cae53a188d0"></a><!-- doxytag: member="IID" ref="a0f29ead2b8ea43b43c17396cdde1cd8aa6cea80215fad0e1ee32c1cae53a188d0" args="" -->IID</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../d8/d7b/IArchive_8h_source.html">IArchive.h</a>第<a class="el" href="../../d8/d7b/IArchive_8h_source.html#l00386">386</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a9e36410e29a92eb5403f63e054ec9a16"></a><!-- doxytag: member="RCZip::IInArchive::~IInArchive" ref="a9e36410e29a92eb5403f63e054ec9a16" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::IInArchive::~IInArchive </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+<p>在文件<a class="el" href="../../d8/d7b/IArchive_8h_source.html">IArchive.h</a>第<a class="el" href="../../d8/d7b/IArchive_8h_source.html#l00466">466</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ae5b83794448dd98ee6281d407682c63e"></a><!-- doxytag: member="RCZip::IInArchive::Close" ref="ae5b83794448dd98ee6281d407682c63e" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::Close </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>关闭文档 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a788a7adb67fb3a8c79735a38d4d25794">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#a19cd4d411787e8304c4fc42ee590d546">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a7ccf06ec291bce0dff8cec83348057f5">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#aa60490d24efdceba92f3a8d4036476cd">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a0f577c7d9279b50d5dd77327d51bd127">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#a907351b2f0c1cc650424eabf13847211">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#a0b31a631e7adf2dc967f63d6475bf786">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#ab9f01e23a9e657513bb15800507e6302">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#a1e364fcb78ab207866ffcf58b137ceaf">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#a104111037e531a316779cd1851c2dc8b">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#af422411673dabf62e0ca077d28b24545">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a274fec59b3ca657eaa5751bdd17edd97">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#af5ca742f804f6c0495fe831fb0b32054">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#ad1cf6ab83ca6f460c685fbd5c5f8e7a6">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#abca8cacf0021a33102bb74845f4017a5">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#a068e8c99d5524dc278bce3328f26f9cd">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#a352e54d42173e9c6f427bdf346fc9556">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#a43c94caf019fc41adfe3881074bd4e0a">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#a090832b06b18f10e18e2e1c2b37cb38d">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#a952180388bcc0308890fb37ff53240dc">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#ab02f55943f0a98ad82fc701982d3eeb8">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#a252300c32faa831dcf9ad92e8da595ce">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#ace76addfae81aa2c68f7be878eee7d59">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a1602d68da6769add1467196330be8652">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#ad49da2f3dcaebc0ab1290d0498008191">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="aac0b755af958d4cf7552eba0125a8f33"></a><!-- doxytag: member="RCZip::IInArchive::Extract" ref="aac0b755af958d4cf7552eba0125a8f33" args="(const std::vector&lt; uint32_t &gt; &amp;indices, int32_t testMode, IArchiveExtractCallback *extractCallback)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::Extract </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>testMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html">IArchiveExtractCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>extractCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>indices</em>&nbsp;</td><td>需要解压的Item 下标数组，如果数组内容为空表示解压全部内容 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>testMode</em>&nbsp;</td><td>1为测试模式，0 为正常解压模式 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>extractCallback</em>&nbsp;</td><td>解压回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a4958b5c076927001e72c852328246a26">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#a577365b00d9aba5d59d8780966101586">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a334a0e43b672bf2942fb2c0123aa5241">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#a3181257b72cd9f5a424f940dc8f393ae">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a769f1a60d39edd7e1c8cd17da824fc4b">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#afedc434a06f1a7af908ff88a60168c27">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#a9f3b69eb6cd7b3553a88138e34a2dde0">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a7ce2cc686c33e8605000361a2b802037">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#a230ecf05c57ceef6b0d90d3d8e9dafdc">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#a615ad9cf5cf9dcaaaed9b35e7a8180ce">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a0d8dd3eb939d84dac49ed5eb6a2b8462">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a432833620b376f06a5c549bc1e55be75">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#a14382eb05d27265faafafce73969cd7b">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a82f45b9e48da936825bee43b77ad0c1c">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#af27f416014a635da9cbcae9787e88a01">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#ac130c0e5f6492577a7bb15e831edb47c">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#abd1cef79d42dfed294ea60ba951b6b71">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#aedb2b39723c7a09f06ee625a35953392">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#abad55a765a59af385cea57f8fdf6acaa">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#a102a839377a227ce2cd01a5c3d114a2f">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a28ffc7ad0049044dc7bf029df8744730">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#a932fab423c6ed8f950ab7a90de95611e">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#ab7ad8df1e9dbe25054bdf8c62a567815">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a3e421ca651918e1c757cb7796bc1b860">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#a43d46c53b52919b5a8e9f499426437b6">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c8f4a10be142e5c86080fda944b9d40"></a><!-- doxytag: member="RCZip::IInArchive::GetArchiveProperty" ref="a2c8f4a10be142e5c86080fda944b9d40" args="(RCPropertyID propID, RCVariant &amp;value)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::GetArchiveProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a>&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文档属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>属性值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a9b3506933bcc1e1e7bced799ab603ac5">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#a736c0be2ad31574d6ffaf80175814042">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a5f95358c928c221752e38e9f96441378">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#a524c36ea4e79e6a139a8f707936ae06a">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a8d3fe6e5d9a1c76b2f1ef287148d42d6">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#a2e39d5457279231c9517c6f6b5df59dd">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#ab5fe5bb47898a1c3172c4cbe064f9345">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#ad7504d12db01ad6b369e3b25a94d23d7">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#aff04ebef63291c2b11554aed2f9df45f">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#a924b18f367a7557dd355cf2e2a230db1">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a274c25f27c74afcf226b5f040104a4cb">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a13fe044cc4ccefe623971c29582ead7a">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#a553eb3331c5a1cb1e444d2d5deec3b8e">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a0f2f817c193ce555a648d9b9f4e4e73c">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#a9453a3b682310d7cb497b34166ce1e04">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#ad672ef878f75ddf21446893d82a44190">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#a25466ff66abeb06ba1647e4dd1f39397">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#a45a3803d9e6377df76a2295b9fcb6b21">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#a20cbfa52b676a24306310bf17a8562ad">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#aec6e5c36aba31c99fca3cfba3e6bc625">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a046446ad9162776c185c2962c9119670">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#a133c2586a4f620b3c5eee119b570651e">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#ae57417a62aa2a3f29edc4a60ec7bc9b2">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#ad25258d3b4cdd88bd352db31ff43be10">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#ab0623187efeb12835e4b4022497fb6cf">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c0816751af7edd7f344ae1af1807618"></a><!-- doxytag: member="RCZip::IInArchive::GetArchivePropertyInfo" ref="a3c0816751af7edd7f344ae1af1807618" args="(uint32_t index, RCString &amp;name, RCPropertyID &amp;propID, RCVariantType::RCVariantID &amp;varType)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::GetArchivePropertyInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>varType</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文档属性信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>属性下标值 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>返回属性名称 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>返回属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>varType</em>&nbsp;</td><td>返回属性类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a1da0cfd1a163c9f7cade60031f2cc17f">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#a2c1816b50d1987c148de12c0bd9796d1">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a20602988956fd6b2e499d204f6c7674f">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#aaa60ef92de66061ccf6b757ed4392124">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a601318525608c582d144348248812fad">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#a9e8e28836d56bee101a133a82712b523">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#af7431446c2dcab036d9fceca60451b14">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a133df7a98e5e46f0122ef79b1b9375fd">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#a09ec1ec2e25948ad29e4b2af8e8a6897">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#a923b00e44b01f56255bc34293cf3d367">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a313260bf3bd301a3b6a1b5d8e85c4e31">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a4d618249bd52a2014456ca6d22c16478">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#a978b5208f38021cefab749b3f22004fc">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a42a7d7d9d136e12e597a88ac1984850d">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#a9d838496a55c401c00db520f68c52763">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#a67219bb9b5a6a22a3d7f6442b0de44e0">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#a6927854c49030ea04a7811044098a38b">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#ae8a70371f0d46b38829ad431a713f8e4">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#ae83679132f0e2d8c7c0883a91b5042f0">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#a20da81ac9843d50a6a506be0a092c184">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a0650fd12d29d2da8f976c893454a5f2d">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#aa49942ba44b7adf8deb06821bf33f1f0">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#a5524a4fa788cf12c421ab563ba2d78c8">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a4678d6f5de6f107fe7ed78d6125f1f45">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#a6c768185587d5ad1c69bac46c96463ea">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6593b4ff5dd64ee4cdefed4c5c90a0b"></a><!-- doxytag: member="RCZip::IInArchive::GetNumberOfArchiveProperties" ref="ae6593b4ff5dd64ee4cdefed4c5c90a0b" args="(uint32_t &amp;numProperties)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::GetNumberOfArchiveProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numProperties</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取文档属性个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numProperties</em>&nbsp;</td><td>返回属性个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#aa90dd04afd293e4cc417fe15266a28fe">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#af64e93d4d8d0421fe0ba2f415b16671f">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a30d4995cd0ab8db6cbd2b547d229e086">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#a20d68524fa6783ed89f513595555a060">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#ae71da19c8f8f22623c05ee371bbe6abb">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#af17d195579eba949290b18257456e0b1">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#af4398958f6d61732a11e611ab5c36431">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a872678e4d4ada98bdf94b1abdefad934">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#a94ad4b736523ca57b6bc86a91473728e">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#aed23ad0ea3dfead9acf96a5119220a39">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a5ac182dcd11c3a2f159e22b698ddb2ab">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a7bfd62a4062336f44ee80175e866d034">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#a7077204f4f507e736ae48e75c81863ae">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a7c7b2a2489fe5b9bcc2319ef1534d078">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#a6d050b12c162d45ab0aa273636133fad">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#a33f0a201c92ce50058fc0fd028bc837e">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#a0fcf015fc5886c417e5909a6d387b1f7">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#a5cc16817157efee1e9aad7b4377af24e">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#aa43cfd17c852b57e7b02a737f6978287">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#ae2003b3a445a6fef53188071480ce272">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a415c15a5cc677e8bd0484dbbe47a789f">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#a344ef69465af1f3e960bf4202b3830ca">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#acff57446adc338a3e99a8e5260f56146">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a3d82fe770abf309d70a704abc1922e6d">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#a989d3e1b5ea2de2806be3e6da710cde5">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a76964f4058a9accba200aee184519b62"></a><!-- doxytag: member="RCZip::IInArchive::GetNumberOfItems" ref="a76964f4058a9accba200aee184519b62" args="(uint32_t &amp;numItems)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::GetNumberOfItems </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numItems</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取内容个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numItems</em>&nbsp;</td><td>返回文档内容个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a946c7decbd1d4c3d01f3c5298faf5458">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#aef10119b664d0905323380bde4513f1c">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a726c89cd0db26ded0ec0c1be3397f98e">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#a992f53e69d4613b3ffad0bb9da31d2bd">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#aebb04fd1a728b7f856bd3c8610a84ab4">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#a65a7ab2729f6b12b1ea843bca76f9573">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#aa649483af03bda7b465031cc1dfe726b">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a8bf17959ce0ef9cfae3de1db569e4946">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#a55d41e6fd972ebe2419a9139cf47f764">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#a076e4395141ff82661f0e0cfc2342f21">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a56611acafcaf8a6584024e0d88388d6e">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a1afd260fc997e03cc79f119285b100c6">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#aeefae2be770046b05b8228fec951d9af">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a995b8d003c8f82b7dc85c75c0fde8109">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#ae8d10e31a7e2bfa1fba0745a3d23d205">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#acc0166ab7f5a40ca29dd403ab40ba27b">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#ad518573f90b5dc6a06e24d0d85be316c">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#af4a31ec79013ff8f0edf17ac0a369aba">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#ac470c88bd22d4379c9fbc39d55f1afe6">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#a8e18be1bcfea05747adcfed52dcbaba0">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a1a82f03126201611732b5f0bca24de53">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#a9fbe9749bb7cd90360d72da10daa6a64">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#ae9eb37f42095adf82e107a34863c6f9a">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a357b43dbc2d789afa2f2bc8b17e692b8">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#aacf93c22dcd4c8a445f8d1df6b885d5f">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a96717329d292375a4493ec852c9fbc97"></a><!-- doxytag: member="RCZip::IInArchive::GetNumberOfProperties" ref="a96717329d292375a4493ec852c9fbc97" args="(uint32_t &amp;numProperties)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::GetNumberOfProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>numProperties</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取属性个数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>numProperties</em>&nbsp;</td><td>返回属性个数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a501defbd897720b4efdea6c512c68139">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#aab03d2d0096c6a450593ea2221d198e7">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#aa17fca5b1df4e32b84f14669ec5c1027">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#a7abab7b25348305b8904a36d5e6b227d">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a07b4c630f21d7358fa481b3531eb5d95">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#a14482ae27e0474a0af04cbce2e579f28">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#ac467234530ae71ca4cba6425fe473468">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a459955368697f74ecd4782c9d6b33194">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#ad9167a86152865d566805bcc4716c3b1">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#a8f1d4b89e17d72f58b29c81258ec666f">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a3355abafd9dd6625f84bac6fcb440bea">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a0ace046388d82d403b724e6c65f41898">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#a520fe2884287de5a47f57a404818c47b">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a9b84275af2f25e351509525a12f7937e">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#a564e6d8b0730ebd9292c67c3840074e6">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#a193c270a3f0ef4c453a69b7e3334484a">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#aa8979959377eeb13818805a1dbe57054">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#a58353f8a229dd6578198315bdd29c6df">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#a25fd14c5a740cf0080b6d8980e4368a3">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#acb9169998903ea870200068a51befc0d">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a984b0be441bf215cc8a1776d6f51ce16">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#a90c9b2ba3f54f95c97cea625dc0ec123">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#a5d0c0453b71561377eb70962d0bf5f50">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a763c4ca01877ad87c4a12e56881ce24c">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#ab08bb479dc5364e7c3da0c8b753b01f3">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4a70e4c5c95549f056bbc8d1d10886f"></a><!-- doxytag: member="RCZip::IInArchive::GetProperty" ref="ae4a70e4c5c95549f056bbc8d1d10886f" args="(uint32_t index, RCPropertyID propID, RCVariant &amp;value)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::GetProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a>&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d66/classRCZip_1_1RCVariant.html">RCVariant</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取属性 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>属性的下标 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>属性值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#ae51b7d7ec578e3ac97678b996d243a02">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#aced4199ceaa8d4353502e96c99400216">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a03cd9a0491f0626c92eafb08dacb141d">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#ad12878d4351bd28f38d704e6999cea66">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a4067a6999d42f3cdba6c6f177059aff3">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#a1780cc813b9e05d437d36010a7e6ee8d">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#a3c0641f353247f2d6e16deb46e30b9f0">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a549c7bcbeab9950123ba23b6a756123b">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#ada02558c07116d07f26580abf8c5ef06">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#a0a4cee6d8267476d1f3c0514e441c09b">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#ac8964a9c4b1a9dcc3400c431e3a84341">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a4e90416905cf054a5539dce48a8f6065">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#a529403f8322809d433f1b84f6b3f3934">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a1f63c14318346526b5d91a47649e2143">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#a9c29f0f1af1c374087ae1d5236463bcd">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#a061929767b8743490277dd9855068b04">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#adaa06a4f0c9415ef872d2b3a77495121">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#a424fb0a42605454d487ef35d15ac9fc8">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#a8e10126db512d449f3f17336fea6d30a">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#a5c62f8e6ef319636705bf3de21256c56">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a7bd37f317711bfbafc0700d06bdd2e32">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#ad92bea71d4c8fbda9b778ac286a6b287">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#a023a95a2dfe72fb72a0c17a5cdb95128">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a6993afd78f91a8055eaf71650261fad9">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#a5fb46f9ea88525033be314e02746229e">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab336b522c8bbb635857f5203421607bb"></a><!-- doxytag: member="RCZip::IInArchive::GetPropertyInfo" ref="ab336b522c8bbb635857f5203421607bb" args="(uint32_t index, RCString &amp;name, RCPropertyID &amp;propID, RCVariantType::RCVariantID &amp;varType)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::GetPropertyInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>propID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d1f/classRCZip_1_1RCVariantType.html#a47bf4f56ed0a56a59e18ddda60430b2b">RCVariantType::RCVariantID</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>varType</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取属性信息 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>属性下标值 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>name</em>&nbsp;</td><td>返回属性名称 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>propID</em>&nbsp;</td><td>返回属性ID </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>varType</em>&nbsp;</td><td>返回属性类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a931d26477683a99f5636772c041efdb1">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#a8a84ed0bec250c36d7cdf0fa19b488a5">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#a0ab5d184487222975eaadd2ecdf2a788">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#a5ee8fa5ca6a9d52d5ceb3c32e5a89db4">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a9eb24d226a37248e1f7fe51411b9bf20">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#a23a532c2c16ee7455b9799ccfefd590b">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#a9272ef0bf159453c457f4f2a98ad83f4">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a94fcaa28e6cc8fcdab92a8835b43a9fb">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#a8ae6665c7415e3273d744fbbbe00b29a">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#aa866fa83613cc4667116235cbf1439f2">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#a169954170bd668675ba40df5fb0560b3">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#ab0c6191afd8895b62fc927e1c96d4702">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#aeaa5240ccdda7310e897287d139ccf92">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#a428a58ec1f061f493dbdc9d4318c0676">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#a1c5359658323579b6a8bc5f936bd7a02">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#a89e477579e57658ae47aa5894dc31b41">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#ad069665ea21ade9a982823fff6806eb0">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#a558a1fb69d208a7e2bc3556fd52bddbe">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#ab3db4514ff85efc251300301846fae0c">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#aee6a1329339ee5ebb3428daabb5f29d6">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#a80e3757c19f01a8cc17f3c9b98e8cc24">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#ac7b6edb17b30227ff45a5c96a7e0bf96">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#a2ad709964924c3175cc02659d8140e69">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a2c71c8b1604edde8173691dae7b4f88f">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#a3ff8b2e1080dcbee42d0464f10e6578c">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac79e06f0e3e23287a3713d52610665b4"></a><!-- doxytag: member="RCZip::IInArchive::Open" ref="ac79e06f0e3e23287a3713d52610665b4" args="(IInStream *stream, uint64_t maxCheckStartPosition, IArchiveOpenCallback *openArchiveCallback)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::IInArchive::Open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/da6/classRCZip_1_1IInStream.html">IInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>maxCheckStartPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>openArchiveCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stream</em>&nbsp;</td><td>输入流接口 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>maxCheckStartPosition</em>&nbsp;</td><td>查找文件格式签名的最大偏移位置 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openArchiveCallback</em>&nbsp;</td><td>打开文档回调接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>在<a class="el" href="../../d4/db1/classRCZip_1_1RC7zHandler.html#a0ce7345a07433578de59d326ad5bf1e2">RCZip::RC7zHandler</a>、<a class="el" href="../../dc/d94/classRCZip_1_1RCArjHandler.html#af7df3a4a321caad74cd2b1e53a953254">RCZip::RCArjHandler</a>、<a class="el" href="../../d0/d7d/classRCZip_1_1RCBZip2Handler.html#aff3c4f3f8dd76dab79c5d90f7442d1ae">RCZip::RCBZip2Handler</a>、<a class="el" href="../../dc/de1/classRCZip_1_1RCCabHandler.html#ab34196f8cc49d14076cc6625bfb7c196">RCZip::RCCabHandler</a>、<a class="el" href="../../db/d24/classRCZip_1_1RCChmHandler.html#a495958943e1c9a2f9d9a18370f7154f1">RCZip::RCChmHandler</a>、<a class="el" href="../../d4/d97/classRCZip_1_1RCComHandler.html#af46522d38c587b161daa2c22c6dfa7a3">RCZip::RCComHandler</a>、<a class="el" href="../../d3/d28/classRCZip_1_1RCCpioHandler.html#a88303e557fc9cb277a75d9c17e50c3a0">RCZip::RCCpioHandler</a>、<a class="el" href="../../d3/d4e/classRCZip_1_1RCDebHandler.html#a2e8ec6c56cd9bfc0e877a9b1ba108993">RCZip::RCDebHandler</a>、<a class="el" href="../../d8/da1/classRCZip_1_1RCDmgHandler.html#a5942de3bf1eb6e9f0c33e0568df8d0ab">RCZip::RCDmgHandler</a>、<a class="el" href="../../d0/ded/classRCZip_1_1RCGZipHandler.html#acdf172250da7d57d49bc5c9428e0099b">RCZip::RCGZipHandler</a>、<a class="el" href="../../df/da3/classRCZip_1_1RCHfsHandler.html#acf8b0ca059f456e1f240ae7d83816c17">RCZip::RCHfsHandler</a>、<a class="el" href="../../dd/dc8/classRCZip_1_1RCIsoHandler.html#a5c2b35b66800b30aec9314c9d5a129c8">RCZip::RCIsoHandler</a>、<a class="el" href="../../d4/d9b/classRCZip_1_1RCLzhHandler.html#ac8171f53577fea5d4ab7c7831e13020d">RCZip::RCLzhHandler</a>、<a class="el" href="../../dd/d7d/classRCZip_1_1RCLzmaHandler.html#af97524e2fb50d79241ac6c652b7cd53f">RCZip::RCLzmaHandler</a>、<a class="el" href="../../d8/d76/classRCZip_1_1RCNsisHandler.html#add83edc80569d90ebc24f8f3d3998dbb">RCZip::RCNsisHandler</a>、<a class="el" href="../../dc/da6/classRCZip_1_1RCRarHandler.html#a63307f0863ac7bfb1c8906f768cf3419">RCZip::RCRarHandler</a>、<a class="el" href="../../d5/db4/classRCZip_1_1RCRpmHandler.html#a49076c736f956ba0b90c268ac4104d33">RCZip::RCRpmHandler</a>、<a class="el" href="../../d3/d77/classRCZip_1_1RCSplitHandler.html#a197a820adb90209966333555bbd86e5e">RCZip::RCSplitHandler</a>、<a class="el" href="../../d4/de5/classRCZip_1_1RCTarHandler.html#a52536d9ee4576915ce5bac439344a58f">RCZip::RCTarHandler</a>、<a class="el" href="../../da/d9d/classRCZip_1_1RCUdfHandler.html#aba645a964421f782a78d1d9b26fb62e4">RCZip::RCUdfHandler</a>、<a class="el" href="../../dc/ddc/classRCZip_1_1RCWimHandler.html#aed49a918792366d4cc7646ab3ca69a04">RCZip::RCWimHandler</a>、<a class="el" href="../../d8/df9/classRCZip_1_1RCXarHandler.html#af7690c8415a22f797ce307729bb23afc">RCZip::RCXarHandler</a>、<a class="el" href="../../d7/d3b/classRCZip_1_1RCZHandler.html#a732d19ea23614373e7257148e22b02b5">RCZip::RCZHandler</a>、<a class="el" href="../../d0/dcb/classRCZip_1_1RCZipHandler.html#a0145a7289afa2d545ec39df2f1dec3cd">RCZip::RCZipHandler</a>及<a class="el" href="../../d9/d18/classRCZip_1_1RCZipSplitHandler.html#adae19f0ededd0c89500dd9d4752062c1">RCZip::RCZipSplitHandler</a>内被实现。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d8/d7b/IArchive_8h_source.html">IArchive.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

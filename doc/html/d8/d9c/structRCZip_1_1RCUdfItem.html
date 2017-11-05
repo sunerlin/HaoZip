@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCUdfItem结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html">RCUdfItem</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCUdfItem结构参考</h1><!-- doxytag: class="RCZip::RCUdfItem" -->
+<p><code>#include &lt;<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCUdfItem合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d5/d6d/structRCZip_1_1RCUdfItem__coll__graph.png" border="0" usemap="#RCZip_1_1RCUdfItem_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCUdfItem_coll__map" id="RCZip_1_1RCUdfItem_coll__map">
+<area shape="rect" id="node2" href="../../d3/db6/classRCZip_1_1RCBuffer.html" title="{RCZip::RCBuffer\&lt; byte_t \&gt;\n|# m_capacity\l# m_data\l# m_dataLen\l|+ RCBuffer()\l+ RCBuffer()\l+ RCBuffer()\l+ ~RCBuffer()\l+ operator=()\l+ GetCapacity()\l+ SetCapacity()\l+ Free()\l+ data()\l+ data()\l+ SetDataLength()\l+ GetDataLength()\l+ operator[]()\l}" alt="" coords="11,5,211,288"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d5/dc9/structRCZip_1_1RCUdfItem-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a598d81d4823cef95d0c254cb1069e5cf">Parse</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *buf)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a80af7df5596dfeb85a5e2f6b4ce761e4">IsRecAndAlloc</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a2ba625e3d8cfe65a3552f2e2ac5334c4">GetChunksSumSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#af9005073ccd02c5d89791434510a5a9d">CheckChunkSizes</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a14f7a5b23bce9b3326af80ff2d150fc9">IsDir</a> () const </td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCUdfIcbTag&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#ae047328d3a2e459ae9fb5f0d152b8271">m_icbTag</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#ac92da5914c1f42f65dd132f0ca89639a">m_size</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#aac5310b45522bb37cb3977c3afa184f9">m_numLogBlockRecorded</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCUdfTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#abcbbec84c5f35a31862026a9017703f8">m_aTime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCUdfTime&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a35332ea7f9a2fd837af320f3d506dfaf">m_mTime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a9202b696037784667a594bf5c98b2be3">m_isInline</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a9a7fb64122fb0887f5c4500dc1104e25">m_inlineData</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/d06/structRCZip_1_1RCUdfMyExtent.html">RCUdfMyExtent</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a7aab084de3d245f6a016a18802f79328">m_extents</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#ab2c61b7f62f63359fed5f9c41fdd81a5">m_subFiles</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Udf 项 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00077">77</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="af9005073ccd02c5d89791434510a5a9d"></a><!-- doxytag: member="RCZip::RCUdfItem::CheckChunkSizes" ref="af9005073ccd02c5d89791434510a5a9d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCUdfItem::CheckChunkSizes </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查Chunk大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>正确返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ba625e3d8cfe65a3552f2e2ac5334c4"></a><!-- doxytag: member="RCZip::RCUdfItem::GetChunksSumSize" ref="a2ba625e3d8cfe65a3552f2e2ac5334c4" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCUdfItem::GetChunksSumSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>返回Chunk总大小 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回Chunk总大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a14f7a5b23bce9b3326af80ff2d150fc9"></a><!-- doxytag: member="RCZip::RCUdfItem::IsDir" ref="a14f7a5b23bce9b3326af80ff2d150fc9" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCUdfItem::IsDir </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是目录 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>目录返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a80af7df5596dfeb85a5e2f6b4ce761e4"></a><!-- doxytag: member="RCZip::RCUdfItem::IsRecAndAlloc" ref="a80af7df5596dfeb85a5e2f6b4ce761e4" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCUdfItem::IsRecAndAlloc </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否为Rec </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>Rec返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a598d81d4823cef95d0c254cb1069e5cf"></a><!-- doxytag: member="RCZip::RCUdfItem::Parse" ref="a598d81d4823cef95d0c254cb1069e5cf" args="(const byte_t *buf)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCUdfItem::Parse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>buf</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分析 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>buf</em>&nbsp;</td><td>数据缓存 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="abcbbec84c5f35a31862026a9017703f8"></a><!-- doxytag: member="RCZip::RCUdfItem::m_aTime" ref="abcbbec84c5f35a31862026a9017703f8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCUdfTime <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#abcbbec84c5f35a31862026a9017703f8">RCZip::RCUdfItem::m_aTime</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>访问时间 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00093">93</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7aab084de3d245f6a016a18802f79328"></a><!-- doxytag: member="RCZip::RCUdfItem::m_extents" ref="a7aab084de3d245f6a016a18802f79328" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../dc/d06/structRCZip_1_1RCUdfMyExtent.html">RCUdfMyExtent</a>&gt; <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a7aab084de3d245f6a016a18802f79328">RCZip::RCUdfItem::m_extents</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>extent 列表 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00109">109</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae047328d3a2e459ae9fb5f0d152b8271"></a><!-- doxytag: member="RCZip::RCUdfItem::m_icbTag" ref="ae047328d3a2e459ae9fb5f0d152b8271" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCUdfIcbTag <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#ae047328d3a2e459ae9fb5f0d152b8271">RCZip::RCUdfItem::m_icbTag</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>icb Tag </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00081">81</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a7fb64122fb0887f5c4500dc1104e25"></a><!-- doxytag: member="RCZip::RCUdfItem::m_inlineData" ref="a9a7fb64122fb0887f5c4500dc1104e25" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/db6/classRCZip_1_1RCBuffer.html">RCByteBuffer</a> <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a9a7fb64122fb0887f5c4500dc1104e25">RCZip::RCUdfItem::m_inlineData</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据缓存 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00105">105</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9202b696037784667a594bf5c98b2be3"></a><!-- doxytag: member="RCZip::RCUdfItem::m_isInline" ref="a9202b696037784667a594bf5c98b2be3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a9202b696037784667a594bf5c98b2be3">RCZip::RCUdfItem::m_isInline</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否内联 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00101">101</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a35332ea7f9a2fd837af320f3d506dfaf"></a><!-- doxytag: member="RCZip::RCUdfItem::m_mTime" ref="a35332ea7f9a2fd837af320f3d506dfaf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCUdfTime <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#a35332ea7f9a2fd837af320f3d506dfaf">RCZip::RCUdfItem::m_mTime</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>修改时间 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00097">97</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aac5310b45522bb37cb3977c3afa184f9"></a><!-- doxytag: member="RCZip::RCUdfItem::m_numLogBlockRecorded" ref="aac5310b45522bb37cb3977c3afa184f9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#aac5310b45522bb37cb3977c3afa184f9">RCZip::RCUdfItem::m_numLogBlockRecorded</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>块记录 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00089">89</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac92da5914c1f42f65dd132f0ca89639a"></a><!-- doxytag: member="RCZip::RCUdfItem::m_size" ref="ac92da5914c1f42f65dd132f0ca89639a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#ac92da5914c1f42f65dd132f0ca89639a">RCZip::RCUdfItem::m_size</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>大小 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00085">85</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2c61b7f62f63359fed5f9c41fdd81a5"></a><!-- doxytag: member="RCZip::RCUdfItem::m_subFiles" ref="ab2c61b7f62f63359fed5f9c41fdd81a5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&gt; <a class="el" href="../../d8/d9c/structRCZip_1_1RCUdfItem.html#ab2c61b7f62f63359fed5f9c41fdd81a5">RCZip::RCUdfItem::m_subFiles</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>sub File 列表 </p>
+
+<p>在文件<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a>第<a class="el" href="../../d6/d69/RCUdfFile_8h_source.html#l00113">113</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d6/d69/RCUdfFile_8h_source.html">RCUdfFile.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

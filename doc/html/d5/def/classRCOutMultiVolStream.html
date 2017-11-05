@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCOutMultiVolStream类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>RCOutMultiVolStream类参考</h1><!-- doxytag: class="RCOutMultiVolStream" -->
+<p><code>#include &lt;<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>&gt;</code></p>
+<div class="dynheader">
+RCOutMultiVolStream合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d9/d6b/classRCOutMultiVolStream__coll__graph.png" border="0" usemap="#RCOutMultiVolStream_coll__map" alt="Collaboration graph"/></div>
+<map name="RCOutMultiVolStream_coll__map" id="RCOutMultiVolStream_coll__map">
+<area shape="rect" id="node2" href="../../dc/d14/classRCTempFiles.html" title="{RCTempFiles\n|&#45; m_paths\l|+ RCTempFiles()\l+ ~RCTempFiles()\l+ GetPaths()\l+ GetPaths()\l&#45; Clear()\l}" alt="" coords="37,5,179,141"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d5/dc8/classRCOutMultiVolStream-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d80/structRCOutMultiVolStream_1_1RCSubStreamInfo.html">RCSubStreamInfo</a></td></tr>
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a7ca267d07de6e56562dc6fa546f62381">RCOutMultiVolStream</a> (IOutStreamEvent *outStreamEvent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a44dd9c4d51c1dc8e2bf4a3bb6aed462c">Init</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a8596cdb5bfe5e74d428b0f4854ccf658">Close</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#aba8a3eb3f7b4fec117f95d7f96ee0065">Write</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a835277f0ad08ef561d23fbac758db8b7">Seek</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> offset, RC_STREAM_SEEK seekOrigin, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *newPosition)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a6467b85b51b12e084ce2f2d73aeabf9d">SetSize</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> newSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a4d7ad6239fbb1e1286dcdc79fa16829f">GetCurVolIndex</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;volIndex)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ac734f242c5751194257e6afa6dfc3d39">GetCurVolFreeByte</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;freeByte)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#af7051f51cf95713e3c786823e2d5f1d8">GetCurVolPosition</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;position)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a04b23c9b3d75ac24f94366d5aefc7925">ForceStartNextVol</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a6f731ef5fd6da12f5be91e4f8eeaea6e">CheckDataAcrossVol</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> beginPos, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> dataLen, bool &amp;result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a48e17c753944d86b110e585b5e659d67">GetVolumeCount</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;volCount)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a2a6bfcdd220fe6ca6d1547eda01fed26">SetToZipMultiVolFormat</a> (bool toZip)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ad42ac00e52e52a7e357d64190ea43191">SetAutoRename</a> (bool isAutoRename)</td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCVector&lt; <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a7e20181b4d7cd77ab370e01a9692dd6c">m_sizes</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a903f1cc8acf5450725fed6595b0a3f7f">m_prefix</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a5547f0ee9724aca2de8951d3f447a884">m_tempFiles</a></td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a7025ec15100c74c5c36a2ea9f53b5acd">Write7zMultiVolImpl</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ad8ab4a6e48e04b29706ba3ac2fdefe06">WriteZipMultiVolImpl</a> (const void *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *processedSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a4e121788589db473a7417319110230b6">RenameSingleVolumn</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ae1155118d7a0e601e8d6d7363b1f9f8f">RenameLastZipVolume</a> (void)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#aaa8833b2c8c5b39defff3b5e566502fa">m_streamIndex</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a1fa8c8f67e3d442192a7edbfccda10c9">m_offsetPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#acf3df491403865fc45940c79662c6257">m_absPos</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ae079f35bbe1402a244a5c3a42343a8d2">m_length</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">RCVector&lt; <a class="el" href="../../de/d80/structRCOutMultiVolStream_1_1RCSubStreamInfo.html">RCSubStreamInfo</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ac1d25c44dde255810cf5d2fd47f7690a">m_streams</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">IOutStreamEvent *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a56ab2efff6ff1bc13134f33da8bb364b">m_outStreamEvent</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#acc963049045f746464011b9e7240065c">m_isAutoRename</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a00e5b61fe948a47f2c9f03b9d4e0be2d">m_isZipSplit</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>分卷输出流实现 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00029">29</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a7ca267d07de6e56562dc6fa546f62381"></a><!-- doxytag: member="RCOutMultiVolStream::RCOutMultiVolStream" ref="a7ca267d07de6e56562dc6fa546f62381" args="(IOutStreamEvent *outStreamEvent)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCOutMultiVolStream::RCOutMultiVolStream </td>
+          <td>(</td>
+          <td class="paramtype">IOutStreamEvent *&nbsp;</td>
+          <td class="paramname"> <em>outStreamEvent</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>构造函数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>outStreamEvent</em>&nbsp;</td><td>分卷流输出事件接口指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a6f731ef5fd6da12f5be91e4f8eeaea6e"></a><!-- doxytag: member="RCOutMultiVolStream::CheckDataAcrossVol" ref="a6f731ef5fd6da12f5be91e4f8eeaea6e" args="(uint64_t beginPos, uint64_t dataLen, bool &amp;result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::CheckDataAcrossVol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>beginPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>dataLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>result</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查从某位置开始的一段数据是否跨卷 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>beginPos</em>&nbsp;</td><td>起始位置 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dataLen</em>&nbsp;</td><td>数据长度 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>result</em>&nbsp;</td><td>跨卷返回true,否则返回false </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8596cdb5bfe5e74d428b0f4854ccf658"></a><!-- doxytag: member="RCOutMultiVolStream::Close" ref="a8596cdb5bfe5e74d428b0f4854ccf658" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::Close </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>关闭 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a04b23c9b3d75ac24f94366d5aefc7925"></a><!-- doxytag: member="RCOutMultiVolStream::ForceStartNextVol" ref="a04b23c9b3d75ac24f94366d5aefc7925" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::ForceStartNextVol </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>迫使从新卷开始写文件 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac734f242c5751194257e6afa6dfc3d39"></a><!-- doxytag: member="RCOutMultiVolStream::GetCurVolFreeByte" ref="ac734f242c5751194257e6afa6dfc3d39" args="(uint64_t &amp;freeByte)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::GetCurVolFreeByte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>freeByte</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得当前卷可写字节数 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>freeByte</em>&nbsp;</td><td>返回当前卷可写字节数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4d7ad6239fbb1e1286dcdc79fa16829f"></a><!-- doxytag: member="RCOutMultiVolStream::GetCurVolIndex" ref="a4d7ad6239fbb1e1286dcdc79fa16829f" args="(uint32_t &amp;volIndex)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::GetCurVolIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>volIndex</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得当前正在输出的卷编号 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>volIndex</em>&nbsp;</td><td>返回当前卷编号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af7051f51cf95713e3c786823e2d5f1d8"></a><!-- doxytag: member="RCOutMultiVolStream::GetCurVolPosition" ref="af7051f51cf95713e3c786823e2d5f1d8" args="(uint64_t &amp;position)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::GetCurVolPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>position</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得当前卷偏移量 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>position</em>&nbsp;</td><td>返回当前卷的文件偏移量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48e17c753944d86b110e585b5e659d67"></a><!-- doxytag: member="RCOutMultiVolStream::GetVolumeCount" ref="a48e17c753944d86b110e585b5e659d67" args="(uint32_t &amp;volCount)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::GetVolumeCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>volCount</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>取得分卷数量 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>volCount</em>&nbsp;</td><td>分卷数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a44dd9c4d51c1dc8e2bf4a3bb6aed462c"></a><!-- doxytag: member="RCOutMultiVolStream::Init" ref="a44dd9c4d51c1dc8e2bf4a3bb6aed462c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCOutMultiVolStream::Init </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1155118d7a0e601e8d6d7363b1f9f8f"></a><!-- doxytag: member="RCOutMultiVolStream::RenameLastZipVolume" ref="ae1155118d7a0e601e8d6d7363b1f9f8f" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCOutMultiVolStream::RenameLastZipVolume </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>重命名zip格式最后一个分卷名 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>重命名成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e121788589db473a7417319110230b6"></a><!-- doxytag: member="RCOutMultiVolStream::RenameSingleVolumn" ref="a4e121788589db473a7417319110230b6" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCOutMultiVolStream::RenameSingleVolumn </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>如果只有一个分卷,自动去掉.001后缀 如果和压缩包重名文件存在,则取消操作 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>重命名成功返回true,否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a835277f0ad08ef561d23fbac758db8b7"></a><!-- doxytag: member="RCOutMultiVolStream::Seek" ref="a835277f0ad08ef561d23fbac758db8b7" args="(int64_t offset, RC_STREAM_SEEK seekOrigin, uint64_t *newPosition)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::Seek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RC_STREAM_SEEK&nbsp;</td>
+          <td class="paramname"> <em>seekOrigin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>newPosition</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>移动操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>offset</em>&nbsp;</td><td>偏移量 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>seekOrigin</em>&nbsp;</td><td>初始位置 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>newPosition</em>&nbsp;</td><td>新的文件位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad42ac00e52e52a7e357d64190ea43191"></a><!-- doxytag: member="RCOutMultiVolStream::SetAutoRename" ref="ad42ac00e52e52a7e357d64190ea43191" args="(bool isAutoRename)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCOutMultiVolStream::SetAutoRename </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isAutoRename</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当只有一个卷时，是否自动去掉.001后缀 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isAutoRename</em>&nbsp;</td><td>是否自动重命名唯一分卷 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6467b85b51b12e084ce2f2d73aeabf9d"></a><!-- doxytag: member="RCOutMultiVolStream::SetSize" ref="a6467b85b51b12e084ce2f2d73aeabf9d" args="(uint64_t newSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::SetSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>newSize</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置文件大小 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>newSize</em>&nbsp;</td><td>文件大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2a6bfcdd220fe6ca6d1547eda01fed26"></a><!-- doxytag: member="RCOutMultiVolStream::SetToZipMultiVolFormat" ref="a2a6bfcdd220fe6ca6d1547eda01fed26" args="(bool toZip)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::SetToZipMultiVolFormat </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>toZip</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置是否生成zip 分卷 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>toZip</em>&nbsp;</td><td>true生成zip分卷 false不生成zip分卷 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aba8a3eb3f7b4fec117f95d7f96ee0065"></a><!-- doxytag: member="RCOutMultiVolStream::Write" ref="aba8a3eb3f7b4fec117f95d7f96ee0065" args="(const void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::Write </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>待写数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据大小 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>返回写入字节数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7025ec15100c74c5c36a2ea9f53b5acd"></a><!-- doxytag: member="RCOutMultiVolStream::Write7zMultiVolImpl" ref="a7025ec15100c74c5c36a2ea9f53b5acd" args="(const void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::Write7zMultiVolImpl </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写7z兼容分卷函数实现 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>待写入数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据长度 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际写入字节数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad8ab4a6e48e04b29706ba3ac2fdefe06"></a><!-- doxytag: member="RCOutMultiVolStream::WriteZipMultiVolImpl" ref="ad8ab4a6e48e04b29706ba3ac2fdefe06" args="(const void *data, uint32_t size, uint32_t *processedSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCOutMultiVolStream::WriteZipMultiVolImpl </td>
+          <td>(</td>
+          <td class="paramtype">const void *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>processedSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写win zip兼容分卷函数实现 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>待写入数据 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据长度 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>processedSize</em>&nbsp;</td><td>实际写入字节数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="acf3df491403865fc45940c79662c6257"></a><!-- doxytag: member="RCOutMultiVolStream::m_absPos" ref="acf3df491403865fc45940c79662c6257" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#acf3df491403865fc45940c79662c6257">RCOutMultiVolStream::m_absPos</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>决定位置 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00175">175</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="acc963049045f746464011b9e7240065c"></a><!-- doxytag: member="RCOutMultiVolStream::m_isAutoRename" ref="acc963049045f746464011b9e7240065c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#acc963049045f746464011b9e7240065c">RCOutMultiVolStream::m_isAutoRename</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当只有一个卷时，是否自动去掉.001后缀 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00222">222</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a00e5b61fe948a47f2c9f03b9d4e0be2d"></a><!-- doxytag: member="RCOutMultiVolStream::m_isZipSplit" ref="a00e5b61fe948a47f2c9f03b9d4e0be2d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a00e5b61fe948a47f2c9f03b9d4e0be2d">RCOutMultiVolStream::m_isZipSplit</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否生成zip分卷 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00226">226</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae079f35bbe1402a244a5c3a42343a8d2"></a><!-- doxytag: member="RCOutMultiVolStream::m_length" ref="ae079f35bbe1402a244a5c3a42343a8d2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ae079f35bbe1402a244a5c3a42343a8d2">RCOutMultiVolStream::m_length</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件流长度 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00179">179</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fa8c8f67e3d442192a7edbfccda10c9"></a><!-- doxytag: member="RCOutMultiVolStream::m_offsetPos" ref="a1fa8c8f67e3d442192a7edbfccda10c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a1fa8c8f67e3d442192a7edbfccda10c9">RCOutMultiVolStream::m_offsetPos</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>偏移量 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00171">171</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a56ab2efff6ff1bc13134f33da8bb364b"></a><!-- doxytag: member="RCOutMultiVolStream::m_outStreamEvent" ref="a56ab2efff6ff1bc13134f33da8bb364b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IOutStreamEvent* <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a56ab2efff6ff1bc13134f33da8bb364b">RCOutMultiVolStream::m_outStreamEvent</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写盘事件处理 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00218">218</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a903f1cc8acf5450725fed6595b0a3f7f"></a><!-- doxytag: member="RCOutMultiVolStream::m_prefix" ref="a903f1cc8acf5450725fed6595b0a3f7f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCString <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a903f1cc8acf5450725fed6595b0a3f7f">RCOutMultiVolStream::m_prefix</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分卷文件名前缀 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00047">47</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e20181b4d7cd77ab370e01a9692dd6c"></a><!-- doxytag: member="RCOutMultiVolStream::m_sizes" ref="a7e20181b4d7cd77ab370e01a9692dd6c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCVector&lt;<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&gt; <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a7e20181b4d7cd77ab370e01a9692dd6c">RCOutMultiVolStream::m_sizes</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>各分卷文件大小 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00043">43</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa8833b2c8c5b39defff3b5e566502fa"></a><!-- doxytag: member="RCOutMultiVolStream::m_streamIndex" ref="aaa8833b2c8c5b39defff3b5e566502fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#aaa8833b2c8c5b39defff3b5e566502fa">RCOutMultiVolStream::m_streamIndex</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>流编号 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00167">167</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1d25c44dde255810cf5d2fd47f7690a"></a><!-- doxytag: member="RCOutMultiVolStream::m_streams" ref="ac1d25c44dde255810cf5d2fd47f7690a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCVector&lt;<a class="el" href="../../de/d80/structRCOutMultiVolStream_1_1RCSubStreamInfo.html">RCSubStreamInfo</a>&gt; <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#ac1d25c44dde255810cf5d2fd47f7690a">RCOutMultiVolStream::m_streams</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>分卷信息列表 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00212">212</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5547f0ee9724aca2de8951d3f447a884"></a><!-- doxytag: member="RCOutMultiVolStream::m_tempFiles" ref="a5547f0ee9724aca2de8951d3f447a884" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d14/classRCTempFiles.html">RCTempFiles</a>* <a class="el" href="../../d5/def/classRCOutMultiVolStream.html#a5547f0ee9724aca2de8951d3f447a884">RCOutMultiVolStream::m_tempFiles</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>临时文件 </p>
+
+<p>在文件<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a>第<a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html#l00051">51</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dd/d37/RCOutMultiVolStream_8h_source.html">RCOutMultiVolStream.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

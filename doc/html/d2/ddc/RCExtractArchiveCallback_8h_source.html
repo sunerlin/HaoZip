@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCExtractArchiveCallback.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_183b565066f413a8a0c98662678658d2.html">extract</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCExtractArchiveCallback.h</h1><a href="../../d2/ddc/RCExtractArchiveCallback_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCExtractArchiveCallback_h_</span>
+<a name="l00011"></a><a class="code" href="../../d2/ddc/RCExtractArchiveCallback_8h.html#a2895e566a837dcceb0aec53ffa6b5ace">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCExtractArchiveCallback_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d87/IExtractFileCallback_8h.html">archive/extract/IExtractFileCallback.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/d8b/RCExtractDefs_8h.html">archive/extract/RCExtractDefs.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d8/d7b/IArchive_8h.html">interface/IArchive.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="../../df/dcb/IPassword_8h.html">interface/IPassword.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="../../de/d71/ICoder_8h.html">interface/ICoder.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d9c/IOverwrite_8h.html">interface/IOverwrite.h</a>&quot;</span>
+<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/d06/IUnknownImpl_8h.html">interface/IUnknownImpl.h</a>&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor">#include &quot;<a class="code" href="../../d3/dd0/RCPropertyID_8h.html">interface/RCPropertyID.h</a>&quot;</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#include &quot;<a class="code" href="../../dc/d53/RCVector_8h.html">common/RCVector.h</a>&quot;</span>
+<a name="l00022"></a>00022 <span class="preprocessor">#include &quot;<a class="code" href="../../d4/de6/RCOutFileStream_8h.html">filesystem/RCOutFileStream.h</a>&quot;</span>
+<a name="l00023"></a>00023 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/de7/RCMutex_8h.html">thread/RCMutex.h</a>&quot;</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;set&gt;</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;list&gt;</span>
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00028"></a>00028 <span class="comment"></span>
+<a name="l00029"></a>00029 <span class="comment">/** 解压进度显示</span>
+<a name="l00030"></a>00030 <span class="comment">*/</span>
+<a name="l00031"></a>00031 <span class="keyword">class </span>RCLocalProgress ;
+<a name="l00032"></a>00032 <span class="comment"></span>
+<a name="l00033"></a>00033 <span class="comment">/** 输出流事件接口</span>
+<a name="l00034"></a>00034 <span class="comment">*/</span>
+<a name="l00035"></a>00035 <span class="keyword">class </span>IOutStreamEvent ;
+<a name="l00036"></a>00036 <span class="comment"></span>
+<a name="l00037"></a>00037 <span class="comment">/** 文档解压回调接口</span>
+<a name="l00038"></a>00038 <span class="comment">*/</span>
+<a name="l00039"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html">00039</a> <span class="keyword">class </span><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html">RCExtractArchiveCallback</a>:
+<a name="l00040"></a>00040     <span class="keyword">public</span> IUnknownImpl4&lt; IArchiveExtractCallback,
+<a name="l00041"></a>00041                           ICryptoGetTextPassword,
+<a name="l00042"></a>00042                           IMtCompressProgressInfo,
+<a name="l00043"></a>00043                           IAskOverwrite
+<a name="l00044"></a>00044                         &gt;
+<a name="l00045"></a>00045 {
+<a name="l00046"></a>00046 <span class="keyword">public</span>:
+<a name="l00047"></a>00047 <span class="comment"></span>
+<a name="l00048"></a>00048 <span class="comment">    /** 默认构造函数</span>
+<a name="l00049"></a>00049 <span class="comment">    */</span>
+<a name="l00050"></a>00050     <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a10fbb3ce1fdb77638978900ab6db40d7">RCExtractArchiveCallback</a>() ;
+<a name="l00051"></a>00051     <span class="comment"></span>
+<a name="l00052"></a>00052 <span class="comment">    /** 默认析构函数</span>
+<a name="l00053"></a>00053 <span class="comment">    */</span>
+<a name="l00054"></a>00054     <span class="keyword">virtual</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a611ce414b2e984f5e9e246ada197eee1">~RCExtractArchiveCallback</a>() ;
+<a name="l00055"></a>00055     
+<a name="l00056"></a>00056 <span class="keyword">public</span>:
+<a name="l00057"></a>00057     <span class="comment"></span>
+<a name="l00058"></a>00058 <span class="comment">    /** 总体数量</span>
+<a name="l00059"></a>00059 <span class="comment">    @param [in] total 总体的数量</span>
+<a name="l00060"></a>00060 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00061"></a>00061 <span class="comment">    */</span>
+<a name="l00062"></a>00062     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ad5383950899619b1095b76994381bf8e">SetTotal</a>(<a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> total) ;
+<a name="l00063"></a>00063     <span class="comment"></span>
+<a name="l00064"></a>00064 <span class="comment">    /** 当前完成</span>
+<a name="l00065"></a>00065 <span class="comment">    @param [in] completed 当前完成的数量</span>
+<a name="l00066"></a>00066 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00067"></a>00067 <span class="comment">    */</span>
+<a name="l00068"></a>00068     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6133ea936f5ea638d8557910970ec711">SetCompleted</a>(<a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> completed) ;
+<a name="l00069"></a>00069     <span class="comment"></span>
+<a name="l00070"></a>00070 <span class="comment">    /** 获取输出流</span>
+<a name="l00071"></a>00071 <span class="comment">    @param [in] index 流的下标值</span>
+<a name="l00072"></a>00072 <span class="comment">    @param [out] outStream 输出流的接口指针，引用计数加1</span>
+<a name="l00073"></a>00073 <span class="comment">    @param [in] askExtractMode 解压模式</span>
+<a name="l00074"></a>00074 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00075"></a>00075 <span class="comment">    */</span>
+<a name="l00076"></a>00076     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#acb87449ec5dd5b180f03c3a51c03b522">GetStream</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, ISequentialOutStream** outStream, <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> askExtractMode) ;
+<a name="l00077"></a>00077     <span class="comment"></span>
+<a name="l00078"></a>00078 <span class="comment">    /** 准备解压操作</span>
+<a name="l00079"></a>00079 <span class="comment">    @param [in] index 解压文件或者目录的下标值</span>
+<a name="l00080"></a>00080 <span class="comment">    @param [in] askExtractMode 解压模式</span>
+<a name="l00081"></a>00081 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00082"></a>00082 <span class="comment">    */</span>
+<a name="l00083"></a>00083     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a1e5c047b7fbb25ecf53c10d1c34bd314">PrepareOperation</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> askExtractMode) ;
+<a name="l00084"></a>00084     <span class="comment"></span>
+<a name="l00085"></a>00085 <span class="comment">    /** 设置结果</span>
+<a name="l00086"></a>00086 <span class="comment">    @param [in] index 解压文件或者目录的下标值</span>
+<a name="l00087"></a>00087 <span class="comment">    @param [in] resultEOperationResult 操作结果</span>
+<a name="l00088"></a>00088 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00089"></a>00089 <span class="comment">    */</span>
+<a name="l00090"></a>00090     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ae72bed5cda32208024ce323c117f1833">SetOperationResult</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> resultEOperationResult) ;
+<a name="l00091"></a>00091     <span class="comment"></span>
+<a name="l00092"></a>00092 <span class="comment">    /** 设置多线程解压标记</span>
+<a name="l00093"></a>00093 <span class="comment">    @param [in] isMultiThreads 如果为true，当前为多线程解压模式，否则为单线程解压模式</span>
+<a name="l00094"></a>00094 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00095"></a>00095 <span class="comment">    */</span>
+<a name="l00096"></a>00096     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aa50808fad7b597a611afd41a161de5e5">SetMultiThreadMode</a>(<span class="keywordtype">bool</span> isMultiThreads) ;
+<a name="l00097"></a>00097     <span class="comment"></span>
+<a name="l00098"></a>00098 <span class="comment">    /** 获取密码</span>
+<a name="l00099"></a>00099 <span class="comment">    @param [out] password 获取的密码</span>
+<a name="l00100"></a>00100 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00101"></a>00101 <span class="comment">    */</span>
+<a name="l00102"></a>00102     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#afe85f3223c25e55e613e0dfa8475fcc5">CryptoGetTextPassword</a>(<a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; password) ;
+<a name="l00103"></a>00103     <span class="comment"></span>
+<a name="l00104"></a>00104 <span class="comment">    /** 设置压缩进度</span>
+<a name="l00105"></a>00105 <span class="comment">    @param [in] index 当前流的下标</span>
+<a name="l00106"></a>00106 <span class="comment">    @param [in] inSize 输入数据大小</span>
+<a name="l00107"></a>00107 <span class="comment">    @param [in] outSize 输出数据大小</span>
+<a name="l00108"></a>00108 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00109"></a>00109 <span class="comment">    */</span>
+<a name="l00110"></a>00110     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aaa476d7d22bd35f7f5c6c3e375a216ce">SetRatioInfo</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSize, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSize) ;
+<a name="l00111"></a>00111 <span class="comment"></span>
+<a name="l00112"></a>00112 <span class="comment">    /** 获取解压路径</span>
+<a name="l00113"></a>00113 <span class="comment">    @param [out] path 解压路径</span>
+<a name="l00114"></a>00114 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00115"></a>00115 <span class="comment">    */</span>
+<a name="l00116"></a>00116     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6ff0c2fca367025d18e00c522e079e58">GetDestinationDirectory</a>(<a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; path) ;
+<a name="l00117"></a>00117 <span class="comment"></span>
+<a name="l00118"></a>00118 <span class="comment">    /** 获取需要从解压路径中去除的路径部分</span>
+<a name="l00119"></a>00119 <span class="comment">    @param [out] removePathParts 需要从解压路径中去除的路径部分</span>
+<a name="l00120"></a>00120 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00121"></a>00121 <span class="comment">    */</span>
+<a name="l00122"></a>00122     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6be2423c1de2a6be3d438905d753f057">GetRemovePathParts</a>(RCVector&lt;RCString&gt;&amp; removePathParts) ;
+<a name="l00123"></a>00123 <span class="comment"></span>
+<a name="l00124"></a>00124 <span class="comment">    /** 获取解压路径选项</span>
+<a name="l00125"></a>00125 <span class="comment">    @param [out] pathMode 解压路径选项</span>
+<a name="l00126"></a>00126 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00127"></a>00127 <span class="comment">    */</span>
+<a name="l00128"></a>00128     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aeeb5f44c5275ac39ad91d7e862141a58">GetPathMode</a>(<a class="code" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a>&amp; pathMode) ;
+<a name="l00129"></a>00129 <span class="comment"></span>
+<a name="l00130"></a>00130 <span class="comment">    /** 获取解压覆盖选项</span>
+<a name="l00131"></a>00131 <span class="comment">    @param [out] overwriteMode 解压覆盖选项</span>
+<a name="l00132"></a>00132 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00133"></a>00133 <span class="comment">    */</span>
+<a name="l00134"></a>00134     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a366b8a20fa73a612177326d2a04248b3">GetOverwriteMode</a>(<a class="code" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a>&amp; overwriteMode) ;
+<a name="l00135"></a>00135 <span class="comment"></span>
+<a name="l00136"></a>00136 <span class="comment">    /** 获取解压更新方式</span>
+<a name="l00137"></a>00137 <span class="comment">    @param [out] updateMode 解压更新方式</span>
+<a name="l00138"></a>00138 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00139"></a>00139 <span class="comment">    */</span>
+<a name="l00140"></a>00140     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a202536dcbe0ab4d95b61c0dfc7a4e6a5">GetUpdateMode</a>(<a class="code" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a>&amp; updateMode) ;
+<a name="l00141"></a>00141 <span class="comment"></span>
+<a name="l00142"></a>00142 <span class="comment">    /** 文件覆盖确认接口</span>
+<a name="l00143"></a>00143 <span class="comment">    @param [in] existName 已经存在的文件路径</span>
+<a name="l00144"></a>00144 <span class="comment">    @param [in] existTime 已经存在的文件时间</span>
+<a name="l00145"></a>00145 <span class="comment">    @param [in] existSize 已经存在的文件大小</span>
+<a name="l00146"></a>00146 <span class="comment">    @param [in] newName 新文件名</span>
+<a name="l00147"></a>00147 <span class="comment">    @param [in] newTime 新文件时间</span>
+<a name="l00148"></a>00148 <span class="comment">    @param [in] newSize 新文件大小</span>
+<a name="l00149"></a>00149 <span class="comment">    @param [in] isEnableRename 是否支持重命名操作</span>
+<a name="l00150"></a>00150 <span class="comment">    @param [out] answer 确认结果</span>
+<a name="l00151"></a>00151 <span class="comment">    @param [out] newFileName 如果是重命名单个文件时，返回用户指定名称</span>
+<a name="l00152"></a>00152 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00153"></a>00153 <span class="comment">    */</span>
+<a name="l00154"></a>00154     <span class="keyword">virtual</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a5ecd43bbdff56ba2ddb872a808dcaae3">AskOverwrite</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; existName,
+<a name="l00155"></a>00155                                  <span class="keyword">const</span> RC_FILE_TIME* existTime, 
+<a name="l00156"></a>00156                                  <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>* existSize,
+<a name="l00157"></a>00157                                  <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; newName,
+<a name="l00158"></a>00158                                  <span class="keyword">const</span> RC_FILE_TIME* newTime, 
+<a name="l00159"></a>00159                                  <span class="keyword">const</span> <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>* newSize,
+<a name="l00160"></a>00160                                  <span class="keywordtype">bool</span> isEnableRename,
+<a name="l00161"></a>00161                                  <a class="code" href="../../da/de1/classRCExtractDefs.html#a7367bd08f43a664821fb5ef2ade537e6">RCExractOverwriteAnswer</a>&amp; answer,
+<a name="l00162"></a>00162                                  <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; newFileName) ;
+<a name="l00163"></a>00163 <span class="comment"></span>
+<a name="l00164"></a>00164 <span class="comment">    /** 是否保留损坏文件</span>
+<a name="l00165"></a>00165 <span class="comment">    @return 保留损坏文件返回true,否则返回false</span>
+<a name="l00166"></a>00166 <span class="comment">    */</span>
+<a name="l00167"></a>00167     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a980a4310c77db2e6ab6a536fb64c7c0f">IsKeepDamageFiles</a>(<span class="keywordtype">void</span>) ;
+<a name="l00168"></a>00168     
+<a name="l00169"></a>00169 <span class="keyword">public</span>:
+<a name="l00170"></a>00170     <span class="comment"></span>
+<a name="l00171"></a>00171 <span class="comment">    /** 初始化</span>
+<a name="l00172"></a>00172 <span class="comment">    @param [in] archiveHandler 解压文档管理接口</span>
+<a name="l00173"></a>00173 <span class="comment">    @param [in] extractCallback2 解压回调接口</span>
+<a name="l00174"></a>00174 <span class="comment">    @param [in] stdOutMode 是否为控制台输出模式</span>
+<a name="l00175"></a>00175 <span class="comment">    @param [in] directoryPath 解压路径</span>
+<a name="l00176"></a>00176 <span class="comment">    @param [in] removePathParts 解压路径中需要移除的路径部分</span>
+<a name="l00177"></a>00177 <span class="comment">    @param [in] itemDefaultName 默认的文件名</span>
+<a name="l00178"></a>00178 <span class="comment">    @param [in] utcMTimeDefault 默认的文件修改时间</span>
+<a name="l00179"></a>00179 <span class="comment">    @param [in] attributesDefault 默认文件属性</span>
+<a name="l00180"></a>00180 <span class="comment">    @param [in] packSize 压缩包大小</span>
+<a name="l00181"></a>00181 <span class="comment">    @param [in] fileTimeFlag 解压文件时间属性</span>
+<a name="l00182"></a>00182 <span class="comment">    */</span>
+<a name="l00183"></a>00183     <span class="keywordtype">void</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aba3f2797ff238bcf9a18eb5254e4afa5">Init</a>( IInArchive* archiveHandler,
+<a name="l00184"></a>00184                <a class="code" href="../../d3/d3e/classIExtractFolderArchiveCallback.html">IExtractFolderArchiveCallback</a>* extractCallback2,
+<a name="l00185"></a>00185                <span class="keywordtype">bool</span> stdOutMode,
+<a name="l00186"></a>00186                <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; directoryPath,
+<a name="l00187"></a>00187                <span class="keyword">const</span> RCVector&lt;RCString&gt;&amp; removePathParts,
+<a name="l00188"></a>00188                <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; itemDefaultName,
+<a name="l00189"></a>00189                <span class="keyword">const</span> RC_FILE_TIME&amp; utcMTimeDefault,
+<a name="l00190"></a>00190                <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> attributesDefault,
+<a name="l00191"></a>00191                <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> packSize,
+<a name="l00192"></a>00192                <a class="code" href="../../d3/d8b/RCExtractDefs_8h.html#a748f3f3f98670fd9b27b7e744365bae9">RCExractFileTimeFlag</a> fileTimeFlag);
+<a name="l00193"></a>00193     <span class="comment"></span>
+<a name="l00194"></a>00194 <span class="comment">    /** 初始化解压选项</span>
+<a name="l00195"></a>00195 <span class="comment">    @param [in] multiArchives 是否同时解压多个文档</span>
+<a name="l00196"></a>00196 <span class="comment">    @param [in] pathMode 解压路径选项</span>
+<a name="l00197"></a>00197 <span class="comment">    @param [in] overwriteMode 解压覆盖选项</span>
+<a name="l00198"></a>00198 <span class="comment">    @param [in] updateMode 解压更新方式</span>
+<a name="l00199"></a>00199 <span class="comment">    @param [in] isKeepDamageFiles 是否保留损坏文件</span>
+<a name="l00200"></a>00200 <span class="comment">    @param [in] extractToSubDir 解压每个文件到子目录中</span>
+<a name="l00201"></a>00201 <span class="comment">    @param [in] outStreamEvent 解压时，输出IO的事件处理</span>
+<a name="l00202"></a>00202 <span class="comment">    */</span>
+<a name="l00203"></a>00203     <span class="keywordtype">void</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aa097fe824fc0d33fa7ad810a9f034da3">InitForMulti</a>(<span class="keywordtype">bool</span> multiArchives,
+<a name="l00204"></a>00204                       <a class="code" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> pathMode,
+<a name="l00205"></a>00205                       <a class="code" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> overwriteMode,
+<a name="l00206"></a>00206                       <a class="code" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> updateMode,
+<a name="l00207"></a>00207                       <span class="keywordtype">bool</span> isKeepDamageFiles,
+<a name="l00208"></a>00208                       <span class="keywordtype">bool</span> extractToSubDir,
+<a name="l00209"></a>00209                       IOutStreamEvent* outStreamEvent) ;
+<a name="l00210"></a>00210     <span class="comment"></span>
+<a name="l00211"></a>00211 <span class="comment">    /** 设置需要移除的路径组，平面浏览模式解压使用</span>
+<a name="l00212"></a>00212 <span class="comment">    @param [in] removePathList 需要移除的路径列表</span>
+<a name="l00213"></a>00213 <span class="comment">    */</span>
+<a name="l00214"></a>00214     <span class="keywordtype">void</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aa773481a276ef492fa57b9a50a59b3f5">SetRemovePathList</a>(<span class="keyword">const</span> RCVector&lt;RCString&gt;&amp; removePathList) ;
+<a name="l00215"></a>00215     <span class="comment"></span>
+<a name="l00216"></a>00216 <span class="comment">    /** 获取解压进度管理实现接口</span>
+<a name="l00217"></a>00217 <span class="comment">    @return 返回进度显示接口指针</span>
+<a name="l00218"></a>00218 <span class="comment">    */</span>
+<a name="l00219"></a>00219     RCLocalProgress* <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a195cb40543631bdbe92c3b1321c7f144">GetLocalProgress</a>() ;
+<a name="l00220"></a>00220     <span class="comment"></span>
+<a name="l00221"></a>00221 <span class="comment">    /** 获取已经解压的文件总大小</span>
+<a name="l00222"></a>00222 <span class="comment">    @return 返回已经解压文件总大小</span>
+<a name="l00223"></a>00223 <span class="comment">    */</span>
+<a name="l00224"></a>00224     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a660b601a0cbf09e02ccb9c43e5a6688f">GetUnpackSize</a>() <span class="keyword">const</span> ;
+<a name="l00225"></a>00225     <span class="comment"></span>
+<a name="l00226"></a>00226 <span class="comment">    /** 获取文件夹总数</span>
+<a name="l00227"></a>00227 <span class="comment">    @return 返回文件夹总数</span>
+<a name="l00228"></a>00228 <span class="comment">    */</span>
+<a name="l00229"></a>00229     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ae13335b720eb81887234afd8867f5134">GetNumFolders</a>() <span class="keyword">const</span> ;
+<a name="l00230"></a>00230     <span class="comment"></span>
+<a name="l00231"></a>00231 <span class="comment">    /** 获取文件总数</span>
+<a name="l00232"></a>00232 <span class="comment">    @return 返回文件总数</span>
+<a name="l00233"></a>00233 <span class="comment">    */</span>
+<a name="l00234"></a>00234     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a48bb094344fad620edd5c9ec409cbb5a">GetNumFiles</a>() <span class="keyword">const</span> ;
+<a name="l00235"></a>00235     
+<a name="l00236"></a>00236 <span class="keyword">private</span>: 
+<a name="l00237"></a>00237     <span class="comment"></span>
+<a name="l00238"></a>00238 <span class="comment">    /** 创建多级目录</span>
+<a name="l00239"></a>00239 <span class="comment">    @param [in] dirPathParts 各级目录列表</span>
+<a name="l00240"></a>00240 <span class="comment">    @param [out] fullPath 返回最末级目录</span>
+<a name="l00241"></a>00241 <span class="comment">    @return 成功返回true,否则返回false</span>
+<a name="l00242"></a>00242 <span class="comment">    */</span>
+<a name="l00243"></a>00243     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a436e95ac6f18b2a454ccba8fb46e8661">CreateComplexDirectory</a>(<span class="keyword">const</span> RCVector&lt;RCString&gt;&amp; dirPathParts, 
+<a name="l00244"></a>00244                                 <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fullPath) ;
+<a name="l00245"></a>00245 <span class="comment"></span>
+<a name="l00246"></a>00246 <span class="comment">    /** 获取文件时间属性</span>
+<a name="l00247"></a>00247 <span class="comment">    @param [in] index 文件编号</span>
+<a name="l00248"></a>00248 <span class="comment">    @param [in] propID 属性编号</span>
+<a name="l00249"></a>00249 <span class="comment">    @param [in] filetime 文件时间</span>
+<a name="l00250"></a>00250 <span class="comment">    @param [out] filetimeIsDefined 文件时间是否定义</span>
+<a name="l00251"></a>00251 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00252"></a>00252 <span class="comment">    */</span>
+<a name="l00253"></a>00253     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abebc5f2d7ad3e8e6788bfd297b680f3b">GetTime</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> index, 
+<a name="l00254"></a>00254                     <a class="code" href="../../d7/d5a/namespaceRCZip.html#af08189a79d6cdca678f90c20ea33c9d1">RCPropertyID</a> propID, 
+<a name="l00255"></a>00255                     RC_FILE_TIME&amp; filetime, 
+<a name="l00256"></a>00256                     <span class="keywordtype">bool</span>&amp; filetimeIsDefined) ;
+<a name="l00257"></a>00257     <span class="comment"></span>
+<a name="l00258"></a>00258 <span class="comment">    /** 创建单个目录</span>
+<a name="l00259"></a>00259 <span class="comment">    @param [in] fullPath 目录全路径</span>
+<a name="l00260"></a>00260 <span class="comment">    @return 成功返回true,否则返回false</span>
+<a name="l00261"></a>00261 <span class="comment">    */</span>             
+<a name="l00262"></a>00262     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aae9e6b8c778f000e75058028fb1b2927">CreateOneDirectory</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fullPath) ;
+<a name="l00263"></a>00263     <span class="comment"></span>
+<a name="l00264"></a>00264 <span class="comment">    /** 清除解压过程文件数据</span>
+<a name="l00265"></a>00265 <span class="comment">    */</span>
+<a name="l00266"></a>00266     <span class="keywordtype">void</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ab1d50ed76fcd3efa6fe7e043825317f1">ClearExtractingFileInfo</a>() ;
+<a name="l00267"></a>00267     <span class="comment"></span>
+<a name="l00268"></a>00268 <span class="comment">    /** 诊断错误</span>
+<a name="l00269"></a>00269 <span class="comment">    @param [in] index 编号</span>
+<a name="l00270"></a>00270 <span class="comment">    @param [in] errMsg 错误信息</span>
+<a name="l00271"></a>00271 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00272"></a>00272 <span class="comment">    */</span>
+<a name="l00273"></a>00273     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a06171c2a9cf08f8aa4092c334e587a7a">OnMessageError</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> index,<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; errMsg) ;
+<a name="l00274"></a>00274     <span class="comment"></span>
+<a name="l00275"></a>00275 <span class="comment">    /** 检查移除目录前缀项</span>
+<a name="l00276"></a>00276 <span class="comment">    @param [in] removePathParts 需要移除的目录前缀</span>
+<a name="l00277"></a>00277 <span class="comment">    @param [in] pathParts 当前的目录或者文件</span>
+<a name="l00278"></a>00278 <span class="comment">    @param [out] numRemovePathParts 需要移除路径前缀项个数</span>
+<a name="l00279"></a>00279 <span class="comment">    @return 成功返回RC_S_OK,否则返回错误号</span>
+<a name="l00280"></a>00280 <span class="comment">    */</span>
+<a name="l00281"></a>00281     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ab8b84c680efd800e4ea86dddbe28e53f">CheckRemovePathParts</a>(<span class="keyword">const</span> RCVector&lt;RCString&gt;&amp; removePathParts,
+<a name="l00282"></a>00282                                  <span class="keyword">const</span> RCVector&lt;RCString&gt;&amp; pathParts,
+<a name="l00283"></a>00283                                  RCString::size_type&amp; numRemovePathParts) <span class="keyword">const</span> ;
+<a name="l00284"></a>00284     
+<a name="l00285"></a>00285 <span class="keyword">private</span>:
+<a name="l00286"></a>00286     <span class="comment"></span>
+<a name="l00287"></a>00287 <span class="comment">    /** 输入文档接口</span>
+<a name="l00288"></a>00288 <span class="comment">    */</span>
+<a name="l00289"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#af0e3dc996b1622f873cf081fd8ebd9e7">00289</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a94fadcb1f2e4916dfbac2f0914b794bb">IInArchivePtr</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#af0e3dc996b1622f873cf081fd8ebd9e7">m_spInArchive</a> ;
+<a name="l00290"></a>00290     <span class="comment"></span>
+<a name="l00291"></a>00291 <span class="comment">    /** 解压回调接口</span>
+<a name="l00292"></a>00292 <span class="comment">    */</span>
+<a name="l00293"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a80884fc33098afdd881921f5b81bf565">00293</a>     <a class="code" href="../../d9/d13/classRCComPtr.html">IExtractFolderArchiveCallbackPtr</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a80884fc33098afdd881921f5b81bf565">m_extractCallback2</a> ;
+<a name="l00294"></a>00294     <span class="comment"></span>
+<a name="l00295"></a>00295 <span class="comment">    /** 解压密码接口</span>
+<a name="l00296"></a>00296 <span class="comment">    */</span>
+<a name="l00297"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6ec4ad90570c3129059e23f9ca150315">00297</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a975f17ba5ef8ca054552a82d70333f50">ICryptoGetTextPasswordPtr</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6ec4ad90570c3129059e23f9ca150315">m_cryptoGetTextPassword</a>;
+<a name="l00298"></a>00298     <span class="comment"></span>
+<a name="l00299"></a>00299 <span class="comment">    /** 更新方式</span>
+<a name="l00300"></a>00300 <span class="comment">    */</span>
+<a name="l00301"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a1540ffcb7ea85ca97c6f8d81309b0588">00301</a>     <a class="code" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a1540ffcb7ea85ca97c6f8d81309b0588">m_updateMode</a> ;
+<a name="l00302"></a>00302     <span class="comment"></span>
+<a name="l00303"></a>00303 <span class="comment">    /** 解压路径选项</span>
+<a name="l00304"></a>00304 <span class="comment">    */</span>
+<a name="l00305"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a3b93a52cf7db3def05be1bedff86916d">00305</a>     <a class="code" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a3b93a52cf7db3def05be1bedff86916d">m_pathMode</a>;
+<a name="l00306"></a>00306     <span class="comment"></span>
+<a name="l00307"></a>00307 <span class="comment">    /** 覆盖选项</span>
+<a name="l00308"></a>00308 <span class="comment">    */</span>
+<a name="l00309"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a5c6139e9f35012e3cf61dad1a3d2e4fc">00309</a>     <a class="code" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a5c6139e9f35012e3cf61dad1a3d2e4fc">m_overwriteMode</a>;
+<a name="l00310"></a>00310     <span class="comment"></span>
+<a name="l00311"></a>00311 <span class="comment">    /** 是否保留损坏文件</span>
+<a name="l00312"></a>00312 <span class="comment">    */</span>
+<a name="l00313"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#acf482d96febd6b64ae26f083b1681db3">00313</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#acf482d96febd6b64ae26f083b1681db3">m_keepDamageFiles</a> ;
+<a name="l00314"></a>00314     <span class="comment"></span>
+<a name="l00315"></a>00315 <span class="comment">    /** 解压到子目录</span>
+<a name="l00316"></a>00316 <span class="comment">    */</span>
+<a name="l00317"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abceb630b3987d18f4adc14d365fc6c8d">00317</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abceb630b3987d18f4adc14d365fc6c8d">m_extractToSubDir</a>;
+<a name="l00318"></a>00318 <span class="comment"></span>
+<a name="l00319"></a>00319 <span class="comment">    /** 解压目标路径</span>
+<a name="l00320"></a>00320 <span class="comment">    */</span>
+<a name="l00321"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ab93e717d43b986d622af3010b744a918">00321</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ab93e717d43b986d622af3010b744a918">m_directoryPath</a>;
+<a name="l00322"></a>00322     <span class="comment"></span>
+<a name="l00323"></a>00323 <span class="comment">    /** 解压后是否需要按照包内的创建时间更新解压后的文件</span>
+<a name="l00324"></a>00324 <span class="comment">    */</span>
+<a name="l00325"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a13ef6b8b0cedd1882e6ac33a69fea5f9">00325</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a13ef6b8b0cedd1882e6ac33a69fea5f9">m_writeCTime</a>;
+<a name="l00326"></a>00326     <span class="comment"></span>
+<a name="l00327"></a>00327 <span class="comment">    /** 解压后是否需要按照包内的访问时间更新解压后的文件</span>
+<a name="l00328"></a>00328 <span class="comment">    */</span>
+<a name="l00329"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a33bd317d14d60d4de07b34984ae65006">00329</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a33bd317d14d60d4de07b34984ae65006">m_writeATime</a>;
+<a name="l00330"></a>00330     <span class="comment"></span>
+<a name="l00331"></a>00331 <span class="comment">    /** 解压后是否需要按照包内的修改时间更新解压后的文件</span>
+<a name="l00332"></a>00332 <span class="comment">    */</span>
+<a name="l00333"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abd7fb1aa8e9715044d75d701eda9ebdb">00333</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abd7fb1aa8e9715044d75d701eda9ebdb">m_writeMTime</a>;
+<a name="l00334"></a>00334     <span class="comment"></span>
+<a name="l00335"></a>00335 <span class="comment">    /** 解压后需要从包内路径中移除的路径部分</span>
+<a name="l00336"></a>00336 <span class="comment">    */</span>
+<a name="l00337"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#adcbe687c9b680e9bfee519cea8b76140">00337</a>     RCVector&lt;RCString&gt; <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#adcbe687c9b680e9bfee519cea8b76140">m_removePathParts</a>;
+<a name="l00338"></a>00338     <span class="comment"></span>
+<a name="l00339"></a>00339 <span class="comment">    /** 解压后需要移除的路径组，平面浏览模式解压使用</span>
+<a name="l00340"></a>00340 <span class="comment">    */</span>
+<a name="l00341"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a3857cd8a24c821eb0dd48057a517f573">00341</a>     RCVector&lt;RCString&gt; <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a3857cd8a24c821eb0dd48057a517f573">m_removePathList</a> ;
+<a name="l00342"></a>00342     <span class="comment"></span>
+<a name="l00343"></a>00343 <span class="comment">    /** 默认的包内项名称</span>
+<a name="l00344"></a>00344 <span class="comment">    */</span>
+<a name="l00345"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ace27124721b213ba3792539645302e1f">00345</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ace27124721b213ba3792539645302e1f">m_itemDefaultName</a>;
+<a name="l00346"></a>00346     <span class="comment"></span>
+<a name="l00347"></a>00347 <span class="comment">    /** 默认的文件修改时间</span>
+<a name="l00348"></a>00348 <span class="comment">    */</span>
+<a name="l00349"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aa3b09060cd879c166ebda74f127f1697">00349</a>     RC_FILE_TIME <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aa3b09060cd879c166ebda74f127f1697">m_utcMTimeDefault</a>;
+<a name="l00350"></a>00350     <span class="comment"></span>
+<a name="l00351"></a>00351 <span class="comment">    /** 默认文件属性</span>
+<a name="l00352"></a>00352 <span class="comment">    */</span>
+<a name="l00353"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a765603eeadc28a89aa300dacce8d0c97">00353</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a765603eeadc28a89aa300dacce8d0c97">m_attributesDefault</a>;
+<a name="l00354"></a>00354     <span class="comment"></span>
+<a name="l00355"></a>00355 <span class="comment">    /** 是否为控制台输出模式</span>
+<a name="l00356"></a>00356 <span class="comment">    */</span>
+<a name="l00357"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aefde280aae54eb2847effa41886c86f3">00357</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aefde280aae54eb2847effa41886c86f3">m_stdOutMode</a> ;
+<a name="l00358"></a>00358                               
+<a name="l00359"></a>00359 <span class="keyword">private</span>:
+<a name="l00360"></a>00360 <span class="comment"></span>
+<a name="l00361"></a>00361 <span class="comment">    /** 解压进度管理实现接口</span>
+<a name="l00362"></a>00362 <span class="comment">    */</span>
+<a name="l00363"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#af356d288148878b184e143f4b3ece5b9">00363</a>     RCLocalProgress* <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#af356d288148878b184e143f4b3ece5b9">m_localProgressSpec</a>;
+<a name="l00364"></a>00364     <span class="comment"></span>
+<a name="l00365"></a>00365 <span class="comment">    /** 解压进度接口</span>
+<a name="l00366"></a>00366 <span class="comment">    */</span>
+<a name="l00367"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a9a04fc49d2f31af6ec9715aaeead759c">00367</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a1f2b14443b95d6471488a66de0052bc4">ICompressProgressInfoPtr</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a9a04fc49d2f31af6ec9715aaeead759c">m_localProgress</a>;
+<a name="l00368"></a>00368     <span class="comment"></span>
+<a name="l00369"></a>00369 <span class="comment">    /** 压缩后总大小</span>
+<a name="l00370"></a>00370 <span class="comment">    */</span>
+<a name="l00371"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ad710134fd30e118c7b3a14f60c9985bc">00371</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ad710134fd30e118c7b3a14f60c9985bc">m_packTotal</a>;
+<a name="l00372"></a>00372     <span class="comment"></span>
+<a name="l00373"></a>00373 <span class="comment">    /** 解压后总大小</span>
+<a name="l00374"></a>00374 <span class="comment">    */</span>
+<a name="l00375"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a2a6079d11b766be1d8441c8492a0ff97">00375</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a2a6079d11b766be1d8441c8492a0ff97">m_unpackTotal</a>;
+<a name="l00376"></a>00376 <span class="comment"></span>
+<a name="l00377"></a>00377 <span class="comment">    /** 是否为同时解压多个文件</span>
+<a name="l00378"></a>00378 <span class="comment">    */</span>
+<a name="l00379"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#adfba429895550a051fd4d1c9f01f7f2b">00379</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#adfba429895550a051fd4d1c9f01f7f2b">m_multiArchives</a>;
+<a name="l00380"></a>00380     <span class="comment"></span>
+<a name="l00381"></a>00381 <span class="comment">    /** 文件夹总数</span>
+<a name="l00382"></a>00382 <span class="comment">    */</span>
+<a name="l00383"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a09dedd2aaec6d2b98ab667c22882b0d1">00383</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a09dedd2aaec6d2b98ab667c22882b0d1">m_numFolders</a>;
+<a name="l00384"></a>00384     <span class="comment"></span>
+<a name="l00385"></a>00385 <span class="comment">    /** 文件总数</span>
+<a name="l00386"></a>00386 <span class="comment">    */</span>
+<a name="l00387"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a46fb0950838aa272cfda54302486fe86">00387</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a46fb0950838aa272cfda54302486fe86">m_numFiles</a>;
+<a name="l00388"></a>00388     <span class="comment"></span>
+<a name="l00389"></a>00389 <span class="comment">    /** 已经解压的文件总大小</span>
+<a name="l00390"></a>00390 <span class="comment">    */</span>
+<a name="l00391"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a0f16a14e0e905e0f2f2986897f9e7804">00391</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a0f16a14e0e905e0f2f2986897f9e7804">m_unpackSize</a>;
+<a name="l00392"></a>00392     <span class="comment"></span>
+<a name="l00393"></a>00393 <span class="comment">    /** 错误总数</span>
+<a name="l00394"></a>00394 <span class="comment">    */</span>
+<a name="l00395"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aa20496bded551f88ee6df6f42f62693b">00395</a>     <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aa20496bded551f88ee6df6f42f62693b">m_numErrors</a> ;
+<a name="l00396"></a>00396     <span class="comment"></span>
+<a name="l00397"></a>00397 <span class="comment">    /** 本次压缩中创建的目录缓存，为优化IO性能</span>
+<a name="l00398"></a>00398 <span class="comment">    */</span>
+<a name="l00399"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a3d468742fe840546924bd5be9d8f7157">00399</a>     <span class="keyword">typedef</span> std::set&lt;RCString&gt; <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a3d468742fe840546924bd5be9d8f7157">TCreatedDirectoryCache</a> ;
+<a name="l00400"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aac0af151cd92960c7a28d91b04caa9d1">00400</a>     <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a3d468742fe840546924bd5be9d8f7157">TCreatedDirectoryCache</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aac0af151cd92960c7a28d91b04caa9d1">m_createdDirCache</a> ;
+<a name="l00401"></a>00401     <span class="comment"></span>
+<a name="l00402"></a>00402 <span class="comment">    /** IO输出事件处理</span>
+<a name="l00403"></a>00403 <span class="comment">    */</span>
+<a name="l00404"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aed412d2636883e5528045016aeecefb9">00404</a>     IOutStreamEvent* <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aed412d2636883e5528045016aeecefb9">m_outStreamEvent</a> ;
+<a name="l00405"></a>00405     
+<a name="l00406"></a>00406 <span class="keyword">private</span>:
+<a name="l00407"></a>00407     <span class="comment"></span>
+<a name="l00408"></a>00408 <span class="comment">    /** 当前解压的文件信息</span>
+<a name="l00409"></a>00409 <span class="comment">    */</span>
+<a name="l00410"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ab44fb6b24c2388d8c58bd1fe595fb5e2">00410</a>     <span class="keyword">struct </span>TExtractingFileInfo ;
+<a name="l00411"></a>00411     <span class="comment"></span>
+<a name="l00412"></a>00412 <span class="comment">    /** 当前解压的文件信息数据容器</span>
+<a name="l00413"></a>00413 <span class="comment">    */</span>
+<a name="l00414"></a>00414     RCVector&lt;TExtractingFileInfo*&gt; <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ab44fb6b24c2388d8c58bd1fe595fb5e2">m_extractingFileInfoArray</a> ;
+<a name="l00415"></a>00415     <span class="comment"></span>
+<a name="l00416"></a>00416 <span class="comment">    /** 是否为多线程压缩</span>
+<a name="l00417"></a>00417 <span class="comment">    */</span>
+<a name="l00418"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a5f23daf9bc956701dc7a74d1b0ea645f">00418</a>     <span class="keywordtype">bool</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a5f23daf9bc956701dc7a74d1b0ea645f">m_isMultiThreads</a> ;
+<a name="l00419"></a>00419     <span class="comment"></span>
+<a name="l00420"></a>00420 <span class="comment">    /** 多线程同步锁</span>
+<a name="l00421"></a>00421 <span class="comment">    */</span>
+<a name="l00422"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a0e376ccf057eacd032671eb1eaba1822">00422</a>     RCMutex <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a0e376ccf057eacd032671eb1eaba1822">m_extractMutex</a> ;
+<a name="l00423"></a>00423     
+<a name="l00424"></a>00424 <span class="keyword">private</span>:<span class="comment"></span>
+<a name="l00425"></a>00425 <span class="comment">    /** 获取默认使用的解压文件信息</span>
+<a name="l00426"></a>00426 <span class="comment">    */</span>
+<a name="l00427"></a>00427     TExtractingFileInfo* <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#aeeb446c8116e64de1746a0a21d1f2fd5">GetDefaultExtractingFileInfo</a>() ;
+<a name="l00428"></a>00428     <span class="comment"></span>
+<a name="l00429"></a>00429 <span class="comment">    /** 获取默认使用的解压文件信息</span>
+<a name="l00430"></a>00430 <span class="comment">    */</span>
+<a name="l00431"></a>00431     TExtractingFileInfo* <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#ad29e9beb7259adbe935ad3504908e06e">GetExtractingFileInfo</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index) ;
+<a name="l00432"></a>00432     <span class="comment"></span>
+<a name="l00433"></a>00433 <span class="comment">    /** 释放解压文件信息</span>
+<a name="l00434"></a>00434 <span class="comment">    */</span>
+<a name="l00435"></a>00435     <span class="keywordtype">void</span> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a85ef56f10ff3277609ea3bf97c597d2c">ReleaseExtractingFileInfo</a>(<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index) ;
+<a name="l00436"></a>00436     
+<a name="l00437"></a>00437 <span class="keyword">private</span>:<span class="comment"></span>
+<a name="l00438"></a>00438 <span class="comment">    /** 待删除文件</span>
+<a name="l00439"></a>00439 <span class="comment">    */</span>
+<a name="l00440"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abc6a8c08474636830737d2c20008ca72">00440</a>     <span class="keyword">typedef</span> std::list&lt;RCString&gt; <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abc6a8c08474636830737d2c20008ca72">TDeleteFileList</a> ;
+<a name="l00441"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a89f63080f9e34be4607681b7cdfeab35">00441</a>     <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#abc6a8c08474636830737d2c20008ca72">TDeleteFileList</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a89f63080f9e34be4607681b7cdfeab35">m_deleteFileList</a> ;  
+<a name="l00442"></a>00442     <span class="comment"></span>
+<a name="l00443"></a>00443 <span class="comment">    /** 析构时需要设置的目录时间</span>
+<a name="l00444"></a>00444 <span class="comment">    */</span>
+<a name="l00445"></a><a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html">00445</a>     <span class="keyword">struct </span><a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html">TPendingDirTime</a>
+<a name="l00446"></a>00446     {
+<a name="l00447"></a><a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#a6315b0bfe0bf5ce6f09b0f9653c63632">00447</a>         <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#a6315b0bfe0bf5ce6f09b0f9653c63632">m_dirPath</a> ;
+<a name="l00448"></a><a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#a98c390eaee2b7e6df273baebff1e7770">00448</a>         RCFileTimeValue <a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#a98c390eaee2b7e6df273baebff1e7770">m_createTime</a> ;
+<a name="l00449"></a><a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#adae349bf0b1186a6174e26b2a4b767f3">00449</a>         RCFileTimeValue <a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#adae349bf0b1186a6174e26b2a4b767f3">m_accessTime</a> ;
+<a name="l00450"></a><a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#a79c32839d1af6f8df143cc41476831cd">00450</a>         RCFileTimeValue <a class="code" href="../../d7/d87/structRCExtractArchiveCallback_1_1TPendingDirTime.html#a79c32839d1af6f8df143cc41476831cd">m_modifyTime</a> ;
+<a name="l00451"></a>00451     };
+<a name="l00452"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6288ea66489152a0c98a5f4bab1a5730">00452</a>     <span class="keyword">typedef</span> std::list&lt;TPendingDirTime&gt; <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6288ea66489152a0c98a5f4bab1a5730">TPendingDirTimeList</a> ;
+<a name="l00453"></a><a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a26acfbf3b4cd60ff73bf57dcba23422f">00453</a>     <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a6288ea66489152a0c98a5f4bab1a5730">TPendingDirTimeList</a> <a class="code" href="../../dc/d69/classRCExtractArchiveCallback.html#a26acfbf3b4cd60ff73bf57dcba23422f">m_pendingDirTimeList</a> ;
+<a name="l00454"></a>00454 };
+<a name="l00455"></a>00455 <span class="comment"></span>
+<a name="l00456"></a>00456 <span class="comment">/** 智能指针定义</span>
+<a name="l00457"></a>00457 <span class="comment">*/</span>
+<a name="l00458"></a><a class="code" href="../../d2/ddc/RCExtractArchiveCallback_8h.html#a57c78d2ef5c4f580c20ff0322dc22e20">00458</a> <span class="keyword">typedef</span> <a class="code" href="../../d9/d13/classRCComPtr.html">RCComPtr&lt;RCExtractArchiveCallback&gt;</a> <a class="code" href="../../d9/d13/classRCComPtr.html">RCExtractArchiveCallbackPtr</a> ;
+<a name="l00459"></a>00459 
+<a name="l00460"></a>00460 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00461"></a>00461 
+<a name="l00462"></a>00462 <span class="preprocessor">#endif //__RCExtractArchiveCallback_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

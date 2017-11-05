@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCZipStrongDecoder类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html">RCZipStrongDecoder</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCZipStrongDecoder类参考</h1><!-- doxytag: class="RCZip::RCZipStrongDecoder" --><!-- doxytag: inherits="RCZip::RCZipStrongBaseDecoder" -->
+<p><code>#include &lt;<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html">RCZipStrongDecoder.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCZipStrongDecoder</div>
+<div class="dynsection">
+<div class="center"><img src="../../d7/d8d/classRCZip_1_1RCZipStrongDecoder__inherit__graph.png" border="0" usemap="#RCZip_1_1RCZipStrongDecoder_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCZipStrongDecoder_inherit__map" id="RCZip_1_1RCZipStrongDecoder_inherit__map">
+<area shape="rect" id="node2" href="../../d7/d05/classRCZip_1_1RCZipStrongBaseDecoder.html" title="{RCZip::RCZipStrongBaseDecoder\n|# m_key\l# m_aesFilter\l# m_buf\l|+ Init()\l+ Filter()\l+ CryptoSetPassword()\l}" alt="" coords="167,531,407,667"/><area shape="rect" id="node4" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ICompressFilter, ICryptoSetPassword \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="64,361,509,482"/><area shape="rect" id="node6" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,176,176,312"/><area shape="rect" id="node8" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,28,181,105"/><area shape="rect" id="node10" href="../../d2/db9/classRCZip_1_1ICompressFilter.html" title="{RCZip::ICompressFilter\n||+ Init()\l+ Filter()\l# ~ICompressFilter()\l}" alt="" coords="200,191,373,297"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="319,6,465,127"/><area shape="rect" id="node14" href="../../da/d3b/classRCZip_1_1ICryptoSetPassword.html" title="{RCZip::ICryptoSetPassword\n||+ CryptoSetPassword()\l# ~ICryptoSetPassword()\l}" alt="" coords="397,198,597,290"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCZipStrongDecoder合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/df7/classRCZip_1_1RCZipStrongDecoder__coll__graph.png" border="0" usemap="#RCZip_1_1RCZipStrongDecoder_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCZipStrongDecoder_coll__map" id="RCZip_1_1RCZipStrongDecoder_coll__map">
+<area shape="rect" id="node2" href="../../d7/d05/classRCZip_1_1RCZipStrongBaseDecoder.html" title="{RCZip::RCZipStrongBaseDecoder\n|# m_key\l# m_aesFilter\l# m_buf\l|+ Init()\l+ Filter()\l+ CryptoSetPassword()\l}" alt="" coords="641,741,881,877"/><area shape="rect" id="node4" href="../../de/d8d/classRCZip_1_1IUnknownImpl2.html" title="{RCZip::IUnknownImpl2\&lt; ICompressFilter, ICryptoSetPassword \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl2()\l}" alt="" coords="5,467,451,589"/><area shape="rect" id="node6" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="31,179,196,315"/><area shape="rect" id="node8" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="25,28,201,105"/><area shape="rect" id="node10" href="../../d2/db9/classRCZip_1_1ICompressFilter.html" title="{RCZip::ICompressFilter\n||+ Init()\l+ Filter()\l# ~ICompressFilter()\l}" alt="" coords="444,193,617,300"/><area shape="rect" id="node17" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ICompressFilter \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="475,379,696,677"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="351,6,497,127"/><area shape="rect" id="node14" href="../../da/d3b/classRCZip_1_1ICryptoSetPassword.html" title="{RCZip::ICryptoSetPassword\n||+ CryptoSetPassword()\l# ~ICryptoSetPassword()\l}" alt="" coords="220,201,420,293"/><area shape="rect" id="node20" href="../../d3/db6/classRCZip_1_1RCBuffer.html" title="{RCZip::RCBuffer\&lt; byte_t \&gt;\n|# m_capacity\l# m_data\l# m_dataLen\l|+ RCBuffer()\l+ RCBuffer()\l+ RCBuffer()\l+ ~RCBuffer()\l+ operator=()\l+ GetCapacity()\l+ SetCapacity()\l+ Free()\l+ data()\l+ data()\l+ SetDataLength()\l+ GetDataLength()\l+ operator[]()\l}" alt="" coords="720,387,920,669"/><area shape="rect" id="node22" href="../../d2/d79/structRCZip_1_1RCZipStrongKeyInfo.html" title="{RCZip::RCZipStrongKeyInfo\n|+ m_masterKey\l+ m_keySize\l|+ SetPassword()\l}" alt="" coords="944,482,1147,574"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d7/d76/classRCZip_1_1RCZipStrongDecoder-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a3a55a383ed6722d7cc3b4b6a1ec31460">Filter</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *data, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a5caa5a23094a77b4356641c8106e150a">ReadHeader</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *inStream, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> crc, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> unpackSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#af8fe04cdbee846f11cf23a8dd2f1bc38">CheckPassword</a> (bool &amp;isPasswordOK)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a5e65e332ece3bb34067fb1ff4bf65087">m_ivSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a6d8c7fb478f381c532e276cb6d1acfc7">m_iv</a> [16]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a797553f1270973ec1fa5f23239b31bf6">m_remSize</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Zip Strong 解码器 </p>
+
+<p>在文件<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html">RCZipStrongDecoder.h</a>第<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html#l00083">83</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="af8fe04cdbee846f11cf23a8dd2f1bc38"></a><!-- doxytag: member="RCZip::RCZipStrongDecoder::CheckPassword" ref="af8fe04cdbee846f11cf23a8dd2f1bc38" args="(bool &amp;isPasswordOK)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCZipStrongDecoder::CheckPassword </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>isPasswordOK</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>检查密码 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>isPasswordOK</em>&nbsp;</td><td>密码是否正确 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3a55a383ed6722d7cc3b4b6a1ec31460"></a><!-- doxytag: member="RCZip::RCZipStrongDecoder::Filter" ref="a3a55a383ed6722d7cc3b4b6a1ec31460" args="(byte_t *data, uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCZipStrongDecoder::Filter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>过滤数据 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in,out]</tt>&nbsp;</td><td valign="top"><em>data</em>&nbsp;</td><td>数据缓冲区 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>数据长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>实际处理数据的长度 </dd></dl>
+
+<p>实现了<a class="el" href="../../d7/d05/classRCZip_1_1RCZipStrongBaseDecoder.html#a520eab4bbaba20ae318b87e39ba8f005">RCZip::RCZipStrongBaseDecoder</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5caa5a23094a77b4356641c8106e150a"></a><!-- doxytag: member="RCZip::RCZipStrongDecoder::ReadHeader" ref="a5caa5a23094a77b4356641c8106e150a" args="(ISequentialInStream *inStream, uint32_t crc, uint64_t unpackSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCZipStrongDecoder::ReadHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>crc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>unpackSize</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取头标记 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>inStream</em>&nbsp;</td><td>输入流 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>crc</em>&nbsp;</td><td>crc校验 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>unpackSize</em>&nbsp;</td><td>解压后大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK,否则返回错误号 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a6d8c7fb478f381c532e276cb6d1acfc7"></a><!-- doxytag: member="RCZip::RCZipStrongDecoder::m_iv" ref="a6d8c7fb478f381c532e276cb6d1acfc7" args="[16]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a6d8c7fb478f381c532e276cb6d1acfc7">RCZip::RCZipStrongDecoder::m_iv</a>[16]<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>iv </p>
+
+<p>在文件<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html">RCZipStrongDecoder.h</a>第<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html#l00117">117</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e65e332ece3bb34067fb1ff4bf65087"></a><!-- doxytag: member="RCZip::RCZipStrongDecoder::m_ivSize" ref="a5e65e332ece3bb34067fb1ff4bf65087" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a5e65e332ece3bb34067fb1ff4bf65087">RCZip::RCZipStrongDecoder::m_ivSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>iv大小 </p>
+
+<p>在文件<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html">RCZipStrongDecoder.h</a>第<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html#l00113">113</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a797553f1270973ec1fa5f23239b31bf6"></a><!-- doxytag: member="RCZip::RCZipStrongDecoder::m_remSize" ref="a797553f1270973ec1fa5f23239b31bf6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../dc/d2c/classRCZip_1_1RCZipStrongDecoder.html#a797553f1270973ec1fa5f23239b31bf6">RCZip::RCZipStrongDecoder::m_remSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>rem大小 </p>
+
+<p>在文件<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html">RCZipStrongDecoder.h</a>第<a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html#l00121">121</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d32/RCZipStrongDecoder_8h_source.html">RCZipStrongDecoder.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

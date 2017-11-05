@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: LzmaEnc.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>LzmaEnc.h文件参考</h1><code>#include &quot;<a class="el" href="../../d7/df8/Types_8h_source.html">algorithm/Types.h</a>&quot;</code><br/>
+<div class="dynheader">
+LzmaEnc.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/d4d/LzmaEnc_8h__incl.png" border="0" usemap="#LzmaEnc_8h_map" alt=""/></div>
+<map name="LzmaEnc_8h_map" id="LzmaEnc_8h">
+<area shape="rect" id="node3" href="../../d7/df8/Types_8h.html" title="algorithm/Types.h" alt="" coords="76,80,217,107"/><area shape="rect" id="node5" href="../../df/dd8/stdint_8h.html" title="base/stdint.h" alt="" coords="36,155,143,181"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dc/d71/LzmaEnc_8h__dep__incl.png" border="0" usemap="#LzmaEnc_8hdep_map" alt=""/></div>
+<map name="LzmaEnc_8hdep_map" id="LzmaEnc_8hdep">
+<area shape="rect" id="node3" href="../../d8/d25/Lzma2Enc_8h.html" title="Lzma2Enc.h" alt="" coords="28,80,132,107"/><area shape="rect" id="node7" href="../../de/d7a/RCLzmaEncoder_8h.html" title="RCLzmaEncoder.h" alt="" coords="156,80,297,107"/><area shape="rect" id="node5" href="../../dd/def/RCLzma2Encoder_8h.html" title="RCLzma2Encoder.h" alt="" coords="5,155,155,181"/></map>
+</div>
+
+<p><a href="../../d2/df4/LzmaEnc_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">_CLzmaEncProps</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a4b339e98a6261f3b64a9c93394fe5bb2">LZMA_PROPS_SIZE</a>&nbsp;&nbsp;&nbsp;5</td></tr>
+<tr><td colspan="2"><h2>类型定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">_CLzmaEncProps</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a47369aa070f0d0a79b891c94cd125105">CLzmaEncProps</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a></td></tr>
+<tr><td colspan="2"><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a336bf0e92adf6ff680547c58fd60baa6">LzmaEncProps_Init</a> (<a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#acd23d29a44a6a248851b7e0ef8016d87">LzmaEncProps_Normalize</a> (<a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#adbdb8d9faeb99b5c53dad00e60589c6c">LzmaEncProps_GetDictSize</a> (const <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *props2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a1205a513b1d33c24a6cc5788c4ca8990">LzmaEnc_Create</a> (<a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a065756196601bbeb1910df0f574205ac">LzmaEnc_Destroy</a> (<a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a> p, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#aebab762563ff7e4ad5bde8644ef35059">LzmaEnc_SetProps</a> (<a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a> p, const <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *props)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#aecf75778a8032dea9aa5cf9c7db22884">LzmaEnc_WriteProperties</a> (<a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a> p, <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *properties, size_t *size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a3aae18552c9f2674fb80b9e222d18542">LzmaEnc_Encode</a> (<a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a> p, <a class="el" href="../../dd/d89/structISeqOutStream.html">ISeqOutStream</a> *outStream, <a class="el" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *inStream, <a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *progress, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a424b6bc96ac32f9919f96efbc59724d2">LzmaEnc_MemEncode</a> (<a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a> p, <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, size_t *destLen, const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, size_t srcLen, int writeEndMark, <a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *progress, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a4e41487978b05185db9647f05f2dbf70">LzmaEncode</a> (<a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *dest, size_t *destLen, const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *src, size_t srcLen, const <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *props, <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *propsEncoded, size_t *propsSize, int writeEndMark, <a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *progress, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *alloc, <a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *allocBig)</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a4b339e98a6261f3b64a9c93394fe5bb2"></a><!-- doxytag: member="LzmaEnc.h::LZMA_PROPS_SIZE" ref="a4b339e98a6261f3b64a9c93394fe5bb2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LZMA_PROPS_SIZE&nbsp;&nbsp;&nbsp;5</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d2/df4/LzmaEnc_8h_source.html">LzmaEnc.h</a>第<a class="el" href="../../d2/df4/LzmaEnc_8h_source.html#l00012">12</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>类型定义文档</h2>
+<a class="anchor" id="a8918974dc58e65ece361825e560a91f3"></a><!-- doxytag: member="LzmaEnc.h::CLzmaEncHandle" ref="a8918974dc58e65ece361825e560a91f3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d2/df4/LzmaEnc_8h_source.html">LzmaEnc.h</a>第<a class="el" href="../../d2/df4/LzmaEnc_8h_source.html#l00049">49</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a47369aa070f0d0a79b891c94cd125105"></a><!-- doxytag: member="LzmaEnc.h::CLzmaEncProps" ref="a47369aa070f0d0a79b891c94cd125105" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">_CLzmaEncProps</a>  <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>函数文档</h2>
+<a class="anchor" id="a1205a513b1d33c24a6cc5788c4ca8990"></a><!-- doxytag: member="LzmaEnc.h::LzmaEnc_Create" ref="a1205a513b1d33c24a6cc5788c4ca8990" args="(ISzAlloc *alloc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a> LzmaEnc_Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a065756196601bbeb1910df0f574205ac"></a><!-- doxytag: member="LzmaEnc.h::LzmaEnc_Destroy" ref="a065756196601bbeb1910df0f574205ac" args="(CLzmaEncHandle p, ISzAlloc *alloc, ISzAlloc *allocBig)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LzmaEnc_Destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>allocBig</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3aae18552c9f2674fb80b9e222d18542"></a><!-- doxytag: member="LzmaEnc.h::LzmaEnc_Encode" ref="a3aae18552c9f2674fb80b9e222d18542" args="(CLzmaEncHandle p, ISeqOutStream *outStream, ISeqInStream *inStream, ICompressProgress *progress, ISzAlloc *alloc, ISzAlloc *allocBig)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> LzmaEnc_Encode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d89/structISeqOutStream.html">ISeqOutStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>inStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>allocBig</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a424b6bc96ac32f9919f96efbc59724d2"></a><!-- doxytag: member="LzmaEnc.h::LzmaEnc_MemEncode" ref="a424b6bc96ac32f9919f96efbc59724d2" args="(CLzmaEncHandle p, byte_t *dest, size_t *destLen, const byte_t *src, size_t srcLen, int writeEndMark, ICompressProgress *progress, ISzAlloc *alloc, ISzAlloc *allocBig)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> LzmaEnc_MemEncode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>destLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>srcLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>writeEndMark</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>allocBig</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aebab762563ff7e4ad5bde8644ef35059"></a><!-- doxytag: member="LzmaEnc.h::LzmaEnc_SetProps" ref="aebab762563ff7e4ad5bde8644ef35059" args="(CLzmaEncHandle p, const CLzmaEncProps *props)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> LzmaEnc_SetProps </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *&nbsp;</td>
+          <td class="paramname"> <em>props</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aecf75778a8032dea9aa5cf9c7db22884"></a><!-- doxytag: member="LzmaEnc.h::LzmaEnc_WriteProperties" ref="aecf75778a8032dea9aa5cf9c7db22884" args="(CLzmaEncHandle p, byte_t *properties, size_t *size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> LzmaEnc_WriteProperties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/df4/LzmaEnc_8h.html#a8918974dc58e65ece361825e560a91f3">CLzmaEncHandle</a>&nbsp;</td>
+          <td class="paramname"> <em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e41487978b05185db9647f05f2dbf70"></a><!-- doxytag: member="LzmaEnc.h::LzmaEncode" ref="a4e41487978b05185db9647f05f2dbf70" args="(byte_t *dest, size_t *destLen, const byte_t *src, size_t srcLen, const CLzmaEncProps *props, byte_t *propsEncoded, size_t *propsSize, int writeEndMark, ICompressProgress *progress, ISzAlloc *alloc, ISzAlloc *allocBig)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> LzmaEncode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>destLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&nbsp;</td>
+          <td class="paramname"> <em>srcLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *&nbsp;</td>
+          <td class="paramname"> <em>props</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>propsEncoded</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&nbsp;</td>
+          <td class="paramname"> <em>propsSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>writeEndMark</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dab/structICompressProgress.html">ICompressProgress</a> *&nbsp;</td>
+          <td class="paramname"> <em>progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>alloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a> *&nbsp;</td>
+          <td class="paramname"> <em>allocBig</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adbdb8d9faeb99b5c53dad00e60589c6c"></a><!-- doxytag: member="LzmaEnc.h::LzmaEncProps_GetDictSize" ref="adbdb8d9faeb99b5c53dad00e60589c6c" args="(const CLzmaEncProps *props2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> LzmaEncProps_GetDictSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *&nbsp;</td>
+          <td class="paramname"> <em>props2</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a336bf0e92adf6ff680547c58fd60baa6"></a><!-- doxytag: member="LzmaEnc.h::LzmaEncProps_Init" ref="a336bf0e92adf6ff680547c58fd60baa6" args="(CLzmaEncProps *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LzmaEncProps_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd23d29a44a6a248851b7e0ef8016d87"></a><!-- doxytag: member="LzmaEnc.h::LzmaEncProps_Normalize" ref="acd23d29a44a6a248851b7e0ef8016d87" args="(CLzmaEncProps *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LzmaEncProps_Normalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d8c/struct__CLzmaEncProps.html">CLzmaEncProps</a> *&nbsp;</td>
+          <td class="paramname"> <em>p</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCHfsVolHeader结构参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html">RCHfsVolHeader</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCHfsVolHeader结构参考</h1><!-- doxytag: class="RCZip::RCHfsVolHeader" -->
+<p><code>#include &lt;<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>&gt;</code></p>
+<div class="dynheader">
+RCZip::RCHfsVolHeader合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../dd/d66/structRCZip_1_1RCHfsVolHeader__coll__graph.png" border="0" usemap="#RCZip_1_1RCHfsVolHeader_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCHfsVolHeader_coll__map" id="RCZip_1_1RCHfsVolHeader_coll__map">
+<area shape="rect" id="node2" href="../../d8/dce/structRCZip_1_1RCHfsFork.html" title="{RCZip::RCHfsFork\n|+ m_size\l+ m_numBlocks\l+ m_extents\l|+ Parse()\l}" alt="" coords="24,163,163,269"/><area shape="rect" id="node4" href="../../d5/d61/structRCZip_1_1RCHfsExtent.html" title="{RCZip::RCHfsExtent\n|+ m_pos\l+ m_numBlocks\l|}" alt="" coords="17,6,169,98"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d8/d28/structRCZip_1_1RCHfsVolHeader-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a56c8b152370fffb58e773bebcbda96e1">IsHfsX</a> () const </td></tr>
+<tr><td colspan="2"><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a4a227e9a490c8f283af306d95c061812">m_header</a> [2]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a15deee07786b93bcd74b0d959396cbb5">m_version</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a8a946a14dec344bda2b347bf3becf216">m_cTime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a27ef80eee23cb4d5e2f8e074d80b0bb1">m_mTime</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a8059a41366004e8a045a5eb8c3db0e5d">m_blockSizeLog</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a668a7fea90168a416eeae1ac61a28fb0">m_numBlocks</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a5ebb197aa0b7ae61d1249feb228506df">m_numFreeBlocks</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dce/structRCZip_1_1RCHfsFork.html">RCHfsFork</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#ad76e31f582198f5dc0eed10ce027684a">m_extentsFile</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dce/structRCZip_1_1RCHfsFork.html">RCHfsFork</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#affff67c58548ee225cc8d9c2cb831743">m_catalogFile</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00051">51</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a56c8b152370fffb58e773bebcbda96e1"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::IsHfsX" ref="a56c8b152370fffb58e773bebcbda96e1" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCHfsVolHeader::IsHfsX </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是hfsx </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a8059a41366004e8a045a5eb8c3db0e5d"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_blockSizeLog" ref="a8059a41366004e8a045a5eb8c3db0e5d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a8059a41366004e8a045a5eb8c3db0e5d">RCZip::RCHfsVolHeader::m_blockSizeLog</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>块的日志大小 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00071">71</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="affff67c58548ee225cc8d9c2cb831743"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_catalogFile" ref="affff67c58548ee225cc8d9c2cb831743" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dce/structRCZip_1_1RCHfsFork.html">RCHfsFork</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#affff67c58548ee225cc8d9c2cb831743">RCZip::RCHfsVolHeader::m_catalogFile</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是日志文件 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00087">87</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a946a14dec344bda2b347bf3becf216"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_cTime" ref="a8a946a14dec344bda2b347bf3becf216" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a8a946a14dec344bda2b347bf3becf216">RCZip::RCHfsVolHeader::m_cTime</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建时间 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00063">63</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad76e31f582198f5dc0eed10ce027684a"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_extentsFile" ref="ad76e31f582198f5dc0eed10ce027684a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dce/structRCZip_1_1RCHfsFork.html">RCHfsFork</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#ad76e31f582198f5dc0eed10ce027684a">RCZip::RCHfsVolHeader::m_extentsFile</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否是扩展文件 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00083">83</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a227e9a490c8f283af306d95c061812"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_header" ref="a4a227e9a490c8f283af306d95c061812" args="[2]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a4a227e9a490c8f283af306d95c061812">RCZip::RCHfsVolHeader::m_header</a>[2]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>头部 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00055">55</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a27ef80eee23cb4d5e2f8e074d80b0bb1"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_mTime" ref="a27ef80eee23cb4d5e2f8e074d80b0bb1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a27ef80eee23cb4d5e2f8e074d80b0bb1">RCZip::RCHfsVolHeader::m_mTime</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>修改时间 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00067">67</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a668a7fea90168a416eeae1ac61a28fb0"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_numBlocks" ref="a668a7fea90168a416eeae1ac61a28fb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a668a7fea90168a416eeae1ac61a28fb0">RCZip::RCHfsVolHeader::m_numBlocks</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>块的个数 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00075">75</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ebb197aa0b7ae61d1249feb228506df"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_numFreeBlocks" ref="a5ebb197aa0b7ae61d1249feb228506df" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a5ebb197aa0b7ae61d1249feb228506df">RCZip::RCHfsVolHeader::m_numFreeBlocks</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>空闲块的个数 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00079">79</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a15deee07786b93bcd74b0d959396cbb5"></a><!-- doxytag: member="RCZip::RCHfsVolHeader::m_version" ref="a15deee07786b93bcd74b0d959396cbb5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a30af71eaf40c925c9832eb289a48da35">uint16_t</a> <a class="el" href="../../d7/dfb/structRCZip_1_1RCHfsVolHeader.html#a15deee07786b93bcd74b0d959396cbb5">RCZip::RCHfsVolHeader::m_version</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>版本 </p>
+
+<p>在文件<a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a>第<a class="el" href="../../df/d88/RCHfsIn_8h_source.html#l00059">59</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该结构的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d88/RCHfsIn_8h_source.html">RCHfsIn.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

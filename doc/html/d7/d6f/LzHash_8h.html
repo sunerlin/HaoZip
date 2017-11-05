@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: LzHash.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>LzHash.h文件参考</h1>
+<p><a href="../../d7/d6f/LzHash_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a>&nbsp;&nbsp;&nbsp;(1 &lt;&lt; 10)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a>&nbsp;&nbsp;&nbsp;(1 &lt;&lt; 16)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#ace07d0e20c2f6629cbf675997fdc5138">kHash4Size</a>&nbsp;&nbsp;&nbsp;(1 &lt;&lt; 20)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a355880a38ccb1f2dd0f79cfcafa4d71a">kFix3HashSize</a>&nbsp;&nbsp;&nbsp;(kHash2Size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a03a6593a5538236723aa78bfef375a22">kFix4HashSize</a>&nbsp;&nbsp;&nbsp;(kHash2Size + kHash3Size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#aab3eb881347315549f70b18889e4f8b2">kFix5HashSize</a>&nbsp;&nbsp;&nbsp;(kHash2Size + kHash3Size + kHash4Size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a14fc800bc74282a288c410610fa63b60">HASH2_CALC</a>&nbsp;&nbsp;&nbsp;hashValue = cur[0] | ((<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[1] &lt;&lt; 8);</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#af97f6377522289382ae2d4ede21334f9">HASH3_CALC</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a7c9301debe19a7ea1b249511723ce335">HASH4_CALC</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a1c089185352cf9adceb989b6e2a14e3f">HASH5_CALC</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a48efc9509d9de04deca7c64bc921edf1">HASH_ZIP_CALC</a>&nbsp;&nbsp;&nbsp;hashValue = ((cur[2] | ((<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[0] &lt;&lt; 8)) ^ p-&gt;crc[cur[1]]) &amp; 0xFFFF;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#ac3a01d7e76f598194ae20b4062be4590">MT_HASH2_CALC</a>&nbsp;&nbsp;&nbsp;hash2Value = (p-&gt;crc[cur[0]] ^ cur[1]) &amp; (kHash2Size - 1);</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#a53d5e20da385b5509e14241478b2eacf">MT_HASH3_CALC</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d6f/LzHash_8h.html#ab79a0b78805c357569e6910c64719bbf">MT_HASH4_CALC</a></td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="a14fc800bc74282a288c410610fa63b60"></a><!-- doxytag: member="LzHash.h::HASH2_CALC" ref="a14fc800bc74282a288c410610fa63b60" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH2_CALC&nbsp;&nbsp;&nbsp;hashValue = cur[0] | ((<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[1] &lt;&lt; 8);</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00015">15</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="af97f6377522289382ae2d4ede21334f9"></a><!-- doxytag: member="LzHash.h::HASH3_CALC" ref="af97f6377522289382ae2d4ede21334f9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH3_CALC</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">{ \
+  <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> temp = p-&gt;crc[cur[0]] ^ cur[1]; \
+  hash2Value = temp &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
+  hashValue = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8)) &amp; p-&gt;hashMask; }
+</pre></div>
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00017">17</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c9301debe19a7ea1b249511723ce335"></a><!-- doxytag: member="LzHash.h::HASH4_CALC" ref="a7c9301debe19a7ea1b249511723ce335" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH4_CALC</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">{ \
+  <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> temp = p-&gt;crc[cur[0]] ^ cur[1]; \
+  hash2Value = temp &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
+  hash3Value = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
+  hashValue = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)) &amp; p-&gt;hashMask; }
+</pre></div>
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00022">22</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c089185352cf9adceb989b6e2a14e3f"></a><!-- doxytag: member="LzHash.h::HASH5_CALC" ref="a1c089185352cf9adceb989b6e2a14e3f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH5_CALC</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">{ \
+  <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> temp = p-&gt;crc[cur[0]] ^ cur[1]; \
+  hash2Value = temp &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
+  hash3Value = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
+  hash4Value = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)); \
+  hashValue = (hash4Value ^ (p-&gt;crc[cur[4]] &lt;&lt; 3)) &amp; p-&gt;hashMask; \
+  hash4Value &amp;= (<a class="code" href="../../d7/d6f/LzHash_8h.html#ace07d0e20c2f6629cbf675997fdc5138">kHash4Size</a> - 1); }
+</pre></div>
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a48efc9509d9de04deca7c64bc921edf1"></a><!-- doxytag: member="LzHash.h::HASH_ZIP_CALC" ref="a48efc9509d9de04deca7c64bc921edf1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH_ZIP_CALC&nbsp;&nbsp;&nbsp;hashValue = ((cur[2] | ((<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[0] &lt;&lt; 8)) ^ p-&gt;crc[cur[1]]) &amp; 0xFFFF;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00037">37</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a355880a38ccb1f2dd0f79cfcafa4d71a"></a><!-- doxytag: member="LzHash.h::kFix3HashSize" ref="a355880a38ccb1f2dd0f79cfcafa4d71a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kFix3HashSize&nbsp;&nbsp;&nbsp;(kHash2Size)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a03a6593a5538236723aa78bfef375a22"></a><!-- doxytag: member="LzHash.h::kFix4HashSize" ref="a03a6593a5538236723aa78bfef375a22" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kFix4HashSize&nbsp;&nbsp;&nbsp;(kHash2Size + kHash3Size)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00012">12</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aab3eb881347315549f70b18889e4f8b2"></a><!-- doxytag: member="LzHash.h::kFix5HashSize" ref="aab3eb881347315549f70b18889e4f8b2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kFix5HashSize&nbsp;&nbsp;&nbsp;(kHash2Size + kHash3Size + kHash4Size)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00013">13</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a329be29d9e83d874d5e599eb888698c8"></a><!-- doxytag: member="LzHash.h::kHash2Size" ref="a329be29d9e83d874d5e599eb888698c8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kHash2Size&nbsp;&nbsp;&nbsp;(1 &lt;&lt; 10)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00007">7</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ada485c5ae49b85e8a7e5cced5ddf4f0d"></a><!-- doxytag: member="LzHash.h::kHash3Size" ref="ada485c5ae49b85e8a7e5cced5ddf4f0d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kHash3Size&nbsp;&nbsp;&nbsp;(1 &lt;&lt; 16)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00008">8</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ace07d0e20c2f6629cbf675997fdc5138"></a><!-- doxytag: member="LzHash.h::kHash4Size" ref="ace07d0e20c2f6629cbf675997fdc5138" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kHash4Size&nbsp;&nbsp;&nbsp;(1 &lt;&lt; 20)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00009">9</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3a01d7e76f598194ae20b4062be4590"></a><!-- doxytag: member="LzHash.h::MT_HASH2_CALC" ref="ac3a01d7e76f598194ae20b4062be4590" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MT_HASH2_CALC&nbsp;&nbsp;&nbsp;hash2Value = (p-&gt;crc[cur[0]] ^ cur[1]) &amp; (kHash2Size - 1);</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00040">40</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a53d5e20da385b5509e14241478b2eacf"></a><!-- doxytag: member="LzHash.h::MT_HASH3_CALC" ref="a53d5e20da385b5509e14241478b2eacf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MT_HASH3_CALC</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">{ \
+  <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> temp = p-&gt;crc[cur[0]] ^ cur[1]; \
+  hash2Value = temp &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
+  hash3Value = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); }
+</pre></div>
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00043">43</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ab79a0b78805c357569e6910c64719bbf"></a><!-- doxytag: member="LzHash.h::MT_HASH4_CALC" ref="ab79a0b78805c357569e6910c64719bbf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MT_HASH4_CALC</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>值:</b><div class="fragment"><pre class="fragment">{ \
+  <a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> temp = p-&gt;crc[cur[0]] ^ cur[1]; \
+  hash2Value = temp &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#a329be29d9e83d874d5e599eb888698c8">kHash2Size</a> - 1); \
+  hash3Value = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8)) &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#ada485c5ae49b85e8a7e5cced5ddf4f0d">kHash3Size</a> - 1); \
+  hash4Value = (temp ^ ((<a class="code" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>)cur[2] &lt;&lt; 8) ^ (p-&gt;crc[cur[3]] &lt;&lt; 5)) &amp; (<a class="code" href="../../d7/d6f/LzHash_8h.html#ace07d0e20c2f6629cbf675997fdc5138">kHash4Size</a> - 1); }
+</pre></div>
+<p>在文件<a class="el" href="../../d7/d6f/LzHash_8h_source.html">LzHash.h</a>第<a class="el" href="../../d7/d6f/LzHash_8h_source.html#l00048">48</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

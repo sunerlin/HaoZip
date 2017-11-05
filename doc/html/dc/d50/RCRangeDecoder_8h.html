@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCRangeDecoder.h文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_f5b3b6b24013007771f5a3f3c2933cad.html">compress</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_01a52e80afb3252b9dc04a0d1c6d327c.html">range</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCRangeDecoder.h文件参考</h1><code>#include &quot;<a class="el" href="../../d2/df2/RCNonCopyable_8h_source.html">base/RCNonCopyable.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">common/RCInBuffer.h</a>&quot;</code><br/>
+<div class="dynheader">
+RCRangeDecoder.h包含/依赖关系图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../df/d12/RCRangeDecoder_8h__incl.png" border="0" usemap="#RCRangeDecoder_8h_map" alt=""/></div>
+<map name="RCRangeDecoder_8h_map" id="RCRangeDecoder_8h">
+<area shape="rect" id="node3" href="../../d2/df2/RCNonCopyable_8h.html" title="base/RCNonCopyable.h" alt="" coords="68,155,244,181"/><area shape="rect" id="node19" href="../../d8/d25/RCInBuffer_8h.html" title="common/RCInBuffer.h" alt="" coords="193,80,361,107"/><area shape="rect" id="node5" href="../../d0/d20/RCDefs_8h.html" title="base/RCDefs.h" alt="" coords="292,379,409,405"/><area shape="rect" id="node7" href="../../dd/d51/RCTypes_8h.html" title="base/RCTypes.h" alt="" coords="288,453,413,480"/><area shape="rect" id="node11" href="../../d7/d53/RCNameSpace_8h.html" title="base/RCNameSpace.h" alt="" coords="96,528,261,555"/><area shape="rect" id="node13" href="../../d3/dd6/RCConfig_8h.html" title="base/RCConfig.h" alt="" coords="285,528,416,555"/><area shape="rect" id="node21" href="../../d8/dc9/IStream_8h.html" title="interface/IStream.h" alt="" coords="268,155,417,181"/><area shape="rect" id="node23" href="../../d9/d35/IUnknown_8h.html" title="interface/IUnknown.h" alt="" coords="363,229,528,256"/><area shape="rect" id="node33" href="../../d2/dba/RCString_8h.html" title="base/RCString.h" alt="" coords="211,229,339,256"/><area shape="rect" id="node25" href="../../dd/d46/RCIIDDefs_8h.html" title="interface/RCIIDDefs.h" alt="" coords="329,304,492,331"/><area shape="rect" id="node28" href="../../d8/d31/RCComPtr_8h.html" title="base/RCComPtr.h" alt="" coords="516,304,652,331"/></map>
+</div>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+<div class="center"><img src="../../df/dd9/RCRangeDecoder_8h__dep__incl.png" border="0" usemap="#RCRangeDecoder_8hdep_map" alt=""/></div>
+<map name="RCRangeDecoder_8hdep_map" id="RCRangeDecoder_8hdep">
+<area shape="rect" id="node3" href="../../d8/d0e/RCBranchBCJ2Decoder_8h.html" title="RCBranchBCJ2Decoder.h" alt="" coords="5,155,189,181"/><area shape="rect" id="node5" href="../../d4/dab/RCPPMDRangeDecoder_8h.html" title="RCPPMDRangeDecoder.h" alt="" coords="264,80,448,107"/><area shape="rect" id="node9" href="../../d1/dde/RCRangeBitDecoder_8h.html" title="RCRangeBitDecoder.h" alt="" coords="75,80,240,107"/><area shape="rect" id="node7" href="../../d3/d0c/RCPPMDDecoder_8h.html" title="RCPPMDDecoder.h" alt="" coords="284,155,428,181"/></map>
+</div>
+
+<p><a href="../../dc/d50/RCRangeDecoder_8h_source.html">浏览该文件的源代码。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbe/classRCZip_1_1RCRangeDecoder.html">RCZip::RCRangeDecoder</a></td></tr>
+<tr><td colspan="2"><h2>名字空间</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a></td></tr>
+<tr><td colspan="2"><h2>宏定义</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/RCRangeDecoder_8h.html#ac14d295bd7b8427b0af3e7758c26149f">__RCRangeDecoder_h_</a>&nbsp;&nbsp;&nbsp;1</td></tr>
+</table>
+<hr/><h2>宏定义文档</h2>
+<a class="anchor" id="ac14d295bd7b8427b0af3e7758c26149f"></a><!-- doxytag: member="RCRangeDecoder.h::__RCRangeDecoder_h_" ref="ac14d295bd7b8427b0af3e7758c26149f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __RCRangeDecoder_h_&nbsp;&nbsp;&nbsp;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dc/d50/RCRangeDecoder_8h_source.html">RCRangeDecoder.h</a>第<a class="el" href="../../dc/d50/RCRangeDecoder_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

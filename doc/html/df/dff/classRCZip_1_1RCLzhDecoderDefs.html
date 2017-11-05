@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCLzhDecoderDefs类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html">RCLzhDecoderDefs</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCLzhDecoderDefs类参考</h1><!-- doxytag: class="RCZip::RCLzhDecoderDefs" -->
+<p><code>#include &lt;<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>&gt;</code></p>
+
+<p><a href="../../d8/d16/classRCZip_1_1RCLzhDecoderDefs-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a28f1bdb69db87c8511db166c13577923">s_kMaxHuffmanLen</a> = 16</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a2939e9a94ccce5b8f94aa1df737e75e4">s_kNumSpecLevelSymbols</a> = 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a72566b75b3b66069082d32130d76cf45">s_kNumLevelSymbols</a> = <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a2939e9a94ccce5b8f94aa1df737e75e4">s_kNumSpecLevelSymbols</a> + <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a28f1bdb69db87c8511db166c13577923">s_kMaxHuffmanLen</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad830e0aa4c3920e793b6a3ee38c6d178">s_kDictBitsMax</a> = 16</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a0e294318b718c2a16f8646ad029ea799">s_kNumDistanceSymbols</a> = <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad830e0aa4c3920e793b6a3ee38c6d178">s_kDictBitsMax</a> + 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a386eb95aefae30695f94c579824b0c1e">s_kMaxMatch</a> = 256</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a5f58acc04c1508ac4b01d10fa621ea20">s_kMinMatch</a> = 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad516de806cb414348c18b1559541e7df">s_kNumCSymbols</a> = 256 + <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a386eb95aefae30695f94c579824b0c1e">s_kMaxMatch</a> + 2 - <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a5f58acc04c1508ac4b01d10fa621ea20">s_kMinMatch</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#afa22a159bd28b6e5b2e676a080cc37a3">s_kHistorySize</a> = (1 &lt;&lt; 16)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#afeb97c4c2e5db1f9b6c1ee480fefb489">s_kBlockSizeBits</a> = 16</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a195b627ef2b4cd198e8873e4fd40c869">s_kNumCBits</a> = 9</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#aed0c74379ac113da64a5cbd94f584bd2">s_kNumLevelBits</a> = 5</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>Lzh 编码常量定义 </p>
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="afeb97c4c2e5db1f9b6c1ee480fefb489"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kBlockSizeBits" ref="afeb97c4c2e5db1f9b6c1ee480fefb489" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#afeb97c4c2e5db1f9b6c1ee480fefb489">RCZip::RCLzhDecoderDefs::s_kBlockSizeBits</a> = 16<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00033">33</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad830e0aa4c3920e793b6a3ee38c6d178"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kDictBitsMax" ref="ad830e0aa4c3920e793b6a3ee38c6d178" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad830e0aa4c3920e793b6a3ee38c6d178">RCZip::RCLzhDecoderDefs::s_kDictBitsMax</a> = 16<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00026">26</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afa22a159bd28b6e5b2e676a080cc37a3"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kHistorySize" ref="afa22a159bd28b6e5b2e676a080cc37a3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#afa22a159bd28b6e5b2e676a080cc37a3">RCZip::RCLzhDecoderDefs::s_kHistorySize</a> = (1 &lt;&lt; 16)<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00032">32</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a28f1bdb69db87c8511db166c13577923"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kMaxHuffmanLen" ref="a28f1bdb69db87c8511db166c13577923" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a28f1bdb69db87c8511db166c13577923">RCZip::RCLzhDecoderDefs::s_kMaxHuffmanLen</a> = 16<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00023">23</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a386eb95aefae30695f94c579824b0c1e"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kMaxMatch" ref="a386eb95aefae30695f94c579824b0c1e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a386eb95aefae30695f94c579824b0c1e">RCZip::RCLzhDecoderDefs::s_kMaxMatch</a> = 256<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f58acc04c1508ac4b01d10fa621ea20"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kMinMatch" ref="a5f58acc04c1508ac4b01d10fa621ea20" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a5f58acc04c1508ac4b01d10fa621ea20">RCZip::RCLzhDecoderDefs::s_kMinMatch</a> = 3<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00029">29</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a195b627ef2b4cd198e8873e4fd40c869"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kNumCBits" ref="a195b627ef2b4cd198e8873e4fd40c869" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a195b627ef2b4cd198e8873e4fd40c869">RCZip::RCLzhDecoderDefs::s_kNumCBits</a> = 9<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00034">34</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad516de806cb414348c18b1559541e7df"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kNumCSymbols" ref="ad516de806cb414348c18b1559541e7df" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad516de806cb414348c18b1559541e7df">RCZip::RCLzhDecoderDefs::s_kNumCSymbols</a> = 256 + <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a386eb95aefae30695f94c579824b0c1e">s_kMaxMatch</a> + 2 - <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a5f58acc04c1508ac4b01d10fa621ea20">s_kMinMatch</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00030">30</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e294318b718c2a16f8646ad029ea799"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kNumDistanceSymbols" ref="a0e294318b718c2a16f8646ad029ea799" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a0e294318b718c2a16f8646ad029ea799">RCZip::RCLzhDecoderDefs::s_kNumDistanceSymbols</a> = <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#ad830e0aa4c3920e793b6a3ee38c6d178">s_kDictBitsMax</a> + 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00027">27</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aed0c74379ac113da64a5cbd94f584bd2"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kNumLevelBits" ref="aed0c74379ac113da64a5cbd94f584bd2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#aed0c74379ac113da64a5cbd94f584bd2">RCZip::RCLzhDecoderDefs::s_kNumLevelBits</a> = 5<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00035">35</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a72566b75b3b66069082d32130d76cf45"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kNumLevelSymbols" ref="a72566b75b3b66069082d32130d76cf45" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a72566b75b3b66069082d32130d76cf45">RCZip::RCLzhDecoderDefs::s_kNumLevelSymbols</a> = <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a2939e9a94ccce5b8f94aa1df737e75e4">s_kNumSpecLevelSymbols</a> + <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a28f1bdb69db87c8511db166c13577923">s_kMaxHuffmanLen</a><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00025">25</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a2939e9a94ccce5b8f94aa1df737e75e4"></a><!-- doxytag: member="RCZip::RCLzhDecoderDefs::s_kNumSpecLevelSymbols" ref="a2939e9a94ccce5b8f94aa1df737e75e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="el" href="../../df/dff/classRCZip_1_1RCLzhDecoderDefs.html#a2939e9a94ccce5b8f94aa1df737e75e4">RCZip::RCLzhDecoderDefs::s_kNumSpecLevelSymbols</a> = 3<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a>第<a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html#l00024">24</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dd/d2a/RCLzhDecoderDefs_8h_source.html">RCLzhDecoderDefs.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

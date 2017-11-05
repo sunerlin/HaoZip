@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCUpdateErrorInfo.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a6ddee82255e90865292a9375a68cea5.html">archive</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_1fee5ccf71dc3b0de21adbdee5795b7f.html">update</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCUpdateErrorInfo.h</h1><a href="../../d1/d09/RCUpdateErrorInfo_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef  __RCUpdateErrorInfo_h_</span>
+<a name="l00011"></a><a class="code" href="../../d1/d09/RCUpdateErrorInfo_8h.html#a58b4317dc05da3d8dde26a1af4e36008">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCUpdateErrorInfo_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../dd/d51/RCTypes_8h.html">base/RCTypes.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d27/RCWindowsDefs_8h.html">base/RCWindowsDefs.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/dba/RCString_8h.html">base/RCString.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00018"></a>00018 <span class="comment"></span>
+<a name="l00019"></a>00019 <span class="comment">/** 错误信息</span>
+<a name="l00020"></a>00020 <span class="comment">*/</span>
+<a name="l00021"></a><a class="code" href="../../db/d27/classRCErrorInfo.html">00021</a> <span class="keyword">class </span><a class="code" href="../../db/d27/classRCErrorInfo.html">RCErrorInfo</a>
+<a name="l00022"></a>00022 {
+<a name="l00023"></a>00023 <span class="keyword">public</span>:
+<a name="l00024"></a>00024     <span class="comment"></span>
+<a name="l00025"></a>00025 <span class="comment">    /** 默认构造函数</span>
+<a name="l00026"></a>00026 <span class="comment">    */</span>
+<a name="l00027"></a>00027     <a class="code" href="../../db/d27/classRCErrorInfo.html#aff7e778c184158de6bbc0bd1ca29387b">RCErrorInfo</a>() ;
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="keyword">public</span>:
+<a name="l00030"></a>00030     <span class="comment"></span>
+<a name="l00031"></a>00031 <span class="comment">    /** 设置系统错误号</span>
+<a name="l00032"></a>00032 <span class="comment">    @param [in] systemError 系统错误号</span>
+<a name="l00033"></a>00033 <span class="comment">    */</span>
+<a name="l00034"></a>00034     <span class="keywordtype">void</span> <a class="code" href="../../db/d27/classRCErrorInfo.html#a6b3bf490fcae1a4527f7864e7afa532d">SetSystemError</a>(<a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> systemError);
+<a name="l00035"></a>00035     <span class="comment"></span>
+<a name="l00036"></a>00036 <span class="comment">    /** 取得系统错误号</span>
+<a name="l00037"></a>00037 <span class="comment">    @return 返回系统错误号</span>
+<a name="l00038"></a>00038 <span class="comment">    */</span>
+<a name="l00039"></a>00039     <span class="keyword">const</span> <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../db/d27/classRCErrorInfo.html#acbc76c91ad401f700151fc1dec52b123">GetSystemError</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00040"></a>00040 <span class="comment"></span>
+<a name="l00041"></a>00041 <span class="comment">    /** 设置错误文件名</span>
+<a name="l00042"></a>00042 <span class="comment">    @param [in] fileName 文件名</span>
+<a name="l00043"></a>00043 <span class="comment">    */</span>
+<a name="l00044"></a>00044     <span class="keywordtype">void</span> <a class="code" href="../../db/d27/classRCErrorInfo.html#ab86e9a483cef7c3d383836d114aa5585">SetFileName</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName);
+<a name="l00045"></a>00045     <span class="comment"></span>
+<a name="l00046"></a>00046 <span class="comment">    /** 取得错误文件名</span>
+<a name="l00047"></a>00047 <span class="comment">    @return 返回错误文件名</span>
+<a name="l00048"></a>00048 <span class="comment">    */</span>
+<a name="l00049"></a>00049     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../db/d27/classRCErrorInfo.html#a1d0a1a9e086f4b0d894c5d304207c5e9">GetFileName</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00050"></a>00050 <span class="comment"></span>
+<a name="l00051"></a>00051 <span class="comment">    /** 设置错误文件名</span>
+<a name="l00052"></a>00052 <span class="comment">    @param [in] fileName2 文件名</span>
+<a name="l00053"></a>00053 <span class="comment">    */</span>
+<a name="l00054"></a>00054     <span class="keywordtype">void</span> <a class="code" href="../../db/d27/classRCErrorInfo.html#a39d85e629cb4a95e8d6ac30961533b0f">SetFileName2</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; fileName2);
+<a name="l00055"></a>00055     <span class="comment"></span>
+<a name="l00056"></a>00056 <span class="comment">    /** 取得错误文件名</span>
+<a name="l00057"></a>00057 <span class="comment">    @return 返回错误文件名</span>
+<a name="l00058"></a>00058 <span class="comment">    */</span>
+<a name="l00059"></a>00059     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../db/d27/classRCErrorInfo.html#acc818d98ed906ecc2607df305348121b">GetFileName2</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00060"></a>00060 <span class="comment"></span>
+<a name="l00061"></a>00061 <span class="comment">    /** 设置错误信息</span>
+<a name="l00062"></a>00062 <span class="comment">    @param [in] message 错误信息</span>
+<a name="l00063"></a>00063 <span class="comment">    */</span>
+<a name="l00064"></a>00064     <span class="keywordtype">void</span> <a class="code" href="../../db/d27/classRCErrorInfo.html#acf7d974f9c3a7eb808fb6af0ff528c17">SetMessage</a>(<span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; message);
+<a name="l00065"></a>00065     <span class="comment"></span>
+<a name="l00066"></a>00066 <span class="comment">    /** 返回错误信息</span>
+<a name="l00067"></a>00067 <span class="comment">    @return 返回错误信息</span>
+<a name="l00068"></a>00068 <span class="comment">    */</span>
+<a name="l00069"></a>00069     <span class="keyword">const</span> <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&amp; <a class="code" href="../../db/d27/classRCErrorInfo.html#a9ed8d8a8a11d4e2d56be67046e951c83">GetMessage</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;
+<a name="l00070"></a>00070 <span class="comment"></span>
+<a name="l00071"></a>00071 <span class="comment">    /** 将错误信息转换成字符串</span>
+<a name="l00072"></a>00072 <span class="comment">    @return 返回错误信息串</span>
+<a name="l00073"></a>00073 <span class="comment">    */</span>
+<a name="l00074"></a>00074     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../db/d27/classRCErrorInfo.html#a381034c3d5b9dbf35145ae23426c1132">ToString</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> ;
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 <span class="keyword">private</span>:
+<a name="l00077"></a>00077     <span class="comment"></span>
+<a name="l00078"></a>00078 <span class="comment">    /** 系统错误号</span>
+<a name="l00079"></a>00079 <span class="comment">    */</span>
+<a name="l00080"></a><a class="code" href="../../db/d27/classRCErrorInfo.html#a0d39ab3bb962f111b7b447d012e2f2f7">00080</a>     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> <a class="code" href="../../db/d27/classRCErrorInfo.html#a0d39ab3bb962f111b7b447d012e2f2f7">m_systemError</a>;
+<a name="l00081"></a>00081 <span class="comment"></span>
+<a name="l00082"></a>00082 <span class="comment">    /** 文件名</span>
+<a name="l00083"></a>00083 <span class="comment">    */</span>
+<a name="l00084"></a><a class="code" href="../../db/d27/classRCErrorInfo.html#a8dfe63a18407d9cd1199001598d07d8f">00084</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../db/d27/classRCErrorInfo.html#a8dfe63a18407d9cd1199001598d07d8f">m_fileName</a>;
+<a name="l00085"></a>00085 <span class="comment"></span>
+<a name="l00086"></a>00086 <span class="comment">    /** 文件名2</span>
+<a name="l00087"></a>00087 <span class="comment">    */</span>
+<a name="l00088"></a><a class="code" href="../../db/d27/classRCErrorInfo.html#a38c0ca59ede924b2fa8498a976531c83">00088</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../db/d27/classRCErrorInfo.html#a38c0ca59ede924b2fa8498a976531c83">m_fileName2</a>;
+<a name="l00089"></a>00089 <span class="comment"></span>
+<a name="l00090"></a>00090 <span class="comment">    /** 错误信息</span>
+<a name="l00091"></a>00091 <span class="comment">    */</span>
+<a name="l00092"></a><a class="code" href="../../db/d27/classRCErrorInfo.html#ae5231f9beae3f94080ea54f53f6faf07">00092</a>     <a class="code" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="code" href="../../db/d27/classRCErrorInfo.html#ae5231f9beae3f94080ea54f53f6faf07">m_message</a>;
+<a name="l00093"></a>00093     
+<a name="l00094"></a>00094 };
+<a name="l00095"></a>00095 <span class="comment"></span>
+<a name="l00096"></a>00096 <span class="comment">/** 压缩，更新错误信息结构</span>
+<a name="l00097"></a>00097 <span class="comment">*/</span>
+<a name="l00098"></a><a class="code" href="../../df/d7f/structRCUpdateErrorInfo.html">00098</a> <span class="keyword">struct </span><a class="code" href="../../df/d7f/structRCUpdateErrorInfo.html">RCUpdateErrorInfo</a> : 
+<a name="l00099"></a>00099     <span class="keyword">public</span> <a class="code" href="../../db/d27/classRCErrorInfo.html">RCErrorInfo</a>
+<a name="l00100"></a>00100 {
+<a name="l00101"></a>00101 };
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 <span class="preprocessor">#endif //__RCUpdateErrorInfo_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

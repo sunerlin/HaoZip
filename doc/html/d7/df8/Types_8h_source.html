@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: Types.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_a94b9a1db04234814d7581a1b5b8536c.html">algorithm</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Types.h</h1><a href="../../d7/df8/Types_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/* Types.h -- Basic types</span>
+<a name="l00002"></a>00002 <span class="comment">2008-08-05</span>
+<a name="l00003"></a>00003 <span class="comment">Igor Pavlov</span>
+<a name="l00004"></a>00004 <span class="comment">Public domain */</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 <span class="preprocessor">#ifndef __7Z_TYPES_H</span>
+<a name="l00007"></a>00007 <span class="preprocessor"></span><span class="preprocessor">#define __7Z_TYPES_H</span>
+<a name="l00008"></a>00008 <span class="preprocessor"></span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../df/dd8/stdint_8h.html">base/stdint.h</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;stddef.h&gt;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="preprocessor">#ifdef _WIN32</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">    #define WIN32_LEAN_AND_MEAN</span>
+<a name="l00015"></a>00015 <span class="preprocessor"></span><span class="preprocessor">    #define NOMINMAX</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span><span class="preprocessor">    #include &lt;windows.h&gt;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#endif</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span>
+<a name="l00019"></a>00019 <span class="preprocessor">#ifndef EXTERN_C_BEGIN</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="preprocessor">#define EXTERN_C_BEGIN extern &quot;C&quot; {</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define EXTERN_C_END }</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00024"></a><a class="code" href="../../d7/df8/Types_8h.html#a6774b472721b30450b3334dc4f718a72">00024</a> <span class="preprocessor"></span><span class="preprocessor">#define EXTERN_C_BEGIN</span>
+<a name="l00025"></a><a class="code" href="../../d7/df8/Types_8h.html#ada1a24bb49d1a045f735dc027664ae57">00025</a> <span class="preprocessor"></span><span class="preprocessor">#define EXTERN_C_END</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00028"></a>00028 <span class="preprocessor"></span><a class="code" href="../../d7/df8/Types_8h.html#a6774b472721b30450b3334dc4f718a72">EXTERN_C_BEGIN</a>
+<a name="l00029"></a>00029 
+<a name="l00030"></a><a class="code" href="../../d7/df8/Types_8h.html#a0843e497ceafae3ff1897f3cbcca4053">00030</a> <span class="preprocessor">#define SZ_OK 0</span>
+<a name="l00031"></a>00031 <span class="preprocessor"></span>
+<a name="l00032"></a><a class="code" href="../../d7/df8/Types_8h.html#ae446b215b4a2ddc2af6ee80eab867e9a">00032</a> <span class="preprocessor">#define SZ_ERROR_DATA 1</span>
+<a name="l00033"></a><a class="code" href="../../d7/df8/Types_8h.html#ab088a3435ebb7d4e2866be987100bccb">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_MEM 2</span>
+<a name="l00034"></a><a class="code" href="../../d7/df8/Types_8h.html#a3494517415c0752a33aed517b3db7dee">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_CRC 3</span>
+<a name="l00035"></a><a class="code" href="../../d7/df8/Types_8h.html#a6fdc79cc3d5657bde0456944e187f88a">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_UNSUPPORTED 4</span>
+<a name="l00036"></a><a class="code" href="../../d7/df8/Types_8h.html#af5df93ed3f2f97041f30324a00eb5a3d">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_PARAM 5</span>
+<a name="l00037"></a><a class="code" href="../../d7/df8/Types_8h.html#a17d3ba7ca180dba181f9da32f86ab789">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_INPUT_EOF 6</span>
+<a name="l00038"></a><a class="code" href="../../d7/df8/Types_8h.html#a0a9baf847f5dea7402421bd028471e16">00038</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_OUTPUT_EOF 7</span>
+<a name="l00039"></a><a class="code" href="../../d7/df8/Types_8h.html#a4ddf613fd5016062c93271131f2e3eaa">00039</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_READ 8</span>
+<a name="l00040"></a><a class="code" href="../../d7/df8/Types_8h.html#a21dad4c874087bf9a30355f01c31216b">00040</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_WRITE 9</span>
+<a name="l00041"></a><a class="code" href="../../d7/df8/Types_8h.html#a2a3a5a590676f049217e152f34f439b9">00041</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_PROGRESS 10</span>
+<a name="l00042"></a><a class="code" href="../../d7/df8/Types_8h.html#a73741df010100b83461ddbb0b920ef19">00042</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_FAIL 11</span>
+<a name="l00043"></a><a class="code" href="../../d7/df8/Types_8h.html#aef8b898343f886dfca338f703134fb5a">00043</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_THREAD 12</span>
+<a name="l00044"></a>00044 <span class="preprocessor"></span>
+<a name="l00045"></a><a class="code" href="../../d7/df8/Types_8h.html#aaff96c18a42a227e6d84d1a28bd301fa">00045</a> <span class="preprocessor">#define SZ_ERROR_ARCHIVE 16</span>
+<a name="l00046"></a><a class="code" href="../../d7/df8/Types_8h.html#a47a3a8b285dabd3854af9c542a8cecac">00046</a> <span class="preprocessor"></span><span class="preprocessor">#define SZ_ERROR_NO_ARCHIVE 17</span>
+<a name="l00047"></a>00047 <span class="preprocessor"></span>
+<a name="l00048"></a><a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">00048</a> <span class="keyword">typedef</span> <a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> ;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 <span class="preprocessor">#ifdef _WIN32</span>
+<a name="l00051"></a>00051 <span class="preprocessor"></span><span class="keyword">typedef</span> DWORD <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>;
+<a name="l00052"></a>00052 <span class="preprocessor">#else</span>
+<a name="l00053"></a><a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">00053</a> <span class="preprocessor"></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/df8/Types_8h.html#a5e39b5d1938d3304107325c7533d8d31">WRes</a>;
+<a name="l00054"></a>00054 <span class="preprocessor">#endif</span>
+<a name="l00055"></a>00055 <span class="preprocessor"></span><span class="preprocessor">#ifndef RINOK</span>
+<a name="l00056"></a><a class="code" href="../../d7/df8/Types_8h.html#ab12081228c69ec38453f66edf279d784">00056</a> <span class="preprocessor"></span><span class="preprocessor">#define RINOK(x) { int __result__ = (x); if (__result__ != 0) return __result__; }</span>
+<a name="l00057"></a>00057 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00058"></a>00058 <span class="preprocessor"></span>
+<a name="l00059"></a><a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">00059</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a>;
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061 <span class="comment">//typedef short int16_t;</span>
+<a name="l00062"></a>00062 <span class="comment">//typedef unsigned short uint16_t;</span>
+<a name="l00063"></a>00063 <span class="comment">//</span>
+<a name="l00064"></a>00064 <span class="comment">//#ifdef _LZMA_UINT32_IS_ULONG</span>
+<a name="l00065"></a>00065 <span class="comment">//typedef long int32_t;</span>
+<a name="l00066"></a>00066 <span class="comment">//typedef unsigned long uint32_t;</span>
+<a name="l00067"></a>00067 <span class="comment">//#else</span>
+<a name="l00068"></a>00068 <span class="comment">//typedef int int32_t;</span>
+<a name="l00069"></a>00069 <span class="comment">//typedef unsigned int uint32_t;</span>
+<a name="l00070"></a>00070 <span class="comment">//#endif</span>
+<a name="l00071"></a>00071 <span class="comment">//</span><span class="comment"></span>
+<a name="l00072"></a>00072 <span class="comment">///* #define _SZ_NO_INT_64 */</span>
+<a name="l00073"></a>00073 <span class="comment">///* define it if your compiler doesn&#39;t support 64-bit integers */</span>
+<a name="l00074"></a>00074 <span class="comment"></span><span class="comment">//</span>
+<a name="l00075"></a>00075 <span class="comment">//#ifdef _SZ_NO_INT_64</span>
+<a name="l00076"></a>00076 <span class="comment">//</span>
+<a name="l00077"></a>00077 <span class="comment">//typedef long int64_t;</span>
+<a name="l00078"></a>00078 <span class="comment">//typedef unsigned long uint64_t;</span>
+<a name="l00079"></a>00079 <span class="comment">//</span>
+<a name="l00080"></a>00080 <span class="comment">//#else</span>
+<a name="l00081"></a>00081 <span class="comment">//</span>
+<a name="l00082"></a>00082 <span class="comment">//#if defined(_MSC_VER) || defined(__BORLANDC__)</span>
+<a name="l00083"></a>00083 <span class="comment">//typedef __int64 int64_t;</span>
+<a name="l00084"></a>00084 <span class="comment">//typedef unsigned __int64 uint64_t;</span>
+<a name="l00085"></a>00085 <span class="comment">//#else</span>
+<a name="l00086"></a>00086 <span class="comment">//typedef long long int int64_t;</span>
+<a name="l00087"></a>00087 <span class="comment">//typedef unsigned long long int uint64_t;</span>
+<a name="l00088"></a>00088 <span class="comment">//#endif</span>
+<a name="l00089"></a>00089 <span class="comment">//</span>
+<a name="l00090"></a>00090 <span class="comment">//#endif</span>
+<a name="l00091"></a>00091 <span class="comment">//</span>
+<a name="l00092"></a>00092 <span class="comment">//#ifdef _LZMA_NO_SYSTEM_SIZE_T</span>
+<a name="l00093"></a>00093 <span class="comment">//typedef uint32_t size_t;</span>
+<a name="l00094"></a>00094 <span class="comment">//#else</span>
+<a name="l00095"></a>00095 <span class="comment">//#include &lt;stddef.h&gt;</span>
+<a name="l00096"></a>00096 <span class="comment">//typedef size_t size_t;</span>
+<a name="l00097"></a>00097 <span class="comment">//#endif</span>
+<a name="l00098"></a>00098 
+<a name="l00099"></a><a class="code" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">00099</a> <span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/df8/Types_8h.html#a21a009af5bbd6a362e9bfb5ecaeddbab">Bool</a>;
+<a name="l00100"></a><a class="code" href="../../d7/df8/Types_8h.html#add3ca9eefe3b5b754426f51d3043e579">00100</a> <span class="preprocessor">#define True 1</span>
+<a name="l00101"></a><a class="code" href="../../d7/df8/Types_8h.html#a306ebd41c0cd1303b1372c6153f0caf8">00101</a> <span class="preprocessor"></span><span class="preprocessor">#define False 0</span>
+<a name="l00102"></a>00102 <span class="preprocessor"></span>
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="preprocessor">#ifdef _MSC_VER</span>
+<a name="l00105"></a>00105 <span class="preprocessor"></span>
+<a name="l00106"></a>00106 <span class="preprocessor">#if _MSC_VER &gt;= 1300</span>
+<a name="l00107"></a>00107 <span class="preprocessor"></span><span class="preprocessor">#define MY_NO_INLINE __declspec(noinline)</span>
+<a name="l00108"></a>00108 <span class="preprocessor"></span><span class="preprocessor">#else</span>
+<a name="l00109"></a>00109 <span class="preprocessor"></span><span class="preprocessor">#define MY_NO_INLINE</span>
+<a name="l00110"></a>00110 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00111"></a>00111 <span class="preprocessor"></span>
+<a name="l00112"></a>00112 <span class="preprocessor">#define MY_CDECL __cdecl</span>
+<a name="l00113"></a>00113 <span class="preprocessor"></span><span class="preprocessor">#define MY_STD_CALL __stdcall</span>
+<a name="l00114"></a>00114 <span class="preprocessor"></span><span class="preprocessor">#define MY_FAST_CALL MY_NO_INLINE __fastcall</span>
+<a name="l00115"></a>00115 <span class="preprocessor"></span>
+<a name="l00116"></a>00116 <span class="preprocessor">#else</span>
+<a name="l00117"></a>00117 <span class="preprocessor"></span>
+<a name="l00118"></a><a class="code" href="../../d7/df8/Types_8h.html#a959aa84c48968de4bf433c8ff1df79f1">00118</a> <span class="preprocessor">#define MY_CDECL</span>
+<a name="l00119"></a><a class="code" href="../../d7/df8/Types_8h.html#a4385c51cc2072fe46ce660c3047f9432">00119</a> <span class="preprocessor"></span><span class="preprocessor">#define MY_STD_CALL</span>
+<a name="l00120"></a><a class="code" href="../../d7/df8/Types_8h.html#a110c47f40f3e25a133e3e7254be002d2">00120</a> <span class="preprocessor"></span><span class="preprocessor">#define MY_FAST_CALL</span>
+<a name="l00121"></a>00121 <span class="preprocessor"></span>
+<a name="l00122"></a>00122 <span class="preprocessor">#endif</span>
+<a name="l00123"></a>00123 <span class="preprocessor"></span>
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 <span class="comment">/* The following interfaces use first parameter as pointer to structure */</span>
+<a name="l00126"></a>00126 
+<a name="l00127"></a><a class="code" href="../../d4/dfe/structISeqInStream.html">00127</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00128"></a>00128 {
+<a name="l00129"></a>00129   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);
+<a name="l00130"></a>00130     <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span>
+<a name="l00131"></a>00131 <span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span>
+<a name="l00132"></a>00132 } <a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a>;
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d7/df8/Types_8h.html#a0655ae68bb50411ecc5d978f0a1e1e08">SeqInStream_Read</a>(<a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);
+<a name="l00135"></a>00135 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d7/df8/Types_8h.html#a523e2288c8454f5a7b91febfc011b41c">SeqInStream_Read2</a>(<a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size, <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> errorType);
+<a name="l00136"></a>00136 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d7/df8/Types_8h.html#a999e194f3228ea3df2e679c68e4d9ed5">SeqInStream_ReadByte</a>(<a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> *stream, <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> *buf);
+<a name="l00137"></a><a class="code" href="../../dd/d89/structISeqOutStream.html">00137</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00138"></a>00138 {
+<a name="l00139"></a>00139   size_t (*Write)(<span class="keywordtype">void</span> *p, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);
+<a name="l00140"></a>00140     <span class="comment">/* Returns: result - the number of actually written bytes.</span>
+<a name="l00141"></a>00141 <span class="comment">      (result &lt; size) means error */</span>
+<a name="l00142"></a>00142 } <a class="code" href="../../dd/d89/structISeqOutStream.html">ISeqOutStream</a>;
+<a name="l00143"></a>00143 
+<a name="l00144"></a><a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709">00144</a> <span class="keyword">typedef</span> <span class="keyword">enum</span>
+<a name="l00145"></a>00145 {
+<a name="l00146"></a><a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">00146</a>   <a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709a209369442afea3f0008e1ff96f462a2f">SZ_SEEK_SET</a> = 0,
+<a name="l00147"></a><a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">00147</a>   <a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709a7975a4cb05550422ba6319f507d8879b">SZ_SEEK_CUR</a> = 1,
+<a name="l00148"></a><a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">00148</a>   <a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709a13b7ecb4237ef964cf5829ec55bdc85d">SZ_SEEK_END</a> = 2
+<a name="l00149"></a>00149 } <a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a>;
+<a name="l00150"></a><a class="code" href="../../d0/dce/structISeekInStream.html">00150</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00151"></a>00151 {
+<a name="l00152"></a>00152   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);  <span class="comment">/* same as ISeqInStream::Read */</span>
+<a name="l00153"></a>00153   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Seek)(<span class="keywordtype">void</span> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> *pos, <a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);
+<a name="l00154"></a>00154 } <a class="code" href="../../d0/dce/structISeekInStream.html">ISeekInStream</a>;
+<a name="l00155"></a><a class="code" href="../../d5/da8/structILookInStream.html">00155</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00156"></a>00156 {
+<a name="l00157"></a>00157   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Look)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> **buf, <span class="keywordtype">size_t</span> *size);
+<a name="l00158"></a>00158     <span class="comment">/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</span>
+<a name="l00159"></a>00159 <span class="comment">       (output(*size) &gt; input(*size)) is not allowed</span>
+<a name="l00160"></a>00160 <span class="comment">       (output(*size) &lt; input(*size)) is allowed */</span>
+<a name="l00161"></a>00161   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Skip)(<span class="keywordtype">void</span> *p, <span class="keywordtype">size_t</span> offset);
+<a name="l00162"></a>00162     <span class="comment">/* offset must be &lt;= output(*size) of Look */</span>
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Read)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);
+<a name="l00165"></a>00165     <span class="comment">/* reads directly (without buffer). It&#39;s same as ISeqInStream::Read */</span>
+<a name="l00166"></a>00166   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Seek)(<span class="keywordtype">void</span> *p, <a class="code" href="../../df/dd8/stdint_8h.html#a67a9885ef4908cb72ce26d75b694386c">int64_t</a> *pos, <a class="code" href="../../d7/df8/Types_8h.html#ab0216441b8737c13f5b275408f9e9709">ESzSeek</a> origin);
+<a name="l00167"></a>00167 } <a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a>;
+<a name="l00168"></a>00168 
+<a name="l00169"></a>00169 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d7/df8/Types_8h.html#a9697b2abe619b9021c87f7fb0cd6eb2a">LookInStream_LookRead</a>(<a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> *size);
+<a name="l00170"></a>00170 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d7/df8/Types_8h.html#acdba2df6ca99f24e519811f13e2e5d3f">LookInStream_SeekTo</a>(<a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a> *stream, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> offset);
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172 <span class="comment">/* reads via ILookInStream::Read */</span>
+<a name="l00173"></a>00173 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d7/df8/Types_8h.html#aa17ae6fa65660b51b6f18a4eb0b9a597">LookInStream_Read2</a>(<a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size, <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> errorType);
+<a name="l00174"></a>00174 <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> <a class="code" href="../../d7/df8/Types_8h.html#afb512bedfb15dc4c2c060785dd1f5109">LookInStream_Read</a>(<a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a> *stream, <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size);
+<a name="l00175"></a>00175 
+<a name="l00176"></a><a class="code" href="../../d7/df8/Types_8h.html#a6746b15e9715cc139768a20c2cbd65c5">00176</a> <span class="preprocessor">#define LookToRead_BUF_SIZE (1 &lt;&lt; 14)</span>
+<a name="l00177"></a>00177 <span class="preprocessor"></span>
+<a name="l00178"></a><a class="code" href="../../de/d05/structCLookToRead.html">00178</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00179"></a>00179 {
+<a name="l00180"></a><a class="code" href="../../de/d05/structCLookToRead.html#a0075295e91095d2e49409cab74c8cd8f">00180</a>   <a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a> s;
+<a name="l00181"></a><a class="code" href="../../de/d05/structCLookToRead.html#a7a9274b338d9fc0b71925e94cbe132f1">00181</a>   <a class="code" href="../../d0/dce/structISeekInStream.html">ISeekInStream</a> *realStream;
+<a name="l00182"></a><a class="code" href="../../de/d05/structCLookToRead.html#a311ffe1a85a9ab6e323e898970a5182f">00182</a>   <span class="keywordtype">size_t</span> pos;
+<a name="l00183"></a><a class="code" href="../../de/d05/structCLookToRead.html#a30c71248ab806066e737ab7d1673bfa4">00183</a>   <span class="keywordtype">size_t</span> size;
+<a name="l00184"></a><a class="code" href="../../de/d05/structCLookToRead.html#a304ff3b3294a91b928c101e7c5cfba2c">00184</a>   <a class="code" href="../../d7/df8/Types_8h.html#a780bd50362a995b802eb8e00f4b0c200">byte_t</a> buf[<a class="code" href="../../d7/df8/Types_8h.html#a6746b15e9715cc139768a20c2cbd65c5">LookToRead_BUF_SIZE</a>];
+<a name="l00185"></a>00185 } <a class="code" href="../../de/d05/structCLookToRead.html">CLookToRead</a>;
+<a name="l00186"></a>00186 
+<a name="l00187"></a>00187 <span class="keywordtype">void</span> <a class="code" href="../../d7/df8/Types_8h.html#abb2fee51aa9b3e4527fe3d24e7c08d11">LookToRead_CreateVTable</a>(<a class="code" href="../../de/d05/structCLookToRead.html">CLookToRead</a> *p, <span class="keywordtype">int</span> lookahead);
+<a name="l00188"></a>00188 <span class="keywordtype">void</span> <a class="code" href="../../d7/df8/Types_8h.html#a33b56910d83f1cac576a15f8115f247a">LookToRead_Init</a>(<a class="code" href="../../de/d05/structCLookToRead.html">CLookToRead</a> *p);
+<a name="l00189"></a>00189 
+<a name="l00190"></a><a class="code" href="../../d1/d32/structCSecToLook.html">00190</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00191"></a>00191 {
+<a name="l00192"></a><a class="code" href="../../d1/d32/structCSecToLook.html#a1aace1e477ec503429fd4f002cb78adb">00192</a>   <a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> s;
+<a name="l00193"></a><a class="code" href="../../d1/d32/structCSecToLook.html#afa52bbd0afb75958fda82dc76d37a7dd">00193</a>   <a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a> *realStream;
+<a name="l00194"></a>00194 } <a class="code" href="../../d1/d32/structCSecToLook.html">CSecToLook</a>;
+<a name="l00195"></a>00195 
+<a name="l00196"></a>00196 <span class="keywordtype">void</span> <a class="code" href="../../d7/df8/Types_8h.html#aecc4b4a88d26e614ef152517e69a1f3e">SecToLook_CreateVTable</a>(<a class="code" href="../../d1/d32/structCSecToLook.html">CSecToLook</a> *p);
+<a name="l00197"></a>00197 
+<a name="l00198"></a><a class="code" href="../../db/da7/structCSecToRead.html">00198</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00199"></a>00199 {
+<a name="l00200"></a><a class="code" href="../../db/da7/structCSecToRead.html#a8a9fdf9cc74a243980c04ff944f3e0c7">00200</a>   <a class="code" href="../../d4/dfe/structISeqInStream.html">ISeqInStream</a> s;
+<a name="l00201"></a><a class="code" href="../../db/da7/structCSecToRead.html#a01b29c2698c267f3689042fe95d217d5">00201</a>   <a class="code" href="../../d5/da8/structILookInStream.html">ILookInStream</a> *realStream;
+<a name="l00202"></a>00202 } <a class="code" href="../../db/da7/structCSecToRead.html">CSecToRead</a>;
+<a name="l00203"></a>00203 
+<a name="l00204"></a>00204 <span class="keywordtype">void</span> <a class="code" href="../../d7/df8/Types_8h.html#a1cf478ad3d8ef0cd66d7132ee6e9bae8">SecToRead_CreateVTable</a>(<a class="code" href="../../db/da7/structCSecToRead.html">CSecToRead</a> *p);
+<a name="l00205"></a>00205 
+<a name="l00206"></a><a class="code" href="../../de/dab/structICompressProgress.html">00206</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00207"></a>00207 {
+<a name="l00208"></a>00208   <a class="code" href="../../d7/df8/Types_8h.html#ad7ac738c785d5d9dc7b4ecfa39938bcd">result_t</a> (*Progress)(<span class="keywordtype">void</span> *p, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> inSize, <a class="code" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> outSize);
+<a name="l00209"></a>00209     <span class="comment">/* Returns: result. (result != SZ_OK) means break.</span>
+<a name="l00210"></a>00210 <span class="comment">       Value (uint64_t)(int64_t)-1 for size means unknown value. */</span>
+<a name="l00211"></a>00211 } <a class="code" href="../../de/dab/structICompressProgress.html">ICompressProgress</a>;
+<a name="l00212"></a>00212 
+<a name="l00213"></a><a class="code" href="../../d4/d55/structISzAlloc.html">00213</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00214"></a>00214 {
+<a name="l00215"></a>00215   <span class="keywordtype">void</span> *(*Alloc)(<span class="keywordtype">void</span> *p, <span class="keywordtype">size_t</span> size);
+<a name="l00216"></a>00216   void (*Free)(<span class="keywordtype">void</span> *p, <span class="keywordtype">void</span> *address); <span class="comment">/* address can be 0 */</span>
+<a name="l00217"></a>00217 } <a class="code" href="../../d4/d55/structISzAlloc.html">ISzAlloc</a>;
+<a name="l00218"></a>00218 
+<a name="l00219"></a><a class="code" href="../../d7/df8/Types_8h.html#ad3678ea20bd39ee401e7fad8d155f9ea">00219</a> <span class="preprocessor">#define IAlloc_Alloc(p, size) (p)-&gt;Alloc((p), size)</span>
+<a name="l00220"></a><a class="code" href="../../d7/df8/Types_8h.html#af11f41042cd291603058f3f0d47febe3">00220</a> <span class="preprocessor"></span><span class="preprocessor">#define IAlloc_Free(p, a) (p)-&gt;Free((p), a)</span>
+<a name="l00221"></a>00221 <span class="preprocessor"></span>
+<a name="l00222"></a>00222 <a class="code" href="../../d7/df8/Types_8h.html#ada1a24bb49d1a045f735dc027664ae57">EXTERN_C_END</a>
+<a name="l00223"></a>00223 
+<a name="l00224"></a>00224 <span class="preprocessor">#endif</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

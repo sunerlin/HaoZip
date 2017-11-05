@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCMemBlockManagerMt.h源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../dir_b41d74e4442f4cb915496606920e6499.html">include</a>&nbsp;&raquo;&nbsp;<a class="el" href="../../dir_c45503ccb4e1ad5774fb3bb7c12b18bf.html">locked</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCMemBlockManagerMt.h</h1><a href="../../df/d1b/RCMemBlockManagerMt_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/********************************************************************************</span>
+<a name="l00002"></a>00002 <span class="comment"> *  版权所有(C)2008,2009,2010，好压软件工作室，保留所有权利。                   *</span>
+<a name="l00003"></a>00003 <span class="comment"> ********************************************************************************</span>
+<a name="l00004"></a>00004 <span class="comment"> *  作者    : HaoZip                                                            *</span>
+<a name="l00005"></a>00005 <span class="comment"> *  版本    : 1.7                                                               *</span>
+<a name="l00006"></a>00006 <span class="comment"> *  联系方式: haozip@gmail.com                                                  *</span>
+<a name="l00007"></a>00007 <span class="comment"> *  官方网站: www.haozip.com                                                    *</span>
+<a name="l00008"></a>00008 <span class="comment"> ********************************************************************************/</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __RCMemBlockManagerMt_h_</span>
+<a name="l00011"></a><a class="code" href="../../df/d1b/RCMemBlockManagerMt_8h.html#ae41282eff2f4868dcf565ad0301d5115">00011</a> <span class="preprocessor"></span><span class="preprocessor">#define __RCMemBlockManagerMt_h_ 1</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/dea/RCMemBlockManager_8h.html">locked/RCMemBlockManager.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/de7/RCMutex_8h.html">thread/RCMutex.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="../../d2/db0/RCSynchronization_8h.html">thread/RCSynchronization.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#a6f9b60108072e55722e44ad1c9510372">BEGIN_NAMESPACE_RCZIP</a>
+<a name="l00018"></a>00018 
+<a name="l00019"></a><a class="code" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html">00019</a> <span class="keyword">class </span><a class="code" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html">RCMemBlockManagerMt</a>:
+<a name="l00020"></a>00020     <span class="keyword">private</span> <a class="code" href="../../dd/d1d/classRCZip_1_1RCMemBlockManager.html">RCMemBlockManager</a>
+<a name="l00021"></a>00021 {
+<a name="l00022"></a>00022 <span class="keyword">public</span>:
+<a name="l00023"></a>00023 <span class="comment"></span>
+<a name="l00024"></a>00024 <span class="comment">    /** 默认构造函数</span>
+<a name="l00025"></a>00025 <span class="comment">    @param [in] blockSize 数据块大小</span>
+<a name="l00026"></a>00026 <span class="comment">    */</span>
+<a name="l00027"></a>00027     <span class="keyword">explicit</span> <a class="code" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html">RCMemBlockManagerMt</a>(<span class="keywordtype">size_t</span> blockSize = (1 &lt;&lt; 20)) ;
+<a name="l00028"></a>00028     <span class="comment"></span>
+<a name="l00029"></a>00029 <span class="comment">    /** 默认析构函数</span>
+<a name="l00030"></a>00030 <span class="comment">    */</span>
+<a name="l00031"></a>00031     ~<a class="code" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html">RCMemBlockManagerMt</a>() ;
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="keyword">public</span>:
+<a name="l00034"></a>00034     <span class="comment"></span>
+<a name="l00035"></a>00035 <span class="comment">    /** 分配内存空间</span>
+<a name="l00036"></a>00036 <span class="comment">    @param [in] numBlocks 分配的数据块个数</span>
+<a name="l00037"></a>00037 <span class="comment">    @param [in] numNoLockBlocks 解锁计数</span>
+<a name="l00038"></a>00038 <span class="comment">    @return 成功返回RC_S_OK, 失败则返回错误码</span>
+<a name="l00039"></a>00039 <span class="comment">    */</span>
+<a name="l00040"></a>00040     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> AllocateSpace(<span class="keywordtype">size_t</span> numBlocks, <span class="keywordtype">size_t</span> numNoLockBlocks = 0) ;
+<a name="l00041"></a>00041     <span class="comment"></span>
+<a name="l00042"></a>00042 <span class="comment">    /** 分配内存空间</span>
+<a name="l00043"></a>00043 <span class="comment">    @param [in] desiredNumberOfBlocks 分配的数据块个数</span>
+<a name="l00044"></a>00044 <span class="comment">    @param [in] numNoLockBlocks 解锁计数</span>
+<a name="l00045"></a>00045 <span class="comment">    @return 成功返回RC_S_OK, 失败则返回错误码</span>
+<a name="l00046"></a>00046 <span class="comment">    */</span>
+<a name="l00047"></a>00047     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> AllocateSpaceAlways(<span class="keywordtype">size_t</span> desiredNumberOfBlocks, <span class="keywordtype">size_t</span> numNoLockBlocks = 0);
+<a name="l00048"></a>00048     <span class="comment"></span>
+<a name="l00049"></a>00049 <span class="comment">    /** 释放内存空间</span>
+<a name="l00050"></a>00050 <span class="comment">    */</span>
+<a name="l00051"></a>00051     <span class="keywordtype">void</span> FreeSpace();
+<a name="l00052"></a>00052     <span class="comment"></span>
+<a name="l00053"></a>00053 <span class="comment">    /** 分配一个数据块</span>
+<a name="l00054"></a>00054 <span class="comment">    @return 返回数据块地址, 失败返回NULL</span>
+<a name="l00055"></a>00055 <span class="comment">    */</span>
+<a name="l00056"></a>00056     <span class="keywordtype">void</span>* AllocateBlock() ;
+<a name="l00057"></a>00057     <span class="comment"></span>
+<a name="l00058"></a>00058 <span class="comment">    /** 释放数据块内存空间</span>
+<a name="l00059"></a>00059 <span class="comment">    @param [in] p 数据块内存地址</span>
+<a name="l00060"></a>00060 <span class="comment">    @param [in] lockMode 是否为加锁模式</span>
+<a name="l00061"></a>00061 <span class="comment">    */</span>
+<a name="l00062"></a>00062     <span class="keywordtype">void</span> FreeBlock(<span class="keywordtype">void</span>* p, <span class="keywordtype">bool</span> lockMode = <span class="keyword">true</span>);
+<a name="l00063"></a>00063     <span class="comment"></span>
+<a name="l00064"></a>00064 <span class="comment">    /** 释放加锁块的锁计数</span>
+<a name="l00065"></a>00065 <span class="comment">    @param [in] number 释放的计数</span>
+<a name="l00066"></a>00066 <span class="comment">    @return 成功返回RC_S_OK, 失败则返回错误码</span>
+<a name="l00067"></a>00067 <span class="comment">    */</span>
+<a name="l00068"></a>00068     <a class="code" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> ReleaseLockedBlocks(<a class="code" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> number) ;
+<a name="l00069"></a>00069     <span class="comment"></span>
+<a name="l00070"></a>00070 <span class="comment">    /** 获取当前数据块大小</span>
+<a name="l00071"></a>00071 <span class="comment">    */</span>
+<a name="l00072"></a>00072     <span class="keywordtype">size_t</span> GetBlockSize() <span class="keyword">const</span> ;
+<a name="l00073"></a>00073     
+<a name="l00074"></a>00074 <span class="keyword">public</span>:
+<a name="l00075"></a>00075     <span class="comment"></span>
+<a name="l00076"></a>00076 <span class="comment">    /** 同步信号量</span>
+<a name="l00077"></a>00077 <span class="comment">    */</span>
+<a name="l00078"></a><a class="code" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#aa7a919ac155010683128b0246deac0bb">00078</a>     <a class="code" href="../../da/d9c/classRCZip_1_1RCSemaphore.html">RCSemaphore</a> m_semaphore ;
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="keyword">private</span>:
+<a name="l00081"></a>00081     <span class="comment"></span>
+<a name="l00082"></a>00082 <span class="comment">    /** 同步锁</span>
+<a name="l00083"></a>00083 <span class="comment">    */</span>
+<a name="l00084"></a><a class="code" href="../../de/df4/classRCZip_1_1RCMemBlockManagerMt.html#a23b35f219fb42f1e9482409159204ce0">00084</a>     <a class="code" href="../../d6/d3c/classRCZip_1_1RCMutex.html">RCMutex</a> m_lock ;
+<a name="l00085"></a>00085 };
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087 <a class="code" href="../../d7/d53/RCNameSpace_8h.html#ab35c4e61316995de5374831fb3f91512">END_NAMESPACE_RCZIP</a>
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="preprocessor">#endif //__RCMemBlockManagerMt_h_</span>
+</pre></div></div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

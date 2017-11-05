@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCRarGetComment类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../df/d8e/classRCZip_1_1RCRarGetComment.html">RCRarGetComment</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCRarGetComment类参考</h1><!-- doxytag: class="RCZip::RCRarGetComment" -->
+<p><code>#include &lt;<a class="el" href="../../dd/dbb/RCRarGetComment_8h_source.html">RCRarGetComment.h</a>&gt;</code></p>
+
+<p><a href="../../de/d4d/classRCZip_1_1RCRarGetComment-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>静态公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8e/classRCZip_1_1RCRarGetComment.html#aa88cea751d4259eacdd205da787b7229">GetRarComment</a> (const wchar_t *filename, <a class="el" href="../../d7/d5a/namespaceRCZip.html#a6e1671cdf3b13e6bee8e45678e636acf">RCStringW</a> &amp;comment, <a class="el" href="../../d0/d11/classRCZip_1_1ICryptoGetTextPassword.html">ICryptoGetTextPassword</a> *getTextPassword)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+
+<p>在文件<a class="el" href="../../dd/dbb/RCRarGetComment_8h_source.html">RCRarGetComment.h</a>第<a class="el" href="../../dd/dbb/RCRarGetComment_8h_source.html#l00019">19</a>行定义。</p>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="aa88cea751d4259eacdd205da787b7229"></a><!-- doxytag: member="RCZip::RCRarGetComment::GetRarComment" ref="aa88cea751d4259eacdd205da787b7229" args="(const wchar_t *filename, RCStringW &amp;comment, ICryptoGetTextPassword *getTextPassword)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RCZip::RCRarGetComment::GetRarComment </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&nbsp;</td>
+          <td class="paramname"> <em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a6e1671cdf3b13e6bee8e45678e636acf">RCStringW</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>comment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d11/classRCZip_1_1ICryptoGetTextPassword.html">ICryptoGetTextPassword</a> *&nbsp;</td>
+          <td class="paramname"> <em>getTextPassword</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取RAR注释 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>filename</em>&nbsp;</td><td>文件名 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>comment</em>&nbsp;</td><td>返回注释 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>getTextPassword</em>&nbsp;</td><td>密码管理器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../dd/dbb/RCRarGetComment_8h_source.html">RCRarGetComment.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCExtractSubStreamCallback类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html">RCExtractSubStreamCallback</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCExtractSubStreamCallback类参考</h1><!-- doxytag: class="RCZip::RCExtractSubStreamCallback" --><!-- doxytag: inherits="IUnknownImpl&lt; IArchiveExtractCallback &gt;" -->
+<p><code>#include &lt;<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html">RCExtractSubStreamCallback.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCExtractSubStreamCallback</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/d60/classRCZip_1_1RCExtractSubStreamCallback__inherit__graph.png" border="0" usemap="#RCZip_1_1RCExtractSubStreamCallback_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCExtractSubStreamCallback_inherit__map" id="RCZip_1_1RCExtractSubStreamCallback_inherit__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; IArchiveExtractCallback \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="27,603,381,725"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,375,176,511"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,191,181,268"/><area shape="rect" id="node8" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html" title="{RCZip::IArchiveExtractCallback\n||+ GetStream()\l+ PrepareOperation()\l+ SetOperationResult()\l+ SetMultiThreadMode()\l+ GetDestinationDirectory()\l+ GetRemovePathParts()\l+ GetPathMode()\l+ GetOverwriteMode()\l+ GetUpdateMode()\l+ IsKeepDamageFiles()\l# ~IArchiveExtractCallback()\l}" alt="" coords="200,331,429,555"/><area shape="rect" id="node10" href="../../d6/d33/classRCZip_1_1IProgress.html" title="{RCZip::IProgress\n||+ SetTotal()\l+ SetCompleted()\l# ~IProgress()\l}" alt="" coords="244,176,385,283"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="241,6,388,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCExtractSubStreamCallback合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../db/d94/classRCZip_1_1RCExtractSubStreamCallback__coll__graph.png" border="0" usemap="#RCZip_1_1RCExtractSubStreamCallback_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCExtractSubStreamCallback_coll__map" id="RCZip_1_1RCExtractSubStreamCallback_coll__map">
+<area shape="rect" id="node2" href="../../df/d4e/classRCZip_1_1IUnknownImpl.html" title="{RCZip::IUnknownImpl\&lt; IArchiveExtractCallback \&gt;\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknownImpl()\l}" alt="" coords="75,1057,429,1178"/><area shape="rect" id="node4" href="../../d3/dca/classRCZip_1_1RCRefCounted.html" title="{RCZip::RCRefCounted\n|&#45; m_lRefCount\l|+ Increase()\l+ Decrease()\l# RCRefCounted()\l# ~RCRefCounted()\l# Destroy()\l}" alt="" coords="11,529,176,665"/><area shape="rect" id="node6" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,193,181,271"/><area shape="rect" id="node8" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html" title="{RCZip::IArchiveExtractCallback\n||+ GetStream()\l+ PrepareOperation()\l+ SetOperationResult()\l+ SetMultiThreadMode()\l+ GetDestinationDirectory()\l+ GetRemovePathParts()\l+ GetPathMode()\l+ GetOverwriteMode()\l+ GetUpdateMode()\l+ IsKeepDamageFiles()\l# ~IArchiveExtractCallback()\l}" alt="" coords="200,485,429,709"/><area shape="rect" id="node10" href="../../d6/d33/classRCZip_1_1IProgress.html" title="{RCZip::IProgress\n||+ SetTotal()\l+ SetCompleted()\l# ~IProgress()\l}" alt="" coords="272,179,413,285"/><area shape="rect" id="node12" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="393,6,540,127"/><area shape="rect" id="node14" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html" title="{RCZip::IArchiveOpenCallback\n||+ SetTotal()\l+ SetCompleted()\l+ CheckBreak()\l+ VolumeRepair()\l+ SetError()\l# ~IArchiveOpenCallback()\l}" alt="" coords="359,310,575,461"/><area shape="rect" id="node19" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html" title="{RCZip::ISequentialOutStream\n||+ Write()\l# ~ISequentialOutStream()\l}" alt="" coords="531,186,747,278"/><area shape="rect" id="node17" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialOutStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="584,734,851,1031"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../de/d61/classRCZip_1_1RCExtractSubStreamCallback-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#aef2c9285d7f6a8b7adde45de6bd8b5c9">RCExtractSubStreamCallback</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a734c9390656ae510c176e5e7fee2ce2e">~RCExtractSubStreamCallback</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a8f858ec43fb80436aedf8e9b99740228">Init</a> (const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;destFileName, <a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> fileSize, <a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a> *openCallback)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#aab4cded692a3b127bac5eea7fdbb3d08">SetTotal</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> total)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a9d8a8c9ac578cafbd94c4bda81692063">SetCompleted</a> (<a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> completed)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a70dfa96cb34f84e86f1242476bea2e45">GetStream</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> **outStream, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> askExtractMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#aa1d1b45c47e5ab552288496f191dd31d">PrepareOperation</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> askExtractMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#af35ffb72a1007fc5b2b6e7d768c1db04">SetOperationResult</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> index, <a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a> resultEOperationResult)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#af3e95964cbc5f680615a1ae90bb914f3">SetMultiThreadMode</a> (bool isMultiThreads)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a0083dd8bc6f449ac3888846a252ab8db">GetDestinationDirectory</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;path)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#aaacee44ba34f6cc90beb7902eff1d95f">GetRemovePathParts</a> (std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &gt; &amp;removePathParts)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#adba0eb9a20f0bc92cab5be22869a8673">GetPathMode</a> (<a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> &amp;pathMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a6e51b1ca8614e5b064f8ce2913923ad0">GetOverwriteMode</a> (<a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> &amp;overwriteMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a42a96217e55648f67e6b762df1541204">GetUpdateMode</a> (<a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> &amp;updateMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a674b969a50af35243e3f641e43097145">IsKeepDamageFiles</a> (void)</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a14deb7c3cd0ccda8db2dcd745a2a1776">m_openCallback</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a80be7242f576d54bfd5d204153c68cca">m_destFileName</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#adbf4322c3d9cb45685bf47f2d5a88e32">m_fileSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#aab13ad8e2866d08774d31c64f9528568">m_spOutFileStream</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>嵌套包解压进度回调接口 </p>
+
+<p>在文件<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html">RCExtractSubStreamCallback.h</a>第<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html#l00017">17</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aef2c9285d7f6a8b7adde45de6bd8b5c9"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::RCExtractSubStreamCallback" ref="aef2c9285d7f6a8b7adde45de6bd8b5c9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCExtractSubStreamCallback::RCExtractSubStreamCallback </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a734c9390656ae510c176e5e7fee2ce2e"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::~RCExtractSubStreamCallback" ref="a734c9390656ae510c176e5e7fee2ce2e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual RCZip::RCExtractSubStreamCallback::~RCExtractSubStreamCallback </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a0083dd8bc6f449ac3888846a252ab8db"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::GetDestinationDirectory" ref="a0083dd8bc6f449ac3888846a252ab8db" args="(RCString &amp;path)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::GetDestinationDirectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>path</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压路径 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>path</em>&nbsp;</td><td>解压路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#a46b5fc3547117ced833b3c22f2a976d9">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e51b1ca8614e5b064f8ce2913923ad0"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::GetOverwriteMode" ref="a6e51b1ca8614e5b064f8ce2913923ad0" args="(RCExractOverwriteMode &amp;overwriteMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::GetOverwriteMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#ac60786416a7a0ad4693349cf0c6a5fc6">RCExractOverwriteMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>overwriteMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压覆盖选项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>overwriteMode</em>&nbsp;</td><td>解压覆盖选项 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#ab962623115c875358f4b6afc53c3ba0b">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="adba0eb9a20f0bc92cab5be22869a8673"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::GetPathMode" ref="adba0eb9a20f0bc92cab5be22869a8673" args="(RCExractPathMode &amp;pathMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::GetPathMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#a150a5fd03632f04d4aab1294605ee27d">RCExractPathMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>pathMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压路径选项 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>pathMode</em>&nbsp;</td><td>解压路径选项 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#a55fd1987e23174a84f8a0ea58f26181a">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="aaacee44ba34f6cc90beb7902eff1d95f"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::GetRemovePathParts" ref="aaacee44ba34f6cc90beb7902eff1d95f" args="(std::vector&lt; RCString &gt; &amp;removePathParts)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::GetRemovePathParts </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>removePathParts</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取需要从解压路径中去除的路径部分 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>removePathParts</em>&nbsp;</td><td>需要从解压路径中去除的路径部分 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#af8b4a437a2e5980ad5acb44d029de02c">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a70dfa96cb34f84e86f1242476bea2e45"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::GetStream" ref="a70dfa96cb34f84e86f1242476bea2e45" args="(uint32_t index, ISequentialOutStream **outStream, int32_t askExtractMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::GetStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d12/classRCZip_1_1ISequentialOutStream.html">ISequentialOutStream</a> **&nbsp;</td>
+          <td class="paramname"> <em>outStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>askExtractMode</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取输出流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>解压文件或者目录的下标值 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>outStream</em>&nbsp;</td><td>输出流的接口指针，引用计数加1 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>askExtractMode</em>&nbsp;</td><td>解压模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#ab5df5c47a159702cd51567d4976dd63f">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a42a96217e55648f67e6b762df1541204"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::GetUpdateMode" ref="a42a96217e55648f67e6b762df1541204" args="(RCExractUpdateMode &amp;updateMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::GetUpdateMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/de1/classRCExtractDefs.html#a1d8cde136fd8c5bffa01f73040c530a0">RCExractUpdateMode</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>updateMode</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取解压更新方式 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>updateMode</em>&nbsp;</td><td>解压更新方式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#a6ffa555dee3db1bfae09edd7bf7533ba">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f858ec43fb80436aedf8e9b99740228"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::Init" ref="a8f858ec43fb80436aedf8e9b99740228" args="(const RCString &amp;destFileName, uint64_t fileSize, IArchiveOpenCallback *openCallback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCExtractSubStreamCallback::Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>destFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>fileSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a> *&nbsp;</td>
+          <td class="paramname"> <em>openCallback</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>destFileName</em>&nbsp;</td><td>解压文件的目标文件名，含完整路径 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>fileSize</em>&nbsp;</td><td>文件解压后大小， 如果为 uint64_t(-1) 表示未知大小 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>openCallback</em>&nbsp;</td><td>打开文档进度回调接口 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a674b969a50af35243e3f641e43097145"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::IsKeepDamageFiles" ref="a674b969a50af35243e3f641e43097145" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool RCZip::RCExtractSubStreamCallback::IsKeepDamageFiles </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否保留损坏文件 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>是返回true，否则返回false </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#a4700d19bf08a57e383821f48ee8fe432">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1d1b45c47e5ab552288496f191dd31d"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::PrepareOperation" ref="aa1d1b45c47e5ab552288496f191dd31d" args="(uint32_t index, int32_t askExtractMode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::PrepareOperation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>askExtractMode</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>准备解压操作 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>解压文件或者目录的下标值 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>askExtractMode</em>&nbsp;</td><td>解压模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#ace6354b28f319bd385d01b2cac734c00">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d8a8c9ac578cafbd94c4bda81692063"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::SetCompleted" ref="a9d8a8c9ac578cafbd94c4bda81692063" args="(uint64_t completed)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::SetCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>completed</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>当前完成 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>completed</em>&nbsp;</td><td>当前完成的数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d33/classRCZip_1_1IProgress.html#aeb5fc51acfb611a04c3946f4fe236200">RCZip::IProgress</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="af3e95964cbc5f680615a1ae90bb914f3"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::SetMultiThreadMode" ref="af3e95964cbc5f680615a1ae90bb914f3" args="(bool isMultiThreads)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::SetMultiThreadMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>isMultiThreads</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置多线程解压标记 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>isMultiThreads</em>&nbsp;</td><td>如果为true，当前为多线程解压模式，否则为单线程解压模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#aff3554c9da0467b0e0dbba4ff31d2181">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="af35ffb72a1007fc5b2b6e7d768c1db04"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::SetOperationResult" ref="af35ffb72a1007fc5b2b6e7d768c1db04" args="(uint32_t index, int32_t resultEOperationResult)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::SetOperationResult </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a37994e3b11c72957c6f454c6ec96d43d">int32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>resultEOperationResult</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置结果 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>index</em>&nbsp;</td><td>解压文件或者目录的下标值 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>resultEOperationResult</em>&nbsp;</td><td>操作结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d12/classRCZip_1_1IArchiveExtractCallback.html#ad9b7d628aeda72a0847d94160be75490">RCZip::IArchiveExtractCallback</a>。</p>
+
+</div>
+</div>
+<a class="anchor" id="aab4cded692a3b127bac5eea7fdbb3d08"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::SetTotal" ref="aab4cded692a3b127bac5eea7fdbb3d08" args="(uint64_t total)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/d51/RCTypes_8h.html#ae213b04a73409fe4872c32219c384563">HResult</a> RCZip::RCExtractSubStreamCallback::SetTotal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td>
+          <td class="paramname"> <em>total</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>总体数量 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>total</em>&nbsp;</td><td>总体的数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回RC_S_OK，否则返回错误号 </dd></dl>
+
+<p>实现了<a class="el" href="../../d6/d33/classRCZip_1_1IProgress.html#a909a00dfac6d492e8950fe238c909032">RCZip::IProgress</a>。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a80be7242f576d54bfd5d204153c68cca"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::m_destFileName" ref="a80be7242f576d54bfd5d204153c68cca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a47eb094cf5ec8d3cdcfd163dc1a5ddc2">RCString</a> <a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a80be7242f576d54bfd5d204153c68cca">RCZip::RCExtractSubStreamCallback::m_destFileName</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>解压目标文件名 </p>
+
+<p>在文件<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html">RCExtractSubStreamCallback.h</a>第<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html#l00127">127</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adbf4322c3d9cb45685bf47f2d5a88e32"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::m_fileSize" ref="adbf4322c3d9cb45685bf47f2d5a88e32" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#adbf4322c3d9cb45685bf47f2d5a88e32">RCZip::RCExtractSubStreamCallback::m_fileSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>文件大小 </p>
+
+<p>在文件<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html">RCExtractSubStreamCallback.h</a>第<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html#l00131">131</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a14deb7c3cd0ccda8db2dcd745a2a1776"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::m_openCallback" ref="a14deb7c3cd0ccda8db2dcd745a2a1776" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d1d/classRCZip_1_1IArchiveOpenCallback.html">IArchiveOpenCallback</a>* <a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#a14deb7c3cd0ccda8db2dcd745a2a1776">RCZip::RCExtractSubStreamCallback::m_openCallback</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>打开文档接口 </p>
+
+<p>在文件<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html">RCExtractSubStreamCallback.h</a>第<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html#l00123">123</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aab13ad8e2866d08774d31c64f9528568"></a><!-- doxytag: member="RCZip::RCExtractSubStreamCallback::m_spOutFileStream" ref="aab13ad8e2866d08774d31c64f9528568" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialOutStreamPtr</a> <a class="el" href="../../d1/d95/classRCZip_1_1RCExtractSubStreamCallback.html#aab13ad8e2866d08774d31c64f9528568">RCZip::RCExtractSubStreamCallback::m_spOutFileStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>目标输出流的接口指针 </p>
+
+<p>在文件<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html">RCExtractSubStreamCallback.h</a>第<a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html#l00135">135</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../da/d6e/RCExtractSubStreamCallback_8h_source.html">RCExtractSubStreamCallback.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>

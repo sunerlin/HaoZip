@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>HaoZip1.7: RCZip::RCInBuffer类参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- 制作者 Doxygen 1.6.2 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="../../main.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>名字空间</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li><a href="../../dirs.html"><span>目录</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="../../d7/d5a/namespaceRCZip.html">RCZip</a>::<a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html">RCInBuffer</a>
+  </div>
+</div>
+<div class="contents">
+<h1>RCZip::RCInBuffer类参考</h1><!-- doxytag: class="RCZip::RCInBuffer" --><!-- doxytag: inherits="RCZip::RCNonCopyable" -->
+<p><code>#include &lt;<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>&gt;</code></p>
+<div class="dynheader">
+继承图，类RCZip::RCInBuffer</div>
+<div class="dynsection">
+<div class="center"><img src="../../da/d88/classRCZip_1_1RCInBuffer__inherit__graph.png" border="0" usemap="#RCZip_1_1RCInBuffer_inherit__map" alt="Inheritance graph"/></div>
+<map name="RCZip_1_1RCInBuffer_inherit__map" id="RCZip_1_1RCInBuffer_inherit__map">
+<area shape="rect" id="node2" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,5,181,83"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+RCZip::RCInBuffer合作图：</div>
+<div class="dynsection">
+<div class="center"><img src="../../d7/d55/classRCZip_1_1RCInBuffer__coll__graph.png" border="0" usemap="#RCZip_1_1RCInBuffer_coll__map" alt="Collaboration graph"/></div>
+<map name="RCZip_1_1RCInBuffer_coll__map" id="RCZip_1_1RCInBuffer_coll__map">
+<area shape="rect" id="node2" href="../../d6/dee/classRCZip_1_1RCNonCopyable.html" title="{RCZip::RCNonCopyable\n||}" alt="" coords="5,447,181,524"/><area shape="rect" id="node4" href="../../d9/d13/classRCComPtr.html" title="{RCComPtr\&lt; ISequentialInStream \&gt;\n|&#45; m_ptr\l|+ RCComPtr()\l+ RCComPtr()\l+ RCComPtr()\l+ ~RCComPtr()\l+ Release()\l+ GetAddress()\l+ operator&#45;\&gt;()\l+ operator*()\l+ operator=()\l+ operator=()\l+ operator!()\l+ operator bool()\l+ Attach()\l+ Detach()\l+ QueryInterface()\l+ Get()\l}" alt="" coords="205,337,459,634"/><area shape="rect" id="node6" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html" title="{RCZip::ISequentialInStream\n||+ Read()\l# ~ISequentialInStream()\l}" alt="" coords="229,179,435,271"/><area shape="rect" id="node8" href="../../d8/d02/classRCZip_1_1IUnknown.html" title="{RCZip::IUnknown\n||+ QueryInterface()\l+ AddRef()\l+ Release()\l# ~IUnknown()\l}" alt="" coords="259,6,405,127"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../df/d6d/classRCZip_1_1RCInBuffer-members.html">所有成员的列表。</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a1da9147fae18593afc35bf1c54760ea0">RCInBuffer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a1285fc3dda273d7d2758e7bab468255f">~RCInBuffer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#afe2adda702dd2ad0c3808a551f9a8351">Create</a> (<a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> bufferSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a7fa7f6e8c3efd810f973ddb55370fa46">Init</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#ac4b97062ae9728e43303ee2513e6ebde">Free</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a4ff76a7641fe867dbc2456e10c58877c">SetStream</a> (<a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *stream)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a4f15d60acc9ddfc834203a01a45a38bc">ReleaseStream</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a140d109bab06b94ce90debc822f5b214">ReadByte</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> &amp;value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a04da739cc4250e87636cc79151f496f6">ReadByte</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a90c7527eaf2d94b734f8b80fea79d688">ReadBytes</a> (<a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *buf, <a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#aedebd7fb3d39a3a3196cc1ed3f7aa2f8">GetProcessedSize</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a5cf00f2c45b5b5b4e4f997d13de9372d">WasFinished</a> () const </td></tr>
+<tr><td colspan="2"><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#ad5bc28001239be100d672de3f99aee6e">ReadBlock</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a75cd8d465d92e3c7266b9412d98df1f6">ReadBlock2</a> ()</td></tr>
+<tr><td colspan="2"><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a1a38e5eb70e344b0aa82abeb91245472">m_buffer</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a5330746622b1259b2efab5cf8952374b">m_bufferLimit</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a9894ad1fc49fc9800b7492c4956c0e68">m_bufferBase</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialInStreamPtr</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#ad5773fb4961ccc1dcaa4d6f3fc10fab1">m_spStream</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#aa52adb14838f33e712174ebdb148e106">m_processedSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a3d3ac97e12a2ff771374cc8f90d074b5">m_bufferSize</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#aeb4f2e4cff6542b967cae65f85418e2a">m_wasFinished</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>详细描述</h2>
+<p>输入缓冲区 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00020">20</a>行定义。</p>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="a1da9147fae18593afc35bf1c54760ea0"></a><!-- doxytag: member="RCZip::RCInBuffer::RCInBuffer" ref="a1da9147fae18593afc35bf1c54760ea0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCInBuffer::RCInBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认构造函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1285fc3dda273d7d2758e7bab468255f"></a><!-- doxytag: member="RCZip::RCInBuffer::~RCInBuffer" ref="a1285fc3dda273d7d2758e7bab468255f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RCZip::RCInBuffer::~RCInBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>默认析构函数 </p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="afe2adda702dd2ad0c3808a551f9a8351"></a><!-- doxytag: member="RCZip::RCInBuffer::Create" ref="afe2adda702dd2ad0c3808a551f9a8351" args="(uint32_t bufferSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCInBuffer::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>bufferSize</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>创建缓冲区 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>bufferSize</em>&nbsp;</td><td>缓冲区大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true,失败返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4b97062ae9728e43303ee2513e6ebde"></a><!-- doxytag: member="RCZip::RCInBuffer::Free" ref="ac4b97062ae9728e43303ee2513e6ebde" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCInBuffer::Free </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放缓冲区 </p>
+
+</div>
+</div>
+<a class="anchor" id="aedebd7fb3d39a3a3196cc1ed3f7aa2f8"></a><!-- doxytag: member="RCZip::RCInBuffer::GetProcessedSize" ref="aedebd7fb3d39a3a3196cc1ed3f7aa2f8" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> RCZip::RCInBuffer::GetProcessedSize </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>获取当前读取的字节数 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回已经处理的大小 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7fa7f6e8c3efd810f973ddb55370fa46"></a><!-- doxytag: member="RCZip::RCInBuffer::Init" ref="a7fa7f6e8c3efd810f973ddb55370fa46" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCInBuffer::Init </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>初始化 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5bc28001239be100d672de3f99aee6e"></a><!-- doxytag: member="RCZip::RCInBuffer::ReadBlock" ref="ad5bc28001239be100d672de3f99aee6e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCInBuffer::ReadBlock </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取数据块 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 失败返回false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a75cd8d465d92e3c7266b9412d98df1f6"></a><!-- doxytag: member="RCZip::RCInBuffer::ReadBlock2" ref="a75cd8d465d92e3c7266b9412d98df1f6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> RCZip::RCInBuffer::ReadBlock2 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取数据块 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回读到的数据，失败则返回0xFF </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a04da739cc4250e87636cc79151f496f6"></a><!-- doxytag: member="RCZip::RCInBuffer::ReadByte" ref="a04da739cc4250e87636cc79151f496f6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> RCZip::RCInBuffer::ReadByte </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取字节 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回读取的字节，如果失败返回0xFF </dd></dl>
+<dl><dt><b>异常:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>如果读取数据失败抛异常</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a140d109bab06b94ce90debc822f5b214"></a><!-- doxytag: member="RCZip::RCInBuffer::ReadByte" ref="a140d109bab06b94ce90debc822f5b214" args="(byte_t &amp;value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCInBuffer::ReadByte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>value</em>&nbsp;</td><td>读取的字节值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>成功返回true, 失败则返回false </dd></dl>
+<dl><dt><b>异常:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>如果读取数据失败抛异常</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a90c7527eaf2d94b734f8b80fea79d688"></a><!-- doxytag: member="RCZip::RCInBuffer::ReadBytes" ref="a90c7527eaf2d94b734f8b80fea79d688" args="(byte_t *buf, uint32_t size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> RCZip::RCInBuffer::ReadBytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a>&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>读取多字节 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>buf</em>&nbsp;</td><td>存放读取结果的缓冲区地址 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>size</em>&nbsp;</td><td>缓冲区的长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>返回:</b></dt><dd>返回实际读取的长度 </dd></dl>
+<dl><dt><b>异常:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>如果读取数据失败抛异常</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4f15d60acc9ddfc834203a01a45a38bc"></a><!-- doxytag: member="RCZip::RCInBuffer::ReleaseStream" ref="a4f15d60acc9ddfc834203a01a45a38bc" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCInBuffer::ReleaseStream </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>释放输入流 </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ff76a7641fe867dbc2456e10c58877c"></a><!-- doxytag: member="RCZip::RCInBuffer::SetStream" ref="a4ff76a7641fe867dbc2456e10c58877c" args="(ISequentialInStream *stream)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RCZip::RCInBuffer::SetStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d39/classRCZip_1_1ISequentialInStream.html">ISequentialInStream</a> *&nbsp;</td>
+          <td class="paramname"> <em>stream</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>设置输入流 </p>
+<dl><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>stream</em>&nbsp;</td><td>输入流的指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5cf00f2c45b5b5b4e4f997d13de9372d"></a><!-- doxytag: member="RCZip::RCInBuffer::WasFinished" ref="a5cf00f2c45b5b5b4e4f997d13de9372d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RCZip::RCInBuffer::WasFinished </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否结束 </p>
+<dl class="return"><dt><b>返回:</b></dt><dd>如果处理结束，返回true，否则返回false </dd></dl>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a1a38e5eb70e344b0aa82abeb91245472"></a><!-- doxytag: member="RCZip::RCInBuffer::m_buffer" ref="a1a38e5eb70e344b0aa82abeb91245472" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>* <a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a1a38e5eb70e344b0aa82abeb91245472">RCZip::RCInBuffer::m_buffer</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>数据缓冲区 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00105">105</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9894ad1fc49fc9800b7492c4956c0e68"></a><!-- doxytag: member="RCZip::RCInBuffer::m_bufferBase" ref="a9894ad1fc49fc9800b7492c4956c0e68" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>* <a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a9894ad1fc49fc9800b7492c4956c0e68">RCZip::RCInBuffer::m_bufferBase</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>缓冲区基地址 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00113">113</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a5330746622b1259b2efab5cf8952374b"></a><!-- doxytag: member="RCZip::RCInBuffer::m_bufferLimit" ref="a5330746622b1259b2efab5cf8952374b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5a/namespaceRCZip.html#a97d3a5c1e2e60eec3819d162f33a34b5">byte_t</a>* <a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a5330746622b1259b2efab5cf8952374b">RCZip::RCInBuffer::m_bufferLimit</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>有效数据缓冲区 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00109">109</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d3ac97e12a2ff771374cc8f90d074b5"></a><!-- doxytag: member="RCZip::RCInBuffer::m_bufferSize" ref="a3d3ac97e12a2ff771374cc8f90d074b5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#a6eb1e68cc391dd753bc8ce896dbb8315">uint32_t</a> <a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#a3d3ac97e12a2ff771374cc8f90d074b5">RCZip::RCInBuffer::m_bufferSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>缓冲区大小 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00125">125</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa52adb14838f33e712174ebdb148e106"></a><!-- doxytag: member="RCZip::RCInBuffer::m_processedSize" ref="aa52adb14838f33e712174ebdb148e106" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dd8/stdint_8h.html#aec6fcb673ff035718c238c8c9d544c47">uint64_t</a> <a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#aa52adb14838f33e712174ebdb148e106">RCZip::RCInBuffer::m_processedSize</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>已处理大小 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00121">121</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5773fb4961ccc1dcaa4d6f3fc10fab1"></a><!-- doxytag: member="RCZip::RCInBuffer::m_spStream" ref="ad5773fb4961ccc1dcaa4d6f3fc10fab1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d13/classRCComPtr.html">ISequentialInStreamPtr</a> <a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#ad5773fb4961ccc1dcaa4d6f3fc10fab1">RCZip::RCInBuffer::m_spStream</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>输入流 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00117">117</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb4f2e4cff6542b967cae65f85418e2a"></a><!-- doxytag: member="RCZip::RCInBuffer::m_wasFinished" ref="aeb4f2e4cff6542b967cae65f85418e2a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d8/de1/classRCZip_1_1RCInBuffer.html#aeb4f2e4cff6542b967cae65f85418e2a">RCZip::RCInBuffer::m_wasFinished</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>是否已完成 </p>
+
+<p>在文件<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a>第<a class="el" href="../../d8/d25/RCInBuffer_8h_source.html#l00129">129</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d8/d25/RCInBuffer_8h_source.html">RCInBuffer.h</a></li>
+</ul>
+</div>
+<hr size="1"/>
+<address style="text-align: right;">
+<small>制作者：好压软件工作室，制作日期：2010-01-19，<a href="http://www.haozip.com" alt="访问好压官方网站"> 官方网站：http://www.haozip.com</a> </small> </address>
